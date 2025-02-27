@@ -1,6 +1,6 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: Digital Infrastructures at scale
+title: Digital Infrastructures at Scale
 theme: ["PaperMod"]
 
 module:
@@ -22,13 +22,13 @@ params:
 
 params:
   homeInfoParams:
-    Title: "🚀 Welcome to Cloud Business Insights"
+    Title: "🚀 Welcome to Digital Infrastructures"
     Content: "Exploring cloud security, digital infrastructure, and business strategies."
 
   profileMode:
     enabled: true
-    title: "Cloud Business Cases"
-    subtitle: "A journey into cloud strategy & security."
+    title: "Digital Infrastructures at Scale"
+    subtitle: "How digital infrastructures at scale lead to value, power, and risk."
     imageUrl: "profile.jpg"  # Add an image in `static/`
     imageWidth: 120
     imageHeight: 120
