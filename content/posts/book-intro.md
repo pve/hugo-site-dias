@@ -1,6 +1,6 @@
 ---
 date: '2025-02-27T16:59:05Z'
-draft: true
+draft: false
 title: 'Book Intro'
 ---
 

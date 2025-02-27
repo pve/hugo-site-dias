@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://di-as.netlify.app
 languageCode: en-us
 title: Digital Infrastructures at Scale
 theme: ["PaperMod"]
