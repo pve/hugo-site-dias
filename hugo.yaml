@@ -1,4 +1,51 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: My New Hugo Site
+title: Digital Infrastructures at scale
 theme: ["PaperMod"]
+
+module:
+  hugoVersion:
+    extended: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+params:
+  enableMermaid: true
+  assets:
+    disableHLJS: true
+    disableFingerprinting: true
+
+params:
+  homeInfoParams:
+    Title: "🚀 Welcome to Cloud Business Insights"
+    Content: "Exploring cloud security, digital infrastructure, and business strategies."
+
+  profileMode:
+    enabled: true
+    title: "Cloud Business Cases"
+    subtitle: "A journey into cloud strategy & security."
+    imageUrl: "profile.jpg"  # Add an image in `static/`
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: "Get Started"
+        url: "/posts/"
+
+  assets:
+    favicon: "favicon.ico"
+
+menu:
+  main:
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
