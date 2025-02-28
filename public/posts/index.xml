@@ -6,8 +6,17 @@
     <description>Recent content in Posts on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2025 16:59:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2025 14:15:21 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Retrofitting Zero Trust on an existing application: an illustration</title>
+      <link>http://localhost:1313/posts/retrofit-zretrofitting-zero-trust-existing-application/</link>
+      <pubDate>Fri, 28 Feb 2025 14:15:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/retrofit-zretrofitting-zero-trust-existing-application/</guid>
+      <description>&lt;p&gt;Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.&lt;/p&gt;
+&lt;p&gt;Consider this hypothetical situation.&lt;/p&gt;
+&lt;p&gt;You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &amp;lsquo;who&amp;rsquo;, &amp;lsquo;what&amp;rsquo;, &amp;lsquo;when&amp;rsquo;, etcetera of allowed communication.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Book Intro</title>
       <link>http://localhost:1313/posts/book-intro/</link>
@@ -20,12 +29,11 @@
 &lt;p&gt;It is at scale, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the infrastructure part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My First Post</title>
+      <title>A mermaid diagram</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Thu, 27 Feb 2025 09:09:43 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Put some text here.&lt;/p&gt;
-&lt;p&gt;More text&lt;/p&gt;
+      <description>&lt;p&gt;A diagram should automagically appear here.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
   A--&amp;gt;B;
   B--&amp;gt;C;

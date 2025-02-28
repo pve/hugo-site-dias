@@ -1,12 +1,10 @@
 ---
 date: '2025-02-27T09:09:43Z'
 draft: true
-title: 'My First Post'
+title: 'A mermaid diagram'
 ---
 
-Put some text here.
-
-More text
+A diagram should automagically appear here.
 
 ```mermaid
 graph TD;
