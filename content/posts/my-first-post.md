@@ -1,6 +1,6 @@
 ---
 date: '2025-02-27T09:09:43Z'
-draft: true
+draft: false
 title: 'A mermaid diagram'
 ---
 
