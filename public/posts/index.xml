@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Digital Infrastructures at Scale</title>
+    <title>Peter&#39;s Griddle on Digital Infrastructures at Scale</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Digital Infrastructures at Scale</description>
+    <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2025 14:15:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Mar 2025 22:04:34 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How Can We Achieve Autonomy Over Our Digital Infrastructures?</title>
+      <link>http://localhost:1313/posts/how-can-we-achieve-autonomy/</link>
+      <pubDate>Sun, 02 Mar 2025 22:04:34 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-can-we-achieve-autonomy/</guid>
+      <description>&lt;h3 id=&#34;building-our-own-cloud-kootwijk-rethinking-digital-sovereignty&#34;&gt;Building Our Own Cloud Kootwijk: Rethinking Digital Sovereignty&lt;/h3&gt;
+&lt;p&gt;In the Netherlands, we are currently engaged in a heated debate about the undesirable dominance of big tech, particularly over a significant portion of the digital infrastructure of the Dutch government. This includes email, file storage, and many other forms of digital storage and processing—most of which are handled by American big tech companies.&lt;/p&gt;
+&lt;p&gt;I am sure a similar debate is going on in many other countries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Preface</title>
+      <link>http://localhost:1313/posts/preface/</link>
+      <pubDate>Sun, 02 Mar 2025 22:00:32 +0000</pubDate>
+      <guid>http://localhost:1313/posts/preface/</guid>
+      <description>&lt;p&gt;This is hardly a book on digital technology, but more on the organisational and societal impact of managing this at scale.&lt;/p&gt;
+&lt;p&gt;For a better understanding of digital technology I highly recommend Brian Kernighan’s “Understanding the Digital World”. () And if you want to have fun while learning how to understand software, I’d highly recommend “The Nature of Code” by Daniel Schiffman ().&lt;/p&gt;
+&lt;p&gt;As you will find out in this book, I am putting on some very specific lenses to look at the world. You may find them restrictive; you may find them arbitrary(?), you may find them opiniated. Yes, this specific way of looking at the effects of digital technology has its limits. However, the essence of understanding is to be able to extract the core elements out of something. Paradoxically, only by restricting the way we look at things can we see more clearly. Cut through the noise. Like Goethe said: “In der Beschränkung zeigt sich erst der Meister”, though he applied that to a different subject.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
-      <link>http://localhost:1313/posts/retrofit-zretrofitting-zero-trust-existing-application/</link>
+      <link>http://localhost:1313/posts/retrofitting-zero-trust-existing-application/</link>
       <pubDate>Fri, 28 Feb 2025 14:15:21 +0000</pubDate>
-      <guid>http://localhost:1313/posts/retrofit-zretrofitting-zero-trust-existing-application/</guid>
+      <guid>http://localhost:1313/posts/retrofitting-zero-trust-existing-application/</guid>
       <description>&lt;p&gt;Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.&lt;/p&gt;
 &lt;p&gt;Consider this hypothetical situation.&lt;/p&gt;
 &lt;p&gt;You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &amp;lsquo;who&amp;rsquo;, &amp;lsquo;what&amp;rsquo;, &amp;lsquo;when&amp;rsquo;, etcetera of allowed communication.&lt;/p&gt;</description>
@@ -34,11 +52,52 @@
       <pubDate>Thu, 27 Feb 2025 09:09:43 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>&lt;p&gt;A diagram should automagically appear here.&lt;/p&gt;
-&lt;pre class=&#34;mermaid&#34;&gt;graph TD;
-  A--&amp;gt;B;
-  B--&amp;gt;C;
-  B--&amp;gt;D;
-  C--&amp;gt;D;
+&lt;pre class=&#34;mermaid&#34;&gt;%%  icons from https://iconify.design
+architecture-beta
+    group api(Storage)[API]
+
+    service db(database)[Database] in api
+    service disk1(disk)[Storage] in api
+    service disk2(disk)[Storage] in api
+    service server(server)[Server] in api
+
+    db:L -- R:server
+    disk1:T --&amp;gt; B:server
+    disk2:T -- B:db
+&lt;/pre&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;%%  icons from https://iconify.design
+architecture-beta
+    group api(logos:aws-lambda)[API]
+
+    service db(logos:aws-aurora)[Database] in api
+    service disk1(logos:aws-glacier)[Storage] in api
+    service disk2(logos:aws-s3)[Storage] in api
+    service server(logos:aws-ec2)[Server] in api
+
+    db:L -- R:server
+    disk1:T -- B:server
+    disk2:T -- B:db
+
+    group keyvault(logos:aws-secrets-manager)[Key Vault] in api
+
+    service dba(logos:aws-aurora)[Database] in keyvault
+    service disk1a(logos:aws-glacier)[Storage] in keyvault
+
+    server:R -- L:storage
+&lt;/pre&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;sequenceDiagram
+ participant Alice
+ Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+ John--&amp;gt;&amp;gt;Alice: Great!
+ Alice-&amp;gt;&amp;gt;John: How about you?
+ John--&amp;gt;&amp;gt;Alice: Can&amp;#39;t complain.
+ participant Bob
+  Alice-&amp;gt;&amp;gt;Bob: Hi Bob, how are you today?
+  Bob--&amp;gt;&amp;gt;Alice: Hi Alice, I&amp;#39;m doing well, thanks! How about you?
+  Alice-&amp;gt;&amp;gt;Bob: I&amp;#39;m great, thanks for asking! Do you have any plans for the weekend?
+  Bob--&amp;gt;&amp;gt;Alice: Yes, I&amp;#39;m thinking of going hiking. Would you like to join me?
+  Alice-&amp;gt;&amp;gt;Bob: That sounds fun! Count me in.
+  Bob--&amp;gt;&amp;gt;Alice: Great! I&amp;#39;ll send you the details later.
 &lt;/pre&gt;</description>
     </item>
   </channel>

@@ -29,18 +29,24 @@ params:
     enabled: true
     title: "Digital Infrastructures at Scale"
     subtitle: "How digital infrastructures at scale lead to value, power, and risk."
-    imageUrl: "profile.jpg"  # Add an image in `static/`
-    imageWidth: 120
-    imageHeight: 120
+    imageUrl: "craiyonmushrooms.png"  # Add an image in `static/`
+    imageWidth: 400
+    imageHeight: 400
     buttons:
-      - name: "Get Started"
+      - name: "The blog"
         url: "/posts/"
+      - name: "The book"
+        url: "/book/" 
 
   assets:
-    favicon: "favicon.ico"
+    favicon: "favicon.ico" 
 
 menu:
   main:
+    - identifier: book
+      name: "The Book"
+      url: /book/
+      weight: 10
     - identifier: posts
       name: Blog
       url: /posts/
@@ -49,3 +55,5 @@ menu:
       name: About
       url: /about/
       weight: 20
+
+

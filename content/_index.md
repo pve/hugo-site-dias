@@ -2,8 +2,8 @@
 title: "Building Cloud Business Cases"
 description: "Insights and strategies for scaling digital infrastructure."
 cover:
-  image: "cover.jpg" # Add an image in `static/`
-  alt: "Cloud architecture illustration"
+  image: "craiyonmushrooms.png" # Add an image in `static/`
+  alt: "Craiyon image"
 ---
 
 ## Welcome!
