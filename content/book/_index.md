@@ -7,7 +7,7 @@ description: "A collection of insights on scaling cloud infrastructure."
 
 **Chapters:**
 1. [Introduction](/book/01-intro/)
-2. [Digital Infrastructures Essentials](/book/02-diginfra/)
+2. [Digital Infrastructure Essentials](/book/02-diginfra/)
 3. [Value](/book/03-value/)
 4. [Power](/book/04-power/)
 5. [Risk](/book/05-risk/)

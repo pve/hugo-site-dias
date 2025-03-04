@@ -1,6 +1,6 @@
 baseURL: https://di-as.netlify.app
 languageCode: en-us
-title: Digital Infrastructures at Scale
+title: DigInfatScale
 theme: ["PaperMod"]
 
 module:
@@ -19,19 +19,20 @@ params:
   assets:
     disableHLJS: true
     disableFingerprinting: true
+    disableSearch: false
 
 params:
   homeInfoParams:
     Title: "🚀 Welcome to Digital Infrastructures"
-    Content: "Exploring cloud security, digital infrastructure, and business strategies."
+    Content: "Exploring digital infrastructures, cloud security and business strategies."
 
   profileMode:
     enabled: true
     title: "Digital Infrastructures at Scale"
     subtitle: "How digital infrastructures at scale lead to value, power, and risk."
     imageUrl: "craiyonmushrooms.png"  # Add an image in `static/`
-    imageWidth: 400
-    imageHeight: 400
+    imageWidth: 800
+    imageHeight: 800
     buttons:
       - name: "The blog"
         url: "/posts/"
@@ -55,5 +56,7 @@ menu:
       name: About
       url: /about/
       weight: 20
-
-
+    - identifier: search
+      name: "🔎 Search"
+      url: /search/
+      weight: 50
