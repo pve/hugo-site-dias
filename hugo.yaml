@@ -16,10 +16,12 @@ markup:
 
 params:
   enableMermaid: true
+  showReadingTime: true
   assets:
     disableHLJS: true
     disableFingerprinting: true
     disableSearch: false
+
 
 params:
   homeInfoParams:
