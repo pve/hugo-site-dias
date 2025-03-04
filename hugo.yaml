@@ -60,3 +60,6 @@ menu:
       name: "🔎 Search"
       url: /search/
       weight: 50
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
