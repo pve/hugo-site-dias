@@ -81,13 +81,13 @@ architecture-beta
 &lt;/pre&gt;</description>
     </item>
     <item>
-      <title>Three Ways to Go Cloud</title>
+      <title>Multiple Ways to Go Cloud</title>
       <link>http://localhost:1313/posts/three-ways-to-go-cloud/</link>
       <pubDate>Sun, 03 Jun 2018 17:06:57 +0000</pubDate>
       <guid>http://localhost:1313/posts/three-ways-to-go-cloud/</guid>
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.&lt;/p&gt;
 &lt;h1 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h1&gt;
-&lt;p&gt;Companies dying to get rid of their data centers often get started on a ‘lift and shift’ approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
+&lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

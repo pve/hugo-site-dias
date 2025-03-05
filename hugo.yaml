@@ -21,6 +21,10 @@ params:
     disableHLJS: true
     disableFingerprinting: true
     disableSearch: false
+  assetSettings:
+    disableHighlighting: true
+    preventFingerprinting: true
+    allowSearch: true
 
 
 params:
@@ -40,6 +44,8 @@ params:
         url: "/posts/"
       - name: "The book"
         url: "/book/" 
+      - name: "The OG site"
+        url: "/ogsite/" 
 
   assets:
     favicon: "favicon.ico" 
