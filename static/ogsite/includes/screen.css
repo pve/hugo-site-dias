@@ -1,0 +1,400 @@
+/************************************************************
+Digital Infrastructures Stylesheet 
+Target: Screen
+Author: Martijn Schornagel - Momono Ontwerpwerk - www.momono.nl
+************************************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style-image: none;
+	list-style-type: none;
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:active, a:focus {
+	outline: 0;
+}
+body {
+	padding-top: 50px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	color: #666666;
+}
+
+/************************************************************
+
+* Positioning
+
+************************************************************/
+#container {
+	margin: auto;
+	width: 860px;
+	background-image: url(img/bg-content.gif);
+	background-repeat: repeat-y;
+}
+#head {
+}
+#logo {
+	background-image: url(img/logo.jpg);
+	height: 50px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+#navbar {
+	background-color: #6B0044;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	position: relative;
+	height: 60px;
+}
+#search {
+	position: absolute;
+	top: 34px;
+	right: 0px;
+}
+#sidebar {
+	width: 175px;
+	float: left;
+}
+#content {
+	width: 660px;
+	min-height: 220px;
+	height: auto !important;
+	height: 220px;
+	position: relative;
+	margin-left: 175px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+#mailingform {
+	background-color: #EBEBEB;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+	font-size: 11px;
+	color: #666666;
+	line-height: 14px;
+	padding: 15px;
+}
+#footer {
+	background-image: url(img/footer.gif);
+	height: 20px;
+	color: #999999;
+	line-height: 20px;
+	padding-left: 185px;
+	font-size: 11px;
+	position: relative;
+}
+
+
+/************************************************************
+
+* Navigation (Main menu & submenu)
+
+************************************************************/
+ul#sections li {
+	float: left;
+}
+
+ul#sections li a {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+	height: 17px;
+	padding-left: 4px;
+	display: block;
+	padding-top: 43px;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #585858;
+	font-weight: bold;
+}
+
+ul#sections .active a, #sections .active a:hover {
+	background-color: #3D3D3D;
+}
+
+ul#sections li a:hover {
+	background-color: #3D3D3D;
+	color: #CCCCCC;
+}
+ul#articles {
+	margin-top: 22px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+}
+ul#articles li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+
+ul#articles li a {
+	display: block;
+	padding-left: 5px;
+	color: #666666;
+	font-size: 11px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 5px;
+	line-height: 14px;
+}
+
+ul#articles li.active a {
+	background-color: #B4B4B4;
+	color: #FFFFFF;
+}
+
+ul#articles li a:hover {
+	background-color: #B4B4B4;
+	color: #FFFFFF;
+}
+
+li#home a {
+	background-color: #0099CC;
+	width: 68px;
+}
+li#referenties a {
+	width: 98px;
+}
+li#publicaties a {
+	width: 94px;
+}
+li#contact a {
+	width: 79px;
+}
+li#voorwaarden a {
+	width: 130px;
+}
+
+#selected-home #home a, #selected-referenties #referenties a, #selected-publicaties #publicaties a, #selected-contact #contact a, #selected-voorwaarden #voorwaarden a {
+	background-color: #313131;
+	color: #CCCCCC;
+}
+
+
+/************************************************************
+
+* Typography & Classes
+
+************************************************************/
+h1 {
+	font-family: "Arial Black", Arial;
+	font-size: 18px;
+	color: #6B0044;
+	margin-bottom: 20px;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+h2, h3, h4, h5, h6 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #6B0044;
+}
+#content a {
+	color: #6B0044;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	padding-bottom: -1px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+}
+#content a:hover {
+	background-color: #6B0044;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	color: #FFFFFF;
+}
+#content p {
+	margin-bottom: 15px;
+}
+#content ul li {
+	padding-left: 0px;
+	list-style-type: square;
+	list-style-position: inside;
+}
+#content img {
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.meer-weten {
+	width: 160px;
+	float: left;
+}
+#gr-form {
+	float: right;
+	font-weight: bold;
+	margin-top: 12px;
+	color: #999999;
+}
+#GRCategory2,
+#GRCategory3, 
+#GrCustom0 {
+	margin-right: 10px;
+	margin-left: 2px;
+	width: 100px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	font-size: 11px;
+	padding: 1px;
+	color: #6B0044;
+}
+#abonneer {
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #999999;
+	border: 1px solid #999999;
+}
+#abonneer:hover {
+	background-color: #585858;
+	border-top-color: #585858;
+	border-right-color: #585858;
+	border-bottom-color: #585858;
+	border-left-color: #585858;
+}
+#rss {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+#rss a {
+	line-height: 20px;
+	display: block;
+	height: 20px;
+	padding-right: 4px;
+	padding-left: 4px;
+	text-align: center;
+	color: #CCCCCC;
+	font-weight: bold;
+	width: 25px;
+}
+#rss a:hover {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+#search input {
+	font-size: 11px;
+	margin-right: 8px;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 1px;
+}
+#search #submit {
+	color: #FFFFFF;
+	background-color: #000000;
+	border: 1px solid #000000;
+	font-size: 10px;
+	padding: 0px;
+	font-weight: bold;
+}
+#search #submit:hover {
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	font-size: 10px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+
+.clear {
+	clear: both;
+}
+
+/************************************************************
+
+* Zem mailform
+
+************************************************************/
+
+#zemContactForm #uwnaam {
+	width: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	font-size: 11px;
+	padding: 1px;
+	color: #6B0044;
+	margin-bottom: 10px;
+}
+#zemContactForm #email {
+	width: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	font-size: 11px;
+	padding: 1px;
+	color: #6B0044;
+	margin-bottom: 10px;
+}
+#zemContactForm #telefoon {
+	width: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	font-size: 11px;
+	padding: 1px;
+	color: #6B0044;
+	margin-bottom: 10px;
+}
+#zemContactForm #opmerkingen {
+	width: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	font-size: 11px;
+	padding: 1px;
+	color: #6B0044;
+	margin-bottom: 10px;
+}
+#zemContactForm textarea {
+	width: 300px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	font-size: 11px;
+	padding: 1px;
+	color: #6B0044;
+	margin-bottom: 10px;
+}
+#content input {
+	font-size: 11px;
+	width: 120px;
+	margin-bottom: 8px;
+	color: #FFFFFF;
+	background-color: #999999;
+	border: 1px solid #999999;
+}
+#content input:hover {
+	background-color: #585858;
+	border-top-color: #585858;
+	border-right-color: #585858;
+	border-bottom-color: #585858;
+	border-left-color: #585858;
+}
+ul.zemError {
+	color: #6B0044;
+	margin-bottom: 10px;
+}
+
+body #content b
+{
+	color: #FFFFFF;
+	font-weight: normal;
+	background-color: #FF00A2;
+	padding: 1px;
+}
+#content img.float {
+	float: right;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}

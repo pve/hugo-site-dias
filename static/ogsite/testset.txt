@@ -1,0 +1,9 @@
+# echo ape
+#
+# wget --spider -o wget.log -e robots=off -w 1 -r -p http://www.digitalinfrastructures.nl                             
+# grep 404 wget.log
+# grep -B 2 '404' wget.log
+# watch out, wget creates these files..... so need to delete them later, unless they get pushed to S3
+# wget --spider -o wget.log -e robots=off -r -p https://diginfra-website-pve.c9.io/index.html
+#
+# if ever we get this testing stuff to work..
