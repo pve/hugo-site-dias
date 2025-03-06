@@ -25,9 +25,10 @@ params:
     disableHighlighting: true
     preventFingerprinting: true
     allowSearch: true
-  googleAnalytics: "G-Y6WKY1Y13E"
 
-
+services:
+  googleAnalytics:
+    id: G-Y6WKY1Y13E
 
 params:
   homeInfoParams:
