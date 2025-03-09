@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>What are the AI digital infrastructures? | DigInfatScale</title>
+<title>What are the AI digital infrastructures? | DigInfAtScale</title>
 <meta name="keywords" content="">
 <meta name="description" content="The AI landscape has many digital infrastructures.
 Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.
@@ -59,6 +59,13 @@ A trained model is the result of processing a lot of training data by a specific
 
     </style>
 </noscript>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
+<script>
+  mermaid.initialize({ 
+    startOnLoad: true,
+  });
+</script>
+
 </head>
 
 <body class="" id="top">
@@ -76,7 +83,7 @@ A trained model is the result of processing a lot of training data by a specific
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="DigInfatScale (Alt + H)">DigInfatScale</a>
+            <a href="http://localhost:1313/" accesskey="h" title="DigInfAtScale (Alt + H)">DigInfAtScale</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -131,12 +138,6 @@ A trained model is the result of processing a lot of training data by a specific
     
     <h1 class="post-title entry-hint-parent">
       What are the AI digital infrastructures?
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2025-03-08 17:57:16 +0000 UTC'>March 8, 2025</span>
 
@@ -151,6 +152,16 @@ A trained model is the result of processing a lot of training data by a specific
 <p>A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.</p>
 <p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.</p>
 <p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
+<pre class="mermaid">block-beta
+
+in space llm:2 space out
+in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
+llm--&gt; out[&#34;Completion&#34;]
+
+style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+   
+</pre>
 <p>In cloud terms, we would call this Inferencing as a Service. In the NIST model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
 <p>This gives us the option to look for this on the market, or create a shared service inside an organisation or group of organisations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.</p>
 
@@ -165,7 +176,7 @@ A trained model is the result of processing a lot of training data by a specific
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">DigInfatScale</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">DigInfAtScale</a></span> · 
 
     <span>
         Powered by

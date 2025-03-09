@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Peter&#39;s Griddle on DigInfatScale</title>
+    <title>Peter&#39;s Griddle on DigInfAtScale</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Peter&#39;s Griddle on DigInfatScale</description>
+    <description>Recent content in Peter&#39;s Griddle on DigInfAtScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Mar 2025 11:06:48 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 14:07:53 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Infrastructures - the graphic novel</title>
+      <link>http://localhost:1313/posts/graphic-novel-page1/</link>
+      <pubDate>Sun, 09 Mar 2025 14:07:53 +0000</pubDate>
+      <guid>http://localhost:1313/posts/graphic-novel-page1/</guid>
+      <description>&lt;p&gt;Here is the draft design of the graphic novel version of this book, which may or may not happen..&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Positions of Power in IT</title>
       <link>http://localhost:1313/posts/positions-of-power-it/</link>
       <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
       <guid>http://localhost:1313/posts/positions-of-power-it/</guid>
-      <description>&lt;p&gt;One of the aspirations of &amp;lsquo;Digital Infrastructures at Scale&amp;rsquo; is to give you tools to influence the professional situation in which you find yourself.
-A situation where your objective is to effect a certain transformation.&lt;/p&gt;
-&lt;p&gt;Two major examples of positions of power in IT are architects and auditors/assessors.&lt;/p&gt;
-&lt;p&gt;An IT architect likes to create new stuff. Think of a new application that allows business users to work more effectively, for example a new customer relationship management (CRM) system. It is a piece of technology, but it will also be accompanied by new workflows and ways of working together, if it is to be succesful. It is a new technical and social reality in which new things are possible in an organisation.
-Other IT architects like to create, for example, digital infrastructures that will enable the faster deployment of such applications.&lt;/p&gt;</description>
+      <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.&lt;/p&gt;
+&lt;p&gt;Two important positions of influence in IT are architects and auditors/assessors.&lt;/p&gt;
+&lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are the AI digital infrastructures?</title>
@@ -69,9 +75,9 @@ Other IT architects like to create, for example, digital infrastructures that wi
     </item>
     <item>
       <title>A mermaid diagram example</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:1313/posts/mermaid-example/</link>
       <pubDate>Thu, 27 Feb 2025 09:09:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/mermaid-example/</guid>
       <description>&lt;p&gt;A diagram should automagically appear here.&lt;/p&gt;
 &lt;pre class=&#34;mermaid&#34;&gt;%%  icons from https://iconify.design
 architecture-beta
@@ -86,19 +92,15 @@ architecture-beta
     disk1:T --&amp;gt; B:server
     disk2:T -- B:db
 &lt;/pre&gt;
-&lt;pre class=&#34;mermaid&#34;&gt;sequenceDiagram
- participant Alice
- Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
- John--&amp;gt;&amp;gt;Alice: Great!
- Alice-&amp;gt;&amp;gt;John: How about you?
- John--&amp;gt;&amp;gt;Alice: Can&amp;#39;t complain.
- participant Bob
-  Alice-&amp;gt;&amp;gt;Bob: Hi Bob, how are you today?
-  Bob--&amp;gt;&amp;gt;Alice: Hi Alice, I&amp;#39;m doing well, thanks! How about you?
-  Alice-&amp;gt;&amp;gt;Bob: I&amp;#39;m great, thanks for asking! Do you have any plans for the weekend?
-  Bob--&amp;gt;&amp;gt;Alice: Yes, I&amp;#39;m thinking of going hiking. Would you like to join me?
-  Alice-&amp;gt;&amp;gt;Bob: That sounds fun! Count me in.
-  Bob--&amp;gt;&amp;gt;Alice: Great! I&amp;#39;ll send you the details later.
+&lt;pre class=&#34;mermaid&#34;&gt;block-beta
+
+in space llm:2 space out
+in[&amp;#34;Prompt&amp;#34;] --&amp;gt; llm[&amp;#34;Large Language Model&amp;#34;]
+llm--&amp;gt; out[&amp;#34;Completion&amp;#34;]
+
+style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+   
 &lt;/pre&gt;</description>
     </item>
     <item>
@@ -109,6 +111,19 @@ architecture-beta
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.&lt;/p&gt;
 &lt;h1 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h1&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/tmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tmp/</guid>
+      <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.
+Two key positions of influence in IT are architects and auditors/assessors.
+IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.
+Auditors and risk assessors, on the other hand, focus on preventing failure. Every technology introduces risks, and without proper attention, these risks can derail progress—whether through security breaches, compliance fines, or operational breakdowns.
+Both roles involve power. Change does not happen in isolation, and every initiative encounters resistance. Understanding the sources of power—and the forces that push back—is essential for you to achieve meaningful outcomes.
+Money is a form of power, but it is often a blunt instrument. In organizations, other forces—such as survival and strategic priorities—can be even more influential. The key to driving transformation is linking these forces together with precision.
+This book provides you with the frameworks, insights, and real-world examples to navigate these challenges and drive successful change.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

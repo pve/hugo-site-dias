@@ -1,6 +1,6 @@
 baseURL: https://di-as.netlify.app
 languageCode: en-us
-title: DigInfatScale
+title: DigInfAtScale
 theme: ["PaperMod"]
 
 module:

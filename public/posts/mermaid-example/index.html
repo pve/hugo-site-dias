@@ -5,13 +5,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>How Can We Achieve Autonomy Over Our Digital Infrastructures? | DigInfAtScale</title>
+<title>A mermaid diagram example | DigInfAtScale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Building Our Own Cloud Kootwijk: Rethinking Digital Sovereignty
-In the Netherlands, we are currently engaged in a heated debate about the undesirable dominance of big tech, particularly over a significant portion of the digital infrastructure of the Dutch government. This includes email, file storage, and many other forms of digital storage and processing—most of which are handled by American big tech companies.
-I am sure a similar debate is going on in many other countries.">
+<meta name="description" content="A diagram should automagically appear here.
+%%  icons from https://iconify.design
+architecture-beta
+    group api(Storage)[API]
+
+    service db(database)[Database] in api
+    service disk1(disk)[Storage] in api
+    service disk2(disk)[Storage] in api
+    service server(server)[Server] in api
+
+    db:L -- R:server
+    disk1:T --&gt; B:server
+    disk2:T -- B:db
+
+block-beta
+
+in space llm:2 space out
+in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
+llm--&gt; out[&#34;Completion&#34;]
+
+style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+   
+">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/how-can-we-achieve-autonomy/">
+<link rel="canonical" href="http://localhost:1313/posts/mermaid-example/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -20,7 +41,7 @@ I am sure a similar debate is going on in many other countries.">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/how-can-we-achieve-autonomy/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/mermaid-example/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,6 +79,13 @@ I am sure a similar debate is going on in many other countries.">
 
     </style>
 </noscript>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
+<script>
+  mermaid.initialize({ 
+    startOnLoad: true,
+  });
+</script>
+
 </head>
 
 <body class="" id="top">
@@ -129,37 +157,40 @@ I am sure a similar debate is going on in many other countries.">
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      How Can We Achieve Autonomy Over Our Digital Infrastructures?
+      A mermaid diagram example
     </h1>
-    <div class="post-meta"><span title='2025-03-02 22:04:34 +0000 UTC'>March 2, 2025</span>
+    <div class="post-meta"><span title='2025-02-27 09:09:43 +0000 UTC'>February 27, 2025</span>
 
 </div>
   </header> 
 
   
-  <p><i>⏳ 4 min read</i></p>
+  <p><i>⏳ 1 min read</i></p>
   
-  <div class="post-content"><h3 id="building-our-own-cloud-kootwijk-rethinking-digital-sovereignty">Building Our Own Cloud Kootwijk: Rethinking Digital Sovereignty<a hidden class="anchor" aria-hidden="true" href="#building-our-own-cloud-kootwijk-rethinking-digital-sovereignty">#</a></h3>
-<p>In the Netherlands, we are currently engaged in a heated debate about the undesirable dominance of big tech, particularly over a significant portion of the digital infrastructure of the Dutch government. This includes email, file storage, and many other forms of digital storage and processing—most of which are handled by American big tech companies.</p>
-<p>I am sure a similar debate is going on in many other countries.</p>
-<p>Given this reality, what can we do about it? How can we build our own &ldquo;Cloud Kootwijk&rdquo;?</p>
-<h3 id="exploring-alternatives">Exploring Alternatives<a hidden class="anchor" aria-hidden="true" href="#exploring-alternatives">#</a></h3>
-<p>Setting up a comprehensive, government-funded solution does not seem like a viable approach. History has shown many failures in such attempts. Moreover, our current procurement processes do not lend themselves to agility. Due to the scale involved, any such initiative would likely end up with a large, well-established company.</p>
-<p>This brings us to another challenge: every big tech company is, or ultimately becomes, an American company. The two largest software markets in the world are the U.S. and Germany. Even the largest German IT firms cannot afford to ignore the American market and are often listed on U.S. stock exchanges.</p>
-<p>As a result, every big tech company—directly or indirectly—falls under the control of the U.S. government, regardless of its political orientation at any given time.</p>
-<h3 id="rethinking-the-approach">Rethinking the Approach<a hidden class="anchor" aria-hidden="true" href="#rethinking-the-approach">#</a></h3>
-<p>With this in mind, we need to rethink our strategy. If big tech is not the answer, how can we organize &ldquo;small tech&rdquo; in a way that makes it a viable alternative for a large-scale buyer?</p>
-<p>We are talking about digital infrastructures that are essential to the functioning of our society. These infrastructures have a certain &ldquo;commodity&rdquo; nature and do not primarily revolve around innovative applications. In principle, they should be deliverable by multiple companies.</p>
-<p>There is no fundamental barrier to IT services being provided by a consortium of service providers. In fact, this is how the Internet has operated for decades. Its core consists of open standards that facilitate a market of service providers with sustainable business models. To prevent monopolization, these markets need some level of regulation, including enforcing open standards for interoperability and portability. In the case of strategic autonomy, additional rules regarding ownership of these companies may also be necessary.</p>
-<p>While having much of the underlying software available as open source would help, it is not essential. Open source is neither a sufficient nor a necessary condition for interoperability and portability.</p>
-<p>Open standards (ideally with open-source reference implementations) are more important. They also contribute to another critical element of &ldquo;small tech&rdquo;: building sufficient expertise.</p>
-<h3 id="knowledge-as-the-foundation-of-autonomy">Knowledge as the Foundation of Autonomy<a hidden class="anchor" aria-hidden="true" href="#knowledge-as-the-foundation-of-autonomy">#</a></h3>
-<p>In my view, IT services consist of hardware, software, and systems management . Management can be broken down into processes and skilled personnel. Most of these elements are either commodities or readily available.</p>
-<p>Finding enough personnel competent in the relevant technologies is more challenging, but not impossible.</p>
-<p>To achieve a sufficient level of autonomy in digital infrastructures, we need to develop and maintain this expertise. The best way I know to do this is to start small and scale up. Expanding by a factor of ten at each step is an ambitious yet achievable goal. This points towards managing our digital infrastructure through a consortium of smaller companies. The VNG’s Common Ground and Haven initiatives offer promising examples in this direction.</p>
-<h3 id="a-call-to-action">A Call to Action<a hidden class="anchor" aria-hidden="true" href="#a-call-to-action">#</a></h3>
-<p>I challenge both policymakers and society to launch a production pilot using a fully open-source office automation environment. I believe we could select the necessary open-source components for such a pilot in an afternoon. Managing this at a scale of 1,000 active users would be an excellent starting ambition. This will take months—perhaps longer—but if successful, it will provide a blueprint for a &ldquo;Cloud Kootwijk&rdquo; should the need become urgent.</p>
-<p>Will this be painful? Yes. But not as painful as realizing too late that we have lost our democracy and prosperity to a foreign power—or worse, to a group of multinational corporations that are not even under the control of any state.</p>
+  <div class="post-content"><p>A diagram should automagically appear here.</p>
+<pre class="mermaid">%%  icons from https://iconify.design
+architecture-beta
+    group api(Storage)[API]
+
+    service db(database)[Database] in api
+    service disk1(disk)[Storage] in api
+    service disk2(disk)[Storage] in api
+    service server(server)[Server] in api
+
+    db:L -- R:server
+    disk1:T --&gt; B:server
+    disk2:T -- B:db
+</pre>
+<pre class="mermaid">block-beta
+
+in space llm:2 space out
+in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
+llm--&gt; out[&#34;Completion&#34;]
+
+style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+   
+</pre>
 
 
   </div>
