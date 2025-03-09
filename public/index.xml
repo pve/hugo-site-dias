@@ -6,21 +6,32 @@
     <description>Recent content in Building Cloud Business Cases on DigInfAtScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Mar 2025 16:31:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 21:19:45 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chapter 2</title>
-      <link>http://localhost:1313/book/chapter-2/</link>
-      <pubDate>Sun, 09 Mar 2025 16:31:09 +0000</pubDate>
-      <guid>http://localhost:1313/book/chapter-2/</guid>
+      <title>Deployment Diagrams</title>
+      <link>http://localhost:1313/book/diginfra/deployment-diagrams/</link>
+      <pubDate>Sun, 09 Mar 2025 21:19:45 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/deployment-diagrams/</guid>
       <description></description>
     </item>
     <item>
-      <title>Chapter 1</title>
-      <link>http://localhost:1313/book/chapter-1/</link>
-      <pubDate>Sun, 09 Mar 2025 16:30:57 +0000</pubDate>
-      <guid>http://localhost:1313/book/chapter-1/</guid>
-      <description>&lt;p&gt;Text for chapter 1&lt;/p&gt;</description>
+      <title>Book contents</title>
+      <link>http://localhost:1313/book/landing/</link>
+      <pubDate>Sun, 09 Mar 2025 16:47:09 +0000</pubDate>
+      <guid>http://localhost:1313/book/landing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;This book is in progress!&lt;/strong&gt; Each chapter is a refined version of blog insights.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chapters:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/preface/&#34;&gt;Preface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/intro/&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/diginfra/&#34;&gt;Digital Infrastructure Essentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/value/&#34;&gt;Value&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/power/&#34;&gt;Power&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/risk/&#34;&gt;Risk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/wrap/&#34;&gt;Wrapping up&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Not all chapters are finalized. Blog articles might be included later!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Infrastructures - the graphic novel</title>
@@ -32,18 +43,18 @@
     </item>
     <item>
       <title>Positions of Power in IT</title>
-      <link>http://localhost:1313/posts/positions-of-power-it/</link>
+      <link>http://localhost:1313/book/power/positions-of-power-it/</link>
       <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
-      <guid>http://localhost:1313/posts/positions-of-power-it/</guid>
+      <guid>http://localhost:1313/book/power/positions-of-power-it/</guid>
       <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.&lt;/p&gt;
 &lt;p&gt;Two important positions of influence in IT are architects and auditors/assessors.&lt;/p&gt;
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What are the AI digital infrastructures?</title>
-      <link>http://localhost:1313/posts/digital-inf-ai/</link>
+      <title>What are AI digital infrastructures?</title>
+      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
       <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/digital-inf-ai/</guid>
+      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
       <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
 &lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
@@ -60,27 +71,27 @@
     </item>
     <item>
       <title>Preface</title>
-      <link>http://localhost:1313/posts/preface/</link>
+      <link>http://localhost:1313/book/preface/preface/</link>
       <pubDate>Sun, 02 Mar 2025 22:00:32 +0000</pubDate>
-      <guid>http://localhost:1313/posts/preface/</guid>
+      <guid>http://localhost:1313/book/preface/preface/</guid>
       <description>&lt;p&gt;This is hardly a book on digital technology, but more on the organisational and societal impact of managing this at scale.&lt;/p&gt;
 &lt;p&gt;For a better understanding of digital technology I highly recommend Brian Kernighan’s “Understanding the Digital World”. () And if you want to have fun while learning how to understand software, I’d highly recommend “The Nature of Code” by Daniel Schiffman ().&lt;/p&gt;
 &lt;p&gt;As you will find out in this book, I am putting on some very specific lenses to look at the world. You may find them restrictive; you may find them arbitrary(?), you may find them opiniated. Yes, this specific way of looking at the effects of digital technology has its limits. However, the essence of understanding is to be able to extract the core elements out of something. Paradoxically, only by restricting the way we look at things can we see more clearly. Cut through the noise. Like Goethe said: “In der Beschränkung zeigt sich erst der Meister”, though he applied that to a different subject.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
-      <link>http://localhost:1313/posts/retrofitting-zero-trust-existing-application/</link>
+      <link>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</link>
       <pubDate>Fri, 28 Feb 2025 14:15:21 +0000</pubDate>
-      <guid>http://localhost:1313/posts/retrofitting-zero-trust-existing-application/</guid>
+      <guid>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</guid>
       <description>&lt;p&gt;Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.&lt;/p&gt;
 &lt;p&gt;Consider this hypothetical situation.&lt;/p&gt;
 &lt;p&gt;You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &amp;lsquo;who&amp;rsquo;, &amp;lsquo;what&amp;rsquo;, &amp;lsquo;when&amp;rsquo;, etcetera of allowed communication.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Book Intro</title>
-      <link>http://localhost:1313/posts/book-intro/</link>
+      <link>http://localhost:1313/book/intro/book-intro/</link>
       <pubDate>Thu, 27 Feb 2025 16:59:05 +0000</pubDate>
-      <guid>http://localhost:1313/posts/book-intro/</guid>
+      <guid>http://localhost:1313/book/intro/book-intro/</guid>
       <description>&lt;h1 id=&#34;how-digital-infrastructures-at-scale-create-value-power-and-risk&#34;&gt;How Digital Infrastructures at scale create value, power, and risk.&lt;/h1&gt;
 &lt;h2 id=&#34;a-field-guide&#34;&gt;A field guide&lt;/h2&gt;
 &lt;p&gt;The internet is a digital infrastructure at scale. Let’s unpack that for a moment.&lt;/p&gt;
@@ -119,9 +130,9 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
     </item>
     <item>
       <title>Multiple Ways to Go Cloud</title>
-      <link>http://localhost:1313/posts/three-ways-to-go-cloud/</link>
+      <link>http://localhost:1313/book/value/three-ways-to-go-cloud/</link>
       <pubDate>Sun, 03 Jun 2018 17:06:57 +0000</pubDate>
-      <guid>http://localhost:1313/posts/three-ways-to-go-cloud/</guid>
+      <guid>http://localhost:1313/book/value/three-ways-to-go-cloud/</guid>
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.&lt;/p&gt;
 &lt;h1 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h1&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>

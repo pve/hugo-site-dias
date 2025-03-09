@@ -46,7 +46,7 @@ params:
       - name: "The blog"
         url: "/posts/"
       - name: "The book"
-        url: "/book/" 
+        url: "/book/landing" 
       - name: "The OG site"
         url: "/ogsite/" 
 
@@ -57,7 +57,7 @@ menu:
   main:
     - identifier: book
       name: "The Book"
-      url: /book/
+      url: /book/landing
       weight: 10
     - identifier: posts
       name: Blog

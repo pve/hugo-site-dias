@@ -1,7 +1,7 @@
 ---
 date: '2025-03-08T17:57:16Z'
 draft: false
-title: 'What are the AI digital infrastructures?'
+title: 'What are AI digital infrastructures?'
 ---
 
 The AI landscape has many digital infrastructures.
