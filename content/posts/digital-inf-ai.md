@@ -17,7 +17,7 @@ A trained language model is effectively a piece of software. You feed it text, a
 ```mermaid
 block-beta
 
-in space llm:2 space out
+space in space llm:2 space out space
 in["Prompt"] --> llm["Large Language Model"]
 llm--> out["Completion"]
 

@@ -6,8 +6,22 @@
     <description>Recent content in Building Cloud Business Cases on DigInfAtScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Mar 2025 14:07:53 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 16:31:09 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chapter 2</title>
+      <link>http://localhost:1313/book/chapter-2/</link>
+      <pubDate>Sun, 09 Mar 2025 16:31:09 +0000</pubDate>
+      <guid>http://localhost:1313/book/chapter-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 1</title>
+      <link>http://localhost:1313/book/chapter-1/</link>
+      <pubDate>Sun, 09 Mar 2025 16:30:57 +0000</pubDate>
+      <guid>http://localhost:1313/book/chapter-1/</guid>
+      <description>&lt;p&gt;Text for chapter 1&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Digital Infrastructures - the graphic novel</title>
       <link>http://localhost:1313/posts/graphic-novel-page1/</link>

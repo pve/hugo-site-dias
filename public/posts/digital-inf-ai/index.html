@@ -154,7 +154,7 @@ A trained model is the result of processing a lot of training data by a specific
 <p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
 <pre class="mermaid">block-beta
 
-in space llm:2 space out
+space in space llm:2 space out space
 in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
 llm--&gt; out[&#34;Completion&#34;]
 

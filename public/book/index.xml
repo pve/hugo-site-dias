@@ -6,6 +6,40 @@
     <description>Recent content in Digital Infrastructures at Scale on DigInfAtScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 09 Mar 2025 16:47:09 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Landing</title>
+      <link>http://localhost:1313/book/landing/</link>
+      <pubDate>Sun, 09 Mar 2025 16:47:09 +0000</pubDate>
+      <guid>http://localhost:1313/book/landing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;This book is in progress!&lt;/strong&gt; Each chapter is a refined version of blog insights.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chapters:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/preface/&#34;&gt;Preface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/intro/&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/02-diginfra/&#34;&gt;Digital Infrastructure Essentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/03-value/&#34;&gt;Value&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/04-power/&#34;&gt;Power&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/05-risk/&#34;&gt;Risk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/wrap/&#34;&gt;Wrapping up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[More coming soon&amp;hellip;]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Not all chapters are finalized. Blog articles might be included later!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chapter 2</title>
+      <link>http://localhost:1313/book/chapter-2/</link>
+      <pubDate>Sun, 09 Mar 2025 16:31:09 +0000</pubDate>
+      <guid>http://localhost:1313/book/chapter-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chapter 1</title>
+      <link>http://localhost:1313/book/chapter-1/</link>
+      <pubDate>Sun, 09 Mar 2025 16:30:57 +0000</pubDate>
+      <guid>http://localhost:1313/book/chapter-1/</guid>
+      <description>&lt;p&gt;Text for chapter 1&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
