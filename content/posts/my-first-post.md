@@ -1,7 +1,7 @@
 ---
 date: '2025-02-27T09:09:43Z'
 draft: false
-title: 'A mermaid diagram'
+title: 'A mermaid diagram example'
 ---
 
 A diagram should automagically appear here.

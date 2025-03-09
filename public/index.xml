@@ -6,8 +6,29 @@
     <description>Recent content in Building Cloud Business Cases on DigInfatScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Mar 2025 22:04:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 11:06:48 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Positions of Power in IT</title>
+      <link>http://localhost:1313/posts/positions-of-power-it/</link>
+      <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/positions-of-power-it/</guid>
+      <description>&lt;p&gt;One of the aspirations of &amp;lsquo;Digital Infrastructures at Scale&amp;rsquo; is to give you tools to influence the professional situation in which you find yourself.
+A situation where your objective is to effect a certain transformation.&lt;/p&gt;
+&lt;p&gt;Two major examples of positions of power in IT are architects and auditors/assessors.&lt;/p&gt;
+&lt;p&gt;An IT architect likes to create new stuff. Think of a new application that allows business users to work more effectively, for example a new customer relationship management (CRM) system. It is a piece of technology, but it will also be accompanied by new workflows and ways of working together, if it is to be succesful. It is a new technical and social reality in which new things are possible in an organisation.
+Other IT architects like to create, for example, digital infrastructures that will enable the faster deployment of such applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What are the AI digital infrastructures?</title>
+      <link>http://localhost:1313/posts/digital-inf-ai/</link>
+      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
+      <guid>http://localhost:1313/posts/digital-inf-ai/</guid>
+      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
+&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
+&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How Can We Achieve Autonomy Over Our Digital Infrastructures?</title>
       <link>http://localhost:1313/posts/how-can-we-achieve-autonomy/</link>
@@ -47,7 +68,7 @@
 &lt;p&gt;It is at scale, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the infrastructure part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>A mermaid diagram</title>
+      <title>A mermaid diagram example</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Thu, 27 Feb 2025 09:09:43 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
