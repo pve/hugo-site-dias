@@ -13,7 +13,10 @@
       <link>http://localhost:1313/book/diginfra/deployment-diagrams/</link>
       <pubDate>Sun, 09 Mar 2025 21:19:45 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/deployment-diagrams/</guid>
-      <description></description>
+      <description>&lt;p&gt;Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.&lt;/p&gt;
+&lt;h1 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h1&gt;
+&lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
+&lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Book contents</title>
