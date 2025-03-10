@@ -40,13 +40,13 @@ params:
     title: "Digital Infrastructures at Scale"
     subtitle: "How digital infrastructures at scale lead to value, power, and risk."
     imageUrl: "craiyonmushrooms.png"  # Add an image in `static/`
-    imageWidth: 800
-    imageHeight: 800
+    imageWidth: 700
+    imageHeight: 700
     buttons:
-      - name: "The blog"
-        url: "/posts/"
       - name: "The book"
         url: "/book/landing" 
+      - name: "The blog"
+        url: "/posts/"
       - name: "The OG site"
         url: "/ogsite/" 
 
