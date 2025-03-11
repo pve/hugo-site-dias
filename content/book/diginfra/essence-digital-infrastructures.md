@@ -1,6 +1,6 @@
 ---
 date: '2025-03-10T21:34:21Z'
-draft: true
+draft: false
 title: 'The Essence of Digital Infrastructures'
 ---
 
@@ -18,3 +18,4 @@ Digital infrastructures are sometimes called platforms. In the 1990s Windows was
 
 What sets digital infrastructures apart in my opinion is that, thanks to automation, their scale, geographical reach and deployment speed can be orders of magnitude bigger than that of other infrastructures. That has a lot in interesting effects, which we'll explore in this book. 
 
+In summary, digital infrastructures are about services that organisations deliver to independent consumers, while at the same time these services are subject to automation. That gives a tremendous dynamic in that relationship, and leads to new value, new power, and new risk.
