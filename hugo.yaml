@@ -56,7 +56,7 @@ params:
 menu:
   main:
     - identifier: book
-      name: "The Book"
+      name: "Book"
       url: /book/landing
       weight: 10
     - identifier: posts

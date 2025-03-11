@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-10T21:34:21+00:00</lastmod>
+    <lastmod>2025-03-11T09:10:54+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/</loc>
-    <lastmod>2025-03-10T21:34:21+00:00</lastmod>
+    <lastmod>2025-03-11T09:10:54+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/value/intro-to-value/</loc>
+    <lastmod>2025-03-11T09:10:54+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</loc>
     <lastmod>2025-03-10T21:34:21+00:00</lastmod>
