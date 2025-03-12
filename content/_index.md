@@ -1,5 +1,5 @@
 ---
-title: "Building Cloud Business Cases"
+title: "Diginf Scales"
 description: "Insights and strategies for scaling digital infrastructure."
 cover:
   image: "craiyonmushrooms.png" # Add an image in `static/`

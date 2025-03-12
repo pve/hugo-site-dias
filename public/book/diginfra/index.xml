@@ -6,17 +6,24 @@
     <description>Recent content in What are digital infrastructures? on DigInfAtScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2025 21:34:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Mar 2025 21:15:40 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agile Requires Cloud</title>
+      <link>http://localhost:1313/book/diginfra/agile-requires-cloud/</link>
+      <pubDate>Wed, 12 Mar 2025 21:15:40 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/agile-requires-cloud/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
+Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
+&lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Essence of Digital Infrastructures</title>
       <link>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</link>
       <pubDate>Mon, 10 Mar 2025 21:34:21 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s take a moment to review what I consider to be a digital infrastructure.
-It will be hard to define it with scientific rigor, in the same way that it is hard to unambiguously define what, for example, a car is.
-There will always be edge cases.&lt;/p&gt;
-&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;</description>
+      <description>&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;
+&lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that are the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deployment Diagrams</title>

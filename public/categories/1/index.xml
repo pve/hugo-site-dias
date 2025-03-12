@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>1 on DigInfAtScale</title>
+    <link>http://localhost:1313/categories/1/</link>
+    <description>Recent content in 1 on DigInfAtScale</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Jul 2019 00:02:16 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agile Requires Cloud</title>
+      <link>http://localhost:1313/book/diginfra/agile-development-requires-modern-digital-infrastructures/</link>
+      <pubDate>Wed, 12 Mar 2025 21:15:40 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/agile-development-requires-modern-digital-infrastructures/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
+Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.
+Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
