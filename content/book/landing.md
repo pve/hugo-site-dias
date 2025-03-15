@@ -8,10 +8,11 @@ title: 'Book contents'
 **Chapters:**
 1. [Preface](/book/preface/)
 2. [Introduction](/book/intro/)
-2. [Digital Infrastructure Essentials](/book/diginfra/)
+2. [Essentials](/book/diginfra/)
 3. [Value](/book/value/)
 4. [Power](/book/power/)
 5. [Risk](/book/risk/)
-6. [Wrapping up](/book/wrap/)
+6. [Cases](/book/cases/)
+7. [Wrapping up](/book/wrap/)
 
 _Not all chapters are finalized. Blog articles might be included later!_

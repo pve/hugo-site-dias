@@ -5,11 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Digital Infrastructures at Scale | DigInfAtScale</title>
+<title>What a lunch in Spain taught me about digital infrastructures | DigInfAtScale</title>
 <meta name="keywords" content="">
-<meta name="description" content="A collection of insights on scaling cloud infrastructure.">
+<meta name="description" content="In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
+And as we had enough time, we had lunch on the way.
+At the restaurant&rsquo;s checkout I noticed a peculiar array of devices. There were four payment terminals.
+
+I&rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/">
+<link rel="canonical" href="http://localhost:1313/book/diginfra/lunch-spain/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +22,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/book/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/lunch-spain/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +62,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -122,148 +125,46 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    Digital Infrastructures at Scale
-  </h1>
-  <div class="post-description">
-    A collection of insights on scaling cloud infrastructure.
-  </div>
-</header>
-<div class="post-content"><p><strong>This book is in progress!</strong> Each chapter is a refined version of blog insights.</p>
-<p>%% this not the main page for this book.</p>
-<p><strong>Chapters:</strong></p>
-<ol>
-<li><a href="/book/01-intro/">Introduction</a></li>
-<li><a href="/book/diginfra/">Digital Infrastructure Essentials</a></li>
-<li><a href="/book/03-value/">Value</a></li>
-<li><a href="/book/04-power/">Power</a></li>
-<li><a href="/book/05-risk/">Risk</a></li>
-<li>[Cases]</li>
-<li><a href="/book/06-security/">Wrapping up</a></li>
-<li>[More coming soon&hellip;]</li>
-</ol>
-<p><em>Not all chapters are finalized. Blog articles might be included later!</em></p>
+<main class="main">
 
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      What a lunch in Spain taught me about digital infrastructures
+    </h1>
+    <div class="post-meta"><span title='2025-03-15 16:06:44 +0000 UTC'>March 15, 2025</span>
 
 </div>
+  </header> 
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Book contents
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This book is in progress! Each chapter is a refined version of blog insights.
-Chapters:
-Preface Introduction Essentials Value Power Risk Cases Wrapping up Not all chapters are finalized. Blog articles might be included later!
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 16:47:09 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Book contents" href="http://localhost:1313/book/landing/"></a>
-</article>
+  
+  <p><i>⏳ 3 min read</i></p>
+  
+  <div class="post-content"><p>In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
+And as we had enough time, we had lunch on the way.</p>
+<p>At the restaurant&rsquo;s checkout I noticed a peculiar array of devices. There were four payment terminals.</p>
+<p><img alt="payment terminals" loading="lazy" src="/payterminal-716603.jpg"></p>
+<p>I&rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.</p>
+<p>A closer inspection revealed that each was associated with a different bank.
+So apparently, depending on the bank that a <strong>customer</strong> of the restaurant works with, the restaurant needs to have a payment terminal associated with that.</p>
+<p>To me, this does not sound optimal for the merchant. It takes money and deskspace to accomodate all those different payment networks. The alternative is that the customer can&rsquo;t use their electronic payment system. That won&rsquo;t make them happy, and the last thing you want as a merchant is to have unhappy customers.</p>
+<p>An online payment system, in this case with cards and terminals, is an infrastructure. and arguably a digital infrastructure. It serves many users: customers, merchants, and in this case the bank. One infrastructure for each bank.</p>
+<p>I would argue that there is a benefit in having a digital infrastructure like this that serves most banks, instead of just one. For example, you would not have to replicate installation and maintenance of those payment terminals. And indeed, in the current day and age, it seems to be the normal thing to do.</p>
+<p>But apparently, it was hard to get to such a common system. So hard in fact, that it made sense for the banks and the merchants to waste all that money on replicating an infrastructure and foregoing all the benefits of a shared system.</p>
+<p>There are a few hypotheses on why this is so.</p>
+<p>Let&rsquo;s analyse this and see what causes this situation.</p>
+<p>I&rsquo;d like to bring into the perspective that services such as these eveolve. They don&rsquo;t come into existence and remain stationary forever. We&rsquo;ll also want to look at the actors involved and their objectives and possible actions.</p>
+<p>The actors involved (not even mentioning other stakeholders) include the bank(s), the merchants and the customers. These are the most impotant ones, on the level of the actual payments. (There are other stakeholders looking more toward the impact on society as a whole.)</p>
+<p>The banks probably expected to reduce costs and have more happy merchants. And having this benefit earlier rather than later, probably compensated for the higher cost of building out your own digital infrastructure for your merchants.</p>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Wrap up
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 18:54:36 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Wrap up" href="http://localhost:1313/book/wrap/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Risks of digital infrastructures
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-09 18:54:30 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Risks of digital infrastructures" href="http://localhost:1313/book/risk/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Power
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 18:54:24 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Power" href="http://localhost:1313/book/power/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Value
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 18:54:18 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Value" href="http://localhost:1313/book/value/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are digital infrastructures?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 18:54:11 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to What are digital infrastructures?" href="http://localhost:1313/book/diginfra/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Introduction
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 18:53:44 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Introduction" href="http://localhost:1313/book/intro/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Index
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 16:52:22 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Index" href="http://localhost:1313/book/index/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Preface
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-09 16:51:04 +0000 UTC'>March 9, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Preface" href="http://localhost:1313/book/preface/"></a>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
 </article>
     </main>
     
