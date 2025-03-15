@@ -1,0 +1,38 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", async function () {
+    try {
+      if (typeof Fuse === "undefined") {
+        console.error("❌ Fuse.js is not loaded!");
+        return;
+      }
+
+      let response = await fetch('/index.json');
+      let pages = await response.json();
+
+      let fuse = new Fuse(pages, { keys: ['title', 'content'], threshold: 0.3 });
+
+      let searchBox = document.querySelector("input#search-box, input.search-input");
+      let resultsContainer = document.getElementById("search-results");
+
+      if (!searchBox) {
+        console.error("❌ Search input not found.");
+        return;
+      }
+
+      searchBox.addEventListener("input", function () {
+        let query = searchBox.value.trim();
+        let results = query ? fuse.search(query) : [];
+
+        resultsContainer.innerHTML = results
+          .map(r => `<li><a href="${r.item.url}">${r.item.title}</a></li>`)
+          .join("");
+      });
+
+      console.log("✅ Search initialized successfully.");
+
+    } catch (error) {
+      console.error("❌ Error initializing search:", error);
+    }
+  });
+</script>
