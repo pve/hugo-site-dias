@@ -6,8 +6,18 @@
     <description>Recent content in Peter&#39;s Griddle on DigInfAtScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Mar 2025 14:07:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Mar 2025 12:26:58 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The US Air Force Zero Trust Strategy</title>
+      <link>http://localhost:1313/posts/airforce-zero-trust-strategy/</link>
+      <pubDate>Fri, 21 Mar 2025 12:26:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/airforce-zero-trust-strategy/</guid>
+      <description>&lt;p&gt;Who is really doing Zero Trust?&lt;/p&gt;
+&lt;p&gt;Well, the US Air Force is. Here is my summary, with some comments, of their strategy document for the benefit of my Certificate of Competence in Zero Trust (CCZT) learners. In fact, this is an edited version of a conversation we had during one of our classes.&lt;/p&gt;
+&lt;p&gt;You can download the full strategy &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20API%20Reference%20Architecture%202.0.pdf&#34;&gt;here&lt;/a&gt;, and the current roadmap &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20Enterprise%20Zero%20Trust%20Roadmap%20and%20Release%20Notes_v2.0.pdf?ver=36cbAKNEe7JiRVAPFwWepg%3d%3d&#34;&gt;here&lt;/a&gt;, all linked from &lt;a href=&#34;https://www.dafcio.af.mil/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I think the fundamental first important point about the strategy document is that it exists at all. There is an actual organization of significant size that has a strategy and is implementing it. Many can learn from this.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Digital Infrastructures - the graphic novel</title>
       <link>http://localhost:1313/posts/graphic-novel-page1/</link>
