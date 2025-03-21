@@ -19,17 +19,6 @@
 &lt;p&gt;I think the fundamental first important point about the strategy document is that it exists at all. There is an actual organization of significant size that has a strategy and is implementing it. Many can learn from this.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Snippets</title>
-      <link>http://localhost:1313/snippets/</link>
-      <pubDate>Wed, 19 Mar 2025 12:05:12 +0000</pubDate>
-      <guid>http://localhost:1313/snippets/</guid>
-      <description>&lt;p&gt;Risk: LMS 3-2&lt;/p&gt;
-&lt;p&gt;CERN data center&lt;/p&gt;
-&lt;p&gt;verhaal over corporate en MKB&lt;/p&gt;
-&lt;p&gt;How technical debt works: negative investment externalities.&lt;/p&gt;
-&lt;p&gt;But of course you have this discussion on shared services. As a matter of fact, I keep talking about the book that I&amp;rsquo;m probably not going to finish, but it&amp;rsquo;s still a nice frame of reference. Now digital infrastructures at scale - there are a few very essential elements in there. The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it&amp;rsquo;s amenable to automation. These two together give a really interesting socio-political economic dynamic. And that&amp;rsquo;s what you need to understand if you want your shared service to keep operating - or if you don&amp;rsquo;t want it to operate, but that&amp;rsquo;s a different story.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>What a lunch in Spain taught me about digital infrastructures</title>
       <link>http://localhost:1313/book/diginfra/lunch-spain/</link>
       <pubDate>Sat, 15 Mar 2025 16:06:44 +0000</pubDate>
@@ -48,15 +37,6 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
 Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
 &lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Intro to Risk</title>
-      <link>http://localhost:1313/book/risk/intro-to-risk/</link>
-      <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
-      <description>&lt;p&gt;In a digital world, it is not always easy to think through what risk is. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
-&lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.&lt;/p&gt;
-&lt;p&gt;In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The value of digital infrastructures</title>
