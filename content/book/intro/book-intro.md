@@ -4,14 +4,12 @@ draft: false
 title: 'Book Intro'
 ---
 
-# How Digital Infrastructures at scale create value, power, and risk.
+# How Digital Infrastructures at scale create value, power, and risk: a field guide
+The internet is a _digital infrastructure at scale_. Let’s unpack that for a moment. 
 
-## A field guide
-The internet is a digital infrastructure at scale. Let’s unpack that for a moment. 
+It is _digital_, because it moves bits between devices.
 
-It is digital, because it moves bits between devices.
-
-It is at scale, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the infrastructure part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later. 
+It is _at scale_, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the _infrastructure_ part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later. 
 
 Looking at it through the lens of infrastructures allows us to understand use cases, abuse cases, and how to define, build and manage things like the internet.
 

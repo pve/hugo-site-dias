@@ -6,8 +6,18 @@
     <description>Recent content in Diginf Scales on DigInfAtScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Mar 2025 16:06:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 12:05:12 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snippets</title>
+      <link>http://localhost:1313/snippets/</link>
+      <pubDate>Wed, 19 Mar 2025 12:05:12 +0000</pubDate>
+      <guid>http://localhost:1313/snippets/</guid>
+      <description>&lt;p&gt;Risk: LMS 3-2&lt;/p&gt;
+&lt;p&gt;CERN data center&lt;/p&gt;
+&lt;p&gt;verhaal over corporate en MKB&lt;/p&gt;
+&lt;p&gt;How technical debt works: negative investment externalities.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>What a lunch in Spain taught me about digital infrastructures</title>
       <link>http://localhost:1313/book/diginfra/lunch-spain/</link>
@@ -141,11 +151,10 @@ Back in the old days, business software was primarily written to automate &lt;st
       <link>http://localhost:1313/book/intro/book-intro/</link>
       <pubDate>Thu, 27 Feb 2025 16:59:05 +0000</pubDate>
       <guid>http://localhost:1313/book/intro/book-intro/</guid>
-      <description>&lt;h1 id=&#34;how-digital-infrastructures-at-scale-create-value-power-and-risk&#34;&gt;How Digital Infrastructures at scale create value, power, and risk.&lt;/h1&gt;
-&lt;h2 id=&#34;a-field-guide&#34;&gt;A field guide&lt;/h2&gt;
-&lt;p&gt;The internet is a digital infrastructure at scale. Let’s unpack that for a moment.&lt;/p&gt;
-&lt;p&gt;It is digital, because it moves bits between devices.&lt;/p&gt;
-&lt;p&gt;It is at scale, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the infrastructure part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;how-digital-infrastructures-at-scale-create-value-power-and-risk-a-field-guide&#34;&gt;How Digital Infrastructures at scale create value, power, and risk: a field guide&lt;/h1&gt;
+&lt;p&gt;The internet is a &lt;em&gt;digital infrastructure at scale&lt;/em&gt;. Let’s unpack that for a moment.&lt;/p&gt;
+&lt;p&gt;It is &lt;em&gt;digital&lt;/em&gt;, because it moves bits between devices.&lt;/p&gt;
+&lt;p&gt;It is &lt;em&gt;at scale&lt;/em&gt;, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the &lt;em&gt;infrastructure&lt;/em&gt; part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A mermaid diagram example</title>

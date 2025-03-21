@@ -13,4 +13,6 @@ With a bit of luck and planning, this can be structured in a book that gives you
 
 Watch it come together, and please share your thoughts with me.
 
-Find me on LinkedIn (Peter HJ van Eijk)
+Find me on LinkedIn (Peter HJ van Eijk) for inquiries about coaching, consulting, and workshops.
+
+More information on [cloud security training](https://thecloudinstructor.com) and [Zero Trust support program](https://cczt.clubcloudcomputing.com).
