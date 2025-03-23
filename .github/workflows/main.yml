@@ -15,7 +15,10 @@ jobs:
 
       - name: Count words in Markdown files
         run: |
+          total_words=0
           for file in $(find . -name "*.md"); do
             words=$(wc -w < "$file")
             echo "$file: $words words"
+            total_words=$((total_words + words))
           done
+          echo "Total: $total_words words"
