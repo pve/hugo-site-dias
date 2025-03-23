@@ -1,4 +1,21 @@
+name: Word Count in Markdown Files
+
 on:
-  pull_request:
+  push:
     branches:
-    - main
+      - '**'
+
+jobs:
+  word_count:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Count words in Markdown files
+        run: |
+          for file in $(find . -name "*.md"); do
+            words=$(wc -w < "$file")
+            echo "$file: $words words"
+          done
