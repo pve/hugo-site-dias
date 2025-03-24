@@ -8,7 +8,7 @@ Here is an example of AI-assisted risk classification. I downloaded some of the 
 
 For each entry about 30 fields are available, including name, classification, owner, et cetera.
 
-Here is my dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register. 
+I did some dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register. 
 
 Me: _Here are three examples. Please return the name of the system, and your assessment if it uses an LLM or not._
 

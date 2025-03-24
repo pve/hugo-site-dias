@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Peter&#39;s Griddle on DigInfAtScale</title>
+    <title>Peter&#39;s Griddle on Digital Infrastructures at Scale</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Peter&#39;s Griddle on DigInfAtScale</description>
+    <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Mar 2025 19:45:36 +0000</lastBuildDate>
@@ -15,7 +15,7 @@
       <guid>http://localhost:1313/posts/ai-risk-classification/</guid>
       <description>&lt;p&gt;Here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. Some of these are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;
 &lt;p&gt;For each entry about 30 fields are available, including name, classification, owner, et cetera.&lt;/p&gt;
-&lt;p&gt;Here is my dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register.&lt;/p&gt;</description>
+&lt;p&gt;I did some dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Applying technology by following a system</title>

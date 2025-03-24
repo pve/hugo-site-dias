@@ -1,6 +1,6 @@
 baseURL: https://digitalinfrastructures.nl
 languageCode: en-us
-title: DigInfAtScale
+title: Digital Infrastructures at Scale
 theme: ["PaperMod"]
 
 module:
