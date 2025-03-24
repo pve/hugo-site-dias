@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/technical-meta-model/</loc>
-    <lastmod>2025-03-22T17:56:43+00:00</lastmod>
+    <loc>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</loc>
+    <lastmod>2025-03-10T21:34:21+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/lunch-spain/</loc>
+    <lastmod>2025-03-15T16:06:44+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/deployment-diagrams/</loc>
+    <lastmod>2025-03-09T21:19:45+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ai-risk-classification/</loc>
+    <lastmod>2025-03-24T19:45:36+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-22T17:56:43+00:00</lastmod>
+    <lastmod>2025-03-24T19:45:36+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-03-24T19:45:36+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/technical-meta-model/</loc>
     <lastmod>2025-03-22T17:56:43+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/international-actors/</loc>
@@ -23,9 +35,6 @@
     <loc>http://localhost:1313/book/</loc>
     <lastmod>2025-03-15T16:06:44+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/book/diginfra/lunch-spain/</loc>
-    <lastmod>2025-03-15T16:06:44+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/book/diginfra/agile-requires-cloud/</loc>
     <lastmod>2025-03-12T21:15:40+00:00</lastmod>
   </url><url>
@@ -34,12 +43,6 @@
   </url><url>
     <loc>http://localhost:1313/book/value/intro-to-value/</loc>
     <lastmod>2025-03-11T09:10:54+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</loc>
-    <lastmod>2025-03-10T21:34:21+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/book/diginfra/deployment-diagrams/</loc>
-    <lastmod>2025-03-09T21:19:45+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/wrap/</loc>
     <lastmod>2025-03-09T18:54:36+00:00</lastmod>

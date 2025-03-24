@@ -6,8 +6,17 @@
     <description>Recent content in Peter&#39;s Griddle on DigInfAtScale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Mar 2025 17:56:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Mar 2025 19:45:36 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How AI Can Help IT Risk Classification</title>
+      <link>http://localhost:1313/posts/ai-risk-classification/</link>
+      <pubDate>Mon, 24 Mar 2025 19:45:36 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai-risk-classification/</guid>
+      <description>&lt;p&gt;Here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. Some of these are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;
+&lt;p&gt;For each entry about 30 fields are available, including name, classification, owner, et cetera.&lt;/p&gt;
+&lt;p&gt;Here is my dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Applying technology by following a system</title>
       <link>http://localhost:1313/posts/technical-meta-model/</link>
@@ -42,7 +51,7 @@ These conflicting views can best be seen as maps of the territory. And as I have
       <pubDate>Sun, 09 Mar 2025 14:07:53 +0000</pubDate>
       <guid>http://localhost:1313/posts/graphic-novel-page1/</guid>
       <description>&lt;p&gt;Here is the draft design of the graphic novel version of this book, which may or may not happen..&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;p&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Can We Achieve Autonomy Over Our Digital Infrastructures?</title>

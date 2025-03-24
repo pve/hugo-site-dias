@@ -21,7 +21,7 @@ A multinational corporation, even if it has public shareholders across the globe
 
 Similarly, NGOs such as ISO (International Standards Organisations) and the International Criminal Court are also established somewhere, and recognized by other countries, or not, as the case may be.
 
-Digital infrastructures don't necessarily map easily to a single organisation running them, or even governing them. The internet is a interesting and complicated example. On a day to day basis, internet service is largely provided by telecommunications companies owning the cables and radio base stations. Administering the coordination between these and other providers is done by a non-profit established in the US. But there are many more players in that space, often independent.
+Digital infrastructures don't necessarily map easily to a single organisation running them, or even governing them. The internet is a interesting and complicated example. On a day to day basis, internet service is largely provided by telecommunications companies owning the cables and radio base stations. Administering the coordination between these and other providers, for example on IP adresses, is done by a non-profit established in the US. But there are many more players in that space, often independent.
 
 In contrast to the multi nation view of the world is the perspective that what really matters in the international arena are the multinational corporations. They have significant control over the international flow of goods, services and investments. Understand that many of these corporations have annual turnovers that are larger than the gross domestic product of 80% of the world's countries.
 

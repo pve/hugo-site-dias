@@ -5,15 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>What a lunch in Spain taught me about digital infrastructures | DigInfAtScale</title>
+<title>How AI Can Help IT Risk Classification | DigInfAtScale</title>
 <meta name="keywords" content="">
-<meta name="description" content="In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
-And as we had enough time, we had lunch in La Jonquera.
-At the restaurant&rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.
-p
-I&rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.">
+<meta name="description" content="Here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch algorithm register, which is a public register of systems that use algorithms. Some of these are AI-based. Indeed, we have AI to help check on AI&hellip;
+For each entry about 30 fields are available, including name, classification, owner, et cetera.
+Here is my dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/lunch-spain/">
+<link rel="canonical" href="http://localhost:1313/posts/ai-risk-classification/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -22,7 +20,7 @@ I&rsquo;d never seen that. From what I know, a merchant works with a bank which 
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/lunch-spain/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/ai-risk-classification/">
 <noscript>
     <style>
         #theme-toggle,
@@ -131,9 +129,9 @@ I&rsquo;d never seen that. From what I know, a merchant works with a bank which 
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      What a lunch in Spain taught me about digital infrastructures
+      How AI Can Help IT Risk Classification
     </h1>
-    <div class="post-meta"><span title='2025-03-15 16:06:44 +0000 UTC'>March 15, 2025</span>
+    <div class="post-meta"><span title='2025-03-24 19:45:36 +0000 UTC'>March 24, 2025</span>
 
 </div>
   </header> 
@@ -141,30 +139,73 @@ I&rsquo;d never seen that. From what I know, a merchant works with a bank which 
   
   <p><i>⏳ 4 min read</i></p>
   
-  <div class="post-content"><p>In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
-And as we had enough time, we had lunch in La Jonquera.</p>
-<p>At the restaurant&rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.</p>
-<p>p<img alt="payment terminals" loading="lazy" src="/payterminal-716603.jpg"></p>
-<p>I&rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.</p>
-<p>A closer inspection revealed that each was associated with a different bank.
-So apparently, depending on the bank that a <strong>customer</strong> of the restaurant works with, the restaurant needed to have a payment terminal associated with that.</p>
-<p>To me, this does not sound optimal for the merchant. It takes money and deskspace to accomodate all those different payment networks. And if you have only one terminal many customers can&rsquo;t pay by card. That won&rsquo;t make them happy, and the last thing you want as a merchant is to have unhappy customers.</p>
-<p>An online payment system, in this case with cards and terminals, is an infrastructure. and arguably a digital infrastructure. It serves many users: customers, merchants, and in this case the bank. One infrastructure for each bank.</p>
-<p>It sounds obvious that there is a benefit in having a digital infrastructure like this that serves most banks, instead of just one. For example, you would not have to replicate installation and maintenance of those payment terminals. And indeed, in the current day and age, it seems to be the normal thing to do.</p>
-<p>But apparently, it was hard to get to such a common system. So hard in fact, that it made sense for the banks and the merchants to waste all that money on replicating an infrastructure and foregoing all the benefits of a shared system.</p>
-<p>There are a few hypotheses on why this is so.</p>
-<p>Let&rsquo;s analyse this and see what causes this situation.</p>
-<p>For one, services like these don&rsquo;t appear out of thin air. They evolve. They don&rsquo;t come into existence and remain stationary forever. There are actors and stakeholders that make them change.We&rsquo;ll have to look at the actors involved and their objectives and possible actions if we want to understand how such systems look like at any given moment.</p>
-<p>The main actors involved here are the bank(s), the merchants and the customers. When it comes to actual payments, these are the most important ones.</p>
-<p>The banks probably expected to reduce costs and have more happy merchants and customers. And having this benefit earlier rather than later probably compensated for the higher cost of building out your own digital infrastructure for your merchants.</p>
-<p>While it would be cheaper overall to have a digital infrastructure that is shared across all banks, there seems to be a valid reason to not have that, at least not to begin with.</p>
-<p>My hypotheses are: it takes time to agree on standards for interoperability and for actually setting up the service that is shared across banks. Not the least of your problems is who is going to own that infrastructure. It is likely to be a new legal entity. And that introduces a new stakeholder.</p>
-<p>Now back to the power dynamics that created the situation in the picture. Who benefits, who does not?</p>
-<p>The banks are faced with a choice between the short term gain of realizing a payment infrastructure, and the long term gain of reducing its cost. And as they are investing, they have some power.</p>
-<p>The merchant can chose between having multiple terminals, or sticking to just one, which amounts to a choice between spending money (and desk space) versus making customers unhappy.</p>
-<p>Finally, the choice for the customer is to pay cash or by card. The customer (and the other stakeholders) probably think that cards are a safer, and possibly cheaper alternative. The customer might therefore be led to feel that they prefer a merchant who accepts cards.</p>
-<p>The banks and the merchant apparently prefer short term revenu increase over long term cost savings.</p>
-<p>And as a result the power dynamics play out so that it is the customer who benefits, the banks that invest and reap more benefits, and the merchant has to pay for a lot of that. Maybe the merchant will see some cost reduction in their payments handling.</p>
+  <div class="post-content"><p>Here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch <a href="https://algoritmes.overheid.nl/en">algorithm register</a>, which is a public register of systems that use algorithms. Some of these are AI-based. Indeed, we have AI to help check on AI&hellip;</p>
+<p>For each entry about 30 fields are available, including name, classification, owner, et cetera.</p>
+<p>Here is my dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register.</p>
+<p>Me: <em>Here are three examples. Please return the name of the system, and your assessment if it uses an LLM or not.</em></p>
+<p>Claude:</p>
+<p>I&rsquo;ll analyze each of these systems and classify them as either LLM-based or fixed algorithm-based.</p>
+<ol>
+<li>
+<p><strong>Virtual municipality assistant Gem</strong></p>
+<ul>
+<li><strong>Classification</strong>: Uses Machine Learning, but not an LLM</li>
+<li><strong>Reasoning</strong>: The description states it uses &ldquo;supervised machine learning&rdquo; to match questions with answers from a predefined library. It calculates which existing answer best matches the question rather than generating new responses. This is more characteristic of a simpler ML classification system than an LLM.</li>
+</ul>
+</li>
+<li>
+<p><strong>AI WBSO pre-advice</strong></p>
+<ul>
+<li><strong>Classification</strong>: Machine Learning, but not an LLM</li>
+<li><strong>Reasoning</strong>: The system is described as a &ldquo;self-learning Machine Learning model&rdquo; that makes predictions based on specific variables to estimate risk. It appears to be a predictive model focused on risk assessment rather than language processing or generation, making it a non-LLM algorithm.</li>
+</ul>
+</li>
+<li>
+<p><strong>Energy label generator (EP-Online)</strong></p>
+<ul>
+<li><strong>Classification</strong>: Fixed algorithm</li>
+<li><strong>Reasoning</strong>: This system uses predefined formulas and calculations to generate energy labels based on specific inputs. The description mentions algorithms but refers to calculation procedures described in technical documentation rather than any learning models. This is clearly a deterministic system using fixed rules and formulas.</li>
+</ul>
+</li>
+</ol>
+<p>None of these three systems appear to use Large Language Models. They each use different approaches: supervised machine learning for answer retrieval, predictive machine learning for risk assessment, and fixed algorithmic calculations for energy label generation.</p>
+<p>Me: <em>Which of these processes personal data, just based on the description?</em></p>
+<p>Claude:</p>
+<p>Based on the descriptions provided, here&rsquo;s my analysis of which systems process personal data:</p>
+<ol>
+<li>
+<p><strong>Virtual municipality assistant Gem</strong></p>
+<ul>
+<li><strong>Processes personal data</strong>: Yes</li>
+<li><strong>Reasoning</strong>: Although not explicitly stated, this system interacts directly with residents and businesses through chat functionality on municipal websites. It collects questions from users and monitors their feedback. The system likely processes some form of user identifiers to maintain conversation context and improve answer selection based on prior interactions.</li>
+</ul>
+</li>
+<li>
+<p><strong>AI WBSO pre-advice</strong></p>
+<ul>
+<li><strong>Processes personal data</strong>: No</li>
+<li><strong>Reasoning</strong>: The description explicitly states &ldquo;No personal data are used in the algorithm in any way.&rdquo; It mentions using data like number of projects, hours, wages, etc., but specifically notes that only the case number is used as an identification label. A DPIA (Data Protection Impact Assessment) was carried out with the outcome that no personal data were processed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Energy label generator (EP-Online)</strong></p>
+<ul>
+<li><strong>Processes personal data</strong>: Yes</li>
+<li><strong>Reasoning</strong>: This system likely processes personal data as it generates energy labels for specific buildings owned by specific individuals. The fact that a DPIA was conducted (and is being updated) suggests personal data is involved. The system records data about buildings that can be linked to their owners, especially since the labels are required when selling or renting properties.</li>
+</ul>
+</li>
+</ol>
+<p>Based solely on these descriptions, the Virtual municipality assistant Gem and the Energy label generator appear to process personal data, while the AI WBSO pre-advice system explicitly does not.</p>
+<p>(end of chat interaction)</p>
+<p>This is a promising beginning. There are around 800 of these cases to review.</p>
+<p>Interesting followup questions either on the entries or on the approach could be:</p>
+<ol>
+<li>Is the description consistent with its classification? For example, there is a &lsquo;risk&rsquo; field, but does it match the rest of the description?</li>
+<li>Which entries seem to be missing crucial information?</li>
+<li>Which entries store specific types of data?</li>
+<li>Can we automate this a bit more? Stuffing the entries in a chatbot prompt does not scale very well.</li>
+<li>What is the accuracy, and will other models have similar accuracy?</li>
+</ol>
 
 
   </div>
