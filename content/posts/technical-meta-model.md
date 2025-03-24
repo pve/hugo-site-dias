@@ -1,6 +1,6 @@
 ---
 date: '2025-03-22T17:56:43Z'
-draft: true
+draft: false
 title: 'Applying technology by following a system'
 ---
 
@@ -11,9 +11,9 @@ By understanding how applying technology really works, you can be more effective
 
 Let's start by looking at a few examples that I have used these in teaching IT students. The first example is fixing the WiFi at home, and the second one is selecting a new mobile phone for grandma. Think for a moment how you would approach these two cases. For a more corporate example you can think of replacing a content management system, or introducing a new security capability.
 
-The core idea of technology is that by doing an intervention in the real world, you are achieving certain desirable outcomes. This is in contract to the core idea of science, which is that by doing observations on the real world, we can derive certain conclusions that allow us to predict what might happen under similar conditions in the future. Science seeks to understand and explain the underlying principles governing phenomena, while technology applies that understanding to create tools, systems, or processes that achieve specific goals.
+The core idea of technology is that by doing an intervention in the real world, you  achieve certain desirable outcomes. This is in contract to the core idea of science, which is that by doing observations on the real world, we can derive certain conclusions that allow us to predict what might happen under similar conditions in the future. Science seeks to understand and explain the underlying principles governing phenomena, while technology applies that understanding to create tools, systems, or processes that achieve specific goals.
 
-Of course, science and technology are intertwined: technology relies on scientific insights to be more effective, while science often needs technology in order to do observations.
+Of course, science and technology are intertwined: technology relies on scientific insights to be more effective, while science often needs technology in order to do experiments and observations.
 
 As our ambition is to apply technology in a bit more systematic way, let us begin to ask ourselves what it is that we try to achieve.
 
@@ -31,12 +31,20 @@ Now we can turn our attention to the intervention. In our WiFi case, are we buyi
 
 How does the intervention lead to the desired result? In other words: how does one lead to the other? Maybe you have a theory about that. Maybe you'll just need to figure it out. In both cases you start with a hypothesis that explains how the intervention leads to a result.
 
-For example: because WiFi quality decreases with distance between device and base station, we install more base stations in order to have better quality around the house. Another example would be: because there is limited frequency spectrum, we reconfigure our existing base stations to use different frequencies in order for them to interfere less, and have better network quality within their range.
+For example: because WiFi signal strength (and therefore quality) decreases with distance between device and base station, we install more base stations in order to have better quality around the house. Another example would be: because there is limited frequency spectrum, we reconfigure our existing base stations to use different frequencies in order for them to interfere less, and have better network quality within their range.
 
 As you can see from this example, your assumptions, your hypotheses, matter.
 
 We can morph these statements in a variety of useful ways. This is what makes for professional application of technology. Here are some variations.
 
-By theory Z, we do intervention X to achieve result Y.
+1. By theory Z, we do intervention X to achieve result Y.
 
-We hypothesize that intervention X will lead to result Y, in which case we can start to form a theory.
+1. We hypothesize that intervention X will lead to result Y, in which case we can start to form a theory.
+
+1. How does intervention X lead to desirable outcomes?
+
+1. We are looking to achieve result Y, and we have theory Z. What does that tell us about possible interventions? 
+
+Once we grasp this, we can move on to more complicated scenarios. We can flesh out what a better outcome is. We can use this to do design in more complicated situations such as with more stakeholders. We can also use this to do more systematic troubleshooting. 
+
+More about that later. 
