@@ -4,11 +4,12 @@ draft: false
 title: 'How AI Can Help IT Risk Classification'
 ---
 
-Here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch [algorithm register](https://algoritmes.overheid.nl/en), which is a public register of systems that use algorithms. Some of these are AI-based. Indeed, we have AI to help check on AI...
+How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors. 
 
-For each entry about 30 fields are available, including name, classification, owner, et cetera.
+But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch [algorithm register](https://algoritmes.overheid.nl/en), which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
+Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI...
 
-I did some dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register. 
+My approach was to do some dialogue with Claude 3.7 Sonnet on a few cases. You can get the full description of each case from the algorithm register. 
 
 Me: _Here are three examples. Please return the name of the system, and your assessment if it uses an LLM or not._
 

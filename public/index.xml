@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Mar 2025 19:45:36 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Mar 2025 22:02:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Essence of Digital Infrastructures</title>
@@ -36,6 +36,21 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;h1 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h1&gt;
 &lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>5 Elements of Cloud Security</title>
+      <link>http://localhost:1313/posts/5-elements-of-cloud-security/</link>
+      <pubDate>Mon, 24 Mar 2025 22:02:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/5-elements-of-cloud-security/</guid>
+      <description>&lt;p&gt;Review this video to get up to speed on the 5 elements of cloud security. Cloud security includes IT security as we know it, but will evolve to be more mature than that. In the video I elaborate on those 5 as they have evolved. Then I will talk about how cloud changes our approach to those five elements.
+Here is a summary of the points in the video.&lt;/p&gt;
+&lt;h2 id=&#34;five-elements-of-cloud-security&#34;&gt;Five elements of cloud security&lt;/h2&gt;
+&lt;p&gt;Historically, IT security started with &lt;strong&gt;infrastructure security&lt;/strong&gt;. Just protecting the data center was good enough. But that was before we had data communications.
+When data started to escape the confines of the data center we needed to protect it. Typically through encryption. Hence we need &lt;strong&gt;data security&lt;/strong&gt;.
+As the world wide web developed, we saw applications being exposed to it, and frankly, be vulnerable. So that is when &lt;strong&gt;application security&lt;/strong&gt; started to become more important.
+With the proliferation of applications, both within the enterprises and outside of it, keeping track of user access became more important too. That is when we start talking more about &lt;strong&gt;user security&lt;/strong&gt; (or identity management).
+Finally, as we are outsourcing to more and more individual software and cloud companies, we need to structure our oversight of those service relationships. That requires &lt;strong&gt;governance&lt;/strong&gt; over contracts, SLAs, and more.
+Cloud computing is having an impact on all of these five elements. Some are made easier, some increase in significance, some will change shape. Watch the video for more details.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How AI Can Help IT Risk Classification</title>

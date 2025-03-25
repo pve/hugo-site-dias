@@ -3,6 +3,8 @@ languageCode: en-us
 title: Digital Infrastructures at Scale
 theme: ["PaperMod"]
 
+enableRobotsTXT: true
+
 module:
   hugoVersion:
     extended: true
