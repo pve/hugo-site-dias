@@ -3,7 +3,7 @@ date: '2025-03-09T16:47:09Z'
 draft: false
 title: 'Book contents'
 ---
-**This book is in progress!** Each chapter is a refined version of blog insights.
+**This book is in progress!** Here are the chapters that have had blog posts promoted to them.
 
 **Chapters:**
 1. [Preface](/book/preface/)
