@@ -9,6 +9,20 @@
     <lastBuildDate>Thu, 27 Mar 2025 20:34:01 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Elements of the Digital World</title>
+      <link>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</link>
+      <pubDate>Thu, 27 Mar 2025 20:34:01 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</guid>
+      <description>&lt;p&gt;It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.&lt;/p&gt;
+&lt;p&gt;The three major elements of digital infrastructures are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Storage&lt;/li&gt;
+&lt;li&gt;Networks&lt;/li&gt;
+&lt;li&gt;Processors&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>The Essence of Digital Infrastructures</title>
       <link>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</link>
       <pubDate>Mon, 10 Mar 2025 21:34:21 +0000</pubDate>
@@ -36,13 +50,6 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;h1 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h1&gt;
 &lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Elements of Digitalinfrastructures</title>
-      <link>http://localhost:1313/posts/elements-of-digitalinfrastructures/</link>
-      <pubDate>Thu, 27 Mar 2025 20:34:01 +0000</pubDate>
-      <guid>http://localhost:1313/posts/elements-of-digitalinfrastructures/</guid>
-      <description></description>
     </item>
     <item>
       <title>Value in Process Improvement</title>

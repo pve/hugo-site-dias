@@ -6,8 +6,22 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Mar 2025 16:06:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Mar 2025 20:34:01 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elements of the Digital World</title>
+      <link>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</link>
+      <pubDate>Thu, 27 Mar 2025 20:34:01 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</guid>
+      <description>&lt;p&gt;It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.&lt;/p&gt;
+&lt;p&gt;The three major elements of digital infrastructures are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Storage&lt;/li&gt;
+&lt;li&gt;Networks&lt;/li&gt;
+&lt;li&gt;Processors&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Essence of Digital Infrastructures</title>
       <link>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</link>
