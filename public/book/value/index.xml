@@ -6,10 +6,20 @@
     <description>Recent content in Value on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Mar 2025 09:10:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Mar 2025 20:33:42 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/value/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The value of digital infrastructures</title>
+      <title>Value in Process Improvement</title>
+      <link>http://localhost:1313/book/value/value-in-process-improvement/</link>
+      <pubDate>Thu, 27 Mar 2025 20:33:42 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/value-in-process-improvement/</guid>
+      <description>&lt;p&gt;Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.&lt;/p&gt;
+&lt;p&gt;The internet is a prime example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
+&lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;
+&lt;p&gt;For an example of a supporting digital infrastructure you can look at an IaaS provider, which enables data processing and storage for other applications and infrastructures.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Provider Value</title>
       <link>http://localhost:1313/book/value/intro-to-value/</link>
       <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>
       <guid>http://localhost:1313/book/value/intro-to-value/</guid>

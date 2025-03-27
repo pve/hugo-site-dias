@@ -1,7 +1,7 @@
 ---
 date: '2025-03-11T09:10:54Z'
 draft: false
-title: 'The value of digital infrastructures'
+title: 'Provider Value'
 ---
 
 The sheer separation of the providers from the consumers of these infrastructures drives a lot of the value.

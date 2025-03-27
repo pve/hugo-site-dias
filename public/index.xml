@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Mar 2025 22:02:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Mar 2025 20:34:01 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Essence of Digital Infrastructures</title>
@@ -38,28 +38,40 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Elements of Digitalinfrastructures</title>
+      <link>http://localhost:1313/posts/elements-of-digitalinfrastructures/</link>
+      <pubDate>Thu, 27 Mar 2025 20:34:01 +0000</pubDate>
+      <guid>http://localhost:1313/posts/elements-of-digitalinfrastructures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Value in Process Improvement</title>
+      <link>http://localhost:1313/book/value/value-in-process-improvement/</link>
+      <pubDate>Thu, 27 Mar 2025 20:33:42 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/value-in-process-improvement/</guid>
+      <description>&lt;p&gt;Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.&lt;/p&gt;
+&lt;p&gt;The internet is a prime example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
+&lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;
+&lt;p&gt;For an example of a supporting digital infrastructure you can look at an IaaS provider, which enables data processing and storage for other applications and infrastructures.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>5 Elements of Cloud Security</title>
       <link>http://localhost:1313/posts/5-elements-of-cloud-security/</link>
       <pubDate>Mon, 24 Mar 2025 22:02:03 +0000</pubDate>
       <guid>http://localhost:1313/posts/5-elements-of-cloud-security/</guid>
-      <description>&lt;p&gt;Review this video to get up to speed on the 5 elements of cloud security. Cloud security includes IT security as we know it, but will evolve to be more mature than that. In the video I elaborate on those 5 as they have evolved. Then I will talk about how cloud changes our approach to those five elements.
-Here is a summary of the points in the video.&lt;/p&gt;
-&lt;h2 id=&#34;five-elements-of-cloud-security&#34;&gt;Five elements of cloud security&lt;/h2&gt;
-&lt;p&gt;Historically, IT security started with &lt;strong&gt;infrastructure security&lt;/strong&gt;. Just protecting the data center was good enough. But that was before we had data communications.
-When data started to escape the confines of the data center we needed to protect it. Typically through encryption. Hence we need &lt;strong&gt;data security&lt;/strong&gt;.
-As the world wide web developed, we saw applications being exposed to it, and frankly, be vulnerable. So that is when &lt;strong&gt;application security&lt;/strong&gt; started to become more important.
-With the proliferation of applications, both within the enterprises and outside of it, keeping track of user access became more important too. That is when we start talking more about &lt;strong&gt;user security&lt;/strong&gt; (or identity management).
-Finally, as we are outsourcing to more and more individual software and cloud companies, we need to structure our oversight of those service relationships. That requires &lt;strong&gt;governance&lt;/strong&gt; over contracts, SLAs, and more.
-Cloud computing is having an impact on all of these five elements. Some are made easier, some increase in significance, some will change shape. Watch the video for more details.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;five-elements-of-cloud-security&#34;&gt;Five elements of cloud security&lt;/h2&gt;
+&lt;p&gt;Historically, IT security started with &lt;strong&gt;infrastructure security&lt;/strong&gt;. Just protecting the data center was good enough. But that was before we had data communications.&lt;/p&gt;
+&lt;p&gt;When data started to escape the confines of the data center we needed to protect it. Typically through encryption. Hence we need &lt;strong&gt;data security&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;As the world wide web developed, we saw applications being exposed to it, and frankly, be vulnerable. So that is when &lt;strong&gt;application security&lt;/strong&gt; started to become more important.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How AI Can Help IT Risk Classification</title>
       <link>http://localhost:1313/posts/ai-risk-classification/</link>
       <pubDate>Mon, 24 Mar 2025 19:45:36 +0000</pubDate>
       <guid>http://localhost:1313/posts/ai-risk-classification/</guid>
-      <description>&lt;p&gt;Here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. Some of these are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;
-&lt;p&gt;For each entry about 30 fields are available, including name, classification, owner, et cetera.&lt;/p&gt;
-&lt;p&gt;I did some dialogue with Claude 3.7 Sonnet. You can get the full description of each case from the algorithm register.&lt;/p&gt;</description>
+      <description>&lt;p&gt;How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors.&lt;/p&gt;
+&lt;p&gt;But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
+Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Applying technology by following a system</title>
@@ -119,7 +131,7 @@ Back in the old days, business software was primarily written to automate &lt;st
 &lt;p&gt;In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The value of digital infrastructures</title>
+      <title>Provider Value</title>
       <link>http://localhost:1313/book/value/intro-to-value/</link>
       <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>
       <guid>http://localhost:1313/book/value/intro-to-value/</guid>
