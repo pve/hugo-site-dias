@@ -3,16 +3,8 @@ date: '2025-03-09T16:47:09Z'
 draft: false
 title: 'Book contents'
 ---
-**This book is in progress!** Here are the chapters that have had blog posts promoted to them.
 
-**Chapters:**
-1. [Preface](/book/preface/)
-2. [Introduction](/book/intro/)
-2. [Essentials](/book/diginfra/)
-3. [Value](/book/value/)
-4. [Power](/book/power/)
-5. [Risk](/book/risk/)
-6. [Cases](/book/cases/)
-7. [Wrapping up](/book/wrap/)
+{{< book-chapters >}}
 
 _Not all chapters are finalized. Blog articles might be included later!_
+

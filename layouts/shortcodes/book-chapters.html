@@ -1,0 +1,17 @@
+{{ $book := .Site.GetPage "section" "book" }}
+{{ if $book }}
+  <ol>
+    {{ range $book.Sections }}
+    <li>
+      <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+      <ol>
+        {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ol>
+    </li>
+    {{ end }}
+  </ol>
+{{ else }}
+  <p>No book chapters found.</p>
+{{ end }}

@@ -33,6 +33,7 @@ services:
     id: G-Y6WKY1Y13E
 
 params:
+  showBreadcrumbs: true
   homeInfoParams:
     Title: "🚀 Welcome to Digital Infrastructures"
     Content: "Exploring digital infrastructures, cloud security and business strategies."

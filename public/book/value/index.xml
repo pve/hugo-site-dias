@@ -19,6 +19,15 @@
 &lt;p&gt;For an example of a supporting digital infrastructure you can look at an IaaS provider, which enables data processing and storage for other applications and infrastructures.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Agile Requires Cloud</title>
+      <link>http://localhost:1313/book/value/agile-requires-cloud/</link>
+      <pubDate>Wed, 12 Mar 2025 21:15:40 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/agile-requires-cloud/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
+Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
+&lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Provider Value</title>
       <link>http://localhost:1313/book/value/intro-to-value/</link>
       <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>

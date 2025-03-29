@@ -9,6 +9,15 @@
     <lastBuildDate>Thu, 27 Mar 2025 20:34:01 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Intro to Risk</title>
+      <link>http://localhost:1313/book/risk/intro-to-risk/</link>
+      <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
+      <description>&lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
+&lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Elements of the Digital World</title>
       <link>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</link>
       <pubDate>Thu, 27 Mar 2025 20:34:01 +0000</pubDate>
@@ -121,21 +130,12 @@ These conflicting views can best be seen as maps of the territory. And as I have
     </item>
     <item>
       <title>Agile Requires Cloud</title>
-      <link>http://localhost:1313/book/diginfra/agile-requires-cloud/</link>
+      <link>http://localhost:1313/book/value/agile-requires-cloud/</link>
       <pubDate>Wed, 12 Mar 2025 21:15:40 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/agile-requires-cloud/</guid>
+      <guid>http://localhost:1313/book/value/agile-requires-cloud/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
 Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
 &lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Intro to Risk</title>
-      <link>http://localhost:1313/book/risk/intro-to-risk/</link>
-      <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
-      <description>&lt;p&gt;In a digital world, it is not always easy to think through what risk is. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
-&lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.&lt;/p&gt;
-&lt;p&gt;In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Provider Value</title>
@@ -150,18 +150,95 @@ Back in the old days, business software was primarily written to automate &lt;st
       <link>http://localhost:1313/book/landing/</link>
       <pubDate>Sun, 09 Mar 2025 16:47:09 +0000</pubDate>
       <guid>http://localhost:1313/book/landing/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;This book is in progress!&lt;/strong&gt; Here are the chapters that have had blog posts promoted to them.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Chapters:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/preface/&#34;&gt;Preface&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/intro/&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/diginfra/&#34;&gt;Essentials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/value/&#34;&gt;Value&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/power/&#34;&gt;Power&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/risk/&#34;&gt;Risk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/cases/&#34;&gt;Cases&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/wrap/&#34;&gt;Wrapping up&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
+      <description>&lt;ol&gt;
+    
+    &lt;li&gt;
+      &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/book/preface/&#34;&gt;Preface&lt;/a&gt;&lt;/strong&gt;
+      &lt;ol&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/preface/preface/&#34;&gt;Preface&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/book/intro/&#34;&gt;Introduction&lt;/a&gt;&lt;/strong&gt;
+      &lt;ol&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/intro/book-intro/&#34;&gt;Book Intro&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/book/diginfra/&#34;&gt;What are digital infrastructures?&lt;/a&gt;&lt;/strong&gt;
+      &lt;ol&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/&#34;&gt;Elements of the Digital World&lt;/a&gt;&lt;/li&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/diginfra/essence-digital-infrastructures/&#34;&gt;The Essence of Digital Infrastructures&lt;/a&gt;&lt;/li&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/diginfra/lunch-spain/&#34;&gt;What a lunch in Spain taught me about digital infrastructures&lt;/a&gt;&lt;/li&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/diginfra/deployment-diagrams/&#34;&gt;Deployment Diagrams&lt;/a&gt;&lt;/li&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/diginfra/digital-inf-ai/&#34;&gt;What are AI digital infrastructures?&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/book/value/&#34;&gt;Value&lt;/a&gt;&lt;/strong&gt;
+      &lt;ol&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/value/value-in-process-improvement/&#34;&gt;Value in Process Improvement&lt;/a&gt;&lt;/li&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/value/agile-requires-cloud/&#34;&gt;Agile Requires Cloud&lt;/a&gt;&lt;/li&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/value/intro-to-value/&#34;&gt;Provider Value&lt;/a&gt;&lt;/li&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/value/three-ways-to-go-cloud/&#34;&gt;Multiple Ways to Go Cloud&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/book/power/&#34;&gt;Power&lt;/a&gt;&lt;/strong&gt;
+      &lt;ol&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/power/positions-of-power-it/&#34;&gt;Positions of Power in IT&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/book/risk/&#34;&gt;Risks of digital infrastructures&lt;/a&gt;&lt;/strong&gt;
+      &lt;ol&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/risk/intro-to-risk/&#34;&gt;Intro to Risk&lt;/a&gt;&lt;/li&gt;
+        
+        &lt;li&gt;&lt;a href=&#34;http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/&#34;&gt;Retrofitting Zero Trust on an existing application: an illustration&lt;/a&gt;&lt;/li&gt;
+        
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/book/wrap/&#34;&gt;Wrap up&lt;/a&gt;&lt;/strong&gt;
+      &lt;ol&gt;
+        
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+      &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/book/index/&#34;&gt;Index&lt;/a&gt;&lt;/strong&gt;
+      &lt;ol&gt;
+        
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    
+  &lt;/ol&gt;
+
+
 &lt;p&gt;&lt;em&gt;Not all chapters are finalized. Blog articles might be included later!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
