@@ -47,7 +47,7 @@ params:
     imageHeight: 700
     buttons:
       - name: "The book"
-        url: "/book/landing" 
+        url: "/book/" 
       - name: "The blog"
         url: "/posts/"
       - name: "The OG site"
@@ -60,7 +60,7 @@ menu:
   main:
     - identifier: book
       name: "Book"
-      url: /book/landing
+      url: /book/
       weight: 10
     - identifier: posts
       name: Blog

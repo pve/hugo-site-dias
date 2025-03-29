@@ -6,17 +6,8 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Mar 2025 20:34:01 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Mar 2025 12:43:33 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Intro to Risk</title>
-      <link>http://localhost:1313/book/risk/intro-to-risk/</link>
-      <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
-      <description>&lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
-&lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.&lt;/p&gt;
-&lt;p&gt;In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Elements of the Digital World</title>
       <link>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</link>
@@ -61,6 +52,14 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Firstcase</title>
+      <link>http://localhost:1313/book/cases/firstcase/</link>
+      <pubDate>Sat, 29 Mar 2025 12:43:33 +0000</pubDate>
+      <guid>http://localhost:1313/book/cases/firstcase/</guid>
+      <description>&lt;p&gt;Lorem ipsum&lt;/p&gt;
+&lt;h1 id=&#34;lorem&#34;&gt;Lorem&lt;/h1&gt;</description>
+    </item>
+    <item>
       <title>Value in Process Improvement</title>
       <link>http://localhost:1313/book/value/value-in-process-improvement/</link>
       <pubDate>Thu, 27 Mar 2025 20:33:42 +0000</pubDate>
@@ -99,15 +98,6 @@ Some of the systems in the registry are AI-based. Indeed, we have AI to help che
 By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>International Actors</title>
-      <link>http://localhost:1313/posts/international-actors/</link>
-      <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
-      <guid>http://localhost:1313/posts/international-actors/</guid>
-      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
-By the nature of scaling, very few digital infrastructures are influenced by national actors only. The international arena is complex, and there are even conflicting views on how it is made up.
-These conflicting views can best be seen as maps of the territory. And as I have mentioned earlier, a map is only relevant for a specific purpose.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>The US Air Force Zero Trust Strategy</title>
       <link>http://localhost:1313/posts/airforce-zero-trust-strategy/</link>
       <pubDate>Fri, 21 Mar 2025 12:26:58 +0000</pubDate>
@@ -116,17 +106,6 @@ These conflicting views can best be seen as maps of the territory. And as I have
 &lt;p&gt;Well, the US Air Force is. Here is my summary, with some comments, of their strategy document for the benefit of my Certificate of Competence in Zero Trust (CCZT) learners. In fact, this is an edited version of a conversation we had during one of our classes.&lt;/p&gt;
 &lt;p&gt;You can download the full strategy &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20API%20Reference%20Architecture%202.0.pdf&#34;&gt;here&lt;/a&gt;, and the current roadmap &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20Enterprise%20Zero%20Trust%20Roadmap%20and%20Release%20Notes_v2.0.pdf?ver=36cbAKNEe7JiRVAPFwWepg%3d%3d&#34;&gt;here&lt;/a&gt;, all linked from &lt;a href=&#34;https://www.dafcio.af.mil/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I think the fundamental first important point about the strategy document is that it exists at all. There is an actual organization of significant size that has a strategy and is implementing it. Many can learn from this.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Snippets</title>
-      <link>http://localhost:1313/snippets/</link>
-      <pubDate>Wed, 19 Mar 2025 12:05:12 +0000</pubDate>
-      <guid>http://localhost:1313/snippets/</guid>
-      <description>&lt;p&gt;Risk: LMS 3-2&lt;/p&gt;
-&lt;p&gt;CERN data center&lt;/p&gt;
-&lt;p&gt;verhaal over corporate en MKB&lt;/p&gt;
-&lt;p&gt;How technical debt works: negative investment externalities.&lt;/p&gt;
-&lt;p&gt;But of course you have this discussion on shared services. As a matter of fact, I keep talking about the book that I&amp;rsquo;m probably not going to finish, but it&amp;rsquo;s still a nice frame of reference. Now digital infrastructures at scale - there are a few very essential elements in there. The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it&amp;rsquo;s amenable to automation. These two together give a really interesting socio-political economic dynamic. And that&amp;rsquo;s what you need to understand if you want your shared service to keep operating - or if you don&amp;rsquo;t want it to operate, but that&amp;rsquo;s a different story.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agile Requires Cloud</title>
