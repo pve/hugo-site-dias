@@ -18,8 +18,8 @@ Finally, as we are outsourcing to more and more individual software and cloud co
 
 Cloud computing is having an impact on all of these five elements. Some are made easier, some increase in significance, some will change shape. Watch the video for more details.
 
-Review this video to learn more on these 5 elements of cloud security. Cloud security includes IT security as we know it, but will evolve to be more mature than that. In the video I elaborate on those 5 as they have evolved. Then I talk about how cloud changes our approach to those five elements.
+Review this video to learn more on these five elements of cloud security. Cloud security includes IT security as we know it, but will evolve to be more mature than that. In the video I elaborate on those five as they have evolved. Then I talk about how cloud changes our approach to those five elements.
 
-[![ Watch the video ](https://img.youtube.com/vi/B_jjbsMnJTw/maxresdefault.jpg)](https://youtu.be/B_jjbsMnJTw)
+{{< youtube B_jjbsMnJTw >}}
 
 More in other units.

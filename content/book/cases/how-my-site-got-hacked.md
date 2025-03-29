@@ -24,7 +24,7 @@ Now for the analysis and eradication phase. What the heck was going on? I had ve
 In the mean time, three more reports came in on the site, adding TrendMicro to the list of blockers.
 It took my site manager until Tuesday to fix it. Very disappointing. He also was not very communicative about the real underlying problem, other than that is was caused by a WordPress plugin that had not been updated. He did manage to restore the site and clean it. I think.
 
-After I discovered the problem, independently I got a report from a SEO expert, who noticed funny code in the pages, and weird statistics in the analytics. He told me that the malware was in fact a 5 year old Mozilla exploit, which is number 17974 on exploit-db nNo link to that exploit, because it gives my site a bad reputation).
+After I discovered the problem, independently I got a report from a SEO expert, who noticed funny code in the pages, and weird statistics in the analytics. He told me that the malware was in fact a 5 year old Mozilla exploit, which is number 17974 on exploit-db (No link to that exploit, because it gives my site a bad reputation).
 
 It appeared to be an automated infection targeted at Mozilla users who had not updated their browsers. My site does not store any customer data, all form submissions go to a separate autoresponder and shopping cart service. So no data was lost or breached.
 
