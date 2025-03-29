@@ -1,7 +1,7 @@
 ---
 date: '2025-03-09T16:47:09Z'
 draft: false
-title: 'Book contents'
+title: 'Contents'
 layout: "bookcontents"
 
 ---

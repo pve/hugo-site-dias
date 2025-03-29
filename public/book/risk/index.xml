@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Risks of digital infrastructures on Digital Infrastructures at Scale</title>
-    <link>http://localhost:1313/book/risk/</link>
+    <link>https://digitalinfrastructures.nl/book/risk/</link>
     <description>Recent content in Risks of digital infrastructures on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Feb 2025 14:15:21 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/book/risk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://digitalinfrastructures.nl/book/risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
-      <link>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</link>
+      <link>https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/</link>
       <pubDate>Fri, 28 Feb 2025 14:15:21 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</guid>
+      <guid>https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/</guid>
       <description>&lt;p&gt;Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.&lt;/p&gt;
 &lt;p&gt;Consider this hypothetical situation.&lt;/p&gt;
 &lt;p&gt;You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &amp;lsquo;who&amp;rsquo;, &amp;lsquo;what&amp;rsquo;, &amp;lsquo;when&amp;rsquo;, etcetera of allowed communication.&lt;/p&gt;</description>

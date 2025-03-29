@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Peter&#39;s Griddle on Digital Infrastructures at Scale</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://digitalinfrastructures.nl/posts/</link>
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Mar 2025 22:02:03 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://digitalinfrastructures.nl/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5 Elements of Cloud Security</title>
-      <link>http://localhost:1313/posts/5-elements-of-cloud-security/</link>
+      <link>https://digitalinfrastructures.nl/posts/5-elements-of-cloud-security/</link>
       <pubDate>Mon, 24 Mar 2025 22:02:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/5-elements-of-cloud-security/</guid>
+      <guid>https://digitalinfrastructures.nl/posts/5-elements-of-cloud-security/</guid>
       <description>&lt;h2 id=&#34;five-elements-of-cloud-security&#34;&gt;Five elements of cloud security&lt;/h2&gt;
 &lt;p&gt;Historically, IT security started with &lt;strong&gt;infrastructure security&lt;/strong&gt;. Just protecting the data center was good enough. But that was before we had data communications.&lt;/p&gt;
 &lt;p&gt;When data started to escape the confines of the data center we needed to protect it. Typically through encryption. Hence we need &lt;strong&gt;data security&lt;/strong&gt;.&lt;/p&gt;
@@ -20,27 +20,27 @@
     </item>
     <item>
       <title>How AI Can Help IT Risk Classification</title>
-      <link>http://localhost:1313/posts/ai-risk-classification/</link>
+      <link>https://digitalinfrastructures.nl/posts/ai-risk-classification/</link>
       <pubDate>Mon, 24 Mar 2025 19:45:36 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-risk-classification/</guid>
+      <guid>https://digitalinfrastructures.nl/posts/ai-risk-classification/</guid>
       <description>&lt;p&gt;How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors.&lt;/p&gt;
 &lt;p&gt;But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Applying technology by following a system</title>
-      <link>http://localhost:1313/posts/technical-meta-model/</link>
+      <link>https://digitalinfrastructures.nl/posts/technical-meta-model/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/technical-meta-model/</guid>
+      <guid>https://digitalinfrastructures.nl/posts/technical-meta-model/</guid>
       <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
 &lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
 By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The US Air Force Zero Trust Strategy</title>
-      <link>http://localhost:1313/posts/airforce-zero-trust-strategy/</link>
+      <link>https://digitalinfrastructures.nl/posts/airforce-zero-trust-strategy/</link>
       <pubDate>Fri, 21 Mar 2025 12:26:58 +0000</pubDate>
-      <guid>http://localhost:1313/posts/airforce-zero-trust-strategy/</guid>
+      <guid>https://digitalinfrastructures.nl/posts/airforce-zero-trust-strategy/</guid>
       <description>&lt;p&gt;Who is really doing Zero Trust?&lt;/p&gt;
 &lt;p&gt;Well, the US Air Force is. Here is my summary, with some comments, of their strategy document for the benefit of my Certificate of Competence in Zero Trust (CCZT) learners. In fact, this is an edited version of a conversation we had during one of our classes.&lt;/p&gt;
 &lt;p&gt;You can download the full strategy &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20API%20Reference%20Architecture%202.0.pdf&#34;&gt;here&lt;/a&gt;, and the current roadmap &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20Enterprise%20Zero%20Trust%20Roadmap%20and%20Release%20Notes_v2.0.pdf?ver=36cbAKNEe7JiRVAPFwWepg%3d%3d&#34;&gt;here&lt;/a&gt;, all linked from &lt;a href=&#34;https://www.dafcio.af.mil/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
@@ -48,26 +48,26 @@ By understanding how applying technology really works, you can be more effective
     </item>
     <item>
       <title>Digital Infrastructures - the graphic novel</title>
-      <link>http://localhost:1313/posts/graphic-novel-page1/</link>
+      <link>https://digitalinfrastructures.nl/posts/graphic-novel-page1/</link>
       <pubDate>Sun, 09 Mar 2025 14:07:53 +0000</pubDate>
-      <guid>http://localhost:1313/posts/graphic-novel-page1/</guid>
+      <guid>https://digitalinfrastructures.nl/posts/graphic-novel-page1/</guid>
       <description>&lt;p&gt;Here is the draft design of the graphic novel version of this book, which may or may not happen..&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;https://digitalinfrastructures.nl/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Can We Achieve Autonomy Over Our Digital Infrastructures?</title>
-      <link>http://localhost:1313/posts/how-can-we-achieve-autonomy/</link>
+      <link>https://digitalinfrastructures.nl/posts/how-can-we-achieve-autonomy/</link>
       <pubDate>Sun, 02 Mar 2025 22:04:34 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-can-we-achieve-autonomy/</guid>
+      <guid>https://digitalinfrastructures.nl/posts/how-can-we-achieve-autonomy/</guid>
       <description>&lt;h3 id=&#34;building-our-own-cloud-kootwijk-rethinking-digital-sovereignty&#34;&gt;Building Our Own Cloud Kootwijk: Rethinking Digital Sovereignty&lt;/h3&gt;
 &lt;p&gt;In the Netherlands, we are currently engaged in a heated debate about the undesirable dominance of big tech, particularly over a significant portion of the digital infrastructure of the Dutch government. This includes email, file storage, and many other forms of digital storage and processing—most of which are handled by American big tech companies.&lt;/p&gt;
 &lt;p&gt;I am sure a similar debate is going on in many other countries.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A mermaid diagram example</title>
-      <link>http://localhost:1313/posts/mermaid-example/</link>
+      <link>https://digitalinfrastructures.nl/posts/mermaid-example/</link>
       <pubDate>Thu, 27 Feb 2025 09:09:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/mermaid-example/</guid>
+      <guid>https://digitalinfrastructures.nl/posts/mermaid-example/</guid>
       <description>&lt;p&gt;A diagram should automagically appear here.&lt;/p&gt;
 &lt;pre class=&#34;mermaid&#34;&gt;%%  icons from https://iconify.design
 architecture-beta

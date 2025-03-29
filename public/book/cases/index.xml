@@ -6,15 +6,14 @@
     <description>Recent content in Cases on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Mar 2025 12:43:33 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Mar 2025 15:35:53 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/cases/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Firstcase</title>
-      <link>http://localhost:1313/book/cases/firstcase/</link>
-      <pubDate>Sat, 29 Mar 2025 12:43:33 +0000</pubDate>
-      <guid>http://localhost:1313/book/cases/firstcase/</guid>
-      <description>&lt;p&gt;Lorem ipsum&lt;/p&gt;
-&lt;h1 id=&#34;lorem&#34;&gt;Lorem&lt;/h1&gt;</description>
+      <title>How My Site Got Hacked</title>
+      <link>http://localhost:1313/book/cases/how-my-site-got-hacked/</link>
+      <pubDate>Sat, 29 Mar 2025 15:35:53 +0000</pubDate>
+      <guid>http://localhost:1313/book/cases/how-my-site-got-hacked/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
