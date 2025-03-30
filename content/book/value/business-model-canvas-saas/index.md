@@ -9,7 +9,7 @@ Here is a high level overview of the SaaS provider business model and some of th
 ## Business Model Canvas
 
 The business model canvas is a visual template for developing and discussion business models. For more information see <http://en.wikipedia.org/wiki/Business_Model_Canvas> and <http://www.businessmodelgeneration.com/>
-[![SaaS Cloud canvas](data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)](<https://www.clubcloudcomputing.com/wp-content/uploads/2014/12/SaaS-Cloud-canvas.png>)
+
 The business model canvas has nine basic building blocks and specific relations between those building blocks.
 As examples in this article I consider two hypothetical SaaS providers. The first one delivers bookkeeping software, the second one delivers a project collaboration platform.
 

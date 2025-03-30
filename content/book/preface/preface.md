@@ -1,33 +1,44 @@
 ---
 date: '2025-03-02T22:00:32Z'
-draft: true
+draft: false
 title: 'Preface'
 ---
 
 This book has been more than thirty years in the making.
-The two main reasons for that, as I look back on that now, are that the field of information has been developing so rapidly, and that I did not see the opportunity in my business to create a focus for which writing a book would make business sense. And if I did, the focus never seemed to last very long.
+The two main reasons for that, as I look back on that now, are that the field of Information Technology has been developing incredibly rapidly, and that I did not see the opportunity within my business to create a focus for which writing a book would make business sense. And if I did, the focus never seemed to last very long.
 
-Instead I wrote smaller pieces from time to time, as well as lots of short educational materials, triggered by a need from my learners.
+Instead I wrote smaller pieces from time to time, as well as lots of educational materials, triggered by a need from my learners.
 
-I did try to create a larger organised collection of knowledge, and even had a basic taxonomy in place, and raw input. But the dynamics of my professional live continuously outran my plans to turn it into a book.
+I did try to create a larger, organised collection of knowledge, and even had a basic taxonomy in place and raw input. But the dynamics of my professional life continuously outran my plans to turn it into a book.
 
-I have occupied myself with IT for over half a century now, arguably most of that in a professional capacity. For a substantial part of that time, I have been searching for some focus. It took me until the turn of the millenium to finally get some expression of that in the form of a professional branding statement. It went something like this.
+I have occupied myself with IT for over half a century now, arguably most of that in a professional capacity. For a substantial part of that time, I have been searching for some focus. It took me until the turn of the millennium to finally get an expression of that in the form of a professional branding statement. It went something like this.
 
 _Peter van Eijk is an innovative ICT strategist who makes connections between business, people and technology. With wit and confrontation he guides you to new approaches. He is inimitably hard core Internet oriented, yet never forgets that communication is between people, not machines._
 
 That message has served me well for a long time. And in fact it was the basis for the name of the business I set up in 2005: "Digital Infrastructures".
-I would like to think that I made up that phrase, because it has taken up a life on its own on a much larger scale, but in 2005 there was already a small IT company serving the local dentists in Oregon by that name. But I am fairly confident that through my former colleagues its use has accelerated.
+I would like to think that I made up that phrase, because it has taken up a life on its own on a much larger scale, but in 2005 there was already a small IT company serving the local dentists in Oregon by that name. Still, I am fairly confident that through my former colleagues its use has accelerated.
 
-Still, "Digital Infrastructures" is too broad a concept for an attractive book. "Cloud Computing" was a term with much wider appeal, at is has served me well. My business pivoted to cloud security training, which I have delivered in many countries over many years to many people.
+Nevertheless, "Digital Infrastructures" is too broad a concept to serve as the title for an attractive book. "Cloud Computing" was a term with much wider appeal, which has served me well. Around 2010, my business pivoted to cloud security training, which I have delivered in many countries over many years to many people.
 
-Cloud computing resonates with me, because it blends technology with business, and you need to understand both in order to truely understand cloud computing.
-
-To help develop this I took a side job as Associate Professor Cyber Security and Cloud at the Hogeschool Utrecht. It greatly helped my thinking in how to bring professional IT skills to the next generation.
+Cloud computing resonates with me, because it blends technology with business, and you need to understand both in order to truly understand its risks and benefits. I loved bringing this to professionals of all levels of experience. I even took a side job as Associate Professor of Cyber Security and Cloud at the Hogeschool Utrecht to bring it to the next generation. If one thing, that position greatly helped to develop my thinking on how to educate people in professional IT skills.
 
 But all good things come to an end.
 
-Technology develops in waves, and cloud computing is now mainstream.
+Technology develops in waves, is never stable, and cloud computing is now mainstream. I feel that this is one of the causes of the demise of my training business, which happened during and after the covid-19 pandemic.
 
-The demise of my training business, over the pandemic, also leads me to rethink my professional focus.
+At the same time, this adoption of more IT in general, and more cloud computing in particular, in businesses worldwide has raised the stakes. IT is becoming essential to many businesses. Marc Andreesen's 2011 essay "Why software is eating the world" outlines why many businesses are effectively IT and software businesses. And current day geopolitical tensions are spilling over to the digital domain in many different ways. There is no lack of importance in being able to navigate this space.
 
-Then, as the evolving cloud computing business models saturates the market while at the same time geopolitical tensions expand the battlefield into the digital domain.
+How to make sense of this, and how to position myself in a new and helpful way then became my question of urgence.
+Obviously, understanding of technology and business has an important role in this, but it started to become more and more clear to me that power dynamics are another important key to mapping the dynamics.
+
+The idea of more writing came back. No longer constrained by my focus on cloud security, I felt liberated to review some of the earlier writing I had done in this light. I also allowed myself to let go of aiming for the 'final answer', and instead see writing as a tool to understanding. "Writing to learn" by XXX was inspirational for that. And AI chatbots turned out to be a good tool for offloading my inner critic, so it no longer interfered so much with getting all these ideas out of my head, and into the public light.
+
+Still, I don't see this book finished soon. At the same time, I am working to make every draft useful to its intended audience. Scientific rigor isn't my main objective, though I try make clear what my assumptions are. I am more a pragmatic person. Can we make something that works and is useful?
+
+For decades I have felt that I could help people and teams be more successful in their handling of IT. In these writings I try to open up my mental toolbox for that. In the introduction of the book you'll find more elaboration of that.
+
+I am assuming that in your role, you will find that toolbox very relevant, and that you may not have had a formal education in any of the areas that I outlined above. In the introduction, I'll outline the relevant roles in more detai.
+
+I sure hope you find it useful.
+
+My thanks go to XXX
