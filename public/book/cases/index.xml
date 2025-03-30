@@ -13,7 +13,10 @@
       <link>http://localhost:1313/book/cases/how-my-site-got-hacked/</link>
       <pubDate>Sat, 29 Mar 2025 15:35:53 +0000</pubDate>
       <guid>http://localhost:1313/book/cases/how-my-site-got-hacked/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;detection&#34;&gt;Detection&lt;/h2&gt;
+&lt;p&gt;I should have acted on the first signals more aggressively. But let’s talk about that later in this story.
+Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.&lt;/p&gt;
+&lt;p&gt;The hack led to business damage at the end of one of my webinars. In 2016, on a Friday, I did a webinar, at the end of which I had two links to my site as a call to action.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

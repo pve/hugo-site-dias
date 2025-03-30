@@ -267,5 +267,17 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
 &lt;h1 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h1&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Business Model Canvas for SaaS Providers</title>
+      <link>http://localhost:1313/book/value/business-model-canvas-saas/</link>
+      <pubDate>Mon, 15 Dec 2014 11:18:17 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/business-model-canvas-saas/</guid>
+      <description>&lt;p&gt;As a follow up to the&lt;a href=&#34;https://www.clubcloudcomputing.com/2014/08/business-model-canvas-cloud-providers/&#34; title=&#34;Business Model Canvas for Cloud Providers&#34;&gt; earlier article on the IaaS business model&lt;/a&gt;, here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.&lt;/p&gt;
+&lt;h2 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h2&gt;
+&lt;p&gt;The business model canvas is a visual template for developing and discussion business models. For more information see &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;http://en.wikipedia.org/wiki/Business_Model_Canvas&lt;/a&gt; and &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;http://www.businessmodelgeneration.com/&lt;/a&gt;
+&lt;a href=&#34;https://www.clubcloudcomputing.com/wp-content/uploads/2014/12/SaaS-Cloud-canvas.png&#34;&gt;&lt;img alt=&#34;SaaS Cloud canvas&#34; loading=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&#34;&gt;&lt;/a&gt;
+The business model canvas has nine basic building blocks and specific relations between those building blocks.
+As examples in this article I consider two hypothetical SaaS providers. The first one delivers bookkeeping software, the second one delivers a project collaboration platform.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

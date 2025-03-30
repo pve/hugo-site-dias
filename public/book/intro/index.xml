@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Introduction on Digital Infrastructures at Scale</title>
-    <link>https://digitalinfrastructures.nl/book/intro/</link>
+    <link>http://localhost:1313/book/intro/</link>
     <description>Recent content in Introduction on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Feb 2025 16:59:05 +0000</lastBuildDate>
-    <atom:link href="https://digitalinfrastructures.nl/book/intro/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/book/intro/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Book Intro</title>
-      <link>https://digitalinfrastructures.nl/book/intro/book-intro/</link>
+      <title>Introduction</title>
+      <link>http://localhost:1313/book/intro/book-intro/</link>
       <pubDate>Thu, 27 Feb 2025 16:59:05 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/intro/book-intro/</guid>
-      <description>&lt;h1 id=&#34;how-digital-infrastructures-at-scale-create-value-power-and-risk-a-field-guide&#34;&gt;How Digital Infrastructures at scale create value, power, and risk: a field guide&lt;/h1&gt;
-&lt;p&gt;The internet is a &lt;em&gt;digital infrastructure at scale&lt;/em&gt;. Let’s unpack that for a moment.&lt;/p&gt;
+      <guid>http://localhost:1313/book/intro/book-intro/</guid>
+      <description>&lt;p&gt;The internet is a &lt;em&gt;digital infrastructure at scale&lt;/em&gt;. Let’s unpack that for a moment.&lt;/p&gt;
 &lt;p&gt;It is &lt;em&gt;digital&lt;/em&gt;, because it moves bits between devices.&lt;/p&gt;
 &lt;p&gt;It is &lt;em&gt;at scale&lt;/em&gt;, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the &lt;em&gt;infrastructure&lt;/em&gt; part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.&lt;/p&gt;</description>
     </item>

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Retrofitting Zero Trust on an existing application: an illustration | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.
 Consider this hypothetical situation.
 You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &lsquo;who&rsquo;, &lsquo;what&rsquo;, &lsquo;when&rsquo;, etcetera of allowed communication.">
 <meta name="author" content="">
-<link rel="canonical" href="https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/">
+<link rel="canonical" href="http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://digitalinfrastructures.nl/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://digitalinfrastructures.nl/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://digitalinfrastructures.nl/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://digitalinfrastructures.nl/apple-touch-icon.png">
-<link rel="mask-icon" href="https://digitalinfrastructures.nl/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/">
 <noscript>
     <style>
         #theme-toggle,
@@ -64,88 +64,7 @@ You have an application with hundreds of thousands of sensitive records, let’s
     startOnLoad: true,
   });
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag("js", new Date());
 
-	gtag("config", "G-Y6WKY1Y13E");
-</script><meta property="og:url" content="https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/">
-  <meta property="og:site_name" content="Digital Infrastructures at Scale">
-  <meta property="og:title" content="Retrofitting Zero Trust on an existing application: an illustration">
-  <meta property="og:description" content="Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.
-Consider this hypothetical situation.
-You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the ‘who’, ‘what’, ‘when’, etcetera of allowed communication.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="book">
-    <meta property="article:published_time" content="2025-02-28T14:15:21+00:00">
-    <meta property="article:modified_time" content="2025-02-28T14:15:21+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Retrofitting Zero Trust on an existing application: an illustration">
-<meta name="twitter:description" content="Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.
-Consider this hypothetical situation.
-You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &lsquo;who&rsquo;, &lsquo;what&rsquo;, &lsquo;when&rsquo;, etcetera of allowed communication.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Contents",
-      "item": "https://digitalinfrastructures.nl/book/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Risks of digital infrastructures",
-      "item": "https://digitalinfrastructures.nl/book/risk/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Retrofitting Zero Trust on an existing application: an illustration",
-      "item": "https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Retrofitting Zero Trust on an existing application: an illustration",
-  "name": "Retrofitting Zero Trust on an existing application: an illustration",
-  "description": "Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.\nConsider this hypothetical situation.\nYou have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the \u0026lsquo;who\u0026rsquo;, \u0026lsquo;what\u0026rsquo;, \u0026lsquo;when\u0026rsquo;, etcetera of allowed communication.\n",
-  "keywords": [
-    
-  ],
-  "articleBody": "Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.\nConsider this hypothetical situation.\nYou have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the ‘who’, ‘what’, ‘when’, etcetera of allowed communication.\narchitecture-beta group exec(server)[Execution environment] service users(cloud)[Cloud Users] service fw[Firewall] service app(database)[App] in exec users:R --\u003e L:fw fw:R --\u003e L:app We want to allow specific access for specific use cases and be explicit about it. However, to focus our efforts, it makes sense to also identify that our biggest risk is the exfiltration of a lot of those sensitive records: a data breach.\nThe allow rules Let’s begin with the ‘who.’ Who is accessing the information? The application in our example probably does authentication and authorization of users. Where do these come from, and how accurate is that information? Ideally, this comes from an up-to-date corporate directory, but even if it’s not, you can, for example, ask how quickly a departing user has their access revoked.\nThen the ‘what’. Which application and resources are we accessing? What are specific users allowed to do? As part of operational risk management, we have probably already identified who, based on their role, can modify records or do other critical actions. But think one step further. As our main fear is exfiltration of large amounts of data, we can look at where we can control that. Maybe we can disallow large downloads, for example, except when a timely ‘four eyes’ approval is in place.\n(By the way, I think it makes sense to look at large downloads as a risk separate from small data leaks. After all, many employees have access to small amounts of information, and that risk is typically already accepted).\nMoving on to the ‘when’. It can reduce risk to limit access to specific times of the day for most users. There is not necessarily a reason to allow more.\nNext is the ‘where’. Where are the users and the application located? Our case description does not give us a lot of information here. The application could be a server, which then has an IP address. And through a firewall combined with a geographical information feed, we may be able to restrict access to users based on their location.\nThe ‘why’ stands for the business reason. In this case, our data is sensitive, and we don’t want it to be exfiltrated. And in our analysis, we have identified several possible controls.\nHow: One layer of enforcement of this would be in the application itself. In the Zero Trust jargon, we are putting a Policy Enforcement Point in the application logic.\nThe mirror allow rule However, there is also another set of ‘allow rules’ that is often overlooked. I am tempted to call these the ‘mirror’ rules, but it is not a standard Zero Trust term.\nThe data and the application reside in a compute environment, for example a server. There may be malware running in that server. After all, one of the tenets of Zero Trust is ‘assume breach’. If the server has permission to access anything on the internet, that malware might easily exfiltrate large amounts of data.\nIn addition to looking at the user accessing the data, we are looking at the place where the data resides and see if its compute environment can access the world, and thus exfiltrate data. This is the mirror image of the first rule: you could say that subject and target are switched around.\nWe can apply the same Kipling method from the perspective of that server (or any compute environment that has the data in it). What is it allowed to do?\nThe ‘who’ then is the server, and there are various ways to identify it, depending on how it is set up and how we want to control what it can do. It can be an IP address or domain name, for example.\nWhat can the server access? The more limited that is, the better. It should probably be capable of logging somewhere, but it needs only limited DNS and internet access. There are likely to be integrations with other systems, but these should be enumerated and controlled.\nWhen can the server initiate contact? This seems less relevant to restrict, because logging and many integrations can be operational at any time.\nWhy is this access needed? As said earlier, any compute environment must be able to connect to certain other services for its functional operation. Yet that does not imply that it needs broad uncontrolled network access. And there are known cases of abusing overly permissive egress.\nHow can this rule be enforced? One way would be at the outer perimeter of the network, although it is also conceivable to do it through a dedicated firewall or a (network) security group in a cloud environment.\nWhat is the benefit here? In this example we have looked at a specific case of data that we want to protect. The Zero Trust approach and the Kipling method led us to various options that we have. These options allow us to hammer out implicit trust in an existing application.\nThe nice thing is that we can rate and rank these options based on their effectiveness, cost, and feasibility, all while focusing on one specific strategic asset that we want to protect. This is in stark contrast to a traditional approach where you start with strengthening the perimeter and just hope that this will have an impact on the one application that you want to protect first.\nImplication for maturity What we can also illustrate with this story is that, even though we can start with an individual application, many of these controls will become better and cheaper if there is some maturity and shared services in the organization. Reliable user identities are helped by proper federated identity management. Fine grained network access rules are easier to do if there is more software defined networking.\nMaturity is an investment, but it pays off in cheaper, faster and better security. That is another tradeoff that this example illustrates.\nFor more information on Zero Trust, visit https://cczt.clubcloudcomputing.com\nAlso published at https://www.linkedin.com/pulse/retrofitting-zero-trust-existing-application-peter-hj-van-eijk-zjpte\n",
-  "wordCount" : "1090",
-  "inLanguage": "en",
-  "datePublished": "2025-02-28T14:15:21Z",
-  "dateModified": "2025-02-28T14:15:21Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Digital Infrastructures at Scale",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://digitalinfrastructures.nl/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -163,7 +82,7 @@ You have an application with hundreds of thousands of sensitive records, let’s
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://digitalinfrastructures.nl/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -189,22 +108,22 @@ You have an application with hundreds of thousands of sensitive records, let’s
         </div>
         <ul id="menu">
             <li>
-                <a href="https://digitalinfrastructures.nl/book/" title="Book">
+                <a href="http://localhost:1313/book/" title="Book">
                     <span>Book</span>
                 </a>
             </li>
             <li>
-                <a href="https://digitalinfrastructures.nl/posts/" title="Blog">
+                <a href="http://localhost:1313/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://digitalinfrastructures.nl/about/" title="About">
+                <a href="http://localhost:1313/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://digitalinfrastructures.nl/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
                     <span>🔎 Search</span>
                 </a>
             </li>
@@ -215,7 +134,7 @@ You have an application with hundreds of thousands of sensitive records, let’s
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://digitalinfrastructures.nl/">Home</a>&nbsp;»&nbsp;<a href="https://digitalinfrastructures.nl/book/">Contents</a>&nbsp;»&nbsp;<a href="https://digitalinfrastructures.nl/book/risk/">Risks of digital infrastructures</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/risk/">Risks of digital infrastructures</a></div>
     <h1 class="post-title entry-hint-parent">
       Retrofitting Zero Trust on an existing application: an illustration
     </h1>
@@ -286,7 +205,7 @@ group exec(server)[Execution environment]
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://digitalinfrastructures.nl/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by
