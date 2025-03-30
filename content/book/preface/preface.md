@@ -1,20 +1,33 @@
 ---
 date: '2025-03-02T22:00:32Z'
-draft: false
+draft: true
 title: 'Preface'
 ---
 
-This is hardly a book on digital technology, but more on the organisational and societal impact of managing this at scale. 
+This book has been more than thirty years in the making.
+The two main reasons for that, as I look back on that now, are that the field of information has been developing so rapidly, and that I did not see the opportunity in my business to create a focus for which writing a book would make business sense. And if I did, the focus never seemed to last very long.
 
-For a better understanding of digital technology I highly recommend Brian Kernighan’s “Understanding the Digital World”. () And if you want to have fun while learning how to understand software, I’d highly recommend “The Nature of Code” by Daniel Schiffman ().
+Instead I wrote smaller pieces from time to time, as well as lots of short educational materials, triggered by a need from my learners.
 
-As you will find out in this book, I am putting on some very specific lenses to look at the world. You may find them restrictive; you may find them arbitrary(?), you may find them opiniated. Yes, this specific way of looking at the effects of digital technology has its limits. However, the essence of understanding is to be able to extract the core elements out of something. Paradoxically, only by restricting the way we look at things can we see more clearly. Cut through the noise. Like Goethe said: “In der Beschränkung zeigt sich erst der Meister”, though he applied that to a different subject. 
+I did try to create a larger organised collection of knowledge, and even had a basic taxonomy in place, and raw input. But the dynamics of my professional live continuously outran my plans to turn it into a book.
 
-I have a very limited perspective of the world. There are so many things and concepts that I just fail to remember or understand. 
-And yet, that limitation has served me well. It has allowed me to focus on core principles that you may not see if you take in all the richness and idiosyncrasies. 
-My limited perspective can serve you as a map. And you know that every map is not equal to the terrain it covers. In fact, the purpose of the map is to extract only the most relevant features of the terrain. How good a map is, judgement on the quality of the map is not objective. It is dependent on what you use the map for. A railroad map is close to useless if you navigate by car or boat. 
-That is why you should consider the models and the perspectives that I give you as maps to guide your journey. If they bring you where you want to be, great! If not, get a different map. 
+I have occupied myself with IT for over half a century now, arguably most of that in a professional capacity. For a substantial part of that time, I have been searching for some focus. It took me until the turn of the millenium to finally get some expression of that in the form of a professional branding statement. It went something like this.
 
-As you will see, the core elements of the models I find useful revolve around interactions between autonomous agents that process information. These agents typically have limited (bounded) capabilities. (link to maps as means to reduce attention requirements). These agents can be humans, software or AI agents.
+_Peter van Eijk is an innovative ICT strategist who makes connections between business, people and technology. With wit and confrontation he guides you to new approaches. He is inimitably hard core Internet oriented, yet never forgets that communication is between people, not machines._
 
-As I believe that you are an autonomous agent as well, it is up to you to decide how useful these models and stories are for your practice. You will not find answers to every question that you have around digital infrastructures. Where possible and relevant I will point you to other views, stories and explanations. At the same time, you may find my maps to be also useful for domains that are outside the digital.
+That message has served me well for a long time. And in fact it was the basis for the name of the business I set up in 2005: "Digital Infrastructures".
+I would like to think that I made up that phrase, because it has taken up a life on its own on a much larger scale, but in 2005 there was already a small IT company serving the local dentists in Oregon by that name. But I am fairly confident that through my former colleagues its use has accelerated.
+
+Still, "Digital Infrastructures" is too broad a concept for an attractive book. "Cloud Computing" was a term with much wider appeal, at is has served me well. My business pivoted to cloud security training, which I have delivered in many countries over many years to many people.
+
+Cloud computing resonates with me, because it blends technology with business, and you need to understand both in order to truely understand cloud computing.
+
+To help develop this I took a side job as Associate Professor Cyber Security and Cloud at the Hogeschool Utrecht. It greatly helped my thinking in how to bring professional IT skills to the next generation.
+
+But all good things come to an end.
+
+Technology develops in waves, and cloud computing is now mainstream.
+
+The demise of my training business, over the pandemic, also leads me to rethink my professional focus.
+
+Then, as the evolving cloud computing business models saturates the market while at the same time geopolitical tensions expand the battlefield into the digital domain.

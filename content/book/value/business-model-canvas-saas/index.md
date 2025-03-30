@@ -1,7 +1,7 @@
 ---
 title: Business Model Canvas for SaaS Providers
 date: '2014-12-15T11:18:17'
-draft: "true"
+draft: "false"
 ---
 
 Here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.
