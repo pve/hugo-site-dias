@@ -1,6 +1,6 @@
 ---
 date: '2025-03-29T15:35:53Z'
-draft: true
+draft: false
 title: 'How My Site Got Hacked'
 ---
 
