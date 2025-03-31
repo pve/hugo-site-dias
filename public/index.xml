@@ -56,7 +56,7 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <pubDate>Sun, 09 Mar 2025 21:19:45 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/deployment-diagrams/</guid>
       <description>&lt;p&gt;Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.&lt;/p&gt;
-&lt;h1 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h1&gt;
+&lt;h2 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h2&gt;
 &lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
     </item>
@@ -205,9 +205,8 @@ Back in the old days, business software was primarily written to automate &lt;st
       <link>http://localhost:1313/book/preface/preface/</link>
       <pubDate>Sun, 02 Mar 2025 22:00:32 +0000</pubDate>
       <guid>http://localhost:1313/book/preface/preface/</guid>
-      <description>&lt;p&gt;This is hardly a book on digital technology, but more on the organisational and societal impact of managing this at scale.&lt;/p&gt;
-&lt;p&gt;For a better understanding of digital technology I highly recommend Brian Kernighan’s “Understanding the Digital World”. () And if you want to have fun while learning how to understand software, I’d highly recommend “The Nature of Code” by Daniel Schiffman ().&lt;/p&gt;
-&lt;p&gt;As you will find out in this book, I am putting on some very specific lenses to look at the world. You may find them restrictive; you may find them arbitrary(?), you may find them opiniated. Yes, this specific way of looking at the effects of digital technology has its limits. However, the essence of understanding is to be able to extract the core elements out of something. Paradoxically, only by restricting the way we look at things can we see more clearly. Cut through the noise. Like Goethe said: “In der Beschränkung zeigt sich erst der Meister”, though he applied that to a different subject.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This book has been more than thirty years in the making.
+The two main reasons for that, as I look back on that now, are that the field of Information Technology has been developing incredibly rapidly, and that I did not see the opportunity within my business to create a focus for which writing a book would make business sense. And if I did, the focus never seemed to last very long.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
@@ -217,16 +216,6 @@ Back in the old days, business software was primarily written to automate &lt;st
       <description>&lt;p&gt;Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.&lt;/p&gt;
 &lt;p&gt;Consider this hypothetical situation.&lt;/p&gt;
 &lt;p&gt;You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &amp;lsquo;who&amp;rsquo;, &amp;lsquo;what&amp;rsquo;, &amp;lsquo;when&amp;rsquo;, etcetera of allowed communication.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Book Intro</title>
-      <link>http://localhost:1313/book/intro/book-intro/</link>
-      <pubDate>Thu, 27 Feb 2025 16:59:05 +0000</pubDate>
-      <guid>http://localhost:1313/book/intro/book-intro/</guid>
-      <description>&lt;h1 id=&#34;how-digital-infrastructures-at-scale-create-value-power-and-risk-a-field-guide&#34;&gt;How Digital Infrastructures at scale create value, power, and risk: a field guide&lt;/h1&gt;
-&lt;p&gt;The internet is a &lt;em&gt;digital infrastructure at scale&lt;/em&gt;. Let’s unpack that for a moment.&lt;/p&gt;
-&lt;p&gt;It is &lt;em&gt;digital&lt;/em&gt;, because it moves bits between devices.&lt;/p&gt;
-&lt;p&gt;It is &lt;em&gt;at scale&lt;/em&gt;, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the &lt;em&gt;infrastructure&lt;/em&gt; part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A mermaid diagram example</title>
@@ -272,11 +261,10 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
       <link>http://localhost:1313/book/value/business-model-canvas-saas/</link>
       <pubDate>Mon, 15 Dec 2014 11:18:17 +0000</pubDate>
       <guid>http://localhost:1313/book/value/business-model-canvas-saas/</guid>
-      <description>&lt;p&gt;As a follow up to the&lt;a href=&#34;https://www.clubcloudcomputing.com/2014/08/business-model-canvas-cloud-providers/&#34; title=&#34;Business Model Canvas for Cloud Providers&#34;&gt; earlier article on the IaaS business model&lt;/a&gt;, here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.&lt;/p&gt;
+      <description>&lt;p&gt;Here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.&lt;/p&gt;
 &lt;h2 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h2&gt;
-&lt;p&gt;The business model canvas is a visual template for developing and discussion business models. For more information see &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;http://en.wikipedia.org/wiki/Business_Model_Canvas&lt;/a&gt; and &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;http://www.businessmodelgeneration.com/&lt;/a&gt;
-&lt;a href=&#34;https://www.clubcloudcomputing.com/wp-content/uploads/2014/12/SaaS-Cloud-canvas.png&#34;&gt;&lt;img alt=&#34;SaaS Cloud canvas&#34; loading=&#34;lazy&#34; src=&#34;data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==&#34;&gt;&lt;/a&gt;
-The business model canvas has nine basic building blocks and specific relations between those building blocks.
+&lt;p&gt;The business model canvas is a visual template for developing and discussion business models. For more information see &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;http://en.wikipedia.org/wiki/Business_Model_Canvas&lt;/a&gt; and &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;http://www.businessmodelgeneration.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The business model canvas has nine basic building blocks and specific relations between those building blocks.
 As examples in this article I consider two hypothetical SaaS providers. The first one delivers bookkeeping software, the second one delivers a project collaboration platform.&lt;/p&gt;</description>
     </item>
   </channel>
