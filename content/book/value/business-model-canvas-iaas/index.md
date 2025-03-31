@@ -6,7 +6,7 @@ date: '2014-11-15T11:18:17'
 
 ## Business Model Canvas
 
-The business model canvas is a visual template for developing and discussion business models. For more information see <http://en.wikipedia.org/wiki/Business_Model_Canvas> and <http://www.businessmodelgeneration.com/>
+The business model canvas is a visual template for developing and discussing business models. For more information see <http://en.wikipedia.org/wiki/Business_Model_Canvas> and <http://www.businessmodelgeneration.com/>
 
 The business model canvas has nine basic building blocks and specific relations between those building blocks. I'll illustrate them here.
 
