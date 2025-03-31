@@ -2,6 +2,7 @@
 date: '2025-03-27T20:33:42Z'
 draft: false
 title: 'Value in Process Improvement'
+weight: 20
 ---
 
 Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.
@@ -24,4 +25,3 @@ These are just the major, broad categories of delivering value, and there is con
 As you dive deeper into business processes, you will find that there is a wide range of processes and ways that lead to business value, each of which has its own peculiar ways of communicating and coordinating. In the early days of networking, I was sometimes asked what the value of a network is. Equally unanswerable is the question what the value of a message is. It just depends on the role that such a message plays in a process. For example, if your house is on fire, you only need a small message to reach the fire department, but if it does not get there, you'll lose a house.
 
 Strategy consulting firms, like the one I worked at, do a lot of work in process reengineering to create value for their clients. The larger firms have serious collections of proces improvements. Over the past decades, significant reengineering of supply chains has taken place. The core idea of that is typically that better coordination reduces risk and inefficiencies.
-

@@ -1,8 +1,8 @@
 ---
-date: '2025-03-12T21:15:40Z'
 draft: false
 title: 'Agile Requires Cloud'
-date_gmt: '2016-10-12T15:12:04'
+date: '2016-10-12T15:12:04'
+weight: 30
 ---
 
 **Agile development** is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
@@ -11,6 +11,7 @@ Back in the old days, business software was primarily written to automate **_exi
 Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.
 
 ## The dance
+
 Every product changes the world that uses it. Think how cars have changed the way people commute, or even choose where they live. Software is no different. But a changing world also changes the products we can use or want to use. There is a kind of dance between supply and demand. Do we have breakfast out of our house more often because there are more opportunities for this or does the supply of breakfast places increase as a result of us going out more? Just as in a dance, it is not always easy to tell who is leading who.
 
 Because software now has become the product it will also participate in the dance, and then it becomes more important to quickly adapt to the dance partner. As a developer, you change the world that uses your software in ways you cannot always predict, so in reaction you have to adapt to that world.
@@ -28,8 +29,7 @@ But agile development comes with a new goal: 'feature velocity’. That is the s
 Your digital infrastructure should not be a bottleneck. This requires features such as automated testing, quick scaling up and down of resources, and as little manual intervention as possible. This is the only way to shorten the lead time for a change.
 
 ## Cloud computing
+
 In summary: agile development requires cloud computing. Remember: the essential characteristics of cloud computing include fast, elastic and self-service provisioning of resources. That is what is required for agile development.
 
 And then the dance continues. Because if we can do that, we can do other new things. Like better security. If you can respond quicker to new functional requirements, you can also respond quicker to security issues.
-
-

@@ -2,6 +2,7 @@
 draft: false
 title: Business Model Canvas for IaaS Providers
 date: '2014-11-15T11:18:17'
+weight: 40
 ---
 
 ## Business Model Canvas

@@ -2,11 +2,12 @@
 date: '2018-06-03T17:06:57Z'
 draft: false
 title: 'Multiple Ways to Go Cloud'
+weight: 60
 ---
 
 Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.
 
-# Three approaches
+## Three approaches
 
 Companies dying to get rid of their data centers often get started on a **‘lift and shift’** approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.
 
@@ -18,7 +19,7 @@ I am not here to advocate the benefits of one over the other, I think there can 
 
 The categories also have some overlap. Lift and shift can require some refactoring of code, to have it better fit cloud native deployments. And hardly any SaaS application is stand alone, so some (cloud native) integration with other software is often required.
 
-# Profound differences
+## Profound differences
 
 The big point I want to make here is that there are **profound differences** in the issues that each of these categories faces, and the hard decisions that have to be made. Most of these decisions are about **governance and risk management**.
 

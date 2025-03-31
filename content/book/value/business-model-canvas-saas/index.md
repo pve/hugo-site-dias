@@ -2,28 +2,28 @@
 title: Business Model Canvas for SaaS Providers
 date: '2014-12-15T11:18:17'
 draft: "false"
+weight: 50
 ---
 
 Here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.
 
 ## Business Model Canvas
 
-The business model canvas is a visual template for developing and discussion business models. For more information see <http://en.wikipedia.org/wiki/Business_Model_Canvas> and <http://www.businessmodelgeneration.com/>
+The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models. To learn more, visit [Wikipedia](http://en.wikipedia.org/wiki/Business_Model_Canvas) or the [Business Model Generation](http://www.businessmodelgeneration.com/) website.
 
-The business model canvas has nine basic building blocks and specific relations between those building blocks.
-As examples in this article I consider two hypothetical SaaS providers. The first one delivers bookkeeping software, the second one delivers a project collaboration platform.
+The Business Model Canvas is composed of nine essential building blocks, which define the interconnections and relationships within a business model. In this article, we'll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.
 
 ![SaaS Cloud Canvas](BusinessCanvasSaaS.png)
 
 ## Customer segments (CS)
 
-In the Business Model Canvas, “Customer Segments” are the groups of customers that the company ultimately serves, I.e. the ones that consume and pay for the services. 
+In the Business Model Canvas, “Customer Segments” are the groups of customers that the company ultimately serves, I.e. the ones that consume and pay for the services.
 
 It is characteristic of the SaaS model that this could basically be anybody, not just IT people. Let us just remind ourselves that customers here are the ones that use the service to get their business done, or get their personal lives in order. In a business context we often also have to distinguish between the user and the organization that purchases the solution. This is very likely true in the case of our bookkeeping software company.
 
 ## Value Propositions (VP)
 
-The value propositions reflect the customer problems and needs. This is the central element that describes why the customer would ultimately pay for the product or service.
+Value propositions reflect the customer problems and needs. This is the central element that describes why the customer would ultimately pay for the product or service.
 
 The essential characteristics of cloud computing may or may not relate directly to the core value proposition of the software application. In our first example, the core value proposition —automated bookkeeping— is unrelated to cloud computing. Of course cloud computing’s characteristics give the SaaS proposition an edge above its direct on-premises alternatives even if the functionality would be the same. Self-service provisioning leads to quicker time to deploy, more scalability in usage (whether accounts or transactions), lower investments or commitments, and potentially lower cost.
 The value proposition is fundamentally different in the second example, the project collaboration support site. In this example, the cloud's characteristic of broad network accessibility directly enhances the software's usefulness for users spanning company boundaries.
@@ -44,7 +44,7 @@ The main SaaS channels therefore are direct self-service sales, value added re-s
 
 Customer relations are established and maintained with each specific customer segment.
 
-The lure of cloud computing is that the provider can have a much more direct relation with the customer than is possible with an on-premis solution. Technically, the provider can potentially see each and every move from the users. Which software builder would not like to be able to see the popularity of every feature in real-time? This allows for much more rapid innovation cycles. 
+The lure of cloud computing is that the provider can have a much more direct relation with the customer than is possible with an on-premis solution. Technically, the provider can potentially see each and every move from the users. Which software builder would not like to be able to see the popularity of every feature in real-time? This allows for much more rapid innovation cycles.
 
 It is not impossible for the loop from idea to wide customer feedback to be closed in a couple of hours.
 However, this power can bring the provider in conflict with the consumer who might object to its data being used. As an example that is close to the limit of what might be considered acceptable consider the following case. An on-line bookkeeping service for individuals allows them to categorize payments to merchants. Once enough individuals categorized Danny’s steakhouse as a restaurant, this can then also be suggested to other clients of Danny’s. Is it legal to use data from one cloud consumer to deliver value to another? Generally speaking, the answer is no, but it may be acceptable if only aggregate data is used.

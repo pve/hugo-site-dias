@@ -2,6 +2,7 @@
 date: '2025-03-11T09:10:54Z'
 draft: false
 title: 'Provider Value'
+weight: 10
 ---
 
 The sheer separation of the providers from the consumers of these infrastructures drives a lot of the value.
@@ -16,6 +17,6 @@ Because the provider has multiple consumers, there are economies of scale that p
 
 But 'digital' brings more specific benefits. It is the opportunity to automate service delivery that has immense effects on economies of scale. Think about it: if a piece of software does its work, replicating that piece of software across a lot of servers is a neglible amount of effort in comparison to creating that software, typically. In contrast, baking 1000 pizzas is a lot more work than just baking one or two.
 
-Finally, consumers can find value in being connected with other consumers. The value of a phone or social network to the individual users, not just the network owner, increases with the number of other users connected to it. As a result the value of the network increases quadratically with the number of users. This has implications for the power balance, as we will discuss later. 
+Finally, consumers can find value in being connected with other consumers. The value of a phone or social network to the individual users, not just the network owner, increases with the number of other users connected to it. As a result the value of the network increases quadratically with the number of users. This has implications for the power balance, as we will discuss later.
 
 In a later unit we'll discuss some of the words that economists use for these phenomena, such as investment externalities and network externalities.

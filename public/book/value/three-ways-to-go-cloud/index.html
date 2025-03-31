@@ -140,13 +140,13 @@ Companies dying to get rid of their data centers often get started on a ‘lift 
   <p><i>⏳ 3 min read</i></p>
   
   <div class="post-content"><p>Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.</p>
-<h1 id="three-approaches">Three approaches<a hidden class="anchor" aria-hidden="true" href="#three-approaches">#</a></h1>
+<h2 id="three-approaches">Three approaches<a hidden class="anchor" aria-hidden="true" href="#three-approaches">#</a></h2>
 <p>Companies dying to get rid of their data centers often get started on a <strong>‘lift and shift’</strong> approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.</p>
 <p>The other side of the spectrum is adopting <strong>SaaS solutions</strong>. More often than not, these trickle in from the business side, not from IT. These could range from small meeting planners to full blown sales support systems.</p>
 <p>More recently, developers have started to embrace cloud native architectures. Ultimately, both the target environment as well as the development environment can be cloud based. The cloud service model consumed here is typically PaaS.</p>
 <p>I am not here to advocate the benefits of one over the other, I think there can be business case for each of these.</p>
 <p>The categories also have some overlap. Lift and shift can require some refactoring of code, to have it better fit cloud native deployments. And hardly any SaaS application is stand alone, so some (cloud native) integration with other software is often required.</p>
-<h1 id="profound-differences">Profound differences<a hidden class="anchor" aria-hidden="true" href="#profound-differences">#</a></h1>
+<h2 id="profound-differences">Profound differences<a hidden class="anchor" aria-hidden="true" href="#profound-differences">#</a></h2>
 <p>The big point I want to make here is that there are <strong>profound differences</strong> in the issues that each of these categories faces, and the hard decisions that have to be made. Most of these decisions are about <strong>governance and risk management</strong>.</p>
 <p>With lift and shift, the application functionality is pretty clear, but bringing that out to the cloud introduces data risks and technical risks. Data controls may be insufficient, and the application’s architecture may not be a good match for cloud, leading to poor performance and high cost.</p>
 <p>One group of SaaS applications stems from <strong>‘shadow IT’</strong>. The people that adopt them typically pay little attention to existing risk management policies. These can also add useless complexity to the application landscape. The governance challenges for these are obvious: consolidate and make them more compliant with company policies.</p>
