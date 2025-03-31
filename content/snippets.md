@@ -22,10 +22,10 @@ Top search op CCC: certs, deploy, saas canvas, top 8 enisa.
 
 De shared services business case. Voorbeeld Haven ook (journal feb 2025). Lees ook input van Robert (?)
 
-
-Technology power shifts.
-
+Technology power shifts:
 In the early 90s I saw the PC revolution come up and shortly afterwords client-server computing, including all the things that went wrong.
-A little later, the Internet revolution from boom to bust, and back up again. 
+A little later, the Internet revolution from boom to bust, and back up again.
 Then, early 10s, cloud computing exploded, and I started teaching cloud security.
-All of these led to dramatic shifts of power in organizations. 
+All of these led to dramatic shifts of power in organizations.
+
+What is an API?

@@ -35,7 +35,7 @@ The idea of more writing came back.
 
 No longer constrained by my focus on cloud security, I felt liberated to review some of the earlier writing I had done in this light. I also allowed myself to let go of aiming for the 'final answer', and instead see writing as a tool to understanding. "Writing to Learn" by William Zinsser was inspirational for that. And AI chatbots turned out to be a good tool for externalizing my inner critic, so it no longer interfered so much with getting all these ideas out of my head, and into the public light.
 
-Still, I don't see this book finished soon. At the same time, I am working to make every draft useful to its intended audience. 
+Still, I don't see this book finished soon. At the same time, I am working to make every draft useful to its intended audience.
 
 For decades people have trusted me to help them and their teams be more successful in their handling of IT. In these writings I try to open up my mental toolbox for that.
 Scientific rigor isn't my main objective, though I try to make clear what my assumptions are. I am more a conceptual pragmaticist. Can we make something that works and is useful, and do so by applying some universal truths? I also strive to make that set of concepts simple and powerful.
@@ -47,4 +47,4 @@ My thanks go to many people. Professionally, my clients, learners, colleagues, r
 
 I am grateful that you have come so far in reading this already, and the opportunity to share my experiences, and look forward to helping you uncover new ways of navigating the complexities of the digital age. I sincerely hope that you will find benefit in this.
 
-Thansk for joining me.
+Thanks for joining me.
