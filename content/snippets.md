@@ -26,6 +26,11 @@ Technology power shifts:
 In the early 90s I saw the PC revolution come up and shortly afterwords client-server computing, including all the things that went wrong.
 A little later, the Internet revolution from boom to bust, and back up again.
 Then, early 10s, cloud computing exploded, and I started teaching cloud security.
-All of these led to dramatic shifts of power in organizations.
+All of these led to dramatic shifts of power in organizations, and therefore in the way IT was organized. Here I'd like to explore the underlying mechanisms.
 
 What is an API?
+
+Business case for automation (XKCD1205 explained)
+
+Style/format: everything is an engineering decision, and there are pros and cons to everything: e.g. flipside of concentration risk is complexity.
+
