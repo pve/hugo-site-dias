@@ -278,5 +278,13 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
    
 &lt;/pre&gt;</description>
     </item>
+    <item>
+      <title>Directories are also infrastructures</title>
+      <link>http://localhost:1313/posts/directories-are-also-infrastructures/</link>
+      <pubDate>Thu, 21 Sep 2006 10:54:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/directories-are-also-infrastructures/</guid>
+      <description>&lt;p&gt;One of the big projects I am working on right now (2006) is directory services for identity management. In these directories digital identities such as loginnames, addresses, access rights, etc. are stored. With an adequately structured directory service, the proper management of access rights becomes a lot easier, which translates into cost savings and better security.&lt;/p&gt;
+&lt;p&gt;Examples of these include the internet&amp;rsquo;s Domain Name System (DNS) and Microsoft&amp;rsquo;s Active Directory. A lot of organizations however, have requirements beyond these systems, and for these a wide range of custom solutions are used.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
