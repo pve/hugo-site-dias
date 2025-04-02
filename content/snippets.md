@@ -34,3 +34,8 @@ Business case for automation (XKCD1205 explained)
 
 Style/format: everything is an engineering decision, and there are pros and cons to everything: e.g. flipside of concentration risk is complexity.
 
+fedback loops and data quality. Stability of feedback. 
+
+computable columns
+
+chaos engineering
