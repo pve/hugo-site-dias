@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>7 on Digital Infrastructures at Scale</title>
+    <link>http://localhost:1313/categories/7/</link>
+    <description>Recent content in 7 on Digital Infrastructures at Scale</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Sep 2019 11:42:06 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 8 cloud risks according to ENISA</title>
+      <link>http://localhost:1313/posts/top-8-cloud-risks-according-to-enisa/</link>
+      <pubDate>Thu, 21 May 2015 09:22:07 +0000</pubDate>
+      <guid>http://localhost:1313/posts/top-8-cloud-risks-according-to-enisa/</guid>
+      <description>&lt;p&gt;[vc_row][vc_column][vc_column_text]Does security in the cloud ever bother you? It would be weird if it didn’t. Cloud computing has a lot of benefits, but also a lot of risks if done in the wrong way.
+So what are the most important risks? The European Network Information Security Agency did extensive research on that, and identified 35 risk categories. This analysis is used by a number of players in the industry, including certain banking regulators. From those 35, ENISA has selected 8 as the most relevant ones. This article explains them, not in any particular order. (And by the way: ENISA is pronounced as ‘eniesa’, not ‘enaiza’).
+You can also get the story on my YouTube video.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

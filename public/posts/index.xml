@@ -103,6 +103,26 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
 &lt;/pre&gt;</description>
     </item>
     <item>
+      <title>Deployment diagrams for network security; fix this</title>
+      <link>http://localhost:1313/posts/network-diagram-fix/</link>
+      <pubDate>Fri, 26 Mar 2021 17:09:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/network-diagram-fix/</guid>
+      <description>&lt;p&gt;A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training.
+In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated.
+But still. There are good drawings and there are drawings that can be improved.
+My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
+Recently I ran into the following example. Here is an &lt;a href=&#34;https://syang.substack.com/p/security-group-and-network-acl-in&#34;&gt;explanation of the difference between VPC and security groups&lt;/a&gt;. Great story, but I have some comments on the diagram, which happens to come &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html&#34;&gt;from AWS itself&lt;/a&gt;, by the way.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Top 8 cloud risks according to ENISA</title>
+      <link>http://localhost:1313/posts/top-8-cloud-risks-according-to-enisa/</link>
+      <pubDate>Thu, 21 May 2015 09:22:07 +0000</pubDate>
+      <guid>http://localhost:1313/posts/top-8-cloud-risks-according-to-enisa/</guid>
+      <description>&lt;p&gt;Does security in the cloud ever bother you? It would be weird if it didn’t. Cloud computing has a lot of benefits, but also a lot of risks if done in the wrong way.
+So what are the most important risks? The European Network Information Security Agency did extensive research on that in 2009 already, and identified 35 risk categories. This analysis is used by a number of players in the industry, including certain banking regulators. From those 35, ENISA has selected 8 as the most relevant ones. This article explains them, not in any particular order. (And by the way: ENISA is pronounced as ‘eniesa’, not ‘enaiza’).
+You can also get the story on my YouTube video.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Directories are also infrastructures</title>
       <link>http://localhost:1313/posts/directories-are-also-infrastructures/</link>
       <pubDate>Thu, 21 Sep 2006 10:54:00 +0000</pubDate>
