@@ -11,7 +11,7 @@
 In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated.
 But still. There are good drawings and there are drawings that can be improved.
 My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
-Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which happens to come from AWS itself, by the way.">
+Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/network-diagram-fix/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -132,12 +132,6 @@ Recently I ran into the following example. Here is an explanation of the differe
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Deployment diagrams for network security; fix this
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2021-03-26 17:09:20 +0000 UTC'>March 26, 2021</span>
 
@@ -151,9 +145,9 @@ Recently I ran into the following example. Here is an explanation of the differe
 In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated.
 But still. There are good drawings and there are drawings that can be improved.
 My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
-Recently I ran into the following example. Here is an <a href="https://syang.substack.com/p/security-group-and-network-acl-in">explanation of the difference between VPC and security groups</a>. Great story, but I have some comments on the diagram, which happens to come <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html">from AWS itself</a>, by the way.</p>
+Recently I ran into the following example. Here is an <a href="https://syang.substack.com/p/security-group-and-network-acl-in">explanation of the difference between VPC and security groups</a>. Great story, but I have some comments on the diagram, which used to come <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html">from AWS itself</a>, by the way, but has been removed.</p>
 <p>Here is the diagram.
-<img alt="security diagram" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+<img alt="security diagram" loading="lazy" src="/security-diagram-aws.png">
 In my earlier post, I gave some informal principles for drawing these diagrams. In brief, they are:</p>
 <ul>
 <li>boxes denote &rsquo;execution environments&rsquo; where code runs and data resides</li>

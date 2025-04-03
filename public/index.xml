@@ -148,7 +148,7 @@ Here is the story of my site being infected with malware, viewed by a profession
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Applying technology by following a system</title>
+      <title>Applying technology follows a pattern</title>
       <link>http://localhost:1313/posts/technical-meta-model/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
       <guid>http://localhost:1313/posts/technical-meta-model/</guid>
@@ -287,7 +287,7 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
 In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated.
 But still. There are good drawings and there are drawings that can be improved.
 My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
-Recently I ran into the following example. Here is an &lt;a href=&#34;https://syang.substack.com/p/security-group-and-network-acl-in&#34;&gt;explanation of the difference between VPC and security groups&lt;/a&gt;. Great story, but I have some comments on the diagram, which happens to come &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html&#34;&gt;from AWS itself&lt;/a&gt;, by the way.&lt;/p&gt;</description>
+Recently I ran into the following example. Here is an &lt;a href=&#34;https://syang.substack.com/p/security-group-and-network-acl-in&#34;&gt;explanation of the difference between VPC and security groups&lt;/a&gt;. Great story, but I have some comments on the diagram, which used to come &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html&#34;&gt;from AWS itself&lt;/a&gt;, by the way, but has been removed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Top 8 cloud risks according to ENISA</title>
