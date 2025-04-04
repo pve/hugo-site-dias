@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Dhcp Automation | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Charles de Gaulle, who said &ldquo;War is the continuation of diplomacy with different means,&rdquo; we can say that automation is the continuation of process maturity with different means: namely computers instead of people.
+I have two historically great examples of this. One of them is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?
+Yes.
+Exactly.
+Oh, yeah. Yeah. A couple of months older than me, so I think it was just after that.
+Anyway, so and then you went and then he went to that guy and then he pulled out a a uh a small notebook. And then he wrote in the notebook the IP address that your machine had. Right.
+Yes.
+So this is uh when this is before inventing the DNS system or
+uh no slide that was around that time I I&rsquo;ll tell you the story because uh
+no no this is the way it worked.
+I mean it&rsquo;s the paper napkin principle and uh so then in in 1994 for um well people were having some solutions for that but in 19 I remember that in 1994 I went to a Unix uh conference Unix systems manager conference and they had an American guy over and he was uh talking I had a presentation I forgot the presentation but we also talked about talked uh with him in the bar afterwards and he said that he talked about how the internet was built up of of of uh frame relay over and PLS over and it was a complete mess. Uh many many layers of technology to just push IP packets around which um I thought it was very genius back then but I think what he was trying to say was that how wasteful it really was. Anyway um he also said well you know um next year uh Microsoft&rsquo;s going to come out with a new version of Windows and you know which version I&rsquo;m talking about and that has that has TCP P built in to the operating system and he said and he was associated with IETF or whatever. So at least with some standardization efforts and he said or with the telco and he said they&rsquo;re planning to sell 150,000 of those every month. Can you can you imagine how many IP addresses that will be right? Uh how are we going to manage these? And then they also said well the nice thing is that the people from Microsoft actually um you know thought about it and they worked together with I forgot with whom they worked together in defining an automated way of doing that and this we now know as DHCP and um at at the same time or yeah a little earlier no around that time I think no it was before that uh a friend of mine um who&rsquo;s now retired as a a professor was doing his PhD on network management and this was a very elusive concept in the in the early 80s. What does it mean network management? How you going to standardize that, right? Um because yeah, you know, it is pretty elusive. What needs to be managed on the network? We don&rsquo;t bloody know, especially in 1982. Nobody knew first of all what a computer network was because and and second, how what do you mean management of these things? Well, we have three computers. How How hard can that be? Network management, right? Well, it&rsquo;s not so hard until you scale it up, right? And that&rsquo;s exactly what happens. And the funny thing is that um I must have his PhD thesis here somewhere. Um in the end, his conclusion was and he worked long and hard on on um SNMP and all of that stuff is that in the end network management is everything that we haven&rsquo;t automated into a protocol yet. And um And and that&rsquo;s that&rsquo;s that&rsquo;s a maturity story, right? So um human management is on the stuff that we don&rsquo;t know how to automate yet. And that&rsquo;s the development I mean and I&rsquo;ve seen that this this this exact model and then you can answer me Peter. This exact model has been uh the blueprint for the development of IT and especially systems administration ever since the late 80s which is like 40 years ago. Peter.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/dhcp-automation/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/dhcp-automation/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Dhcp Automation
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-04-04 14:20:26 +0000 UTC'>April 4, 2025</span>
+
+</div>
+  </header> 
+
+  
+  <p><i>⏳ 4 min read</i></p>
+  
+  <div class="post-content"><p>As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Charles de Gaulle, who said &ldquo;War is the continuation of diplomacy with different means,&rdquo; we can say that automation is the continuation of process maturity with different means: namely computers instead of people.</p>
+<p>I have two historically great examples of this. One of them is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?
+Yes.
+Exactly.
+Oh, yeah. Yeah. A couple of months older than me, so I think it was just after that.
+Anyway, so and then you went and then he went to that guy and then he pulled out a a uh a small notebook. And then he wrote in the notebook the IP address that your machine had. Right.
+Yes.
+So this is uh when this is before inventing the DNS system or
+uh no slide that was around that time I I&rsquo;ll tell you the story because uh
+no no this is the way it worked.
+I mean it&rsquo;s the paper napkin principle and uh so then in in 1994 for um well people were having some solutions for that but in 19 I remember that in 1994 I went to a Unix uh conference Unix systems manager conference and they had an American guy over and he was uh talking I had a presentation I forgot the presentation but we also talked about talked uh with him in the bar afterwards and he said that he talked about how the internet was built up of of of uh frame relay over and PLS over and it was a complete mess. Uh many many layers of technology to just push IP packets around which um I thought it was very genius back then but I think what he was trying to say was that how wasteful it really was. Anyway um he also said well you know um next year uh Microsoft&rsquo;s going to come out with a new version of Windows and you know which version I&rsquo;m talking about and that has that has TCP P built in to the operating system and he said and he was associated with IETF or whatever. So at least with some standardization efforts and he said or with the telco and he said they&rsquo;re planning to sell 150,000 of those every month. Can you can you imagine how many IP addresses that will be right? Uh how are we going to manage these? And then they also said well the nice thing is that the people from Microsoft actually um you know thought about it and they worked together with I forgot with whom they worked together in defining an automated way of doing that and this we now know as DHCP and um at at the same time or yeah a little earlier no around that time I think no it was before that uh a friend of mine um who&rsquo;s now retired as a a professor was doing his PhD on network management and this was a very elusive concept in the in the early 80s. What does it mean network management? How you going to standardize that, right? Um because yeah, you know, it is pretty elusive. What needs to be managed on the network? We don&rsquo;t bloody know, especially in 1982. Nobody knew first of all what a computer network was because and and second, how what do you mean management of these things? Well, we have three computers. How How hard can that be? Network management, right? Well, it&rsquo;s not so hard until you scale it up, right? And that&rsquo;s exactly what happens. And the funny thing is that um I must have his PhD thesis here somewhere. Um in the end, his conclusion was and he worked long and hard on on um SNMP and all of that stuff is that in the end network management is everything that we haven&rsquo;t automated into a protocol yet. And um And and that&rsquo;s that&rsquo;s that&rsquo;s a maturity story, right? So um human management is on the stuff that we don&rsquo;t know how to automate yet. And that&rsquo;s the development I mean and I&rsquo;ve seen that this this this exact model and then you can answer me Peter. This exact model has been uh the blueprint for the development of IT and especially systems administration ever since the late 80s which is like 40 years ago. Peter.</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

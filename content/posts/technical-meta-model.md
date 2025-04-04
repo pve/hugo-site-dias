@@ -25,11 +25,11 @@ Let's review our examples. What does fixing the WiFi mean? What result does it a
 
 The essence of the result is that some measurement of quality improves for some stakeholder.
 
-Turning our attention to grandma's new phone. What do we want to be improved? Maybe her current phone is too hard to navigate because the buttons are too small, or it does not run an app that allows here to see the pictures of her grandchildren. Or maybe it breaks down all the time, and your tech savvy nephew has to come over to fix it, and he does not want to do that as often anymore.
+Turning our attention to grandma's new phone, what do we want to be improved? Maybe her current phone is too hard to navigate because the buttons are too small, or it does not run an app that allows here to see the pictures of her grandchildren. Or maybe it breaks down all the time, and your tech savvy nephew has to come over to fix it, and he does not want to do that as often anymore.
 
 Now we can turn our attention to the intervention. In our WiFi case, are we buying more access points, and if so, where should they go, and how should they be connected? Maybe we want to change the frequency allocations, or allow use of the 5GHz frequency bands. With grandmas phone, do we install new apps, buy a different size phone, or what?
 
-How does the intervention lead to the desired result? In other words: how does one lead to the other? Maybe you have a theory about that. Maybe you'll just need to figure it out. In both cases you start with a hypothesis that explains how the intervention leads to a result.
+How does the intervention lead to the desired result? In other words: how does one lead to the other? Maybe you have a (scientific) theory about that. Maybe you'll just need to figure it out. In both cases you start with a hypothesis that explains how the intervention leads to a result.
 
 For example: because WiFi signal strength (and therefore quality) decreases with distance between device and base station, we install more base stations in order to have better quality around the house. Another example would be: because there is limited frequency spectrum, we reconfigure our existing base stations to use different frequencies in order for them to interfere less, and have better network quality within their range.
 
