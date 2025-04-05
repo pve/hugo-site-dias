@@ -8,5 +8,5 @@ layout: "bookcontents"
 
 {{< book-chapters >}}
 
-_Not all chapters are finalized. Blog articles might be included later!_
+> _Not all chapters are finalized. Blog articles might be included later!_
 

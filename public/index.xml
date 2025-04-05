@@ -33,11 +33,26 @@
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Intro Power</title>
+      <title>Introduction into Power</title>
       <link>http://localhost:1313/book/power/intro-power/</link>
       <pubDate>Sat, 05 Apr 2025 12:31:46 +0000</pubDate>
       <guid>http://localhost:1313/book/power/intro-power/</guid>
-      <description>&lt;p&gt;Power is a concept that is&lt;/p&gt;</description>
+      <description>&lt;p&gt;Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.
+Before we attempt to define power formally, let&amp;rsquo;s see how the word in used in everyday IT situations.&lt;/p&gt;
+&lt;p&gt;Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works, and creates value and risk.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The cloud architect held significant power in deciding which platforms the organization would adopt for its digital transformation.&lt;/li&gt;
+&lt;li&gt;Automated deployment pipelines gave development teams the power to release software faster and with fewer errors.&lt;/li&gt;
+&lt;li&gt;Legacy systems often retain unexpected power in large organizations, simply because so many critical processes still depend on them.&lt;/li&gt;
+&lt;li&gt;Regulators have the power to halt digital initiatives if data protection requirements are not met.&lt;/li&gt;
+&lt;li&gt;By owning the central identity management service, the security team had the power to control access across the entire infrastructure.&lt;/li&gt;
+&lt;li&gt;Outages at major cloud providers show how concentrated power in digital infrastructures can lead to systemic risk.&lt;/li&gt;
+&lt;li&gt;The CIO used the power of budget approval to steer the enterprise toward adopting more secure infrastructure patterns.&lt;/li&gt;
+&lt;li&gt;Power struggles between central IT and business units can delay the rollout of shared infrastructure services.&lt;/li&gt;
+&lt;li&gt;With real-time observability tools, operations teams gained the power to detect and respond to incidents before users were affected.&lt;/li&gt;
+&lt;li&gt;An open-source community can collectively wield more power than a single vendor when shaping the direction of a software tool.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Provider Value</title>
@@ -151,7 +166,7 @@ We willen voorkomen dat big tech onze nationale autonomie te veel beperkt, bijvo
       <pubDate>Fri, 04 Apr 2025 14:20:26 +0000</pubDate>
       <guid>http://localhost:1313/posts/dhcp-automation/</guid>
       <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &amp;ldquo;War is the continuation of diplomacy with different means&amp;rdquo;, we can say that automation is the continuation of process maturity with different means: namely computers instead of people.&lt;/p&gt;
-&lt;p&gt;I have two historically great examples of this. One of them is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?&lt;/p&gt;</description>
+&lt;p&gt;My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?&lt;/p&gt;</description>
     </item>
     <item>
       <title>How My Site Got Hacked</title>

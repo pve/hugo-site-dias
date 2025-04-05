@@ -5,7 +5,7 @@ title: 'Network Management Automation - DHCP'
 ---
 As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said "War is the continuation of diplomacy with different means", we can say that automation is the continuation of process maturity with different means: namely computers instead of people.
 
-I have two historically great examples of this. One of them is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?
+My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?
 
 You'd go to the person in charge, who would pull out their notebook, sharpen their pencil, and write down the assigned IP address. This process took time and resources, but it worked.
 
