@@ -8,7 +8,7 @@ title: 'How Can We Achieve Autonomy Over Our Digital Infrastructures?'
 
 In the Netherlands, we are currently engaged in a heated debate about the undesirable dominance of big tech, particularly over a significant portion of the digital infrastructure of the Dutch government. This includes email, file storage, and many other forms of digital storage and processing—most of which are handled by American big tech companies.  
 
-I am sure a similar debate is going on in many other countries. 
+I am sure a similar debate is going on in many other countries.
 
 Given this reality, what can we do about it? How can we build our own "Cloud Kootwijk"?  
 
@@ -45,4 +45,3 @@ To achieve a sufficient level of autonomy in digital infrastructures, we need to
 I challenge both policymakers and society to launch a production pilot using a fully open-source office automation environment. I believe we could select the necessary open-source components for such a pilot in an afternoon. Managing this at a scale of 1,000 active users would be an excellent starting ambition. This will take months—perhaps longer—but if successful, it will provide a blueprint for a "Cloud Kootwijk" should the need become urgent.  
 
 Will this be painful? Yes. But not as painful as realizing too late that we have lost our democracy and prosperity to a foreign power—or worse, to a group of multinational corporations that are not even under the control of any state.  
-

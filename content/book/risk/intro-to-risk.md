@@ -5,7 +5,7 @@ title: 'Introduction to Risk'
 weight: "1"
 ---
 
-Risk is the flip side of value. For everything that is of value, there can be circumstances endangering that value. 
+Risk is the flip side of value. For everything that is of value, there can be circumstances endangering that value.
 
 Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.
 
@@ -35,11 +35,11 @@ Confidentiality is about keeping data secret. Again, the examples are not too ha
 
 In a business context, you don't want your competitors to know about your plans and pricing strategies.
 
-# Who Suffers?
+## Who Suffers?
 
-# Assets
+## Assets
 
-# Vulnerabilities and threats
+## Vulnerabilities and threats
 
 (examples of all)
 
