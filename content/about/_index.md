@@ -13,7 +13,7 @@ On this site I am now collecting, organizing, and updating many of the writings 
 
 With a bit of luck and planning, this can be structured in a book that gives you a new way to see and navigate Digital Infrastructures.
 
-Watch it come together, and please share your thoughts with me.
+Watch it come together, and please share your thoughts with me. You can track the progress through this [RSS feed](/index.xml).
 
 Find me on LinkedIn (Peter HJ van Eijk) for inquiries about coaching, consulting, and workshops.
 
