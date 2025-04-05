@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Apr 2025 14:20:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Apr 2025 12:31:46 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intro to Risk</title>
@@ -31,6 +31,13 @@
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intro Power</title>
+      <link>http://localhost:1313/book/power/intro-power/</link>
+      <pubDate>Sat, 05 Apr 2025 12:31:46 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/intro-power/</guid>
+      <description>&lt;p&gt;Power is a concept that is&lt;/p&gt;</description>
     </item>
     <item>
       <title>Provider Value</title>
@@ -68,6 +75,15 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;At the restaurant&amp;rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;payment terminals&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/payterminal-716603.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Positions of Power in IT</title>
+      <link>http://localhost:1313/book/power/positions-of-power-it/</link>
+      <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/positions-of-power-it/</guid>
+      <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.&lt;/p&gt;
+&lt;p&gt;Two important positions of influence in IT are architects and auditors/assessors.&lt;/p&gt;
+&lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deployment Diagrams</title>
@@ -119,11 +135,22 @@ Back in the old days, business software was primarily written to automate &lt;st
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Dhcp Automation</title>
+      <title>Big tech afhankelijkheid: wat zijn de echte risicos?</title>
+      <link>http://localhost:1313/posts/autonomie-van-bigtech/</link>
+      <pubDate>Sat, 05 Apr 2025 09:36:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/autonomie-van-bigtech/</guid>
+      <description>&lt;p&gt;Het nationale sentiment is negatief over de afhankelijkheid van &amp;lsquo;big tech&amp;rsquo;. Overheidsdata staat in een amerikaanse cloud, we hebben geen eigen sociale network, enzovoort.&lt;/p&gt;
+&lt;p&gt;Nu zijn emoties vrijwel altijd een goede indicator, maar vormen ze op zichzelf een slechte inhoudelijke analyse.
+Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken.&lt;/p&gt;
+&lt;p&gt;Laten we eens kijken welk risico we nu werkelijk lopen met deze afhankelijkheid.
+We willen voorkomen dat big tech onze nationale autonomie te veel beperkt, bijvoorbeeld doordat het als drukmiddel gebruikt wordt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Management Automation - DHCP</title>
       <link>http://localhost:1313/posts/dhcp-automation/</link>
       <pubDate>Fri, 04 Apr 2025 14:20:26 +0000</pubDate>
       <guid>http://localhost:1313/posts/dhcp-automation/</guid>
-      <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Charles de Gaulle, who said &amp;ldquo;War is the continuation of diplomacy with different means,&amp;rdquo; we can say that automation is the continuation of process maturity with different means: namely computers instead of people.&lt;/p&gt;
+      <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &amp;ldquo;War is the continuation of diplomacy with different means&amp;rdquo;, we can say that automation is the continuation of process maturity with different means: namely computers instead of people.&lt;/p&gt;
 &lt;p&gt;I have two historically great examples of this. One of them is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?&lt;/p&gt;</description>
     </item>
     <item>
@@ -188,7 +215,9 @@ These conflicting views can best be seen as maps of the territory. And as I have
       <link>http://localhost:1313/snippets/</link>
       <pubDate>Wed, 19 Mar 2025 12:05:12 +0000</pubDate>
       <guid>http://localhost:1313/snippets/</guid>
-      <description>&lt;p&gt;Risk: LMS 3-2&lt;/p&gt;
+      <description>&lt;p&gt;Wat is server en client? Bij X is bijvoorbeeld de server op de client.&lt;/p&gt;
+&lt;p&gt;Oh ja, die discussie. Ben je verantwoordelijk als je onveilige software maakt, of alleen als je die als service beschikbaar stelt?&lt;/p&gt;
+&lt;p&gt;Risk: LMS 3-2&lt;/p&gt;
 &lt;p&gt;CERN data center&lt;/p&gt;
 &lt;p&gt;verhaal over corporate en MKB&lt;/p&gt;
 &lt;p&gt;How technical debt works: negative investment externalities.&lt;/p&gt;
@@ -210,15 +239,6 @@ Back in the old days, business software was primarily written to automate &lt;st
       <guid>http://localhost:1313/posts/graphic-novel-page1/</guid>
       <description>&lt;p&gt;Here is the draft design of the graphic novel version of this book, which may or may not happen..&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Positions of Power in IT</title>
-      <link>http://localhost:1313/book/power/positions-of-power-it/</link>
-      <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
-      <guid>http://localhost:1313/book/power/positions-of-power-it/</guid>
-      <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.&lt;/p&gt;
-&lt;p&gt;Two important positions of influence in IT are architects and auditors/assessors.&lt;/p&gt;
-&lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are AI digital infrastructures?</title>

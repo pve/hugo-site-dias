@@ -4,6 +4,10 @@ draft: true
 title: 'Snippets'
 ---
 
+Wat is server en client? Bij X is bijvoorbeeld de server op de client.
+
+Oh ja, die discussie. Ben je verantwoordelijk als je onveilige software maakt, of alleen als je die als service beschikbaar stelt? 
+
 Risk: LMS 3-2
 
 CERN data center
@@ -39,3 +43,5 @@ fedback loops and data quality. Stability of feedback.
 computable columns
 
 chaos engineering
+
+todo	/2020/02/tutorial-cloud-native

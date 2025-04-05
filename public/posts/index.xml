@@ -6,14 +6,25 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Apr 2025 14:20:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Apr 2025 09:36:33 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dhcp Automation</title>
+      <title>Big tech afhankelijkheid: wat zijn de echte risicos?</title>
+      <link>http://localhost:1313/posts/autonomie-van-bigtech/</link>
+      <pubDate>Sat, 05 Apr 2025 09:36:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/autonomie-van-bigtech/</guid>
+      <description>&lt;p&gt;Het nationale sentiment is negatief over de afhankelijkheid van &amp;lsquo;big tech&amp;rsquo;. Overheidsdata staat in een amerikaanse cloud, we hebben geen eigen sociale network, enzovoort.&lt;/p&gt;
+&lt;p&gt;Nu zijn emoties vrijwel altijd een goede indicator, maar vormen ze op zichzelf een slechte inhoudelijke analyse.
+Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken.&lt;/p&gt;
+&lt;p&gt;Laten we eens kijken welk risico we nu werkelijk lopen met deze afhankelijkheid.
+We willen voorkomen dat big tech onze nationale autonomie te veel beperkt, bijvoorbeeld doordat het als drukmiddel gebruikt wordt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Management Automation - DHCP</title>
       <link>http://localhost:1313/posts/dhcp-automation/</link>
       <pubDate>Fri, 04 Apr 2025 14:20:26 +0000</pubDate>
       <guid>http://localhost:1313/posts/dhcp-automation/</guid>
-      <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Charles de Gaulle, who said &amp;ldquo;War is the continuation of diplomacy with different means,&amp;rdquo; we can say that automation is the continuation of process maturity with different means: namely computers instead of people.&lt;/p&gt;
+      <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &amp;ldquo;War is the continuation of diplomacy with different means&amp;rdquo;, we can say that automation is the continuation of process maturity with different means: namely computers instead of people.&lt;/p&gt;
 &lt;p&gt;I have two historically great examples of this. One of them is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?&lt;/p&gt;</description>
     </item>
     <item>
