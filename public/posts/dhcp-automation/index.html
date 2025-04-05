@@ -7,8 +7,8 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Network Management Automation - DHCP | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &ldquo;War is the continuation of diplomacy with different means&rdquo;, we can say that automation is the continuation of process maturity with different means: namely computers instead of people.
-My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?">
+<meta name="description" content="As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &ldquo;War is the continuation of diplomacy with different means&rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.
+My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/dhcp-automation/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -129,12 +129,6 @@ My favorite historical example is IP address allocation. In the past, whenever t
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Network Management Automation - DHCP
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2025-04-04 14:20:26 +0000 UTC'>April 4, 2025</span>
 
@@ -142,21 +136,23 @@ My favorite historical example is IP address allocation. In the past, whenever t
   </header> 
 
   
-  <p><i>⏳ 3 min read</i></p>
+  <p><i>⏳ 4 min read</i></p>
   
-  <div class="post-content"><p>As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &ldquo;War is the continuation of diplomacy with different means&rdquo;, we can say that automation is the continuation of process maturity with different means: namely computers instead of people.</p>
-<p>My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. Remember that?</p>
-<p>You&rsquo;d go to the person in charge, who would pull out their notebook, sharpen their pencil, and write down the assigned IP address. This process took time and resources, but it worked.</p>
-<p>I mean it&rsquo;s the paper napkin principle and uh so then in in 1994 for um well people were having some solutions for that but in 19 I remember that in 1994 I went to a Unix uh conference Unix systems manager conference and they had an American guy over and he was uh talking I had a presentation I forgot the presentation but we also talked about talked uh with him in the bar afterwards and he said that he talked about how the internet was built up of of of uh frame relay over and PLS over and it was a complete mess.</p>
-<p><a href="https://archief-website.nluug.nl/activiteiten/events/vj94/abstracts/Mike.ODell.html">https://archief-website.nluug.nl/activiteiten/events/vj94/abstracts/Mike.ODell.html</a></p>
-<p>We had Mike O&rsquo;Dell over in 1994.</p>
-<p>Uh many many layers of technology to just push IP packets around which um I was impressed by the number of layers back then, but I think what he was trying to say was that how wasteful it really was.</p>
-<p>Anyway um he also said well you know um next year uh Microsoft&rsquo;s going to come out with a new version of Windows and you know which version I&rsquo;m talking about and that has that has TCP P built in to the operating system and he said and he was associated with IETF.</p>
-<p>So at least with some standardization efforts and he said or with the telco and he said they&rsquo;re planning to sell 150,000 of those every month.</p>
-<p>Can you can you imagine how many IP addresses that will be right? Uh how are we going to manage these?</p>
-<p>They mentioned that Microsoft collaborated with others to define an automated system for IP address allocation, which we now know as DHCP.</p>
-<p>Around the same time, or possibly a bit earlier, a friend of mine, now a retired professor, was doing his PhD on network management—a concept that was quite elusive in the early 80s. What did network management entail? How would it be standardized? In 1982, the idea of computer networks was still new, and managing them seemed unnecessary because there were so few computers. However, once networks started to scale, network management became much more critical.</p>
-<p>I likely have his PhD thesis somewhere. His research focused on SNMP and similar technologies, ultimately concluding that network management encompasses everything not yet automated into a protocol. This represents a maturity story: human management handles what we cannot automate. This model has been central to the development of IT and systems administration since the late 80s.</p>
+  <div class="post-content"><p>As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &ldquo;War is the continuation of diplomacy with different means&rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.</p>
+<p>My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.</p>
+<p>You&rsquo;d go to the person in charge for an IP address, they&rsquo;d pull out their notebook, sharpen their pencil, and note it down. Simple, manual, and not built for scale.</p>
+<p>In 1994 I went to a Unix systems administration conference and they had Mike O&rsquo;Dell over from the USA.
+He had a <a href="https://archief-website.nluug.nl/activiteiten/events/vj94/abstracts/Mike.ODell.html">presentation about the internet</a> where he talked about many layers of technology to just push IP packets around. I was impressed by the number of layers back then, but I think what he was trying to say was how wasteful it really was, and that many of these things had to be reengineered to allow the internet to grow.</p>
+<p>As a side note, it grew by a factor of 500-1000 in number of users in the thirty years since. At the time of the conference there where about a 1000 websites worldwide, and this conference is the first one listed on the NLUUG website.</p>
+<p>We talked with him in the bar afterwards, where he said: &ldquo;You know, next year Microsoft&rsquo;s going to come out with a new version of Windows (editor note: Windows 95) and that will have an internet protocol stack built in to the operating system. They&rsquo;re planning to sell 150,000 of those every month&rdquo;. That sounded like a staggering amount.
+Can you imagine how many IP addresses that will be right? How are we going to manage these? We need more pencils!</p>
+<p>Then he mentioned that Microsoft collaborated with the IETF to define an automated system for IP address allocation. That standard we now know as DHCP, and it is also in every PC and practically every network. It very likely has reduced many errors that happened in the traditional process, such as duplicate IP adresses being handed out.</p>
+<p>What we see here is that a process (address allocation) matured enough for it to be automated. Consequently, it can scale up, and it can be of higher quality.</p>
+<p>Another perspective on this is that this activity largely fades into the background of the system administration domain, and becomes part of the technical digital infrastructure. This is a very common pattern in IT, systems administration, and in digital infrastructures in particular.</p>
+<p>Compare how assemblers and compilers were heralded in the early days of writing software as making programmers redundant. Well, automation did not make them redundant, it just made them write software on a much higher level of abstraction, leading to more productivity and more quality. The same thing happens in systems administration: as parts get automated, admins operate at a higher level.</p>
+<p>In the late eighties, a university colleague of mine, now a retired professor, was doing his PhD on network management architectures—a concept that was quite elusive at the time. What did network management entail? How would it be standardized? Back then, the idea of computer networks was still new, and automating their management seemed unnecessary because there were so few computers. However, once networks started to scale, network management became much more critical.</p>
+<p>His research focused on SNMP and similar technologies. Just as DHCP automated address allocation, SNMP helped manage network measaurements and settings. Ultimately though, he concluded that network management encompasses everything not yet automated into a protocol. Again, this represents a maturity story: human management handles what we cannot automate (yet).</p>
+<p>That is the cycle of digital development: from manual effort to mature processes to automation—and then on to the next layer of complexity.</p>
 
 
   </div>

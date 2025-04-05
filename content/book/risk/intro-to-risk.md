@@ -1,7 +1,7 @@
 ---
 date: '2025-03-12T13:13:35Z'
 draft: true
-title: 'Intro to Risk'
+title: 'Introduction to Risk'
 weight: "1"
 ---
 
