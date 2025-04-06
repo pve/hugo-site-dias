@@ -4,7 +4,7 @@ draft: true
 title: 'Big tech afhankelijkheid: wat zijn de echte risicos?'
 ---
 
-Het nationale sentiment is negatief over de afhankelijkheid van 'big tech'. Overheidsdata staat in een amerikaanse cloud, we hebben geen eigen sociale network, enzovoort.
+Het nationale sentiment is negatief over de afhankelijkheid van 'big tech'. Overheidsdata staat in een amerikaanse cloud, we hebben geen eigen sociale network, enzovoort. En vergelijkbare sentimenten spelen bij andere organisaties.
 
 Nu zijn emoties vrijwel altijd een goede indicator, maar vormen ze op zichzelf een slechte inhoudelijke analyse.
 Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken.
