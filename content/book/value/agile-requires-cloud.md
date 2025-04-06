@@ -8,7 +8,8 @@ weight: 30
 **Agile development** is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
 Back in the old days, business software was primarily written to automate **_existing_** business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, "customer relationship management" and so on.
 
-Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.
+Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat.
+Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.
 
 ## The dance
 
