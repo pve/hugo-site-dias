@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Apr 2025 12:31:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Apr 2025 11:21:31 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -117,7 +117,8 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <guid>http://localhost:1313/book/value/agile-requires-cloud/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
 Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
-&lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
+&lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat.
+Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Model Canvas for IaaS Providers</title>
@@ -150,15 +151,30 @@ Back in the old days, business software was primarily written to automate &lt;st
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Example Mermaid Client-Server</title>
+      <link>http://localhost:1313/posts/example-mermaid-cs/</link>
+      <pubDate>Mon, 07 Apr 2025 11:21:31 +0000</pubDate>
+      <guid>http://localhost:1313/posts/example-mermaid-cs/</guid>
+      <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
+    group frontend(cloud)[Frontend]
+        service client(internet)[Client Browser] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Application Server] in backend
+        service database(database)[Database] in backend
+    
+    client:B -- L:app_server
+    app_server:B -- T:database
+&lt;/pre&gt;</description>
+    </item>
+    <item>
       <title>Big tech afhankelijkheid: wat zijn de echte risicos?</title>
       <link>http://localhost:1313/posts/autonomie-van-bigtech/</link>
       <pubDate>Sat, 05 Apr 2025 09:36:33 +0000</pubDate>
       <guid>http://localhost:1313/posts/autonomie-van-bigtech/</guid>
-      <description>&lt;p&gt;Het nationale sentiment is negatief over de afhankelijkheid van &amp;lsquo;big tech&amp;rsquo;. Overheidsdata staat in een amerikaanse cloud, we hebben geen eigen sociale network, enzovoort. En vergelijkbare sentimenten spelen bij andere organisaties.&lt;/p&gt;
-&lt;p&gt;Nu zijn emoties vrijwel altijd een goede indicator, maar vormen ze op zichzelf een slechte inhoudelijke analyse.
-Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken.&lt;/p&gt;
-&lt;p&gt;Laten we eens kijken welk risico we nu werkelijk lopen met deze afhankelijkheid.
-We willen voorkomen dat big tech onze nationale autonomie te veel beperkt, bijvoorbeeld doordat het als drukmiddel gebruikt wordt.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Het nationale sentiment is negatief over de afhankelijkheid van &amp;lsquo;big tech&amp;rsquo;. Overheidsdata staat in een Amerikaanse cloud, we hebben geen eigen sociaal netwerk, enzovoort. En vergelijkbare sentimenten spelen bij andere organisaties.&lt;/p&gt;
+&lt;p&gt;Emoties zijn vaak een goede indicator, maar geen goede inhoudelijke analyse.
+Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network Management Automation - DHCP</title>
@@ -237,15 +253,6 @@ These conflicting views can best be seen as maps of the territory. And as I have
 &lt;p&gt;verhaal over corporate en MKB&lt;/p&gt;
 &lt;p&gt;How technical debt works: negative investment externalities.&lt;/p&gt;
 &lt;p&gt;But of course you have this discussion on shared services. As a matter of fact, I keep talking about the book that I&amp;rsquo;m probably not going to finish, but it&amp;rsquo;s still a nice frame of reference. Now digital infrastructures at scale - there are a few very essential elements in there. The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it&amp;rsquo;s amenable to automation. These two together give a really interesting socio-political economic dynamic. And that&amp;rsquo;s what you need to understand if you want your shared service to keep operating - or if you don&amp;rsquo;t want it to operate, but that&amp;rsquo;s a different story.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Agile Requires Cloud</title>
-      <link>http://localhost:1313/book/diginfra/agile-requires-cloud/</link>
-      <pubDate>Wed, 12 Mar 2025 21:15:40 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/agile-requires-cloud/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
-Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
-&lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat. Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Infrastructures - the graphic novel</title>

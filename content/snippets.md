@@ -45,3 +45,20 @@ computable columns
 chaos engineering
 
 todo /2020/02/tutorial-cloud-native
+
+elk proces kan met meer data beter gemaakt worden.
+De vraag is voor wie, en tegen welke kosten?
+
+De shared services business case
+
+Input Robert voor Governance (DI-AS) journal 6 feb 2025
+
+Verhaaltje over haven (journal feb 2025)
+
+feedback loops en data quality
+
+case study JCR
+
+Framework resilience
+
+Hoe richt je GRC op open source en cloud native in. 

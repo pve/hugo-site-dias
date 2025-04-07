@@ -5,13 +5,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Applying technology follows a pattern | Digital Infrastructures at Scale</title>
+<title>Example Mermaid Client-Server | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="How to fix the WiFi? How to find a new phone for grandma?
-Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
-By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&rsquo;ll focus on information technology here, though most principles have wider applicability.">
+<meta name="description" content="architecture-beta
+    group frontend(cloud)[Frontend]
+        service client(internet)[Client Browser] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Application Server] in backend
+        service database(database)[Database] in backend
+    
+    client:B -- L:app_server
+    app_server:B -- T:database
+">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/technical-meta-model/">
+<link rel="canonical" href="http://localhost:1313/posts/example-mermaid-cs/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -20,7 +28,7 @@ By understanding how applying technology really works, you can be more effective
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/technical-meta-model/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/example-mermaid-cs/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,6 +66,13 @@ By understanding how applying technology really works, you can be more effective
 
     </style>
 </noscript>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
+<script>
+  mermaid.initialize({ 
+    startOnLoad: true,
+  });
+</script>
+
 </head>
 
 <body class="" id="top">
@@ -129,53 +144,42 @@ By understanding how applying technology really works, you can be more effective
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
-      Applying technology follows a pattern
+      Example Mermaid Client-Server
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h1>
-    <div class="post-meta"><span title='2025-03-22 17:56:43 +0000 UTC'>March 22, 2025</span>
+    <div class="post-meta"><span title='2025-04-07 11:21:31 +0000 UTC'>April 7, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 5 min read</i>
+  <i>⏳ 1 min read</i>
   
-  <div class="post-content"><p>How to fix the WiFi? How to find a new phone for grandma?</p>
-<p>Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
-By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&rsquo;ll focus on information technology here, though most principles have wider applicability.</p>
-<p>Let&rsquo;s start by looking at a few examples that I have used these in teaching IT students. The first example is fixing the WiFi at home, and the second one is selecting a new mobile phone for grandma. Think for a moment how you would approach these two cases. For a more corporate example you can think of replacing a content management system, or introducing a new security capability.</p>
-<p>The core idea of technology is that by doing an <strong>intervention</strong> in the real world, you achieve certain desirable outcomes. This is in contract to the core idea of science, which is that by doing observations on the real world, we can derive certain conclusions that allow us to predict what might happen under similar conditions in the future. Science seeks to understand and explain the underlying principles governing phenomena, while technology applies that understanding to create tools, systems, or processes that achieve specific goals.</p>
-<p>Of course, science and technology are intertwined: technology relies on scientific insights to be more effective, while science often needs technology in order to do experiments and observations.</p>
-<p>As our ambition is to apply technology in a bit more systematic way, let us begin to ask ourselves what it is that we try to achieve.</p>
-<p>Note to self: technology literally means the science of technics. In english there is not much of a distinction between the techniques and technology.</p>
-<p>A technique aims to achieve a certain desirable outcome. Interestingly enough, the attention is often on the technique, and a little less on the outcome. I find that focussing on the outcome first is a productive and relevant thought exercise.</p>
-<p>Let&rsquo;s review our examples. What does fixing the WiFi mean? What result does it achieve? This could be many things. Maybe we want a better internet experience in the back of our garden, or on the top floor? Maybe we want to have higher internet speeds inside the house. Maybe we want less packet loss. Maybe we want to play our games with less ping delay, so we can win more often. Maybe we want to allow our friends easier access, or more security.</p>
-<p>The essence of the result is that some measurement of quality improves for some stakeholder.</p>
-<p>Turning our attention to grandma&rsquo;s new phone, what do we want to be improved? Maybe her current phone is too hard to navigate because the buttons are too small, or it does not run an app that allows here to see the pictures of her grandchildren. Or maybe it breaks down all the time, and your tech savvy nephew has to come over to fix it, and he does not want to do that as often anymore.</p>
-<p>Now we can turn our attention to the intervention. In our WiFi case, are we buying more access points, and if so, where should they go, and how should they be connected? Maybe we want to change the frequency allocations, or allow use of the 5GHz frequency bands. With grandmas phone, do we install new apps, buy a different size phone, or what?</p>
-<p>How does the intervention lead to the desired result? In other words: how does one lead to the other? Maybe you have a (scientific) theory about that. Maybe you&rsquo;ll just need to figure it out. In both cases you start with a hypothesis that explains how the intervention leads to a result.</p>
-<p>For example: because WiFi signal strength (and therefore quality) decreases with distance between device and base station, we install more base stations in order to have better quality around the house. Another example would be: because there is limited frequency spectrum, we reconfigure our existing base stations to use different frequencies in order for them to interfere less, and have better network quality within their range.</p>
-<p>As you can see from this example, your assumptions, your hypotheses, matter.</p>
-<p>We can morph these statements in a variety of useful ways. This is what makes for professional application of technology. Here are some variations.</p>
-<ol>
-<li>
-<p>By theory Z, we do intervention X to achieve result Y.</p>
-</li>
-<li>
-<p>We hypothesize that intervention X will lead to result Y, in which case we can start to form a theory.</p>
-</li>
-<li>
-<p>How does intervention X lead to desirable outcomes?</p>
-</li>
-<li>
-<p>We are looking to achieve result Y, and we have theory Z. What does that tell us about possible interventions?</p>
-</li>
-</ol>
-<p>Once we grasp this, we can move on to more complicated scenarios. We can flesh out what a better outcome is. We can use this to do design in more complicated situations such as with more stakeholders. We can also use this to do more systematic troubleshooting.</p>
-<p>More about that later.</p>
+  <div class="post-content"><pre class="mermaid">architecture-beta
+    group frontend(cloud)[Frontend]
+        service client(internet)[Client Browser] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Application Server] in backend
+        service database(database)[Database] in backend
+    
+    client:B -- L:app_server
+    app_server:B -- T:database
+</pre>
 
 
   </div>
 
+  
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
   
 
   <footer class="post-footer">
