@@ -151,11 +151,30 @@ A trained model is the result of processing a lot of training data by a specific
 <p>Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.</p>
 <p>A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.</p>
 <p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.</p>
-<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
-<pre class="mermaid">block-beta
+<pre class="mermaid">%%{ init: {
+    &#39;theme&#39;: &#39;forest&#39;,
+    &#39;themeVariables&#39;:
+        { &#39;fontSize&#39;: &#39;12px&#39;}
+} }%%
+block-beta
 
-space in space llm:2 space out space
-in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
+ space in space llm:2 space out space 
+in[&#34;Training Data&#34;] --&gt; llm[&#34;LLM training&#34;]
+llm--&gt; out[&#34;LLM&#34;]
+style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+</pre>
+<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.
+In cloud terms, we&rsquo;d call this Training as a Service.</p>
+<pre class="mermaid">%%{ init: {
+    &#39;theme&#39;: &#39;forest&#39;,
+    &#39;themeVariables&#39;:
+        { &#39;fontSize&#39;: &#39;12px&#39;}
+} }%%
+block-beta
+
+space in space llm space out space
+in[&#34;Prompt&#34;] --&gt; llm[&#34;LLM&#34;]
 llm--&gt; out[&#34;Completion&#34;]
 
 style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5

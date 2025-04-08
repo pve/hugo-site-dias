@@ -12,13 +12,34 @@ A core element of AI systems is a trained model. At least that is true for the d
 
 A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.
 
-A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you'll need a lot more hardware. Therefore there is a good business case for sharing this across many users.
-
 ```mermaid
+%%{ init: {
+    'theme': 'forest',
+    'themeVariables':
+        { 'fontSize': '12px'}
+} }%%
 block-beta
 
-space in space llm:2 space out space
-in["Prompt"] --> llm["Large Language Model"]
+ space in space llm:2 space out space 
+in["Training Data"] --> llm["LLM training"]
+llm--> out["LLM"]
+style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+```
+
+A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you'll need a lot more hardware. Therefore there is a good business case for sharing this across many users.
+In cloud terms, we'd call this Training as a Service.
+
+```mermaid
+%%{ init: {
+    'theme': 'forest',
+    'themeVariables':
+        { 'fontSize': '12px'}
+} }%%
+block-beta
+
+space in space llm space out space
+in["Prompt"] --> llm["LLM"]
 llm--> out["Completion"]
 
 style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5

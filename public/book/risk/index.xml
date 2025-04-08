@@ -6,18 +6,8 @@
     <description>Recent content in Risks of digital infrastructures on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Mar 2025 13:13:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2025 14:15:21 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/risk/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Introduction to Risk</title>
-      <link>http://localhost:1313/book/risk/intro-to-risk/</link>
-      <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
-      <description>&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances endangering that value.&lt;/p&gt;
-&lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
-&lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.&lt;/p&gt;
-&lt;p&gt;In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
       <link>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</link>
