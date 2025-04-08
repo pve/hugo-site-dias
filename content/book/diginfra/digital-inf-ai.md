@@ -10,7 +10,10 @@ Let's explain this step by step and focus on which data is stored where, and how
 
 A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.
 
-A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.
+A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.
+
+Smaller models can still take more training resources than the average company has in place.
+That is why Training as a Service in the cloud exists.
 
 ```mermaid
 %%{ init: {
@@ -27,8 +30,7 @@ style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasha
 style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
 ```
 
-A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you'll need a lot more hardware. Therefore there is a good business case for sharing this across many users.
-In cloud terms, we'd call this Training as a Service.
+A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and for good performance it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you'll need a lot more hardware. Therefore there is a good business case for sharing this across many users.
 
 ```mermaid
 %%{ init: {

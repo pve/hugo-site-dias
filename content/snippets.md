@@ -62,3 +62,5 @@ case study JCR
 Framework resilience
 
 Hoe richt je GRC op open source en cloud native in. 
+
+Freemium pattern. Busineess model canvas p102.
