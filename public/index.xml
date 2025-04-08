@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Apr 2025 11:21:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Apr 2025 09:17:02 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -31,6 +31,21 @@
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to Change and Control</title>
+      <link>http://localhost:1313/book/change/intro-to-change-control/</link>
+      <pubDate>Tue, 08 Apr 2025 09:17:02 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/intro-to-change-control/</guid>
+      <description>&lt;p&gt;Change is quite inherent in technology, and in particular in information technology.
+At the same time we want technology to provide a reliable service, and that requires a degree of control.
+In this chapter we&amp;rsquo;ll explore some fundamentals of change, in particular how this works with groups of people.&lt;/p&gt;
+&lt;p&gt;Change and control mindsets complement each other.
+We need both, even if they conflict at times.&lt;/p&gt;
+&lt;p&gt;For example, in a typical IT environment, you have developers and system administrators.
+The output of the developers is a stream of changes: new features, improvements, bug fixes, and so on.
+Adminstrators are in the business of keeping everything stable, the same.
+They see no fundamental difference between a new feature and an incident. Both are disrupting the normal flow of business. Consequently, they are seen as a threat, and that is why it often feels that developers and system administrators are from different planets.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Power</title>
@@ -215,9 +230,9 @@ Some of the systems in the registry are AI-based. Indeed, we have AI to help che
     </item>
     <item>
       <title>Systematically applying technology</title>
-      <link>http://localhost:1313/posts/technical-meta-model/</link>
+      <link>http://localhost:1313/book/change/technical-meta-model/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/technical-meta-model/</guid>
+      <guid>http://localhost:1313/book/change/technical-meta-model/</guid>
       <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
 &lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
 By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
@@ -340,10 +355,19 @@ My other big point is that deployment diagrams can be a great tool for security 
 Recently I ran into the following example. Here is an &lt;a href=&#34;https://syang.substack.com/p/security-group-and-network-acl-in&#34;&gt;explanation of the difference between VPC and security groups&lt;/a&gt;. Great story, but I have some comments on the diagram, which used to come &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html&#34;&gt;from AWS itself&lt;/a&gt;, by the way, but has been removed.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>A Small Example of Cloud Native Development</title>
+      <link>http://localhost:1313/book/cases/tutorial-cloud-native/</link>
+      <pubDate>Mon, 10 Feb 2020 23:29:51 +0000</pubDate>
+      <guid>http://localhost:1313/book/cases/tutorial-cloud-native/</guid>
+      <description>&lt;p&gt;Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.
+To illustrate this new approach, I have started to develop a minimal application. Although minimal, I run it in production. Its basic function is to regularly pull out data from an air quality sensor into a cloud-based database. Together it is a few hundred lines of code.
+Here are the major features of the example:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Why lawyers need to understand cloud</title>
-      <link>http://localhost:1313/posts/lawyers-need-understand-tech/</link>
+      <link>http://localhost:1313/book/change/lawyers-need-understand-tech/</link>
       <pubDate>Thu, 03 May 2018 13:54:48 +0000</pubDate>
-      <guid>http://localhost:1313/posts/lawyers-need-understand-tech/</guid>
+      <guid>http://localhost:1313/book/change/lawyers-need-understand-tech/</guid>
       <description>&lt;p&gt;Cloud is too important to leave to technical people.&lt;/p&gt;
 &lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
 Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
@@ -365,6 +389,17 @@ You can also get the story on my YouTube video.&lt;/p&gt;</description>
       <guid>http://localhost:1313/posts/directories-are-also-infrastructures/</guid>
       <description>&lt;p&gt;One of the big projects I am working on right now (2006) is directory services for identity management. In these directories digital identities such as loginnames, addresses, access rights, etc. are stored. With an adequately structured directory service, the proper management of access rights becomes a lot easier, which translates into cost savings and better security.&lt;/p&gt;
 &lt;p&gt;Examples of these include the internet&amp;rsquo;s Domain Name System (DNS) and Microsoft&amp;rsquo;s Active Directory. A lot of organizations however, have requirements beyond these systems, and for these a wide range of custom solutions are used.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Neutrality: who pays the ferryman?</title>
+      <link>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</link>
+      <pubDate>Fri, 18 Aug 2006 13:54:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</guid>
+      <description>&lt;p&gt;Network neutrality has become the topic of intense discussion and legislative action.&lt;br&gt;
+See the &lt;a href=&#34;http://www.washingtonpost.com/wp-dyn/content/article/2006/01/21/AR2006012100094.html&#34;&gt;Washington Post&lt;/a&gt; , a &lt;a href=&#34;http://en.wikipedia.org/wiki/Network_neutrality&#34;&gt;Wikipedia article&lt;/a&gt;, and &lt;a href=&#34;http://www.circleid.com/posts/network_neutrality/&#34;&gt;CircelID&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What is the issue?&lt;/p&gt;
+&lt;p&gt;On the one hand people argue for &amp;lsquo;universal service&amp;rsquo; that say that one person&amp;rsquo;s bits should not be treated differently from another person&amp;rsquo;s. This compares to the idea that the phone company should not be allowed to treat your calls differently depending on what you want to say, or that red haired people would have a different monthly fee. There are laws against this type of discrimination (at least in most nations), and some people want to extend this law to Internet traffic. On the other hand there are some Internet providers who want to charge different customers different rates for different service. &amp;ldquo;We can&amp;rsquo;t have companies freeloading on our expensive pipes&amp;rdquo;, they claim.
+Clearly we seem to want both. We don&amp;rsquo;t want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

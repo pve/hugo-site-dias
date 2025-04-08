@@ -6,8 +6,15 @@
     <description>Recent content in Change and control on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Mar 2025 17:56:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Apr 2025 09:17:02 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/change/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Change Control</title>
+      <link>http://localhost:1313/book/change/intro-to-change-control/</link>
+      <pubDate>Tue, 08 Apr 2025 09:17:02 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/intro-to-change-control/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Systematically applying technology</title>
       <link>http://localhost:1313/book/change/technical-meta-model/</link>

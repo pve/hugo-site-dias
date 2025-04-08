@@ -12,7 +12,7 @@ Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraprod
 Laten we eens kijken welk risico we nu werkelijk lopen met deze afhankelijkheid.
 We willen voorkomen dat big tech onze nationale autonomie te veel beperkt, bijvoorbeeld doordat het als drukmiddel gebruikt wordt.
 
-Maar wie zet dan die druk? Deze vraag is nog niet zo eenduidig te beantwoorden. Is het big tech zelf? Is het de Amerikaanse overheid, die de meeste macht over big tech heeft? Of heeft big tech macht over de (Amerikaanse) overheid. Dat maakt uit voor de motieven, en mogelijk ook voor de oplossingsrichtingen.
+Maar wie zet dan die druk? Deze vraag is nog niet zo eenduidig te beantwoorden. Is het big tech zelf? Is het de Amerikaanse overheid, die de meeste macht over big tech heeft? Of heeft big tech macht over de (Amerikaanse) overheid? Dat maakt uit voor de motieven, en mogelijk ook voor de oplossingsrichtingen.
 
 Welke digitale dreigingen zijn er eigenlijk? De gebruikelijke insteek bij informatiebeveiliging is: vertrouwelijkheid, beschikbaarheid en integriteit.
 
