@@ -1,6 +1,6 @@
 ---
 date: '2025-04-05T09:36:33Z'
-draft: true
+draft: false
 title: 'Big tech afhankelijkheid: wat is het echte risico?'
 ---
 
@@ -16,7 +16,7 @@ Maar wie zet dan die druk? Deze vraag is nog niet zo eenduidig te beantwoorden. 
 
 Welke digitale dreigingen zijn er eigenlijk? De gebruikelijke insteek bij informatiebeveiliging is: vertrouwelijkheid, beschikbaarheid en integriteit.
 
-Hoe bedreigt big tech de vertrouwelijkheid? De gedachte hier is dat als data op Amerikaanse servers wordt opgeslagen, de Amerikaanse overheid er dus bij kan.
+Hoe bedreigt big tech vertrouwelijkheid? De gedachte hier is dat als data op Amerikaanse servers wordt opgeslagen, de Amerikaanse overheid er dus bij kan.
 Dat zit wat genuanceerder. Cloud providers verzettten zich met woord en daad tegen ongebreideld data harken, en dat drijft de kosten voor de Amerikaanse overheid op.
 Maar veelal krijgt de Amerikaanse overheid haar zin, ook als de data op Europese servers van een Amerikaans bedrijf staan.
 
@@ -24,7 +24,7 @@ De bulk van de Nederlandse overheidsdata is echter openbaar, en dat is zelfs bij
 Tegelijk hebben buitenlandse mogendheden veel andere mogelijkheden om bij gegevens en informatie te komen. Daar hebben ze Office 365 niet voor nodig.
 Het vertrouwelijkheidsrisico is wel belangrijk, maar zie ik niet als de belangrijkste reden om te investeren in andere oplossingen.
 
-Hoe bedreigt big tech de beschikbaarheid? De Amerikaanse overheid kan dreigen met afsluiten, en zeekabels kunnen beschadigd worden. Dat is allemaal al eens gebeurd. En ook Microsoft kan gewoon plat gaan. Niemand is 'too big to fail'. Vanuit het perspectief van 'business resilience', bedrijfszekerheid, is deze beschikbaarheid van steeds groter belang, omdat onze afhankelijkheid van digitale infrastructuren steeds groter wordt.
+Hoe bedreigt big tech beschikbaarheid? De Amerikaanse overheid kan dreigen met afsluiten, en zeekabels kunnen beschadigd worden. Dat is allemaal al eens gebeurd. En ook Microsoft kan gewoon plat gaan. Niemand is 'too big to fail'. Vanuit het perspectief van 'business resilience', bedrijfszekerheid, is deze beschikbaarheid van steeds groter belang, omdat onze afhankelijkheid van digitale infrastructuren steeds groter wordt.
 
 Maar hoe ga je daar mee om? Is het nodig om een complete kopie of kloon van alle capaciteit en functionaliteit te hebben? Ik denk het niet. _Resilient_ -veerkrachtig- zijn omvat ook wat in het engels 'graceful degradation' heet. Een schade-event is nooit gratis. Er zijn altijd kosten, en honderd procent continuïteit is veelal te duur. Kun je echter de schade beperken, en tijd kopen om alternatieven op te bouwen? Met 20% van je capaciteit en functionaliteit zou je 80% van je resultaat moeten kunnen halen.
 In het geval van overheidsdata op Amerikaanse servers en software zie ik daarom meer in het hebben van een noodvoorziening die snel opgeschaald kan worden.

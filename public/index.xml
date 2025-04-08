@@ -214,7 +214,7 @@ Here is the story of my site being infected with malware, viewed by a profession
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Applying technology follows a pattern</title>
+      <title>Systematically applying technology</title>
       <link>http://localhost:1313/posts/technical-meta-model/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
       <guid>http://localhost:1313/posts/technical-meta-model/</guid>
@@ -338,6 +338,16 @@ In fact, formal training in architecture diagrams will not necessarily make thos
 But still. There are good drawings and there are drawings that can be improved.
 My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
 Recently I ran into the following example. Here is an &lt;a href=&#34;https://syang.substack.com/p/security-group-and-network-acl-in&#34;&gt;explanation of the difference between VPC and security groups&lt;/a&gt;. Great story, but I have some comments on the diagram, which used to come &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html&#34;&gt;from AWS itself&lt;/a&gt;, by the way, but has been removed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why lawyers need to understand cloud</title>
+      <link>http://localhost:1313/posts/lawyers-need-understand-tech/</link>
+      <pubDate>Thu, 03 May 2018 13:54:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/lawyers-need-understand-tech/</guid>
+      <description>&lt;p&gt;Cloud is too important to leave to technical people.&lt;/p&gt;
+&lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
+Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
+I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Top 8 cloud risks according to ENISA</title>

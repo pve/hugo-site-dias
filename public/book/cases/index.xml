@@ -18,5 +18,14 @@
 Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.&lt;/p&gt;
 &lt;p&gt;The hack led to business damage at the end of one of my webinars. In 2016, on a Friday, I did a webinar, at the end of which I had two links to my site as a call to action.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>A Small Example of Cloud Native Development</title>
+      <link>http://localhost:1313/book/cases/tutorial-cloud-native/</link>
+      <pubDate>Mon, 10 Feb 2020 23:29:51 +0000</pubDate>
+      <guid>http://localhost:1313/book/cases/tutorial-cloud-native/</guid>
+      <description>&lt;p&gt;Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.
+To illustrate this new approach, I have started to develop a minimal application. Although minimal, I run it in production. Its basic function is to regularly pull out data from an air quality sensor into a cloud-based database. Together it is a few hundred lines of code.
+Here are the major features of the example:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

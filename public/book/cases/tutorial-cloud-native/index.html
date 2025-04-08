@@ -5,127 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Contents | Digital Infrastructures at Scale</title>
+<title>A Small Example of Cloud Native Development | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="
-    
-    
-      Preface
-      
-        
-        Preface
-        
-      
-    
-    
-    
-      Introduction
-      
-        
-      
-    
-    
-    
-      What are digital infrastructures?
-      
-        
-        Elements of the Digital World
-        
-        The Essence of Digital Infrastructures
-        
-        What a lunch in Spain taught me about digital infrastructures
-        
-        Deployment Diagrams
-        
-        What are AI digital infrastructures?
-        
-      
-    
-    
-    
-      Value
-      
-        
-        Provider Value
-        
-        Value in Process Improvement
-        
-        Agile Requires Cloud
-        
-        Business Model Canvas for IaaS Providers
-        
-        Business Model Canvas for SaaS Providers
-        
-        Multiple Ways to Go Cloud
-        
-      
-    
-    
-    
-      Power
-      
-        
-        Introduction to Power
-        
-        Positions of Power in IT
-        
-      
-    
-    
-    
-      Risks of digital infrastructures
-      
-        
-        Introduction to Risk
-        
-        Retrofitting Zero Trust on an existing application: an illustration
-        
-      
-    
-    
-    
-      Change and control
-      
-        
-        Systematically applying technology
-        
-        Why lawyers need to understand cloud
-        
-      
-    
-    
-    
-      Cases
-      
-        
-        How My Site Got Hacked
-        
-        A Small Example of Cloud Native Development
-        
-      
-    
-    
-    
-      Wrap up
-      
-        
-      
-    
-    
-    
-      Index
-      
-        
-      
-    
-    
-  
-
-
-
-Not all chapters are finalized. Blog articles might be included later!">
+<meta name="description" content="Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.
+To illustrate this new approach, I have started to develop a minimal application. Although minimal, I run it in production. Its basic function is to regularly pull out data from an air quality sensor into a cloud-based database. Together it is a few hundred lines of code.
+Here are the major features of the example:">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/">
+<link rel="canonical" href="http://localhost:1313/book/cases/tutorial-cloud-native/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -134,8 +20,7 @@ Not all chapters are finalized. Blog articles might be included later!">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/book/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/cases/tutorial-cloud-native/">
 <noscript>
     <style>
         #theme-toggle,
@@ -175,7 +60,7 @@ Not all chapters are finalized. Blog articles might be included later!">
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -217,7 +102,7 @@ Not all chapters are finalized. Blog articles might be included later!">
         <ul id="menu">
             <li>
                 <a href="http://localhost:1313/book/" title="Book">
-                    <span class="active">Book</span>
+                    <span>Book</span>
                 </a>
             </li>
             <li>
@@ -238,134 +123,51 @@ Not all chapters are finalized. Blog articles might be included later!">
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
-  <h1>
-    Contents
-  </h1>
-</header>
-<div class="post-content">
+<main class="main">
 
-  <ol>
-    
-    <li>
-      <strong><a href="/book/preface/">Preface</a></strong>
-      <ol>
-        
-        <li><a href="/book/preface/preface/">Preface</a></li>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/intro/">Introduction</a></strong>
-      <ol>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/diginfra/">What are digital infrastructures?</a></strong>
-      <ol>
-        
-        <li><a href="/book/diginfra/elements-of-digitalinfrastructures/">Elements of the Digital World</a></li>
-        
-        <li><a href="/book/diginfra/essence-digital-infrastructures/">The Essence of Digital Infrastructures</a></li>
-        
-        <li><a href="/book/diginfra/lunch-spain/">What a lunch in Spain taught me about digital infrastructures</a></li>
-        
-        <li><a href="/book/diginfra/deployment-diagrams/">Deployment Diagrams</a></li>
-        
-        <li><a href="/book/diginfra/digital-inf-ai/">What are AI digital infrastructures?</a></li>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/value/">Value</a></strong>
-      <ol>
-        
-        <li><a href="/book/value/intro-to-value/">Provider Value</a></li>
-        
-        <li><a href="/book/value/value-in-process-improvement/">Value in Process Improvement</a></li>
-        
-        <li><a href="/book/value/agile-requires-cloud/">Agile Requires Cloud</a></li>
-        
-        <li><a href="/book/value/business-model-canvas-iaas/">Business Model Canvas for IaaS Providers</a></li>
-        
-        <li><a href="/book/value/business-model-canvas-saas/">Business Model Canvas for SaaS Providers</a></li>
-        
-        <li><a href="/book/value/three-ways-to-go-cloud/">Multiple Ways to Go Cloud</a></li>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/power/">Power</a></strong>
-      <ol>
-        
-        <li><a href="/book/power/intro-power/">Introduction to Power</a></li>
-        
-        <li><a href="/book/power/positions-of-power-it/">Positions of Power in IT</a></li>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/risk/">Risks of digital infrastructures</a></strong>
-      <ol>
-        
-        <li><a href="/book/risk/intro-to-risk/">Introduction to Risk</a></li>
-        
-        <li><a href="/book/risk/retrofitting-zero-trust-existing-application/">Retrofitting Zero Trust on an existing application: an illustration</a></li>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/change/">Change and control</a></strong>
-      <ol>
-        
-        <li><a href="/book/change/technical-meta-model/">Systematically applying technology</a></li>
-        
-        <li><a href="/book/change/lawyers-need-understand-tech/">Why lawyers need to understand cloud</a></li>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/cases/">Cases</a></strong>
-      <ol>
-        
-        <li><a href="/book/cases/how-my-site-got-hacked/">How My Site Got Hacked</a></li>
-        
-        <li><a href="/book/cases/tutorial-cloud-native/">A Small Example of Cloud Native Development</a></li>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/wrap/">Wrap up</a></strong>
-      <ol>
-        
-      </ol>
-    </li>
-    
-    <li>
-      <strong><a href="/book/index/">Index</a></strong>
-      <ol>
-        
-      </ol>
-    </li>
-    
-  </ol>
-
-
-<blockquote>
-<p><em>Not all chapters are finalized. Blog articles might be included later!</em></p></blockquote>
-
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/cases/">Cases</a></div>
+    <h1 class="post-title entry-hint-parent">
+      A Small Example of Cloud Native Development
+    </h1>
+    <div class="post-meta"><span title='2020-02-10 23:29:51 +0000 UTC'>February 10, 2020</span>
 
 </div>
+  </header> 
+
+  
+  <i>⏳ 1 min read</i>
+  
+  <div class="post-content"><p>Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.
+To illustrate this new approach, I have started to develop a minimal application. Although minimal, I run it in production. Its basic function is to regularly pull out data from an air quality sensor into a cloud-based database. Together it is a few hundred lines of code.
+Here are the major features of the example:</p>
+<ul>
+<li>API programming examples (Foobot, io.adafruit.com)</li>
+<li>&lsquo;Server-less&rsquo; architecture</li>
+<li>Google Cloud Platform focussed</li>
+<li>Continuous delivery through Google Cloud Build</li>
+<li>Version control</li>
+<li>Automated unit, integration and security testing</li>
+<li>BigQuery</li>
+<li>Continuous monitoring through StackDriver</li>
+<li>Slack integration for build and run notifications</li>
+<li>Secrets and credentials management in a DevSecOps world</li>
+<li>Workflow for Python-based development (atom, pyenv, pytest, bandit)</li>
+</ul>
+<p>You should be able to replicate this setup yourself.
+More tutorial explanation is in my <a href="https://github.com/pve/foobotapi/blob/master/README.md">GitHub repository</a>. There you can find the code as well as a <a href="https://github.com/pve/foobotapi/blob/master/main.md">more detailed explanation</a>. In that, I dissect the full approach theme by theme, topic by topic.</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Change and control on Digital Infrastructures at Scale</title>
+    <link>http://localhost:1313/book/change/</link>
+    <description>Recent content in Change and control on Digital Infrastructures at Scale</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Mar 2025 17:56:43 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/book/change/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Systematically applying technology</title>
+      <link>http://localhost:1313/book/change/technical-meta-model/</link>
+      <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/technical-meta-model/</guid>
+      <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
+&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
+By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why lawyers need to understand cloud</title>
+      <link>http://localhost:1313/book/change/lawyers-need-understand-tech/</link>
+      <pubDate>Thu, 03 May 2018 13:54:48 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/lawyers-need-understand-tech/</guid>
+      <description>&lt;p&gt;Cloud is too important to leave to technical people.&lt;/p&gt;
+&lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
+Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
+I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
