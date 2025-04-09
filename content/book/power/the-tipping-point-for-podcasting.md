@@ -1,5 +1,5 @@
 ---
-title: 'The tipping point for podcasting'
+title: 'Who made podcasting big?'
 date: '2005-09-05T13:35:00'
 draft: false
 weight: "50" 
@@ -28,3 +28,5 @@ I found out that he has made a conscious effort to improve the numbers. For exam
 
 There is also a tipping point for creators of podcasts, which works in tandem with the tipping point for listeners.
 But I will leave you to figure out the details of that yourself.
+
+We can't really say that one person had the power to force podcasting upon the world, but there was definitely somebody with the insight and the opportunity.
