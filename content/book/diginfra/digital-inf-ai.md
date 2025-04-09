@@ -2,6 +2,7 @@
 date: '2025-03-08T17:57:16Z'
 draft: false
 title: 'What are AI digital infrastructures?'
+weight: "40" 
 ---
 
 The AI landscape has many digital infrastructures.
@@ -49,7 +50,7 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
    
 ```
 
-In cloud terms, we would call this Inferencing as a Service. In the NIST model, we'd call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.
+In cloud terms, we would call this Inferencing as a Service. In the NIST cloud model, we'd call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.
 
 This gives us the option to look for this on the market, or create a shared service inside an organisation or group of organisations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.
 

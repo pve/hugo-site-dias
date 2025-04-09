@@ -6,8 +6,34 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Apr 2025 09:36:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Apr 2025 14:34:54 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe Coding in Reality</title>
+      <link>http://localhost:1313/posts/vibe-coding-real/</link>
+      <pubDate>Tue, 08 Apr 2025 14:34:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/vibe-coding-real/</guid>
+      <description>&lt;p&gt;How does vibe coding work in the real? Vibe coding is having AI write your software. Coined by Andrej Karpathy, the hype is all over the map, with companies that are rethinking their hiring strategies for programmers. Sounds like disaster for software engineers and programmers.&lt;/p&gt;
+&lt;p&gt;Not so fast.&lt;/p&gt;
+&lt;p&gt;Curious, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example Mermaid Client-Server</title>
+      <link>http://localhost:1313/posts/example-mermaid-cs/</link>
+      <pubDate>Mon, 07 Apr 2025 11:21:31 +0000</pubDate>
+      <guid>http://localhost:1313/posts/example-mermaid-cs/</guid>
+      <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
+    group frontend(cloud)[Frontend]
+        service client(internet)[Client Browser] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Application Server] in backend
+        service database(database)[Database] in backend
+    
+    client:B -- L:app_server
+    app_server:B -- T:database
+&lt;/pre&gt;</description>
+    </item>
     <item>
       <title>Big tech afhankelijkheid: wat is het echte risico?</title>
       <link>http://localhost:1313/posts/autonomie-van-bigtech/</link>
@@ -43,6 +69,24 @@ Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraprod
       <description>&lt;p&gt;How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors.&lt;/p&gt;
 &lt;p&gt;But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Applying technology follows a pattern</title>
+      <link>http://localhost:1313/posts/technical-meta-model/</link>
+      <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
+      <guid>http://localhost:1313/posts/technical-meta-model/</guid>
+      <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
+&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
+By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>International Actors</title>
+      <link>http://localhost:1313/posts/international-actors/</link>
+      <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
+      <guid>http://localhost:1313/posts/international-actors/</guid>
+      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
+By the nature of scaling, very few digital infrastructures are influenced by national actors only. The international arena is complex, and there are even conflicting views on how it is made up.
+These conflicting views can best be seen as maps of the territory. And as I have mentioned earlier, a map is only relevant for a specific purpose.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The US Air Force Zero Trust Strategy</title>
@@ -128,6 +172,17 @@ You can also get the story on my YouTube video.&lt;/p&gt;</description>
       <guid>http://localhost:1313/posts/directories-are-also-infrastructures/</guid>
       <description>&lt;p&gt;One of the big projects I am working on right now (2006) is directory services for identity management. In these directories digital identities such as loginnames, addresses, access rights, etc. are stored. With an adequately structured directory service, the proper management of access rights becomes a lot easier, which translates into cost savings and better security.&lt;/p&gt;
 &lt;p&gt;Examples of these include the internet&amp;rsquo;s Domain Name System (DNS) and Microsoft&amp;rsquo;s Active Directory. A lot of organizations however, have requirements beyond these systems, and for these a wide range of custom solutions are used.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Neutrality: who pays the ferryman?</title>
+      <link>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</link>
+      <pubDate>Fri, 18 Aug 2006 13:54:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</guid>
+      <description>&lt;p&gt;Network neutrality has become the topic of intense discussion and legislative action.&lt;br&gt;
+See the &lt;a href=&#34;http://www.washingtonpost.com/wp-dyn/content/article/2006/01/21/AR2006012100094.html&#34;&gt;Washington Post&lt;/a&gt; , a &lt;a href=&#34;http://en.wikipedia.org/wiki/Network_neutrality&#34;&gt;Wikipedia article&lt;/a&gt;, and &lt;a href=&#34;http://www.circleid.com/posts/network_neutrality/&#34;&gt;CircelID&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What is the issue?&lt;/p&gt;
+&lt;p&gt;On the one hand people argue for &amp;lsquo;universal service&amp;rsquo; that say that one person&amp;rsquo;s bits should not be treated differently from another person&amp;rsquo;s. This compares to the idea that the phone company should not be allowed to treat your calls differently depending on what you want to say, or that red haired people would have a different monthly fee. There are laws against this type of discrimination (at least in most nations), and some people want to extend this law to Internet traffic. On the other hand there are some Internet providers who want to charge different customers different rates for different service. &amp;ldquo;We can&amp;rsquo;t have companies freeloading on our expensive pipes&amp;rdquo;, they claim.
+Clearly we seem to want both. We don&amp;rsquo;t want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

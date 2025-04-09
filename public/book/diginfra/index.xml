@@ -59,7 +59,20 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
 &lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
-&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
+&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The tipping point for podcasting</title>
+      <link>http://localhost:1313/book/diginfra/the-tipping-point-for-podcasting/</link>
+      <pubDate>Mon, 05 Sep 2005 13:35:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/the-tipping-point-for-podcasting/</guid>
+      <description>&lt;p&gt;Podcasting has its own digital infrastructures, for example in hosting them.
+Let&amp;rsquo;s look at how podcasting has grown, and what made it take off anyway?
+Many actors influence each other here, and the state of the art of the technology also has an impact on growth rates.&lt;/p&gt;
+&lt;p&gt;Suppose a hundred people get told by an enthusiastic friend to try podcasting.
+Of these, ten don’t have any hardware on which they can play the podcasts.
+So the rest goes online, and tries to find interesting content, but only 50 people can find a directory in which they can even start to look for podcasts that they like. Only 40 people then find content that they like, sufficiently. Ten people drop out because they find loading the content too complicated. Of these, another ten find out that the files are too big to play for the hardware they have (for example in 2005, they just had a simple MP3 player, no iPod or similar).
+Of the ones left, another five don’t have the patience for the downloads. If you have been keeping tabs: we are down to 25 people who are capable and willing to regularly listen to podcasts. Now suppose each of these tells four friends, on the average. That means we are back to a hundred.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

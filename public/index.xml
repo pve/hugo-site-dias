@@ -6,8 +6,18 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Apr 2025 09:17:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Apr 2025 14:34:54 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Risk</title>
+      <link>http://localhost:1313/book/risk/intro-to-risk/</link>
+      <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
+      <description>&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances endangering that value.&lt;/p&gt;
+&lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
+&lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Elements of the Digital World</title>
       <link>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</link>
@@ -21,6 +31,15 @@
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vibe Coding in Reality</title>
+      <link>http://localhost:1313/posts/vibe-coding-real/</link>
+      <pubDate>Tue, 08 Apr 2025 14:34:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/vibe-coding-real/</guid>
+      <description>&lt;p&gt;How does vibe coding work in the real? Vibe coding is having AI write your software. Coined by Andrej Karpathy, the hype is all over the map, with companies that are rethinking their hiring strategies for programmers. Sounds like disaster for software engineers and programmers.&lt;/p&gt;
+&lt;p&gt;Not so fast.&lt;/p&gt;
+&lt;p&gt;Curious, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Change and Control</title>
@@ -126,6 +145,16 @@ Back in the old days, business software was primarily written to automate &lt;st
 Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>What are AI digital infrastructures?</title>
+      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
+      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
+      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
+&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
+&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Business Model Canvas for IaaS Providers</title>
       <link>http://localhost:1313/book/value/business-model-canvas-iaas/</link>
       <pubDate>Sat, 15 Nov 2014 11:18:17 +0000</pubDate>
@@ -147,6 +176,21 @@ Or financial services, where software increasingly is the main part of the produ
 &lt;p&gt;The Business Model Canvas is composed of nine essential building blocks, which define the interconnections and relationships within a business model. In this article, we&amp;rsquo;ll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>The tipping point for podcasting</title>
+      <link>http://localhost:1313/book/diginfra/the-tipping-point-for-podcasting/</link>
+      <pubDate>Mon, 05 Sep 2005 13:35:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/the-tipping-point-for-podcasting/</guid>
+      <description>&lt;p&gt;Podcasting has its own digital infrastructures, for example in hosting them.
+Let&amp;rsquo;s look at how podcasting has grown, and what made it take off anyway?
+Many actors influence each other here, and the state of the art of the technology also has an impact on growth rates.&lt;/p&gt;
+&lt;p&gt;Suppose a hundred people get told by an enthusiastic friend to try podcasting.
+Of these, ten don’t have any hardware on which they can play the podcasts.
+So the rest goes online, and tries to find interesting content, but only 50 people can find a directory in which they can even start to look for podcasts that they like. Only 40 people then find content that they sufficiently like.
+Ten people drop out because they find loading the content too complicated. Of these, another ten find out that the files are too big for the hardware they have (for example in 2005, they just had a simple MP3 player, no iPod or similar).
+Of the ones left, another five don’t have the patience for the downloads (we are talking dial-up internet access for a lot of people here, still).
+If you have been keeping tabs: we are down to 25 people who are capable and willing to regularly listen to podcasts. Now suppose each of these tells four friends, on the average. That means we are back to a hundred.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Multiple Ways to Go Cloud</title>
       <link>http://localhost:1313/book/value/three-ways-to-go-cloud/</link>
       <pubDate>Sun, 03 Jun 2018 17:06:57 +0000</pubDate>
@@ -154,6 +198,23 @@ Or financial services, where software increasingly is the main part of the produ
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.&lt;/p&gt;
 &lt;h2 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h2&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example Mermaid Client-Server</title>
+      <link>http://localhost:1313/posts/example-mermaid-cs/</link>
+      <pubDate>Mon, 07 Apr 2025 11:21:31 +0000</pubDate>
+      <guid>http://localhost:1313/posts/example-mermaid-cs/</guid>
+      <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
+    group frontend(cloud)[Frontend]
+        service client(internet)[Client Browser] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Application Server] in backend
+        service database(database)[Database] in backend
+    
+    client:B -- L:app_server
+    app_server:B -- T:database
+&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Big tech afhankelijkheid: wat is het echte risico?</title>
@@ -202,6 +263,15 @@ Here is the story of my site being infected with malware, viewed by a profession
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Applying technology follows a pattern</title>
+      <link>http://localhost:1313/posts/technical-meta-model/</link>
+      <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
+      <guid>http://localhost:1313/posts/technical-meta-model/</guid>
+      <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
+&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
+By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Systematically applying technology</title>
       <link>http://localhost:1313/book/change/technical-meta-model/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
@@ -209,6 +279,15 @@ Some of the systems in the registry are AI-based. Indeed, we have AI to help che
       <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
 &lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
 By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>International Actors</title>
+      <link>http://localhost:1313/posts/international-actors/</link>
+      <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
+      <guid>http://localhost:1313/posts/international-actors/</guid>
+      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
+By the nature of scaling, very few digital infrastructures are influenced by national actors only. The international arena is complex, and there are even conflicting views on how it is made up.
+These conflicting views can best be seen as maps of the territory. And as I have mentioned earlier, a map is only relevant for a specific purpose.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The US Air Force Zero Trust Strategy</title>
@@ -221,22 +300,25 @@ By understanding how applying technology really works, you can be more effective
 &lt;p&gt;I think the fundamental first important point about the strategy document is that it exists at all. There is an actual organization of significant size that has a strategy and is implementing it. Many can learn from this.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Snippets</title>
+      <link>http://localhost:1313/snippets/</link>
+      <pubDate>Wed, 19 Mar 2025 12:05:12 +0000</pubDate>
+      <guid>http://localhost:1313/snippets/</guid>
+      <description>&lt;p&gt;Wat is server en client? Bij X is bijvoorbeeld de server op de client.&lt;/p&gt;
+&lt;p&gt;Oh ja, die discussie. Ben je verantwoordelijk als je onveilige software maakt, of alleen als je die als service beschikbaar stelt?&lt;/p&gt;
+&lt;p&gt;Risk: LMS 3-2&lt;/p&gt;
+&lt;p&gt;CERN data center&lt;/p&gt;
+&lt;p&gt;verhaal over corporate en MKB&lt;/p&gt;
+&lt;p&gt;How technical debt works: negative investment externalities.&lt;/p&gt;
+&lt;p&gt;But of course you have this discussion on shared services. As a matter of fact, I keep talking about the book that I&amp;rsquo;m probably not going to finish, but it&amp;rsquo;s still a nice frame of reference. Now digital infrastructures at scale - there are a few very essential elements in there. The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it&amp;rsquo;s amenable to automation. These two together give a really interesting socio-political economic dynamic. And that&amp;rsquo;s what you need to understand if you want your shared service to keep operating - or if you don&amp;rsquo;t want it to operate, but that&amp;rsquo;s a different story.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Digital Infrastructures - the graphic novel</title>
       <link>http://localhost:1313/posts/graphic-novel-page1/</link>
       <pubDate>Sun, 09 Mar 2025 14:07:53 +0000</pubDate>
       <guid>http://localhost:1313/posts/graphic-novel-page1/</guid>
       <description>&lt;p&gt;Here is the draft design of the graphic novel version of this book, which may or may not happen..&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What are AI digital infrastructures?</title>
-      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
-      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
-      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
-&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
-&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Can We Achieve Autonomy Over Our Digital Infrastructures?</title>
@@ -340,6 +422,17 @@ You can also get the story on my YouTube video.&lt;/p&gt;</description>
       <guid>http://localhost:1313/posts/directories-are-also-infrastructures/</guid>
       <description>&lt;p&gt;One of the big projects I am working on right now (2006) is directory services for identity management. In these directories digital identities such as loginnames, addresses, access rights, etc. are stored. With an adequately structured directory service, the proper management of access rights becomes a lot easier, which translates into cost savings and better security.&lt;/p&gt;
 &lt;p&gt;Examples of these include the internet&amp;rsquo;s Domain Name System (DNS) and Microsoft&amp;rsquo;s Active Directory. A lot of organizations however, have requirements beyond these systems, and for these a wide range of custom solutions are used.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Neutrality: who pays the ferryman?</title>
+      <link>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</link>
+      <pubDate>Fri, 18 Aug 2006 13:54:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</guid>
+      <description>&lt;p&gt;Network neutrality has become the topic of intense discussion and legislative action.&lt;br&gt;
+See the &lt;a href=&#34;http://www.washingtonpost.com/wp-dyn/content/article/2006/01/21/AR2006012100094.html&#34;&gt;Washington Post&lt;/a&gt; , a &lt;a href=&#34;http://en.wikipedia.org/wiki/Network_neutrality&#34;&gt;Wikipedia article&lt;/a&gt;, and &lt;a href=&#34;http://www.circleid.com/posts/network_neutrality/&#34;&gt;CircelID&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What is the issue?&lt;/p&gt;
+&lt;p&gt;On the one hand people argue for &amp;lsquo;universal service&amp;rsquo; that say that one person&amp;rsquo;s bits should not be treated differently from another person&amp;rsquo;s. This compares to the idea that the phone company should not be allowed to treat your calls differently depending on what you want to say, or that red haired people would have a different monthly fee. There are laws against this type of discrimination (at least in most nations), and some people want to extend this law to Internet traffic. On the other hand there are some Internet providers who want to charge different customers different rates for different service. &amp;ldquo;We can&amp;rsquo;t have companies freeloading on our expensive pipes&amp;rdquo;, they claim.
+Clearly we seem to want both. We don&amp;rsquo;t want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
