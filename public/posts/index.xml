@@ -44,14 +44,6 @@
 Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Network Management Automation - DHCP</title>
-      <link>http://localhost:1313/posts/dhcp-automation/</link>
-      <pubDate>Fri, 04 Apr 2025 14:20:26 +0000</pubDate>
-      <guid>http://localhost:1313/posts/dhcp-automation/</guid>
-      <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &amp;ldquo;War is the continuation of diplomacy with different means&amp;rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.&lt;/p&gt;
-&lt;p&gt;My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>5 Elements of Cloud Security</title>
       <link>http://localhost:1313/posts/5-elements-of-cloud-security/</link>
       <pubDate>Mon, 24 Mar 2025 22:02:03 +0000</pubDate>
@@ -69,15 +61,6 @@ Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraprod
       <description>&lt;p&gt;How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors.&lt;/p&gt;
 &lt;p&gt;But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Applying technology follows a pattern</title>
-      <link>http://localhost:1313/posts/technical-meta-model/</link>
-      <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/technical-meta-model/</guid>
-      <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
-&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
-By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
     </item>
     <item>
       <title>International Actors</title>

@@ -2,6 +2,7 @@
 date: '2025-03-22T17:56:43Z'
 draft: false
 title: 'Systematically applying technology'
+weight: 20
 ---
 
 How to fix the WiFi? How to find a new phone for grandma?

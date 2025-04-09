@@ -5,11 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Peter&#39;s Griddle | Digital Infrastructures at Scale</title>
+<title>Network Management Automation - the DHCP case | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Exploring digital infrastructures, cloud trends, security, and business cases.">
+<meta name="description" content="As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &ldquo;War is the continuation of diplomacy with different means&rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.
+My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/book/change/dhcp-automation/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/change/dhcp-automation/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +59,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -106,7 +106,7 @@
             </li>
             <li>
                 <a href="http://localhost:1313/posts/" title="Blog">
-                    <span class="active">Blog</span>
+                    <span>Blog</span>
                 </a>
             </li>
             <li>
@@ -122,89 +122,48 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
-  <h1>
-    Peter&#39;s Griddle
-  </h1>
-  <div class="post-description">
-    Exploring digital infrastructures, cloud trends, security, and business cases.
-  </div>
-</header>
-<div class="post-content"><p>Welcome to the blog! Some articles might later become book chapters, while others cover <strong>current industry trends</strong>.</p>
-<p>📌 <strong>Recent Posts:</strong></p>
+<main class="main">
 
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/change/">Change and control</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Network Management Automation - the DHCP case
+    </h1>
+    <div class="post-meta"><span title='2025-04-04 14:20:26 +0000 UTC'>April 4, 2025</span>
 
 </div>
+  </header> 
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Deployment diagrams for network security; fix this
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training. In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated. But still. There are good drawings and there are drawings that can be improved. My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them. Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-03-26 17:09:20 +0000 UTC'>March 26, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Deployment diagrams for network security; fix this" href="http://localhost:1313/posts/network-diagram-fix/"></a>
-</article>
+  
+  <i>⏳ 4 min read</i>
+  
+  <div class="post-content"><p>As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &ldquo;War is the continuation of diplomacy with different means&rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.</p>
+<p>My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.</p>
+<p>You&rsquo;d go to the person in charge for an IP address, they&rsquo;d pull out their notebook, sharpen their pencil, and note it down. Simple, manual, and not built for scale.</p>
+<p>In 1994 I went to a Unix systems administration conference and they had Mike O&rsquo;Dell over from the USA.
+He had a <a href="https://archief-website.nluug.nl/activiteiten/events/vj94/abstracts/Mike.ODell.html">presentation about the internet</a> where he talked about many layers of technology to just push IP packets around. I was impressed by the number of layers back then, but I think what he was trying to say was how wasteful it really was, and that many of these things had to be reengineered to allow the internet to grow.</p>
+<p>As a side note, it grew by a factor of 500-1000 in number of users in the thirty years since. At the time of the conference there were about a 1000 websites worldwide, and this conference is the first one listed on the NLUUG website.</p>
+<p>We talked with him in the bar afterwards, where he said: &ldquo;You know, next year Microsoft&rsquo;s going to come out with a new version of Windows (editor note: Windows 95) and that will have an internet protocol stack built in to the operating system. They&rsquo;re planning to sell 150,000 of those every month&rdquo;. That sounded like a staggering amount.
+Can you imagine how many IP addresses that will be right? How are we going to manage these? We need more pencils!</p>
+<p>Then he mentioned that Microsoft collaborated with the IETF to define an automated system for IP address allocation. That standard we now know as DHCP, and it is also in every PC and practically every network. It very likely has reduced many errors that happened in the traditional process, such as duplicate IP addresses being handed out.</p>
+<p>What we see here is that a process (address allocation) matured enough for it to be automated. Consequently, it can scale up, and it can be of higher quality.</p>
+<p>Another perspective on this is that this activity largely fades into the background of the system administration domain, and becomes part of the technical digital infrastructure. This is a very common pattern in IT, systems administration, and in digital infrastructures in particular.</p>
+<p>Compare how assemblers and compilers were heralded in the early days of writing software as making programmers redundant. Well, automation did not make them redundant, it just made them write software on a much higher level of abstraction, leading to more productivity and more quality. The same thing happens in systems administration: as parts get automated, admins operate at a higher level.</p>
+<p>In the late eighties, a university colleague of mine, now a retired professor, was doing his PhD on network management architectures—a concept that was quite elusive at the time. What did network management entail? How would it be standardized? Back then, the idea of computer networks was still new, and automating their management seemed unnecessary because there were so few computers. However, once networks started to scale, network management became much more critical.</p>
+<p>His research focused on SNMP and similar technologies. Just as DHCP automated address allocation, SNMP helped manage network measurements and settings. Ultimately though, he concluded that network management encompasses everything not yet automated into a protocol. Again, this represents a maturity story: human management handles what we cannot automate (yet).</p>
+<p>That is the cycle of digital development: from manual effort to mature processes to automation—and then on to the next layer of complexity.</p>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Top 8 cloud risks according to ENISA
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Does security in the cloud ever bother you? It would be weird if it didn’t. Cloud computing has a lot of benefits, but also a lot of risks if done in the wrong way. So what are the most important risks? The European Network Information Security Agency did extensive research on that in 2009 already, and identified 35 risk categories. This analysis is used by a number of players in the industry, including certain banking regulators. From those 35, ENISA has selected 8 as the most relevant ones. This article explains them, not in any particular order. (And by the way: ENISA is pronounced as ‘eniesa’, not ‘enaiza’). You can also get the story on my YouTube video.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2015-05-21 09:22:07 +0000 UTC'>May 21, 2015</span></footer>
-  <a class="entry-link" aria-label="post link to Top 8 cloud risks according to ENISA" href="http://localhost:1313/posts/top-8-cloud-risks-according-to-enisa/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Directories are also infrastructures
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>One of the big projects I am working on right now (2006) is directory services for identity management. In these directories digital identities such as loginnames, addresses, access rights, etc. are stored. With an adequately structured directory service, the proper management of access rights becomes a lot easier, which translates into cost savings and better security.
-Examples of these include the internet’s Domain Name System (DNS) and Microsoft’s Active Directory. A lot of organizations however, have requirements beyond these systems, and for these a wide range of custom solutions are used.
-...</p>
   </div>
-  <footer class="entry-footer"><span title='2006-09-21 10:54:00 +0000 UTC'>September 21, 2006</span></footer>
-  <a class="entry-link" aria-label="post link to Directories are also infrastructures" href="http://localhost:1313/posts/directories-are-also-infrastructures/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Network Neutrality: who pays the ferryman?
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Network neutrality has become the topic of intense discussion and legislative action.
-See the Washington Post , a Wikipedia article, and CircelID.
-What is the issue?
-On the one hand people argue for ‘universal service’ that say that one person’s bits should not be treated differently from another person’s. This compares to the idea that the phone company should not be allowed to treat your calls differently depending on what you want to say, or that red haired people would have a different monthly fee. There are laws against this type of discrimination (at least in most nations), and some people want to extend this law to Internet traffic. On the other hand there are some Internet providers who want to charge different customers different rates for different service. “We can’t have companies freeloading on our expensive pipes”, they claim. Clearly we seem to want both. We don’t want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2006-08-18 13:54:00 +0000 UTC'>August 18, 2006</span></footer>
-  <a class="entry-link" aria-label="post link to Network Neutrality: who pays the ferryman?" href="http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/"></a>
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
 </article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/">
-      «&nbsp;Prev&nbsp;
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">

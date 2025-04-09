@@ -1,7 +1,8 @@
 ---
 date: '2025-04-04T14:20:26Z'
 draft: false
-title: 'Network Management Automation - DHCP'
+title: 'Network Management Automation - the DHCP case'
+weight: 40
 ---
 As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said "War is the continuation of diplomacy with different means", we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.
 
