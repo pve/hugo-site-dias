@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="How does vibe coding work in the real? Vibe coding is having AI write your software. Coined by Andrej Karpathy, the hype is all over the map, with companies that are rethinking their hiring strategies for programmers. Sounds like disaster for software engineers and programmers.
 Not so fast.
-Curious, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.">
+Curious to learn more about it, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/vibe-coding-real/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -130,12 +130,6 @@ Curious, I reached out to an old friend who is an experienced software engineer.
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Vibe Coding in Reality
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2025-04-08 14:34:54 +0000 UTC'>April 8, 2025</span>
 
@@ -147,32 +141,32 @@ Curious, I reached out to an old friend who is an experienced software engineer.
   
   <div class="post-content"><p>How does vibe coding work in the real? Vibe coding is having AI write your software. Coined by Andrej Karpathy, the hype is all over the map, with companies that are rethinking their hiring strategies for programmers. Sounds like disaster for software engineers and programmers.</p>
 <p>Not so fast.</p>
-<p>Curious, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.</p>
+<p>Curious to learn more about it, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.</p>
 <p>Here is his workflow for using AI for creating software. Understand that this is quite opinionated, but it does match my own experiences.</p>
 <p>First of all, don&rsquo;t rely on Co-pilot and other assistants.
 Before you know it, you have lost control over your codebase.</p>
 <p>Don&rsquo;t start to code immediately.
 A lot of AI assisted code editors start off by immediately generating code.
 Not with this guy.</p>
-<p>He starts in Claude 3.7 Sonnet, Pro account, with settings &rsquo;extended thinking&rsquo; and &lsquo;style explanatory&rsquo;.
-And also allow it to create artefacts.
-He first discussed the architecture of the solutions, and asks the bot to generate a few alternatives with pros and cons.
+<p>He starts with an analysis in Anthropic&rsquo;s chatbot, Claude 3.7 Sonnet, Pro account. Important settings are&rsquo;extended thinking&rsquo;, &lsquo;style explanatory&rsquo;, and allow it to create artefacts.</p>
+<p>He first discusses the architecture of the solutions, and asks the bot to generate a few alternatives with pros and cons.
 If relevant, he asks for more explanation of alternatives.
 Claude still has a tendency to generate code, but you should include &rsquo;no code&rsquo; in the prompt a few times.
-Apparently it can take a while for Claude to get the message.</p>
+Apparently it can take a while for Claude to get that message.</p>
 <p>Once you have some overview of the software you want to create, you can start asking for code.
 Ask it for 10 lines max at a time, to implement specific parts and functions. My friend just copy/pastes this into a code editor, and then syncs it to github.</p>
-<p>Claude Pro can have Projects, in which you put the project knowledge, and a link to your github repository.</p>
+<p>Claude Pro has a feature called Projects, in which you put the project knowledge, and a link to your github repository.</p>
 <p>While I did not discuss this with him, I think it is a great idea to also use Claude to generate unit tests.</p>
 <p>One of the complications of vibe coding in general is that the model can have trouble staying on track with libraries.
 For a variety of reasons, you want to pin libraries to a specific version. If not, the model can hallucinate its own version.
-Especially with more recent versions of libraries and frameworks, the models aren&rsquo;t always up to date, and they don&rsquo;t like to admit that.
-His approach is to use OpenAI Deep Research to create a markdown file with all the relevant documentation on the specific library he is using.
-The idea is to not pollute the Claude history with irrelevant information on the libraries. This then goes into the Claude Project.</p>
+Especially with more recent versions of libraries and frameworks, the models aren&rsquo;t always up to date, and they don&rsquo;t like to admit that.</p>
+<p>Often there is a set of markdown text files with an SDK or library that has all the documentation.
+If not, his approach is to use OpenAI Deep Research to create a markdown file with all the relevant documentation on the specific library he is using.
+The idea is to not pollute the Claude history with irrelevant information on the libraries. This then goes into the Claude Project. One of the nice things is that you can then also &lsquo;chat&rsquo; with the documentation.</p>
 <p>Sometimes the chat with Claude becomes too long, and a warning is issued. The approach then is to ask Claude for a summary of the chat, and use that as the beginning of a new chat.</p>
 <p>For debugging there is the Claude Code command line, which can look directly at files in the code directory.
 This has faster feedback than going back to the github repository.</p>
-<p>More on this later.</p>
+<p>In summary, if you know what you are doing and apply some structure, using AI to support you in software construction has a lot of potential to increase productivity.</p>
 
 
   </div>

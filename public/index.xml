@@ -39,7 +39,7 @@
       <guid>http://localhost:1313/posts/vibe-coding-real/</guid>
       <description>&lt;p&gt;How does vibe coding work in the real? Vibe coding is having AI write your software. Coined by Andrej Karpathy, the hype is all over the map, with companies that are rethinking their hiring strategies for programmers. Sounds like disaster for software engineers and programmers.&lt;/p&gt;
 &lt;p&gt;Not so fast.&lt;/p&gt;
-&lt;p&gt;Curious, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.&lt;/p&gt;</description>
+&lt;p&gt;Curious to learn more about it, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to Change and Control</title>
@@ -105,6 +105,15 @@ Before we attempt to define power formally, let&amp;rsquo;s see how the word in 
 &lt;p&gt;For an example of a supporting digital infrastructure you can look at an IaaS provider, which enables data processing and storage for other applications and infrastructures.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Systematically applying technology</title>
+      <link>http://localhost:1313/book/change/technical-meta-model/</link>
+      <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/technical-meta-model/</guid>
+      <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
+&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
+By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What a lunch in Spain taught me about digital infrastructures</title>
       <link>http://localhost:1313/book/diginfra/lunch-spain/</link>
       <pubDate>Sat, 15 Mar 2025 16:06:44 +0000</pubDate>
@@ -145,6 +154,14 @@ Back in the old days, business software was primarily written to automate &lt;st
 Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Network Management Automation - the DHCP case</title>
+      <link>http://localhost:1313/book/change/dhcp-automation/</link>
+      <pubDate>Fri, 04 Apr 2025 14:20:26 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/dhcp-automation/</guid>
+      <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &amp;ldquo;War is the continuation of diplomacy with different means&amp;rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.&lt;/p&gt;
+&lt;p&gt;My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What are AI digital infrastructures?</title>
       <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
       <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
@@ -153,6 +170,16 @@ Or financial services, where software increasingly is the main part of the produ
 &lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
 &lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
 &lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why lawyers need to understand cloud</title>
+      <link>http://localhost:1313/book/change/lawyers-need-understand-tech/</link>
+      <pubDate>Thu, 03 May 2018 13:54:48 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/lawyers-need-understand-tech/</guid>
+      <description>&lt;p&gt;Cloud is too important to leave to technical people.&lt;/p&gt;
+&lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
+Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
+I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Model Canvas for IaaS Providers</title>
@@ -226,14 +253,6 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
 Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Network Management Automation - DHCP</title>
-      <link>http://localhost:1313/book/change/dhcp-automation/</link>
-      <pubDate>Fri, 04 Apr 2025 14:20:26 +0000</pubDate>
-      <guid>http://localhost:1313/book/change/dhcp-automation/</guid>
-      <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &amp;ldquo;War is the continuation of diplomacy with different means&amp;rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.&lt;/p&gt;
-&lt;p&gt;My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>How My Site Got Hacked</title>
       <link>http://localhost:1313/book/cases/how-my-site-got-hacked/</link>
       <pubDate>Sat, 29 Mar 2025 15:35:53 +0000</pubDate>
@@ -263,31 +282,15 @@ Here is the story of my site being infected with malware, viewed by a profession
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Applying technology follows a pattern</title>
-      <link>http://localhost:1313/posts/technical-meta-model/</link>
-      <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/technical-meta-model/</guid>
-      <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
-&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
-By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Systematically applying technology</title>
-      <link>http://localhost:1313/book/change/technical-meta-model/</link>
-      <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
-      <guid>http://localhost:1313/book/change/technical-meta-model/</guid>
-      <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
-&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
-By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>International Actors</title>
       <link>http://localhost:1313/posts/international-actors/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
       <guid>http://localhost:1313/posts/international-actors/</guid>
       <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
-By the nature of scaling, very few digital infrastructures are influenced by national actors only. The international arena is complex, and there are even conflicting views on how it is made up.
-These conflicting views can best be seen as maps of the territory. And as I have mentioned earlier, a map is only relevant for a specific purpose.&lt;/p&gt;</description>
+By the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
+&lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
+In US vernacular, the word international appears to mean all nations, except the US.
+Instead, the word global is used to mean all nations, including the US.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The US Air Force Zero Trust Strategy</title>
@@ -395,16 +398,6 @@ Recently I ran into the following example. Here is an &lt;a href=&#34;https://sy
       <description>&lt;p&gt;Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.
 To illustrate this new approach, I have started to develop a minimal application. Although minimal, I run it in production. Its basic function is to regularly pull out data from an air quality sensor into a cloud-based database. Together it is a few hundred lines of code.
 Here are the major features of the example:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why lawyers need to understand cloud</title>
-      <link>http://localhost:1313/book/change/lawyers-need-understand-tech/</link>
-      <pubDate>Thu, 03 May 2018 13:54:48 +0000</pubDate>
-      <guid>http://localhost:1313/book/change/lawyers-need-understand-tech/</guid>
-      <description>&lt;p&gt;Cloud is too important to leave to technical people.&lt;/p&gt;
-&lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
-Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
-I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Top 8 cloud risks according to ENISA</title>

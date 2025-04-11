@@ -61,6 +61,41 @@ case study JCR
 
 Framework resilience
 
-Hoe richt je GRC op open source en cloud native in. 
+Hoe richt je GRC op open source en cloud native in.
 
 Freemium pattern. Busineess model canvas p102.
+
+Wat zijn de cliches in de beeldvorming over digitale infrastructuren
+
+What is an infrastructure == something like what is centralised? Consolidation. Platform.
+
+Link met architecture.
+
+Uitlegegen: wat is agile, wanneer is scrum zinvol?
+
+Conway's law.
+
+Innovation loves decentralization, and then eats centralization for breakfast. Link to chaos theory, communication across scales and layers.
+
+startups selling into enterprises.
+
+premature scaling kills startups.
+
+Large enterprises have a momentum that overcomes the inefficiences of their burocracy.
+
+=-- Arcast
+Why centralize? Standardize, economies of scale, …
+Where to place power?
+Are markets decentral or not?
+Control versus agility. With power comes responsibility.
+If you centralize it, it becomes a product.
+Arcast digital and frontend/customer experience.
+How do you align technology and operating models to empower teams whilst delivering value efficiently? => consulting vraag?
+Do you expect new capabiliteis like readily available AI to impact decentralisation or centralisation?
+Design systems. E.g. includes a digital asset library. ‘atomic design’. Atoms such as buttons. Maar kan ook een compute layer voor een reeks medische apparaten zijn.
+AI: document extraction. Supplement back office research. Always a human in the loop. Searching on steroids.
+Document Scanning and answering as a service. compay internal.
+Economies of scale, when your marginal cost are low compared to fixed costs.
+Consumers buy ecosystems from you. Human curator of the ecosystems.
+Salesforce has large switching cost.
+== arcast
