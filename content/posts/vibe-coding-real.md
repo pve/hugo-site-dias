@@ -14,7 +14,7 @@ Curious to learn more about it, I reached out to an old friend who is an experie
 Here is his workflow for using AI for creating software. Understand that this is quite opinionated, but it does match my own experiences.
 
 First of all, don't rely on Co-pilot and other assistants.
-Before you know it, you have lost control over your codebase.
+Before you know it, you have lost control over your codebase, and you will find it really hard to debug it, if not impossible.
 
 Don't start to code immediately.
 A lot of AI assisted code editors start off by immediately generating code.

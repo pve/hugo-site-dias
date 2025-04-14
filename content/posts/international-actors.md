@@ -1,11 +1,12 @@
 ---
 date: '2025-03-22T17:56:28Z'
-draft: true
+draft: false
 title: 'International Actors'
 ---
 
 The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
-By the nature of scaling, very few digital infrastructures are influenced by a single national actor only.
+But the international arena matters, because 
+by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.
 
 A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
 In US vernacular, the word international appears to mean all nations, except the US.
@@ -41,6 +42,7 @@ Many multinational organisations are largely legitimate, but there are quite a f
 
 Then there is the perspective that the only really important international actor is the US.
 With more than 700 military bases in more than 80 countries, this is the single largest international military presence in the history of mankind. Additionally, since the end of world war II, the US has alledgedly intervened in dozens of countries, through military or other means, three times more than Russia, the next contender.
+By the way, these numbers are hard to validate precisely, though the order of magnitude is uncontested.
 
 Beyond this, the US dollar is the currency of reserve for most of the world, and the US stock markets dominate international capital markets.
 

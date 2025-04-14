@@ -83,7 +83,7 @@ premature scaling kills startups.
 
 Large enterprises have a momentum that overcomes the inefficiences of their burocracy.
 
-=-- Arcast
+=-- Arcast: 
 Why centralize? Standardize, economies of scale, …
 Where to place power?
 Are markets decentral or not?
@@ -99,3 +99,11 @@ Economies of scale, when your marginal cost are low compared to fixed costs.
 Consumers buy ecosystems from you. Human curator of the ecosystems.
 Salesforce has large switching cost.
 == arcast
+
+What forces a new technology to come into existence? Typically a scaling issue. We have created a mess somewhere.
+
+Governance: resolving conflicts, as they rise to the top. However that sometimes gets stuck between going up versus gowing down.
+
+Ashish Pratap 30 design patterns: https://www.youtube.com/watch?v=s9Qh9fWeOAk en algomasters.io
+
+NTS: de typische IT processen HBO-i opschrijven. 

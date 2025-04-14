@@ -6,7 +6,7 @@
     <description>Recent content in Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Apr 2025 12:31:46 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Apr 2025 21:25:10 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/power/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Power</title>
@@ -38,6 +38,33 @@ Before we attempt to define power formally, let&amp;rsquo;s see how the word in 
       <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.&lt;/p&gt;
 &lt;p&gt;Two important positions of influence in IT are architects and auditors/assessors.&lt;/p&gt;
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Who made podcasting big?</title>
+      <link>http://localhost:1313/book/power/the-tipping-point-for-podcasting/</link>
+      <pubDate>Mon, 05 Sep 2005 13:35:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/the-tipping-point-for-podcasting/</guid>
+      <description>&lt;p&gt;Podcasting has its own digital infrastructures, for example in hosting them.
+Let&amp;rsquo;s look at how podcasting has grown, and what made it take off anyway?
+Many actors influence each other here, and the state of the art of the technology also has an impact on growth rates.&lt;/p&gt;
+&lt;p&gt;Suppose a hundred people get told by an enthusiastic friend to try podcasting.
+Of these, ten don’t have any hardware on which they can play the podcasts.
+So the rest goes online, and tries to find interesting content, but only 50 people can find a directory in which they can even start to look for podcasts that they like. Only 40 people then find content that they sufficiently like.
+Ten people drop out because they find loading the content too complicated. Of these, another ten find out that the files are too big for the hardware they have (for example in 2005, they just had a simple MP3 player, no iPod or similar).
+Of the ones left, another five don’t have the patience for the downloads (we are talking dial-up internet access for a lot of people here, still).
+If you have been keeping tabs: we are down to 25 people who are capable and willing to regularly listen to podcasts. Now suppose each of these tells four friends, on the average. That means we are back to a hundred.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disruptive Technologies</title>
+      <link>http://localhost:1313/book/power/powershift-disruption/</link>
+      <pubDate>Sun, 13 Apr 2025 21:25:10 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/powershift-disruption/</guid>
+      <description>&lt;p&gt;Technologies are often called disruptive.
+But what makes a technology truly disruptive?
+What has made the PC a disruptive technology? Or artificial intelligence, for that matter?
+And at what time did it become a disruptive technology?
+While many would accept that AI was a very disruptive technology starting from 2022 onwards,
+most of it was available much earlier. Gen AI, chatbots, etc, think ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

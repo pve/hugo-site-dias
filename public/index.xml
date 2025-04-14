@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Apr 2025 14:34:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Apr 2025 21:25:10 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -227,6 +227,18 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Disruptive Technologies</title>
+      <link>http://localhost:1313/book/power/powershift-disruption/</link>
+      <pubDate>Sun, 13 Apr 2025 21:25:10 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/powershift-disruption/</guid>
+      <description>&lt;p&gt;Technologies are often called disruptive.
+But what makes a technology truly disruptive?
+What has made the PC a disruptive technology? Or artificial intelligence, for that matter?
+And at what time did it become a disruptive technology?
+While many would accept that AI was a very disruptive technology starting from 2022 onwards,
+most of it was available much earlier. Gen AI, chatbots, etc, think ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Example Mermaid Client-Server</title>
       <link>http://localhost:1313/posts/example-mermaid-cs/</link>
       <pubDate>Mon, 07 Apr 2025 11:21:31 +0000</pubDate>
@@ -287,7 +299,8 @@ Some of the systems in the registry are AI-based. Indeed, we have AI to help che
       <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
       <guid>http://localhost:1313/posts/international-actors/</guid>
       <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
-By the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
+But the international arena matters, because
+by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
 &lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
 In US vernacular, the word international appears to mean all nations, except the US.
 Instead, the word global is used to mean all nations, including the US.&lt;/p&gt;</description>
