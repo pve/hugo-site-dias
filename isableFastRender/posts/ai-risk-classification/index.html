@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=42889&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>How AI Can Help IT Risk Classification | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors.
+But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch algorithm register, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
+Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&hellip;">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:42889/posts/ai-risk-classification/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:42889/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:42889/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:42889/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:42889/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:42889/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:42889/posts/ai-risk-classification/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:42889/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:42889/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:42889/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:42889/posts/">Peter&#39;s Griddle</a></div>
+    <h1 class="post-title entry-hint-parent">
+      How AI Can Help IT Risk Classification
+    </h1>
+    <div class="post-meta"><span title='2025-03-24 19:45:36 +0000 UTC'>March 24, 2025</span>
+
+</div>
+  </header> 
+
+  
+  <i>⏳ 4 min read</i>
+  
+  <div class="post-content"><p>How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors.</p>
+<p>But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch <a href="https://algoritmes.overheid.nl/en">algorithm register</a>, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
+Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&hellip;</p>
+<p>My approach was to do some dialogue with Claude 3.7 Sonnet on a few cases. You can get the full description of each case from the algorithm register.</p>
+<p>Me: <em>Here are three examples. Please return the name of the system, and your assessment if it uses an LLM or not.</em></p>
+<p>Claude:</p>
+<p>I&rsquo;ll analyze each of these systems and classify them as either LLM-based or fixed algorithm-based.</p>
+<ol>
+<li>
+<p><strong>Virtual municipality assistant Gem</strong></p>
+<ul>
+<li><strong>Classification</strong>: Uses Machine Learning, but not an LLM</li>
+<li><strong>Reasoning</strong>: The description states it uses &ldquo;supervised machine learning&rdquo; to match questions with answers from a predefined library. It calculates which existing answer best matches the question rather than generating new responses. This is more characteristic of a simpler ML classification system than an LLM.</li>
+</ul>
+</li>
+<li>
+<p><strong>AI WBSO pre-advice</strong></p>
+<ul>
+<li><strong>Classification</strong>: Machine Learning, but not an LLM</li>
+<li><strong>Reasoning</strong>: The system is described as a &ldquo;self-learning Machine Learning model&rdquo; that makes predictions based on specific variables to estimate risk. It appears to be a predictive model focused on risk assessment rather than language processing or generation, making it a non-LLM algorithm.</li>
+</ul>
+</li>
+<li>
+<p><strong>Energy label generator (EP-Online)</strong></p>
+<ul>
+<li><strong>Classification</strong>: Fixed algorithm</li>
+<li><strong>Reasoning</strong>: This system uses predefined formulas and calculations to generate energy labels based on specific inputs. The description mentions algorithms but refers to calculation procedures described in technical documentation rather than any learning models. This is clearly a deterministic system using fixed rules and formulas.</li>
+</ul>
+</li>
+</ol>
+<p>None of these three systems appear to use Large Language Models. They each use different approaches: supervised machine learning for answer retrieval, predictive machine learning for risk assessment, and fixed algorithmic calculations for energy label generation.</p>
+<p>Me: <em>Which of these processes personal data, just based on the description?</em></p>
+<p>Claude:</p>
+<p>Based on the descriptions provided, here&rsquo;s my analysis of which systems process personal data:</p>
+<ol>
+<li>
+<p><strong>Virtual municipality assistant Gem</strong></p>
+<ul>
+<li><strong>Processes personal data</strong>: Yes</li>
+<li><strong>Reasoning</strong>: Although not explicitly stated, this system interacts directly with residents and businesses through chat functionality on municipal websites. It collects questions from users and monitors their feedback. The system likely processes some form of user identifiers to maintain conversation context and improve answer selection based on prior interactions.</li>
+</ul>
+</li>
+<li>
+<p><strong>AI WBSO pre-advice</strong></p>
+<ul>
+<li><strong>Processes personal data</strong>: No</li>
+<li><strong>Reasoning</strong>: The description explicitly states &ldquo;No personal data are used in the algorithm in any way.&rdquo; It mentions using data like number of projects, hours, wages, etc., but specifically notes that only the case number is used as an identification label. A DPIA (Data Protection Impact Assessment) was carried out with the outcome that no personal data were processed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Energy label generator (EP-Online)</strong></p>
+<ul>
+<li><strong>Processes personal data</strong>: Yes</li>
+<li><strong>Reasoning</strong>: This system likely processes personal data as it generates energy labels for specific buildings owned by specific individuals. The fact that a DPIA was conducted (and is being updated) suggests personal data is involved. The system records data about buildings that can be linked to their owners, especially since the labels are required when selling or renting properties.</li>
+</ul>
+</li>
+</ol>
+<p>Based solely on these descriptions, the Virtual municipality assistant Gem and the Energy label generator appear to process personal data, while the AI WBSO pre-advice system explicitly does not.</p>
+<p>(end of chat interaction)</p>
+<p>This is a promising beginning. There are around 800 of these cases to review.</p>
+<p>Interesting followup questions either on the entries or on the approach could be:</p>
+<ol>
+<li>Is the description consistent with its classification? For example, there is a &lsquo;risk&rsquo; field, but does it match the rest of the description?</li>
+<li>Which entries seem to be missing crucial information?</li>
+<li>Which entries store specific types of data?</li>
+<li>Can we automate this a bit more? Stuffing the entries in a chatbot prompt does not scale very well.</li>
+<li>What is the accuracy, and will other models have similar accuracy?</li>
+</ol>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:42889/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

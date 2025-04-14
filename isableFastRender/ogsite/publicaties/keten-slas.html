@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Digital Infrastructures | Advies en transformaties: Keten SLAs</title>
+<meta name="Description" content="Hier de description tekst"/>
+<meta name="author" content="Peter van Eijk" />
+<link href="../includes/screen.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="../includes/onblur.js"></script>
+</head>
+
+<body id="selected-publicaties">
+<div id="container">
+<div id="head">
+<div id="logo"></div>
+<div id="navbar">
+<ul id="sections">
+<li id="home"><a href="../home/index.html">Home</a></li>
+<li id="voorwaarden"><a href="../over-peter/index.html">Over Peter van Eijk</a></li>
+<li id="referenties"><a href="../referenties/index.html">Referenties</a></li>
+<li id="publicaties"><a href="index.html">Publicaties</a></li>
+<li id="contact"><a href="../contact/index.html">Contact</a></li>
+<li id="english"><a href="../english/index.html">English</a></li>
+</ul>
+
+<div id="search"><form action="../index.html" method="get"><p><input name="q" type="text" onfocus="empty(this, 'Zoeken');" onblur="setback(this, 'Zoeken');" value="Zoeken" size="15" /><input type="submit" id="submit" value="OK" />
+</p></form></div>
+</div>
+</div><!--End head-->
+
+<div id="sidebar">
+<ul id="articles" class='menu'><li><a href='publicaties.html'>Publicaties</a></li>
+<li><a href='column-3-ontwikkelaars.html'>Column Ontwikkelaars</a></li>
+<li class='active'><a href='keten-slas.html'>Keten SLAs</a></li>
+<li><a href='inzet-cloud-computing.html'>Inzet Cloud Computing?</a></li>
+<li><a href='ketenmonitoring.html'>Ketenmonitoring eenvoudig opzetten</a></li>
+<li><a href='column-16-lager-wal.html'>Column Lager wal</a></li>
+<li><a href='column-18-gratis-vrienden.html'>Column Gratis Vrienden</a></li>
+<li><a href='column-17-lessen-van-google.html'>Column Lessen van Google</a></li>
+<li><a href='column-14-quis-custodiet.html'>Column Quis custodiet</a></li>
+<li><a href='column-13-harry.html'>Column Met Harry ...</a></li>
+<li><a href='column-11-verkeerde-kant.html'>Column Verkeerde kant</a></li>
+<li><a href='column-9-belkosten.html'>Column belkosten</a></li>
+<li><a href='column-7-keuzes.html'>Column Keuzes</a></li>
+<li><a href='column-1-architectuur.html'>Column Architectuur</a></li>
+<li><a href='columns.html'>Columns ontvangen?</a></li></ul>
+</div>
+<!--End sidebar-->
+
+<div id="content">
+<h1>Keten&#160;SLAs</h1>
+
+	<h1>Moderne aanpak voor bewaking beschikbaarheid verbetert tevredenheid en verlaagt kosten</h1>
+
+	<p>Peter van Eijk.</p>
+
+	<p>René Post, Kyrill Poelmans, <span class="caps">IPING</span> Research.</p>
+
+	<p>Okt 2001</p>
+
+	<p>Organisaties en individuen maken steeds meer gebruik van
+    complexe netwerk toepassingen. Het belang van deze
+    toepassingen wordt steeds groter, de schaal van de
+    toepassingen wordt groter, hun ingebruikname moet steeds
+    sneller, en het aantal partijen dat er mee verbonden wordt
+    neemt toe. Tezelfdertijd worden deze toepassingen steeds
+    complexer in hun techniek, en kunnen meer partijen dan ooit
+    de kwaliteit en beschikbaarheid van deze applicaties in
+    positieve of negatieve zin beïnvloeden. Elke van deze
+    ontwikkelingen op zich is al voldoende om beheerders
+    slapeloze nachten te bezorgen.</p>
+
+	<p>Welke aanpakken blijken nu wel en welke blijken niet
+    succesvol blijken te zijn in de bewaking van de prestatie van
+    applicaties, waar vele partijen betrokken zijn bij het
+    beheer. Wat we waarnemen is dat traditionele manieren voor
+    het inrichten van beheer tekort schieten, en dat modernere
+    vormen van samenwerking, soms ondersteund met technologie,
+    nodig zijn. De eenvoudigste vorm van afspraken maken is
+    géén afspraken maken. Ook al is het duidelijk dat dat niet
+    wenselijk is, in de praktijk komt het daar toch vaak op. Het
+    blijkt namelijk erg moeilijk om sluitende gedetailleerde
+    technische afspraken te maken waar je een tijd mee vooruit
+    kunt. </p>
+
+	<p>Wat voor beschikbaarheid is nu werkelijk van belang?
+    Veelal wordt de aandacht afgeleid door bespiegelingen over
+    technische parameters zoals MHz en bits per seconde, de
+    robuustheid van verschillende deelsystemen, of de
+    aanwezigheid van een escalatieladder. Voor de gebruikers telt
+    echter maar één ding: de transacties die zij willen
+    uitvoeren met het systeem, moeten uitgevoerd worden wanneer
+    zij dat willen, en met een redelijke doorlooptijd. Bij
+    transacties denken we hier bijvoorbeeld aan order invoer,
+    versturen van e-mail, inloggen, raadplegen van web
+    pagina&#146;s of het besturen van een computerspelletje.
+    Veelal zijn die transacties weer opgebouwd uit
+    deeltransacties, die uiteindelijk zijn opgebouwd uit user
+    interface elementen zoals toetsaanslagen of muisclicks. Deze
+    transacties dienen uiteindelijk een bedrijfs of persoonlijk
+    doel. Men doet er zijn werk mee, en communiceert er mee naar
+    andere mensen. Als deze transacties soepel verlopen voelen
+    mensen controle over hun werk, contact met elkaar, dan wel
+    hebben plezier. Als transacties niet soepel verlopen kan men
+    zich machteloos voelen, afgesneden, en simpelweg boos. </p>
+
+	<p>Het is mogelijk, maar niet altijd eenvoudig, om de
+    verwachting te kwantificeren. Een voorbeeld: een web pagina
+    zou 99% van de keren binnen 5 seconden geladen moeten zijn
+    (het is ook mogelijk criteria te stellen aan fout condities:
+    als een zoekactie geen resultaat oplevert wil je dat binnen
+    bijv. 10 seconden weten). </p>
+
+	<p>Wat is het effect van onvoldoende beschikbaarheid? Om te
+    beginnen is er in een zakelijke situatie natuurlijk productie
+    verlies omdat medewerkers moeten wachten. Vervolgens worden
+    er kansen gemist omdat klanten te lang moeten wachten: wie
+    ontevreden is over de respons gaat naar een ander. Deze zaken
+    worden in stand gehouden en verergert doordat mensen
+    doorgaans hun waardering uiten bij de leverancier, en hun
+    klachten bij de andere gebruikers. Voor de leverancier zou
+    het beter zijn als dat andersom was. Dit is niets nieuws, het
+    is in de marketing een bekend verschijnsel. De leverancier
+    zou dus veel baat bij hebben bij een manier om onafhankelijk
+    van de gebruikers te weten wat de waargenomen prestatie
+    aldaar is. </p>
+
+	<p>Als we trachten deze verschijnselen in geld uit te drukken
+    zien we vaak schokkende getallen. Als een belangrijke
+    applicatie in een organisatie met 1000 medewerkers van 98%
+    beschikbaarheid naar 99% beschikbaarheid gaat (beide getallen
+    zijn al vrij aardig), komen er in principe 10 medewerkers
+    vrij. De kosten daarvan geven een ordegrootte aan van de
+    ruimte die er is voor investeringen in beschikbaarheid. </p>
+
+	<p>Wat de situatie instandhoudt is natuurlijk is dat het
+    latente productieverlies vrij onzichtbaar is, terwijl de
+    kosten voor verbetering zichtbaar en out-of-pocket zijn. De
+    investeringsafweging is vrij moeilijk. Ofwel, er zijn teveel
+    spullen (servers en lijnen) wat dus te duur is, ofwel er zijn
+    te weinig spullen, wat leidt tot onvoldoende beschikbaarheid.
+    Het maken van schattingen van de benodigde capaciteit is op
+    voorhand erg moeilijk, en bovendien kan het gebruikspatroon
+    van de ene op de andere dag wijzigen. </p>
+
+	<p>Traditioneel worden afspraken tussen gebruikers en
+    aanbieders vormgegeven in <span class="caps">SLA</span>s (Service Level Agreements, of
+    dienst niveau overeenkomsten). Dit geldt evengoed voor
+    uitbestedingsrelaties als voor interne klant-leverancier
+    relaties. De business / gebruikersorganisatie laat vaak de
+    behoefte voor informatieopslag, bewerking en verspreiding,
+    vervullen door de interne <span class="caps">ICT</span>-afdeling. Op veel aspecten is
+    deze interne klant-leverancier relatie gelijkwaardig aan die
+    van externe relaties. Uiteraard zijn er verschillen, o.a. op
+    het gebied van aansturingsmogelijkheden, prijzen en
+    leverancierselectie. </p>
+
+	<p>De inhoud van deze <span class="caps">SLA</span>&#8217;s is vaak een lastig punt. In veel
+    gevallen worden deze opgesteld vanuit het perspectief van de
+    dienstverlener &#8211; veel te vaak een te technisch verhaal. De
+    afnemers hebben veel moeite om te begrijpen wat deze
+    afspraken betekenen. De vertaling ontbreekt naar de
+    mogelijkheden, aansprakelijkheden, garanties die echt van
+    belang zijn voor de uiteindelijke gebruiker. Bovendien zijn
+    er vaak geen instrumenten om de afspraken te controleren. Als
+    deze er al zijn, worden ze vaak door de leverancier zelf
+    beheerd, niet geheel onafhankelijk dus! </p>
+
+	<p>De ontwikkelingen op het gebied van netwerk toepassingen
+    maken dat er meestal meerdere beheerders een essentiÃ«le
+    bijdrage leveren aan de prestaties van deze toepassingen. Dat
+    zijn dan bijvoorbeeld regionale beheerders, en
+    gespecialiseerde beheerders voor communicatie, Internet en
+    hosting diensten. Elk van deze beheerders heeft een belang om
+    de eigen verantwoordelijkheid goed af te timmeren, en alleen
+    datgene te garanderen waarvan men overtuigd is dat men het
+    kan waarmaken. Dat is jammer, want men kan meestal meer. Die
+    extra vaardigheden komen echter pas tot ontwikkeling na een
+    leerproces. In het algemeen is dat enige tijd na de
+    ingebruikname, en dat wordt alleen maar erger omdat de
+    oplossingen feitelijk steeds complexer worden, terwijl de
+    afspraken juist in de eerste fases sturend zouden moeten
+    zijn. Bovendien weet niemand uitputtend te benoemen welke
+    componenten werkelijk de prestatie beïnvloeden en hoe ze dat
+    doen. Men ziet dan eenvoudig iets over het hoofd. Dit leidt
+    er vervolgens bij problemen toe dat de gebruikersorganisatie
+    van het kastje van de ene dienstverlener naar het muurtje van
+    de ander wordt gestuurd. Het omgekeerde komt ook voor.
+    Moderne netwerk protocollen en redundantie maken dat dat het
+    systeem als geheel méér betrouwbaarheid heeft dan elk van
+    de delen. </p>
+
+	<p>Kortom: <span class="caps">SLA</span>s met alle betrokken (beheer)partijen maken
+    garandeert weinig, en kost heel veel werk. </p>
+
+	<p>Het boeiende is natuurlijk dat deze ontwikkelingen ook
+    door de beheerorganisaties niet als gewenst worden gezien.
+    Uiteraard wil men zich niet aansprakelijk stellen voor
+    problemen waarop men geen invloed heeft, maar de kwaliteit
+    van de dienstverlening naar de gebruikers en opdrachtgevers
+    en de effectiviteit waarmee men die dienstverlening uitvoert
+    zijn voor het voortbestaan van de organisatie van groot
+    belang. Door zich terug te trekken op datgene wat men vrij
+    zeker kan leveren ontwikkelt men geen nieuwe kennis en
+    vaardigheden, en mist men op den duur de aansluiting met de
+    markt. Geen leverancier kan het zich veroorloven om geheel
+    blind te zijn voor de wijze waarop haar dienstverlening past
+    in een groter geheel. Op zijn minst levert zulk inzicht
+    aanknopingspunten voor de inrichting van de dienstverlening
+    en voor nieuwe diensten. </p>
+
+	<p>Een hele andere aanpak is om te beginnen met het
+    vaststellen van de verwachtingen van de gebruikers, en deze
+    te vertalen naar concrete meetbare normen. Vanaf het
+    allereerste begin van &quot;operationeel&quot; zijn,
+    bijvoorbeeld in de ontwikkel of testfase, worden deze normen
+    gemeten. Deze meetresultaten worden dan gedeeld met alle
+    partijen die een bijdrage kunnen leveren aan de end-to-end
+    prestatie. Het zal nodig zijn om deze verwachtingen,
+    resultaten en inzichten proefondervindelijk door te vertalen
+    naar belangrijke koppelvlakken (veelal die tussen
+    dienstaanbieders, niet daarbinnen), en daar hetzelfde mee te
+    doen. </p>
+
+	<p>Vervolgens wordt in de aansturing van de dienstaanbieders
+    en hun onderaannemers niet alleen naar hun technische
+    prestatie gekeken, maar ook naar de mate waarin zij
+    rapporteren over de kwaliteit van hun dienstverlening en die
+    van anderen, en de inspanning die zij leveren om die van
+    henzelf, en die van anderen, te verbeteren. Vanzelf gaat dit
+    niet, dienstaanbieders hebben de neiging zich te verzetten
+    tegen het over hun hoofd uitvoeren van metingen over hun
+    prestaties. </p>
+
+	<p>De organisatie stijl verandert daarmee van hiërarchisch /
+    formeel naar zelflerend en optimaliserend. Ook de
+    vertegenwoordiger van de gebruikersorganisatie draait hierin
+    mee. Deze is namelijk waarschijnlijk het beste op de hoogte
+    van prognoses over aantallen gebruikers en de verdeling van
+    hun transacties over de dag. </p>
+
+	<p>Om deze aanpak technisch te ondersteunen is het van belang
+    om op vitale punten de prestaties van het geheel goed te
+    kunnen meten. Het belangrijkste punt daarvoor is bij de
+    gebruikers, op hun computer. Dat kan met extra software, of
+    door te applicaties aan te passen. Deze technologie heet ook
+    wel &quot;management agents&quot;. Het is ook mogelijk deze
+    metingen in handen te leggen van gespecialiseerde
+    dienstaanbieder. Dat heeft onder meer als voordeel dat
+    daarmee een stuk onafhankelijkheid wordt gewaarborgd. </p>
+
+	<p>Wat we dus zien is dat de gebruikelijke aanpak, waarbij
+    eenmalig harde service levels worden afgesproken, niet van de
+    grond komt. Daarmee verwordt deze aanpak tot een aanpak
+    waarbij in feite niets wordt geregeld. Door het erkennen van
+    de onmogelijkheid van totale beheersing wordt het, paradoxaal
+    wellicht, pas mogelijk die beheersing in te richten. Immers,
+    die erkenning staat toe dat de betrokken partijen hun eigen
+    beperkte vaardigheden op constructieve wijze, met elkaar,
+    verder ontwikkelen, en samen leren hoe deze technologie
+    werkelijk een bijdrage kan leveren. </p>
+
+	<h2> Case Intranet</h2>
+
+	<p>Als een groot aantal beheerorganisaties invloed kan hebben
+    op beschikbaarheid, is het vrijwel ondoenlijk om op voorhand
+    met elk van deze organisaties sluitende afspraken te maken.
+    Metingen dichter bij de gebruiker zijn eenvoudiger, en
+    relevanter. </p>
+
+	<p>Een ministerieel departement ontwikkelt een intranet voor
+    kennismanagement. Uiteindelijk zullen er 7000 gebruikers
+    zijn, verdeeld over enkele tientallen lokaties. Bij slechte
+    prestaties van het intranet zullen gebruikers afhaken, en
+    mist het intranet zijn doel. In totaal zijn er enkele
+    tientallen beheerorganisaties betrokken, dat wil zeggen: in
+    staat de performance te hiërarchisch. Het is vrijwel
+    onmogelijk om hier met iedereen een complete <span class="caps">SLA</span> af te
+    sluiten. </p>
+
+	<p>De organisatie neemt van de verschillende beheerders <span class="caps">ICT</span>
+    infrastructuur diensten af (webserver, netwerk, werkplekken
+    met browsers). In de betreffende intranet applicatie zitten
+    performance tests ingebouwd. Deze tests registreren de
+    performance van de applicatie vanuit het perspectief van de
+    eindgebruiker: hoe lang duurt het voordat een pagina op het
+    scherm staat, hoe lang duurt een transactie, etc. De
+    resultaten van deze tests worden op periodieke basis door een
+    adviseur geanalyseerd en gepresenteerd aan zowel de klant
+    (business) als leverancier (<span class="caps">ICT</span>). Deze analyse en rapportage
+    vergelijkt de resultaten met de afgesproken <span class="caps">SLA</span>&#8217;s,
+    identificeert pijnpunten en bevat voorstellen voor
+    verbeteringen in de (technische) infrastructuur en het
+    ontwerp van de applicatie. </p>
+
+	<h2> Case kwaliteits monitoring van <span class="caps">ISP</span></h2>
+
+	<p>De tevredenheid van de gebruiker is niet altijd eenvoudig
+    te vertalen naar service levels van toeleveranciers. Het is
+    dan handiger om die tevredenheid centraal te stellen, en een
+    permanent verbeterproces af te spreken.</p>
+
+	<p>Een <span class="caps">ISP</span> huurt dial-up (inbel) en ip-uplink infrastructuur
+    (internet-verbindingen) ten behoeve van haar klanten /
+    gebruikers. Voor de <span class="caps">ISP</span> is de kwaliteit van de geleverde
+    diensten lastig te beoordelen, de feedback van gebruikers is
+    zeker niet altijd even betrouwbaar. Van de totale omzet gaat
+    80% naar services van toeleveranciers. Als gebruikers
+    weglopen gaan de kosten gewoon door. Deze getallen
+    illustreren het belang van kwaliteit voor het voortbestaan
+    van de <span class="caps">ISP</span>. Actieve monitoring van de geleverde kwaliteit,
+    vanuit het perspectief van de gebruikers, is daarmee voor de
+    <span class="caps">ISP</span> noodzakelijk.</p>
+
+	<p>Indien een <span class="caps">ISP</span> rechtstreeks een monitoringservice
+    installeert of huurt, en met de resultaten aanklopt bij de
+    leveranciers van de connectiviteit, is het erg makkelijk (en
+    gebruikelijk) voor de leverancier om de testmethodiek te
+    verwerpen, en hiertegenover zijn eigen interne resultaten te
+    zetten. Een onafhankelijke derde partij in de vorm van een
+    ervaren consultant wordt dan noodzakelijk. Vooraf definieert
+    deze met de klant (<span class="caps">ISP</span>) wat de kritische parameters zijn die
+    bepalen of de leverancier aan zijn verplichtingen voldoet. In
+    overleg met de leverancier worden de te leveren service
+    levels bepaald, en kunnen daar tevens financiÃ«le afspraken
+    aan gekoppeld worden in het geval de leverancier het
+    overeengekomen niveau van dienstverlening over een afgesloten
+    periode niet haalt. Als laatste wordt een testplan opgesteld
+    samen met een monitoringburo. Vervolgens is er een
+    zelfregulerend systeem ontstaan waarbij</p>
+
+	<ul>
+		<li>iedereen weet dat de performance continue gemonitored     wordt,</li>
+		<li>geen discussie over de feiten meer kan ontstaan</li>
+		<li>er een situatie wordt gecreëerd waarbij gezamenlijk
+            gezocht kan worden naar nieuwe kwaliteit in
+            dienstverlening.</li>
+	</ul>
+
+	<p>Op deze wijze is het vluchtige product
+    &#145;connectiviteit&#146; zichtbaar en manageble geworden.</p>
+
+	<h2>Case Internet &#150; de vroege jaren</h2>
+
+	<p>Ook zonder gedetailleerde formele afspraken over
+    beschikbaarheid is het mogelijk om netwerken te ontwikkelen
+    die goede diensten leveren.</p>
+
+	<p>Het Internet zelf is een conglomeraat van dienstverleners
+    en software ontwikkelaars. Om dit te laten werken is een
+    veelheid aan hardware, software en netwerk componenten nodig.
+    Zeker in de vroege jaren, rond 1980 en 1990, waren er weinig
+    formele opdrachtgever, opdrachtnemer relaties. Bandbreedte
+    was vaak gesponsored, software ontwikkeling was veelal public
+    domain, en systeembeheerders deden hun werk erbij, of in
+    ieder geval zonder dat hun baas begreep waar ze mee bezig
+    waren. Desondanks is juist in die tijd de benodigde
+    technologie enorm ontwikkeld, evenals de kwaliteit van de
+    dienstverlening. Voor wie het van dichtbij heeft meegemaakt
+    zijn er een aantal factoren aan te wijzen die een en ander
+    tot een succes hebben gemaakt. Beheerders en ontwikkelaars
+    hadden een sterke gezamenlijke professionele identiteit. Het
+    hoogste goed was niet je baas tevreden te stellen, maar je
+    gebruikers en medebeheerders bij andere organisaties. De
+    sterren waren die personen die een belangrijke protocol of
+    een veelgebruikt stuk software op hun naam hadden staan, of
+    die een belangrijke netwerk dienst in stand hielden. De
+    leidende criteria waren: wat hebben de gebruikers nu en
+    binnenkort nodig? Hoe maken we het beheer beter en
+    eenvoudiger? Ik help een ander, want een ander helpt mij ook.
+    Formele afspraken tussen dienstaanbieders waren er nagenoeg
+    niet. Technische standaardisatie werd in professionele
+    groepen uitgewerkt, maar verder stonden daar geen formele
+    sancties op. </p>
+</div><!--End content-->
+
+<div class="clear"></div>
+
+<!--Start GetResponse subscription form-->
+<div id="mailingform"><p class="meer-weten"><strong>Meer weten?</strong><br />Abonneert u op de mailing lijst en ontvang regelmatig mijn column.</p>
+<div id="gr-form"><form method=post
+enctype="application/x-www-form-urlencoded" id=GRSubscribeForm
+accept-charset=UTF-8>
+<label for="category2">Naam:</label><input name="category2" type="text" id="GRCategory2"></input>
+<label for="category3">Email adres:</label><input name="category3" type="text" id="GRCategory3"></input>
+<label for="GrCustom0">Uw belangstelling:</label><input name="custom_belangstelling" type="text" id="GrCustom0"></input>
+<input type="submit" id="abonneer" value="Abonneer!" method="post">
+<input type="hidden" name="category1" value="dinlm">
+<input type="hidden" name="ref" value="WS3">
+<input type="hidden" name="getpostdata" value="get">
+</form></div><!--End GetResponse subscription form-->
+<div class="clear"></div>
+</div><!--End mailingform-->
+
+<div id="footer">&copy; Copyright 2015. Alle rechten voorbehouden.
+<div id="rss"><a href="../rss" title="RSS Feed">RSS</a></div>
+</div><!--End footer-->
+</div><!--End container-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y6WKY1Y13E');
+</script>
+
+</body>
+</html>

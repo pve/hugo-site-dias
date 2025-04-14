@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=42889&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>The US Air Force Zero Trust Strategy | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="Who is really doing Zero Trust?
+Well, the US Air Force is. Here is my summary, with some comments, of their strategy document for the benefit of my Certificate of Competence in Zero Trust (CCZT) learners. In fact, this is an edited version of a conversation we had during one of our classes.
+You can download the full strategy here, and the current roadmap here, all linked from this page.
+I think the fundamental first important point about the strategy document is that it exists at all. There is an actual organization of significant size that has a strategy and is implementing it. Many can learn from this.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:42889/posts/airforce-zero-trust-strategy/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:42889/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:42889/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:42889/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:42889/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:42889/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:42889/posts/airforce-zero-trust-strategy/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:42889/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:42889/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:42889/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:42889/posts/">Peter&#39;s Griddle</a></div>
+    <h1 class="post-title entry-hint-parent">
+      The US Air Force Zero Trust Strategy
+    </h1>
+    <div class="post-meta"><span title='2025-03-21 12:26:58 +0000 UTC'>March 21, 2025</span>
+
+</div>
+  </header> 
+
+  
+  <i>⏳ 8 min read</i>
+  
+  <div class="post-content"><p>Who is really doing Zero Trust?</p>
+<p>Well, the US Air Force is. Here is my summary, with some comments, of their strategy document for the benefit of my Certificate of Competence in Zero Trust (CCZT) learners. In fact, this is an edited version of a conversation we had during one of our classes.</p>
+<p>You can download the full strategy <a href="https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20API%20Reference%20Architecture%202.0.pdf">here</a>, and the current roadmap <a href="https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20Enterprise%20Zero%20Trust%20Roadmap%20and%20Release%20Notes_v2.0.pdf?ver=36cbAKNEe7JiRVAPFwWepg%3d%3d">here</a>, all linked from <a href="https://www.dafcio.af.mil/">this page</a>.</p>
+<p>I think the fundamental first important point about the strategy document is that it exists at all. There is an actual organization of significant size that has a strategy and is implementing it. Many can learn from this.</p>
+<p>The second major point is that its terminology and even its conceptual frame of reference is almost 100% CCZT compatible. Even better, it lists more specific initiatives than the Zero Trust courseware itself. So rather than talking about a strategy, it actually is a strategy with strategic goals and sub-goals that match.</p>
+<p>I am not repeating the strategic goals and subgoals here. They align with CCZT, and the strategy document is succinct enough.</p>
+<p>Data is considered to be the strategic asset to protect. It is really focussed on protecting the data. Side note: for regular organizations, it is actually quite hard to have a  top-down understanding of the value of data. Anyway, the focus on data represents a shift away from a network centric security strategy. In fact, the current strategy is defined as network focused, defense in depth, castle and moat.</p>
+<h1 id="benefits">Benefits<a hidden class="anchor" aria-hidden="true" href="#benefits">#</a></h1>
+<p>Already in the summary it mentions three important benefits of the strategy, instead of just saying &ldquo;We need to be more secure&rdquo;.</p>
+<ol>
+<li>Reduction of architectures</li>
+<li>Unlock access</li>
+<li>Impose higher costs on adversaries</li>
+</ol>
+<p>The strategy summary states that it reduces the number of architectures. Later in the document, it&rsquo;s a bit more specific about that, saying there are too many point solutions and stop-gap measures across that entire network.
+This is what happens - you start with a low-security network and then as you mature your requirements, if you don&rsquo;t have an overall strategy, you get all these point solutions and they are expensive simply because you have so many different ones. So the zero trust strategy has, as one benefit, that you will have less of these.</p>
+<p>In IT, migrating from a functioning system to a new one rarely has a strong business case. As a matter of fact, that&rsquo;s true for a lot of technology. If it ain&rsquo;t broke, don&rsquo;t fix it. That&rsquo;s for a number of reasons. One of them is the business case: it is too costly. But if you&rsquo;re not happy with the current situation, you have a change imperative and the business case changes because your migration cost is a sunk cost and no longer something that needs to be recouped.</p>
+<p>The most important functional benefit mentioned is that it unlocks access. And a little later it explains: &ldquo;to shared and trusted information.&rdquo;
+This is enabling warfighters. Well, also a lot of other roles. But the mission of the air force is to fight, or at least demonstrate the capability to fight, which is probably even more important than the actual fighting.
+It&rsquo;s fairly obvious that you want to do this in quite adverse network circumstances. They even have an abbreviation for that - DDIL (denied, degraded, intermittent, and limited) - for situations where you may or may not have a connection to your drone, for example.</p>
+<p>The third one that I liked from a security mindset perspective is that it imposes higher costs on adversaries. They don&rsquo;t say we need to protect ourselves from adversaries, because that is not a goal that has a measurable KPI. It&rsquo;s hard to say &ldquo;okay, we&rsquo;ve reduced our exposure to adversaries.&rdquo; The adversaries are all over the place. In fact, without adversaries, you wouldn&rsquo;t need to have an air force.</p>
+<p>So what they&rsquo;re saying is, okay, our defensive strategy is based on increasing the cost of the attacker to attack us.
+This is military doctrine - you end a war when the enemy no longer wants to fight you.
+That&rsquo;s the military definition of ending a war, dating back to Sun Tzu. One way of doing that is raising the cost for them to continue attacking you.</p>
+<p>So I liked these benefits very much. I think they&rsquo;re understandable on a strategic level.</p>
+<h1 id="scope">Scope<a hidden class="anchor" aria-hidden="true" href="#scope">#</a></h1>
+<p>In terms of coverage, the strategy sometimes looks like buzzword bingo.
+First of all, it mentions all new developments like AI and IoT. It includes top secret data and operational technology. Cloud and mobile is included, even non-IP devices. Microservice architectures.</p>
+<p>It acknowledges that more endpoints are moving to the cloud.</p>
+<h1 id="old-is-new-again">Old is new again?<a hidden class="anchor" aria-hidden="true" href="#old-is-new-again">#</a></h1>
+<p>The strategy contains a lot of elements that you already see in mobile security infrastructures that are being build these days. Mobile, cloud, &rsquo;new way of working'.</p>
+<p>It is a theme that we&rsquo;ve seen before - zero trust isn&rsquo;t about reinventing the wheel. It is not about reinventing all great tactical security stuff we already know. Most of that is still useful.</p>
+<p>Zero trust is a more comprehensive and consistent approach to stuff that we already know.</p>
+<p>Potentially a new technology that is explicitly mentioned is SDP (software defined perimeter). But even that has its roots in earlier technologies such as the <a href="https://en.wikipedia.org/wiki/Port_knocking">knock knock protocol</a>. SDP is a more structured variant of that.</p>
+<p>SDP is fairly directly stated as a tool to eliminate VPNs. This is a substantial driver of the benefits mentioned.</p>
+<h1 id="maturity-and-automation">Maturity and automation<a hidden class="anchor" aria-hidden="true" href="#maturity-and-automation">#</a></h1>
+<p>Section three includes a small maturity model, in which an important dimension is &lsquo;automation&rsquo;. In the document, the mantra is repeated regularly: we do this initially with manual efforts but we must evolve to a real-time and automated approach. I think the nice thing here is that it acknowledges that you need to get started on it and don&rsquo;t overautomate in the beginning, but that manual processes are not sustainable in the long run.</p>
+<p>You don&rsquo;t want to automate what you don&rsquo;t understand. So there&rsquo;s a fine line there. As a matter of fact, I&rsquo;ve written earlier about this in the context of automating system management and network management. And one of my former colleagues had a PhD thesis of which that was the most important result.</p>
+<h1 id="the-big-elephant">The big elephant<a hidden class="anchor" aria-hidden="true" href="#the-big-elephant">#</a></h1>
+<p>Another interesting point, the ramifications of which are not immediately clear, is that without mentioning Microsoft, the document states: &lsquo;We have Active Directory Domain Controllers all over the bleeping place.</p>
+<p>This is the Microsoft Active Directory architecture where every location has its own domain controllers - and this is archaic because this is from the period that you had flaky connections to offices.
+In the old time at banks where I worked, every office had an active directory domain controller.
+In fact, two because of high availability requirements.
+But it&rsquo;s an attack surface.
+The Air Force says we have over 180 sites, so we have more than 360 attack surfaces.</p>
+<p>One of the stated objectives of the strategy is to drop the dependence on these Domain Controllers. Now, how they are actually going to do that, it doesn&rsquo;t say, but I thought it was a really interesting point to make.</p>
+<h1 id="logging-and-shared-responsibility">Logging and shared responsibility<a hidden class="anchor" aria-hidden="true" href="#logging-and-shared-responsibility">#</a></h1>
+<p>What I liked also is the emphasis on comprehensive security event monitoring and logging, including application security events.</p>
+<p>They also highlight the need for a &lsquo;shared responsibility model&rsquo; for handling those events, involving both external security service providers and internal security operations centers.
+I think that&rsquo;s a nice frame of mind or a nice thinking model on how to roll that into your architecture.</p>
+<h1 id="governance-and-risk">Governance and risk<a hidden class="anchor" aria-hidden="true" href="#governance-and-risk">#</a></h1>
+<p>Strategy can be a theoretical exercise. How do you pull this off in reality? The final part of the paper prescribes how the responsibilities for the implementation are delegated to various offices and units within the Air Force organization. A dozen of them are mentioned, and it even spells out where some of the deconflicting of priorities is going to happen. Deconflicting is a core element of governance - that you find out: where are the conflicts and how do we actually handle them?</p>
+<p>Institutional resistance to change is identified as the greatest risk, as it requires &lsquo;all communities to adapt in uncomfortable ways.&rsquo;&quot;</p>
+<p>Amen.</p>
+<h1 id="open-ends">Open ends<a hidden class="anchor" aria-hidden="true" href="#open-ends">#</a></h1>
+<p>In a couple of places, it says we need to do discovery of everything on the AFIN - the Air Force Information Network. And then somewhere else, it says we have a cloud-first priority. My question: wait a minute, are those cloud services part of the Air Force Information Network or not? It depends a little bit on your definition of what a network is. This is, by the way, not new for this document. I&rsquo;ve seen that ambiguity over the past 30 years in a couple of other ways and places. Is the network the stuff that routes packets? Is it everything that you can reach from a certain device? Is it all the servers? Does it include all the clients?</p>
+<p>It&rsquo;s a little less clear how that works. So there are some loose ends on the edge of the strategy.</p>
+<p>What I also did not see is how progress is going to be measured, and how you would audit or assess that.</p>
+<p>In conclusion: read this if you are interested in enhancing your IT-based capabilities while reducing your security costs.</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:42889/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>What are digital infrastructures? on Digital Infrastructures at Scale</title>
-    <link>http://localhost:1313/book/diginfra/</link>
+    <link>http://localhost:42213/book/diginfra/</link>
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Mar 2025 20:34:01 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:42213/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
-      <link>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</link>
+      <link>http://localhost:42213/book/diginfra/elements-of-digitalinfrastructures/</link>
       <pubDate>Thu, 27 Mar 2025 20:34:01 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</guid>
+      <guid>http://localhost:42213/book/diginfra/elements-of-digitalinfrastructures/</guid>
       <description>&lt;p&gt;It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.&lt;/p&gt;
 &lt;p&gt;The three major elements of digital infrastructures are:&lt;/p&gt;
 &lt;ol&gt;
@@ -24,28 +24,28 @@
     </item>
     <item>
       <title>The Essence of Digital Infrastructures</title>
-      <link>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</link>
+      <link>http://localhost:42213/book/diginfra/essence-digital-infrastructures/</link>
       <pubDate>Mon, 10 Mar 2025 21:34:21 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</guid>
+      <guid>http://localhost:42213/book/diginfra/essence-digital-infrastructures/</guid>
       <description>&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;
 &lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that are the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What a lunch in Spain taught me about digital infrastructures</title>
-      <link>http://localhost:1313/book/diginfra/lunch-spain/</link>
+      <link>http://localhost:42213/book/diginfra/lunch-spain/</link>
       <pubDate>Sat, 15 Mar 2025 16:06:44 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/lunch-spain/</guid>
+      <guid>http://localhost:42213/book/diginfra/lunch-spain/</guid>
       <description>&lt;p&gt;In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
 And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;At the restaurant&amp;rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;payment terminals&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/payterminal-716603.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;payment terminals&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:42213/payterminal-716603.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deployment Diagrams</title>
-      <link>http://localhost:1313/book/diginfra/deployment-diagrams/</link>
+      <link>http://localhost:42213/book/diginfra/deployment-diagrams/</link>
       <pubDate>Sun, 09 Mar 2025 21:19:45 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/deployment-diagrams/</guid>
+      <guid>http://localhost:42213/book/diginfra/deployment-diagrams/</guid>
       <description>&lt;p&gt;Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.&lt;/p&gt;
 &lt;h2 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h2&gt;
 &lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
@@ -53,9 +53,9 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
     </item>
     <item>
       <title>What are AI digital infrastructures?</title>
-      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
+      <link>http://localhost:42213/book/diginfra/digital-inf-ai/</link>
       <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
+      <guid>http://localhost:42213/book/diginfra/digital-inf-ai/</guid>
       <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
 &lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;

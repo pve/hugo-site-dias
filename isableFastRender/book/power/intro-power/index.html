@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=42889&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Introduction to Power | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.
+Before we attempt to define power formally, let&rsquo;s see how the word in used in everyday IT situations.
+Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works, and creates value and risk.
+
+The cloud architect held significant power in deciding which platforms the organization would adopt for its digital transformation.
+Automated deployment pipelines gave development teams the power to release software faster and with fewer errors.
+Legacy systems often retain unexpected power in large organizations, simply because so many critical processes still depend on them.
+Regulators have the power to halt digital initiatives if data protection requirements are not met.
+By owning the central identity management service, the security team had the power to control access across the entire infrastructure.
+Outages at major cloud providers show how concentrated power in digital infrastructures can lead to systemic risk.
+The CIO used the power of budget approval to steer the enterprise toward adopting more secure infrastructure patterns.
+Power struggles between central IT and business units can delay the rollout of shared infrastructure services.
+With real-time observability tools, operations teams gained the power to detect and respond to incidents before users were affected.
+An open-source community can collectively wield more power than a single vendor when shaping the direction of a software tool.
+
+From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:42889/book/power/intro-power/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:42889/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:42889/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:42889/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:42889/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:42889/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:42889/book/power/intro-power/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:42889/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:42889/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:42889/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:42889/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:42889/book/power/">Power</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Introduction to Power
+    </h1>
+    <div class="post-meta"><span title='2025-04-05 12:31:46 +0000 UTC'>April 5, 2025</span>
+
+</div>
+  </header> 
+
+  
+  <i>⏳ 3 min read</i>
+  
+  <div class="post-content"><p>Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.
+Before we attempt to define power formally, let&rsquo;s see how the word in used in everyday IT situations.</p>
+<p>Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works, and creates value and risk.</p>
+<ol>
+<li>The cloud architect held significant power in deciding which platforms the organization would adopt for its digital transformation.</li>
+<li>Automated deployment pipelines gave development teams the power to release software faster and with fewer errors.</li>
+<li>Legacy systems often retain unexpected power in large organizations, simply because so many critical processes still depend on them.</li>
+<li>Regulators have the power to halt digital initiatives if data protection requirements are not met.</li>
+<li>By owning the central identity management service, the security team had the power to control access across the entire infrastructure.</li>
+<li>Outages at major cloud providers show how concentrated power in digital infrastructures can lead to systemic risk.</li>
+<li>The CIO used the power of budget approval to steer the enterprise toward adopting more secure infrastructure patterns.</li>
+<li>Power struggles between central IT and business units can delay the rollout of shared infrastructure services.</li>
+<li>With real-time observability tools, operations teams gained the power to detect and respond to incidents before users were affected.</li>
+<li>An open-source community can collectively wield more power than a single vendor when shaping the direction of a software tool.</li>
+</ol>
+<p>From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.</p>
+<ul>
+<li>Power can be attributed to people, technical artifacts, teams, organisations as a whole, roles, and institutions, to name a few.</li>
+<li>These same types of actors can also be the subjects of power.</li>
+<li>Power is exercised through a variety of means and mechanisms.</li>
+</ul>
+<p>In these examples, mechanisms include:</p>
+<ul>
+<li>Decision-making authority – The ability to choose platforms, policies, or directions.</li>
+<li>Technical capability and automation – Tools that enable or restrict what actions are possible.</li>
+<li>Dependency and path-dependence – Power held by systems or practices others rely on.</li>
+<li>Legal and regulatory enforcement – Influence through rules, compliance, and consequences.</li>
+<li>Control over chokepoints – Gatekeeping access to critical systems or resources.</li>
+<li>Centralization and concentration of infrastructure – Power from aggregated control or single points of failure.</li>
+<li>Resource and budget control – Steering outcomes through funding and prioritization.</li>
+<li>Organizational politics and influence – Competing agendas, alliances, and negotiation.</li>
+<li>Information asymmetry – Advantage through greater visibility or data access.</li>
+<li>Collective governance and community action – Shared power through participation and collaboration.</li>
+</ul>
+<p>These are the building blocks of effective IT.
+The way these mechanisms are organised plays a critical role in shaping both the value and the risk of digital infrastructures.</p>
+<p>A common thread is that power influences the future, and influences the outcomes of activities.
+The simplified definition of power, inspired by Oxford Languages, that I use here is:</p>
+<blockquote>
+<p><em>Power is the ability of an actor to direct or influence the behaviour of others or the course of events.</em></p></blockquote>
+<p>As our examples show, these actors are not just people - they can include technical artefacts and teams.</p>
+<p>Power isn’t just philosophical—it’s operational. It determines what can be built, who gets to decide, and how resilient or risky systems become. To work effectively with digital infrastructure, we need to see power not as abstract, but as architecture.</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:42889/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

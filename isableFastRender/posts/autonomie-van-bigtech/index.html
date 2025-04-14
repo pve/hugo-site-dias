@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=42889&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Big tech afhankelijkheid: wat is het echte risico? | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="Het nationale sentiment is negatief over de afhankelijkheid van &lsquo;big tech&rsquo;. Overheidsdata staat in een Amerikaanse cloud, we hebben geen eigen sociaal netwerk, enzovoort. En vergelijkbare sentimenten spelen bij andere organisaties.
+Emoties zijn vaak een goede indicator, maar geen goede inhoudelijke analyse.
+Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:42889/posts/autonomie-van-bigtech/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:42889/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:42889/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:42889/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:42889/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:42889/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:42889/posts/autonomie-van-bigtech/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:42889/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:42889/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:42889/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:42889/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:42889/posts/">Peter&#39;s Griddle</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Big tech afhankelijkheid: wat is het echte risico?
+    </h1>
+    <div class="post-meta"><span title='2025-04-05 09:36:33 +0000 UTC'>April 5, 2025</span>
+
+</div>
+  </header> 
+
+  
+  <i>⏳ 5 min read</i>
+  
+  <div class="post-content"><p>Het nationale sentiment is negatief over de afhankelijkheid van &lsquo;big tech&rsquo;. Overheidsdata staat in een Amerikaanse cloud, we hebben geen eigen sociaal netwerk, enzovoort. En vergelijkbare sentimenten spelen bij andere organisaties.</p>
+<p>Emoties zijn vaak een goede indicator, maar geen goede inhoudelijke analyse.
+Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen.</p>
+<p>Laten we eens kijken welk risico we nu werkelijk lopen met deze afhankelijkheid.
+We willen voorkomen dat big tech onze nationale autonomie te veel beperkt, bijvoorbeeld doordat het als drukmiddel gebruikt wordt.</p>
+<p>Maar wie zet dan die druk? Deze vraag is nog niet zo eenduidig te beantwoorden. Is het big tech zelf? Is het de Amerikaanse overheid, die de meeste macht over big tech heeft? Of heeft big tech macht over de (Amerikaanse) overheid? Dat maakt uit voor de motieven, en mogelijk ook voor de oplossingsrichtingen.</p>
+<p>Welke digitale dreigingen zijn er eigenlijk? De gebruikelijke insteek bij informatiebeveiliging is: vertrouwelijkheid, beschikbaarheid en integriteit.</p>
+<p>Hoe bedreigt big tech vertrouwelijkheid? De gedachte hier is dat als data op Amerikaanse servers wordt opgeslagen, de Amerikaanse overheid er dus bij kan.
+Dat zit wat genuanceerder. Cloud providers verzettten zich met woord en daad tegen ongebreideld data harken, en dat drijft de kosten voor de Amerikaanse overheid op.
+Maar veelal krijgt de Amerikaanse overheid haar zin, ook als de data op Europese servers van een Amerikaans bedrijf staan.</p>
+<p>De bulk van de Nederlandse overheidsdata is echter openbaar, en dat is zelfs bij wet geregeld. Als het gaat om politiek en zelfs militair beleid, is er weinig geheim. Kijk maar eens wat bijvoorbeeld het Amerikaanse Departement van Defensie allemaal publiceert. Metadata en gebruikspatronen zijn minder openbaar, en kunnen gevoelig zijn.
+Tegelijk hebben buitenlandse mogendheden veel andere mogelijkheden om bij gegevens en informatie te komen. Daar hebben ze Office 365 niet voor nodig.
+Het vertrouwelijkheidsrisico is wel belangrijk, maar zie ik niet als de belangrijkste reden om te investeren in andere oplossingen.</p>
+<p>Hoe bedreigt big tech beschikbaarheid? De Amerikaanse overheid kan dreigen met afsluiten, en zeekabels kunnen beschadigd worden. Dat is allemaal al eens gebeurd. En ook Microsoft kan gewoon plat gaan. Niemand is &rsquo;too big to fail&rsquo;. Vanuit het perspectief van &lsquo;business resilience&rsquo;, bedrijfszekerheid, is deze beschikbaarheid van steeds groter belang, omdat onze afhankelijkheid van digitale infrastructuren steeds groter wordt.</p>
+<p>Maar hoe ga je daar mee om? Is het nodig om een complete kopie of kloon van alle capaciteit en functionaliteit te hebben? Ik denk het niet. <em>Resilient</em> -veerkrachtig- zijn omvat ook wat in het engels &lsquo;graceful degradation&rsquo; heet. Een schade-event is nooit gratis. Er zijn altijd kosten, en honderd procent continuïteit is veelal te duur. Kun je echter de schade beperken, en tijd kopen om alternatieven op te bouwen? Met 20% van je capaciteit en functionaliteit zou je 80% van je resultaat moeten kunnen halen.
+In het geval van overheidsdata op Amerikaanse servers en software zie ik daarom meer in het hebben van een noodvoorziening die snel opgeschaald kan worden.
+De pandemie heeft laten zien dat in korte tijd overgeschakeld kan worden naar andere systemen voor communicatie. Dat geldt voor werkprocessen, maar ook technisch. Zoom kreeg in korte tijd een vertwintigvoudiging van het aantal gebruikers te verwerken, en op wat kleine incidenten na is de dienstverlening overeind gebleven. Met cloudtechnologie en cloudbeheermethoden is dat goed te doen. Voor de Nederlandse situatie betekent dat een noodvoorziening met enkele duizenden gebruikers.
+Dat moeten dan ook wel echte, dagelijkse, gebruikers zijn. Anders is de kans klein - tot verwaarloosbaar - dat dit in geval van nood gaat werken.</p>
+<p>Hoe bedreigt big tech de integriteit van informatie? Daar zijn technische risico&rsquo;s, maar die zijn niet vanzelf groter dan in alternatieven. Ik zie daarnaast een subtieler, maar minstens zo belangrijk risico. Social media leidt op een aantal manieren tot beïnvloeding van mensen en hun denkbeelden. De natuurlijke neiging van social media is om mensen in een eigen bubbel, een &rsquo;echo kamer&rsquo;, een &lsquo;fabeltjesfuik&rsquo; te stoppen.</p>
+<p>We zien dat dat tot minder onderling begrip en meer radicalisering leidt. En het maakt vatbaar voor beinvloeding van buitenaf, zeker als die media in handen zijn van mensen met een politieke agenda. Er zijn bijvoorbeeld sterke aanwijzingen dat met hulp van Cambridge Analytica verkiezingen zijn beinvloed in onder meer Trinidad en Tobago, en de uitkomst van het Brexit referendum is gemanipuleerd. En na de tweede verkiezing van President Trump is er een offensief gestart om via sociale media nationalistische partijen in Europa aan de macht te brengen.
+Deze technologie kan dus denkbeelden van grote groepen mensen veranderen, ook als dat tegen het belang van een soevereine staat ingaat. Dat is een risico.
+Een nationaal of europees social media platform heeft niet vanzelf minder van deze risico&rsquo;s.</p>
+<p>De meest voor de hand liggende optie hier is regulering – hoe ethisch riskant dat ook is.
+Tussen het beschermen van groepen in de bevolking en censuur van uitingen die tegen de heersende politieke macht ingaan zit immers een flink schemergebied.</p>
+<p>Maar regulering kan wel effectief zijn. Dat blijkt wel uit het feit dat zowel big tech als de Amerikaanse overheid zich met hand en tand verzetten tegen regulering vanuit Europa.</p>
+<p>Kortom: onze afhankelijkheid van &lsquo;big tech&rsquo; vergt genuanceerde, maar duidelijke actie.</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:42889/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

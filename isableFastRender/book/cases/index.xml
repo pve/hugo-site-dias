@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cases on Digital Infrastructures at Scale</title>
+    <link>http://localhost:42889/book/cases/</link>
+    <description>Recent content in Cases on Digital Infrastructures at Scale</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Mar 2025 15:35:53 +0000</lastBuildDate>
+    <atom:link href="http://localhost:42889/book/cases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How My Site Got Hacked</title>
+      <link>http://localhost:42889/book/cases/how-my-site-got-hacked/</link>
+      <pubDate>Sat, 29 Mar 2025 15:35:53 +0000</pubDate>
+      <guid>http://localhost:42889/book/cases/how-my-site-got-hacked/</guid>
+      <description>&lt;h2 id=&#34;detection&#34;&gt;Detection&lt;/h2&gt;
+&lt;p&gt;I should have acted on the first signals more aggressively. But let’s talk about that later in this story.
+Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.&lt;/p&gt;
+&lt;p&gt;The hack led to business damage at the end of one of my webinars. In 2016, on a Friday, I did a webinar, at the end of which I had two links to my site as a call to action.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Small Example of Cloud Native Development</title>
+      <link>http://localhost:42889/book/cases/tutorial-cloud-native/</link>
+      <pubDate>Mon, 10 Feb 2020 23:29:51 +0000</pubDate>
+      <guid>http://localhost:42889/book/cases/tutorial-cloud-native/</guid>
+      <description>&lt;p&gt;Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.
+To illustrate this new approach, I have started to develop a minimal application. Although minimal, I run it in production. Its basic function is to regularly pull out data from an air quality sensor into a cloud-based database. Together it is a few hundred lines of code.
+Here are the major features of the example:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Controlling Cloud Sprawl</title>
+      <link>http://localhost:42889/book/cases/stopping-senseless-sprawl-of-private-clouds/</link>
+      <pubDate>Wed, 01 Feb 2012 07:21:00 +0000</pubDate>
+      <guid>http://localhost:42889/book/cases/stopping-senseless-sprawl-of-private-clouds/</guid>
+      <description>&lt;p&gt;A 2012 case study&lt;/p&gt;
+&lt;p&gt;Even in a cloud world, reducing server count is a lofty goal in itself.&lt;/p&gt;
+&lt;p&gt;After all, you would be paying for all those servers anyway. And sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.&lt;/p&gt;
+&lt;p&gt;So today (in 2012) I bring you an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

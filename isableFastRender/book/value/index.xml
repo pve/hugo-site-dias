@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Value on Digital Infrastructures at Scale</title>
+    <link>http://localhost:42889/book/value/</link>
+    <description>Recent content in Value on Digital Infrastructures at Scale</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Mar 2025 20:33:42 +0000</lastBuildDate>
+    <atom:link href="http://localhost:42889/book/value/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Provider Value</title>
+      <link>http://localhost:42889/book/value/intro-to-value/</link>
+      <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>
+      <guid>http://localhost:42889/book/value/intro-to-value/</guid>
+      <description>&lt;p&gt;The sheer separation of the providers from the consumers of these infrastructures drives a lot of the value.&lt;/p&gt;
+&lt;p&gt;Imagine stringing a wire to connect your PC to your neighbour&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does that take? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Value in Process Improvement</title>
+      <link>http://localhost:42889/book/value/value-in-process-improvement/</link>
+      <pubDate>Thu, 27 Mar 2025 20:33:42 +0000</pubDate>
+      <guid>http://localhost:42889/book/value/value-in-process-improvement/</guid>
+      <description>&lt;p&gt;Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.&lt;/p&gt;
+&lt;p&gt;The internet is a prime example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
+&lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;
+&lt;p&gt;For an example of a supporting digital infrastructure you can look at an IaaS provider, which enables data processing and storage for other applications and infrastructures.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agile Requires Cloud</title>
+      <link>http://localhost:42889/book/value/agile-requires-cloud/</link>
+      <pubDate>Wed, 12 Oct 2016 15:12:04 +0000</pubDate>
+      <guid>http://localhost:42889/book/value/agile-requires-cloud/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
+Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
+&lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat.
+Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Business Model Canvas for IaaS Providers</title>
+      <link>http://localhost:42889/book/value/business-model-canvas-iaas/</link>
+      <pubDate>Sat, 15 Nov 2014 11:18:17 +0000</pubDate>
+      <guid>http://localhost:42889/book/value/business-model-canvas-iaas/</guid>
+      <description>&lt;h2 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h2&gt;
+&lt;p&gt;The business model canvas is a visual template for developing and discussing business models. For more information, see &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;http://en.wikipedia.org/wiki/Business_Model_Canvas&lt;/a&gt; and &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;http://www.businessmodelgeneration.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The business model canvas has nine basic building blocks and specific relations between those blocks. I&amp;rsquo;ll illustrate them here.&lt;/p&gt;
+&lt;p&gt;The example used in this section is Amazon Web Services (AWS), particularly EC2 (virtual machines on demand). This is an Infrastructure as a Service offering. The power of the business model canvas approach becomes clear when we see how it can distinguish between various cloud service offerings.
+&lt;img alt=&#34;IaaS Cloud Canvas&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:42889/book/value/business-model-canvas-iaas/BusinessCanvasIaaS.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Business Model Canvas for SaaS Providers</title>
+      <link>http://localhost:42889/book/value/business-model-canvas-saas/</link>
+      <pubDate>Mon, 15 Dec 2014 11:18:17 +0000</pubDate>
+      <guid>http://localhost:42889/book/value/business-model-canvas-saas/</guid>
+      <description>&lt;p&gt;Here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.&lt;/p&gt;
+&lt;h2 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h2&gt;
+&lt;p&gt;The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models. To learn more, visit &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;Wikipedia&lt;/a&gt; or the &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;Business Model Generation&lt;/a&gt; website.&lt;/p&gt;
+&lt;p&gt;The Business Model Canvas is composed of nine essential building blocks, which define the interconnections and relationships within a business model. In this article, we&amp;rsquo;ll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multiple Ways to Go Cloud</title>
+      <link>http://localhost:42889/book/value/three-ways-to-go-cloud/</link>
+      <pubDate>Sun, 03 Jun 2018 17:06:57 +0000</pubDate>
+      <guid>http://localhost:42889/book/value/three-ways-to-go-cloud/</guid>
+      <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.&lt;/p&gt;
+&lt;h2 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h2&gt;
+&lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

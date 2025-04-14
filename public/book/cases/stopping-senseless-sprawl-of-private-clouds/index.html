@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Controlling Cloud Sprawl | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="A 2012 case study
+Even in a cloud world, reducing server count is a lofty goal in itself.
+After all, you would be paying for all those servers anyway. And sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.
+So today (in 2012) I bring you an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/book/cases/stopping-senseless-sprawl-of-private-clouds/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/cases/stopping-senseless-sprawl-of-private-clouds/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/cases/">Cases</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Controlling Cloud Sprawl
+    </h1>
+    <div class="post-meta"><span title='2012-02-01 07:21:00 +0000 UTC'>February 1, 2012</span>
+
+</div>
+  </header> 
+
+  
+  <i>⏳ 5 min read</i>
+  
+  <div class="post-content"><p>A 2012 case study</p>
+<p>Even in a cloud world, reducing server count is a lofty goal in itself.</p>
+<p>After all, you would be paying for all those servers anyway. And sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.</p>
+<p>So today (in 2012) I bring you an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.</p>
+<p><strong>Peter van Eijk</strong> : Ron, when you joined KCC you helped stop their trend of building a new computer room every 6 months, down to no new computer rooms at all. Is that right?</p>
+<p><strong>Ron Kaminski</strong> : Yes Peter that was basically what happened. As a result of the development of the business, there was a big growth in applications. Each of these applications brings in a lots of servers, because of the multi-tier architecture, and because you need test and development servers.</p>
+<p><strong>Peter</strong> : Could you tell us a bit about the way your firm stopped the server growth? What are the most important tactics?</p>
+<p><strong>Ron</strong> : Invisible machines proliferate, so make them visible. To begin with, automate the measurement and maintain web delivered graphical displays of the resource consumption of each and every server. This will allow you to identify unused and under used servers, which you can then repurpose to projects and applications that have a real need for them. A lot of times, a detailed performance analysis suggests changes in the application that will drastically reduce its resources needs. Think bad/missing database indexes, memory leaks, and runaway/looping processes.</p>
+<p><strong>Peter</strong> : Everybody loves clouds these days, and if they can’t get any public clouds, they will settle for private clouds. What are the most relevant lessons for those adopters?</p>
+<p><strong>Ron</strong> : Basically two lessons: You still need to do capacity planning, and you have to automate or you will fail.
+Many folks say “Why bother with capacity planning? The cloud is infinite!” and that is only true as long as your wallet is infinite too. We need to be sure that we have tracking and review of intended business volumes and costs, in order to make decisions about when we need to use or not use cloud resources intelligently and economically.</p>
+<p><strong>Peter</strong> : Yes, computing is still not free. How far do you need to go with automation?</p>
+<p><strong>Ron</strong> : Well, what we have learned is basically “Automate or die!” both for creation and removal. If we expect to use either internal or external clouds, we need to stop doing setups that involve humans in any way. This means that we need to have standardized services that are engineered and/or architected to be complete environments, with any database or other services in place. There should also be administrative checking/post creation review, with removal if determined to be wasteful.</p>
+<p>A key point that we need to have is the notion of “server lifespan” and automatic deletion at end of life. Folks will fight this until they get comfortable with how easy it is to get a new one. If we don’t have “delete at end of lifespan” all this automation will lead to massive server sprawl and OS image proliferation, and all cloud vendors are counting on this for their profits. They know that firms left to their own devices will “create and forget” so they will continue to bill for unused servers. We need to get very good at noticing and removing dormant servers or risk large wasteful bills.
+We also need automatic “backup/ archive and restore” of cloud resources, so that they can be completely restored swiftly in a totally automated manner.</p>
+<p><strong>Peter</strong> : So what about performance analysis?</p>
+<p><strong>Ron</strong> : The universally accepted best practice is to contractually demand collectors deployed in the clouds to allow performance analysis.
+Naive business people will have quite a shock when they still have slowness issues when running in giant clouds, when their applications are not engineered to succeed in the method they are deployed. Examples of these include single-threaded applications, chatty applications over long network distances, and architectures with locking/latching issues. These will still have poor performance in the biggest cloud in the world.
+The truth is we will still need development and testing in the cloud world, and check up on performance.</p>
+<p><strong>Peter</strong> : The CMG community has a lot of technical deep dive experts, and they have taken to analyzing server virtualization in great detail. What where the most important lessons that you picked up from these presentations?</p>
+<p><strong>Ron</strong> : The depth and complexity of issues covered in many sessions on VMware really made me wish that we sent more VMware resources to the CMG conference. In a nutshell:
+We should be at the most recent versions, as the performance and scheduling losses on older ones sometimes exceed 30% or more of the physical machine’s resources.
+One particularly surprising item was that when current VMware has a 4 VCPU “guest” that is in a computable state, it waits to schedule it until all 4 CPUs are simultaneously free. More scarily, 8 VCPU guests wait to be scheduled until all 8 are free simultaneously. That means that there can be lots of waiting on relatively lightly loaded machines, say if there is a CPU loop in another guest slice. Since we have so many 8 VCPU mail systems, this really gave me the willies. We need to dig deeper on these and determine the performance losses this may be causing for us.</p>
+<p><strong>Peter</strong> : What other policies come out of these experiences that you want to suggest to your IT management?</p>
+<p><strong>Ron</strong> : VMware still takes some measurable amount of resources/overhead, and we really should avoid VMware for servers of any significant continuous consumption. We need to set a corporate policy for maximum usage allowed to be virtualized.</p>
+<p><strong>Peter</strong> : Thanks ever so much Ron, is there any place online where people can go to get to know more about this stuff?</p>
+<p><strong>Ron</strong> : <a href="http://www.cmg.org/">Join CMG</a> and get to the conferences.</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
