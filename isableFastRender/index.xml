@@ -256,9 +256,9 @@ Some of the systems in the registry are AI-based. Indeed, we have AI to help che
     </item>
     <item>
       <title>International Actors</title>
-      <link>http://localhost:42889/posts/international-actors/</link>
+      <link>http://localhost:42889/book/power/international-actors/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
-      <guid>http://localhost:42889/posts/international-actors/</guid>
+      <guid>http://localhost:42889/book/power/international-actors/</guid>
       <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
 But the international arena matters, because
 by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
@@ -370,14 +370,14 @@ So what are the most important risks? The European Network Information Security 
 You can also get the story on my YouTube video.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Controlling Cloud Sprawl</title>
+      <title>Controlling Cloud Sprawl in 2012</title>
       <link>http://localhost:42889/book/cases/stopping-senseless-sprawl-of-private-clouds/</link>
       <pubDate>Wed, 01 Feb 2012 07:21:00 +0000</pubDate>
       <guid>http://localhost:42889/book/cases/stopping-senseless-sprawl-of-private-clouds/</guid>
       <description>&lt;p&gt;A 2012 case study&lt;/p&gt;
 &lt;p&gt;Even in a cloud world, reducing server count is a lofty goal in itself.&lt;/p&gt;
-&lt;p&gt;After all, you would be paying for all those servers anyway. And sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.&lt;/p&gt;
-&lt;p&gt;So today (in 2012) I bring you an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.&lt;/p&gt;</description>
+&lt;p&gt;After all, you would be paying for all those servers anyway. Understand that sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.&lt;/p&gt;
+&lt;p&gt;Back in 2012 I did an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Directories are also infrastructures</title>

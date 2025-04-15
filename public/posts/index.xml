@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Peter&#39;s Griddle on Digital Infrastructures at Scale</title>
-    <link>http://localhost:42213/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Apr 2025 14:34:54 +0000</lastBuildDate>
-    <atom:link href="http://localhost:42213/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vibe Coding in Reality</title>
-      <link>http://localhost:42213/posts/vibe-coding-real/</link>
+      <link>http://localhost:1313/posts/vibe-coding-real/</link>
       <pubDate>Tue, 08 Apr 2025 14:34:54 +0000</pubDate>
-      <guid>http://localhost:42213/posts/vibe-coding-real/</guid>
+      <guid>http://localhost:1313/posts/vibe-coding-real/</guid>
       <description>&lt;p&gt;How does vibe coding work in the real? Vibe coding is having AI write your software. Coined by Andrej Karpathy, the hype is all over the map, with companies that are rethinking their hiring strategies for programmers. Sounds like disaster for software engineers and programmers.&lt;/p&gt;
 &lt;p&gt;Not so fast.&lt;/p&gt;
 &lt;p&gt;Curious to learn more about it, I reached out to an old friend who is an experienced software engineer. He was a co-founder in a SaaS company in the monitoring space. After a successful exit he now has a bit more time to pursue hobbies. But he is still professionally busy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Example Mermaid Client-Server</title>
-      <link>http://localhost:42213/posts/example-mermaid-cs/</link>
+      <link>http://localhost:1313/posts/example-mermaid-cs/</link>
       <pubDate>Mon, 07 Apr 2025 11:21:31 +0000</pubDate>
-      <guid>http://localhost:42213/posts/example-mermaid-cs/</guid>
+      <guid>http://localhost:1313/posts/example-mermaid-cs/</guid>
       <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
     group frontend(cloud)[Frontend]
         service client(internet)[Client Browser] in frontend
@@ -36,18 +36,18 @@
     </item>
     <item>
       <title>Big tech afhankelijkheid: wat is het echte risico?</title>
-      <link>http://localhost:42213/posts/autonomie-van-bigtech/</link>
+      <link>http://localhost:1313/posts/autonomie-van-bigtech/</link>
       <pubDate>Sat, 05 Apr 2025 09:36:33 +0000</pubDate>
-      <guid>http://localhost:42213/posts/autonomie-van-bigtech/</guid>
+      <guid>http://localhost:1313/posts/autonomie-van-bigtech/</guid>
       <description>&lt;p&gt;Het nationale sentiment is negatief over de afhankelijkheid van &amp;lsquo;big tech&amp;rsquo;. Overheidsdata staat in een Amerikaanse cloud, we hebben geen eigen sociaal netwerk, enzovoort. En vergelijkbare sentimenten spelen bij andere organisaties.&lt;/p&gt;
 &lt;p&gt;Emoties zijn vaak een goede indicator, maar geen goede inhoudelijke analyse.
 Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>5 Elements of Cloud Security</title>
-      <link>http://localhost:42213/posts/5-elements-of-cloud-security/</link>
+      <link>http://localhost:1313/posts/5-elements-of-cloud-security/</link>
       <pubDate>Mon, 24 Mar 2025 22:02:03 +0000</pubDate>
-      <guid>http://localhost:42213/posts/5-elements-of-cloud-security/</guid>
+      <guid>http://localhost:1313/posts/5-elements-of-cloud-security/</guid>
       <description>&lt;h2 id=&#34;five-elements-of-cloud-security&#34;&gt;Five elements of cloud security&lt;/h2&gt;
 &lt;p&gt;Historically, IT security started with &lt;strong&gt;infrastructure security&lt;/strong&gt;. Just protecting the data center was good enough. But that was before we had data communications.&lt;/p&gt;
 &lt;p&gt;When data started to escape the confines of the data center we needed to protect it. Typically through encryption. Hence we need &lt;strong&gt;data security&lt;/strong&gt;.&lt;/p&gt;
@@ -55,30 +55,18 @@ Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraprod
     </item>
     <item>
       <title>How AI Can Help IT Risk Classification</title>
-      <link>http://localhost:42213/posts/ai-risk-classification/</link>
+      <link>http://localhost:1313/posts/ai-risk-classification/</link>
       <pubDate>Mon, 24 Mar 2025 19:45:36 +0000</pubDate>
-      <guid>http://localhost:42213/posts/ai-risk-classification/</guid>
+      <guid>http://localhost:1313/posts/ai-risk-classification/</guid>
       <description>&lt;p&gt;How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors.&lt;/p&gt;
 &lt;p&gt;But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>International Actors</title>
-      <link>http://localhost:42213/posts/international-actors/</link>
-      <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
-      <guid>http://localhost:42213/posts/international-actors/</guid>
-      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
-But the international arena matters, because
-by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
-&lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
-In US vernacular, the word international appears to mean all nations, except the US.
-Instead, the word global is used to mean all nations, including the US.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>The US Air Force Zero Trust Strategy</title>
-      <link>http://localhost:42213/posts/airforce-zero-trust-strategy/</link>
+      <link>http://localhost:1313/posts/airforce-zero-trust-strategy/</link>
       <pubDate>Fri, 21 Mar 2025 12:26:58 +0000</pubDate>
-      <guid>http://localhost:42213/posts/airforce-zero-trust-strategy/</guid>
+      <guid>http://localhost:1313/posts/airforce-zero-trust-strategy/</guid>
       <description>&lt;p&gt;Who is really doing Zero Trust?&lt;/p&gt;
 &lt;p&gt;Well, the US Air Force is. Here is my summary, with some comments, of their strategy document for the benefit of my Certificate of Competence in Zero Trust (CCZT) learners. In fact, this is an edited version of a conversation we had during one of our classes.&lt;/p&gt;
 &lt;p&gt;You can download the full strategy &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20API%20Reference%20Architecture%202.0.pdf&#34;&gt;here&lt;/a&gt;, and the current roadmap &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20Enterprise%20Zero%20Trust%20Roadmap%20and%20Release%20Notes_v2.0.pdf?ver=36cbAKNEe7JiRVAPFwWepg%3d%3d&#34;&gt;here&lt;/a&gt;, all linked from &lt;a href=&#34;https://www.dafcio.af.mil/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
@@ -86,26 +74,26 @@ Instead, the word global is used to mean all nations, including the US.&lt;/p&gt
     </item>
     <item>
       <title>Digital Infrastructures - the graphic novel</title>
-      <link>http://localhost:42213/posts/graphic-novel-page1/</link>
+      <link>http://localhost:1313/posts/graphic-novel-page1/</link>
       <pubDate>Sun, 09 Mar 2025 14:07:53 +0000</pubDate>
-      <guid>http://localhost:42213/posts/graphic-novel-page1/</guid>
+      <guid>http://localhost:1313/posts/graphic-novel-page1/</guid>
       <description>&lt;p&gt;Here is the draft design of the graphic novel version of this book, which may or may not happen..&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:42213/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Can We Achieve Autonomy Over Our Digital Infrastructures?</title>
-      <link>http://localhost:42213/posts/how-can-we-achieve-autonomy/</link>
+      <link>http://localhost:1313/posts/how-can-we-achieve-autonomy/</link>
       <pubDate>Sun, 02 Mar 2025 22:04:34 +0000</pubDate>
-      <guid>http://localhost:42213/posts/how-can-we-achieve-autonomy/</guid>
+      <guid>http://localhost:1313/posts/how-can-we-achieve-autonomy/</guid>
       <description>&lt;h3 id=&#34;building-our-own-cloud-kootwijk-rethinking-digital-sovereignty&#34;&gt;Building Our Own Cloud Kootwijk: Rethinking Digital Sovereignty&lt;/h3&gt;
 &lt;p&gt;In the Netherlands, we are currently engaged in a heated debate about the undesirable dominance of big tech, particularly over a significant portion of the digital infrastructure of the Dutch government. This includes email, file storage, and many other forms of digital storage and processing—most of which are handled by American big tech companies.&lt;/p&gt;
 &lt;p&gt;I am sure a similar debate is going on in many other countries.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A mermaid diagram example</title>
-      <link>http://localhost:42213/posts/mermaid-example/</link>
+      <link>http://localhost:1313/posts/mermaid-example/</link>
       <pubDate>Thu, 27 Feb 2025 09:09:43 +0000</pubDate>
-      <guid>http://localhost:42213/posts/mermaid-example/</guid>
+      <guid>http://localhost:1313/posts/mermaid-example/</guid>
       <description>&lt;p&gt;A diagram should automagically appear here.&lt;/p&gt;
 &lt;pre class=&#34;mermaid&#34;&gt;%%  icons from https://iconify.design
 architecture-beta
@@ -133,9 +121,9 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
     </item>
     <item>
       <title>Deployment diagrams for network security; fix this</title>
-      <link>http://localhost:42213/posts/network-diagram-fix/</link>
+      <link>http://localhost:1313/posts/network-diagram-fix/</link>
       <pubDate>Fri, 26 Mar 2021 17:09:20 +0000</pubDate>
-      <guid>http://localhost:42213/posts/network-diagram-fix/</guid>
+      <guid>http://localhost:1313/posts/network-diagram-fix/</guid>
       <description>&lt;p&gt;A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training.
 In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated.
 But still. There are good drawings and there are drawings that can be improved.
@@ -144,26 +132,26 @@ Recently I ran into the following example. Here is an &lt;a href=&#34;https://sy
     </item>
     <item>
       <title>Top 8 cloud risks according to ENISA</title>
-      <link>http://localhost:42213/posts/top-8-cloud-risks-according-to-enisa/</link>
+      <link>http://localhost:1313/posts/top-8-cloud-risks-according-to-enisa/</link>
       <pubDate>Thu, 21 May 2015 09:22:07 +0000</pubDate>
-      <guid>http://localhost:42213/posts/top-8-cloud-risks-according-to-enisa/</guid>
+      <guid>http://localhost:1313/posts/top-8-cloud-risks-according-to-enisa/</guid>
       <description>&lt;p&gt;Does security in the cloud ever bother you? It would be weird if it didn’t. Cloud computing has a lot of benefits, but also a lot of risks if done in the wrong way.
 So what are the most important risks? The European Network Information Security Agency did extensive research on that in 2009 already, and identified 35 risk categories. This analysis is used by a number of players in the industry, including certain banking regulators. From those 35, ENISA has selected 8 as the most relevant ones. This article explains them, not in any particular order. (And by the way: ENISA is pronounced as ‘eniesa’, not ‘enaiza’).
 You can also get the story on my YouTube video.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Directories are also infrastructures</title>
-      <link>http://localhost:42213/posts/directories-are-also-infrastructures/</link>
+      <link>http://localhost:1313/posts/directories-are-also-infrastructures/</link>
       <pubDate>Thu, 21 Sep 2006 10:54:00 +0000</pubDate>
-      <guid>http://localhost:42213/posts/directories-are-also-infrastructures/</guid>
+      <guid>http://localhost:1313/posts/directories-are-also-infrastructures/</guid>
       <description>&lt;p&gt;One of the big projects I am working on right now (2006) is directory services for identity management. In these directories digital identities such as loginnames, addresses, access rights, etc. are stored. With an adequately structured directory service, the proper management of access rights becomes a lot easier, which translates into cost savings and better security.&lt;/p&gt;
 &lt;p&gt;Examples of these include the internet&amp;rsquo;s Domain Name System (DNS) and Microsoft&amp;rsquo;s Active Directory. A lot of organizations however, have requirements beyond these systems, and for these a wide range of custom solutions are used.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network Neutrality: who pays the ferryman?</title>
-      <link>http://localhost:42213/posts/network-neutrality-who-pays-the-ferryman/</link>
+      <link>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</link>
       <pubDate>Fri, 18 Aug 2006 13:54:00 +0000</pubDate>
-      <guid>http://localhost:42213/posts/network-neutrality-who-pays-the-ferryman/</guid>
+      <guid>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</guid>
       <description>&lt;p&gt;Network neutrality has become the topic of intense discussion and legislative action.&lt;br&gt;
 See the &lt;a href=&#34;http://www.washingtonpost.com/wp-dyn/content/article/2006/01/21/AR2006012100094.html&#34;&gt;Washington Post&lt;/a&gt; , a &lt;a href=&#34;http://en.wikipedia.org/wiki/Network_neutrality&#34;&gt;Wikipedia article&lt;/a&gt;, and &lt;a href=&#34;http://www.circleid.com/posts/network_neutrality/&#34;&gt;CircelID&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;What is the issue?&lt;/p&gt;

@@ -1,5 +1,5 @@
 ---
-title: Controlling Cloud Sprawl
+title: Controlling Cloud Sprawl in 2012
 draft: false
 date: '2012-02-01T07:21:00'
 ---
@@ -7,17 +7,17 @@ A 2012 case study
 
 Even in a cloud world, reducing server count is a lofty goal in itself.
 
-After all, you would be paying for all those servers anyway. And sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.
+After all, you would be paying for all those servers anyway. Understand that sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.
 
-So today (in 2012) I bring you an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.
+Back in 2012 I did an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.
 
 **Peter van Eijk** : Ron, when you joined KCC you helped stop their trend of building a new computer room every 6 months, down to no new computer rooms at all. Is that right?
 
-**Ron Kaminski** : Yes Peter that was basically what happened. As a result of the development of the business, there was a big growth in applications. Each of these applications brings in a lots of servers, because of the multi-tier architecture, and because you need test and development servers.
+**Ron Kaminski** : Yes Peter, that was basically what happened. As a result of the development of the business, there was a big growth in applications. Each of these applications brings in a lot of servers, because of the multi-tier architecture, and because you need test and development servers.
 
 **Peter** : Could you tell us a bit about the way your firm stopped the server growth? What are the most important tactics?
 
-**Ron** : Invisible machines proliferate, so make them visible. To begin with, automate the measurement and maintain web delivered graphical displays of the resource consumption of each and every server. This will allow you to identify unused and under used servers, which you can then repurpose to projects and applications that have a real need for them. A lot of times, a detailed performance analysis suggests changes in the application that will drastically reduce its resources needs. Think bad/missing database indexes, memory leaks, and runaway/looping processes.
+**Ron** : Invisible machines proliferate, so make them visible. To begin with, automate the measurement and maintain web delivered graphical displays of the resource consumption of each and every server. This will allow you to identify unused and under used servers, which you can then repurpose to projects and applications that have a real need for them. A lot of times, a detailed performance analysis suggests changes in the application that will drastically reduce its resource needs. Think bad/missing database indexes, memory leaks, and runaway/looping processes.
 
 **Peter** : Everybody loves clouds these days, and if they can’t get any public clouds, they will settle for private clouds. What are the most relevant lessons for those adopters?
 
@@ -26,7 +26,7 @@ Many folks say “Why bother with capacity planning? The cloud is infinite!” a
 
 **Peter** : Yes, computing is still not free. How far do you need to go with automation?
 
-**Ron** : Well, what we have learned is basically “Automate or die!” both for creation and removal. If we expect to use either internal or external clouds, we need to stop doing setups that involve humans in any way. This means that we need to have standardized services that are engineered and/or architected to be complete environments, with any database or other services in place. There should also be administrative checking/post creation review, with removal if determined to be wasteful.
+**Ron** : Well, what we have learned is basically “Automate or die!” both for creation and removal. If we expect to use either internal or external clouds, we need to stop doing setups that involve humans in any way. This means that we must have standardized services that are engineered and/or architected to be complete environments, including necessary databases and other services in place. There should also be administrative checking/post creation review, with removal if determined to be wasteful.
 
 A key point that we need to have is the notion of “server lifespan” and automatic deletion at end of life. Folks will fight this until they get comfortable with how easy it is to get a new one. If we don’t have “delete at end of lifespan” all this automation will lead to massive server sprawl and OS image proliferation, and all cloud vendors are counting on this for their profits. They know that firms left to their own devices will “create and forget” so they will continue to bill for unused servers. We need to get very good at noticing and removing dormant servers or risk large wasteful bills.
 We also need automatic “backup/ archive and restore” of cloud resources, so that they can be completely restored swiftly in a totally automated manner.

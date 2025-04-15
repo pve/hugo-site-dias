@@ -106,4 +106,6 @@ Governance: resolving conflicts, as they rise to the top. However that sometimes
 
 Ashish Pratap 30 design patterns: https://www.youtube.com/watch?v=s9Qh9fWeOAk en algomasters.io
 
-NTS: de typische IT processen HBO-i opschrijven. 
+NTS: de typische IT processen HBO-i opschrijven.
+
+Rewrite NetworkAssessmentclosed.doc.
