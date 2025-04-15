@@ -2,7 +2,7 @@
 date: '2025-03-11T09:10:54Z'
 draft: false
 title: 'Provider Value'
-weight: 10
+weight: 20
 ---
 
 The sheer separation of the providers from the consumers of these infrastructures drives a lot of the value.

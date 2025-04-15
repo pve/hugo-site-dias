@@ -1,6 +1,6 @@
 ---
 date: '2025-03-12T13:13:35Z'
-draft: true
+draft: false
 title: 'Introduction to Risk'
 weight: "1"
 ---
@@ -10,12 +10,11 @@ Risk is the flip side of value. For everything that is of value, there can be ci
 Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.
 
 At the core of every risk assessment there is the thing we worry about the most: the '**asset**'.
-
 In a digital world, this is often the **data**. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.
 
 In information security, like the name implies, we mainly worry about the security of that data.
 
-It is common to distinguish between availability, confidentiality, and integrity risks. All of these can be a risk to the business.
+It is common to distinguish between _availability_, _confidentiality_, and _integrity_ risks. All of these can be a risk to the business.
 
 Business processes run on data, and if they are not, they can typically be improved by using more data. We cover that in more detail in another place.
 
@@ -35,15 +34,11 @@ Confidentiality is about keeping data secret. Again, the examples are not too ha
 
 In a business context, you don't want your competitors to know about your plans and pricing strategies.
 
-## Who Suffers?
+Integrity means that the data is sufficiently accurate, complete, and consistent.
 
-## Assets
+For example, if customer order records are missing, they may not receive their products. Or they are not invoiced.
+That is a loss to the business.
 
-## Vulnerabilities and threats
+Search results (or AI chatbots for that matter) can also lack integrity, for example if they report in a biased way, or leave out important answers.
 
-(examples of all)
-
-To be continued.
-
-what other assets?
-who suffers? externalities.
+Integrity is a more fluid concept than the others. What is quality data to somebody may be totally inaccurate for somebody else. Consider social media metrics such as "likes" and "shares." A marketer might see a high number of likes as valuable data indicating effective audience engagement. Meanwhile, a data analyst focused on conversion rates might regard likes as less meaningful, prioritizing click-through data and sales metrics as more accurate indicators of campaign success. Thus, while the 'likes' metric is accurate, its perceived quality and relevance differ based on business goals.

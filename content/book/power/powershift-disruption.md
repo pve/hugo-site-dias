@@ -9,7 +9,8 @@ But what makes a technology truly disruptive?
 What has made the PC a disruptive technology? Or artificial intelligence, for that matter?
 And at what time did it become a disruptive technology?
 While many would accept that AI was a very disruptive technology starting from 2022 onwards,
-most of it was available much earlier. Gen AI, chatbots, etc, think ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.
+most of it was available much earlier. Gen AI, chatbots, etc.
+Think of ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.
 
 If we understand the mechanics better, we can begin the see how we can predict these shifts better.
 
