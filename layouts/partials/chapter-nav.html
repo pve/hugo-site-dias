@@ -1,0 +1,18 @@
+{{ $current := . }}
+{{ $section := .Parent }}
+{{ $pages := $section.Pages.ByWeight }}
+{{ $count := len $pages }}
+{{ range $index, $p := $pages }}
+  {{ if eq $p.RelPermalink $current.RelPermalink }}
+    <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
+      {{ if gt $index 0 }}
+        {{ $prev := index $pages (sub $index 1) }}
+        <a href="{{ $prev.RelPermalink }}">&larr; {{ $prev.Title }}</a>
+      {{ end }}
+      {{ if lt (add $index 1) $count }}
+        {{ $next := index $pages (add $index 1) }}
+        <a href="{{ $next.RelPermalink }}">{{ $next.Title }} &rarr;</a>
+      {{ end }}
+    </nav>
+  {{ end }}
+{{ end }}

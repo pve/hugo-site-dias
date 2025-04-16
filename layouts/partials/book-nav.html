@@ -1,0 +1,11 @@
+<nav class="book-nav">
+    <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+      {{ with .Prev }}
+        <a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
+      {{ end }}
+      {{ with .Next }}
+        <a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
+      {{ end }}
+    </div>
+  </nav>
+  
