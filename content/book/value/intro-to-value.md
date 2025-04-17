@@ -5,7 +5,7 @@ title: 'Provider Value'
 weight: 20
 ---
 
-The sheer separation of the providers from the consumers of these infrastructures drives a lot of the value.
+Consumers of digital infrastructures benefit from not running them themselves, but having a provider who serves more consumers do it for them.
 
 Imagine stringing a wire to connect your PC to your neighbour's PC in order to play a game together. People have been doing these things. How long does that take? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.
 
