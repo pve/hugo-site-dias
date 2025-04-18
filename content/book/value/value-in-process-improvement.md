@@ -8,7 +8,7 @@ weight: 10
 Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.
 That is where their prime value is.
 
-The internet is a prime example. It is designed to enable computers to communicate by moving data packets between them.
+The internet is a great example. It is designed to enable computers to communicate by moving data packets between them.
 
 Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.
 
@@ -30,4 +30,4 @@ Equally unanswerable is the question what the value of a message is. It just dep
 Strategy consulting firms, like the one I worked at, do a lot of work in process reengineering to create value for their clients. The larger firms have serious collections of proces improvements. Over the past decades, significant reengineering of supply chains has taken place. The core idea of that is typically that better coordination reduces risk and inefficiencies.
 
 I think that just about any process can be improved with more information and communication.
-The question remains at what cost, which stakeholders will benefit, and which stakeholders will experience negative results.
+The questions remain: at what cost, which stakeholders will benefit, and which stakeholders will experience negative results.

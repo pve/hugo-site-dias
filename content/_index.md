@@ -1,6 +1,6 @@
 ---
 title: "Diginf Scales"
-description: "Insights and strategies for scaling digital infrastructure."
+description: "Insights and strategies for scaling digital infrastructures."
 cover:
   image: "craiyonmushrooms.png" # Add an image in `static/`
   alt: "Craiyon image"

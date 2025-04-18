@@ -121,7 +121,7 @@ Before we attempt to define power formally, let&amp;rsquo;s see how the word in 
       <guid>http://localhost:1313/book/value/value-in-process-improvement/</guid>
       <description>&lt;p&gt;Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.
 That is where their prime value is.&lt;/p&gt;
-&lt;p&gt;The internet is a prime example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
+&lt;p&gt;The internet is a great example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
 &lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;</description>
     </item>
     <item>
@@ -158,7 +158,7 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>
       <guid>http://localhost:1313/book/value/intro-to-value/</guid>
       <description>&lt;p&gt;Consumers of digital infrastructures benefit from not running them themselves, but having a provider who serves more consumers do it for them.&lt;/p&gt;
-&lt;p&gt;Imagine stringing a wire to connect your PC to your neighbour&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does that take? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
+&lt;p&gt;Imagine stringing a wire to connect your PC to your neighbour&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does it take to string the wires and connect them? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Positions of Power in IT</title>
@@ -258,7 +258,7 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
       <link>http://localhost:1313/book/value/three-ways-to-go-cloud/</link>
       <pubDate>Sun, 03 Jun 2018 17:06:57 +0000</pubDate>
       <guid>http://localhost:1313/book/value/three-ways-to-go-cloud/</guid>
-      <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.&lt;/p&gt;
+      <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.&lt;/p&gt;
 &lt;h2 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h2&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
     </item>

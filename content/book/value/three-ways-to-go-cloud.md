@@ -5,7 +5,7 @@ title: 'Multiple Ways to Go Cloud'
 weight: 60
 ---
 
-Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these has very different technical and governance implications.
+Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.
 
 ## Three approaches
 

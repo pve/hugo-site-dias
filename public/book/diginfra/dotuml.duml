@@ -1,5 +1,4 @@
-strict graph { 
-  a -- b
-  a -- b
-  b -- a [color=blue]
-} 
+DeploymentDiagram  {
+  node client as ":Client" [color=pink] {
+  artifact cm as "user"
+ }

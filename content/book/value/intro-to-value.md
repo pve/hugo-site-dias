@@ -7,7 +7,7 @@ weight: 20
 
 Consumers of digital infrastructures benefit from not running them themselves, but having a provider who serves more consumers do it for them.
 
-Imagine stringing a wire to connect your PC to your neighbour's PC in order to play a game together. People have been doing these things. How long does that take? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.
+Imagine stringing a wire to connect your PC to your neighbour's PC in order to play a game together. People have been doing these things. How long does it take to string the wires and connect them? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.
 
 The introduction of a separate provider changes the provisioning process. For one thing, the provisioning can go much faster. The provider has capacity (stock so to say) that can just be used. Related to that is that the service is already defined by the provider. Instead of designing it from scratch, you just pick one of the options offered. Presumably, that option has had a lot of design and thinking behind it already. It is likely to be a better option than anything that you can think of yourself.
 
