@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 21:25:10 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Apr 2025 21:16:12 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -31,6 +31,42 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Things Break at Scale</title>
+      <link>http://localhost:1313/book/diginfra/things-break-at-scale/</link>
+      <pubDate>Wed, 16 Apr 2025 21:16:12 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/things-break-at-scale/</guid>
+      <description>&lt;p&gt;date: &amp;lsquo;2008-07-02T14:02:00&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Computers are terribly reliable, in general. Today&amp;rsquo;s computers execute millions of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
+A Cnet article elaborates on the Google situation (a Google cluster has several thousands of machines):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In each cluster&amp;rsquo;s first year, it&amp;rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &amp;ldquo;go wonky,&amp;rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&amp;rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.
+These look like interesting planning assumptions for both hardware and software planners. As they say:
+&amp;ldquo;Our view is it&amp;rsquo;s better to have twice as much hardware that&amp;rsquo;s not as reliable than half as much that&amp;rsquo;s more reliable,&amp;rdquo; Dean said. &amp;ldquo;You have to provide reliability on a software level. If you&amp;rsquo;re running 10,000 machines, something is going to die every day.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Applications</title>
+      <link>http://localhost:1313/book/diginfra/applications/</link>
+      <pubDate>Wed, 16 Apr 2025 21:11:32 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/applications/</guid>
+      <description>&lt;p&gt;An application is roughly a data model plus a certain number of functions operating on that.
+Networked applications typically live on servers, but will have a client component.
+A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
+Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Who Suffers</title>
+      <link>http://localhost:1313/book/risk/who-suffers/</link>
+      <pubDate>Tue, 15 Apr 2025 21:27:25 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/who-suffers/</guid>
+      <description>&lt;h2 id=&#34;who-suffers&#34;&gt;Who Suffers?&lt;/h2&gt;
+&lt;p&gt;who suffers? externalities.&lt;/p&gt;
+&lt;h2 id=&#34;assets&#34;&gt;Assets&lt;/h2&gt;
+&lt;h2 id=&#34;vulnerabilities-and-threats&#34;&gt;Vulnerabilities and threats&lt;/h2&gt;
+&lt;p&gt;(examples of all)&lt;/p&gt;
+&lt;p&gt;To be continued.&lt;/p&gt;
+&lt;p&gt;what other assets?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vibe Coding in Reality</title>
@@ -121,7 +157,7 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <link>http://localhost:1313/book/value/intro-to-value/</link>
       <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>
       <guid>http://localhost:1313/book/value/intro-to-value/</guid>
-      <description>&lt;p&gt;The sheer separation of the providers from the consumers of these infrastructures drives a lot of the value.&lt;/p&gt;
+      <description>&lt;p&gt;Consumers of digital infrastructures benefit from not running them themselves, but having a provider who serves more consumers do it for them.&lt;/p&gt;
 &lt;p&gt;Imagine stringing a wire to connect your PC to your neighbour&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does that take? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
     </item>
     <item>
@@ -262,6 +298,7 @@ Think of ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.&lt;/p&gt;</
       <pubDate>Sat, 05 Apr 2025 09:36:33 +0000</pubDate>
       <guid>http://localhost:1313/posts/autonomie-van-bigtech/</guid>
       <description>&lt;p&gt;Het nationale sentiment is negatief over de afhankelijkheid van &amp;lsquo;big tech&amp;rsquo;. Overheidsdata staat in een Amerikaanse cloud, we hebben geen eigen sociaal netwerk, enzovoort. En vergelijkbare sentimenten spelen bij andere organisaties.&lt;/p&gt;
+&lt;p&gt;Terecht wordt daarom nu op overheidsniveau een initiatief in gang gezet om wat aan die afhankelijkheid te doen. Dit initiatief staat ook bekend als &lt;a href=&#34;https://berthub.eu/articles/posts/cloud-kootwijk-moties-aangenomen/&#34;&gt;Cloud Kootwijk&lt;/a&gt;. Maar met een motie in de Kamer zijn we er nog niet.&lt;/p&gt;
 &lt;p&gt;Emoties zijn vaak een goede indicator, maar geen goede inhoudelijke analyse.
 Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen.&lt;/p&gt;</description>
     </item>

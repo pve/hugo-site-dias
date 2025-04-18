@@ -5,13 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Search | Digital Infrastructures at Scale</title>
+<title>Applications | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="🔎 Type to search through blog posts and book chapters.">
+<meta name="description" content="An application is roughly a data model plus a certain number of functions operating on that.
+Networked applications typically live on servers, but will have a client component.
+A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
+Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/search/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style"><link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
-<script defer crossorigin="anonymous" src="/assets/js/search.2826037ddab446009aa4dc907d6f13e5fe42eaff23f43abcba31285b991e9c6d.js" integrity="sha256-KCYDfdq0RgCapNyQfW8T5f5C6v8j9Dq8ujEoW5kenG0="></script>
+<link rel="canonical" href="http://localhost:1313/book/diginfra/applications/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +21,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/search/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/applications/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +61,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -116,7 +118,7 @@
             </li>
             <li>
                 <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
-                    <span class="active">🔎 Search</span>
+                    <span>🔎 Search</span>
                 </a>
             </li>
         </ul>
@@ -124,21 +126,76 @@
 </header>
 <main class="main">
 
-<header class="page-header">
-    <h1>Search <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Applications
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
         </svg>
+      </span>
     </h1>
-    <div class="post-meta"></div>
-</header>
+    <div class="post-meta"><span title='2025-04-16 21:11:32 +0000 UTC'>April 16, 2025</span>
 
-<div id="searchbox">
-    <input id="searchInput" autofocus placeholder="Search ↵"
-        aria-label="search" type="search" autocomplete="off" maxlength="64">
-    <ul id="searchResults" aria-label="search results"></ul>
 </div>
+  </header> 
+
+  
+  <i>⏳ 2 min read</i>
+  
+  <div class="post-content"><p>An application is roughly a data model plus a certain number of functions operating on that.
+Networked applications typically live on servers, but will have a client component.
+A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
+Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.</p>
+<p>Digital infrastructures are made up of processors, storage and networking. The costs of these change rapidly, but at different rates. Memory is becoming cheaper a lot faster than processing, and network bandwidth prices are dropping slower than that. The cost of humans to manage this technology is dropping slowest, if at all. What this means is that there will be continuing shifts in what the optimal design is for networked computing.
+Now for the research questions. How fast is it actually changing? How do we organize this, technically and people wise, in order to control the cost, improve the quality, and speed up the change and development process?<br>
+For example, technology development in this area is very much structured by standards. This allows people to collaborate on the design of system components so that those components then later work together. These standards can be set by a vendor for example, or agreed in a standardization committee. What is the dynamics of that?<br>
+In which way can we best organize the development and in particular the management of large digital infrastructures?</p>
+
+
+  </div>
+  
+
+
+
+
+  
+
+  
+
+  
+    <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
+      
+        
+        <a href="/book/diginfra/things-break-at-scale/">&larr; Things Break at Scale</a>
+      
+      
+        
+        <a href="/book/diginfra/essence-digital-infrastructures/">The Essence of Digital Infrastructures &rarr;</a>
+      
+    </nav>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">

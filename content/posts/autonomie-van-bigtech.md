@@ -6,8 +6,12 @@ title: 'Big tech afhankelijkheid: wat is het echte risico?'
 
 Het nationale sentiment is negatief over de afhankelijkheid van 'big tech'. Overheidsdata staat in een Amerikaanse cloud, we hebben geen eigen sociaal netwerk, enzovoort. En vergelijkbare sentimenten spelen bij andere organisaties.
 
+Terecht wordt daarom nu op overheidsniveau een initiatief in gang gezet om wat aan die afhankelijkheid te doen. Dit initiatief staat ook bekend als [Cloud Kootwijk](https://berthub.eu/articles/posts/cloud-kootwijk-moties-aangenomen/). Maar met een motie in de Kamer zijn we er nog niet. 
+
 Emoties zijn vaak een goede indicator, maar geen goede inhoudelijke analyse.
-Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen.
+Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraproductief uitpakken. Hier legt de emotie wantrouwen bloot, maar waar die zich op richt moet een analyse uitwijzen. 
+
+Mijn zorg is dat we die analyse onvoldoende doen, en onze Cloud Kootwijk daarom te laat, te duur, te groot, en/of onvoldoende volledig wordt gerealiseerd. 
 
 Laten we eens kijken welk risico we nu werkelijk lopen met deze afhankelijkheid.
 We willen voorkomen dat big tech onze nationale autonomie te veel beperkt, bijvoorbeeld doordat het als drukmiddel gebruikt wordt.

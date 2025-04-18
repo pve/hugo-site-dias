@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Power on Digital Infrastructures at Scale</title>
-    <link>http://localhost:42213/book/power/</link>
+    <link>http://localhost:1313/book/power/</link>
     <description>Recent content in Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 21:25:10 +0000</lastBuildDate>
-    <atom:link href="http://localhost:42213/book/power/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/book/power/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Power</title>
-      <link>http://localhost:42213/book/power/intro-power/</link>
+      <link>http://localhost:1313/book/power/intro-power/</link>
       <pubDate>Sat, 05 Apr 2025 12:31:46 +0000</pubDate>
-      <guid>http://localhost:42213/book/power/intro-power/</guid>
+      <guid>http://localhost:1313/book/power/intro-power/</guid>
       <description>&lt;p&gt;Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.
 Before we attempt to define power formally, let&amp;rsquo;s see how the word in used in everyday IT situations.&lt;/p&gt;
 &lt;p&gt;Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works, and creates value and risk.&lt;/p&gt;
@@ -32,18 +32,18 @@ Before we attempt to define power formally, let&amp;rsquo;s see how the word in 
     </item>
     <item>
       <title>Positions of Power in IT</title>
-      <link>http://localhost:42213/book/power/positions-of-power-it/</link>
+      <link>http://localhost:1313/book/power/positions-of-power-it/</link>
       <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
-      <guid>http://localhost:42213/book/power/positions-of-power-it/</guid>
+      <guid>http://localhost:1313/book/power/positions-of-power-it/</guid>
       <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.&lt;/p&gt;
 &lt;p&gt;Two important positions of influence in IT are architects and auditors/assessors.&lt;/p&gt;
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Who made podcasting big?</title>
-      <link>http://localhost:42213/book/power/the-tipping-point-for-podcasting/</link>
+      <link>http://localhost:1313/book/power/the-tipping-point-for-podcasting/</link>
       <pubDate>Mon, 05 Sep 2005 13:35:00 +0000</pubDate>
-      <guid>http://localhost:42213/book/power/the-tipping-point-for-podcasting/</guid>
+      <guid>http://localhost:1313/book/power/the-tipping-point-for-podcasting/</guid>
       <description>&lt;p&gt;Podcasting has its own digital infrastructures, for example in hosting them.
 Let&amp;rsquo;s look at how podcasting has grown, and what made it take off anyway?
 Many actors influence each other here, and the state of the art of the technology also has an impact on growth rates.&lt;/p&gt;
@@ -56,15 +56,28 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
     </item>
     <item>
       <title>Disruptive Technologies</title>
-      <link>http://localhost:42213/book/power/powershift-disruption/</link>
+      <link>http://localhost:1313/book/power/powershift-disruption/</link>
       <pubDate>Sun, 13 Apr 2025 21:25:10 +0000</pubDate>
-      <guid>http://localhost:42213/book/power/powershift-disruption/</guid>
+      <guid>http://localhost:1313/book/power/powershift-disruption/</guid>
       <description>&lt;p&gt;Technologies are often called disruptive.
 But what makes a technology truly disruptive?
 What has made the PC a disruptive technology? Or artificial intelligence, for that matter?
 And at what time did it become a disruptive technology?
 While many would accept that AI was a very disruptive technology starting from 2022 onwards,
-most of it was available much earlier. Gen AI, chatbots, etc, think ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.&lt;/p&gt;</description>
+most of it was available much earlier. Gen AI, chatbots, etc.
+Think of ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>International Actors</title>
+      <link>http://localhost:1313/book/power/international-actors/</link>
+      <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/international-actors/</guid>
+      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
+But the international arena matters, because
+by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
+&lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
+In US vernacular, the word international appears to mean all nations, except the US.
+Instead, the word global is used to mean all nations, including the US.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
