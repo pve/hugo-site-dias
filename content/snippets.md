@@ -46,9 +46,6 @@ chaos engineering
 
 todo /2020/02/tutorial-cloud-native
 
-elk proces kan met meer data beter gemaakt worden.
-De vraag is voor wie, en tegen welke kosten?
-
 De shared services business case
 
 Input Robert voor Governance (DI-AS) journal 6 feb 2025

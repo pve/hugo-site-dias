@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Apr 2025 21:16:12 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Apr 2025 20:01:07 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -131,6 +131,17 @@ That is where their prime value is.&lt;/p&gt;
       <guid>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</guid>
       <description>&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;
 &lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that are the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control Through Feedback Loops</title>
+      <link>http://localhost:1313/book/change/control-feedback/</link>
+      <pubDate>Sat, 19 Apr 2025 20:01:07 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/control-feedback/</guid>
+      <description>&lt;p&gt;There are many ways to influence and control a system, but one of the most controlled (pun intended) ways is to use feedback loops.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with an analogy first: driving a car.&lt;/p&gt;
+&lt;p&gt;If you want the car to stop as fast as possible, it suffices to push the brakes as hard as you can. But that does not give you much control.
+For example, your passengers might not like it, and it leads to wear on the tires.
+If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Systematically applying technology</title>
