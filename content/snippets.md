@@ -44,7 +44,7 @@ computable columns
 
 chaos engineering
 
-todo /2020/02/tutorial-cloud-native
+todo /2020/02/tutorial-cloud-native uitbouwen, opnieuw doen. Is een voorbeeld van (best)practices in uitbouwen van software. 
 
 De shared services business case
 

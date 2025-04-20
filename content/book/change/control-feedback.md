@@ -31,12 +31,13 @@ Let's look at some examples of feedback loops in digital infrastructures.
 Large websites have so-called autoscalers. If the load on the website increases, for instance because the website is suddenly in the news, or it is Black Friday on a shopping site, the autoscaler can spin up more webservers to handle that load. 
 It acts by observing the webtraffic and the delays in handling that, and controls the amount of servers that are active. 
 
-In the early days of the internet, I advised a retail provider. 
+In the early days of the internet, I advised a retail internet service provider.
+At the time, those were independent companies, not part of the telecommunication companies. 
 They were growing very rapidly, and as a result they experienced quality issues.
 Consumers found that web downloads were too slow, and threatened to leave. 
 The cause of this was that the company was not adapting its connection to the internet fast enough. 
 That connection was a large part of the cost of running the provider, so they did not want to buy too much too early.
-To fix this, I created a control rule through which they could better balance between nspending too much on bandwidth and disappointing consumers. 
+To fix this, I created a control rule through which they could better balance between spending too much on bandwidth and disappointing consumers. 
 
 Feedback also make AI deep learning systems work. The neural network is given a series of training data. The output is checked for correctness, and on the basis of the errors, the weights in the network are adjusted. Repeat this long enough on enough processors, and the errors will drop. The network has then learned.
 

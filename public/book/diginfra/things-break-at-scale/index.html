@@ -8,12 +8,10 @@
 <title>Things Break at Scale | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="date: &lsquo;2008-07-02T14:02:00&rsquo;
-Computers are terribly reliable, in general. Today&rsquo;s computers execute millions of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
-A Cnet article elaborates on the Google situation (a Google cluster has several thousands of machines):
+Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
 
-In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.
-These look like interesting planning assumptions for both hardware and software planners. As they say:
-&ldquo;Our view is it&rsquo;s better to have twice as much hardware that&rsquo;s not as reliable than half as much that&rsquo;s more reliable,&rdquo; Dean said. &ldquo;You have to provide reliability on a software level. If you&rsquo;re running 10,000 machines, something is going to die every day.&rdquo;">
+In the early days of Google growth I read an article about their error numbers
+(a Google cluster has several thousands of machines):">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/book/diginfra/things-break-at-scale/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -150,12 +148,24 @@ These look like interesting planning assumptions for both hardware and software 
   <i>⏳ 2 min read</i>
   
   <div class="post-content"><p>date: &lsquo;2008-07-02T14:02:00&rsquo;</p>
-<p>Computers are terribly reliable, in general. Today&rsquo;s computers execute millions of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
-A Cnet article elaborates on the Google situation (a Google cluster has several thousands of machines):</p>
+<p>Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.</p>
+<!--- comment: reference zoeken --->
+<p>In the early days of Google growth I read an article about their error numbers
+(a Google cluster has several thousands of machines):</p>
 <blockquote>
-<p>In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.
-These look like interesting planning assumptions for both hardware and software planners. As they say:
-&ldquo;Our view is it&rsquo;s better to have twice as much hardware that&rsquo;s not as reliable than half as much that&rsquo;s more reliable,&rdquo; Dean said. &ldquo;You have to provide reliability on a software level. If you&rsquo;re running 10,000 machines, something is going to die every day.&rdquo;</p></blockquote>
+<p>In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.</p></blockquote>
+<p>These look like interesting planning assumptions for both hardware and software planners.</p>
+<p>Adrian Cockcroft, while he was CTO of Netflix around 2010, summed it up as:</p>
+<blockquote>
+<p>Size breaks hardware</p></blockquote>
+<p>No matter how good your hardware is, if it becomes big enough, it breaks. In his view you therefore need to solve reliability problems in software, not in building better hardware.</p>
+<p>As Google say:</p>
+<blockquote>
+<p>&ldquo;Our view is it&rsquo;s better to have twice as much hardware that&rsquo;s not as reliable than half as much that&rsquo;s more reliable,&rdquo; Dean said. &ldquo;You have to provide reliability on a software level. If you&rsquo;re running 10,000 machines, something is going to die every day.&rdquo;</p></blockquote>
+<p>The business case for this is that you will have to invest in software for reliability.
+Once you have done that, the hardware reliability no longer matter, within certain bounds, and you are financially better off with cheaper hardware.</p>
+<p>The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a &lsquo;middleware&rsquo; software layer on which resilient applications can be build.
+We&rsquo;ll cover that in another unit.</p>
 
 
   </div>
