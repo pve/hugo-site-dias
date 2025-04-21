@@ -106,3 +106,5 @@ Ashish Pratap 30 design patterns: https://www.youtube.com/watch?v=s9Qh9fWeOAk en
 NTS: de typische IT processen HBO-i opschrijven.
 
 Rewrite NetworkAssessmentclosed.doc.
+
+Is it ethical to talk about power? Power is everywhere, and conflict too. There is no society without a power structure. 

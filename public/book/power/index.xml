@@ -6,7 +6,7 @@
     <description>Recent content in Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 21:25:10 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Apr 2025 09:24:41 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/power/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Power</title>
@@ -53,6 +53,15 @@ So the rest goes online, and tries to find interesting content, but only 50 peop
 Ten people drop out because they find loading the content too complicated. Of these, another ten find out that the files are too big for the hardware they have (for example in 2005, they just had a simple MP3 player, no iPod or similar).
 Of the ones left, another five don’t have the patience for the downloads (we are talking dial-up internet access for a lot of people here, still).
 If you have been keeping tabs: we are down to 25 people who are capable and willing to regularly listen to podcasts. Now suppose each of these tells four friends, on the average. That means we are back to a hundred.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Power Mediation</title>
+      <link>http://localhost:1313/book/power/power-mediation/</link>
+      <pubDate>Sun, 20 Apr 2025 09:24:41 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/power-mediation/</guid>
+      <description>&lt;p&gt;Power does not automatically flow from those that have it to those that are influenced by it.&lt;/p&gt;
+&lt;p&gt;As they say in dutch, quoting the poet Willem Elschot?: &amp;ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&amp;rdquo;. (&amp;ldquo;between dream and deed stand laws in the way, and practical objections&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disruptive Technologies</title>

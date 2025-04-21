@@ -5,14 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Applications | Digital Infrastructures at Scale</title>
+<title>Execution Environments | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="An application is roughly a data model plus a certain number of functions operating on that.
-Networked applications typically live on servers, but will have a client component.
-A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
-Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.">
+<meta name="description" content="A laptop is an execution environment. A smartphone is an execution environment.
+A smart thermostat is an execution environment. So is the browser, a database, and a datacenter.
+What do they have in common?
+They contain software and data, and that makes them building blocks for deploying digital infrastructures.
+Why does it matter to introduce such an abstract and complicated word?
+the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/applications/">
+<link rel="canonical" href="http://localhost:1313/book/diginfra/execution-environments/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -21,7 +23,7 @@ Another example would be gmail, whose data model is a set of messages, and the f
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/applications/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/execution-environments/">
 <noscript>
     <style>
         #theme-toggle,
@@ -130,7 +132,7 @@ Another example would be gmail, whose data model is a set of messages, and the f
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
-      Applications
+      Execution Environments
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
           <path
@@ -138,7 +140,7 @@ Another example would be gmail, whose data model is a set of messages, and the f
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2025-04-16 21:11:32 +0000 UTC'>April 16, 2025</span>
+    <div class="post-meta"><span title='2025-04-20 09:03:00 +0000 UTC'>April 20, 2025</span>
 
 </div>
   </header> 
@@ -146,14 +148,22 @@ Another example would be gmail, whose data model is a set of messages, and the f
   
   <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>An application is roughly a data model plus a certain number of functions operating on that.
-Networked applications typically live on servers, but will have a client component.
-A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
-Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.</p>
-<p>Digital infrastructures are made up of processors, storage and networking. The costs of these change rapidly, but at different rates. Memory is becoming cheaper a lot faster than processing, and network bandwidth prices are dropping slower than that. The cost of humans to manage this technology is dropping slowest, if at all. What this means is that there will be continuing shifts in what the optimal design is for networked computing.
-Now for the research questions. How fast is it actually changing? How do we organize this, technically and people wise, in order to control the cost, improve the quality, and speed up the change and development process?<br>
-For example, technology development in this area is very much structured by standards. This allows people to collaborate on the design of system components so that those components then later work together. These standards can be set by a vendor for example, or agreed in a standardization committee. What is the dynamics of that?<br>
-In which way can we best organize the development and in particular the management of large digital infrastructures?</p>
+  <div class="post-content"><p>A laptop is an execution environment. A smartphone is an execution environment.
+A smart thermostat is an execution environment. So is the browser, a database, and a datacenter.</p>
+<p>What do they have in common?</p>
+<p>They contain software and data, and that makes them building blocks for deploying digital infrastructures.</p>
+<p>Why does it matter to introduce such an abstract and complicated word?</p>
+<p>the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.</p>
+<p>For example, execution environments, or more accuratley: their boundaries, are a prime place where controls for security are.</p>
+<p>Software and data live inside an execution environment, which we&rsquo;ll call box for short. Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.</p>
+<p>Whenever I look at a how a digital infrastructure is implemented, I start by looking at the execution environments, and ask three questions: what, where, and how.</p>
+<p><strong>What?</strong> What is the data that is inside it, what is the software, the code, that is inside that environment? And in an AI world: which model is there inside?</p>
+<p><strong>Where?</strong>  Where is that execution environment located? In our current virtualized and cloud world, that environment in typically inside another environment. Ultimately, of course, there is a physical machine in which it sits.</p>
+<p><strong>How?</strong> How does the software get deployed inside that environment? There will be a manual process, or a continuous delivery pipeline, or something similar.</p>
+<p>Then it is time to look at the control boundary that this environment creates. The control boundary creates an outside, and an inside. How is data from the outside allowed to go inside? What is the mechanism? How is that controlled? The same holds for the reverse. How is software inside that boundary allowed to access the outside?</p>
+<p>Let&rsquo;s take an example: your browswer is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. This system typically allows full access through a networks</p>
+<p>And if you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls.</p>
+<p>Link to Zero Trust Architecture.</p>
 
 
   </div>
@@ -167,22 +177,22 @@ In which way can we best organize the development and in particular the manageme
   
 
   
+
+  
+
+  
+
+  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/diginfra/things-break-at-scale/">&larr; Things Break at Scale</a>
+        <a href="/book/diginfra/lunch-spain/">&larr; What a lunch in Spain taught me about digital infrastructures</a>
       
       
         
-        <a href="/book/diginfra/essence-digital-infrastructures/">The Essence of Digital Infrastructures &rarr;</a>
+        <a href="/book/diginfra/deployment-diagrams/">Deployment Diagrams &rarr;</a>
       
     </nav>
-  
-
-  
-
-  
-
   
 
   

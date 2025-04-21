@@ -15,7 +15,7 @@ In the early days of Google growth I read an article about their error numbers
 
 > In each cluster's first year, it's typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will "go wonky," with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there's about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover. 
 
-These look like interesting planning assumptions for both hardware and software planners. 
+These look like interesting considerations for both hardware and software planners. 
 
 Adrian Cockcroft, while he was CTO of Netflix around 2010, summed it up as:
 
@@ -32,3 +32,7 @@ Once you have done that, the hardware reliability no longer matter, within certa
 
 The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a 'middleware' software layer on which resilient applications can be build. 
 We'll cover that in another unit.
+
+Finally, scale does not only break hardware, but also organisations.
+For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
+When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks. 

@@ -6,7 +6,7 @@
     <description>Recent content in Change and control on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Apr 2025 09:17:02 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Apr 2025 20:01:07 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/change/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Change and Control</title>
@@ -22,6 +22,17 @@ We need both, even if they conflict at times.&lt;/p&gt;
 The output of the developers is a stream of changes: new features, improvements, bug fixes, and so on.
 Adminstrators are in the business of keeping everything stable, the same.
 They see no fundamental difference between a new feature and an incident. Both are disrupting the normal flow of business. Consequently, they are seen as a threat, and that is why it often feels that developers and system administrators are from different planets.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control Through Feedback Loops</title>
+      <link>http://localhost:1313/book/change/control-feedback/</link>
+      <pubDate>Sat, 19 Apr 2025 20:01:07 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/control-feedback/</guid>
+      <description>&lt;p&gt;There are many ways to influence and control a system, but one of the most controlled (pun intended) ways is to use feedback loops.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with an analogy first: driving a car.&lt;/p&gt;
+&lt;p&gt;If you want the car to stop as fast as possible, it suffices to push the brakes as hard as you can. But that does not give you much control.
+For example, your passengers might not like it, and it leads to wear on the tires.
+If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Systematically applying technology</title>

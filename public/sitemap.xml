@@ -44,6 +44,9 @@
     <loc>http://localhost:1313/book/value/</loc>
     <lastmod>2025-03-09T18:54:18+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/change/control-feedback/</loc>
+    <lastmod>2025-04-19T20:01:07+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/book/power/</loc>
     <lastmod>2025-03-09T18:54:24+00:00</lastmod>
   </url><url>
@@ -68,8 +71,8 @@
     <loc>http://localhost:1313/book/cases/</loc>
     <lastmod>2025-03-09T18:54:30+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/book/diginfra/deployment-diagrams/</loc>
-    <lastmod>2025-03-09T21:19:45+00:00</lastmod>
+    <loc>http://localhost:1313/book/diginfra/execution-environments/</loc>
+    <lastmod>2025-04-20T09:03:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/wrap/</loc>
     <lastmod>2025-03-09T18:54:36+00:00</lastmod>
@@ -80,14 +83,14 @@
     <loc>http://localhost:1313/book/change/dhcp-automation/</loc>
     <lastmod>2025-04-04T14:20:26+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/book/diginfra/digital-inf-ai/</loc>
-    <lastmod>2025-03-08T17:57:16+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/book/change/lawyers-need-understand-tech/</loc>
     <lastmod>2018-05-03T13:54:48+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/value/business-model-canvas-iaas/</loc>
     <lastmod>2014-11-15T11:18:17+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/deployment-diagrams/</loc>
+    <lastmod>2025-03-09T21:19:45+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/value/business-model-canvas-saas/</loc>
     <lastmod>2014-12-15T11:18:17+00:00</lastmod>
@@ -98,8 +101,11 @@
     <loc>http://localhost:1313/book/value/three-ways-to-go-cloud/</loc>
     <lastmod>2018-06-03T17:06:57+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/power/power-mediation/</loc>
+    <lastmod>2025-04-20T09:24:41+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-16T21:16:12+00:00</lastmod>
+    <lastmod>2025-04-20T09:24:41+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/power/powershift-disruption/</loc>
     <lastmod>2025-04-13T21:25:10+00:00</lastmod>
@@ -139,6 +145,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/graphic-novel-page1/</loc>
     <lastmod>2025-03-09T14:07:53+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/digital-inf-ai/</loc>
+    <lastmod>2025-03-08T17:57:16+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/how-can-we-achieve-autonomy/</loc>
     <lastmod>2025-03-02T22:04:34+00:00</lastmod>

@@ -6,7 +6,7 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Apr 2025 21:16:12 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Apr 2025 09:03:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
@@ -28,12 +28,10 @@
       <pubDate>Wed, 16 Apr 2025 21:16:12 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/things-break-at-scale/</guid>
       <description>&lt;p&gt;date: &amp;lsquo;2008-07-02T14:02:00&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;Computers are terribly reliable, in general. Today&amp;rsquo;s computers execute millions of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
-A Cnet article elaborates on the Google situation (a Google cluster has several thousands of machines):&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In each cluster&amp;rsquo;s first year, it&amp;rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &amp;ldquo;go wonky,&amp;rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&amp;rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.
-These look like interesting planning assumptions for both hardware and software planners. As they say:
-&amp;ldquo;Our view is it&amp;rsquo;s better to have twice as much hardware that&amp;rsquo;s not as reliable than half as much that&amp;rsquo;s more reliable,&amp;rdquo; Dean said. &amp;ldquo;You have to provide reliability on a software level. If you&amp;rsquo;re running 10,000 machines, something is going to die every day.&amp;rdquo;&lt;/p&gt;</description>
+&lt;p&gt;Computers are terribly reliable, in general. Today&amp;rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.&lt;/p&gt;
+&lt;!--- comment: reference zoeken ---&gt;
+&lt;p&gt;In the early days of Google growth I read an article about their error numbers
+(a Google cluster has several thousands of machines):&lt;/p&gt;</description>
     </item>
     <item>
       <title>Applications</title>
@@ -65,6 +63,18 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Execution Environments</title>
+      <link>http://localhost:1313/book/diginfra/execution-environments/</link>
+      <pubDate>Sun, 20 Apr 2025 09:03:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/execution-environments/</guid>
+      <description>&lt;p&gt;A laptop is an execution environment. A smartphone is an execution environment.
+A smart thermostat is an execution environment. So is the browser, a database, and a datacenter.&lt;/p&gt;
+&lt;p&gt;What do they have in common?&lt;/p&gt;
+&lt;p&gt;They contain software and data, and that makes them building blocks for deploying digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Why does it matter to introduce such an abstract and complicated word?&lt;/p&gt;
+&lt;p&gt;the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Deployment Diagrams</title>
       <link>http://localhost:1313/book/diginfra/deployment-diagrams/</link>
       <pubDate>Sun, 09 Mar 2025 21:19:45 +0000</pubDate>
@@ -82,7 +92,7 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
 &lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
-&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.&lt;/p&gt;</description>
+&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

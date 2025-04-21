@@ -10,7 +10,7 @@
 <meta name="description" content="The AI landscape has many digital infrastructures.
 Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.
 A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.
-A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.">
+A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/book/diginfra/digital-inf-ai/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -150,39 +150,19 @@ A trained model is the result of processing a lot of training data by a specific
   <div class="post-content"><p>The AI landscape has many digital infrastructures.</p>
 <p>Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.</p>
 <p>A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.</p>
-<p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.</p>
-<p>Smaller models can still take more training resources than the average company has in place.
-That is why Training as a Service in the cloud exists.</p>
-<pre class="mermaid">%%{ init: {
-    &#39;theme&#39;: &#39;forest&#39;,
-    &#39;themeVariables&#39;:
-        { &#39;fontSize&#39;: &#39;12px&#39;}
-} }%%
-block-beta
+<p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.</p>
+<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
+<pre class="mermaid">block-beta
 
- space in space llm:2 space out space 
-in[&#34;Training Data&#34;] --&gt; llm[&#34;LLM training&#34;]
-llm--&gt; out[&#34;LLM&#34;]
-style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-</pre>
-<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and for good performance it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
-<pre class="mermaid">%%{ init: {
-    &#39;theme&#39;: &#39;forest&#39;,
-    &#39;themeVariables&#39;:
-        { &#39;fontSize&#39;: &#39;12px&#39;}
-} }%%
-block-beta
-
-space in space llm space out space
-in[&#34;Prompt&#34;] --&gt; llm[&#34;LLM&#34;]
+space in space llm:2 space out space
+in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
 llm--&gt; out[&#34;Completion&#34;]
 
 style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
 style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
    
 </pre>
-<p>In cloud terms, we would call this Inferencing as a Service. In the NIST cloud model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
+<p>In cloud terms, we would call this Inferencing as a Service. In the NIST model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
 <p>This gives us the option to look for this on the market, or create a shared service inside an organisation or group of organisations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.</p>
 <p>More at: <a href="https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing">https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing</a></p>
 
@@ -192,6 +172,8 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
 
 
 
+
+  
 
   
 

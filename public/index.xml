@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Apr 2025 20:01:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Apr 2025 09:24:41 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -179,14 +179,16 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Deployment Diagrams</title>
-      <link>http://localhost:1313/book/diginfra/deployment-diagrams/</link>
-      <pubDate>Sun, 09 Mar 2025 21:19:45 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/deployment-diagrams/</guid>
-      <description>&lt;p&gt;Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.&lt;/p&gt;
-&lt;h2 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h2&gt;
-&lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
-&lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
+      <title>Execution Environments</title>
+      <link>http://localhost:1313/book/diginfra/execution-environments/</link>
+      <pubDate>Sun, 20 Apr 2025 09:03:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/execution-environments/</guid>
+      <description>&lt;p&gt;A laptop is an execution environment. A smartphone is an execution environment.
+A smart thermostat is an execution environment. So is the browser, a database, and a datacenter.&lt;/p&gt;
+&lt;p&gt;What do they have in common?&lt;/p&gt;
+&lt;p&gt;They contain software and data, and that makes them building blocks for deploying digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Why does it matter to introduce such an abstract and complicated word?&lt;/p&gt;
+&lt;p&gt;the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agile Requires Cloud</title>
@@ -205,16 +207,6 @@ Or financial services, where software increasingly is the main part of the produ
       <guid>http://localhost:1313/book/change/dhcp-automation/</guid>
       <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &amp;ldquo;War is the continuation of diplomacy with different means&amp;rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.&lt;/p&gt;
 &lt;p&gt;My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What are AI digital infrastructures?</title>
-      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
-      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
-      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
-&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
-&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why lawyers need to understand cloud</title>
@@ -236,6 +228,16 @@ I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;
 &lt;p&gt;The business model canvas has nine basic building blocks and specific relations between those blocks. I&amp;rsquo;ll illustrate them here.&lt;/p&gt;
 &lt;p&gt;The example used in this section is Amazon Web Services (AWS), particularly EC2 (virtual machines on demand). This is an Infrastructure as a Service offering. The power of the business model canvas approach becomes clear when we see how it can distinguish between various cloud service offerings.
 &lt;img alt=&#34;IaaS Cloud Canvas&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/book/value/business-model-canvas-iaas/BusinessCanvasIaaS.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deployment Diagrams</title>
+      <link>http://localhost:1313/book/diginfra/deployment-diagrams/</link>
+      <pubDate>Sun, 09 Mar 2025 21:19:45 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/deployment-diagrams/</guid>
+      <description>&lt;p&gt;Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.&lt;/p&gt;
+&lt;h2 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h2&gt;
+&lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
+&lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Model Canvas for SaaS Providers</title>
@@ -270,6 +272,15 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.&lt;/p&gt;
 &lt;h2 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h2&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Power Mediation</title>
+      <link>http://localhost:1313/book/power/power-mediation/</link>
+      <pubDate>Sun, 20 Apr 2025 09:24:41 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/power-mediation/</guid>
+      <description>&lt;p&gt;Power does not automatically flow from those that have it to those that are influenced by it.&lt;/p&gt;
+&lt;p&gt;As they say in dutch, quoting the poet Willem Elschot?: &amp;ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&amp;rdquo;. (&amp;ldquo;between dream and deed stand laws in the way, and practical objections&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disruptive Technologies</title>
@@ -382,6 +393,16 @@ Instead, the word global is used to mean all nations, including the US.&lt;/p&gt
       <guid>http://localhost:1313/posts/graphic-novel-page1/</guid>
       <description>&lt;p&gt;Here is the draft design of the graphic novel version of this book, which may or may not happen..&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What are AI digital infrastructures?</title>
+      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
+      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
+      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
+&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
+&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Can We Achieve Autonomy Over Our Digital Infrastructures?</title>

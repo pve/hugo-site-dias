@@ -40,7 +40,8 @@ params:
 
   profileMode:
     enabled: true
-    title: "How Digital Infrastructures at Scale Lead to Value, Power, and Risk"
+    title: "Digital Power"
+    subtitle: "How Digital Infrastructures at Scale Lead to Value, Power, and Risk"
 #    subtitle: "How digital infrastructures at scale lead to value, power, and risk."
     imageUrl: "craiyonmushrooms.png"  # Add an image in `static/`
     imageWidth: 500
