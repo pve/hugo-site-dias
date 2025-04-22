@@ -5,13 +5,27 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Power Flows | Digital Infrastructures at Scale</title>
+<title>Ai Voice | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Power does not automatically flow from those that have it to those that are influenced by it.
-As they say in dutch, quoting the poet Willem Elsschot: &ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&rdquo;. (&ldquo;between dream and deed stand laws in the way, and practical objections&rdquo;).
-We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.">
+<meta name="description" content="architecture-beta
+    group frontend(cloud)[Frontend]
+        service telco(cloud)[Telco] in frontend
+        service twilio(internet)[Twilio] in frontend
+        service sips(internet)[Sips] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Azure voice bot] in backend
+        service database(database)[Database] in backend
+        service llm(server)[LLM] in backend
+    
+    telco:R -- L:sips
+    sips:R -- L:twilio
+    twilio:R -- L:app_server
+    app_server:B -- T:database
+    llm:B -- T:app_server
+">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/power/power-mediation/">
+<link rel="canonical" href="http://localhost:1313/posts/ai-voice/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -20,7 +34,7 @@ We want to understand this. If we want to exercise power, we need to understand 
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/power/power-mediation/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/ai-voice/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,6 +72,13 @@ We want to understand this. If we want to exercise power, we need to understand 
 
     </style>
 </noscript>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
+<script>
+  mermaid.initialize({ 
+    startOnLoad: true,
+  });
+</script>
+
 </head>
 
 <body class="" id="top">
@@ -127,62 +148,50 @@ We want to understand this. If we want to exercise power, we need to understand 
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/power/">Power</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
-      Power Flows
+      Ai Voice
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h1>
-    <div class="post-meta"><span title='2025-04-20 09:24:41 +0000 UTC'>April 20, 2025</span>
+    <div class="post-meta"><span title='2025-04-22 09:32:32 +0000 UTC'>April 22, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 2 min read</i>
+  <i>⏳ 1 min read</i>
   
-  <div class="post-content"><p>Power does not automatically flow from those that have it to those that are influenced by it.</p>
-<p>As they say in dutch, quoting the poet Willem Elsschot: &ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&rdquo;. (&ldquo;between dream and deed stand laws in the way, and practical objections&rdquo;).</p>
-<p>We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.</p>
-<p>The power intermediary aids in applying power. They are like the forward observer in an artillery unit. They don&rsquo;t have the artillery power themselves, but they definitely influence how it is applied. Knowledge is power, as they say.</p>
-<p>And there are many more examples of power intermediaries, and many more words that are used to describe that function. You can think of: power broker, facilitator, mediator, intermediary, but in our digital infrastructures world, we can be more specific.</p>
-<p>Let&rsquo;s take an example situation.
-Suppose the board of a company wants to set a digital strategy for the company, who is in the end implementing and realizing that strategy?
-Or, the board wants to demonstrate control over the resilience of the organisation to cyber risks.
-In the end, that requires a lot of people and roles, for example in building systems, or doing incident response. Many of these roles are, in fact, power intermediaries, because they facilitate the flow of the board&rsquo;s power to the places in the organisation that matter.</p>
-<p>As we discuss elsewhere, this involves people, process and technology.
-I also elaborate on two specific positions of power elsewhere: the architect, and the assessor, although they are by no means the only ones.</p>
+  <div class="post-content"><pre class="mermaid">architecture-beta
+    group frontend(cloud)[Frontend]
+        service telco(cloud)[Telco] in frontend
+        service twilio(internet)[Twilio] in frontend
+        service sips(internet)[Sips] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Azure voice bot] in backend
+        service database(database)[Database] in backend
+        service llm(server)[LLM] in backend
+    
+    telco:R -- L:sips
+    sips:R -- L:twilio
+    twilio:R -- L:app_server
+    app_server:B -- T:database
+    llm:B -- T:app_server
+</pre>
 
 
   </div>
-  
-
-
-
 
   
-
-  
-
-  
-    <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
-      
-        
-        <a href="/book/power/positions-of-power-it/">&larr; Positions of Power in IT</a>
-      
-      
-        
-        <a href="/book/power/the-tipping-point-for-podcasting/">Who made podcasting big? &rarr;</a>
-      
-    </nav>
-  
-
-  
-
-  
-
-  
-
-
-
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
   
 
   <footer class="post-footer">

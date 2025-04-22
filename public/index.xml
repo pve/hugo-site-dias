@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Apr 2025 09:24:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 09:32:32 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -31,6 +31,29 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ai Voice</title>
+      <link>http://localhost:1313/posts/ai-voice/</link>
+      <pubDate>Tue, 22 Apr 2025 09:32:32 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai-voice/</guid>
+      <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
+    group frontend(cloud)[Frontend]
+        service telco(cloud)[Telco] in frontend
+        service twilio(internet)[Twilio] in frontend
+        service sips(internet)[Sips] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Azure voice bot] in backend
+        service database(database)[Database] in backend
+        service llm(server)[LLM] in backend
+    
+    telco:R -- L:sips
+    sips:R -- L:twilio
+    twilio:R -- L:app_server
+    app_server:B -- T:database
+    llm:B -- T:app_server
+&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Things Break at Scale</title>
@@ -179,6 +202,15 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Power Flows</title>
+      <link>http://localhost:1313/book/power/power-mediation/</link>
+      <pubDate>Sun, 20 Apr 2025 09:24:41 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/power-mediation/</guid>
+      <description>&lt;p&gt;Power does not automatically flow from those that have it to those that are influenced by it.&lt;/p&gt;
+&lt;p&gt;As they say in dutch, quoting the poet Willem Elsschot: &amp;ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&amp;rdquo;. (&amp;ldquo;between dream and deed stand laws in the way, and practical objections&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Execution Environments</title>
       <link>http://localhost:1313/book/diginfra/execution-environments/</link>
       <pubDate>Sun, 20 Apr 2025 09:03:00 +0000</pubDate>
@@ -272,15 +304,6 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.&lt;/p&gt;
 &lt;h2 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h2&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Power Mediation</title>
-      <link>http://localhost:1313/book/power/power-mediation/</link>
-      <pubDate>Sun, 20 Apr 2025 09:24:41 +0000</pubDate>
-      <guid>http://localhost:1313/book/power/power-mediation/</guid>
-      <description>&lt;p&gt;Power does not automatically flow from those that have it to those that are influenced by it.&lt;/p&gt;
-&lt;p&gt;As they say in dutch, quoting the poet Willem Elschot?: &amp;ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&amp;rdquo;. (&amp;ldquo;between dream and deed stand laws in the way, and practical objections&amp;rdquo;).&lt;/p&gt;
-&lt;p&gt;We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Disruptive Technologies</title>

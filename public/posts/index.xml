@@ -6,8 +6,31 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Apr 2025 14:34:54 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 09:32:32 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai Voice</title>
+      <link>http://localhost:1313/posts/ai-voice/</link>
+      <pubDate>Tue, 22 Apr 2025 09:32:32 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai-voice/</guid>
+      <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
+    group frontend(cloud)[Frontend]
+        service telco(cloud)[Telco] in frontend
+        service twilio(internet)[Twilio] in frontend
+        service sips(internet)[Sips] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Azure voice bot] in backend
+        service database(database)[Database] in backend
+        service llm(server)[LLM] in backend
+    
+    telco:R -- L:sips
+    sips:R -- L:twilio
+    twilio:R -- L:app_server
+    app_server:B -- T:database
+    llm:B -- T:app_server
+&lt;/pre&gt;</description>
+    </item>
     <item>
       <title>Vibe Coding in Reality</title>
       <link>http://localhost:1313/posts/vibe-coding-real/</link>
