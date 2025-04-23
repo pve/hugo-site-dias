@@ -5,24 +5,29 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Ai Voice | Digital Infrastructures at Scale</title>
+<title>AI Voice | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="architecture-beta
     group frontend(cloud)[Frontend]
         service telco(cloud)[Telco] in frontend
-        service twilio(internet)[Twilio] in frontend
         service sips(internet)[Sips] in frontend
     
     group backend(cloud)[Backend]
         service app_server(server)[Azure voice bot] in backend
+        service twilio(internet)[Twilio] in backend
         service database(database)[Database] in backend
         service llm(server)[LLM] in backend
+
+
+    group configuration(cloud)[Configuration]
+        service faq(database)[FAQ mgt]    in configuration
     
     telco:R -- L:sips
     sips:R -- L:twilio
     twilio:R -- L:app_server
     app_server:B -- T:database
     llm:B -- T:app_server
+    faq:R -- L:database
 ">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/ai-voice/">
@@ -150,7 +155,7 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
-      Ai Voice
+      AI Voice
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
           <path
@@ -169,19 +174,24 @@
   <div class="post-content"><pre class="mermaid">architecture-beta
     group frontend(cloud)[Frontend]
         service telco(cloud)[Telco] in frontend
-        service twilio(internet)[Twilio] in frontend
         service sips(internet)[Sips] in frontend
     
     group backend(cloud)[Backend]
         service app_server(server)[Azure voice bot] in backend
+        service twilio(internet)[Twilio] in backend
         service database(database)[Database] in backend
         service llm(server)[LLM] in backend
+
+
+    group configuration(cloud)[Configuration]
+        service faq(database)[FAQ mgt]    in configuration
     
     telco:R -- L:sips
     sips:R -- L:twilio
     twilio:R -- L:app_server
     app_server:B -- T:database
     llm:B -- T:app_server
+    faq:R -- L:database
 </pre>
 
 

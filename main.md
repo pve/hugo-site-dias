@@ -9,15 +9,21 @@ But what makes a technology truly disruptive?
 What has made the PC a disruptive technology? Or artificial intelligence, for that matter?
 And at what time did it become a disruptive technology?
 While many would accept that AI was a very disruptive technology starting from 2022 onwards,
-most of it was available much earlier. Gen AI, chatbots, etc.
+most of it was available much earlier. GenAI, chatbots, etc.
 Think of ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.
 
 If we understand the mechanics better, we can begin the see how we can predict these shifts better.
 
+Technology power shifts:
+In the early 90s I saw the PC revolution come up and shortly afterwords client-server computing, including all the things that went wrong.
+A little later, the Internet revolution from boom to bust, and back up again.
+Then, early 10s, cloud computing exploded, and I started teaching cloud security.
+All of these led to dramatic shifts of power in organizations, and therefore in the way IT was organized. Here I'd like to explore the underlying mechanisms.
+
 While there are many uses of the word 'disruptive' in this context, I'd like to focus on the degree to which a disruptive technology will shift power in organisations and society.
 
 In my professional career I have seen, as mentioned elsewhere, a few major disruptive changes.
-Most of these, if not all, significantly changed power structures.
+Most of these significantly changed power structures.
 
 The mainframe was typically a central corporate strategic decision, necessitating a corporate IT department.
 That also implies that conflicts around its use would percolate to the top. This is one of the essentials of corporate governance.
@@ -27,8 +33,32 @@ AI has been around for many years, even decades, but its use really took off aft
 Power dynamics shift when we introduce new actors in the ecosystem.
 For example, minicomputers came within reach of department budgets, causing those departments to also start buying them. ChatGPT allowed people to try out GenAI and apply it to their work.
 
-Affordable access introduces new buyers in the game. Freemium business models make that even more accessible. The game is that value from these services is demonstrated with a free proof of concept, which opens the discussion to talk about bigger budgets. It is part of GitLabs official pricing strategy.
+More affordable access to technology introduces new buyers in the game. Freemium business models make that even more accessible. The game is that value from these services is demonstrated with a free proof of concept, which opens the discussion to talk about bigger budgets. It is part of GitLabs official pricing strategy.
+
 ---
+date: '2025-04-20T09:24:41Z'
+draft: false
+title: 'Power Flows'
+weight: 30
+---
+
+Power does not automatically flow from those that have it to those that are influenced by it.
+
+As they say in dutch, quoting the poet Willem Elsschot: "tussen droom en daad staan wetten in de weg, en praktische bezwaren". ("between dream and deed stand laws in the way, and practical objections").
+
+We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.
+
+The power intermediary aids in applying power. They are like the forward observer in an artillery unit. They don't have the artillery power themselves, but they definitely influence how it is applied. Knowledge is power, as they say.
+
+And there are many more examples of power intermediaries, and many more words that are used to describe that function. You can think of: power broker, facilitator, mediator, intermediary, but in our digital infrastructures world, we can be more specific.
+
+Let's take an example situation. 
+Suppose the board of a company wants to set a digital strategy for the company, who is in the end implementing and realizing that strategy? 
+Or, the board wants to demonstrate control over the resilience of the organisation to cyber risks. 
+In the end, that requires a lot of people and roles, for example in building systems, or doing incident response. Many of these roles are, in fact, power intermediaries, because they facilitate the flow of the board's power to the places in the organisation that matter.
+
+As we discuss elsewhere, this involves people, process and technology. 
+I also elaborate on two specific positions of power elsewhere: the architect, and the assessor, although they are by no means the only ones. ---
 date: '2025-03-22T17:56:28Z'
 draft: false
 title: 'International Actors'
@@ -297,6 +327,54 @@ They see no fundamental difference between a new feature and an incident. Both a
 
 Part of running a smooth IT function is juggling the balance between change and control.
 ---
+date: '2025-04-19T20:01:07Z'
+draft: false
+title: 'Control Through Feedback Loops'
+weight: 12
+---
+
+There are many ways to influence and control a system, but one of the most controlled (pun intended) ways is to use feedback loops.
+
+Let's start with an analogy first: driving a car.
+
+If you want the car to stop as fast as possible, it suffices to push the brakes as hard as you can. But that does not give you much control.
+For example, your passengers might not like it, and it leads to wear on the tires.
+If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop. 
+
+Another example is keeping the car in the proper lane on the road.
+Such a loop starts by observing the state: where are we driving? Then we figure out how that differs from the middle of the lane, which is presumably where we want to be driving. Based on that difference (the error) we turn the steering wheel. That is the control we apply. The car will respond, after which we can observe a new state. This closes the loop.
+We feed back information from observing the car into the control.
+
+Cars are full of feedback loops. Some are mechanical, some automatic, some have a human in the loop. And some exist outside the car, such as traffic control systems.
+
+We typically want the feedback loops to keep (or bring) the system in a specific state.
+In our car example: we want the car to be driving nicely along the highway. 
+
+For the feedback loop to lead to this result the feedback should be negative, meaning that deviations from the desired state are counter acted, instead of amplified.
+
+There is a lot of theory on these types of control systems, for example to figure out if they work fast enough at an acceptable cost.
+
+Let's look at some examples of feedback loops in digital infrastructures.
+
+Large websites have so-called autoscalers. If the load on the website increases, for instance because the website is suddenly in the news, or it is Black Friday on a shopping site, the autoscaler can spin up more webservers to handle that load. 
+It acts by observing the webtraffic and the delays in handling that, and controls the amount of servers that are active. 
+
+In the early days of the internet, I advised a retail internet service provider.
+At the time, those were independent companies, not part of the telecommunication companies. 
+They were growing very rapidly, and as a result they experienced quality issues.
+Consumers found that web downloads were too slow, and threatened to leave. 
+The cause of this was that the company was not adapting its connection to the internet fast enough. 
+That connection was a large part of the cost of running the provider, so they did not want to buy too much too early.
+To fix this, I created a control rule through which they could better balance between spending too much on bandwidth and disappointing consumers. 
+
+Feedback also make AI deep learning systems work. The neural network is given a series of training data. The output is checked for correctness, and on the basis of the errors, the weights in the network are adjusted. Repeat this long enough on enough processors, and the errors will drop. The network has then learned.
+
+Feedback loops are everywhere. 
+- When you download a large file from a server, the server will adjust its sending rate to whatever the network and the receiver can handle. 
+- When a cloud provider gets more customers, it will adjust the server capacity it has, and it will also adapt the staffing of its support center.
+- In cybersecurity, we observe the patching level of software components against known vulnerabilities, and update the software as needed.
+
+Understanding feedback loops helps you understand how control can be applied.---
 date: '2025-04-07T22:04:09Z'
 draft: false
 title: 'Change and control'
@@ -1067,18 +1145,40 @@ weight: 10
 ---
 date: '2008-07-02T14:02:00'
 
+Computers are terribly reliable, in general. Today's computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures. 
 
-Computers are terribly reliable, in general. Today's computers execute millions of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures. 
-A Cnet article elaborates on the Google situation (a Google cluster has several thousands of machines):
+<!--- comment: reference zoeken --->
+
+In the early days of Google growth I read an article about their error numbers
+(a Google cluster has several thousands of machines):
+
 > In each cluster's first year, it's typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will "go wonky," with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there's about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover. 
-These look like interesting planning assumptions for both hardware and software planners. As they say:
+
+These look like interesting considerations for both hardware and software planners. 
+
+Adrian Cockcroft, while he was CTO of Netflix around 2010, summed it up as:
+
+>Size breaks hardware
+
+No matter how good your hardware is, if it becomes big enough, it breaks. In his view you therefore need to solve reliability problems in software, not in building better hardware.
+
+As Google say:
+
 > "Our view is it's better to have twice as much hardware that's not as reliable than half as much that's more reliable," Dean said. "You have to provide reliability on a software level. If you're running 10,000 machines, something is going to die every day."
 
----
+The business case for this is that you will have to invest in software for reliability. 
+Once you have done that, the hardware reliability no longer matter, within certain bounds, and you are financially better off with cheaper hardware. 
+
+The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a 'middleware' software layer on which resilient applications can be build. 
+We'll cover that in another unit.
+
+Finally, scale does not only break hardware, but also organisations.
+For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
+When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks. ---
 date: '2025-03-09T21:19:45Z'
 draft: false
 title: 'Deployment Diagrams'
-weight: "30" 
+weight: "50" 
 ---
 
 Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.
@@ -1090,6 +1190,7 @@ Deployment diagrams are a great technique for communicating about important deci
 There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.
 
 In this section, I’m setting out to define the principles that these maps should adhere to.
+The reason for that is that there is a lot of intuition on these types of diagram and their visualisation. 
 
 It turns out that the actual symbols to use are not so relevant. It is more important to understand what we mean by those symbols, and how these diagrams are useful.
 
@@ -1261,7 +1362,6 @@ In summary, digital infrastructures are about services that organisations delive
 date: '2025-03-08T17:57:16Z'
 draft: false
 title: 'What are AI digital infrastructures?'
-weight: "40" 
 ---
 
 The AI landscape has many digital infrastructures.
@@ -1270,38 +1370,15 @@ Let's explain this step by step and focus on which data is stored where, and how
 
 A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.
 
-A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes. Training serious LLMs takes serious compute resources. In 2025, estimates for the cost of the largest foundational models run in the tens to hundreds of millions of dollars.
+A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.
 
-Smaller models can still take more training resources than the average company has in place.
-That is why Training as a Service in the cloud exists.
-
-```mermaid
-%%{ init: {
-    'theme': 'forest',
-    'themeVariables':
-        { 'fontSize': '12px'}
-} }%%
-block-beta
-
- space in space llm:2 space out space 
-in["Training Data"] --> llm["LLM training"]
-llm--> out["LLM"]
-style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-```
-
-A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and for good performance it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you'll need a lot more hardware. Therefore there is a good business case for sharing this across many users.
+A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you'll need a lot more hardware. Therefore there is a good business case for sharing this across many users.
 
 ```mermaid
-%%{ init: {
-    'theme': 'forest',
-    'themeVariables':
-        { 'fontSize': '12px'}
-} }%%
 block-beta
 
-space in space llm space out space
-in["Prompt"] --> llm["LLM"]
+space in space llm:2 space out space
+in["Prompt"] --> llm["Large Language Model"]
 llm--> out["Completion"]
 
 style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
@@ -1309,12 +1386,42 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
    
 ```
 
-In cloud terms, we would call this Inferencing as a Service. In the NIST cloud model, we'd call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.
+In cloud terms, we would call this Inferencing as a Service. In the NIST model, we'd call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.
 
 This gives us the option to look for this on the market, or create a shared service inside an organisation or group of organisations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.
 
 More at: <https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing>
 ---
+date: '2025-04-20T09:03:00Z'
+draft: true
+title: 'Execution Environments'
+weight: "30"
+---
+
+What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a datacenter?
+
+They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
+In a diagram we often depict them as a box, or an oval.
+Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.
+
+Why does it matter? Well, the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.
+For example, these things, or more accurateley: their boundaries, are a prime place where controls for security are. 
+
+Whenever I look at a how a digital infrastructure is implemented, I start by looking at the execution environments, and ask three questions: what, where, and how.
+
+__What?__ What is the data that is inside it, what is the software, the code, that is inside that environment? And in an AI world: which model is there inside?
+
+__Where?__  Where is that execution environment located? In our current virtualized and cloud world, that environment is typically inside another environment. Ultimately, of course, there is a physical machine in which it sits. 
+
+__How?__ How does the software get deployed inside that environment? There will be a manual process, or a continuous delivery pipeline, or something similar. 
+
+Then it is time to look at the control boundary that this environment creates. The control boundary creates an outside and an inside. How is data from the outside allowed to go inside? What is the mechanism or protocol? How is that controlled? The same holds for the reverse. How is software inside that boundary allowed to access the outside?
+
+Let's take an example: your browswer is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machines implements an access control on the network level: it only allows https to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.
+
+If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls.
+
+Link to Zero Trust Architecture.---
 date: '2025-03-09T18:54:11Z'
 draft: false
 title: 'What are digital infrastructures?'

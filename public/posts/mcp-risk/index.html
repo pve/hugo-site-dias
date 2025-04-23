@@ -5,14 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Execution Environments | Digital Infrastructures at Scale</title>
+<title>Look at MCP now to be ahead of AI risk | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a datacenter?
-They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
-In a diagram we often depict them as a box, or an oval.
-Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.">
+<meta name="description" content="If you are in security and not fully on top of AI risk, you want to look at MCP now, as this is going to be popular and risky.
+Reach out to your development teams and beyond to offer your help in using them wisely, even if you know nothing about them yet.
+MCP, Model Context Protocol, was introduced in November 2024 as a standardised way to feed AI chatbots with extra information.
+You can extend Claude or OpenAI desktop with MCP servers, which are basically small programs that run on the desktop and have access to all information and services that the user has.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/execution-environments/">
+<link rel="canonical" href="http://localhost:1313/posts/mcp-risk/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -21,7 +21,7 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/execution-environments/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/mcp-risk/">
 <noscript>
     <style>
         #theme-toggle,
@@ -128,17 +128,11 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
-      Execution Environments
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+      Look at MCP now to be ahead of AI risk
     </h1>
-    <div class="post-meta"><span title='2025-04-20 09:03:00 +0000 UTC'>April 20, 2025</span>
+    <div class="post-meta"><span title='2025-04-23 06:03:44 +0000 UTC'>April 23, 2025</span>
 
 </div>
   </header> 
@@ -146,56 +140,19 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
   
   <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a datacenter?</p>
-<p>They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
-In a diagram we often depict them as a box, or an oval.
-Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.</p>
-<p>Why does it matter? Well, the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.
-For example, these things, or more accurateley: their boundaries, are a prime place where controls for security are.</p>
-<p>Whenever I look at a how a digital infrastructure is implemented, I start by looking at the execution environments, and ask three questions: what, where, and how.</p>
-<p><strong>What?</strong> What is the data that is inside it, what is the software, the code, that is inside that environment? And in an AI world: which model is there inside?</p>
-<p><strong>Where?</strong>  Where is that execution environment located? In our current virtualized and cloud world, that environment is typically inside another environment. Ultimately, of course, there is a physical machine in which it sits.</p>
-<p><strong>How?</strong> How does the software get deployed inside that environment? There will be a manual process, or a continuous delivery pipeline, or something similar.</p>
-<p>Then it is time to look at the control boundary that this environment creates. The control boundary creates an outside and an inside. How is data from the outside allowed to go inside? What is the mechanism or protocol? How is that controlled? The same holds for the reverse. How is software inside that boundary allowed to access the outside?</p>
-<p>Let&rsquo;s take an example: your browswer is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machines implements an access control on the network level: it only allows https to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.</p>
-<p>If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls.</p>
-<p>Link to Zero Trust Architecture.</p>
+  <div class="post-content"><p>If you are in security and not fully on top of AI risk, you want to look at MCP <strong>now</strong>, as this is going to be popular and risky.
+Reach out to your development teams and beyond to offer your help in using them wisely, even if you know nothing about them yet.</p>
+<p>MCP, Model Context Protocol, was introduced in November 2024 as a standardised way to feed AI chatbots with extra information.
+You can extend Claude or OpenAI desktop with MCP servers, which are basically small programs that run on the desktop and have access to all information and services that the user has.</p>
+<p>MCP servers are popping up like flowers in spring, and range from fetching up to date weather information to orchestrating your entire customer onboarding workflow.</p>
+<p>As said, they have access to everything that the user has access to: the local machine, attached network files, the internet, you name it. Effectively, they are an insider threat on steroids. For example, an MCP could access sensitive corporate documents on the local network, and send them to an AI model, even if that is running on another continent.</p>
+<p>Most MCP servers I have seen are written in node.js, which requires npm to be installed, which is not exactly known for its great security track record see <a href="https://www.criticalstart.com/securing-the-ecosystem-navigating-the-risks-of-npm-packages-in-modern-software-development/">here</a> and <a href="https://blog.checkpoint.com/securing-the-cloud/review-of-recent-npm-based-vulnerabilities/">here</a>.</p>
+<p>For a nice little example of MCP servers and clients, and their vulnerabilities, have a look at <a href="https://github.com/kenhuangus/mcp-vulnerable-server-demo">this github repository</a>.</p>
+<p>MCP has tremendous potential in quickly creating useful workflows. As a security professional it is your choice if you want to stand in the way of that, or if you are going to help move it along a safe pathway.</p>
+<p>For more background on the technology, its applications, and risks, I strongly recommend listening to <a href="https://podcasts.apple.com/nl/podcast/ai-cybersecurity-podcast/id1711183470?i=1000704052797">this podcast</a> with Caleb Sima and Ashish Rajan.</p>
 
 
   </div>
-  
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
-      
-        
-        <a href="/book/diginfra/lunch-spain/">&larr; What a lunch in Spain taught me about digital infrastructures</a>
-      
-      
-        
-        <a href="/book/diginfra/deployment-diagrams/">Deployment Diagrams &rarr;</a>
-      
-    </nav>
-  
-
-  
-
-  
-
-
 
   
 

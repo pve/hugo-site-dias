@@ -18,19 +18,17 @@ How technical debt works: negative investment externalities.
 
 But of course you have this discussion on shared services. As a matter of fact, I keep talking about the book that I'm probably not going to finish, but it's still a nice frame of reference. Now digital infrastructures at scale - there are a few very essential elements in there. The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it's amenable to automation. These two together give a really interesting socio-political economic dynamic. And that's what you need to understand if you want your shared service to keep operating - or if you don't want it to operate, but that's a different story.
 
+
 Ikigai
 
 Onderwerp: power, vendor lock-in
 
 Top search op CCC: certs, deploy, saas canvas, top 8 enisa.
 
+shared services
 De shared services business case. Voorbeeld Haven ook (journal feb 2025). Lees ook input van Robert (?)
 
-Technology power shifts:
-In the early 90s I saw the PC revolution come up and shortly afterwords client-server computing, including all the things that went wrong.
-A little later, the Internet revolution from boom to bust, and back up again.
-Then, early 10s, cloud computing exploded, and I started teaching cloud security.
-All of these led to dramatic shifts of power in organizations, and therefore in the way IT was organized. Here I'd like to explore the underlying mechanisms.
+
 
 What is an API?
 
@@ -107,4 +105,21 @@ NTS: de typische IT processen HBO-i opschrijven.
 
 Rewrite NetworkAssessmentclosed.doc.
 
-Is it ethical to talk about power? Power is everywhere, and conflict too. There is no society without a power structure. 
+Is it ethical to talk about power? Power is everywhere, and conflict too. There is no society without a power structure.
+There are always differences, if only when to have lunch.
+
+Without exercising power, no group will survive, likely to the detriment of its members. 
+A former colleague of mine, when doing his military service, was the lieutenant of an armored infantry platoon.
+He shared many leadership lessons with me. 
+One of them was that your job as a leader of an armored combat vehicle is to use your power to chose and enforce a direction in which the group moves as it exits the vehicle.
+It does not matter which direction, as long as everybody moves in the same direction.
+To do otherwise endangers the group. 
+Following the direction of the leader is not a concession or a compromise in this case, but a survival tactic.
+
+Don't fix the toast, fix the toaster.
+
+Er zijn verschillende boeken over "Digital Power". 
+
+TSD. Promise theory
+
+Who owns data? can data be owned?
