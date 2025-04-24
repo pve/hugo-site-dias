@@ -70,7 +70,7 @@ Uitlegegen: wat is agile, wanneer is scrum zinvol?
 
 Conway's law.
 
-Innovation loves decentralization, and then eats centralization for breakfast. Link to chaos theory, communication across scales and layers.
+Innovation loves decentralization, and then eats centralization for breakfast. Link to chaos theory, communication across scales and layers. Error budget 
 
 startups selling into enterprises.
 
@@ -105,16 +105,7 @@ NTS: de typische IT processen HBO-i opschrijven.
 
 Rewrite NetworkAssessmentclosed.doc.
 
-Is it ethical to talk about power? Power is everywhere, and conflict too. There is no society without a power structure.
-There are always differences, if only when to have lunch.
 
-Without exercising power, no group will survive, likely to the detriment of its members. 
-A former colleague of mine, when doing his military service, was the lieutenant of an armored infantry platoon.
-He shared many leadership lessons with me. 
-One of them was that your job as a leader of an armored combat vehicle is to use your power to chose and enforce a direction in which the group moves as it exits the vehicle.
-It does not matter which direction, as long as everybody moves in the same direction.
-To do otherwise endangers the group. 
-Following the direction of the leader is not a concession or a compromise in this case, but a survival tactic.
 
 Don't fix the toast, fix the toaster.
 
@@ -123,3 +114,4 @@ Er zijn verschillende boeken over "Digital Power".
 TSD. Promise theory
 
 Who owns data? can data be owned?
+

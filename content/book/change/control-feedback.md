@@ -22,7 +22,7 @@ Cars are full of feedback loops. Some are mechanical, some automatic, some have 
 We typically want the feedback loops to keep (or bring) the system in a specific state.
 In our car example: we want the car to be driving nicely along the highway. 
 
-For the feedback loop to lead to this result the feedback should be negative, meaning that deviations from the desired state are counter acted, instead of amplified.
+For the feedback loop to lead to this result the feedback should be negative, meaning that deviations from the desired state are counteracted, instead of amplified.
 
 There is a lot of theory on these types of control systems, for example to figure out if they work fast enough at an acceptable cost.
 

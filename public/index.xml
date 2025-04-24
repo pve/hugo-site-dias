@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Apr 2025 09:32:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Apr 2025 20:30:57 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -31,6 +31,16 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Look at MCP now to be ahead of AI risk</title>
+      <link>http://localhost:1313/posts/mcp-risk/</link>
+      <pubDate>Wed, 23 Apr 2025 06:03:44 +0000</pubDate>
+      <guid>http://localhost:1313/posts/mcp-risk/</guid>
+      <description>&lt;p&gt;If you are in security and not fully on top of AI risk, you want to look at MCP &lt;strong&gt;now&lt;/strong&gt;, as this is going to be popular and risky.
+Reach out to your development teams and beyond to offer your help in using them wisely, even if you know nothing about them yet.&lt;/p&gt;
+&lt;p&gt;MCP, Model Context Protocol, was introduced in November 2024 as a standardised way to feed AI chatbots with extra information.
+You can extend Claude or OpenAI desktop with MCP servers, which are basically small programs that run on the desktop and have access to all information and services that the user has.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI Voice</title>
@@ -157,6 +167,18 @@ That is where their prime value is.&lt;/p&gt;
       <guid>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</guid>
       <description>&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;
 &lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that are the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ethics of Power</title>
+      <link>http://localhost:1313/book/power/ethics-of-power/</link>
+      <pubDate>Thu, 24 Apr 2025 20:30:57 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/ethics-of-power/</guid>
+      <description>&lt;p&gt;For many people, the word power has a negative connotation.
+They&amp;rsquo;d rather avoid using power altogether.
+I can feel that, and I can definitely feel that about the abuse of power.&lt;/p&gt;
+&lt;p&gt;But does that make it unethical to talk about power?
+Power is everywhere, and conflict too. There is no society without a power structure.
+There are always differences of opinions in any group, if only to decide when to have lunch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control Through Feedback Loops</title>
