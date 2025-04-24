@@ -1,6 +1,6 @@
 ---
 date: '2025-04-24T20:30:57Z'
-draft: true
+draft: false
 title: 'Ethics of Power'
 weight: 11
 ---
