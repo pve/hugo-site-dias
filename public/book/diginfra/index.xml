@@ -6,7 +6,7 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Apr 2025 09:03:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Apr 2025 21:21:54 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
@@ -21,6 +21,21 @@
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise Theory</title>
+      <link>http://localhost:1313/book/diginfra/promise-theory/</link>
+      <pubDate>Fri, 25 Apr 2025 21:21:54 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/promise-theory/</guid>
+      <description>&lt;p&gt;Digital infrastructures are about services, not products.
+It can be elusive to describe these services, and specifically, how to describe the somewhat loose interaction between the service providers and the service consumers.&lt;/p&gt;
+&lt;p&gt;Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
+Introduced by Mark Burgess and others, it is about how autonomous actors work together.
+It helped me a lot in getting a handle on various distributed systems.
+There was this project where we envisioned a scalable travel information system with what we now call microservices.
+We needed to describe how these parts work together.
+And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
+In getting this from the drawing board to actual production, promise theory turned out to be a great tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Things Break at Scale</title>
@@ -67,12 +82,10 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <link>http://localhost:1313/book/diginfra/execution-environments/</link>
       <pubDate>Sun, 20 Apr 2025 09:03:00 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/execution-environments/</guid>
-      <description>&lt;p&gt;A laptop is an execution environment. A smartphone is an execution environment.
-A smart thermostat is an execution environment. So is the browser, a database, and a datacenter.&lt;/p&gt;
-&lt;p&gt;What do they have in common?&lt;/p&gt;
-&lt;p&gt;They contain software and data, and that makes them building blocks for deploying digital infrastructures.&lt;/p&gt;
-&lt;p&gt;Why does it matter to introduce such an abstract and complicated word?&lt;/p&gt;
-&lt;p&gt;the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.&lt;/p&gt;</description>
+      <description>&lt;p&gt;What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a datacenter?&lt;/p&gt;
+&lt;p&gt;They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
+In a diagram we often depict them as a box, or an oval.
+Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deployment Diagrams</title>

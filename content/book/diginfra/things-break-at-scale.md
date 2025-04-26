@@ -8,12 +8,13 @@ date: '2008-07-02T14:02:00'
 
 Computers are terribly reliable, in general. Today's computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures. 
 
-<!--- comment: reference zoeken --->
-
-In the early days of Google growth I read an article about their error numbers
+In the early days of Google growth I read an [article about their error numbers](https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/)
 (a Google cluster has several thousands of machines):
 
 > In each cluster's first year, it's typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will "go wonky," with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there's about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover. 
+
+A [2024 report](https://www.storagereview.com/news/backblaze-2024-drive-stats-hard-drive-failures-drop-as-high-capacity-models-take-over) puts storage drive failure rates at about 1.35% per year.
+With thousands of drives, failure is not an option, but a certainty.
 
 These look like interesting considerations for both hardware and software planners. 
 

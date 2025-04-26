@@ -6,7 +6,7 @@
     <description>Recent content in Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Apr 2025 09:24:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Apr 2025 20:30:57 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/power/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Power</title>
@@ -31,6 +31,18 @@ Before we attempt to define power formally, let&amp;rsquo;s see how the word in 
 &lt;p&gt;From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Ethics of Power</title>
+      <link>http://localhost:1313/book/power/ethics-of-power/</link>
+      <pubDate>Thu, 24 Apr 2025 20:30:57 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/ethics-of-power/</guid>
+      <description>&lt;p&gt;For many people, the word power has a negative connotation.
+They&amp;rsquo;d rather avoid using power altogether.
+I can feel that, and I can definitely feel that about the abuse of power.&lt;/p&gt;
+&lt;p&gt;But does that make it unethical to talk about power?
+Power is everywhere, and conflict too. There is no society without a power structure.
+There are always differences of opinions in any group, if only to decide when to have lunch.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Positions of Power in IT</title>
       <link>http://localhost:1313/book/power/positions-of-power-it/</link>
       <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
@@ -38,6 +50,15 @@ Before we attempt to define power formally, let&amp;rsquo;s see how the word in 
       <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.&lt;/p&gt;
 &lt;p&gt;Two important positions of influence in IT are architects and auditors/assessors.&lt;/p&gt;
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Power Flows</title>
+      <link>http://localhost:1313/book/power/power-mediation/</link>
+      <pubDate>Sun, 20 Apr 2025 09:24:41 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/power-mediation/</guid>
+      <description>&lt;p&gt;Power does not automatically flow from those that have it to those that are influenced by it.&lt;/p&gt;
+&lt;p&gt;As they say in dutch, quoting the poet Willem Elsschot: &amp;ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&amp;rdquo;. (&amp;ldquo;between dream and deed stand laws in the way, and practical objections&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Who made podcasting big?</title>
@@ -55,15 +76,6 @@ Of the ones left, another five don’t have the patience for the downloads (we a
 If you have been keeping tabs: we are down to 25 people who are capable and willing to regularly listen to podcasts. Now suppose each of these tells four friends, on the average. That means we are back to a hundred.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Power Mediation</title>
-      <link>http://localhost:1313/book/power/power-mediation/</link>
-      <pubDate>Sun, 20 Apr 2025 09:24:41 +0000</pubDate>
-      <guid>http://localhost:1313/book/power/power-mediation/</guid>
-      <description>&lt;p&gt;Power does not automatically flow from those that have it to those that are influenced by it.&lt;/p&gt;
-&lt;p&gt;As they say in dutch, quoting the poet Willem Elschot?: &amp;ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&amp;rdquo;. (&amp;ldquo;between dream and deed stand laws in the way, and practical objections&amp;rdquo;).&lt;/p&gt;
-&lt;p&gt;We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Disruptive Technologies</title>
       <link>http://localhost:1313/book/power/powershift-disruption/</link>
       <pubDate>Sun, 13 Apr 2025 21:25:10 +0000</pubDate>
@@ -73,7 +85,7 @@ But what makes a technology truly disruptive?
 What has made the PC a disruptive technology? Or artificial intelligence, for that matter?
 And at what time did it become a disruptive technology?
 While many would accept that AI was a very disruptive technology starting from 2022 onwards,
-most of it was available much earlier. Gen AI, chatbots, etc.
+most of it was available much earlier. GenAI, chatbots, etc.
 Think of ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.&lt;/p&gt;</description>
     </item>
     <item>

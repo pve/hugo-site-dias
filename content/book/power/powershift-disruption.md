@@ -17,7 +17,7 @@ If we understand the mechanics better, we can begin the see how we can predict t
 Technology power shifts:
 In the early 90s I saw the PC revolution come up and shortly afterwords client-server computing, including all the things that went wrong.
 A little later, the Internet revolution from boom to bust, and back up again.
-Then, early 10s, cloud computing exploded, and I started teaching cloud security.
+Then, early 2010s, cloud computing exploded, and I started teaching cloud security.
 All of these led to dramatic shifts of power in organizations, and therefore in the way IT was organized. Here I'd like to explore the underlying mechanisms.
 
 While there are many uses of the word 'disruptive' in this context, I'd like to focus on the degree to which a disruptive technology will shift power in organisations and society.

@@ -111,7 +111,8 @@ Don't fix the toast, fix the toaster.
 
 Er zijn verschillende boeken over "Digital Power". 
 
-TSD. Promise theory
+TSD. Promise theory; LMS CAE 3-1; LMS 5-45 slap aftreksel. 
 
 Who owns data? can data be owned?
 
+Digital supply chain, 'stack'. Cloud supply chain. HOe ziet die er uit?
