@@ -85,6 +85,7 @@ Sounds like it is time to tell Claude how MCP really works.
 
 Off to a fresh start, with a new git repo, and a new Claude context window.
 This time Context7 sounds like the proper way to ingest up to date libraries.
+I added the MCP server for Context7, and added it to the coding conversation.
 
 Autorespond was easy, I put it there myself.
 For the Python SDK it took a detour, but it managed to find the doc through `/modelcontextprotocol/python-sdk`.
@@ -145,7 +146,7 @@ I believe these days you would do it the other way around, like what we did with
 
 Interestingly, Claude (the coder) decides to label certain calls as MPC resources, rather than tools.
 An example would be getting all the tags or groups.
-While this sounds fair, in Claude (the desktop), these will not be used unless explicitly added by the user.
+While this sounds fair, in Claude (the desktop) these will not be used unless explicitly added by the user.
 This means they are excluded from the reasoning that Claude can do.
 
 So far this took me a few hours, including the updates of my tooling, resulting in about 450 lines of code for the Autorespond MCP code.
@@ -153,4 +154,6 @@ So far this took me a few hours, including the updates of my tooling, resulting 
 Up next. Giving better instructions on the coverage of the API. And, should we be writing some test cases?
 I have seen that explored in some of the meetups I visited recently. To do that well, we need a test instance of the Autorespond system.
 
-Stay tuned...
+Stay tuned for more ...
+
+[Github](https://github.com/pve/mcp-autorespond)

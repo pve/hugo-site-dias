@@ -193,7 +193,8 @@ It then still does not quite understand parameters in the MCP context.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">ValueError: Mismatch between URI parameters set() and function parameters {&#39;email&#39;}
 </span></span></code></pre></div><p>Sounds like it is time to tell Claude how MCP really works.</p>
 <p>Off to a fresh start, with a new git repo, and a new Claude context window.
-This time Context7 sounds like the proper way to ingest up to date libraries.</p>
+This time Context7 sounds like the proper way to ingest up to date libraries.
+I added the MCP server for Context7, and added it to the coding conversation.</p>
 <p>Autorespond was easy, I put it there myself.
 For the Python SDK it took a detour, but it managed to find the doc through <code>/modelcontextprotocol/python-sdk</code>.</p>
 <p>Back to <code>uv</code>.
@@ -233,12 +234,13 @@ I am not an API specialist, but I have been told that this doc is generated from
 I believe these days you would do it the other way around, like what we did with Kimwitu a couple of decades ago.</p>
 <p>Interestingly, Claude (the coder) decides to label certain calls as MPC resources, rather than tools.
 An example would be getting all the tags or groups.
-While this sounds fair, in Claude (the desktop), these will not be used unless explicitly added by the user.
+While this sounds fair, in Claude (the desktop) these will not be used unless explicitly added by the user.
 This means they are excluded from the reasoning that Claude can do.</p>
 <p>So far this took me a few hours, including the updates of my tooling, resulting in about 450 lines of code for the Autorespond MCP code.</p>
 <p>Up next. Giving better instructions on the coverage of the API. And, should we be writing some test cases?
 I have seen that explored in some of the meetups I visited recently. To do that well, we need a test instance of the Autorespond system.</p>
-<p>Stay tuned&hellip;</p>
+<p>Stay tuned for more &hellip;</p>
+<p><a href="https://github.com/pve/mcp-autorespond">Github</a></p>
 
 
   </div>

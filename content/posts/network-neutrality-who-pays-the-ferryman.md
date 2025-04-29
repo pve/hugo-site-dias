@@ -1,7 +1,7 @@
 ---
 title: 'Network Neutrality: who pays the ferryman?'
 date: '2006-08-18T13:54:00'
-draft: yes
+draft: true
 ---
 
 Network neutrality has become the topic of intense discussion and legislative action.  
