@@ -6,7 +6,7 @@ weight: 10
 ---
 Model Context Protocols (MCP, see [my post on their security](/posts/mcp-risk/)) are the new glue between humans, chatbots, and old school IT.
 
-Here is the step by step approach that I followed to '[vibe code](/posts/vibe-coding-real/)' a Model Context Protocol server for my CRM and mailing list manager.
+Here is the step by step approach that I followed to '[vibe code](/posts/vibe-coding-real/)', a Model Context Protocol server for my CRM and mailing list manager.
 
 I journaled this description, so I have included most of the detours and false starts.
 For readability, I edited the description later, but the flow is as I went through it.
@@ -97,9 +97,9 @@ uv init
 uv add "mcp[cli]" httpx
 ```
 
-Claude gave the correct uv steps.
+Claude gave the correct `uv` steps.
 
-Still, this error comes back:
+However, this error comes back:
 `ValueError: Mismatch between URI parameters set() and function parameters {'ctx'}`
 
 Claude still does not get it. So I told it:
@@ -116,7 +116,7 @@ However, one of my software engineering rules is that you don't manually fix aut
 
 So we `git commit` the Python code, and then *replace* it with a new version.
 From the git diffs we can see that the changes are indeed quite local.
-But I have seen sessions like these where instead of the local change that would be sufficient, large parts of the codebase are fully rewritten.
+But I have seen sessions like these where instead of the local change that would be sufficient, large parts of the codebase are fully rewritten for no apparent reason.
 
 OK, now it runs in Python:
 
@@ -130,7 +130,7 @@ It kind of works. But it did not understand that the authorization is in ENV var
 Now it thinks the authorization is an additional API parameter, and it then starts to hallucinate the actual values there.
 It randomly generates API keys, quite amusing in fact.
 
-We tell it to regenerate the code with the note
+We tell it to regenerate the code with the note:
 
 >The admin key and api key are environment variables. Rewrite the code.
 
@@ -142,6 +142,11 @@ But it has forgotten certain API calls (invoices, orders).
 And some of the calls don't work, which seems related to the interpretation of the Autorespond API doc.
 I am not an API specialist, but I have been told that this doc is generated from code annotations [https://apidocjs.com/](https://apidocjs.com/).
 I believe these days you would do it the other way around, like what we did with Kimwitu a couple of decades ago.
+
+Interestingly, Claude (the coder) decides to label certain calls as MPC resources, rather than tools.
+An example would be getting all the tags or groups.
+While this sounds fair, in Claude (the desktop), these will not be used unless explicitly added by the user.
+This means they are excluded from the reasoning that Claude can do.
 
 So far this took me a few hours, including the updates of my tooling, resulting in about 450 lines of code for the Autorespond MCP code.
 

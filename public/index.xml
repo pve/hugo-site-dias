@@ -38,7 +38,7 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
       <pubDate>Sun, 27 Apr 2025 08:39:55 +0000</pubDate>
       <guid>http://localhost:1313/posts/vibe-mcp/</guid>
       <description>&lt;p&gt;Model Context Protocols (MCP, see &lt;a href=&#34;http://localhost:1313/posts/mcp-risk/&#34;&gt;my post on their security&lt;/a&gt;) are the new glue between humans, chatbots, and old school IT.&lt;/p&gt;
-&lt;p&gt;Here is the step by step approach that I followed to &amp;lsquo;&lt;a href=&#34;http://localhost:1313/posts/vibe-coding-real/&#34;&gt;vibe code&lt;/a&gt;&amp;rsquo; a Model Context Protocol server for my CRM and mailing list manager.&lt;/p&gt;
+&lt;p&gt;Here is the step by step approach that I followed to &amp;lsquo;&lt;a href=&#34;http://localhost:1313/posts/vibe-coding-real/&#34;&gt;vibe code&lt;/a&gt;&amp;rsquo;, a Model Context Protocol server for my CRM and mailing list manager.&lt;/p&gt;
 &lt;p&gt;I journaled this description, so I have included most of the detours and false starts.
 For readability, I edited the description later, but the flow is as I went through it.&lt;/p&gt;</description>
     </item>

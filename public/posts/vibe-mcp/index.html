@@ -8,7 +8,7 @@
 <title>Vibe coding an MCP | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Model Context Protocols (MCP, see my post on their security) are the new glue between humans, chatbots, and old school IT.
-Here is the step by step approach that I followed to &lsquo;vibe code&rsquo; a Model Context Protocol server for my CRM and mailing list manager.
+Here is the step by step approach that I followed to &lsquo;vibe code&rsquo;, a Model Context Protocol server for my CRM and mailing list manager.
 I journaled this description, so I have included most of the detours and false starts.
 For readability, I edited the description later, but the flow is as I went through it.">
 <meta name="author" content="">
@@ -141,7 +141,7 @@ For readability, I edited the description later, but the flow is as I went throu
   <i>⏳ 6 min read</i>
   
   <div class="post-content"><p>Model Context Protocols (MCP, see <a href="/posts/mcp-risk/">my post on their security</a>) are the new glue between humans, chatbots, and old school IT.</p>
-<p>Here is the step by step approach that I followed to &lsquo;<a href="/posts/vibe-coding-real/">vibe code</a>&rsquo; a Model Context Protocol server for my CRM and mailing list manager.</p>
+<p>Here is the step by step approach that I followed to &lsquo;<a href="/posts/vibe-coding-real/">vibe code</a>&rsquo;, a Model Context Protocol server for my CRM and mailing list manager.</p>
 <p>I journaled this description, so I have included most of the detours and false starts.
 For readability, I edited the description later, but the flow is as I went through it.</p>
 <p>The CRM system is called <a href="https://www.autorespond.nl">Autorespond</a>, and the description of the API is <a href="https://api.e-act.nl/api/apidocs/index.html">here</a>.
@@ -200,8 +200,8 @@ For the Python SDK it took a detour, but it managed to find the doc through <cod
 This time around, this seems to be the best workflow for starting a new repo, even with VScode.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uv init
 </span></span><span class="line"><span class="cl">uv add <span class="s2">&#34;mcp[cli]&#34;</span> httpx
-</span></span></code></pre></div><p>Claude gave the correct uv steps.</p>
-<p>Still, this error comes back:
+</span></span></code></pre></div><p>Claude gave the correct <code>uv</code> steps.</p>
+<p>However, this error comes back:
 <code>ValueError: Mismatch between URI parameters set() and function parameters {'ctx'}</code></p>
 <p>Claude still does not get it. So I told it:</p>
 <blockquote>
@@ -214,7 +214,7 @@ I had it include that from Context7.</p>
 However, one of my software engineering rules is that you don&rsquo;t manually fix automatically generated code.</p>
 <p>So we <code>git commit</code> the Python code, and then <em>replace</em> it with a new version.
 From the git diffs we can see that the changes are indeed quite local.
-But I have seen sessions like these where instead of the local change that would be sufficient, large parts of the codebase are fully rewritten.</p>
+But I have seen sessions like these where instead of the local change that would be sufficient, large parts of the codebase are fully rewritten for no apparent reason.</p>
 <p>OK, now it runs in Python:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% python autorespond-mcp-server.py
 </span></span><span class="line"><span class="cl"><span class="o">[</span>04/29/25 10:34:06<span class="o">]</span> INFO     Starting server <span class="s2">&#34;Autorespond API&#34;</span>...          
@@ -222,7 +222,7 @@ But I have seen sessions like these where instead of the local change that would
 It kind of works. But it did not understand that the authorization is in ENV variables. In the earlier version it did, by the way.
 Now it thinks the authorization is an additional API parameter, and it then starts to hallucinate the actual values there.
 It randomly generates API keys, quite amusing in fact.</p>
-<p>We tell it to regenerate the code with the note</p>
+<p>We tell it to regenerate the code with the note:</p>
 <blockquote>
 <p>The admin key and api key are environment variables. Rewrite the code.</p></blockquote>
 <p>Now it works, as this Claude screenshot of a conversation shows:</p>
@@ -231,6 +231,10 @@ It randomly generates API keys, quite amusing in fact.</p>
 And some of the calls don&rsquo;t work, which seems related to the interpretation of the Autorespond API doc.
 I am not an API specialist, but I have been told that this doc is generated from code annotations <a href="https://apidocjs.com/">https://apidocjs.com/</a>.
 I believe these days you would do it the other way around, like what we did with Kimwitu a couple of decades ago.</p>
+<p>Interestingly, Claude (the coder) decides to label certain calls as MPC resources, rather than tools.
+An example would be getting all the tags or groups.
+While this sounds fair, in Claude (the desktop), these will not be used unless explicitly added by the user.
+This means they are excluded from the reasoning that Claude can do.</p>
 <p>So far this took me a few hours, including the updates of my tooling, resulting in about 450 lines of code for the Autorespond MCP code.</p>
 <p>Up next. Giving better instructions on the coverage of the API. And, should we be writing some test cases?
 I have seen that explored in some of the meetups I visited recently. To do that well, we need a test instance of the Autorespond system.</p>
