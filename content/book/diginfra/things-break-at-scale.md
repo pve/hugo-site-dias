@@ -37,3 +37,5 @@ We'll cover that in another unit.
 Finally, scale does not only break hardware, but also organisations.
 For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
 When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks. 
+That introduces a lot of communication overhead.
+Without being compensated with economies of scale, this can make the task too expensive to do.

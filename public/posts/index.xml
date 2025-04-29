@@ -6,8 +6,18 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Apr 2025 06:03:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Apr 2025 08:39:55 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe coding an MCP</title>
+      <link>http://localhost:1313/posts/vibe-mcp/</link>
+      <pubDate>Sun, 27 Apr 2025 08:39:55 +0000</pubDate>
+      <guid>http://localhost:1313/posts/vibe-mcp/</guid>
+      <description>&lt;p&gt;Model Context Protocols (MCP, see &lt;a href=&#34;http://localhost:1313/posts/mcp-risk/&#34;&gt;my post on their security&lt;/a&gt;) are the new glue between humans, chatbots, and old school IT.&lt;/p&gt;
+&lt;p&gt;Here is the step by step approach that I followed to &amp;lsquo;&lt;a href=&#34;http://localhost:1313/posts/vibe-coding-real/&#34;&gt;vibe code&lt;/a&gt;&amp;rsquo; a Model Context Protocol server for my CRM and mailing list manager.&lt;/p&gt;
+&lt;p&gt;I journaled this description, so I have included most of the detours and false starts.
+For readability, I edited the description later, but the flow is as I went through it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Look at MCP now to be ahead of AI risk</title>
       <link>http://localhost:1313/posts/mcp-risk/</link>

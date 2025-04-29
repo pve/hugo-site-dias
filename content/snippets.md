@@ -12,7 +12,7 @@ Risk: LMS 3-2
 
 CERN data center
 
-verhaal over corporate en MKB
+verhaal over corporate en MKB, maar ook individual, en society.
 
 How technical debt works: negative investment externalities.
 
@@ -32,7 +32,7 @@ De shared services business case. Voorbeeld Haven ook (journal feb 2025). Lees o
 
 What is an API?
 
-Business case for automation (XKCD1205 explained)
+Business case for automation (XKCD1205 explained) !
 
 Style/format: everything is an engineering decision, and there are pros and cons to everything: e.g. flipside of concentration risk is complexity.
 
@@ -116,3 +116,5 @@ TSD. Promise theory; LMS CAE 3-1; LMS 5-45 slap aftreksel.
 Who owns data? can data be owned?
 
 Digital supply chain, 'stack'. Cloud supply chain. HOe ziet die er uit?
+
+power: "the website forces me to fill in this info first". " I can control what personal information is kept". 

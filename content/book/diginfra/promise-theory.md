@@ -136,9 +136,7 @@ Before that sentence was spoken, they were not married.
 
 That is why this is also called 'speech act theory': the statement acts upon our reality.
 
-
 Speech act theory: language controls a process, or creates a shared reality, each of which can be about information or about a physical process
-
 
 ”I promise to deliver your drink”
 ”I promise to deliver your virtual server”

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Vibe coding an MCP | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="Model Context Protocols (MCP, see my post on their security) are the new glue between humans, chatbots, and old school IT.
+Here is the step by step approach that I followed to &lsquo;vibe code&rsquo; a Model Context Protocol server for my CRM and mailing list manager.
+I journaled this description, so I have included most of the detours and false starts.
+For readability, I edited the description later, but the flow is as I went through it.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/vibe-mcp/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/vibe-mcp/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Vibe coding an MCP
+    </h1>
+    <div class="post-meta"><span title='2025-04-27 08:39:55 +0000 UTC'>April 27, 2025</span>
+
+</div>
+  </header> 
+
+  
+  <i>⏳ 6 min read</i>
+  
+  <div class="post-content"><p>Model Context Protocols (MCP, see <a href="/posts/mcp-risk/">my post on their security</a>) are the new glue between humans, chatbots, and old school IT.</p>
+<p>Here is the step by step approach that I followed to &lsquo;<a href="/posts/vibe-coding-real/">vibe code</a>&rsquo; a Model Context Protocol server for my CRM and mailing list manager.</p>
+<p>I journaled this description, so I have included most of the detours and false starts.
+For readability, I edited the description later, but the flow is as I went through it.</p>
+<p>The CRM system is called <a href="https://www.autorespond.nl">Autorespond</a>, and the description of the API is <a href="https://api.e-act.nl/api/apidocs/index.html">here</a>.
+The API doc is not in any standard format, but I had Claude Pro convert it to Markdown using the <code>fetch</code> MCP.
+I also uploaded the doc to <a href="https://context7.com">context7</a>, an API documentation site for LLMs, but since Claude already had it in its context, I did not pursue that further, for the moment.</p>
+<p>With that, I asked Claude:</p>
+<blockquote>
+<p>What do you need to know in order to write an pilot Model Context Protocol server in Python for retrieving the tags in an Autorespond administration?</p></blockquote>
+<p>It basically started reasoning and immediately writing code.
+However, it was clear that it did not really have a clue on MCP, not surprising, since MCP was introduced just a couple of months ago.</p>
+<p>I told it the doc could be found on <a href="https://github.com/modelcontextprotocol/python-sdk">github</a>, which it downloaded partially (because of robots.txt limitation).
+It then basically parroted that documentation to create similar code for Autorespond.</p>
+<p>I manually put the resulting code in a new git repo, though I could probably ask some AI assistant to do that for me.</p>
+<p>In my workflow I like to set up a virtual environment based off a <code>requirements.txt</code> file.
+I did not get that, so I wrote that myself.
+However, as we see later, there is a more modern approach.</p>
+<p>After fixing that, it runs, but throws an error</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Mismatch between URI parameters set() and function parameters {&#39;ctx&#39;}
+</span></span></code></pre></div><p>Throwing the error message into Claude, and it changes two lines in the Python code to make this work.
+Of course, I did a git commit before replacing the Python code.</p>
+<p>Then I got a bit lost in the usage of <code>uv</code> in relation to registering this MCP at Claude desktop.
+This is the new Python package manager, and it seems to be the default for almost all MCP server installations.
+My Python instructor friend regards it very highly.
+It appears that I did not have that setup done well.</p>
+<p>The main benefit of <code>uv</code> here seems to be that it isolates the execution of a specific version of Python and its libraries.
+You could use <code>venv</code> for that, but since the MCP runs from the context of Claude desktop, I am not sure if that would work well enough.
+No time to figure that out, just follow the herd.
+Another way of doing that is through the use of Docker, which isolates the code further.
+I do that for most external MCPs, but for a local development I consider this good enough.</p>
+<p>Rebuilding the virtual environment with <code>uv</code> worked a bit better, though I still have limited understanding of it.
+Here is a snippet from the Claude config.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">      <span class="s2">&#34;command&#34;</span><span class="err">:</span> <span class="s2">&#34;uv&#34;</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;args&#34;</span><span class="err">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;--directory&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;/Users/peter/Documents/-----/AutorespondMCP/&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;run&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;autorespond-mcp-server.py&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;env&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;AUTORESPOND_ADMIN_ID&#34;</span><span class="p">:</span> <span class="s2">&#34;***&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;AUTORESPOND_API_KEY&#34;</span><span class="p">:</span> <span class="s2">&#34;***&#34;</span>
+</span></span></code></pre></div><p>The good news is: the generated code runs.
+The bad news is: setting up the package manager takes a bit more time.
+The ugly: I should have set up environment secrets first, instead of hard coding them in the code.</p>
+<p>We can now start to use the MCP server in Claude, but it looks like it hallucinates a few of the search functions.
+It makes up function uses that are not in the Autorespond API, which therefore fail.</p>
+<p>So I asked it to enumerate the read-only functions, which reduces the number of hallucinated functions.
+It then still does not quite understand parameters in the MCP context.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">ValueError: Mismatch between URI parameters set() and function parameters {&#39;email&#39;}
+</span></span></code></pre></div><p>Sounds like it is time to tell Claude how MCP really works.</p>
+<p>Off to a fresh start, with a new git repo, and a new Claude context window.
+This time Context7 sounds like the proper way to ingest up to date libraries.</p>
+<p>Autorespond was easy, I put it there myself.
+For the Python SDK it took a detour, but it managed to find the doc through <code>/modelcontextprotocol/python-sdk</code>.</p>
+<p>Back to <code>uv</code>.
+This time around, this seems to be the best workflow for starting a new repo, even with VScode.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uv init
+</span></span><span class="line"><span class="cl">uv add <span class="s2">&#34;mcp[cli]&#34;</span> httpx
+</span></span></code></pre></div><p>Claude gave the correct uv steps.</p>
+<p>Still, this error comes back:
+<code>ValueError: Mismatch between URI parameters set() and function parameters {'ctx'}</code></p>
+<p>Claude still does not get it. So I told it:</p>
+<blockquote>
+<p>the problem is more generic. Here is the next message:
+ValueError: Mismatch between URI parameters set() and function parameters {&lsquo;api_key&rsquo;, &lsquo;admin_id&rsquo;}
+please check for all potential mismatches.</p></blockquote>
+<p>Claude kind of fixed it, but it appeared it did not understand the <code>fastmcp</code> library, which is referred to in the Python MCP SDK.
+I had it include that from Context7.</p>
+<p>It is tempting to try and fix the few lines of code that needed to be changed in my MCP server program.
+However, one of my software engineering rules is that you don&rsquo;t manually fix automatically generated code.</p>
+<p>So we <code>git commit</code> the Python code, and then <em>replace</em> it with a new version.
+From the git diffs we can see that the changes are indeed quite local.
+But I have seen sessions like these where instead of the local change that would be sufficient, large parts of the codebase are fully rewritten.</p>
+<p>OK, now it runs in Python:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">% python autorespond-mcp-server.py
+</span></span><span class="line"><span class="cl"><span class="o">[</span>04/29/25 10:34:06<span class="o">]</span> INFO     Starting server <span class="s2">&#34;Autorespond API&#34;</span>...          
+</span></span></code></pre></div><p>Let&rsquo;s look at how it runs in Claude.
+It kind of works. But it did not understand that the authorization is in ENV variables. In the earlier version it did, by the way.
+Now it thinks the authorization is an additional API parameter, and it then starts to hallucinate the actual values there.
+It randomly generates API keys, quite amusing in fact.</p>
+<p>We tell it to regenerate the code with the note</p>
+<blockquote>
+<p>The admin key and api key are environment variables. Rewrite the code.</p></blockquote>
+<p>Now it works, as this Claude screenshot of a conversation shows:</p>
+<p><img alt="screenshot" loading="lazy" src="/mcp-ar-image1.png"></p>
+<p>But it has forgotten certain API calls (invoices, orders).
+And some of the calls don&rsquo;t work, which seems related to the interpretation of the Autorespond API doc.
+I am not an API specialist, but I have been told that this doc is generated from code annotations <a href="https://apidocjs.com/">https://apidocjs.com/</a>.
+I believe these days you would do it the other way around, like what we did with Kimwitu a couple of decades ago.</p>
+<p>So far this took me a few hours, including the updates of my tooling, resulting in about 450 lines of code for the Autorespond MCP code.</p>
+<p>Up next. Giving better instructions on the coverage of the API. And, should we be writing some test cases?
+I have seen that explored in some of the meetups I visited recently. To do that well, we need a test instance of the Autorespond system.</p>
+<p>Stay tuned&hellip;</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
