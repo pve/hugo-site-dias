@@ -6,8 +6,18 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Apr 2025 07:41:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Apr 2025 10:48:42 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Great Introduction to Zero Trust</title>
+      <link>http://localhost:1313/posts/great-introduction-to-zero-trust/</link>
+      <pubDate>Wed, 30 Apr 2025 10:48:42 +0000</pubDate>
+      <guid>http://localhost:1313/posts/great-introduction-to-zero-trust/</guid>
+      <description>&lt;p&gt;“Project Zero Trust” is a business novel by George Finney. It talks about an emerging approach to IT and Cybersecurity that attempts to reduce cyberrisk in a more fundamental way.
+Zero Trust is a bit of a hype in IT these days, and both product companies and knowledge agencies are dropping lots of papers on this. But this book is in another game.&lt;/p&gt;
+&lt;p&gt;What I like about it is that it paints a reasonably realistic picture of a modern enterprise, including the information technology choices that it makes. This serves as a good backdrop to a variety of Zero Trust initiatives, which are described in a bit of detail.
+As an instructor I find that most of the vendor neutral training material out there lacks specific examples. This makes it hard for students to anchor the abstract concepts that they are fed to a realistic environment with some resemblance to their job situation.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Key Knowledge Gaps in Cloud Security and How to Address Them</title>
       <link>http://localhost:1313/posts/key-knowledge-gaps-in-cloud-security/</link>
