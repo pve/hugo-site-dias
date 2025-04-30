@@ -1,6 +1,6 @@
 ---
 date: '2025-04-25T21:21:54Z'
-draft: true
+draft: false
 title: 'Promise Theory'
 weight: 10
 ---
@@ -144,5 +144,3 @@ Speech act theory: language controls a process, or creates a shared reality, eac
 ## Coming up
 
 What if a promise is not kept?
-
-Rooted in Deontic logic (obligations, commitments, permissions)

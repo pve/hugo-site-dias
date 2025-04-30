@@ -1,7 +1,7 @@
 ---
 date: '2025-04-30T10:56:37Z'
 draft: false
-title: 'Saas Security Simple Checklist'
+title: 'Saas Security: a Simple Checklist'
 weight: 10
 ---
 

@@ -4,6 +4,10 @@ draft: true
 title: 'Snippets'
 ---
 
+Altijd bedenken: is er iets dat recent bij een klant is geweest?
+
+Heel veel NTS bij de logs van recente trainingen en workshops.
+
 Wat is server en client? Bij X is bijvoorbeeld de server op de client.
 
 Oh ja, die discussie. Ben je verantwoordelijk als je onveilige software maakt, of alleen als je die als service beschikbaar stelt?
