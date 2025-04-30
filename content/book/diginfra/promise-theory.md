@@ -127,7 +127,7 @@ We can dive a little deeper into what such a promise means.
 In all our examples, messages were exchanged between actors.
 These messages control a process of interaction, and in that interaction, a shared reality is created.
 This sounds abstract, I know, so let's have an example.
-At a marriage, the magic sentence is: 
+At a marriage, the magic sentence is:
 >“I now pronounce you husband and wife”.
 
 What changed after that sentence is said?

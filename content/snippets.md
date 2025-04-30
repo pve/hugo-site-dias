@@ -118,3 +118,10 @@ Who owns data? can data be owned?
 Digital supply chain, 'stack'. Cloud supply chain. HOe ziet die er uit?
 
 power: "the website forces me to fill in this info first". " I can control what personal information is kept". 
+
+Infrastructuur is ook architectuur. Bijv: gedeelde diensten zoals directories en SDN.
+
+SLA= legally binding; SLO=objectives. 1-SLO = error budget
+NTS: uitgebreider verhaal over conference call >24 hours. Online War Room.
+NTS: 100% cpu utilization is bad for interactive, good for batch.
+NTS: strive for a single pane of glass, then add more stuff to integrate.

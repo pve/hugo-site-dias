@@ -19,13 +19,11 @@ group exec(server)[Execution environment]
 
     users:R --> L:fw
     fw:R --> L:app
-```    
+```
 
 We want to allow specific access for specific use cases and be explicit about it. However, to focus our efforts, it makes sense to also identify that our biggest risk is the exfiltration of a lot of those sensitive records: a data breach.
 
-
-
-# The allow rules
+## The allow rules
 
 Let’s begin with the ‘who.’ Who is accessing the information? The application in our example probably does authentication and authorization of users. Where do these come from, and how accurate is that information? Ideally, this comes from an up-to-date corporate directory, but even if it’s not, you can, for example, ask how quickly a departing user has their access revoked.
 
@@ -41,7 +39,7 @@ The ‘why’ stands for the business reason. In this case, our data is sensitiv
 
 How: One layer of enforcement of this would be in the application itself. In the Zero Trust jargon, we are putting a Policy Enforcement Point in the application logic.
 
-# The mirror allow rule
+## The mirror allow rule
 
 However, there is also another set of ‘allow rules’ that is often overlooked. I am tempted to call these the ‘mirror’ rules, but it is not a standard Zero Trust term.
 
@@ -61,18 +59,20 @@ Why is this access needed? As said earlier, any compute environment must be able
 
 How can this rule be enforced? One way would be at the outer perimeter of the network, although it is also conceivable to do it through a dedicated firewall or a (network) security group in a cloud environment.
 
-# What is the benefit here?
+## What is the benefit here?
 
 In this example we have looked at a specific case of data that we want to protect. The Zero Trust approach and the Kipling method led us to various options that we have. These options allow us to hammer out implicit trust in an existing application.
 
 The nice thing is that we can rate and rank these options based on their effectiveness, cost, and feasibility, all while focusing on one specific strategic asset that we want to protect. This is in stark contrast to a traditional approach where you start with strengthening the perimeter and just hope that this will have an impact on the one application that you want to protect first.
 
-# Implication for maturity
+And we all know: hope is not a strategy.
+
+## Implication for maturity
 
 What we can also illustrate with this story is that, even though we can start with an individual application, many of these controls will become better and cheaper if there is some maturity and shared services in the organization. Reliable user identities are helped by proper federated identity management. Fine grained network access rules are easier to do if there is more software defined networking.
 
-Maturity is an investment, but it pays off in cheaper, faster and better security. That is another tradeoff that this example illustrates.
+Maturity is an investment, and it pays off in cheaper, faster and better security. That is another tradeoff that this example illustrates.
 
-For more information on Zero Trust, visit https://cczt.clubcloudcomputing.com 
+For more information on Zero Trust, visit <https://cczt.clubcloudcomputing.com>
 
-Also published at https://www.linkedin.com/pulse/retrofitting-zero-trust-existing-application-peter-hj-van-eijk-zjpte 
+Also published at <https://www.linkedin.com/pulse/retrofitting-zero-trust-existing-application-peter-hj-van-eijk-zjpte>
