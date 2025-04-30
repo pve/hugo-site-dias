@@ -6,7 +6,7 @@ weight: 10
 ---
 Model Context Protocols (MCP, see [my post on their security](/posts/mcp-risk/)) are the new glue between humans, chatbots, and old school IT.
 
-Here is the step by step approach that I followed to '[vibe code](/posts/vibe-coding-real/)', a Model Context Protocol server for my CRM and mailing list manager.
+Here is the step by step approach that I followed to '[vibe code](/posts/vibe-coding-real/)' a Model Context Protocol server for my CRM and mailing list manager.
 
 I journaled this description, so I have included most of the detours and false starts.
 For readability, I edited the description later, but the flow is as I went through it.

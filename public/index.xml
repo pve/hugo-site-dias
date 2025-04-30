@@ -38,7 +38,7 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
       <pubDate>Sun, 27 Apr 2025 08:39:55 +0000</pubDate>
       <guid>http://localhost:1313/posts/vibe-mcp/</guid>
       <description>&lt;p&gt;Model Context Protocols (MCP, see &lt;a href=&#34;http://localhost:1313/posts/mcp-risk/&#34;&gt;my post on their security&lt;/a&gt;) are the new glue between humans, chatbots, and old school IT.&lt;/p&gt;
-&lt;p&gt;Here is the step by step approach that I followed to &amp;lsquo;&lt;a href=&#34;http://localhost:1313/posts/vibe-coding-real/&#34;&gt;vibe code&lt;/a&gt;&amp;rsquo;, a Model Context Protocol server for my CRM and mailing list manager.&lt;/p&gt;
+&lt;p&gt;Here is the step by step approach that I followed to &amp;lsquo;&lt;a href=&#34;http://localhost:1313/posts/vibe-coding-real/&#34;&gt;vibe code&lt;/a&gt;&amp;rsquo; a Model Context Protocol server for my CRM and mailing list manager.&lt;/p&gt;
 &lt;p&gt;I journaled this description, so I have included most of the detours and false starts.
 For readability, I edited the description later, but the flow is as I went through it.&lt;/p&gt;</description>
     </item>
@@ -100,8 +100,7 @@ You can extend Claude or OpenAI desktop with MCP servers, which are basically sm
       <link>http://localhost:1313/book/diginfra/things-break-at-scale/</link>
       <pubDate>Wed, 16 Apr 2025 21:16:12 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/things-break-at-scale/</guid>
-      <description>&lt;p&gt;date: &amp;lsquo;2008-07-02T14:02:00&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;Computers are terribly reliable, in general. Today&amp;rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.&lt;/p&gt;
+      <description>&lt;p&gt;Computers are terribly reliable, in general. Today&amp;rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.&lt;/p&gt;
 &lt;p&gt;In the early days of Google growth I read an &lt;a href=&#34;https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/&#34;&gt;article about their error numbers&lt;/a&gt;
 (a Google cluster has several thousands of machines):&lt;/p&gt;
 &lt;blockquote&gt;
@@ -486,14 +485,6 @@ Instead, the word global is used to mean all nations, including the US.&lt;/p&gt
       <description>&lt;h3 id=&#34;building-our-own-cloud-kootwijk-rethinking-digital-sovereignty&#34;&gt;Building Our Own Cloud Kootwijk: Rethinking Digital Sovereignty&lt;/h3&gt;
 &lt;p&gt;In the Netherlands, we are currently engaged in a heated debate about the undesirable dominance of big tech, particularly over a significant portion of the digital infrastructure of the Dutch government. This includes email, file storage, and many other forms of digital storage and processing—most of which are handled by American big tech companies.&lt;/p&gt;
 &lt;p&gt;I am sure a similar debate is going on in many other countries.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Preface</title>
-      <link>http://localhost:1313/book/preface/preface/</link>
-      <pubDate>Sun, 02 Mar 2025 22:00:32 +0000</pubDate>
-      <guid>http://localhost:1313/book/preface/preface/</guid>
-      <description>&lt;p&gt;This book has been more than thirty years in the making.
-The two main reasons for that, as I look back on that now, are that the field of Information Technology has been developing incredibly rapidly, and that I did not see the opportunity within my business to create a focus for which writing a book would make business sense. And if I did, the focus never seemed to last very long.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
