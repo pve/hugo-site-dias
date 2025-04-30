@@ -6,8 +6,21 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Apr 2025 10:48:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Apr 2025 10:56:37 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Saas Security Simple Checklist</title>
+      <link>http://localhost:1313/posts/saas-security-simple-checklist/</link>
+      <pubDate>Wed, 30 Apr 2025 10:56:37 +0000</pubDate>
+      <guid>http://localhost:1313/posts/saas-security-simple-checklist/</guid>
+      <description>&lt;p&gt;The security of your SaaS cloud solutions starts with the review of three major areas. Practically all companies are using SaaS providers in one way or another.
+SaaS includes Services such as Trello for project management, Microsoft 365, and e.g. specialized solutions for marketing intelligence services. The sky is the limit. Most companies using are using hundreds of SaaS solutions.&lt;/p&gt;
+&lt;p&gt;Here are 3 tips to start with.&lt;/p&gt;
+&lt;h2 id=&#34;maturity-match&#34;&gt;Maturity match&lt;/h2&gt;
+&lt;p&gt;The first thing to worry about is if the maturity of the provider matches your risk appetite. Are they good enough for your use case?
+If you are working with a mission-critical SaaS solution, you want to make sure that the provider is mature. You can start finding out if that is the case is by looking at their certifications. An example could be the ISO 27000 series certification for IT risk management, or similar. Most mature cloud providers have dozens of certifications. On the other end of the spectrum, you may want to work with a provider that is not so mature, but that is delivering a very innovative solution of great business benefit to your company. That benefit, that competitive edge, may warrant a greater risk appetite.
+So start with that maturity match first.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Great Introduction to Zero Trust</title>
       <link>http://localhost:1313/posts/great-introduction-to-zero-trust/</link>
