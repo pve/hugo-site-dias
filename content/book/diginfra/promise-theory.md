@@ -8,7 +8,7 @@ Digital infrastructures are about services, not products.
 It can be elusive to describe these services, and specifically, how to describe the somewhat loose interaction between the service providers and the service consumers.
 
 Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
-Introduced by Mark Burgess and others, it is about how autonomous actors work together.
+Introduced by Mark Burgess and others, it is about how autonomous agents work together.
 It helped me a lot in getting a handle on various distributed systems.
 There was this project where we envisioned a scalable travel information system with what we now call microservices.
 We needed to describe how these parts work together.
@@ -20,7 +20,7 @@ Let's start with the basics, and we'll cover some of the background details late
 Imagine you are in a café or restaurant, and you wish to avail yourself of the service to order a beverage.
 You have the attention of the waiter, and you politely ask them for a coffee. The waiter responds with a 'yes, by all means' statement. After a while, the waiter returns with the coffee and says: 'there you go', to which you reply: 'thank you!'
 
-This is a transaction between two autonomous actors. Both have the option to not participate.
+This is a transaction between two autonomous agents. Both have the option to not participate.
 
 Now what is really going on here?
 
@@ -55,7 +55,7 @@ It is the exact same flow of messages, although there may be more detail involve
 
 In our example, we have humans trading with humans.
 But the same principles hold between humans and machines, machines and other machines, as well as between organisations and machines.
-The core idea is that we are describing how actors transact.
+The core idea is that we are describing how agents transact.
 
 Once we understand and describe the essence of such a transaction, we can automate it without changing the meaning.
 That is a very powerful insight in a cyber world.
@@ -124,7 +124,7 @@ I had a rap song produced from it.
 ## Semantics
 
 We can dive a little deeper into what such a promise means.
-In all our examples, messages were exchanged between actors.
+In all our examples, messages were exchanged between agents.
 These messages control a process of interaction, and in that interaction, a shared reality is created.
 This sounds abstract, I know, so let's have an example.
 At a marriage, the magic sentence is:
@@ -135,12 +135,41 @@ Legally, these people are now married, which creates a whole new world of possib
 Before that sentence was spoken, they were not married.
 
 That is why this is also called 'speech act theory': the statement acts upon our reality.
+In the theory this example is a 'performative' or 'declarative' statement.
 
-Speech act theory: language controls a process, or creates a shared reality, each of which can be about information or about a physical process
+This view of messages helps us see how our interaction is a shared reality between the agents, and can actually control that shared reality.
+That reality can be about the physical world, as in our coffee example, or it can be about the legal world that we use to control the physical world, as in our matrimonial example.
+It can also be about the information world, such as access rights to data, or control over a virtual server.
 
-- ”I promise to deliver your drink”
-- ”I promise to deliver your virtual server”
+The beauty of this is that we have a lean and unifying framework that ties together services, contracts, resources, control, human and machine communication.
 
-## Coming up
+## Tool in automation
 
-What if a promise is not kept?
+Because we have this common language, we can now use this to describe an interaction process between humans, and then talk about how to automate that interaction.
+The agents can change from man to machine without the promises changing.
+We'll have some examples of that elsewhere.
+
+## Contracting
+
+In the above we have assumed that the promises just exist, fixed and immutable.
+But we can also apply the theory and language to the creation and modification of these sets of promises.
+
+How does the customer know that they can ask for coffee, not to mention being confident that they will not be charged outrageously?
+
+That is because the café has a large blackboard on the wall that effectively says:
+
+>We promise that, if you ask us to promise to bring you coffee, we will do so, under a set of conditions.
+
+And there are a lot of conditions. The price is just one of them.
+The conditions aren't all set by the café.
+They can also originate from civil law, for example, or local municipality regulations.
+
+By the way, in promise theory you can never ask an agent to do something.
+You can only ask them to *promise* to do something.
+
+In this scenario, you enter into a contract implicitly the moment that you place your order.
+If you only order a single coffee, there is not much distinction between the contract and the order.
+But if you are in a multicourse meal in a restaurant, it is different.
+You have a contract when you accept the table.
+Then there will typically be a sequence of food and beverage orders that will be rolled up into a single payment.
+Typically.

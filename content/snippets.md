@@ -132,4 +132,6 @@ NTS: strive for a single pane of glass, then add more stuff to integrate.
 
 
 Switching cost & https://en.wikipedia.org/wiki/Law_of_rent
+van: https://substack.com/home/post/p-160917692
 
+Jevons Paradox; Platform Scale  
