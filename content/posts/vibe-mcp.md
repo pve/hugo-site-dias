@@ -1,7 +1,7 @@
 ---
 date: '2025-04-27T08:39:55Z'
 draft: false
-title: 'Vibe coding an MCP'
+title: 'Vibe coding an MCP Server'
 weight: 10
 ---
 Model Context Protocols (MCP, see [my post on their security](/posts/mcp-risk/)) are the new glue between humans, chatbots, and old school IT.

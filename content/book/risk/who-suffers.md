@@ -6,6 +6,11 @@ weight: 10
 ---
 
 ## Who Suffers?
+I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
+For my phone and laptop it is easy: if I lose them, I suffer.
+
+## External victims
+
 who suffers? externalities.
 
 ## Assets

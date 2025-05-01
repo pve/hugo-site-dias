@@ -129,3 +129,7 @@ SLA= legally binding; SLO=objectives. 1-SLO = error budget
 NTS: uitgebreider verhaal over conference call >24 hours. Online War Room.
 NTS: 100% cpu utilization is bad for interactive, good for batch.
 NTS: strive for a single pane of glass, then add more stuff to integrate.
+
+
+Switching cost & https://en.wikipedia.org/wiki/Law_of_rent
+
