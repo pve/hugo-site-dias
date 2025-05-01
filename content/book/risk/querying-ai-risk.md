@@ -41,3 +41,7 @@ Base models, or foundational models, such as Llama, often get additional trainin
 The data used for that may well include proprietary or sensitive data.
 
 Then there are system prompts and additional data sources that are fed into those models, together with user input.
+
+## AI Vulnerabilities
+
+## Damage
