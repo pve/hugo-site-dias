@@ -2,7 +2,7 @@
 title: Why lawyers need to understand cloud
 date: '2018-05-03T13:54:48'
 draft: false
-weight: 40
+weight: 60
 ---
 
 Cloud is too important to leave to technical people.

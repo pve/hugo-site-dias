@@ -6,7 +6,7 @@
     <description>Recent content in Change and control on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Apr 2025 20:01:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 May 2025 08:07:42 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/change/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Change and Control</title>
@@ -50,6 +50,15 @@ By understanding how applying technology really works, you can be more effective
       <guid>http://localhost:1313/book/change/dhcp-automation/</guid>
       <description>&lt;p&gt;As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said &amp;ldquo;War is the continuation of diplomacy with different means&amp;rdquo;, we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.&lt;/p&gt;
 &lt;p&gt;My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine. You may remember that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technology architecture for non-techies</title>
+      <link>http://localhost:1313/book/change/new-skills-needed/</link>
+      <pubDate>Fri, 02 May 2025 08:07:42 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/new-skills-needed/</guid>
+      <description>&lt;p&gt;Understanding the technical architecture of digital infrastructures is critically important, in particular for &lt;em&gt;non-technical&lt;/em&gt; professionals.&lt;/p&gt;
+&lt;p&gt;I have spend more than a decade educating people on cloud security, for example through certifications such as the &lt;a href=&#34;https://www.clubcloudcomputing.com/ccsk/&#34;&gt;Certificate of Cloud Security Knowledge (CCSK)&lt;/a&gt;, organized by the Cloud Security Alliance (CSA), and the &lt;a href=&#34;https://www.clubcloudcomputing.com/ccsp/&#34;&gt;Certified Cloud Security Professional (CCSP)&lt;/a&gt;, as organized by (ISC)2.
+These bodies of knowledge cover a lot of ground, and most of it is related to digital infrastructures at scale.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why lawyers need to understand cloud</title>
