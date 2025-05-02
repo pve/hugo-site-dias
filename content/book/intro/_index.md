@@ -8,7 +8,10 @@ The internet is a _digital infrastructure at scale_. Let’s unpack that for a m
 
 It is _digital_, because it moves bits between devices.
 
-It is _at scale_, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers. (how many?) That is impressive technology, but what keeps that together is the _infrastructure_ part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.
+It is _at scale_, because it moves these bits between billions of devices ranging from websites to mobile phones to robot lawn mowers.
+Estimates are in the tens of billions of devices.
+That boils down to multiple devices per world inhabitant.
+That is impressive technology, but what keeps that together is the _infrastructure_ part of it. That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.
 
 Looking at it through the lens of infrastructures allows us to understand use cases, abuse cases, and how to define, build and manage things like the internet.
 
