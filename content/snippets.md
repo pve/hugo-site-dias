@@ -45,7 +45,7 @@ computable columns
 
 chaos engineering
 
-todo /2020/02/tutorial-cloud-native uitbouwen, opnieuw doen. Is een voorbeeld van (best)practices in uitbouwen van software. 
+todo /2020/02/tutorial-cloud-native uitbouwen, opnieuw doen. Is een voorbeeld van (best)practices in uitbouwen van software.
 
 De shared services business case
 
@@ -73,7 +73,7 @@ Uitlegegen: wat is agile, wanneer is scrum zinvol?
 
 Conway's law.
 
-Innovation loves decentralization, and then eats centralization for breakfast. Link to chaos theory, communication across scales and layers. Error budget 
+Innovation loves decentralization, and then eats centralization for breakfast. Link to chaos theory, communication across scales and layers. Error budget
 
 startups selling into enterprises.
 
@@ -81,7 +81,7 @@ premature scaling kills startups.
 
 Large enterprises have a momentum that overcomes the inefficiences of their burocracy.
 
-=-- Arcast: 
+=-- Arcast:
 Why centralize? Standardize, economies of scale, …
 Where to place power?
 Are markets decentral or not?
@@ -112,15 +112,15 @@ Rewrite NetworkAssessmentclosed.doc.
 
 Don't fix the toast, fix the toaster.
 
-Er zijn verschillende boeken over "Digital Power". 
+Er zijn verschillende boeken over "Digital Power".
 
-TSD. Promise theory; LMS CAE 3-1; LMS 5-45 slap aftreksel. 
+TSD. Promise theory; LMS CAE 3-1; LMS 5-45 slap aftreksel.
 
 Who owns data? can data be owned?
 
 Digital supply chain, 'stack'. Cloud supply chain. HOe ziet die er uit?
 
-power: "the website forces me to fill in this info first". " I can control what personal information is kept". 
+power: "the website forces me to fill in this info first". " I can control what personal information is kept".
 
 Infrastructuur is ook architectuur. Bijv: gedeelde diensten zoals directories en SDN.
 

@@ -6,7 +6,7 @@
     <description>Recent content in Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Apr 2025 20:30:57 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 May 2025 11:07:46 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/power/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Power</title>
@@ -31,7 +31,7 @@ Before we attempt to define power formally, let&amp;rsquo;s see how the word in 
 &lt;p&gt;From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Ethics of Power</title>
+      <title>The moral necessity of talking about power</title>
       <link>http://localhost:1313/book/power/ethics-of-power/</link>
       <pubDate>Thu, 24 Apr 2025 20:30:57 +0000</pubDate>
       <guid>http://localhost:1313/book/power/ethics-of-power/</guid>
@@ -41,6 +41,20 @@ I can feel that, and I can definitely feel that about the abuse of power.&lt;/p&
 &lt;p&gt;But does that make it unethical to talk about power?
 Power is everywhere, and conflict too. There is no society without a power structure.
 There are always differences of opinions in any group, if only to decide when to have lunch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Governance over IT, an example</title>
+      <link>http://localhost:1313/book/power/governance-example/</link>
+      <pubDate>Thu, 01 May 2025 11:07:46 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/governance-example/</guid>
+      <description>&lt;p&gt;Shared resources can lead to conflicts.
+If the capacity runs out, somebody will feel the pain at the expense of somebody else.
+This conflict will be resolved in one way or another.
+Without other arrangements, the stakeholder with the most power wins.
+This is not necessarily the best outcome for the organisation as a whole.&lt;/p&gt;
+&lt;p&gt;To illustrate this, I gave ChatGPT the following prompt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Write a business case story about the conflict over shared computing resources.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Positions of Power in IT</title>

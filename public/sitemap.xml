@@ -17,6 +17,24 @@
     <loc>http://localhost:1313/book/diginfra/</loc>
     <lastmod>2025-03-09T18:54:11+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/risk/querying-ai-risk/</loc>
+    <lastmod>2025-05-01T07:40:07+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/three-books-zero-trust/</loc>
+    <lastmod>2025-04-30T12:46:33+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/saas-security-simple-checklist/</loc>
+    <lastmod>2025-04-30T10:56:37+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/great-introduction-to-zero-trust/</loc>
+    <lastmod>2025-04-30T10:48:42+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/key-knowledge-gaps-in-cloud-security/</loc>
+    <lastmod>2025-04-30T07:41:35+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/vibe-mcp/</loc>
+    <lastmod>2025-04-27T08:39:55+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/book/diginfra/promise-theory/</loc>
     <lastmod>2025-04-25T21:21:54+00:00</lastmod>
   </url><url>
@@ -53,6 +71,9 @@
     <loc>http://localhost:1313/book/value/</loc>
     <lastmod>2025-03-09T18:54:18+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/diginfra/promise-theory-part2/</loc>
+    <lastmod>2025-04-30T15:30:36+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/book/power/ethics-of-power/</loc>
     <lastmod>2025-04-24T20:30:57+00:00</lastmod>
   </url><url>
@@ -74,11 +95,14 @@
     <loc>http://localhost:1313/book/risk/</loc>
     <lastmod>2025-03-09T18:54:30+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/book/power/positions-of-power-it/</loc>
-    <lastmod>2025-03-09T11:06:48+00:00</lastmod>
+    <loc>http://localhost:1313/book/power/governance-example/</loc>
+    <lastmod>2025-05-01T11:07:46+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/change/</loc>
     <lastmod>2025-04-07T22:04:09+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/power/positions-of-power-it/</loc>
+    <lastmod>2025-03-09T11:06:48+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/cases/</loc>
     <lastmod>2025-03-09T18:54:30+00:00</lastmod>
@@ -98,11 +122,11 @@
     <loc>http://localhost:1313/book/change/dhcp-automation/</loc>
     <lastmod>2025-04-04T14:20:26+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/book/change/lawyers-need-understand-tech/</loc>
-    <lastmod>2018-05-03T13:54:48+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/book/value/business-model-canvas-iaas/</loc>
     <lastmod>2014-11-15T11:18:17+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/change/new-skills-needed/</loc>
+    <lastmod>2025-05-02T08:07:42+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/diginfra/deployment-diagrams/</loc>
     <lastmod>2025-03-09T21:19:45+00:00</lastmod>
@@ -116,11 +140,14 @@
     <loc>http://localhost:1313/book/value/three-ways-to-go-cloud/</loc>
     <lastmod>2018-06-03T17:06:57+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/change/lawyers-need-understand-tech/</loc>
+    <lastmod>2018-05-03T13:54:48+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-25T21:21:54+00:00</lastmod>
+    <lastmod>2025-05-02T08:07:42+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-04-23T06:03:44+00:00</lastmod>
+    <lastmod>2025-04-30T12:46:33+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/power/powershift-disruption/</loc>
     <lastmod>2025-04-13T21:25:10+00:00</lastmod>
@@ -163,9 +190,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/how-can-we-achieve-autonomy/</loc>
     <lastmod>2025-03-02T22:04:34+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/book/preface/preface/</loc>
-    <lastmod>2025-03-02T22:00:32+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</loc>
     <lastmod>2025-02-28T14:15:21+00:00</lastmod>
