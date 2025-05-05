@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 May 2025 08:07:42 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 05:58:14 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -453,6 +453,29 @@ Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model f
 I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Promise Theory 3</title>
+      <link>http://localhost:1313/book/diginfra/promise-theory-part3/</link>
+      <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/promise-theory-part3/</guid>
+      <description>&lt;p&gt;origin story promise theory&lt;/p&gt;
+&lt;p&gt;suwinet
+reisplanner&lt;/p&gt;
+&lt;p&gt;design patterns&lt;/p&gt;
+&lt;p&gt;customer sevice, can I get a new app/user account&lt;/p&gt;
+&lt;p&gt;Q: Can I get a unique IP address?
+R: Here is your address, let me know when you are done with it&lt;/p&gt;
+&lt;p&gt;A: thank you, I am done with this address&lt;/p&gt;
+&lt;p&gt;Example IP addresses allocation
+&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image.png&#34;&gt;
+&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Example TCP/IP
+picture&lt;/p&gt;
+&lt;p&gt;Connect
+Q: can you reserve buffer space for a connection?
+R: yes we promise, here is your initial window size
+A: thank you, here is your initial window size&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Disruptive Technologies</title>
       <link>http://localhost:1313/book/power/powershift-disruption/</link>
       <pubDate>Sun, 13 Apr 2025 21:25:10 +0000</pubDate>
@@ -598,6 +621,18 @@ Instead, the word global is used to mean all nations, including the US.&lt;/p&gt
       <pubDate>Thu, 27 Feb 2025 09:09:43 +0000</pubDate>
       <guid>http://localhost:1313/posts/mermaid-example/</guid>
       <description>&lt;p&gt;A diagram should automagically appear here.&lt;/p&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;sequenceDiagram
+    actor Client
+    actor Provider
+    Client-&amp;gt;&amp;gt;Provider: Query
+    Note right of Provider: Please promise me to bring a drink
+    Provider-&amp;gt;&amp;gt;Client: Ack
+    Note right of Provider: I promise to bring you a drink in a short while
+    Provider-&amp;gt;&amp;gt;Client: Reply
+    Note right of Provider: Please promise me that you are satisfied and will pay
+    Client-&amp;gt;&amp;gt;Provider: Ack
+    Note right of Provider: I promise to pay you for the drink
+&lt;/pre&gt;
 &lt;pre class=&#34;mermaid&#34;&gt;%%  icons from https://iconify.design
 architecture-beta
     group api(Storage)[API]

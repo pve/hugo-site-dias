@@ -5,14 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>What are AI digital infrastructures? | Digital Infrastructures at Scale</title>
+<title>Promise Theory 3 | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="The AI landscape has many digital infrastructures.
-Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.
-A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.
-A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.">
+<meta name="description" content="Promise Theory 3 - Digital Infrastructures at Scale">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/digital-inf-ai/">
+<link rel="canonical" href="http://localhost:1313/book/diginfra/promise-theory-3/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -21,7 +18,7 @@ A trained model is the result of processing a lot of training data by a specific
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/digital-inf-ai/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/promise-theory-3/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,13 +56,6 @@ A trained model is the result of processing a lot of training data by a specific
 
     </style>
 </noscript>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
-<script>
-  mermaid.initialize({ 
-    startOnLoad: true,
-  });
-</script>
-
 </head>
 
 <body class="" id="top">
@@ -137,59 +127,24 @@ A trained model is the result of processing a lot of training data by a specific
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
-      What are AI digital infrastructures?
+      Promise Theory 3
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h1>
-    <div class="post-meta"><span title='2025-03-08 17:57:16 +0000 UTC'>March 8, 2025</span>
+    <div class="post-meta"><span title='2025-05-05 05:58:14 +0000 UTC'>May 5, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 2 min read</i>
-  
-  <div class="post-content"><p>The AI landscape has many digital infrastructures.</p>
-<p>Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.</p>
-<p>A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.</p>
-<p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.</p>
-<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
-<pre class="mermaid">block-beta
-
-space in space llm:2 space out space
-in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
-llm--&gt; out[&#34;Completion&#34;]
-
-style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-   
-</pre>
-<p>In cloud terms, we would call this Inferencing as a Service. In the NIST model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
-<p>This gives us the option to look for this on the market, or create a shared service inside an organisation or group of organisations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.</p>
-<p>More at: <a href="https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing">https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing</a></p>
-
-
-  </div>
   
 
 
 
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
 
@@ -197,19 +152,35 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/diginfra/promise-theory-part3/">&larr; Promise Theory 3</a>
+        <a href="/book/diginfra/elements-of-digitalinfrastructures/">&larr; Elements of the Digital World</a>
       
+      
+        
+        <a href="/book/diginfra/promise-theory/">Promise Theory &rarr;</a>
       
     </nav>
   
 
-
+  
 
   
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
   
 
   <footer class="post-footer">

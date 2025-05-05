@@ -6,7 +6,7 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Apr 2025 15:30:36 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 05:58:14 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
@@ -21,6 +21,13 @@
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise Theory 3</title>
+      <link>http://localhost:1313/book/diginfra/promise-theory-part3/</link>
+      <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/promise-theory-part3/</guid>
+      <description></description>
     </item>
     <item>
       <title>Promise Theory</title>

@@ -94,6 +94,20 @@ Our example coffee conversation now becomes:
 - Reply: Please promise me that you are satisfied and will pay
 - Ack: I promise to pay you for the drink
 
+```mermaid
+sequenceDiagram
+    actor Client
+    actor Provider
+    Client->>Provider: Query
+    Note right of Provider: Please promise me to bring a drink
+    Provider->>Client: Ack
+    Note right of Provider: I promise to bring you a drink in a short while
+    Provider->>Client: Reply
+    Note right of Provider: Please promise me that you are satisfied and will pay
+    Client->>Provider: Ack
+    Note right of Provider: I promise to pay you for the drink
+```
+
 ## Contracts are complementary promises
 
 Once we have this in place, contracts between agents now become really simple to express.

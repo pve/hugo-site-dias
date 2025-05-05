@@ -64,6 +64,13 @@ In getting this from the drawing board to actual production, promise theory turn
 
     </style>
 </noscript>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
+<script>
+  mermaid.initialize({ 
+    startOnLoad: true,
+  });
+</script>
+
 </head>
 
 <body class="" id="top">
@@ -214,6 +221,18 @@ An example would be: &ldquo;If you bring me a coffee, I will promise to pay you 
 <li>Reply: Please promise me that you are satisfied and will pay</li>
 <li>Ack: I promise to pay you for the drink</li>
 </ul>
+<pre class="mermaid">sequenceDiagram
+    actor Client
+    actor Provider
+    Client-&gt;&gt;Provider: Query
+    Note right of Provider: Please promise me to bring a drink
+    Provider-&gt;&gt;Client: Ack
+    Note right of Provider: I promise to bring you a drink in a short while
+    Provider-&gt;&gt;Client: Reply
+    Note right of Provider: Please promise me that you are satisfied and will pay
+    Client-&gt;&gt;Provider: Ack
+    Note right of Provider: I promise to pay you for the drink
+</pre>
 <h2 id="contracts-are-complementary-promises">Contracts are complementary promises<a hidden class="anchor" aria-hidden="true" href="#contracts-are-complementary-promises">#</a></h2>
 <p>Once we have this in place, contracts between agents now become really simple to express.
 They are a set of complementary conditional promises: &ldquo;If you do this, I will promise that&rdquo;.
@@ -314,8 +333,15 @@ Typically.</p>
 
   
 
+  
 
 
+
+  
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
   
 
   <footer class="post-footer">

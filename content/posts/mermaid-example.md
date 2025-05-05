@@ -1,10 +1,26 @@
 ---
 date: '2025-02-27T09:09:43Z'
-draft: false
+draft: true
 title: 'A mermaid diagram example'
 ---
 
 A diagram should automagically appear here.
+
+
+```mermaid
+sequenceDiagram
+    actor Client
+    actor Provider
+    Client->>Provider: Query
+    Note right of Provider: Please promise me to bring a drink
+    Provider->>Client: Ack
+    Note right of Provider: I promise to bring you a drink in a short while
+    Provider->>Client: Reply
+    Note right of Provider: Please promise me that you are satisfied and will pay
+    Client->>Provider: Ack
+    Note right of Provider: I promise to pay you for the drink
+```
+
 
 ```mermaid
 %%  icons from https://iconify.design

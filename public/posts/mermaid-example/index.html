@@ -8,6 +8,18 @@
 <title>A mermaid diagram example | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="A diagram should automagically appear here.
+sequenceDiagram
+    actor Client
+    actor Provider
+    Client-&gt;&gt;Provider: Query
+    Note right of Provider: Please promise me to bring a drink
+    Provider-&gt;&gt;Client: Ack
+    Note right of Provider: I promise to bring you a drink in a short while
+    Provider-&gt;&gt;Client: Reply
+    Note right of Provider: Please promise me that you are satisfied and will pay
+    Client-&gt;&gt;Provider: Ack
+    Note right of Provider: I promise to pay you for the drink
+
 %%  icons from https://iconify.design
 architecture-beta
     group api(Storage)[API]
@@ -158,6 +170,12 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       A mermaid diagram example
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h1>
     <div class="post-meta"><span title='2025-02-27 09:09:43 +0000 UTC'>February 27, 2025</span>
 
@@ -168,6 +186,18 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
   <i>⏳ 1 min read</i>
   
   <div class="post-content"><p>A diagram should automagically appear here.</p>
+<pre class="mermaid">sequenceDiagram
+    actor Client
+    actor Provider
+    Client-&gt;&gt;Provider: Query
+    Note right of Provider: Please promise me to bring a drink
+    Provider-&gt;&gt;Client: Ack
+    Note right of Provider: I promise to bring you a drink in a short while
+    Provider-&gt;&gt;Client: Reply
+    Note right of Provider: Please promise me that you are satisfied and will pay
+    Client-&gt;&gt;Provider: Ack
+    Note right of Provider: I promise to pay you for the drink
+</pre>
 <pre class="mermaid">%%  icons from https://iconify.design
 architecture-beta
     group api(Storage)[API]

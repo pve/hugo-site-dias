@@ -190,6 +190,18 @@ Some of the systems in the registry are AI-based. Indeed, we have AI to help che
       <pubDate>Thu, 27 Feb 2025 09:09:43 +0000</pubDate>
       <guid>http://localhost:1313/posts/mermaid-example/</guid>
       <description>&lt;p&gt;A diagram should automagically appear here.&lt;/p&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;sequenceDiagram
+    actor Client
+    actor Provider
+    Client-&amp;gt;&amp;gt;Provider: Query
+    Note right of Provider: Please promise me to bring a drink
+    Provider-&amp;gt;&amp;gt;Client: Ack
+    Note right of Provider: I promise to bring you a drink in a short while
+    Provider-&amp;gt;&amp;gt;Client: Reply
+    Note right of Provider: Please promise me that you are satisfied and will pay
+    Client-&amp;gt;&amp;gt;Provider: Ack
+    Note right of Provider: I promise to pay you for the drink
+&lt;/pre&gt;
 &lt;pre class=&#34;mermaid&#34;&gt;%%  icons from https://iconify.design
 architecture-beta
     group api(Storage)[API]
