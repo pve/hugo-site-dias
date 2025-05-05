@@ -14,6 +14,6 @@ Anytime we assume trust that is not warranted is also a risk.
 That is one of the core concepts of Zero Trust Security Architecture.
 
 Trust is an elusive concept, but I do have a couple of ways of looking at it that I have found very useful.
-One is from "the prisoner's dilema", which is a story from game theory.
+One is from "the Prisoner's Dilemma", which is a story from game theory.
 Another is "authority", which is related to that.
 
