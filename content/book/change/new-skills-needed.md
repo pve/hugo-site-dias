@@ -7,7 +7,7 @@ weight: 50
 
 Understanding the technical architecture of digital infrastructures is critically important, in particular for *non-technical* professionals.
 
-I have spend more than a decade educating people on cloud security, for example through certifications such as the [Certificate of Cloud Security Knowledge (CCSK)](<https://www.clubcloudcomputing.com/ccsk/>), organized by the Cloud Security Alliance (CSA), and the [Certified Cloud Security Professional (CCSP)](<https://www.clubcloudcomputing.com/ccsp/>), as organized by (ISC)2.
+I have spent more than a decade educating people on cloud security, for example through certifications such as the [Certificate of Cloud Security Knowledge (CCSK)](<https://www.clubcloudcomputing.com/ccsk/>), organized by the Cloud Security Alliance (CSA), and the [Certified Cloud Security Professional (CCSP)](<https://www.clubcloudcomputing.com/ccsp/>), as organized by (ISC)2.
 These bodies of knowledge cover a lot of ground, and most of it is related to digital infrastructures at scale.
 
 My students come from many different backgrounds, each bringing with them a unique set of experiences that color their understanding of the way the cloud is managed and controlled.
@@ -15,7 +15,7 @@ This is the reality in practice, because secure cloud adoption is a team sport w
 
 ## What is technology architecture?
 
-Architecture is often used to mean the overall structure of something, and technologoy architecture then describes how all kinds of technology components fit together.
+Architecture is often used to mean the overall structure of something, and technology architecture then describes how various technology components fit together.
 
 Cloud computing, in my opinion, does not have that much new technology. Most of the technology we have today was already in existence before the advent of cloud computing.
 Today, a common characteristic of the technologies that are relevant for cloud computing is the fact that they facilitate resource pooling and interconnection of systems.
