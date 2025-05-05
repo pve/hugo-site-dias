@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>&#39;Risks of digital infrastructures&#39; | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="
+While Artificial Intelligence, especially the generative type, is a really disruptive form of IT innovation, its risk management still follows the same basic principles.
+We just need to extend those principles to new forms of data and software.
+
+What are the assets?
+What are the vulnerabilities and threats to it?
+What is the damage that this can bring, realistically?
+
+So let&rsquo;s see how what the AI specifics are.
+AI Assets
+Let&rsquo;s focus on the AI assets that are the product of deep learning.
+Deep learning neural networks have represented a shift in AI technology.
+Before that, symbolic AI was more common.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/book/risk/chapter/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/risk/chapter/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
+<script>
+  mermaid.initialize({ 
+    startOnLoad: true,
+  });
+</script>
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/risk/">Risks of digital infrastructures</a></div>
+    <h1 class="post-title entry-hint-parent">
+      &#39;Risks of digital infrastructures&#39;
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+
+  
+  <i>⏳ 10 min read</i>
+  
+  <div class="post-content"><hr>
+<p>While Artificial Intelligence, especially the generative type, is a really disruptive form of IT innovation, its risk management still follows the same basic principles.
+We just need to extend those principles to new forms of data and software.</p>
+<ul>
+<li>What are the assets?</li>
+<li>What are the vulnerabilities and threats to it?</li>
+<li>What is the damage that this can bring, realistically?</li>
+</ul>
+<p>So let&rsquo;s see how what the AI specifics are.</p>
+<h2 id="ai-assets">AI Assets<a hidden class="anchor" aria-hidden="true" href="#ai-assets">#</a></h2>
+<p>Let&rsquo;s focus on the AI assets that are the product of deep learning.
+Deep learning neural networks have represented a shift in AI technology.
+Before that, symbolic AI was more common.</p>
+<p>The reason to elaborate on this is that there is a fundamental difference between symbolic AI and neural network AI.
+Symbolic AI works by following programmatic rules, and is fairly deterministic.
+Neural networks are the result of training with large datasets.
+They have enabled <em>generative AI</em> which is a lot less deterministic.</p>
+<p>Furthermore, and this is really significant from a security perspective, in its operation, GenAI mixes data and instruction to operate on that data deeply.</p>
+<p>For example, anything an external user inputs to the system as data, might also be interpreted as an instruction.
+This represents a huge vulnerability for hackers to exploit.</p>
+<p>The trained models represent a lot of information, and that information is often hard to identify, and therefore to see the classic information risks of.</p>
+<p>Models are effectively software: you stick data in them, and data comes out.
+But because they also embody a lot of data (we are talking Gigabytes, Terabytes, and beyond, of training data) they combine the risks of software with the risks of data.</p>
+<p>An AI system has a few more traditional and less traditional data assets associated with it.
+Base models, or foundational models, such as Llama, often get additional training or finetuning.
+The data used for that may well include proprietary or sensitive data.</p>
+<p>Then there are system prompts and additional data sources that are fed into those models, together with user input.</p>
+<h2 id="ai-vulnerabilities">AI Vulnerabilities<a hidden class="anchor" aria-hidden="true" href="#ai-vulnerabilities">#</a></h2>
+<h2 id="damage">Damage<a hidden class="anchor" aria-hidden="true" href="#damage">#</a></h2>
+<hr>
+<h2 id="who-suffers">Who Suffers?<a hidden class="anchor" aria-hidden="true" href="#who-suffers">#</a></h2>
+<p>I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
+For my phone and laptop it is easy: if I lose them, I suffer.</p>
+<h2 id="external-victims">External victims<a hidden class="anchor" aria-hidden="true" href="#external-victims">#</a></h2>
+<p>who suffers? externalities.</p>
+<h2 id="assets">Assets<a hidden class="anchor" aria-hidden="true" href="#assets">#</a></h2>
+<h2 id="vulnerabilities-and-threats">Vulnerabilities and threats<a hidden class="anchor" aria-hidden="true" href="#vulnerabilities-and-threats">#</a></h2>
+<p>(examples of all)</p>
+<p>To be continued.</p>
+<p>what other assets?</p>
+<hr>
+<p>Risk is the flip side of value. For everything that is of value, there can be circumstances endangering that value.</p>
+<p>Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.</p>
+<p>At the core of every risk assessment there is the thing we worry about the most: the &lsquo;<strong>asset</strong>&rsquo;.
+In a digital world, this is often the <strong>data</strong>. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.</p>
+<p>In information security, like the name implies, we mainly worry about the security of that data.</p>
+<p>It is common to distinguish between <em>availability</em>, <em>confidentiality</em>, and <em>integrity</em> risks. All of these can be a risk to the business.</p>
+<p>Business processes run on data, and if they are not, they can typically be improved by using more data. We cover that in more detail in another place.</p>
+<p>If the data is not available, the business process can suffer, and its value reduced.</p>
+<p>If the data leaks out, the business process can suffer, and its value reduced.</p>
+<p>If the data does not reflect the reality well enough, the business process can suffer, and its value reduced.</p>
+<p>Let&rsquo;s have a look at some examples.</p>
+<p>Your (mobile) phone is dependent on a network. If the network is not available, too far away, or congested, you have an availablity problem, and the usefulness of having a phone to communicate drops to zero.</p>
+<p>As another example consider a payment terminal: if it does not work, you can&rsquo;t pay, and probably not get what you wanted to buy.</p>
+<p>Confidentiality is about keeping data secret. Again, the examples are not too hard to find. There are probaly pictures on your phone that you do not want to share with the entire world.</p>
+<p>In a business context, you don&rsquo;t want your competitors to know about your plans and pricing strategies.</p>
+<p>Integrity means that the data is sufficiently accurate, complete, and consistent.</p>
+<p>For example, if customer order records are missing, they may not receive their products. Or they are not invoiced.
+That is a loss to the business.</p>
+<p>Search results (or AI chatbots for that matter) can also lack integrity, for example if they report in a biased way, or leave out important answers.</p>
+<p>Integrity is a more fluid concept than the others. What is quality data to somebody may be totally inaccurate for somebody else. Consider social media metrics such as &ldquo;likes&rdquo; and &ldquo;shares.&rdquo; A marketer might see a high number of likes as valuable data indicating effective audience engagement. Meanwhile, a data analyst focused on conversion rates might regard likes as less meaningful, prioritizing click-through data and sales metrics as more accurate indicators of campaign success. Thus, while the &rsquo;likes&rsquo; metric is accurate, its perceived quality and relevance differ based on business goals.</p>
+<hr>
+<hr>
+<p>Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.</p>
+<p>Consider this hypothetical situation.</p>
+<p>You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &lsquo;who&rsquo;, &lsquo;what&rsquo;, &lsquo;when&rsquo;, etcetera of allowed communication.</p>
+<pre class="mermaid">architecture-beta
+group exec(server)[Execution environment]
+    service users(cloud)[Cloud Users]
+    service fw[Firewall]
+    service app(database)[App] in exec
+
+
+    users:R --&gt; L:fw
+    fw:R --&gt; L:app
+</pre>
+<p>We want to allow specific access for specific use cases and be explicit about it. However, to focus our efforts, it makes sense to also identify that our biggest risk is the exfiltration of a lot of those sensitive records: a data breach.</p>
+<h2 id="the-allow-rules">The allow rules<a hidden class="anchor" aria-hidden="true" href="#the-allow-rules">#</a></h2>
+<p>Let’s begin with the ‘who.’ Who is accessing the information? The application in our example probably does authentication and authorization of users. Where do these come from, and how accurate is that information? Ideally, this comes from an up-to-date corporate directory, but even if it’s not, you can, for example, ask how quickly a departing user has their access revoked.</p>
+<p>Then the ‘what’. Which application and resources are we accessing? What are specific users allowed to do? As part of operational risk management, we have probably already identified who, based on their role, can modify records or do other critical actions. But think one step further. As our main fear is exfiltration of large amounts of data, we can look at where we can control that. Maybe we can disallow large downloads, for example, except when a timely ‘four eyes’ approval is in place.</p>
+<p>(By the way, I think it makes sense to look at large downloads as a risk separate from small data leaks. After all, many employees have access to small amounts of information, and that risk is typically already accepted).</p>
+<p>Moving on to the ‘when’. It can reduce risk to limit access to specific times of the day for most users. There is not necessarily a reason to allow more.</p>
+<p>Next is the ‘where’. Where are the users and the application located? Our case description does not give us a lot of information here. The application could be a server, which then has an IP address. And through a firewall combined with a geographical information feed, we may be able to restrict access to users based on their location.</p>
+<p>The ‘why’ stands for the business reason. In this case, our data is sensitive, and we don’t want it to be exfiltrated. And in our analysis, we have identified several possible controls.</p>
+<p>How: One layer of enforcement of this would be in the application itself. In the Zero Trust jargon, we are putting a Policy Enforcement Point in the application logic.</p>
+<h2 id="the-mirror-allow-rule">The mirror allow rule<a hidden class="anchor" aria-hidden="true" href="#the-mirror-allow-rule">#</a></h2>
+<p>However, there is also another set of ‘allow rules’ that is often overlooked. I am tempted to call these the ‘mirror’ rules, but it is not a standard Zero Trust term.</p>
+<p>The data and the application reside in a compute environment, for example a server. There may be malware running in that server. After all, one of the tenets of Zero Trust is ‘assume breach’. If the server has permission to access anything on the internet, that malware might easily exfiltrate large amounts of data.</p>
+<p>In addition to looking at the user accessing the data, we are looking at the place where the data resides and see if its compute environment can access the world, and thus exfiltrate data. This is the mirror image of the first rule: you could say that subject and target are switched around.</p>
+<p>We can apply the same Kipling method from the perspective of that server (or any compute environment that has the data in it). What is it allowed to do?</p>
+<p>The ‘who’ then is the server, and there are various ways to identify it, depending on how it is set up and how we want to control what it can do. It can be an IP address or domain name, for example.</p>
+<p>What can the server access? The more limited that is, the better. It should probably be capable of logging somewhere, but it needs only limited DNS and internet access. There are likely to be integrations with other systems, but these should be enumerated and controlled.</p>
+<p>When can the server initiate contact? This seems less relevant to restrict, because logging and many integrations can be operational at any time.</p>
+<p>Why is this access needed? As said earlier, any compute environment must be able to connect to certain other services for its functional operation. Yet that does not imply that it needs broad uncontrolled network access. And there are known cases of abusing overly permissive egress.</p>
+<p>How can this rule be enforced? One way would be at the outer perimeter of the network, although it is also conceivable to do it through a dedicated firewall or a (network) security group in a cloud environment.</p>
+<h2 id="what-is-the-benefit-here">What is the benefit here?<a hidden class="anchor" aria-hidden="true" href="#what-is-the-benefit-here">#</a></h2>
+<p>In this example we have looked at a specific case of data that we want to protect. The Zero Trust approach and the Kipling method led us to various options that we have. These options allow us to hammer out implicit trust in an existing application.</p>
+<p>The nice thing is that we can rate and rank these options based on their effectiveness, cost, and feasibility, all while focusing on one specific strategic asset that we want to protect. This is in stark contrast to a traditional approach where you start with strengthening the perimeter and just hope that this will have an impact on the one application that you want to protect first.</p>
+<p>And we all know: hope is not a strategy.</p>
+<h2 id="implication-for-maturity">Implication for maturity<a hidden class="anchor" aria-hidden="true" href="#implication-for-maturity">#</a></h2>
+<p>What we can also illustrate with this story is that, even though we can start with an individual application, many of these controls will become better and cheaper if there is some maturity and shared services in the organization. Reliable user identities are helped by proper federated identity management. Fine grained network access rules are easier to do if there is more software defined networking.</p>
+<p>Maturity is an investment, and it pays off in cheaper, faster and better security. That is another tradeoff that this example illustrates.</p>
+<p>For more information on Zero Trust, visit <a href="https://cczt.clubcloudcomputing.com">https://cczt.clubcloudcomputing.com</a></p>
+<p>Also published at <a href="https://www.linkedin.com/pulse/retrofitting-zero-trust-existing-application-peter-hj-van-eijk-zjpte">https://www.linkedin.com/pulse/retrofitting-zero-trust-existing-application-peter-hj-van-eijk-zjpte</a></p>
+
+
+  </div>
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+    <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
+      
+        
+        <a href="/book/risk/retrofitting-zero-trust-existing-application/">&larr; Retrofitting Zero Trust on an existing application: an illustration</a>
+      
+      
+    </nav>
+  
+
+
+
+  
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
