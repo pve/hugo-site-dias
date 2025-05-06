@@ -19,7 +19,7 @@ That was the detection phase, one of the phases of the NIST incident response pr
 
 ## Analysis and Eradication
 
-Now for the analysis and eradication phase. What the heck was going on? I had very little luck in getting the security programs to tell me what was wrong with the site. [www.virustotal.com](<http://www.virustotal.com>), which agregates reports from security providers, reported 1 hit by Yandex, though the diagnostics on their webmaster pages where vague. McAfee and Kaspersky did not seem to have any service that is helpful with this.
+Now for the analysis and eradication phase. What the heck was going on? I had very little luck in getting the security programs to tell me what was wrong with the site. [Virustotal](<http://www.virustotal.com>), which aggregates reports from security providers, reported 1 hit by Yandex, though the diagnostics on their webmaster pages were vague. McAfee and Kaspersky did not seem to have any service that is helpful with this.
 
 In the mean time, three more reports came in on the site, adding TrendMicro to the list of blockers.
 It took my site manager until Tuesday to fix it. Very disappointing. He also was not very communicative about the real underlying problem, other than that is was caused by a WordPress plugin that had not been updated. He did manage to restore the site and clean it. I think.
@@ -50,10 +50,10 @@ I have a backup running of this website. It is a WordPress plugin that dumps the
 
 In the end, having the site itself generate a backup is not sufficient. The advantage is that the backup should be easy to restore, but malware might take the backup software or its configuration as a first target. In fact, I suspect that in my case the malware created a few hundred thousand files, which clogged my DropBox synchronization. However, I could not finish the forensics on that.
 
-The site manager restored the site from a file system backup. I do not have access to that.
+The site manager restored the site from a file system backup. I did not have access to that.
 Externally spidering the website, and versioning it may be better. At any rate, this is a case for generating fully static websites.
 
-So, obviously the best direct preparations is regularly updating software and removing software you don’t need. Case in point: the malware was inserted into a piece of forum software that we never got to work properly. In the end we abandoned it in favor of a managed cloud solution (an e-learning platform).
+So, obviously the best direct preparation is regularly updating software and removing software you don’t need. Case in point: the malware was inserted into a piece of forum software that we never got to work properly. In the end we abandoned it in favor of a managed cloud solution (an e-learning platform).
 
 ## Cloud security reference model
 

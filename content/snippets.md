@@ -134,3 +134,14 @@ Switching cost & https://en.wikipedia.org/wiki/Law_of_rent
 van: https://substack.com/home/post/p-160917692
 
 Jevons Paradox; Platform Scale  
+
+Voorbeeld: https://www.surf.nl/nieuws/geant-kent-bedrag-van-230000-euro-toe-aan-initiatief-digitale-onderzoeksomgeving?utm_medium=email&utm_campaign=2025-05%20SURFmagazine%20NL&utm_kwd=gant-kent-bedrag-van-230000-euro-toe-aan-initiatief-digitale-onderzoeksomgeving-dre&utm_source=newsletter&utm_content=surf
+
+Eduroam, en aanverwante cases EDUVPN.
+
+NTS: why is there regulatory pressure.
+
+Who shapes the internet? https://almanac.article19.org/guess-who.html
+
+platforms such as market places. Kapper van een reveneu share platform naar een service platform. Het is maaar wie er macht heeft over een belangrijke asset.
+Voor de buurman pizzeria is het ietsje anders.
