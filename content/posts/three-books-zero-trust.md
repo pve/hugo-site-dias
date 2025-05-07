@@ -19,7 +19,7 @@ Here is my take on these three books that I feel complement each other nicely. I
 
 ## The Certificate of Competence in Zero Trust by the CSA (Cloud Security Alliance)
 
-The CCZT (Certificate of Competence in Zero Trust) is the first vendor neutral body of knowledge on ZT (Zero Trust).
+The [CCZT (Certificate of Competence in Zero Trust)](https://cczt.clubcloudcomputing.com) is the first vendor neutral body of knowledge on ZT (Zero Trust).
 
 Technically, it is not a book, but a set of study guides. As usual with CSA, the study guides are free downloads, and a large group of volunteers was involved in their making (including me).
 
@@ -95,4 +95,4 @@ All these books are relevant for the aspiring Zero Trust professional. The conce
 
 The books complement each other nicely, but even together still aren’t a roadmap to follow blindly. That is why I am looking forward to working with practitioners in my Zero Trust learning cohorts.
 
-[https://cczt.clubcloudcomputing.com](https://cczt.clubcloudcomputing.com)
+For more information on Zero Trust courses and programs, see [https://cczt.clubcloudcomputing.com](https://cczt.clubcloudcomputing.com).
