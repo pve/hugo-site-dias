@@ -7,12 +7,11 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Promise Theory | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Digital infrastructures are about services, not products.
-It can be elusive to describe these services, and specifically, how to describe the somewhat loose interaction between the service providers and the service consumers.
+<meta name="description" content="Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.
 Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
 Introduced by Mark Burgess and others, it is about how autonomous agents work together.
 It helped me a lot in getting a handle on various distributed systems.
-There was this project where we envisioned a scalable travel information system with what we now call microservices.
+There was this project where we designed a scalable travel information system with what we now call microservices.
 We needed to describe how these parts work together.
 And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
 In getting this from the drawing board to actual production, promise theory turned out to be a great tool.">
@@ -152,25 +151,24 @@ In getting this from the drawing board to actual production, promise theory turn
   
   <i>⏳ 9 min read</i>
   
-  <div class="post-content"><p>Digital infrastructures are about services, not products.
-It can be elusive to describe these services, and specifically, how to describe the somewhat loose interaction between the service providers and the service consumers.</p>
+  <div class="post-content"><p>Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.</p>
 <p>Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
 Introduced by Mark Burgess and others, it is about how autonomous agents work together.
 It helped me a lot in getting a handle on various distributed systems.
-There was this project where we envisioned a scalable travel information system with what we now call microservices.
+There was this project where we designed a scalable travel information system with what we now call microservices.
 We needed to describe how these parts work together.
 And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
 In getting this from the drawing board to actual production, promise theory turned out to be a great tool.</p>
 <p>Let&rsquo;s start with the basics, and we&rsquo;ll cover some of the background details later.</p>
 <p>Imagine you are in a café or restaurant, and you wish to avail yourself of the service to order a beverage.
-You have the attention of the waiter, and you politely ask them for a coffee. The waiter responds with a &lsquo;yes, by all means&rsquo; statement. After a while, the waiter returns with the coffee and says: &rsquo;there you go&rsquo;, to which you reply: &rsquo;thank you!&rsquo;</p>
+You have the attention of the waiter, and you politely ask them for a coffee. The waiter responds with a &ldquo;yes, by all means&rdquo; statement. After a while, the waiter returns with the coffee and says &ldquo;there you go&rdquo;, to which you reply &ldquo;thank you!&rdquo;</p>
 <p>This is a transaction between two autonomous agents. Both have the option to not participate.</p>
 <p>Now what is really going on here?</p>
 <p>Our question to the waiter is really a request for a commitment.
 We want the waiter to commit to delivering us the coffee.
-The &lsquo;yes, by all means&rsquo; statement amounts to an acceptance of this commitment.
-Once the coffee is there, the statement &rsquo;there you go&rsquo; in fact signifies a request to be acquitted of the earlier commitment, that is to say: a declaration that the commitment is fulfilled.
-And once we say &rsquo;thank you&rsquo;, we have answered to that acquittal request, and stated that there are no more open commitments.</p>
+The &ldquo;yes, by all means&rdquo; statement amounts to an acceptance of this commitment.
+Once the coffee is there, the statement &ldquo;there you go&rdquo; in fact signifies a request to be acquitted of the earlier commitment, that is to say: a declaration that the commitment is fulfilled.
+And once we say &ldquo;thank you&rdquo;, we have answered to that acquittal request, and stated that there are no more open commitments.</p>
 <p>This basic interaction is an enormously universal pattern as we will see, and it can be used to describe interactions on many levels.
 I have examples ranging from technical internet protocols to the organisation of service management and legal contracts.</p>
 <p>But before we move on, I&rsquo;ll have to discuss some variations that allow you to see how universal the pattern is.</p>
@@ -178,7 +176,7 @@ I have examples ranging from technical internet protocols to the organisation of
 <li>Some of the steps can be combined, or are implicit.</li>
 <li>The two steps by the provider can be combined if there is little time delay between them.</li>
 <li>The final acquittal can be implicit.</li>
-<li>What we have described is the &lsquo;happy path&rsquo;. Alternative messages are also possible. The waiter can refuse the request: &lsquo;we ran out of coffee unfortunately&rsquo;. We may not accept the drink: &lsquo;could you make that an iced latte, please&rsquo;.</li>
+<li>What we have described is the &ldquo;happy path&rdquo;. Alternative messages are also possible. The waiter can refuse the request: &ldquo;we ran out of coffee unfortunately&rdquo;. We may not accept the drink: &ldquo;could you make that an iced latte, please&rdquo;.</li>
 </ul>
 <p>Another point to make is that these transactions are often part of a bigger picture.
 For example, once we accept the coffee, we are making an implicit promise to pay for it, at some later stage.
@@ -197,10 +195,10 @@ That is a very powerful insight in a cyber world.
 As an organisation, we want to have machines service our customers.
 And as customers, we don&rsquo;t seem to mind talking to a website as a substitute to talking to an organisation.</p>
 <p>In the course of the 20th century, most countries completed the automation of their telephone systems.
-Requesting a call through an operator was replaced by &lsquo;direct dialling&rsquo;, or self-service as we would call it in other situations.
+Requesting a call through an operator was replaced by &ldquo;direct dialling&rdquo;, or self-service as we would call it in other situations.
 As late as the 1970s there were destinations you could not directly dial, even in developed countries.</p>
 <p>But the principle of setting up a call is the same, whether you ask a human or a machine.
-It starts with &lsquo;please connect me with this number&rsquo;.
+It starts with &ldquo;please connect me with this number&rdquo;.
 And the general promise, the commitment, of the telecommunications company remains to do that, irrespective of the technology.</p>
 <h2 id="what-is-a-promise">What is a promise?<a hidden class="anchor" aria-hidden="true" href="#what-is-a-promise">#</a></h2>
 <p>According to <a href="https://www.oreilly.com/library/view/designing-delivery/9781491903742/">Jeff Sussna</a>, a promise is &ldquo;&hellip; a strongly stated intention to provide a service, which may or may not be kept&rdquo;.
@@ -238,8 +236,8 @@ An example would be: &ldquo;If you bring me a coffee, I will promise to pay you 
 They are a set of complementary conditional promises: &ldquo;If you do this, I will promise that&rdquo;.
 In our example this looks like the following.</p>
 <ul>
-<li>If you promise to pay me, I will promise to bring you coffee.</li>
-<li>If you promise to bring me coffee, I will promise to pay you.</li>
+<li>&ldquo;If you promise to pay me, I will promise to bring you coffee.&rdquo;</li>
+<li>&ldquo;If you promise to bring me coffee, I will promise to pay you.&rdquo;</li>
 </ul>
 <p>If one party does not keep its end of the bargain, the other party is free to witdraw from their part of the deal.
 Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
@@ -253,7 +251,7 @@ We will discuss later how we can model trust and trust violations.</p>
 <p>One way to sum it up is by this question:</p>
 <blockquote>
 <p>What do I do, what do you do, what do I do if you don’t?</p></blockquote>
-<p>This was the longest English sentence I made that only has monosyllabical words.
+<p>This was the longest English sentence I made that only has monosyllabic words.
 I had a rap song produced from it.</p>
 <h2 id="semantics">Semantics<a hidden class="anchor" aria-hidden="true" href="#semantics">#</a></h2>
 <p>We can dive a little deeper into what such a promise means.
@@ -266,8 +264,8 @@ At a marriage, the magic sentence is:</p>
 <p>What changed after that sentence is said?
 Legally, these people are now married, which creates a whole new world of possibilities and obligations.
 Before that sentence was spoken, they were not married.</p>
-<p>That is why this is also called &lsquo;speech act theory&rsquo;: the statement acts upon our reality.
-In the theory this example is a &lsquo;performative&rsquo; or &lsquo;declarative&rsquo; statement.</p>
+<p>That is why this is also called &ldquo;speech act theory&rdquo;: the statement acts upon our reality.
+In the theory this example is a &ldquo;performative&rdquo; or &ldquo;declarative&rdquo; statement.</p>
 <p>This view of messages helps us see how our interaction is a shared reality between the agents, and can actually control that shared reality.
 That reality can be about the physical world, as in our coffee example, or it can be about the legal world that we use to control the physical world, as in our matrimonial example.
 It can also be about the information world, such as access rights to data, or control over a virtual server.</p>

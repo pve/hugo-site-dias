@@ -23,23 +23,15 @@
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Promise Theory 3</title>
-      <link>http://localhost:1313/book/diginfra/promise-theory-part3/</link>
-      <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/promise-theory-part3/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Promise Theory</title>
       <link>http://localhost:1313/book/diginfra/promise-theory/</link>
       <pubDate>Fri, 25 Apr 2025 21:21:54 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/promise-theory/</guid>
-      <description>&lt;p&gt;Digital infrastructures are about services, not products.
-It can be elusive to describe these services, and specifically, how to describe the somewhat loose interaction between the service providers and the service consumers.&lt;/p&gt;
+      <description>&lt;p&gt;Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.&lt;/p&gt;
 &lt;p&gt;Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
 Introduced by Mark Burgess and others, it is about how autonomous agents work together.
 It helped me a lot in getting a handle on various distributed systems.
-There was this project where we envisioned a scalable travel information system with what we now call microservices.
+There was this project where we designed a scalable travel information system with what we now call microservices.
 We needed to describe how these parts work together.
 And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
 In getting this from the drawing board to actual production, promise theory turned out to be a great tool.&lt;/p&gt;</description>
@@ -110,6 +102,29 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 &lt;h2 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h2&gt;
 &lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise Theory 3</title>
+      <link>http://localhost:1313/book/diginfra/promise-theory-part3/</link>
+      <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/promise-theory-part3/</guid>
+      <description>&lt;p&gt;origin story promise theory&lt;/p&gt;
+&lt;p&gt;suwinet
+reisplanner&lt;/p&gt;
+&lt;p&gt;design patterns&lt;/p&gt;
+&lt;p&gt;customer sevice, can I get a new app/user account&lt;/p&gt;
+&lt;p&gt;Q: Can I get a unique IP address?
+R: Here is your address, let me know when you are done with it&lt;/p&gt;
+&lt;p&gt;A: thank you, I am done with this address&lt;/p&gt;
+&lt;p&gt;Example IP addresses allocation
+&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image.png&#34;&gt;
+&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Example TCP/IP
+picture&lt;/p&gt;
+&lt;p&gt;Connect
+Q: can you reserve buffer space for a connection?
+R: yes we promise, here is your initial window size
+A: thank you, here is your initial window size&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are AI digital infrastructures?</title>

@@ -18,6 +18,7 @@ CERN data center
 
 verhaal over corporate en MKB, maar ook individual, en society.
 
+
 How technical debt works: negative investment externalities.
 
 But of course you have this discussion on shared services. As a matter of fact, I keep talking about the book that I'm probably not going to finish, but it's still a nice frame of reference. Now digital infrastructures at scale - there are a few very essential elements in there. The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it's amenable to automation. These two together give a really interesting socio-political economic dynamic. And that's what you need to understand if you want your shared service to keep operating - or if you don't want it to operate, but that's a different story.
@@ -31,7 +32,7 @@ Top search op CCC: certs, deploy, saas canvas, top 8 enisa.
 shared services
 De shared services business case. Voorbeeld Haven ook (journal feb 2025). Lees ook input van Robert (?)
 
-
+gov versus business: business has control over its budget.
 
 What is an API?
 
@@ -145,3 +146,4 @@ Who shapes the internet? https://almanac.article19.org/guess-who.html
 
 platforms such as market places. Kapper van een reveneu share platform naar een service platform. Het is maaar wie er macht heeft over een belangrijke asset.
 Voor de buurman pizzeria is het ietsje anders.
+

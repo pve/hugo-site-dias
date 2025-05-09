@@ -6,7 +6,7 @@
     <description>Recent content in Change and control on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 May 2025 08:07:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 May 2025 20:45:16 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/change/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Change and Control</title>
@@ -57,7 +57,7 @@ By understanding how applying technology really works, you can be more effective
       <pubDate>Fri, 02 May 2025 08:07:42 +0000</pubDate>
       <guid>http://localhost:1313/book/change/new-skills-needed/</guid>
       <description>&lt;p&gt;Understanding the technical architecture of digital infrastructures is critically important, in particular for &lt;em&gt;non-technical&lt;/em&gt; professionals.&lt;/p&gt;
-&lt;p&gt;I have spend more than a decade educating people on cloud security, for example through certifications such as the &lt;a href=&#34;https://www.clubcloudcomputing.com/ccsk/&#34;&gt;Certificate of Cloud Security Knowledge (CCSK)&lt;/a&gt;, organized by the Cloud Security Alliance (CSA), and the &lt;a href=&#34;https://www.clubcloudcomputing.com/ccsp/&#34;&gt;Certified Cloud Security Professional (CCSP)&lt;/a&gt;, as organized by (ISC)2.
+&lt;p&gt;I have spent more than a decade educating people on cloud security, for example through certifications such as the &lt;a href=&#34;https://www.clubcloudcomputing.com/ccsk/&#34;&gt;Certificate of Cloud Security Knowledge (CCSK)&lt;/a&gt;, organized by the Cloud Security Alliance (CSA), and the &lt;a href=&#34;https://www.clubcloudcomputing.com/ccsp/&#34;&gt;Certified Cloud Security Professional (CCSP)&lt;/a&gt;, as organized by (ISC)2.
 These bodies of knowledge cover a lot of ground, and most of it is related to digital infrastructures at scale.&lt;/p&gt;</description>
     </item>
     <item>
@@ -69,6 +69,19 @@ These bodies of knowledge cover a lot of ground, and most of it is related to di
 &lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
 Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
 I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Organisation Size Matters - Dunbar&#39;s number</title>
+      <link>http://localhost:1313/book/change/org-size-matters/</link>
+      <pubDate>Thu, 08 May 2025 20:45:16 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/org-size-matters/</guid>
+      <description>&lt;p&gt;Over the years, I have worked with many organisations, large and small.
+In one case, I implemented the exact same change in more than 15 organisations, whose size ranged from 35 to 35 thousand employees.
+But that is a story for another unit.&lt;/p&gt;
+&lt;p&gt;It led me to see patterns in decision making and trust.
+Who takes decisions in an organisation?
+How do people even talk about decisions, especially when they concern digital technology?
+Who do you trust?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

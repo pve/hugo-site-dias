@@ -6,7 +6,7 @@
     <description>Recent content in Risks of digital infrastructures on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 May 2025 07:40:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 10:18:17 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -17,6 +17,18 @@
 &lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
 &lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.
 In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Is Trust</title>
+      <link>http://localhost:1313/book/risk/what-is-trust/</link>
+      <pubDate>Mon, 05 May 2025 10:18:17 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/what-is-trust/</guid>
+      <description>&lt;p&gt;Trust is an essential element in any collaboration.
+We want to trust things, people, and organisations to do the right thing, to keep their promises.
+Without trust, we will not be able to have confidence in the contribution of others, and that is a risk.&lt;/p&gt;
+&lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
+Anytime we assume trust that is not warranted is also a risk.
+That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Querying Ai Risk</title>
