@@ -57,6 +57,6 @@ That is a platform decision, and history has taught us that once taken, most peo
 If you want to understand the differences and their impacts, start by looking out for the ways in which digital identities are managed.
 This differs widely between small and large organisations.
 
-In real life, these categories overlap and influence one another. Often, technology decisions beging as individual choices, which then moves to be adopted by a small group, and then the whole organisation.
+In real life, these categories overlap and influence one another. Often, technology decisions begin as individual choices, which then moves to be adopted by a small group, and then the whole organisation.
 Large organisations typically consist of a lot of small groups, within which there are different decision cultures.
 And small companies often try to sell to large organisations, while misunderstanding the cultural differences.

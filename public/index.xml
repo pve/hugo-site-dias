@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 May 2025 20:45:16 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 11:33:28 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -462,6 +462,19 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
 &lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
 Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
 I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is the value of information?</title>
+      <link>http://localhost:1313/book/diginfra/value-of-information/</link>
+      <pubDate>Sat, 10 May 2025 11:33:28 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/value-of-information/</guid>
+      <description>&lt;p&gt;What is information really?
+If we know that, we can try to understand how we can judge its value, or even start to understand how we can create value with information.&lt;/p&gt;
+&lt;p&gt;In Claude Shannon&amp;rsquo;s theory of communication, information is about reducing uncertainty.
+Another way is to say that more information means less noise because if you add noise to information, that information will have more uncertainty and less value.&lt;/p&gt;
+&lt;p&gt;To visualise this, think of a picture that is obscured by a bit of fog or haze.
+You can still see some of the picture, but not very clearly.
+You will make more errors when trying to understand what the picture means.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organisation Size Matters - Dunbar&#39;s number</title>
