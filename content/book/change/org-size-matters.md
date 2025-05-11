@@ -52,11 +52,13 @@ They too make decisions on the technologies that will be adopted.
 
 The technology and platform decisions of this category can be as fundamental as that of any of the other categories, but the forces driving them are a little harder to predict.
 For example, what is the social media platform that everybody uses?
-That is a platform decision, and history has taught us that once taken, most people are following that decision.
+If all your friends are on a specific social media platform, sharing the fun they have and where the parties are, you are strongly encouraged to go there as well.
+And for reasons that we discuss elsewhere, these tend to be "winner takes all" situations, where one single choice dominates. 
+Market forces are important here, but also regulatory pressures and other circumstantial influences.
 
 If you want to understand the differences and their impacts, start by looking out for the ways in which digital identities are managed.
-This differs widely between small and large organisations.
+This differs widely between small and large organisations, as I have shown here.
 
 In real life, these categories overlap and influence one another. Often, technology decisions begin as individual choices, which then moves to be adopted by a small group, and then the whole organisation.
 Large organisations typically consist of a lot of small groups, within which there are different decision cultures.
-And small companies often try to sell to large organisations, while misunderstanding the cultural differences.
+And small companies often try to sell to large organisations, while misunderstanding the cultural differences between themselves and their prospective customers.

@@ -5,18 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Who Suffers | Digital Infrastructures at Scale</title>
+<title>Who Suffers? | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Who Suffers?
-I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
+<meta name="description" content="I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
+Make clear who has the pain.
 For my phone and laptop it is easy: if I lose them, I suffer.
-External victims
-who suffers? externalities.
-Assets
-Vulnerabilities and threats
-(examples of all)
-To be continued.
-what other assets?">
+In a larger organisation it is less clear.
+Suppose a server dies.
+Whose application then no longer runs?
+Who has to pay for a new server?
+This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/book/risk/who-suffers/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -136,13 +134,7 @@ what other assets?">
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/risk/">Risks of digital infrastructures</a></div>
     <h1 class="post-title entry-hint-parent">
-      Who Suffers
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+      Who Suffers?
     </h1>
     <div class="post-meta"><span title='2025-04-15 21:27:25 +0000 UTC'>April 15, 2025</span>
 
@@ -150,18 +142,50 @@ what other assets?">
   </header> 
 
   
-  <i>⏳ 1 min read</i>
+  <i>⏳ 3 min read</i>
   
-  <div class="post-content"><h2 id="who-suffers">Who Suffers?<a hidden class="anchor" aria-hidden="true" href="#who-suffers">#</a></h2>
-<p>I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
-For my phone and laptop it is easy: if I lose them, I suffer.</p>
+  <div class="post-content"><p>I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
+Make clear who has the pain.
+For my phone and laptop it is easy: if I lose them, I suffer.
+In a larger organisation it is less clear.
+Suppose a server dies.
+Whose application then no longer runs?
+Who has to pay for a new server?
+This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.</p>
+<p>A related complication pops up when a failing component or service is remote from the organisations main purpose, or mission.
+We see this a lot around software vulnerabilities.
+A software vulnerability can allow a malicious actor to fully take over a service.
+But unless you demonstrate that:</p>
+<ol>
+<li>this vulnerability can actually be exploited, and</li>
+<li>this exploit can cause damage to the mission</li>
+</ol>
+<p>it would be a waste of time to address it individually.</p>
+<p>If you are involved in risk analysis, make sure to complete the reasoning up to the point where the stakeholder with the budget feels the pain.
+To do less is a waste of resources.</p>
 <h2 id="external-victims">External victims<a hidden class="anchor" aria-hidden="true" href="#external-victims">#</a></h2>
-<p>who suffers? externalities.</p>
-<h2 id="assets">Assets<a hidden class="anchor" aria-hidden="true" href="#assets">#</a></h2>
-<h2 id="vulnerabilities-and-threats">Vulnerabilities and threats<a hidden class="anchor" aria-hidden="true" href="#vulnerabilities-and-threats">#</a></h2>
-<p>(examples of all)</p>
-<p>To be continued.</p>
-<p>what other assets?</p>
+<p>It gets a little more complicated if those who suffer are not part of the organisation that controls that risk.
+Example: as a merchant accepting credit card payments of your customers, the customers creditcard number helps you get paid.
+But if you accidentally disclose it, and it falls in the hands of a bad actor, you don&rsquo;t suffer.
+The customer does, or their bank.</p>
+<p>From the perspective of the customer, your activity impacts something that is of value to them.
+Economists call this an externality, and we see various examples of that in the world of risk, and in digital infrastructures at large.</p>
+<p>As the example customer, there is little that you can do about it.
+Why the credit card system still works is that banks and credit card issuers have an interest in the system working, and they don&rsquo;t want to saddle either the card holder or themselves with these losses.</p>
+<p>They have the pain, and their response has been to create a mandatory certification scheme for everybody who touches a credit card number.
+You cannot process a credit card, and definitely not at scale, without being PCI/DSS certified.
+This is enforced by contract.
+If you can&rsquo;t abide, you can&rsquo;t process credit cards, which may be important to you.
+This is how they make the credit cards processors suffer.
+It is an industry regulation.</p>
+<p>Similarly, personal data loss is a risk to the person, not to the organisation that collects your personal data.
+That is why there are privacy regulations, of which the EU GDPR (General Data Protection Regulation) is the most well-known.</p>
+<p>These aren&rsquo;t industry regulations, they are the law.
+And if you don&rsquo;t follow the law, countries can fine you.
+Unfortunately, as I mention elsewhere, money is a blunt instrument.
+So while privacy laws work, they are not a perfect solution.</p>
+<p>Summing up, this leads to a new category of risk: compliance risk.
+If you do not comply with regulations, whether they are industry or government, you will suffer the pain.</p>
 
 
   </div>
@@ -184,9 +208,11 @@ For my phone and laptop it is easy: if I lose them, I suffer.</p>
       
       
         
-        <a href="/book/risk/retrofitting-zero-trust-existing-application/">Retrofitting Zero Trust on an existing application: an illustration &rarr;</a>
+        <a href="/book/risk/assets/">Assets &rarr;</a>
       
     </nav>
+  
+
   
 
   

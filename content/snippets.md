@@ -147,3 +147,11 @@ Who shapes the internet? https://almanac.article19.org/guess-who.html
 platforms such as market places. Kapper van een reveneu share platform naar een service platform. Het is maaar wie er macht heeft over een belangrijke asset.
 Voor de buurman pizzeria is het ietsje anders.
 
+Lean stuff. Mura, muda.
+
+The mission. Military calls this the mission. And so does the catholic church. But it is not just an organisational thing.
+As a parent, your mission is to raise your child to become an independent member of society.
+That is, independent of you, so that if you die, they can live on.
+
+
+Communicating in orgs: https://www.linkedin.com/posts/malykh_when-i-moved-to-the-netherlands-i-was-told-activity-7322696833422536705-PMC_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAEYjQBXUKE1UpQr8olBM6HgCkgIOl5-SY
