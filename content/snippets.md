@@ -155,3 +155,6 @@ That is, independent of you, so that if you die, they can live on.
 
 
 Communicating in orgs: https://www.linkedin.com/posts/malykh_when-i-moved-to-the-netherlands-i-was-told-activity-7322696833422536705-PMC_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAEYjQBXUKE1UpQr8olBM6HgCkgIOl5-SY
+
+
+Bert Hubert, a former Dutch intelligence technologist, and advisor on lawful hacking — and he declared a pretty hefty warning in a gripping talk how apps like hashtag#AngryBirds helped intelligence agencies and survaillance states track millions by logging hashtag#IMEI numbers (which are unique hardware identifiers that allow devices and users to be tracked across networks and apps) without encryption ---- > turning a game into surveillance infrastructure. 
