@@ -6,8 +6,22 @@
     <description>Recent content in Cases on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Mar 2025 15:35:53 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 14:57:38 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/cases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A brief history of LLM tooling</title>
+      <link>http://localhost:1313/book/cases/brief-llm-tool/</link>
+      <pubDate>Sun, 11 May 2025 14:57:38 +0000</pubDate>
+      <guid>http://localhost:1313/book/cases/brief-llm-tool/</guid>
+      <description>&lt;p&gt;In order to illustrate the development of technology through tracking the development of LLM related tooling.&lt;/p&gt;
+&lt;p&gt;In December 2023 (check) ChatGPT came out.
+Within days people from around the world were using it.&lt;/p&gt;
+&lt;p&gt;RAG - companies
+Langchain&lt;/p&gt;
+&lt;p&gt;Agents&lt;/p&gt;
+&lt;p&gt;MCP and A2A&lt;/p&gt;
+&lt;p&gt;MCP spinoffs&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How My Site Got Hacked</title>
       <link>http://localhost:1313/book/cases/how-my-site-got-hacked/</link>

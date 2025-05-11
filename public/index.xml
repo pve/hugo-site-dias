@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 May 2025 11:33:28 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 14:57:38 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -33,6 +33,44 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>A brief history of LLM tooling</title>
+      <link>http://localhost:1313/book/cases/brief-llm-tool/</link>
+      <pubDate>Sun, 11 May 2025 14:57:38 +0000</pubDate>
+      <guid>http://localhost:1313/book/cases/brief-llm-tool/</guid>
+      <description>&lt;p&gt;In order to illustrate the development of technology through tracking the development of LLM related tooling.&lt;/p&gt;
+&lt;p&gt;In December 2023 (check) ChatGPT came out.
+Within days people from around the world were using it.&lt;/p&gt;
+&lt;p&gt;RAG - companies
+Langchain&lt;/p&gt;
+&lt;p&gt;Agents&lt;/p&gt;
+&lt;p&gt;MCP and A2A&lt;/p&gt;
+&lt;p&gt;MCP spinoffs&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why You Should Read</title>
+      <link>http://localhost:1313/book/diginfra/why-you-should-read/</link>
+      <pubDate>Sun, 11 May 2025 08:47:28 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/why-you-should-read/</guid>
+      <description>&lt;p&gt;You should not read this book because I tell you to.
+After all, you are an autonomous person, making your own decisions.&lt;/p&gt;
+&lt;p&gt;You should read this book because you are convinced that it is likely to give you significant insights into a world that matters to you.&lt;/p&gt;
+&lt;p&gt;Digital infrastructures, and information technology at large, have moved from a fringe niche technology to becoming an essential part of modern life.
+Most companies would go belly up in weeks, if not days, if their digital infrastructures would fail.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is the value of information?</title>
+      <link>http://localhost:1313/book/value/value-of-information/</link>
+      <pubDate>Sat, 10 May 2025 11:33:28 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/value-of-information/</guid>
+      <description>&lt;p&gt;What is information really?
+If we know that, we can try to understand how we can judge its value, or even start to understand how we can create value with information.&lt;/p&gt;
+&lt;p&gt;In Claude Shannon&amp;rsquo;s theory of communication, information is about reducing uncertainty.
+Another way is to say that more information means less noise because if you add noise to information, that information will have more uncertainty and less value.&lt;/p&gt;
+&lt;p&gt;To visualise this, think of a picture that is obscured by a bit of fog or haze.
+You can still see some of the picture, but not very clearly.
+You will make more errors when trying to understand what the picture means.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What Is Trust</title>
       <link>http://localhost:1313/book/risk/what-is-trust/</link>
       <pubDate>Mon, 05 May 2025 10:18:17 +0000</pubDate>
@@ -43,24 +81,6 @@ Without trust, we will not be able to have confidence in the contribution of oth
 &lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
 Anytime we assume trust that is not warranted is also a risk.
 That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Querying Ai Risk</title>
-      <link>http://localhost:1313/book/risk/querying-ai-risk/</link>
-      <pubDate>Thu, 01 May 2025 07:40:07 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/querying-ai-risk/</guid>
-      <description>&lt;p&gt;While Artificial Intelligence, especially the generative type, is a really disruptive form of IT innovation, its risk management still follows the same basic principles.
-We just need to extend those principles to new forms of data and software.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What are the assets?&lt;/li&gt;
-&lt;li&gt;What are the vulnerabilities and threats to it?&lt;/li&gt;
-&lt;li&gt;What is the damage that this can bring, realistically?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So let&amp;rsquo;s see how what the AI specifics are.&lt;/p&gt;
-&lt;h2 id=&#34;ai-assets&#34;&gt;AI Assets&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s focus on the AI assets that are the product of deep learning.
-Deep learning neural networks have represented a shift in AI technology.
-Before that, symbolic AI was more common.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Three books on Zero Trust, and when you should read them</title>
@@ -192,20 +212,18 @@ A word processor is an application. Its data model is formatted text, and the fu
 Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Who Suffers</title>
+      <title>Who Suffers?</title>
       <link>http://localhost:1313/book/risk/who-suffers/</link>
       <pubDate>Tue, 15 Apr 2025 21:27:25 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/who-suffers/</guid>
-      <description>&lt;h2 id=&#34;who-suffers&#34;&gt;Who Suffers?&lt;/h2&gt;
-&lt;p&gt;I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
-For my phone and laptop it is easy: if I lose them, I suffer.&lt;/p&gt;
-&lt;h2 id=&#34;external-victims&#34;&gt;External victims&lt;/h2&gt;
-&lt;p&gt;who suffers? externalities.&lt;/p&gt;
-&lt;h2 id=&#34;assets&#34;&gt;Assets&lt;/h2&gt;
-&lt;h2 id=&#34;vulnerabilities-and-threats&#34;&gt;Vulnerabilities and threats&lt;/h2&gt;
-&lt;p&gt;(examples of all)&lt;/p&gt;
-&lt;p&gt;To be continued.&lt;/p&gt;
-&lt;p&gt;what other assets?&lt;/p&gt;</description>
+      <description>&lt;p&gt;I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
+Make clear who has the pain.
+For my phone and laptop it is easy: if I lose them, I suffer.
+In a larger organisation it is less clear.
+Suppose a server dies.
+Whose application then no longer runs?
+Who has to pay for a new server?
+This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vibe Coding in Reality</title>
@@ -300,6 +318,35 @@ There are always differences of opinions in any group, if only to decide when to
 &lt;p&gt;If you want the car to stop as fast as possible, it suffices to push the brakes as hard as you can. But that does not give you much control.
 For example, your passengers might not like it, and it leads to wear on the tires.
 If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assets</title>
+      <link>http://localhost:1313/book/risk/assets/</link>
+      <pubDate>Sun, 11 May 2025 08:37:01 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/assets/</guid>
+      <description>&lt;h2 id=&#34;assets&#34;&gt;Assets&lt;/h2&gt;
+&lt;h2 id=&#34;vulnerabilities-and-threats&#34;&gt;Vulnerabilities and threats&lt;/h2&gt;
+&lt;p&gt;(examples of all)&lt;/p&gt;
+&lt;p&gt;To be continued.&lt;/p&gt;
+&lt;p&gt;what other assets?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What about AI Risks?</title>
+      <link>http://localhost:1313/book/risk/querying-ai-risk/</link>
+      <pubDate>Thu, 01 May 2025 07:40:07 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/querying-ai-risk/</guid>
+      <description>&lt;p&gt;While Artificial Intelligence, especially the generative type, is a highly disruptive form of IT innovation, its risk management still follows the same basic principles.
+We just need to extend those principles to new forms of data and software.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What are the assets?&lt;/li&gt;
+&lt;li&gt;What are the vulnerabilities and threats to it?&lt;/li&gt;
+&lt;li&gt;What is the damage that this can bring, realistically?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So let&amp;rsquo;s see how what the AI specifics are.&lt;/p&gt;
+&lt;h2 id=&#34;ai-assets&#34;&gt;AI Assets&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s focus on the AI assets that are the product of deep learning.
+Deep learning neural networks have represented a shift in AI technology.
+Before that, symbolic AI was more common.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Systematically applying technology</title>
@@ -462,19 +509,6 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
 &lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
 Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
 I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is the value of information?</title>
-      <link>http://localhost:1313/book/diginfra/value-of-information/</link>
-      <pubDate>Sat, 10 May 2025 11:33:28 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/value-of-information/</guid>
-      <description>&lt;p&gt;What is information really?
-If we know that, we can try to understand how we can judge its value, or even start to understand how we can create value with information.&lt;/p&gt;
-&lt;p&gt;In Claude Shannon&amp;rsquo;s theory of communication, information is about reducing uncertainty.
-Another way is to say that more information means less noise because if you add noise to information, that information will have more uncertainty and less value.&lt;/p&gt;
-&lt;p&gt;To visualise this, think of a picture that is obscured by a bit of fog or haze.
-You can still see some of the picture, but not very clearly.
-You will make more errors when trying to understand what the picture means.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organisation Size Matters - Dunbar&#39;s number</title>

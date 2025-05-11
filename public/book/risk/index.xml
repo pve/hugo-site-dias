@@ -6,7 +6,7 @@
     <description>Recent content in Risks of digital infrastructures on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 May 2025 10:18:17 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 08:37:01 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -31,11 +31,36 @@ Anytime we assume trust that is not warranted is also a risk.
 That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Querying Ai Risk</title>
+      <title>Who Suffers?</title>
+      <link>http://localhost:1313/book/risk/who-suffers/</link>
+      <pubDate>Tue, 15 Apr 2025 21:27:25 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/who-suffers/</guid>
+      <description>&lt;p&gt;I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
+Make clear who has the pain.
+For my phone and laptop it is easy: if I lose them, I suffer.
+In a larger organisation it is less clear.
+Suppose a server dies.
+Whose application then no longer runs?
+Who has to pay for a new server?
+This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assets</title>
+      <link>http://localhost:1313/book/risk/assets/</link>
+      <pubDate>Sun, 11 May 2025 08:37:01 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/assets/</guid>
+      <description>&lt;h2 id=&#34;assets&#34;&gt;Assets&lt;/h2&gt;
+&lt;h2 id=&#34;vulnerabilities-and-threats&#34;&gt;Vulnerabilities and threats&lt;/h2&gt;
+&lt;p&gt;(examples of all)&lt;/p&gt;
+&lt;p&gt;To be continued.&lt;/p&gt;
+&lt;p&gt;what other assets?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What about AI Risks?</title>
       <link>http://localhost:1313/book/risk/querying-ai-risk/</link>
       <pubDate>Thu, 01 May 2025 07:40:07 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/querying-ai-risk/</guid>
-      <description>&lt;p&gt;While Artificial Intelligence, especially the generative type, is a really disruptive form of IT innovation, its risk management still follows the same basic principles.
+      <description>&lt;p&gt;While Artificial Intelligence, especially the generative type, is a highly disruptive form of IT innovation, its risk management still follows the same basic principles.
 We just need to extend those principles to new forms of data and software.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;What are the assets?&lt;/li&gt;
@@ -47,22 +72,6 @@ We just need to extend those principles to new forms of data and software.&lt;/p
 &lt;p&gt;Let&amp;rsquo;s focus on the AI assets that are the product of deep learning.
 Deep learning neural networks have represented a shift in AI technology.
 Before that, symbolic AI was more common.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Who Suffers</title>
-      <link>http://localhost:1313/book/risk/who-suffers/</link>
-      <pubDate>Tue, 15 Apr 2025 21:27:25 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/who-suffers/</guid>
-      <description>&lt;h2 id=&#34;who-suffers&#34;&gt;Who Suffers?&lt;/h2&gt;
-&lt;p&gt;I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
-For my phone and laptop it is easy: if I lose them, I suffer.&lt;/p&gt;
-&lt;h2 id=&#34;external-victims&#34;&gt;External victims&lt;/h2&gt;
-&lt;p&gt;who suffers? externalities.&lt;/p&gt;
-&lt;h2 id=&#34;assets&#34;&gt;Assets&lt;/h2&gt;
-&lt;h2 id=&#34;vulnerabilities-and-threats&#34;&gt;Vulnerabilities and threats&lt;/h2&gt;
-&lt;p&gt;(examples of all)&lt;/p&gt;
-&lt;p&gt;To be continued.&lt;/p&gt;
-&lt;p&gt;what other assets?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>

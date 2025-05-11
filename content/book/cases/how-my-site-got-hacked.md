@@ -11,7 +11,7 @@ Here is the story of my site being infected with malware, viewed by a profession
 
 The hack led to business damage at the end of one of my webinars. In 2016, on a Friday, I did a webinar, at the end of which I had two links to my site as a call to action.
 
-However, three participants reported in the chat that they could not access those links as their corporate firewalls blocked them. Three different security programs (Microsoft, McAfee and Kaspersky) rated the site as unsafe for various reasons, ranging from detected Trojans to mention of “Malicious software threat: This site contains links to viruses or other software programs that can reveal personal information stored or typed on your computer to malicious persons”.
+However, three participants reported in the chat that they could not access those links as their corporate firewalls blocked them. Three different security programs (Microsoft, McAfee, and Kaspersky) rated the site as unsafe for various reasons, ranging from detected Trojans to mention of “Malicious software threat: This site contains links to viruses or other software programs that can reveal personal information stored or typed on your computer to malicious persons”.
 
 So, instead of continuing the conversation of how I could be of help to these people, and talk about my next program, I stalled. Nobody bought my program. Business lost. And my time suddenly had to be diverted to fixing this. Another loss. This is all real damage. The only upside is that I can write this article about it.
 
@@ -21,16 +21,16 @@ That was the detection phase, one of the phases of the NIST incident response pr
 
 Now for the analysis and eradication phase. What the heck was going on? I had very little luck in getting the security programs to tell me what was wrong with the site. [Virustotal](<http://www.virustotal.com>), which aggregates reports from security providers, reported 1 hit by Yandex, though the diagnostics on their webmaster pages were vague. McAfee and Kaspersky did not seem to have any service that is helpful with this.
 
-In the mean time, three more reports came in on the site, adding TrendMicro to the list of blockers.
+In the meantime, three more reports came in on the site, adding TrendMicro to the list of blockers.
 It took my site manager until Tuesday to fix it. Very disappointing. He also was not very communicative about the real underlying problem, other than that is was caused by a WordPress plugin that had not been updated. He did manage to restore the site and clean it. I think.
 
-After I discovered the problem, independently I got a report from a SEO expert, who noticed funny code in the pages, and weird statistics in the analytics. He told me that the malware was in fact a 5 year old Mozilla exploit, which is number 17974 on exploit-db (No link to that exploit, because it gives my site a bad reputation).
+After I discovered the problem, independently I got a report from a SEO expert, who noticed funny code in the pages, and weird statistics in the analytics. He told me that the malware was in fact a five-year-old Mozilla exploit, which is number 17974 on exploit-db (No link to that exploit, because it gives my site a bad reputation).
 
-It appeared to be an automated infection targeted at Mozilla users who had not updated their browsers. My site does not store any customer data, all form submissions go to a separate autoresponder and shopping cart service. So no data was lost or breached.
+It appeared to be an automated infection targeted at Mozilla users who had not updated their browsers. My site did not store any customer data, all form submissions go to a separate autoresponder and shopping cart service. So no data was lost or breached.
 
 ## Recovery
 
-Now for the recovery phase. Malware gone does not equal business problem gone. Even as the malware is erased, my site’s reputation is still suffering.
+Now for the recovery phase. Malware gone does not equal business problem gone. Even though the malware was erased, my site’s reputation was still suffering.
 
 Getting off the blacklists is a hard process; they seem to parrot and echo each other. A week after the alleged site fix, I managed to get it off one or two engines. But it is still listed at Yandex, Clean MX, SCUMWARE and CRDF, all of whom don’t appear to have an expedient process of getting off their blacklist. <http://www.urlvoid.com/scan/clubcloudcomputing.com/> actually increased the number of blacklisting sites in the past days and added Fortinet’s FortiGuard.
 
@@ -50,7 +50,7 @@ I have a backup running of this website. It is a WordPress plugin that dumps the
 
 In the end, having the site itself generate a backup is not sufficient. The advantage is that the backup should be easy to restore, but malware might take the backup software or its configuration as a first target. In fact, I suspect that in my case the malware created a few hundred thousand files, which clogged my DropBox synchronization. However, I could not finish the forensics on that.
 
-The site manager restored the site from a file system backup. I did not have access to that.
+The site manager restored the site from a filesystem backup. I did not have access to that.
 Externally spidering the website, and versioning it may be better. At any rate, this is a case for generating fully static websites.
 
 So, obviously the best direct preparation is regularly updating software and removing software you don’t need. Case in point: the malware was inserted into a piece of forum software that we never got to work properly. In the end we abandoned it in favor of a managed cloud solution (an e-learning platform).

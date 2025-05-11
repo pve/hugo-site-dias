@@ -1,12 +1,12 @@
 ---
 date: '2025-05-01T07:40:07Z'
 draft: true
-title: 'Querying Ai Risk'
-weight: 10
+title: 'What about AI Risks?'
+weight: 20
 notes: whatever
 ---
 
-While Artificial Intelligence, especially the generative type, is a really disruptive form of IT innovation, its risk management still follows the same basic principles.
+While Artificial Intelligence, especially the generative type, is a highly disruptive form of IT innovation, its risk management still follows the same basic principles.
 We just need to extend those principles to new forms of data and software.
 
 - What are the assets?
@@ -24,7 +24,7 @@ Before that, symbolic AI was more common.
 The reason to elaborate on this is that there is a fundamental difference between symbolic AI and neural network AI.
 Symbolic AI works by following programmatic rules, and is fairly deterministic.
 Neural networks are the result of training with large datasets.
-They have enabled *generative AI* which is a lot less deterministic.
+They have enabled *generative AI* which is much less deterministic.
 
 Furthermore, and this is really significant from a security perspective, in its operation, GenAI mixes data and instruction to operate on that data deeply.
 
@@ -34,7 +34,7 @@ This represents a huge vulnerability for hackers to exploit.
 The trained models represent a lot of information, and that information is often hard to identify, and therefore to see the classic information risks of.
 
 Models are effectively software: you stick data in them, and data comes out.
-But because they also embody a lot of data (we are talking Gigabytes, Terabytes, and beyond, of training data) they combine the risks of software with the risks of data.
+But because they also embody a lot of data (we are talking Gigabytes, Terabytes and beyond of training data) they combine the risks of software with the risks of data.
 
 An AI system has a few more traditional and less traditional data assets associated with it.
 Base models, or foundational models, such as Llama, often get additional training or finetuning.

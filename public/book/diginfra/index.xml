@@ -6,7 +6,7 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 May 2025 05:58:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 08:47:28 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
@@ -21,6 +21,17 @@
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why You Should Read</title>
+      <link>http://localhost:1313/book/diginfra/why-you-should-read/</link>
+      <pubDate>Sun, 11 May 2025 08:47:28 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/why-you-should-read/</guid>
+      <description>&lt;p&gt;You should not read this book because I tell you to.
+After all, you are an autonomous person, making your own decisions.&lt;/p&gt;
+&lt;p&gt;You should read this book because you are convinced that it is likely to give you significant insights into a world that matters to you.&lt;/p&gt;
+&lt;p&gt;Digital infrastructures, and information technology at large, have moved from a fringe niche technology to becoming an essential part of modern life.
+Most companies would go belly up in weeks, if not days, if their digital infrastructures would fail.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Promise Theory</title>

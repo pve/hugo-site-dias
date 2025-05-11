@@ -5,11 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Risks of digital infrastructures | Digital Infrastructures at Scale</title>
+<title>A brief history of LLM tooling | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Risks of digital infrastructures - Digital Infrastructures at Scale">
+<meta name="description" content="In order to illustrate the development of technology through tracking the development of LLM related tooling.
+In December 2023 (check) ChatGPT came out.
+Within days people from around the world were using it.
+RAG - companies
+Langchain
+Agents
+MCP and A2A
+MCP spinoffs">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/risk/">
+<link rel="canonical" href="http://localhost:1313/book/cases/brief-llm-tool/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +25,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/book/risk/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/risk/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/cases/brief-llm-tool/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +65,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -122,116 +128,68 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a></div>
-  <h1>
-    Risks of digital infrastructures
-  </h1>
-</header>
+<main class="main">
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Introduction to Risk
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Risk is the flip side of value. For everything that is of value, there can be circumstances endangering that value.
-Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.
-At the core of every risk assessment there is the thing we worry about the most: the ‘asset’. In a digital world, this is often the data. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-12 13:13:35 +0000 UTC'>March 12, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Introduction to Risk" href="http://localhost:1313/book/risk/intro-to-risk/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What Is Trust
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/cases/">Cases</a></div>
+    <h1 class="post-title entry-hint-parent">
+      A brief history of LLM tooling
       <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
           <path
             d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
         </svg>
       </span>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Trust is an essential element in any collaboration. We want to trust things, people, and organisations to do the right thing, to keep their promises. Without trust, we will not be able to have confidence in the contribution of others, and that is a risk.
-Anything we don’t trust is a risk. Anytime we assume trust that is not warranted is also a risk. That is one of the core concepts of Zero Trust Security Architecture.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-05 10:18:17 +0000 UTC'>May 5, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to What Is Trust" href="http://localhost:1313/book/risk/what-is-trust/"></a>
-</article>
+    </h1>
+    <div class="post-meta"><span title='2025-05-11 14:57:38 +0000 UTC'>May 11, 2025</span>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Who Suffers?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it. Make clear who has the pain. For my phone and laptop it is easy: if I lose them, I suffer. In a larger organisation it is less clear. Suppose a server dies. Whose application then no longer runs? Who has to pay for a new server? This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-15 21:27:25 +0000 UTC'>April 15, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Who Suffers?" href="http://localhost:1313/book/risk/who-suffers/"></a>
-</article>
+</div>
+  </header> 
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Assets
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Assets Vulnerabilities and threats (examples of all)
-To be continued.
-what other assets?
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-11 08:37:01 +0000 UTC'>May 11, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Assets" href="http://localhost:1313/book/risk/assets/"></a>
-</article>
+  
+  <i>⏳ 1 min read</i>
+  
+  <div class="post-content"><p>In order to illustrate the development of technology through tracking the development of LLM related tooling.</p>
+<p>In December 2023 (check) ChatGPT came out.
+Within days people from around the world were using it.</p>
+<p>RAG - companies
+Langchain</p>
+<p>Agents</p>
+<p>MCP and A2A</p>
+<p>MCP spinoffs</p>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What about AI Risks?
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>While Artificial Intelligence, especially the generative type, is a highly disruptive form of IT innovation, its risk management still follows the same basic principles. We just need to extend those principles to new forms of data and software.
-What are the assets? What are the vulnerabilities and threats to it? What is the damage that this can bring, realistically? So let’s see how what the AI specifics are.
-AI Assets Let’s focus on the AI assets that are the product of deep learning. Deep learning neural networks have represented a shift in AI technology. Before that, symbolic AI was more common.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-01 07:40:07 +0000 UTC'>May 1, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to What about AI Risks?" href="http://localhost:1313/book/risk/querying-ai-risk/"></a>
-</article>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Retrofitting Zero Trust on an existing application: an illustration
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.
-Consider this hypothetical situation.
-You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the ‘who’, ‘what’, ‘when’, etcetera of allowed communication.
-...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-28 14:15:21 +0000 UTC'>February 28, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Retrofitting Zero Trust on an existing application: an illustration" href="http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/"></a>
+  
+
+
+
+
+  
+    <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
+      
+      
+        
+        <a href="/book/cases/how-my-site-got-hacked/">How My Site Got Hacked &rarr;</a>
+      
+    </nav>
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
 </article>
     </main>
     
