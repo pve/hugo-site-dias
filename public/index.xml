@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 May 2025 14:57:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 May 2025 06:59:12 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -287,7 +287,7 @@ That is where their prime value is.&lt;/p&gt;
       <pubDate>Mon, 10 Mar 2025 21:34:21 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</guid>
       <description>&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;
-&lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that are the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
+&lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that is the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Promise Theory Part2</title>
@@ -545,6 +545,13 @@ picture&lt;/p&gt;
 Q: can you reserve buffer space for a connection?
 R: yes we promise, here is your initial window size
 A: thank you, here is your initial window size&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Optimalisatie</title>
+      <link>http://localhost:1313/home/optimalisatie/</link>
+      <pubDate>Mon, 12 May 2025 06:59:12 +0000</pubDate>
+      <guid>http://localhost:1313/home/optimalisatie/</guid>
+      <description></description>
     </item>
     <item>
       <title>Disruptive Technologies</title>

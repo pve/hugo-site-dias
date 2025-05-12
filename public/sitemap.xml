@@ -165,7 +165,13 @@
     <lastmod>2025-05-05T05:58:14+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-11T14:57:38+00:00</lastmod>
+    <lastmod>2025-05-12T06:59:12+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/home/</loc>
+    <lastmod>2025-05-12T06:59:12+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/home/optimalisatie/</loc>
+    <lastmod>2025-05-12T06:59:12+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-04-30T12:46:33+00:00</lastmod>
