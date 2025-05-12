@@ -12,12 +12,12 @@ At the restaurant's checkout I noticed a peculiar array of devices: there were f
 
 ![payment terminals](/payterminal-716603.jpg)
 
-I'd never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.
+I'd never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparently not over here.
 
 A closer inspection revealed that each was associated with a different bank.
 So apparently, depending on the bank that a **customer** of the restaurant works with, the restaurant needed to have a payment terminal associated with that.
 
-To me, this does not sound optimal for the merchant. It takes money and deskspace to accomodate all those different payment networks. And if you have only one terminal many customers can't pay by card. That won't make them happy, and the last thing you want as a merchant is to have unhappy customers.
+To me, this does not sound optimal for the merchant. It takes money and on the desk to accommodate all those different payment networks. And if you have only one terminal many customers can't pay by card. That won't make them happy, and the last thing you want as a merchant is to have unhappy customers.
 
 An online payment system, in this case with cards and terminals, is an infrastructure. and arguably a digital infrastructure. It serves many users: customers, merchants, and in this case the bank. One infrastructure for each bank.
 
@@ -47,6 +47,6 @@ The merchant can chose between having multiple terminals, or sticking to just on
 
 Finally, the choice for the customer is to pay cash or by card. The customer (and the other stakeholders) probably think that cards are a safer, and possibly cheaper alternative. The customer might therefore be led to feel that they prefer a merchant who accepts cards.
 
-The banks and the merchant apparently prefer short term revenu increase over long term cost savings.
+The banks and the merchant apparently prefer short term revenue increase over long term cost savings.
 
 And as a result the power dynamics play out so that it is the customer who benefits, the banks that invest and reap more benefits, and the merchant has to pay for a lot of that. Maybe the merchant will see some cost reduction in their payments handling.

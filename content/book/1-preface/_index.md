@@ -10,7 +10,7 @@ The two main reasons for that, as I look back on those years now, are that the f
 
 Instead I wrote smaller pieces from time to time, as well as lots of educational materials, triggered by a need from my learners.
 
-I did try to create a larger, organised collection of knowledge, and even had a basic taxonomy in place and raw input. But the dynamics of my professional life continuously outran my plans to turn it into a book.
+I did try to create a larger, organized collection of knowledge, and even had a basic taxonomy in place and raw input. But the dynamics of my professional life continuously outran my plans to turn it into a book.
 
 I have occupied myself with IT for over half a century now, most of that in a professional capacity. For a substantial part of that time, I have been searching for some focus. It took me until the turn of the millennium to finally get an expression of that in the form of a professional branding statement. It was an interesting process to come up with the following.
 

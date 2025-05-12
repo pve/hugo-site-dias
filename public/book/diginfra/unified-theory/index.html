@@ -5,14 +5,49 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>What are AI digital infrastructures? | Digital Infrastructures at Scale</title>
+<title>Unified Theory | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="The AI landscape has many digital infrastructures.
-Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.
-A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.
-A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.">
+<meta name="description" content="The units so far have explored quite a few, seemingly randomly related, concepts and observations.
+Here we&rsquo;ll embed them in a unified theory that illustrates how they fit together.
+At the core is the concept of promise-based interactions between autonomous agents (human and technical). Every digital infrastructure can be understood as a network of these promises:
+
+Value Creation Layer
+
+
+Promises made to consumers about service delivery (availability, performance)
+Economic models showing how shared resources and automation create value
+Business model frameworks showing how promises translate to revenue streams
+
+
+Power Distribution Layer
+
+
+Who makes which promises to whom (governance structures)
+How promises are enforced (contracts, standards, regulations)
+Control boundaries between agents (who decides what)
+How scale shifts power dynamics (Dunbar&rsquo;s number threshold effects)
+
+
+Risk Management Layer
+
+
+Analyzing what happens when promises are broken
+Vulnerabilities in promise networks (security, compliance)
+Trust assumptions and zero trust principles
+How externalities distribute risk across stakeholders
+
+
+Change Management Layer
+
+
+How promises evolve over time
+Feedback loops that stabilize or destabilize systems
+Technology maturity cycles (from manual to automated)
+Disruption patterns when new agents enter the ecosystem
+
+This model shows how these layers interact - for example, how power structures affect what promises can be made (value), how those promises create potential failure points (risk), and how adaptive change processes respond to those risks.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/digital-inf-ai/">
+<link rel="canonical" href="http://localhost:1313/book/diginfra/unified-theory/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -21,7 +56,7 @@ A trained model is the result of processing a lot of training data by a specific
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/digital-inf-ai/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/unified-theory/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,13 +94,6 @@ A trained model is the result of processing a lot of training data by a specific
 
     </style>
 </noscript>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
-<script>
-  mermaid.initialize({ 
-    startOnLoad: true,
-  });
-</script>
-
 </head>
 
 <body class="" id="top">
@@ -137,9 +165,9 @@ A trained model is the result of processing a lot of training data by a specific
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
-      What are AI digital infrastructures?
+      Unified Theory
     </h1>
-    <div class="post-meta"><span title='2025-03-08 17:57:16 +0000 UTC'>March 8, 2025</span>
+    <div class="post-meta"><span title='2025-05-12 21:05:36 +0000 UTC'>May 12, 2025</span>
 
 </div>
   </header> 
@@ -147,24 +175,47 @@ A trained model is the result of processing a lot of training data by a specific
   
   <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>The AI landscape has many digital infrastructures.</p>
-<p>Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.</p>
-<p>A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.</p>
-<p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.</p>
-<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
-<pre class="mermaid">block-beta
-
-space in space llm:2 space out space
-in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
-llm--&gt; out[&#34;Completion&#34;]
-
-style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-   
-</pre>
-<p>In cloud terms, we would call this Inferencing as a Service. In the NIST model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
-<p>This gives us the option to look for this on the market, or create a shared service inside an organisation or group of organisations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.</p>
-<p>More at: <a href="https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing">https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing</a></p>
+  <div class="post-content"><p>The units so far have explored quite a few, seemingly randomly related, concepts and observations.
+Here we&rsquo;ll embed them in a unified theory that illustrates how they fit together.</p>
+<p>At the core is the concept of promise-based interactions between autonomous agents (human and technical). Every digital infrastructure can be understood as a network of these promises:</p>
+<ol>
+<li>Value Creation Layer</li>
+</ol>
+<ul>
+<li>Promises made to consumers about service delivery (availability, performance)</li>
+<li>Economic models showing how shared resources and automation create value</li>
+<li>Business model frameworks showing how promises translate to revenue streams</li>
+</ul>
+<ol>
+<li>Power Distribution Layer</li>
+</ol>
+<ul>
+<li>Who makes which promises to whom (governance structures)</li>
+<li>How promises are enforced (contracts, standards, regulations)</li>
+<li>Control boundaries between agents (who decides what)</li>
+<li>How scale shifts power dynamics (Dunbar&rsquo;s number threshold effects)</li>
+</ul>
+<ol>
+<li>Risk Management Layer</li>
+</ol>
+<ul>
+<li>Analyzing what happens when promises are broken</li>
+<li>Vulnerabilities in promise networks (security, compliance)</li>
+<li>Trust assumptions and zero trust principles</li>
+<li>How externalities distribute risk across stakeholders</li>
+</ul>
+<ol>
+<li>Change Management Layer</li>
+</ol>
+<ul>
+<li>How promises evolve over time</li>
+<li>Feedback loops that stabilize or destabilize systems</li>
+<li>Technology maturity cycles (from manual to automated)</li>
+<li>Disruption patterns when new agents enter the ecosystem</li>
+</ul>
+<p>This model shows how these layers interact - for example, how power structures affect what promises can be made (value), how those promises create potential failure points (risk), and how adaptive change processes respond to those risks.</p>
+<p>For each real-world digital infrastructure (cloud computing, social media platforms, payment systems), the framework provides a consistent analytical approach that reveals the underlying dynamics shaping its development, adoption, and governance.</p>
+<p>What makes this powerful is that it creates a universal language for understanding everything from a simple client-server relationship to complex multi-stakeholder global systems, while acknowledging both technical and social dimensions of digital infrastructures.</p>
 
 
   </div>
@@ -194,29 +245,21 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
   
 
   
+
+  
+
+  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/diginfra/deployment-diagrams/">&larr; Deployment Diagrams</a>
+        <a href="/book/diginfra/promise-theory-part3/">&larr; Promise Theory 3</a>
       
-      
-        
-        <a href="/book/diginfra/promise-theory-part3/">Promise Theory 3 &rarr;</a>
       
     </nav>
   
 
-  
-
-  
 
 
-
-  
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
   
 
   <footer class="post-footer">

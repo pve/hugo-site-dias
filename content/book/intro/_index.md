@@ -38,11 +38,11 @@ I think this story is of interest to many senior roles in IT and business. I hav
 
 I don’t have final answers to all the questions that I can pose, and I cannot afford to wait until I have them. For that reason, I want to present the book as an ongoing project, for the time being, where I organize my thoughts and research in the form of blog posts, that at some point will be assimilated in the draft book.
 
-This is hardly a book on digital technology, but more on the organisational and societal impact of managing this at scale.
+This is hardly a book on digital technology, but more on the organizational and societal impact of managing this at scale.
 
 For a better understanding of digital technology I highly recommend Brian Kernighan’s [“Understanding the Digital World”](https://kernighan.com). And if you want to have fun while learning how to understand software, I’d highly recommend [“The Nature of Code”](https://natureofcode.com) by Daniel Schiffman.
 
-As you will find out in this book, I am putting on some very specific lenses to look at the world. You may find them restrictive; you may find them arbitrary, you may find them opiniated. Yes, this specific way of looking at the effects of digital technology has its limits. However, the essence of understanding is to be able to extract the core elements out of something. Paradoxically, only by restricting the way we look at things can we see more clearly. Cut through the noise. Like Goethe said: “In der Beschränkung zeigt sich erst der Meister”, though he applied that to a different subject.
+As you will find out in this book, I am putting on some very specific lenses to look at the world. You may find them restrictive; you may find them arbitrary, you may find them opinionated. Yes, this specific way of looking at the effects of digital technology has its limits. However, the essence of understanding is to be able to extract the core elements out of something. Paradoxically, only by restricting the way we look at things can we see more clearly. Cut through the noise. Like Goethe said: “In der Beschränkung zeigt sich erst der Meister”, though he applied that to a different subject.
 
 I have a very limited perspective of the world. There are so many things and concepts that I just fail to remember or understand.
 And yet, that limitation has served me well. It has allowed me to focus on core principles that you may not see if you take in all the richness and idiosyncrasies.
