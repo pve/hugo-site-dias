@@ -7,7 +7,7 @@ weight: 60
 
 Cloud is too important to leave to technical people.
 
-Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have **technical boundaries** that are matched by organisational and **contractual boundaries**. This is new, we did not have that before the digital revolution.
+Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have **technical boundaries** that are matched by organizational and **contractual boundaries**. This is new, we did not have that before the digital revolution.
 Amazon calls this the **shared** responsibility model for cloud security.
 I would simplify that as:  _what do I do, and what do you do_? For example, who is responsible for patching the Operating System in an IaaS service model?
 

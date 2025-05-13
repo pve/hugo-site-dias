@@ -3,7 +3,7 @@ title: "About This Site"
 description: ""
 ---
 
-We often think of digital infrastructures as neutral technical systems. But they aren’t just roads; they’re rulebooks, and they shape organisation. They define who benefits, who is exposed to risk, and who holds power. From cloud platforms to AI, these infrastructures shape our world—but we rarely think about them systematically.
+We often think of digital infrastructures as neutral technical systems. But they aren’t just roads; they’re rulebooks, and they shape organization. They define who benefits, who is exposed to risk, and who holds power. From cloud platforms to AI, these infrastructures shape our world—but we rarely think about them systematically.
 
 Hi! I'm Peter van Eijk, and I am an instructor, coach and consultant. For most of my career I have been working on IT and how to control it, and its risks. After a variety of jobs in which I did some amazing projects, I started my own business in 2005 to focus on consulting and teaching on Digital Infrastructures.
 

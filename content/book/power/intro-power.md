@@ -22,7 +22,7 @@ Understanding power in IT is not just academic. As the examples show it is cruci
 
 From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.
 
-- Power can be attributed to people, technical artifacts, teams, organisations as a whole, roles, and institutions, to name a few.
+- Power can be attributed to people, technical artifacts, teams, organizations as a whole, roles, and institutions, to name a few.
 - These same types of actors can also be the subjects of power.
 - Power is exercised through a variety of means and mechanisms.
 

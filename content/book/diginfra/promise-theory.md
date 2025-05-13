@@ -30,7 +30,7 @@ Once the coffee is there, the statement "there you go" in fact signifies a reque
 And once we say "thank you", we have answered to that acquittal request, and stated that there are no more open commitments.
 
 This basic interaction is an enormously universal pattern as we will see, and it can be used to describe interactions on many levels.
-I have examples ranging from technical internet protocols to the organisation of service management and legal contracts.
+I have examples ranging from technical internet protocols to the organization of service management and legal contracts.
 
 But before we move on, I'll have to discuss some variations that allow you to see how universal the pattern is.
 
@@ -53,13 +53,13 @@ Again, this proceeds by making a request, in this case typically to a service de
 It is the exact same flow of messages, although there may be more detail involved and a paper or web form needs to be filled in.
 
 In our example, we have humans trading with humans.
-But the same principles hold between humans and machines, machines and other machines, as well as between organisations and machines.
+But the same principles hold between humans and machines, machines and other machines, as well as between organizations and machines.
 The core idea is that we are describing how agents transact.
 
 Once we understand and describe the essence of such a transaction, we can automate it without changing the meaning.
 That is a very powerful insight in a cyber world.
-As an organisation, we want to have machines service our customers.
-And as customers, we don't seem to mind talking to a website as a substitute to talking to an organisation.
+As an organization, we want to have machines service our customers.
+And as customers, we don't seem to mind talking to a website as a substitute to talking to an organization.
 
 In the course of the 20th century, most countries completed the automation of their telephone systems.
 Requesting a call through an operator was replaced by "direct dialling", or self-service as we would call it in other situations.

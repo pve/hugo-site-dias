@@ -20,7 +20,7 @@ A little later, the Internet revolution from boom to bust, and back up again.
 Then, early 2010s, cloud computing exploded, and I started teaching cloud security.
 All of these led to dramatic shifts of power in organizations, and therefore in the way IT was organized. Here I'd like to explore the underlying mechanisms.
 
-While there are many uses of the word 'disruptive' in this context, I'd like to focus on the degree to which a disruptive technology will shift power in organisations and society.
+While there are many uses of the word 'disruptive' in this context, I'd like to focus on the degree to which a disruptive technology will shift power in organizations and society.
 
 In my professional career I have seen, as mentioned elsewhere, a few major disruptive changes.
 Most of these significantly changed power structures.

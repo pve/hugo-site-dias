@@ -29,9 +29,6 @@
     <loc>http://localhost:1313/book/value/value-of-information/</loc>
     <lastmod>2025-05-10T11:33:28+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/book/risk/what-is-trust/</loc>
-    <lastmod>2025-05-05T10:18:17+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/three-books-zero-trust/</loc>
     <lastmod>2025-04-30T12:46:33+00:00</lastmod>
   </url><url>
@@ -116,6 +113,9 @@
     <loc>http://localhost:1313/book/power/governance-example/</loc>
     <lastmod>2025-05-01T11:07:46+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/risk/what-is-trust/</loc>
+    <lastmod>2025-05-05T10:18:17+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/book/change/</loc>
     <lastmod>2025-04-07T22:04:09+00:00</lastmod>
   </url><url>
@@ -149,6 +149,9 @@
     <loc>http://localhost:1313/book/diginfra/deployment-diagrams/</loc>
     <lastmod>2025-03-09T21:19:45+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/diginfra/digital-inf-ai/</loc>
+    <lastmod>2025-03-08T17:57:16+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/book/value/business-model-canvas-saas/</loc>
     <lastmod>2014-12-15T11:18:17+00:00</lastmod>
   </url><url>
@@ -167,8 +170,11 @@
     <loc>http://localhost:1313/book/diginfra/promise-theory-part3/</loc>
     <lastmod>2025-05-05T05:58:14+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/diginfra/unified-theory/</loc>
+    <lastmod>2025-05-12T21:05:36+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-12T07:17:50+00:00</lastmod>
+    <lastmod>2025-05-12T21:05:36+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/home/optimalisatie/</loc>
     <lastmod>2025-05-12T06:59:12+00:00</lastmod>
@@ -211,9 +217,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/graphic-novel-page1/</loc>
     <lastmod>2025-03-09T14:07:53+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/book/diginfra/digital-inf-ai/</loc>
-    <lastmod>2025-03-08T17:57:16+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/how-can-we-achieve-autonomy/</loc>
     <lastmod>2025-03-02T22:04:34+00:00</lastmod>

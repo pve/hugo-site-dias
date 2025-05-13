@@ -1,16 +1,16 @@
 ---
 date: '2025-05-08T20:45:16Z'
 draft: false
-title: "Organisation Size Matters - Dunbar's number"
+title: "organization Size Matters - Dunbar's number"
 weight: 100
 ---
 
-Over the years, I have worked with many organisations, large and small.
-In one case, I implemented the exact same change in more than 15 organisations, whose size ranged from 35 to 35 thousand employees.
+Over the years, I have worked with many organizations, large and small.
+In one case, I implemented the exact same change in more than 15 organizations, whose size ranged from 35 to 35 thousand employees.
 But that is a story for another unit.
 
 It led me to see patterns in decision making and trust.
-Who takes decisions in an organisation?
+Who takes decisions in an organization?
 How do people even talk about decisions, especially when they concern digital technology?
 Who do you trust?
 
@@ -42,7 +42,7 @@ Instead of knowing people by name, you know them by function.
 And the interactions between people are less governed by personal shared histories, but by company shared histories.
 Processes are established, which have to be followed, reviewed, and controlled.
 Bureaucracy sets in, and every request has to go through a lot of standardized paperwork.
-And it does not matter if this is a government organisation, or a large business.
+And it does not matter if this is a government organization, or a large business.
 Above a certain size, they all work the same.
 
 Small companies run on trust, large companies run on control.
@@ -57,8 +57,8 @@ And for reasons that we discuss elsewhere, these tend to be "winner takes all" s
 Market forces are important here, but also regulatory pressures and other circumstantial influences.
 
 If you want to understand the differences and their impacts, start by looking out for the ways in which digital identities are managed.
-This differs widely between small and large organisations, as I have shown here.
+This differs widely between small and large organizations, as I have shown here.
 
-In real life, these categories overlap and influence one another. Often, technology decisions begin as individual choices, which then moves to be adopted by a small group, and then the whole organisation.
-Large organisations typically consist of a lot of small groups, within which there are different decision cultures.
-And small companies often try to sell to large organisations, while misunderstanding the cultural differences between themselves and their prospective customers.
+In real life, these categories overlap and influence one another. Often, technology decisions begin as individual choices, which then moves to be adopted by a small group, and then the whole organization.
+Large organizations typically consist of a lot of small groups, within which there are different decision cultures.
+And small companies often try to sell to large organizations, while misunderstanding the cultural differences between themselves and their prospective customers.

@@ -33,7 +33,7 @@ Once you have done that, the hardware reliability no longer matter, within certa
 The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a 'middleware' software layer on which resilient applications can be build.
 We'll cover that in another unit.
 
-Finally, scale does not only break hardware, but also organisations.
+Finally, scale does not only break hardware, but also organizations.
 For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
 When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks.
 That introduces a lot of communication overhead.

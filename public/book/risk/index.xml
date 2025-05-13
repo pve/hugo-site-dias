@@ -13,22 +13,11 @@
       <link>http://localhost:1313/book/risk/intro-to-risk/</link>
       <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
-      <description>&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances endangering that value.&lt;/p&gt;
+      <description>&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances threatening that value.
+While value is realized in the past and the present, risk is what can happen with that value in the &lt;em&gt;future&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
 &lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.
 In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What Is Trust</title>
-      <link>http://localhost:1313/book/risk/what-is-trust/</link>
-      <pubDate>Mon, 05 May 2025 10:18:17 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/what-is-trust/</guid>
-      <description>&lt;p&gt;Trust is an essential element in any collaboration.
-We want to trust things, people, and organisations to do the right thing, to keep their promises.
-Without trust, we will not be able to have confidence in the contribution of others, and that is a risk.&lt;/p&gt;
-&lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
-Anytime we assume trust that is not warranted is also a risk.
-That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Who Suffers?</title>
@@ -38,22 +27,22 @@ That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;<
       <description>&lt;p&gt;I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
 Make clear who has the pain.
 For my phone and laptop it is easy: if I lose them, I suffer.
-In a larger organisation it is less clear.
+In a larger organization it is less clear.
 Suppose a server dies.
 Whose application then no longer runs?
 Who has to pay for a new server?
 This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Assets</title>
+      <title>Information Security Assets</title>
       <link>http://localhost:1313/book/risk/assets/</link>
       <pubDate>Sun, 11 May 2025 08:37:01 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/assets/</guid>
-      <description>&lt;h2 id=&#34;assets&#34;&gt;Assets&lt;/h2&gt;
-&lt;h2 id=&#34;vulnerabilities-and-threats&#34;&gt;Vulnerabilities and threats&lt;/h2&gt;
-&lt;p&gt;(examples of all)&lt;/p&gt;
-&lt;p&gt;To be continued.&lt;/p&gt;
-&lt;p&gt;what other assets?&lt;/p&gt;</description>
+      <description>&lt;p&gt;Let&amp;rsquo;s dive a little deeper into assets, which is typically data that we have risks on, though we can also see the processing power that we need as an asset.&lt;/p&gt;
+&lt;p&gt;From a risk analysis, the asset is the unit that we consider.
+ENISA, the European Network Information Security Agency, is one of the many institutes in the world described IT risk management.
+In a report on cloud security (reference) they identified a number of assets.
+A few examples to illustrate the breadth of that are:&lt;/p&gt;</description>
     </item>
     <item>
       <title>What about AI Risks?</title>
@@ -72,6 +61,18 @@ We just need to extend those principles to new forms of data and software.&lt;/p
 &lt;p&gt;Let&amp;rsquo;s focus on the AI assets that are the product of deep learning.
 Deep learning neural networks have represented a shift in AI technology.
 Before that, symbolic AI was more common.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Is Trust</title>
+      <link>http://localhost:1313/book/risk/what-is-trust/</link>
+      <pubDate>Mon, 05 May 2025 10:18:17 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/what-is-trust/</guid>
+      <description>&lt;p&gt;Trust is an essential element in any collaboration.
+We want to trust things, people, and organizations to do the right thing, to keep their promises.
+Without trust, we will not be able to have confidence in the contribution of others, and that is a risk.&lt;/p&gt;
+&lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
+Anytime we assume trust that is not warranted is also a risk.
+That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>

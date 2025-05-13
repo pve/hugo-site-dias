@@ -20,7 +20,7 @@ A little later, the Internet revolution from boom to bust, and back up again.
 Then, early 10s, cloud computing exploded, and I started teaching cloud security.
 All of these led to dramatic shifts of power in organizations, and therefore in the way IT was organized. Here I'd like to explore the underlying mechanisms.
 
-While there are many uses of the word 'disruptive' in this context, I'd like to focus on the degree to which a disruptive technology will shift power in organisations and society.
+While there are many uses of the word 'disruptive' in this context, I'd like to focus on the degree to which a disruptive technology will shift power in organizations and society.
 
 In my professional career I have seen, as mentioned elsewhere, a few major disruptive changes.
 Most of these significantly changed power structures.
@@ -54,8 +54,8 @@ And there are many more examples of power intermediaries, and many more words th
 
 Let's take an example situation. 
 Suppose the board of a company wants to set a digital strategy for the company, who is in the end implementing and realizing that strategy? 
-Or, the board wants to demonstrate control over the resilience of the organisation to cyber risks. 
-In the end, that requires a lot of people and roles, for example in building systems, or doing incident response. Many of these roles are, in fact, power intermediaries, because they facilitate the flow of the board's power to the places in the organisation that matter.
+Or, the board wants to demonstrate control over the resilience of the organization to cyber risks. 
+In the end, that requires a lot of people and roles, for example in building systems, or doing incident response. Many of these roles are, in fact, power intermediaries, because they facilitate the flow of the board's power to the places in the organization that matter.
 
 As we discuss elsewhere, this involves people, process and technology. 
 I also elaborate on two specific positions of power elsewhere: the architect, and the assessor, although they are by no means the only ones. ---
@@ -76,10 +76,10 @@ The international arena is complex, and there are conflicting views on how it is
 These conflicting views can best be seen as maps of the territory. And as I have mentioned earlier, a map is only relevant for a specific purpose.
 
 The first category of actors is nations, obviously. The word nation is part of the word international.
-But we can see many other actors exerting influence, such as multinational corporations, NGOs (non-governmental organisations), treaty organisations, and so on.
+But we can see many other actors exerting influence, such as multinational corporations, NGOs (non-governmental organizations), treaty organizations, and so on.
 Let's break this down a bit.
 
-Nations make laws, multinational corporations make investments and offer products, NGOs such as ISO make standards, treaty organisations such as the EU make more standards and regulations. All of these may impact digital infrastructures.
+Nations make laws, multinational corporations make investments and offer products, NGOs such as ISO make standards, treaty organizations such as the EU make more standards and regulations. All of these may impact digital infrastructures.
 And sometimes these are conflicting.
 
 Not everybody shares this multifaceted view of the international arena. Some hold that nation states are the only actors that have real power. After all, they control the territory on which people live, and have a monopoly on military force and a legal monopoly on violence.
@@ -88,9 +88,9 @@ In this view, nations enable the other types of actors through law and agreement
 
 A multinational corporation, even if it has public shareholders across the globe, has a primary residence somewhere. And the legal options and obligations trickle down from there.
 
-Similarly, NGOs such as ISO (International Standards Organisations) and the International Criminal Court are also established somewhere, and recognized by other countries, or not recognized, as the case may be.
+Similarly, NGOs such as ISO (International Standards organizations) and the International Criminal Court are also established somewhere, and recognized by other countries, or not recognized, as the case may be.
 
-Digital infrastructures don't necessarily map easily to a single organisation running them, or even governing them. The internet is a interesting and complicated example. On a day to day basis, internet service is largely provided by telecommunications companies owning the cables and radio base stations. Administering the coordination between these and other providers, is done by many actors. For example the use of IP adresses is coordinated by a non-profit established in the US. But there are many more players in that space, often independent.
+Digital infrastructures don't necessarily map easily to a single organization running them, or even governing them. The internet is a interesting and complicated example. On a day to day basis, internet service is largely provided by telecommunications companies owning the cables and radio base stations. Administering the coordination between these and other providers, is done by many actors. For example the use of IP adresses is coordinated by a non-profit established in the US. But there are many more players in that space, often independent.
 
 In contrast to the multi-nation view of the world is the perspective that what really matters in the international arena are the multinational corporations. They have significant control over the international flow of goods, services and investments. Understand that many of these corporations have annual turnovers that are larger than the gross domestic product of 80% of the world's countries.
 
@@ -98,7 +98,7 @@ Large businesses have the capability to drive government policies. Even US presi
 
 This is not hypothetical. There has been succesful lobbying by US companies against international regulation that is seen as limiting to them.
 
-Many multinational organisations are largely legitimate, but there are quite a few whose main objective is to launder money outside of the control of nations. Beyond that, when it comes to cybersecurity, internationally organised crime has business models that include ransomware extortion and bitcoin mining on hacked computers.
+Many multinational organizations are largely legitimate, but there are quite a few whose main objective is to launder money outside of the control of nations. Beyond that, when it comes to cybersecurity, internationally organised crime has business models that include ransomware extortion and bitcoin mining on hacked computers.
 
 Then there is the perspective that the only really important international actor is the US.
 With more than 700 military bases in more than 80 countries, this is the single largest international military presence in the history of mankind. Additionally, since the end of world war II, the US has alledgedly intervened in dozens of countries, through military or other means, three times more than Russia, the next contender.
@@ -194,7 +194,7 @@ Understanding power in IT is not just academic. As the examples show it is cruci
 
 From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.
 
-- Power can be attributed to people, technical artifacts, teams, organisations as a whole, roles, and institutions, to name a few.
+- Power can be attributed to people, technical artifacts, teams, organizations as a whole, roles, and institutions, to name a few.
 - These same types of actors can also be the subjects of power.
 - Power is exercised through a variety of means and mechanisms.
 
@@ -389,7 +389,7 @@ weight: 40
 
 Cloud is too important to leave to technical people.
 
-Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have **technical boundaries** that are matched by organisational and **contractual boundaries**. This is new, we did not have that before the digital revolution.
+Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have **technical boundaries** that are matched by organizational and **contractual boundaries**. This is new, we did not have that before the digital revolution.
 Amazon calls this the **shared** responsibility model for cloud security.
 I would simplify that as:  _what do I do, and what do you do_? For example, who is responsible for patching the Operating System in an IaaS service model?
 
@@ -438,7 +438,7 @@ I think this story is of interest to many senior roles in IT and business. I hav
 
 I don’t have final answers to all the questions that I can pose, and I cannot afford to wait until I have them. For that reason, I want to present the book as an ongoing project, for the time being, where I organize my thoughts and research in the form of blog posts, that at some point will be assimilated in the draft book.
 
-This is hardly a book on digital technology, but more on the organisational and societal impact of managing this at scale.
+This is hardly a book on digital technology, but more on the organizational and societal impact of managing this at scale.
 
 For a better understanding of digital technology I highly recommend Brian Kernighan’s [“Understanding the Digital World”](https://kernighan.com). And if you want to have fun while learning how to understand software, I’d highly recommend [“The Nature of Code”](https://natureofcode.com) by Daniel Schiffman.
 
@@ -1172,7 +1172,7 @@ Once you have done that, the hardware reliability no longer matter, within certa
 The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a 'middleware' software layer on which resilient applications can be build. 
 We'll cover that in another unit.
 
-Finally, scale does not only break hardware, but also organisations.
+Finally, scale does not only break hardware, but also organizations.
 For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
 When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks. ---
 date: '2025-03-09T21:19:45Z'
@@ -1357,7 +1357,7 @@ There will always be edge cases.
 
 What sets digital infrastructures apart in my opinion is that, thanks to automation, their scale, geographical reach and deployment speed can be orders of magnitude bigger than that of other infrastructures. That has a lot in interesting effects, which we'll explore in this book. 
 
-In summary, digital infrastructures are about services that organisations deliver to independent consumers, while at the same time these services are subject to automation. That gives a tremendous dynamic in that relationship, and leads to new value, new power, and new risk.
+In summary, digital infrastructures are about services that organizations deliver to independent consumers, while at the same time these services are subject to automation. That gives a tremendous dynamic in that relationship, and leads to new value, new power, and new risk.
 ---
 date: '2025-03-08T17:57:16Z'
 draft: false
@@ -1388,7 +1388,7 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
 
 In cloud terms, we would call this Inferencing as a Service. In the NIST model, we'd call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.
 
-This gives us the option to look for this on the market, or create a shared service inside an organisation or group of organisations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.
+This gives us the option to look for this on the market, or create a shared service inside an organization or group of organizations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.
 
 More at: <https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing>
 ---

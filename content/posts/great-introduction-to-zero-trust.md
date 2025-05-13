@@ -19,8 +19,8 @@ This book feels like it will fill that need for a lot of my students, which is w
 
 It works most of the time.
 
-What I think the book could use some more off is a bit of drama. I mean that in the technical sense. The only serious conflict in this book is between the organisation and the hacker. In contrast, the “Phoenix Project” and “Unicorn Project” (the archetypical IT business novels) show at length what internal conflicts in its protagonist organisation can develop. To me this is relevant because no strategic IT innovation will be successful if it does not go through significant internal conflict and its resolution. More examples in spelling out the existing conflict and pathologies of an organisation would therefore add significantly to the educational value for my students.
+What I think the book could use some more off is a bit of drama. I mean that in the technical sense. The only serious conflict in this book is between the organization and the hacker. In contrast, the “Phoenix Project” and “Unicorn Project” (the archetypical IT business novels) show at length what internal conflicts in its protagonist organization can develop. To me this is relevant because no strategic IT innovation will be successful if it does not go through significant internal conflict and its resolution. More examples in spelling out the existing conflict and pathologies of an organization would therefore add significantly to the educational value for my students.
 
-By the way, I also liked the overt and covert movie references, and the shoutouts to a variety of industry organisations such as the Cloud Security Alliance and NIST.
+By the way, I also liked the overt and covert movie references, and the shoutouts to a variety of industry organizations such as the Cloud Security Alliance and NIST.
 
 And if you are interested in applying Zero Trust principles, have a look at this page here: [https://cczt.clubcloudcomputing.com](<https://cczt.clubcloudcomputing.com/>).

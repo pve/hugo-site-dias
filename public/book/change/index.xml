@@ -66,20 +66,20 @@ These bodies of knowledge cover a lot of ground, and most of it is related to di
       <pubDate>Thu, 03 May 2018 13:54:48 +0000</pubDate>
       <guid>http://localhost:1313/book/change/lawyers-need-understand-tech/</guid>
       <description>&lt;p&gt;Cloud is too important to leave to technical people.&lt;/p&gt;
-&lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organisational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
+&lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organizational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
 Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
 I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Organisation Size Matters - Dunbar&#39;s number</title>
+      <title>organization Size Matters - Dunbar&#39;s number</title>
       <link>http://localhost:1313/book/change/org-size-matters/</link>
       <pubDate>Thu, 08 May 2025 20:45:16 +0000</pubDate>
       <guid>http://localhost:1313/book/change/org-size-matters/</guid>
-      <description>&lt;p&gt;Over the years, I have worked with many organisations, large and small.
-In one case, I implemented the exact same change in more than 15 organisations, whose size ranged from 35 to 35 thousand employees.
+      <description>&lt;p&gt;Over the years, I have worked with many organizations, large and small.
+In one case, I implemented the exact same change in more than 15 organizations, whose size ranged from 35 to 35 thousand employees.
 But that is a story for another unit.&lt;/p&gt;
 &lt;p&gt;It led me to see patterns in decision making and trust.
-Who takes decisions in an organisation?
+Who takes decisions in an organization?
 How do people even talk about decisions, especially when they concern digital technology?
 Who do you trust?&lt;/p&gt;</description>
     </item>

@@ -149,7 +149,7 @@ Voor de buurman pizzeria is het ietsje anders.
 
 Lean stuff. Mura, muda.
 
-The mission. Military calls this the mission. And so does the catholic church. But it is not just an organisational thing.
+The mission. Military calls this the mission. And so does the catholic church. But it is not just an organizational thing.
 As a parent, your mission is to raise your child to become an independent member of society.
 That is, independent of you, so that if you die, they can live on.
 

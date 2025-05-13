@@ -8,7 +8,7 @@ Shared resources can lead to conflicts.
 If the capacity runs out, somebody will feel the pain at the expense of somebody else.
 This conflict will be resolved in one way or another.
 Without other arrangements, the stakeholder with the most power wins.
-This is not necessarily the best outcome for the organisation as a whole.
+This is not necessarily the best outcome for the organization as a whole.
 
 To illustrate this, I gave ChatGPT the following prompt:
 

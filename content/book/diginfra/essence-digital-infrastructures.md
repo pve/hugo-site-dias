@@ -18,4 +18,4 @@ There will always be edge cases.
 
 What sets digital infrastructures apart, in my opinion, is that, thanks to automation, their scale, geographical reach, and deployment speed, can be orders of magnitude greater than that of other infrastructures. That has a lot in interesting effects, which we'll explore in this book.
 
-In summary, digital infrastructures are about services that organisations deliver to independent consumers, while at the same time these services are subject to automation. That gives a tremendous dynamic in that relationship, and leads to new value, new power, and new risk.
+In summary, digital infrastructures are about services that organizations deliver to independent consumers, while at the same time these services are subject to automation. That gives a tremendous dynamic in that relationship, and leads to new value, new power, and new risk.
