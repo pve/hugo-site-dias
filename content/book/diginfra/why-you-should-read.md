@@ -21,4 +21,3 @@ What I write about in this book is shaped by the conversations I had with many p
 I have worked with IT consultants, risk auditors, and their clients.
 I have worked with architects, CIOs, CISOs, and boards of large organizations.
 I have also work with college students who were one third of my age, and whose parents weren't even born when I wrote my first computer program.
-

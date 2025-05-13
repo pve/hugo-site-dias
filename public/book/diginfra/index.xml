@@ -154,43 +154,9 @@ A: thank you, here is your initial window size&lt;/p&gt;</description>
       <guid>http://localhost:1313/book/diginfra/unified-theory/</guid>
       <description>&lt;p&gt;The units so far have explored quite a few, seemingly randomly related, concepts and observations.
 Here we&amp;rsquo;ll embed them in a unified theory that illustrates how they fit together.&lt;/p&gt;
-&lt;p&gt;At the core is the concept of promise-based interactions between autonomous agents (human and technical). Every digital infrastructure can be understood as a network of these promises:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Value Creation Layer&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Promises made to consumers about service delivery (availability, performance)&lt;/li&gt;
-&lt;li&gt;Economic models showing how shared resources and automation create value&lt;/li&gt;
-&lt;li&gt;Business model frameworks showing how promises translate to revenue streams&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Power Distribution Layer&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Who makes which promises to whom (governance structures)&lt;/li&gt;
-&lt;li&gt;How promises are enforced (contracts, standards, regulations)&lt;/li&gt;
-&lt;li&gt;Control boundaries between agents (who decides what)&lt;/li&gt;
-&lt;li&gt;How scale shifts power dynamics (Dunbar&amp;rsquo;s number threshold effects)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Risk Management Layer&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Analyzing what happens when promises are broken&lt;/li&gt;
-&lt;li&gt;Vulnerabilities in promise networks (security, compliance)&lt;/li&gt;
-&lt;li&gt;Trust assumptions and zero trust principles&lt;/li&gt;
-&lt;li&gt;How externalities distribute risk across stakeholders&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Change Management Layer&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;How promises evolve over time&lt;/li&gt;
-&lt;li&gt;Feedback loops that stabilize or destabilize systems&lt;/li&gt;
-&lt;li&gt;Technology maturity cycles (from manual to automated)&lt;/li&gt;
-&lt;li&gt;Disruption patterns when new agents enter the ecosystem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This model shows how these layers interact - for example, how power structures affect what promises can be made (value), how those promises create potential failure points (risk), and how adaptive change processes respond to those risks.&lt;/p&gt;</description>
+&lt;p&gt;From the title of this book you can see that the main pillars of that theory include value, power, and risk.
+To get there, we need a fourth pillar: change.
+For now, we&amp;rsquo;ll call these pillars layers, though there is no implied hierarchy between them.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

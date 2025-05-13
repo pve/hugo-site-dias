@@ -14,13 +14,13 @@ A few examples to illustrate the breadth of that are:
 
 - A4. Intellectual property. This represents value to the organization owning it.
 - A6. Personal data
-- A14. Cloud service management interface 
+- A14. Cloud service management interface
 - A17. Physical hardware
 - A22. Security logs
 
 ## Vulnerabilities and threats
 
-ENISA: Any circumstance or event with the potential to adversely impact an asset 
+ENISA: Any circumstance or event with the potential to adversely impact an asset
 Microsoft:
 Threat. A potential occurrence, malicious or otherwise, that might damage or compromise your assets.
 Vulnerability. A weakness in some aspect or feature of a system that makes a threat possible. Vulnerabilities might exist at the network, host, or application levels.
@@ -34,7 +34,7 @@ V5. Hypervisor vulnerabilities
 
 ## Risk
 
-ENISA: Risk is result of vulnerability 
+ENISA: Risk is result of vulnerability
 Risk = Impact * Probability
  (ISC)2:
 Availability: is the information adequately available when needed (time/place)?
@@ -42,20 +42,18 @@ Integrity: is the information adequate and correct enough?
 Confidentiality: is the information only accessible to authorized persons?
 Also known as AIC or CIA triad
 
-
 ENISA example
 For example:
 
 A14. Cloud service management interface
 +
 V1. AAA vulnerabilities
-Leads to 
+Leads to
 R.11 Management interface compromise
 
 ## Controls
 
 Microsoft: Countermeasure (or control). A safeguard that addresses a threat and mitigates risk.
-
 
 To be continued.
 

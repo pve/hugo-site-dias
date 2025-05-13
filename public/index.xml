@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 May 2025 21:05:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 May 2025 09:39:02 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -32,6 +32,14 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mitigation</title>
+      <link>http://localhost:1313/book/risk/mitigation/</link>
+      <pubDate>Tue, 13 May 2025 09:39:02 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/mitigation/</guid>
+      <description>&lt;p&gt;walk in with well spelled out risks, a clear connection to business impact, data, a mitigation plan, and measurable targets.&lt;/p&gt;
+&lt;p&gt;Providing third-party assurance enables the board to deliver on its risk management responsibilities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A brief history of LLM tooling</title>
@@ -558,49 +566,15 @@ R: yes we promise, here is your initial window size
 A: thank you, here is your initial window size&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Unified Theory</title>
+      <title>A Unified Framework</title>
       <link>http://localhost:1313/book/diginfra/unified-theory/</link>
       <pubDate>Mon, 12 May 2025 21:05:36 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/unified-theory/</guid>
-      <description>&lt;p&gt;The units so far have explored quite a few, seemingly randomly related, concepts and observations.
-Here we&amp;rsquo;ll embed them in a unified theory that illustrates how they fit together.&lt;/p&gt;
-&lt;p&gt;At the core is the concept of promise-based interactions between autonomous agents (human and technical). Every digital infrastructure can be understood as a network of these promises:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Value Creation Layer&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Promises made to consumers about service delivery (availability, performance)&lt;/li&gt;
-&lt;li&gt;Economic models showing how shared resources and automation create value&lt;/li&gt;
-&lt;li&gt;Business model frameworks showing how promises translate to revenue streams&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Power Distribution Layer&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Who makes which promises to whom (governance structures)&lt;/li&gt;
-&lt;li&gt;How promises are enforced (contracts, standards, regulations)&lt;/li&gt;
-&lt;li&gt;Control boundaries between agents (who decides what)&lt;/li&gt;
-&lt;li&gt;How scale shifts power dynamics (Dunbar&amp;rsquo;s number threshold effects)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Risk Management Layer&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Analyzing what happens when promises are broken&lt;/li&gt;
-&lt;li&gt;Vulnerabilities in promise networks (security, compliance)&lt;/li&gt;
-&lt;li&gt;Trust assumptions and zero trust principles&lt;/li&gt;
-&lt;li&gt;How externalities distribute risk across stakeholders&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Change Management Layer&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;How promises evolve over time&lt;/li&gt;
-&lt;li&gt;Feedback loops that stabilize or destabilize systems&lt;/li&gt;
-&lt;li&gt;Technology maturity cycles (from manual to automated)&lt;/li&gt;
-&lt;li&gt;Disruption patterns when new agents enter the ecosystem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This model shows how these layers interact - for example, how power structures affect what promises can be made (value), how those promises create potential failure points (risk), and how adaptive change processes respond to those risks.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The units so far have explored quite a few, seemingly unrelated, concepts and observations.
+Here we&amp;rsquo;ll embed them in a unified framework that illustrates how they fit together.&lt;/p&gt;
+&lt;p&gt;From the title of this book you can see that the main pillars of that framework include value, power, and risk.
+To get there, we need a fourth pillar: change.
+For now, we&amp;rsquo;ll call these pillars layers, though there is no implied hierarchy between them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Optimalisatie</title>

@@ -1,44 +1,35 @@
 ---
 date: '2025-05-12T21:05:36Z'
 draft: false
-title: 'Unified Theory'
+title: 'A Unified Framework'
 weight: 120
 ---
 
-The units so far have explored quite a few, seemingly randomly related, concepts and observations.
-Here we'll embed them in a unified theory that illustrates how they fit together.
+The units so far have explored quite a few, seemingly unrelated, concepts and observations.
+Here we'll embed them in a unified framework that illustrates how they fit together.
 
-At the core is the concept of promise-based interactions between autonomous agents (human and technical). Every digital infrastructure can be understood as a network of these promises:
+From the title of this book you can see that the main pillars of that framework include value, power, and risk.
+To get there, we need a fourth pillar: change.
+For now, we'll call these pillars layers, though there is no implied hierarchy between them.
 
-1. Value Creation Layer
+At the core is the concept of promise-based interactions between autonomous agents (human and technical).
+Every digital infrastructure can be understood as a network of these promises across these layers.
 
-- Promises made to consumers about service delivery (availability, performance)
-- Economic models showing how shared resources and automation create value
-- Business model frameworks showing how promises translate to revenue streams
+![DIAS Framework](/dias-framework.svg)
 
-1. Power Distribution Layer
+In the **value creation** layer, we are looking at how these promises lead to value for customers and providers. What are these services? How do we measure their quality?
+How are they provisioned in a cost-effective way, and how does that lead to business models for the provider?
 
-- Who makes which promises to whom (governance structures)
-- How promises are enforced (contracts, standards, regulations)
-- Control boundaries between agents (who decides what)
-- How scale shifts power dynamics (Dunbar's number threshold effects)
+In the **power distribution** layer, we are looking at who is making which promises to whom (governance), how promises are enforced (contracts, standards, regulations), how control boundaries work between agents, and how scale shifts power dynamics.
 
-1. Risk Management Layer
+In the **risk management** layer, we analyze what happens when promises are broken, how we can find vulnerabilities in these promise networks (security, compliance). We also look at trust assumptions, and how externalities distort risk across stakeholders.
 
-- Analyzing what happens when promises are broken
-- Vulnerabilities in promise networks (security, compliance)
-- Trust assumptions and zero trust principles
-- How externalities distribute risk across stakeholders
+Finally, the **change management** layer is where we find feedback loops that stabilize or destabilize systems, technology maturity cycles (from manual to automated), and how promises evolve over time, perhaps as the result of new agents entering the ecosystem.
 
-1. Change Management Layer
+This framework shows how these layers interact. For example, how power structures affect what promises can be made (value), how those promises create potential failure points (risk), and how adaptive change processes respond to those risks (change).
 
-- How promises evolve over time
-- Feedback loops that stabilize or destabilize systems
-- Technology maturity cycles (from manual to automated)
-- Disruption patterns when new agents enter the ecosystem
-
-This model shows how these layers interact - for example, how power structures affect what promises can be made (value), how those promises create potential failure points (risk), and how adaptive change processes respond to those risks.
-
-For each real-world digital infrastructure (cloud computing, social media platforms, payment systems), the framework provides a consistent analytical approach that reveals the underlying dynamics shaping its development, adoption, and governance.
+For each real-world digital infrastructure (e.g. telecommunications, cloud computing, social media platforms, payment systems), the framework provides a consistent analytical approach that reveals the underlying dynamics shaping its development, adoption, and governance.
 
 What makes this powerful is that it creates a universal language for understanding everything from a simple client-server relationship to complex multi-stakeholder global systems, while acknowledging both technical and social dimensions of digital infrastructures.
+
+In the next chapters we'll dive deeper in each of these layers.

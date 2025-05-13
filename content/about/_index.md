@@ -18,6 +18,7 @@ Watch it come together, and please share your thoughts with me. You can track th
 If you want to work with me, find me on LinkedIn (Peter HJ van Eijk) for inquiries about coaching, consulting, and workshops.
 
 More information on:
+
 - [cloud security training](https://thecloudinstructor.com)
 - [Zero Trust support program](https://cczt.clubcloudcomputing.com)
 - [AI Risk - the big picture](https://clubcloudcomputing.teachable.com/p/aire-intro/?preview=logged_out)

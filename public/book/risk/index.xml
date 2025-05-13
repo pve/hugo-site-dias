@@ -6,7 +6,7 @@
     <description>Recent content in Risks of digital infrastructures on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 May 2025 08:37:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 May 2025 09:39:02 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -18,6 +18,14 @@ While value is realized in the past and the present, risk is what can happen wit
 &lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
 &lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.
 In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mitigation</title>
+      <link>http://localhost:1313/book/risk/mitigation/</link>
+      <pubDate>Tue, 13 May 2025 09:39:02 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/mitigation/</guid>
+      <description>&lt;p&gt;walk in with well spelled out risks, a clear connection to business impact, data, a mitigation plan, and measurable targets.&lt;/p&gt;
+&lt;p&gt;Providing third-party assurance enables the board to deliver on its risk management responsibilities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Who Suffers?</title>

@@ -30,10 +30,10 @@ He/she has lunch too, after all.
 
 Then we have the large company, more than about 150 people.
 Now 150 sounds like a random and weird number, but it is actually based on a [scientific result by Robin Dunbar](https://en.wikipedia.org/wiki/Dunbar%27s_number).
-It is called Dunbar's number. 
+It is called Dunbar's number.
 
-In groups with less than 150 people, you can know who you can trust, and who you can't. 
-When decisions are made, around the lunchtable, for example, you can easily know who made the decision, how they made the decision, and why.
+In groups with less than 150 people, you can know who you can trust, and who you can't.
+When decisions are made, around the lunch table, for example, you can easily know who made the decision, how they made the decision, and why.
 And if it does not work out well, you know where your complaints go, who can fix your computer, or help you with that application.
 
 You may not call a company of 150 large, but when groups are larger than that, you can't keep track anymore of who you can trust or not.
@@ -53,7 +53,7 @@ They too make decisions on the technologies that will be adopted.
 The technology and platform decisions of this category can be as fundamental as that of any of the other categories, but the forces driving them are a little harder to predict.
 For example, what is the social media platform that everybody uses?
 If all your friends are on a specific social media platform, sharing the fun they have and where the parties are, you are strongly encouraged to go there as well.
-And for reasons that we discuss elsewhere, these tend to be "winner takes all" situations, where one single choice dominates. 
+And for reasons that we discuss elsewhere, these tend to be "winner takes all" situations, where one single choice dominates.
 Market forces are important here, but also regulatory pressures and other circumstantial influences.
 
 If you want to understand the differences and their impacts, start by looking out for the ways in which digital identities are managed.

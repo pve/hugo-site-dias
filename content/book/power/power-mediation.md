@@ -15,10 +15,10 @@ The power intermediary aids in applying power. They are like the forward observe
 
 And there are many more examples of power intermediaries, and many more words that are used to describe that function. You can think of: power broker, facilitator, mediator, intermediary, but in our digital infrastructures world, we can be more specific.
 
-Let's take an example situation. 
-Suppose the board of a company wants to set a digital strategy for the company, who is in the end implementing and realizing that strategy? 
-Or, the board wants to demonstrate control over the resilience of the organization to cyber risks. 
+Let's take an example situation.
+Suppose the board of a company wants to set a digital strategy for the company, who is in the end implementing and realizing that strategy?
+Or, the board wants to demonstrate control over the resilience of the organization to cyber risks.
 In the end, that requires a lot of people and roles, for example in building systems, or doing incident response. Many of these roles are, in fact, power intermediaries, because they facilitate the flow of the board's power to the places in the organization that matter.
 
-As we discuss elsewhere, this involves people, process and technology. 
-I also elaborate on two specific positions of power elsewhere: the architect, and the assessor, although they are by no means the only ones. 
+As we discuss elsewhere, this involves people, process and technology.
+I also elaborate on two specific positions of power elsewhere: the architect, and the assessor, although they are by no means the only ones.
