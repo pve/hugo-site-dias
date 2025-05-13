@@ -6,14 +6,15 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 May 2025 06:59:12 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 May 2025 21:05:36 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
       <link>http://localhost:1313/book/risk/intro-to-risk/</link>
       <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
-      <description>&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances endangering that value.&lt;/p&gt;
+      <description>&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances threatening that value.
+While value is realized in the past and the present, risk is what can happen with that value in the &lt;em&gt;future&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
 &lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.
 In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
@@ -69,18 +70,6 @@ Another way is to say that more information means less noise because if you add 
 &lt;p&gt;To visualise this, think of a picture that is obscured by a bit of fog or haze.
 You can still see some of the picture, but not very clearly.
 You will make more errors when trying to understand what the picture means.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What Is Trust</title>
-      <link>http://localhost:1313/book/risk/what-is-trust/</link>
-      <pubDate>Mon, 05 May 2025 10:18:17 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/what-is-trust/</guid>
-      <description>&lt;p&gt;Trust is an essential element in any collaboration.
-We want to trust things, people, and organisations to do the right thing, to keep their promises.
-Without trust, we will not be able to have confidence in the contribution of others, and that is a risk.&lt;/p&gt;
-&lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
-Anytime we assume trust that is not warranted is also a risk.
-That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Three books on Zero Trust, and when you should read them</title>
@@ -320,15 +309,15 @@ For example, your passengers might not like it, and it leads to wear on the tire
 If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Assets</title>
+      <title>Information Security Assets</title>
       <link>http://localhost:1313/book/risk/assets/</link>
       <pubDate>Sun, 11 May 2025 08:37:01 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/assets/</guid>
-      <description>&lt;p&gt;In information security, the assets typically are information security, as obvious as that sounds.&lt;/p&gt;
-&lt;h2 id=&#34;vulnerabilities-and-threats&#34;&gt;Vulnerabilities and threats&lt;/h2&gt;
-&lt;p&gt;(examples of all)&lt;/p&gt;
-&lt;p&gt;To be continued.&lt;/p&gt;
-&lt;p&gt;what other assets?&lt;/p&gt;</description>
+      <description>&lt;p&gt;Let&amp;rsquo;s dive a little deeper into assets, which is typically data that we have risks on, though we can also see the processing power that we need as an asset.&lt;/p&gt;
+&lt;p&gt;From a risk analysis, the asset is the unit that we consider.
+ENISA, the European Network Information Security Agency, is one of the many institutes in the world described IT risk management.
+In a report on cloud security (reference) they identified a number of assets.
+A few examples to illustrate the breadth of that are:&lt;/p&gt;</description>
     </item>
     <item>
       <title>What about AI Risks?</title>
@@ -389,6 +378,18 @@ This is not necessarily the best outcome for the organisation as a whole.&lt;/p&
 &lt;p&gt;To illustrate this, I gave ChatGPT the following prompt:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Write a business case story about the conflict over shared computing resources.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Is Trust</title>
+      <link>http://localhost:1313/book/risk/what-is-trust/</link>
+      <pubDate>Mon, 05 May 2025 10:18:17 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/what-is-trust/</guid>
+      <description>&lt;p&gt;Trust is an essential element in any collaboration.
+We want to trust things, people, and organizations to do the right thing, to keep their promises.
+Without trust, we will not be able to have confidence in the contribution of others, and that is a risk.&lt;/p&gt;
+&lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
+Anytime we assume trust that is not warranted is also a risk.
+That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Positions of Power in IT</title>
@@ -465,6 +466,16 @@ These bodies of knowledge cover a lot of ground, and most of it is related to di
 &lt;h2 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h2&gt;
 &lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What are AI digital infrastructures?</title>
+      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
+      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
+      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
+&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
+&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Model Canvas for SaaS Providers</title>
@@ -545,6 +556,51 @@ picture&lt;/p&gt;
 Q: can you reserve buffer space for a connection?
 R: yes we promise, here is your initial window size
 A: thank you, here is your initial window size&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unified Theory</title>
+      <link>http://localhost:1313/book/diginfra/unified-theory/</link>
+      <pubDate>Mon, 12 May 2025 21:05:36 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/unified-theory/</guid>
+      <description>&lt;p&gt;The units so far have explored quite a few, seemingly randomly related, concepts and observations.
+Here we&amp;rsquo;ll embed them in a unified theory that illustrates how they fit together.&lt;/p&gt;
+&lt;p&gt;At the core is the concept of promise-based interactions between autonomous agents (human and technical). Every digital infrastructure can be understood as a network of these promises:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Value Creation Layer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Promises made to consumers about service delivery (availability, performance)&lt;/li&gt;
+&lt;li&gt;Economic models showing how shared resources and automation create value&lt;/li&gt;
+&lt;li&gt;Business model frameworks showing how promises translate to revenue streams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Power Distribution Layer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Who makes which promises to whom (governance structures)&lt;/li&gt;
+&lt;li&gt;How promises are enforced (contracts, standards, regulations)&lt;/li&gt;
+&lt;li&gt;Control boundaries between agents (who decides what)&lt;/li&gt;
+&lt;li&gt;How scale shifts power dynamics (Dunbar&amp;rsquo;s number threshold effects)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Risk Management Layer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzing what happens when promises are broken&lt;/li&gt;
+&lt;li&gt;Vulnerabilities in promise networks (security, compliance)&lt;/li&gt;
+&lt;li&gt;Trust assumptions and zero trust principles&lt;/li&gt;
+&lt;li&gt;How externalities distribute risk across stakeholders&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Change Management Layer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;How promises evolve over time&lt;/li&gt;
+&lt;li&gt;Feedback loops that stabilize or destabilize systems&lt;/li&gt;
+&lt;li&gt;Technology maturity cycles (from manual to automated)&lt;/li&gt;
+&lt;li&gt;Disruption patterns when new agents enter the ecosystem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This model shows how these layers interact - for example, how power structures affect what promises can be made (value), how those promises create potential failure points (risk), and how adaptive change processes respond to those risks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Optimalisatie</title>
@@ -664,16 +720,6 @@ Instead, the word global is used to mean all nations, including the US.&lt;/p&gt
       <guid>http://localhost:1313/posts/graphic-novel-page1/</guid>
       <description>&lt;p&gt;Here is the draft design of the graphic novel version of this book, which may or may not happen..&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;digital world cyberpunk&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/dig-inf-front-page1.png&#34; title=&#34;With a little help from Dall-e&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What are AI digital infrastructures?</title>
-      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
-      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
-      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
-&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
-&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Can We Achieve Autonomy Over Our Digital Infrastructures?</title>
