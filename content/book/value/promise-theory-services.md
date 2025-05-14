@@ -1,7 +1,7 @@
 ---
 date: '2025-05-05T05:58:14Z'
 draft: true
-title: 'Promise Theory 3'
+title: 'Promise Theory and service hierarchies'
 weight: 100
 ---
 
@@ -12,7 +12,7 @@ reisplanner
 
 design patterns
 
-customer sevice, can I get a new app/user account
+customer service, can I get a new app/user account
 
 Q: Can I get a unique IP address?
 R: Here is your address, let me know when you are done with it
@@ -39,7 +39,7 @@ A: thank you, I will forward it, here is your new window size
 Rinse and Repeat
 =-
 
-Service elements:consumer actions and provider responses 
+Service elements: consumer actions and provider responses 
 
 Every service has multiple components/elements, i.e.
 Access resource (login, get webpage, …)
@@ -62,7 +62,7 @@ Provisioning users within a contract, deprovision
 Using resources by a user
 
 
-Servive quality
+Service quality
 e.g. response time. fulfillment time.
 Fulfillment time: months, weeks, days, minutes, seconds, …
 
@@ -106,38 +106,6 @@ Manage operating system
 Manage hypervisor
 Host hardware
 
-Intermediaries, brokers. 3 actortypes (or more)
-
-An intermediary adds value between client/server, source/sink
-I.e. index, filter, conversion, (de)couple
-(e.g. Relate to ’broker’)
-Indexen
-Gebruikersadministratie, ten behoeve van autorisatie en TTP diensten
-Abonnementadministratie, welke afnemers of belangstellenden zijn er?
-Bronindex, welke bronnen hebben informatie over een bepaald sofinummer (search engine)?
-Functionaliteit
-formaat conversie, filtering
-vraag/aanbod matching
-Performance
-verdelen en routeren van berichten, multicasting
-aggregatie
-caching
-bundeling van afspraken (bijv. SLA)
-- distributor/directory
-authorization
-choice / arbitration / load balancer
-service integration
-pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
-multicast
-
-subscription toepassing: chatbots streaming?
-
-Pattern composition: Tell me the current state, 
-subject to authorization intermediary, 
-then subscribe me to changes
-
-indexesEen bronindex houdt bij waar welke informatie beschikbaar is
-Een abonnementindex houdt bij waar afnemers van informatie zijn
 
 History and books.
 Cfengine
@@ -177,28 +145,6 @@ Examples:
 TCP connections
 Processing capacity
 
-Chain gang: 
-CEO Aaron to CEO Betty: please promise to me that Alice can talk to Bob when I have a service request
-
-CEO Betty to Bob: please promise to me that you promise to Alice to pick up the phone when she calls
-
-
-Composition and supply chain. (restaurant waiter, chef)
-Dynamics of supply chain, jeff sussna.
-
-Service managemnet is organising the keeping of promises.
-What is the role?
-Which promise does it keep?
-What are its clients and providers?
-
-I.e. Change management (ITIL)
-Promise to keep an asset inventory
-Promise to process change requests on the basis of a change policy
-
-Change management (ITIL)
-Promise to process change requests on the basis of a change policy
-”I promise to allow changes that meet change policy requirements to promote to production”
-Can be manual or automatic or automatic with exceptions
 
 
 Nog meer leftovers:
@@ -223,3 +169,25 @@ Service Level Agreements (SLA)
 Acceptable Use Policy (like a reverse SLA)
 
 => Contracts are the interfaces in the supply chain and should be matched to GRC requirements
+
+
+=-
+
+Promise Theory and Services: Peter explains that a service is actually a set of promises. He discusses how this framework applies to daily work, particularly with customers using services. He contrasts thinking in terms of buying products versus services. He also mentions a book by Jeff Sesna that dives deeper into this.
+•
+Contracts and Service Level Agreements (SLAs): Peter connects the idea of a contract to a set of complimentary promises, where if one party does something, the other will do something else. He clarifies that an SLA is a type of contract. He also notes that an SLA might be an "upstream SLA".
+•
+Handling Broken Promises: Peter elaborates on what happens if a provider doesn't keep their promise. He discusses standard contractual elements like guarantees or penalties. He also introduces two ways of handling broken promises:
+◦
+A hierarchy of contracts/promises, using the example of a restaurant transaction nested within higher-level promises like menu availability and societal promises about restaurant licensing and quality. This hierarchy can extend to international legal levels.
+◦
+A game theoretical approach where repeated interactions allow parties to punish each other for broken promises, fostering trust. He mentions the prisoner's dilemma and the concept of credible retaliation as part of this.
+•
+Risk Management: Peter introduces the concept that every promise is a risk and that one significant risk is assuming a promise that is not actually there from a provider. He emphasizes that risk management involves finding somebody who suffers a bad consequence when a service isn't working. He also contrasts the compliance perspective on risk (assuming internal is better than external) with potentially different "real" risks.
+•
+Diagram Analysis and Application of Frameworks: Regarding the project diagram Maria shared, Peter explains it as a deployment diagram showing data, processing, control boundaries (the boxes), and communication/messages (the lines crossing boundaries). He then explains how to apply the concept of service agreement items and promises to each boundary crossing in the diagram.
+•
+Zero Trust Principles: In the context of the diagram and sensitive data flow, Peter introduces Zero Trust principles. He explains thinking in terms of "allow rules" for specific transaction flows (e.g., allowing sensitive data to the local LLM but not outside) and showing where there is no "allow rule" to prevent unwanted flow. He mentions that a policy enforcement point would be where this control is implemented.
+•
+Intervention Layers for Governance/Controls: When discussing the complexity of risk, architecture, and zero trust, Peter suggests thinking in terms of intervention layers. These layers range from stopping specific data flow, to watching the controls, to ensuring people understand policies, up to the policy-setting level itself. He notes that if a higher-level control isn't there, "you are the higher level control", though acknowledging enforcement challenges. He suggests starting at a lower level and scaling up.
+

@@ -25,7 +25,7 @@ Q: can you reserve buffer space for a connection?
 R: yes we promise, here is your initial window size
 A: thank you, here is your initial window size">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/promise-theory-part3/">
+<link rel="canonical" href="http://localhost:1313/book/value/promise-theory-services/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -34,7 +34,7 @@ A: thank you, here is your initial window size">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/promise-theory-part3/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/value/promise-theory-services/">
 <noscript>
     <style>
         #theme-toggle,
@@ -141,7 +141,7 @@ A: thank you, here is your initial window size">
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/value/">Value</a></div>
     <h1 class="post-title entry-hint-parent">
       Promise Theory and service hierarchies
       <span class="entry-hint" title="Draft">
@@ -157,7 +157,7 @@ A: thank you, here is your initial window size">
   </header> 
 
   
-  <i>⏳ 5 min read</i>
+  <i>⏳ 6 min read</i>
   
   <div class="post-content"><p>origin story promise theory</p>
 <p>suwinet
@@ -233,36 +233,6 @@ Manage database
 Manage operating system
 Manage hypervisor
 Host hardware</p>
-<p>Intermediaries, brokers. 3 actortypes (or more)</p>
-<p>An intermediary adds value between client/server, source/sink
-I.e. index, filter, conversion, (de)couple
-(e.g. Relate to ’broker’)
-Indexen
-Gebruikersadministratie, ten behoeve van autorisatie en TTP diensten
-Abonnementadministratie, welke afnemers of belangstellenden zijn er?
-Bronindex, welke bronnen hebben informatie over een bepaald sofinummer (search engine)?
-Functionaliteit
-formaat conversie, filtering
-vraag/aanbod matching
-Performance
-verdelen en routeren van berichten, multicasting
-aggregatie
-caching
-bundeling van afspraken (bijv. SLA)</p>
-<ul>
-<li>distributor/directory
-authorization
-choice / arbitration / load balancer
-service integration
-pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
-multicast</li>
-</ul>
-<p>subscription toepassing: chatbots streaming?</p>
-<p>Pattern composition: Tell me the current state,
-subject to authorization intermediary,
-then subscribe me to changes</p>
-<p>indexesEen bronindex houdt bij waar welke informatie beschikbaar is
-Een abonnementindex houdt bij waar afnemers van informatie zijn</p>
 <p>History and books.
 Cfengine
 21 &ldquo;/var/cfengine/bin/.&rdquo;
@@ -293,22 +263,6 @@ Resource exhaustion</p>
 Examples:
 TCP connections
 Processing capacity</p>
-<p>Chain gang:
-CEO Aaron to CEO Betty: please promise to me that Alice can talk to Bob when I have a service request</p>
-<p>CEO Betty to Bob: please promise to me that you promise to Alice to pick up the phone when she calls</p>
-<p>Composition and supply chain. (restaurant waiter, chef)
-Dynamics of supply chain, jeff sussna.</p>
-<p>Service management is organising the keeping of promises.
-What is the role?
-Which promise does it keep?
-What are its clients and providers?</p>
-<p>I.e. Change management (ITIL)
-Promise to keep an asset inventory
-Promise to process change requests on the basis of a change policy</p>
-<p>Change management (ITIL)
-Promise to process change requests on the basis of a change policy
-”I promise to allow changes that meet change policy requirements to promote to production”
-Can be manual or automatic or automatic with exceptions</p>
 <p>Nog meer leftovers:</p>
 <p>end to end applicatie performance meten. Hoe. Link met SRE</p>
 <p>Service example
@@ -325,6 +279,24 @@ Service Agreements
 Service Level Agreements (SLA)
 Acceptable Use Policy (like a reverse SLA)</p>
 <p>=&gt; Contracts are the interfaces in the supply chain and should be matched to GRC requirements</p>
+<p>=-</p>
+<p>Promise Theory and Services: Peter explains that a service is actually a set of promises. He discusses how this framework applies to daily work, particularly with customers using services. He contrasts thinking in terms of buying products versus services. He also mentions a book by Jeff Sesna that dives deeper into this.
+•
+Contracts and Service Level Agreements (SLAs): Peter connects the idea of a contract to a set of complimentary promises, where if one party does something, the other will do something else. He clarifies that an SLA is a type of contract. He also notes that an SLA might be an &ldquo;upstream SLA&rdquo;.
+•
+Handling Broken Promises: Peter elaborates on what happens if a provider doesn&rsquo;t keep their promise. He discusses standard contractual elements like guarantees or penalties. He also introduces two ways of handling broken promises:
+◦
+A hierarchy of contracts/promises, using the example of a restaurant transaction nested within higher-level promises like menu availability and societal promises about restaurant licensing and quality. This hierarchy can extend to international legal levels.
+◦
+A game theoretical approach where repeated interactions allow parties to punish each other for broken promises, fostering trust. He mentions the prisoner&rsquo;s dilemma and the concept of credible retaliation as part of this.
+•
+Risk Management: Peter introduces the concept that every promise is a risk and that one significant risk is assuming a promise that is not actually there from a provider. He emphasizes that risk management involves finding somebody who suffers a bad consequence when a service isn&rsquo;t working. He also contrasts the compliance perspective on risk (assuming internal is better than external) with potentially different &ldquo;real&rdquo; risks.
+•
+Diagram Analysis and Application of Frameworks: Regarding the project diagram Maria shared, Peter explains it as a deployment diagram showing data, processing, control boundaries (the boxes), and communication/messages (the lines crossing boundaries). He then explains how to apply the concept of service agreement items and promises to each boundary crossing in the diagram.
+•
+Zero Trust Principles: In the context of the diagram and sensitive data flow, Peter introduces Zero Trust principles. He explains thinking in terms of &ldquo;allow rules&rdquo; for specific transaction flows (e.g., allowing sensitive data to the local LLM but not outside) and showing where there is no &ldquo;allow rule&rdquo; to prevent unwanted flow. He mentions that a policy enforcement point would be where this control is implemented.
+•
+Intervention Layers for Governance/Controls: When discussing the complexity of risk, architecture, and zero trust, Peter suggests thinking in terms of intervention layers. These layers range from stopping specific data flow, to watching the controls, to ensuring people understand policies, up to the policy-setting level itself. He notes that if a higher-level control isn&rsquo;t there, &ldquo;you are the higher level control&rdquo;, though acknowledging enforcement challenges. He suggests starting at a lower level and scaling up.</p>
 
 
   </div>
@@ -348,24 +320,13 @@ Acceptable Use Policy (like a reverse SLA)</p>
   
 
   
-
-  
-
-  
-
-  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/diginfra/digital-inf-ai/">&larr; What are AI digital infrastructures?</a>
+        <a href="/book/value/three-ways-to-go-cloud/">&larr; Multiple Ways to Go Cloud</a>
       
-      
-        
-        <a href="/book/diginfra/unified-theory/">A Unified Framework &rarr;</a>
       
     </nav>
-  
-
   
 
 

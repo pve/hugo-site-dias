@@ -5,15 +5,35 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Things Break at Scale | Digital Infrastructures at Scale</title>
+<title>Promise Multiparty | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
-In the early days of Google growth I read an article about their error numbers
-(a Google cluster has several thousands of machines):
+<meta name="description" content="Intermediaries, brokers. 3 actortypes (or more)
+An intermediary adds value between client/server, source/sink
+I.e. index, filter, conversion, (de)couple
+(e.g. Relate to ’broker’)
+Indexen
+Gebruikersadministratie, ten behoeve van autorisatie en TTP diensten
+Abonnementadministratie, welke afnemers of belangstellenden zijn er?
+Bronindex, welke bronnen hebben informatie over een bepaald sofinummer (search engine)?
+Functionaliteit
+formaat conversie, filtering
+vraag/aanbod matching
+Performance
+verdelen en routeren van berichten, multicasting
+aggregatie
+caching
+bundeling van afspraken (bijv. SLA)
 
-In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.">
+distributor/directory
+authorization
+choice / arbitration / load balancer
+service integration
+pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
+multicast
+
+subscription toepassing: chatbots streaming?">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/things-break-at-scale/">
+<link rel="canonical" href="http://localhost:1313/book/power/promise-multiparty/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -22,7 +42,7 @@ In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual mac
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/things-break-at-scale/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/power/promise-multiparty/">
 <noscript>
     <style>
         #theme-toggle,
@@ -129,42 +149,70 @@ In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual mac
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/power/">Power</a></div>
     <h1 class="post-title entry-hint-parent">
-      Things Break at Scale
+      Promise Multiparty
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h1>
-    <div class="post-meta"><span title='2025-04-16 21:16:12 +0000 UTC'>April 16, 2025</span>
+    <div class="post-meta"><span title='2025-05-13 13:29:23 +0000 UTC'>May 13, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 3 min read</i>
+  <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.</p>
-<p>In the early days of Google growth I read an <a href="https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/">article about their error numbers</a>
-(a Google cluster has several thousands of machines):</p>
-<blockquote>
-<p>In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.</p></blockquote>
-<p>A <a href="https://www.storagereview.com/news/backblaze-2024-drive-stats-hard-drive-failures-drop-as-high-capacity-models-take-over">2024 report</a> puts storage drive failure rates at about 1.35% per year.
-With thousands of drives, failure is not an option, but a certainty.</p>
-<p>These look like interesting considerations for both hardware and software planners.</p>
-<p>Adrian Cockcroft, while he was CTO of Netflix around 2010, summed it up as:</p>
-<blockquote>
-<p>Size breaks hardware</p></blockquote>
-<p>No matter how good your hardware is, if it becomes big enough, it breaks. In his view you therefore need to solve reliability problems in software, not in building better hardware.</p>
-<p>As Google say:</p>
-<blockquote>
-<p>&ldquo;Our view is it&rsquo;s better to have twice as much hardware that&rsquo;s not as reliable than half as much that&rsquo;s more reliable,&rdquo; Dean said. &ldquo;You have to provide reliability on a software level. If you&rsquo;re running 10,000 machines, something is going to die every day.&rdquo;</p></blockquote>
-<p>The business case for this is that you will have to invest in software for reliability.
-Once you have done that, the hardware reliability no longer matter, within certain bounds, and you are financially better off with cheaper hardware.</p>
-<p>The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a &lsquo;middleware&rsquo; software layer on which resilient applications can be build.
-We&rsquo;ll cover that in another unit.</p>
-<p>Finally, scale does not only break hardware, but also organizations.
-For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
-When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks.
-That introduces a lot of communication overhead.
-Without being compensated with economies of scale, this can make the task too expensive to do.</p>
+  <div class="post-content"><p>Intermediaries, brokers. 3 actortypes (or more)</p>
+<p>An intermediary adds value between client/server, source/sink
+I.e. index, filter, conversion, (de)couple
+(e.g. Relate to ’broker’)
+Indexen
+Gebruikersadministratie, ten behoeve van autorisatie en TTP diensten
+Abonnementadministratie, welke afnemers of belangstellenden zijn er?
+Bronindex, welke bronnen hebben informatie over een bepaald sofinummer (search engine)?
+Functionaliteit
+formaat conversie, filtering
+vraag/aanbod matching
+Performance
+verdelen en routeren van berichten, multicasting
+aggregatie
+caching
+bundeling van afspraken (bijv. SLA)</p>
+<ul>
+<li>distributor/directory
+authorization
+choice / arbitration / load balancer
+service integration
+pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
+multicast</li>
+</ul>
+<p>subscription toepassing: chatbots streaming?</p>
+<p>Pattern composition: Tell me the current state,
+subject to authorization intermediary,
+then subscribe me to changes</p>
+<p>indexesEen bronindex houdt bij waar welke informatie beschikbaar is
+Een abonnementindex houdt bij waar afnemers van informatie zijn</p>
+<p>Chain gang:
+CEO Aaron to CEO Betty: please promise to me that Alice can talk to Bob when I have a service request</p>
+<p>CEO Betty to Bob: please promise to me that you promise to Alice to pick up the phone when she calls</p>
+<p>Composition and supply chain. (restaurant waiter, chef)
+Dynamics of supply chain, jeff sussna.</p>
+<p>Service management is organising the keeping of promises.
+What is the role?
+Which promise does it keep?
+What are its clients and providers?</p>
+<p>I.e. Change management (ITIL)
+Promise to keep an asset inventory
+Promise to process change requests on the basis of a change policy</p>
+<p>Change management (ITIL)
+Promise to process change requests on the basis of a change policy
+”I promise to allow changes that meet change policy requirements to promote to production”
+Can be manual or automatic or automatic with exceptions</p>
 
 
   </div>
@@ -180,24 +228,20 @@ Without being compensated with economies of scale, this can make the task too ex
   
 
   
+
+  
+
+  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/diginfra/promise-theory/">&larr; Promise Theory</a>
+        <a href="/book/power/power-mediation/">&larr; Power Flows</a>
       
       
         
-        <a href="/book/diginfra/applications/">Applications &rarr;</a>
+        <a href="/book/power/the-tipping-point-for-podcasting/">Who made podcasting big? &rarr;</a>
       
     </nav>
-  
-
-  
-
-  
-
-  
-
   
 
   

@@ -1,7 +1,7 @@
 ---
 date: '2025-05-08T20:45:16Z'
 draft: false
-title: "organization Size Matters - Dunbar's number"
+title: "Organization Size Matters - Dunbar's number"
 weight: 100
 ---
 

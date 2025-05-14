@@ -287,13 +287,6 @@ That is where their prime value is.&lt;/p&gt;
 &lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that is the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Promise Theory Part2</title>
-      <link>http://localhost:1313/book/diginfra/promise-theory-part2/</link>
-      <pubDate>Wed, 30 Apr 2025 15:30:36 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/promise-theory-part2/</guid>
-      <description>&lt;p&gt;Rooted in Deontic logic (obligations, commitments, permissions)&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>The moral necessity of talking about power</title>
       <link>http://localhost:1313/book/power/ethics-of-power/</link>
       <pubDate>Thu, 24 Apr 2025 20:30:57 +0000</pubDate>
@@ -530,7 +523,7 @@ Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model f
 I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
     </item>
     <item>
-      <title>organization Size Matters - Dunbar&#39;s number</title>
+      <title>Organization Size Matters - Dunbar&#39;s number</title>
       <link>http://localhost:1313/book/change/org-size-matters/</link>
       <pubDate>Thu, 08 May 2025 20:45:16 +0000</pubDate>
       <guid>http://localhost:1313/book/change/org-size-matters/</guid>
@@ -543,15 +536,15 @@ How do people even talk about decisions, especially when they concern digital te
 Who do you trust?&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Promise Theory 3</title>
-      <link>http://localhost:1313/book/diginfra/promise-theory-part3/</link>
+      <title>Promise Theory and service hierarchies</title>
+      <link>http://localhost:1313/book/diginfra/promise-theory-services/</link>
       <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/promise-theory-part3/</guid>
+      <guid>http://localhost:1313/book/diginfra/promise-theory-services/</guid>
       <description>&lt;p&gt;origin story promise theory&lt;/p&gt;
 &lt;p&gt;suwinet
 reisplanner&lt;/p&gt;
 &lt;p&gt;design patterns&lt;/p&gt;
-&lt;p&gt;customer sevice, can I get a new app/user account&lt;/p&gt;
+&lt;p&gt;customer service, can I get a new app/user account&lt;/p&gt;
 &lt;p&gt;Q: Can I get a unique IP address?
 R: Here is your address, let me know when you are done with it&lt;/p&gt;
 &lt;p&gt;A: thank you, I am done with this address&lt;/p&gt;

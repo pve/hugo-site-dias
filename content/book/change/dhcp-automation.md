@@ -11,7 +11,7 @@ My favorite historical example is IP address allocation. In the past, whenever t
 You'd go to the person in charge for an IP address, they'd pull out their notebook, sharpen their pencil, and note it down. Simple, manual, and not built for scale.
 
 In 1994 I went to a Unix systems administration conference and they had Mike O'Dell over from the USA.
-He had a [presentation about the internet](https://archief-website.nluug.nl/activiteiten/events/vj94/abstracts/Mike.ODell.html) where he talked about many layers of technology to just push IP packets around. I was impressed by the number of layers back then, but I think what he was trying to say was how wasteful it really was, and that many of these things had to be reengineered to allow the internet to grow.
+He had a [presentation about the internet](https://archief-website.nluug.nl/activiteiten/events/vj94/abstracts/Mike.ODell.html) where he talked about many layers of technology to just push IP packets around. I was impressed by the number of layers back then, but I think what he was trying to say was how wasteful it really was, and that many of these things had to be re-engineered to allow the internet to grow.
 
 As a side note, it grew by a factor of 500-1000 in number of users in the thirty years since. At the time of the conference there were about a 1000 websites worldwide, and this conference is the first one listed on the NLUUG website.
 
