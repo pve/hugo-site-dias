@@ -12,7 +12,7 @@ By understanding how applying technology really works, you can be more effective
 
 Let's start by looking at a few examples that I have used these in teaching IT students. The first example is fixing the WiFi at home, and the second one is selecting a new mobile phone for grandma. Think for a moment how you would approach these two cases. If you want a more corporate example you can think of replacing a content management system, or introducing a new security capability.
 
-The core idea of technology is that by doing an **intervention** in the real world, you achieve certain desirable outcomes. This is in contrast to the core idea of science, which is that by doing observations on the real world, we can derive certain conclusions that allow us to predict what might happen under similar conditions in the future. Science seeks to understand and explain the underlying principles governing phenomena, while technology applies that understanding to create tools, systems, or processes that achieve specific goals.
+The core idea of technology is that by doing an **intervention** in the real world, you achieve certain **desirable outcomes**. This is in contrast to the core idea of science, which is that by doing observations on the real world, we can derive certain conclusions that allow us to predict what might happen under similar conditions in the future. Science seeks to understand and explain the underlying principles governing phenomena, while technology applies that understanding to create tools, systems, or processes that achieve specific goals.
 
 Of course, science and technology are intertwined: technology relies on scientific insights to be more effective, while science often needs technology in order to do experiments and observations.
 
@@ -30,7 +30,7 @@ Turning our attention to grandma's new phone, what do we want to be improved? Ma
 
 Now we can turn our attention to the intervention. In our WiFi case, are we buying more access points, and if so, where should they go, and how should they be connected? Maybe we want to change the frequency allocations, or allow use of the 5GHz frequency bands. With grandmas phone, do we install new apps, buy a different size phone, or what?
 
-How does the intervention lead to the desired result? In other words: how does one lead to the other? Maybe you have a (scientific) theory about that. Maybe you'll just need to figure it out. In both cases you start with a hypothesis that explains how the intervention leads to a result.
+How does the intervention lead to the desired result? In other words: how does one lead to the other? Maybe you have a (scientific) **theory** about that. Maybe you'll just need to figure it out. In both cases you start with a hypothesis that explains how the intervention leads to a result.
 
 For example: because WiFi signal strength (and therefore quality) decreases with distance between device and base station, we install more base stations in order to have better quality around the house. Another example would be: because there is limited frequency spectrum, we reconfigure our existing base stations to use different frequencies in order for them to interfere less, and have better network quality within their range.
 
