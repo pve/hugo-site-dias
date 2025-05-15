@@ -14,7 +14,7 @@ Deployment diagrams are a great technique for communicating about important deci
 There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.
 
 In this section, I’m setting out to define the principles that these maps should adhere to.
-The reason for that is that there is a lot of intuition on these types of diagram and their visualisation. 
+The reason for that is that there is a lot of intuition on these types of diagram and their visualization. 
 
 It turns out that the actual symbols to use are not so relevant. It is more important to understand what we mean by those symbols, and how these diagrams are useful.
 

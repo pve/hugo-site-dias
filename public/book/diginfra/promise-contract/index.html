@@ -5,18 +5,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Elements of the Digital World | Digital Infrastructures at Scale</title>
+<title>Contracts are complementary promises | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.
-The three major elements of digital infrastructures are:
+<meta name="description" content="Contracts are complementary promises
+Once we have this in place, contracts between agents now become really simple to express.
+They are a set of complementary conditional promises: &ldquo;If you do this, I will promise that&rdquo;.
+In our example this looks like the following.
 
-Storage
-Networks
-Processors
+&ldquo;If you promise to pay me, I will promise to bring you coffee.&rdquo;
+&ldquo;If you promise to bring me coffee, I will promise to pay you.&rdquo;
 
-In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.">
+If one party does not keep its end of the bargain, the other party is free to withdraw from their part of the deal.
+Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
+This requires trust.
+As you are probably aware, both types of contract exist in real life.
+In fact you can find more complicated versions as well.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/">
+<link rel="canonical" href="http://localhost:1313/book/diginfra/promise-contract/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -25,7 +30,7 @@ In the cloud security world, it is customary to talk about data at rest, data in
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/promise-contract/">
 <noscript>
     <style>
         #theme-toggle,
@@ -63,13 +68,6 @@ In the cloud security world, it is customary to talk about data at rest, data in
 
     </style>
 </noscript>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
-<script>
-  mermaid.initialize({ 
-    startOnLoad: true,
-  });
-</script>
-
 </head>
 
 <body class="" id="top">
@@ -141,56 +139,38 @@ In the cloud security world, it is customary to talk about data at rest, data in
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
-      Elements of the Digital World
+      Contracts are complementary promises
     </h1>
-    <div class="post-meta"><span title='2025-03-27 20:34:01 +0000 UTC'>March 27, 2025</span>
+    <div class="post-meta"><span title='2025-05-15 21:03:24 +0000 UTC'>May 15, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 3 min read</i>
+  <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.</p>
-<p>The three major elements of digital infrastructures are:</p>
-<ol>
-<li>Storage</li>
-<li>Networks</li>
-<li>Processors</li>
-</ol>
-<p>In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.</p>
-<p>All of these elements have a wide variety of different manifestations, with associated quality and performance attributes that matter enormously in the design and management of digital infrastructures.</p>
-<p>You&rsquo;ll also have to understand that these three concepts are very entangled. A storage system is connected to a network, but it also has network and processing elements inside. The same is true for the other two concepts. Once again, it is a way to draw maps of digital systems, and any map is inaccurate. As said elsewhere, this inaccuracy actually can make it a good map! It reduces complexity so that we can more easily think about it.</p>
-<p>Speaking of maps, a variety of diagrams is used in the field of IT.
-I&rsquo;d like to gently expose you some of those diagram types.</p>
-<p>The link between the digital elements is, in its simplest form, often depicted as follows:</p>
-<pre class="mermaid">block-beta
-
-in space env:2 space out
-in[&#34;Input&#34;] --&gt; env[&#34;Processor&#34;]
-env--&gt; out[&#34;Output&#34;]
-
-style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-   
-</pre>
-<p>A few comments on what this does, and does not show:</p>
+  <div class="post-content"><h2 id="contracts-are-complementary-promises">Contracts are complementary promises<a hidden class="anchor" aria-hidden="true" href="#contracts-are-complementary-promises">#</a></h2>
+<p>Once we have this in place, contracts between agents now become really simple to express.
+They are a set of complementary conditional promises: &ldquo;If you do this, I will promise that&rdquo;.
+In our example this looks like the following.</p>
 <ul>
-<li>input is data, which is <em>transformed</em> into output, also data</li>
-<li>the diagram does not show if this is a one-off activity, or a stream of events, we need a time-sequence diagram for that</li>
-<li>there is no explicit mention of any &lsquo;state&rsquo; or &lsquo;persistent data&rsquo; inside the processing.</li>
+<li>&ldquo;If you promise to pay me, I will promise to bring you coffee.&rdquo;</li>
+<li>&ldquo;If you promise to bring me coffee, I will promise to pay you.&rdquo;</li>
 </ul>
-<p>We will see later how this simple model is adequate to describe a vast variety of data processing tasks.
-A very simple example is adding two numbers. The input is formed by the two numbers, and the output it their sum.
-An AI example might be the input a voice recording, and output a file with the transcribed conversation.</p>
-<p>In an interactive world, it is more common to have the output returned to the source of the input.
-The following diagram illustrates that.</p>
-<pre class="mermaid">sequenceDiagram
-    User-&gt;&gt;Processor: Here is my input
-    Processor-&gt;&gt;User: Here is the output
-</pre>
-<p>A common example would be to send as input a question to a search engine, where the search results are the output.
-The vertical lines are <em>timelines</em> that show from top to bottom how time flows.</p>
+<p>If one party does not keep its end of the bargain, the other party is free to withdraw from their part of the deal.
+Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
+This requires trust.
+As you are probably aware, both types of contract exist in real life.
+In fact you can find more complicated versions as well.</p>
+<p>It is typical to have additional promises for any deviations from the happy path.
+An example would be: &ldquo;If you do not pay for your coffee, I promise to call the police&rdquo;.
+This is a simple approach.
+We will discuss later how we can model trust and trust violations.</p>
+<p>One way to sum it up is by this question:</p>
+<blockquote>
+<p>What do I do, what do you do, what do I do if you don’t?</p></blockquote>
+<p>This was the longest English sentence I made that only has monosyllabic words.
+I had a rap song produced from it.</p>
 
 
   </div>
@@ -200,11 +180,26 @@ The vertical lines are <em>timelines</em> that show from top to bottom how time 
 
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
+      
+        
+        <a href="/book/diginfra/essence-digital-infrastructures/">&larr; The Essence of Digital Infrastructures</a>
       
       
         
-        <a href="/book/diginfra/why-you-should-read/">Why You Should Read &rarr;</a>
+        <a href="/book/diginfra/lunch-spain/">What a lunch in Spain taught me about digital infrastructures &rarr;</a>
       
     </nav>
   
@@ -219,25 +214,8 @@ The vertical lines are <em>timelines</em> that show from top to bottom how time 
 
   
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
 
-
-  
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
   
 
   <footer class="post-footer">

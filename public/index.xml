@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 May 2025 09:39:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 May 2025 21:03:24 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -310,6 +310,25 @@ For example, your passengers might not like it, and it leads to wear on the tire
 If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Contracts are complementary promises</title>
+      <link>http://localhost:1313/book/diginfra/promise-contract/</link>
+      <pubDate>Thu, 15 May 2025 21:03:24 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/promise-contract/</guid>
+      <description>&lt;h2 id=&#34;contracts-are-complementary-promises&#34;&gt;Contracts are complementary promises&lt;/h2&gt;
+&lt;p&gt;Once we have this in place, contracts between agents now become really simple to express.
+They are a set of complementary conditional promises: &amp;ldquo;If you do this, I will promise that&amp;rdquo;.
+In our example this looks like the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;If you promise to pay me, I will promise to bring you coffee.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;If you promise to bring me coffee, I will promise to pay you.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If one party does not keep its end of the bargain, the other party is free to withdraw from their part of the deal.
+Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
+This requires trust.
+As you are probably aware, both types of contract exist in real life.
+In fact you can find more complicated versions as well.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Information Security Assets</title>
       <link>http://localhost:1313/book/risk/assets/</link>
       <pubDate>Sun, 11 May 2025 08:37:01 +0000</pubDate>
@@ -344,7 +363,7 @@ Before that, symbolic AI was more common.&lt;/p&gt;</description>
       <pubDate>Sat, 22 Mar 2025 17:56:43 +0000</pubDate>
       <guid>http://localhost:1313/book/change/technical-meta-model/</guid>
       <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
-&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result technology is not optimally applied.
+&lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result, technology is not optimally applied.
 By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
     </item>
     <item>
@@ -429,6 +448,37 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
 &lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat.
 Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise Multiparty</title>
+      <link>http://localhost:1313/book/power/promise-multiparty/</link>
+      <pubDate>Tue, 13 May 2025 13:29:23 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/promise-multiparty/</guid>
+      <description>&lt;p&gt;Intermediaries, brokers. 3 actortypes (or more)&lt;/p&gt;
+&lt;p&gt;An intermediary adds value between client/server, source/sink
+I.e. index, filter, conversion, (de)couple
+(e.g. Relate to ’broker’)
+Indexen
+Gebruikersadministratie, ten behoeve van autorisatie en TTP diensten
+Abonnementadministratie, welke afnemers of belangstellenden zijn er?
+Bronindex, welke bronnen hebben informatie over een bepaald sofinummer (search engine)?
+Functionaliteit
+formaat conversie, filtering
+vraag/aanbod matching
+Performance
+verdelen en routeren van berichten, multicasting
+aggregatie
+caching
+bundeling van afspraken (bijv. SLA)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;distributor/directory
+authorization
+choice / arbitration / load balancer
+service integration
+pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
+multicast&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;subscription toepassing: chatbots streaming?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network Management Automation - the DHCP case</title>
@@ -537,9 +587,9 @@ Who do you trust?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Promise Theory and service hierarchies</title>
-      <link>http://localhost:1313/book/diginfra/promise-theory-services/</link>
+      <link>http://localhost:1313/book/value/promise-theory-services/</link>
       <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/promise-theory-services/</guid>
+      <guid>http://localhost:1313/book/value/promise-theory-services/</guid>
       <description>&lt;p&gt;origin story promise theory&lt;/p&gt;
 &lt;p&gt;suwinet
 reisplanner&lt;/p&gt;
