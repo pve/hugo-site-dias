@@ -188,27 +188,6 @@ You can extend Claude or OpenAI desktop with MCP servers, which are basically sm
 &lt;/pre&gt;</description>
     </item>
     <item>
-      <title>Things Break at Scale</title>
-      <link>http://localhost:1313/book/diginfra/things-break-at-scale/</link>
-      <pubDate>Wed, 16 Apr 2025 21:16:12 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/things-break-at-scale/</guid>
-      <description>&lt;p&gt;Computers are terribly reliable, in general. Today&amp;rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.&lt;/p&gt;
-&lt;p&gt;In the early days of Google growth I read an &lt;a href=&#34;https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/&#34;&gt;article about their error numbers&lt;/a&gt;
-(a Google cluster has several thousands of machines):&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In each cluster&amp;rsquo;s first year, it&amp;rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &amp;ldquo;go wonky,&amp;rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&amp;rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Applications</title>
-      <link>http://localhost:1313/book/diginfra/applications/</link>
-      <pubDate>Wed, 16 Apr 2025 21:11:32 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/applications/</guid>
-      <description>&lt;p&gt;An application is roughly a data model plus a certain number of functions operating on that.
-Networked applications typically live on servers, but will have a client component.
-A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
-Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Who Suffers?</title>
       <link>http://localhost:1313/book/risk/who-suffers/</link>
       <pubDate>Tue, 15 Apr 2025 21:27:25 +0000</pubDate>
@@ -279,12 +258,23 @@ That is where their prime value is.&lt;/p&gt;
 &lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The Essence of Digital Infrastructures</title>
-      <link>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</link>
-      <pubDate>Mon, 10 Mar 2025 21:34:21 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</guid>
-      <description>&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;
-&lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that is the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
+      <title>Contracts are complementary promises</title>
+      <link>http://localhost:1313/book/diginfra/promise-contract/</link>
+      <pubDate>Thu, 15 May 2025 21:03:24 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/promise-contract/</guid>
+      <description>&lt;h2 id=&#34;contracts-are-complementary-promises&#34;&gt;Contracts are complementary promises&lt;/h2&gt;
+&lt;p&gt;Once we understand promises, contracts between agents now become really simple to express.
+They are a set of complementary conditional promises: &amp;ldquo;If you do this, I will promise that&amp;rdquo;.
+In our example this looks like the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;If you promise to pay me, I will promise to bring you coffee.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;If you promise to bring me coffee, I will promise to pay you.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If one party does not keep its end of the bargain, the other party is free to withdraw from their part of the deal.
+Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
+This requires trust.
+As you are probably aware, both types of contract exist in real life.
+In fact you can find more complicated versions as well.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The moral necessity of talking about power</title>
@@ -310,25 +300,6 @@ For example, your passengers might not like it, and it leads to wear on the tire
 If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Contracts are complementary promises</title>
-      <link>http://localhost:1313/book/diginfra/promise-contract/</link>
-      <pubDate>Thu, 15 May 2025 21:03:24 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/promise-contract/</guid>
-      <description>&lt;h2 id=&#34;contracts-are-complementary-promises&#34;&gt;Contracts are complementary promises&lt;/h2&gt;
-&lt;p&gt;Once we understand promises, contracts between agents now become really simple to express.
-They are a set of complementary conditional promises: &amp;ldquo;If you do this, I will promise that&amp;rdquo;.
-In our example this looks like the following.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;If you promise to pay me, I will promise to bring you coffee.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;If you promise to bring me coffee, I will promise to pay you.&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If one party does not keep its end of the bargain, the other party is free to withdraw from their part of the deal.
-Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
-This requires trust.
-As you are probably aware, both types of contract exist in real life.
-In fact you can find more complicated versions as well.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Information Security Assets</title>
       <link>http://localhost:1313/book/risk/assets/</link>
       <pubDate>Sun, 11 May 2025 08:37:01 +0000</pubDate>
@@ -338,6 +309,25 @@ In fact you can find more complicated versions as well.&lt;/p&gt;</description>
 ENISA, the European Network Information Security Agency, is one of the many institutes in the world described IT risk management.
 In a report on cloud security (reference) they identified a number of assets.
 A few examples to illustrate the breadth of that are:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Things Break at Scale</title>
+      <link>http://localhost:1313/book/diginfra/things-break-at-scale/</link>
+      <pubDate>Wed, 16 Apr 2025 21:16:12 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/things-break-at-scale/</guid>
+      <description>&lt;p&gt;Computers are terribly reliable, in general. Today&amp;rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.&lt;/p&gt;
+&lt;p&gt;In the early days of Google growth I read an &lt;a href=&#34;https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/&#34;&gt;article about their error numbers&lt;/a&gt;
+(a Google cluster has several thousands of machines):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In each cluster&amp;rsquo;s first year, it&amp;rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &amp;ldquo;go wonky,&amp;rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&amp;rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Essence of Digital Infrastructures</title>
+      <link>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</link>
+      <pubDate>Mon, 10 Mar 2025 21:34:21 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</guid>
+      <description>&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;
+&lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that is the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What about AI Risks?</title>
@@ -383,7 +373,7 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
       <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>
       <guid>http://localhost:1313/book/value/intro-to-value/</guid>
       <description>&lt;p&gt;Consumers of digital infrastructures benefit from not running them themselves, but having a provider who serves more consumers do it for them.&lt;/p&gt;
-&lt;p&gt;Imagine stringing a wire to connect your PC to your neighbour&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does it take to string the wires and connect them? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
+&lt;p&gt;Imagine stringing a wire to connect your PC to your neighbor&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does it take to string the wires and connect them? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Governance over IT, an example</title>
@@ -434,6 +424,16 @@ That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;<
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Applications</title>
+      <link>http://localhost:1313/book/diginfra/applications/</link>
+      <pubDate>Wed, 16 Apr 2025 21:11:32 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/applications/</guid>
+      <description>&lt;p&gt;An application is roughly a data model plus a certain number of functions operating on that.
+Networked applications typically live on servers, but will have a client component.
+A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
+Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Power Flows</title>
       <link>http://localhost:1313/book/power/power-mediation/</link>
       <pubDate>Sun, 20 Apr 2025 09:24:41 +0000</pubDate>
@@ -457,10 +457,12 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
       <link>http://localhost:1313/book/value/agile-requires-cloud/</link>
       <pubDate>Wed, 12 Oct 2016 15:12:04 +0000</pubDate>
       <guid>http://localhost:1313/book/value/agile-requires-cloud/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
-Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
-&lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat.
-Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Getting to value quickly has value in itself.
+The faster you get to value, the better it is, generally.
+We&amp;rsquo;ll discuss some of the reasons for that elsewhere.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays for getting to digital value quickly.
+Why is that and what kind of digital infrastructures does that require?
+Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Promise Multiparty</title>

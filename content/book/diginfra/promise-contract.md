@@ -2,7 +2,7 @@
 date: '2025-05-15T21:03:24Z'
 draft: false
 title: 'Contracts are complementary promises'
-weight: 15
+weight: 11
 ---
 ## Contracts are complementary promises
 

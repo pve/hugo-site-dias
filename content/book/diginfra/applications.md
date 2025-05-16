@@ -2,7 +2,7 @@
 date: '2025-04-16T21:11:32Z'
 draft: true
 title: 'Applications'
-weight: 10
+weight: 29
 ---
 An application is roughly a data model plus a certain number of functions operating on that.
 Networked applications typically live on servers, but will have a client component.

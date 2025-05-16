@@ -6,7 +6,7 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 May 2025 21:05:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 May 2025 21:03:24 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
@@ -46,6 +46,25 @@ There was this project where we designed a scalable travel information system wi
 We needed to describe how these parts work together.
 And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
 In getting this from the drawing board to actual production, promise theory turned out to be a great tool.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contracts are complementary promises</title>
+      <link>http://localhost:1313/book/diginfra/promise-contract/</link>
+      <pubDate>Thu, 15 May 2025 21:03:24 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/promise-contract/</guid>
+      <description>&lt;h2 id=&#34;contracts-are-complementary-promises&#34;&gt;Contracts are complementary promises&lt;/h2&gt;
+&lt;p&gt;Once we understand promises, contracts between agents now become really simple to express.
+They are a set of complementary conditional promises: &amp;ldquo;If you do this, I will promise that&amp;rdquo;.
+In our example this looks like the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;If you promise to pay me, I will promise to bring you coffee.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;If you promise to bring me coffee, I will promise to pay you.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If one party does not keep its end of the bargain, the other party is free to withdraw from their part of the deal.
+Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
+This requires trust.
+As you are probably aware, both types of contract exist in real life.
+In fact you can find more complicated versions as well.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Things Break at Scale</title>

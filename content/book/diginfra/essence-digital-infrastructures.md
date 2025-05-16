@@ -2,7 +2,7 @@
 date: '2025-03-10T21:34:21Z'
 draft: false
 title: 'The Essence of Digital Infrastructures'
-weight: "10" 
+weight: "19" 
 ---
 
 What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.

@@ -4,8 +4,12 @@ title: 'Agile Requires Cloud'
 date: '2016-10-12T15:12:04'
 weight: 30
 ---
+Getting to value quickly has value in itself.
+The faster you get to value, the better it is, generally.
+We'll discuss some of the reasons for that elsewhere.
 
-**Agile development** is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
+**Agile development** is all the fashion nowadays for getting to digital value quickly.
+Why is that and what kind of digital infrastructures does that require?
 Back in the old days, business software was primarily written to automate **_existing_** business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, "customer relationship management" and so on.
 
 Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat.
