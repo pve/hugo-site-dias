@@ -37,17 +37,19 @@ That is where their prime value is.&lt;/p&gt;
       <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>
       <guid>http://localhost:1313/book/value/intro-to-value/</guid>
       <description>&lt;p&gt;Consumers of digital infrastructures benefit from not running them themselves, but having a provider who serves more consumers do it for them.&lt;/p&gt;
-&lt;p&gt;Imagine stringing a wire to connect your PC to your neighbour&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does it take to string the wires and connect them? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
+&lt;p&gt;Imagine stringing a wire to connect your PC to your neighbor&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does it take to string the wires and connect them? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agile Requires Cloud</title>
       <link>http://localhost:1313/book/value/agile-requires-cloud/</link>
       <pubDate>Wed, 12 Oct 2016 15:12:04 +0000</pubDate>
       <guid>http://localhost:1313/book/value/agile-requires-cloud/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays. Why is that and what kind of digital infrastructures does that require?
-Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;
-&lt;p&gt;Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat.
-Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Getting to value quickly has value in itself.
+The faster you get to value, the better it is, generally.
+We&amp;rsquo;ll discuss some of the reasons for that elsewhere.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agile development&lt;/strong&gt; is all the fashion nowadays for getting to digital value quickly.
+Why is that and what kind of digital infrastructures does that require?
+Back in the old days, business software was primarily written to automate &lt;strong&gt;&lt;em&gt;existing&lt;/em&gt;&lt;/strong&gt; business processes. Those processes might change somewhat as a result, but in the core processes were no different. Think accounting systems, scheduling, &amp;ldquo;customer relationship management&amp;rdquo; and so on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Model Canvas for IaaS Providers</title>
@@ -78,6 +80,29 @@ Or financial services, where software increasingly is the main part of the produ
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.&lt;/p&gt;
 &lt;h2 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h2&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise Theory and service hierarchies</title>
+      <link>http://localhost:1313/book/value/promise-theory-services/</link>
+      <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/promise-theory-services/</guid>
+      <description>&lt;p&gt;origin story promise theory&lt;/p&gt;
+&lt;p&gt;suwinet
+reisplanner&lt;/p&gt;
+&lt;p&gt;design patterns&lt;/p&gt;
+&lt;p&gt;customer service, can I get a new app/user account&lt;/p&gt;
+&lt;p&gt;Q: Can I get a unique IP address?
+R: Here is your address, let me know when you are done with it&lt;/p&gt;
+&lt;p&gt;A: thank you, I am done with this address&lt;/p&gt;
+&lt;p&gt;Example IP addresses allocation
+&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image.png&#34;&gt;
+&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Example TCP/IP
+picture&lt;/p&gt;
+&lt;p&gt;Connect
+Q: can you reserve buffer space for a connection?
+R: yes we promise, here is your initial window size
+A: thank you, here is your initial window size&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

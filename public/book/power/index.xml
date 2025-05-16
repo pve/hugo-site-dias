@@ -6,7 +6,7 @@
     <description>Recent content in Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 May 2025 11:07:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 May 2025 21:08:13 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/power/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Power</title>
@@ -57,6 +57,19 @@ This is not necessarily the best outcome for the organization as a whole.&lt;/p&
 &lt;p&gt;Write a business case story about the conflict over shared computing resources.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Where the buck stops</title>
+      <link>http://localhost:1313/book/power/buck-stops/</link>
+      <pubDate>Thu, 15 May 2025 21:08:13 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/buck-stops/</guid>
+      <description>&lt;p&gt;The US president Harry S. Truman famously had a sign on his desk that said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The buck stops here.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This refers to the process of &amp;ldquo;passing up the buck&amp;rdquo;, meaning to escalate decisions to the next higher level in the organization.&lt;/p&gt;
+&lt;p&gt;Truman implied that he took responsibility but also that this is where power comes from.&lt;/p&gt;
+&lt;p&gt;This is an essential part of governance, and this vertical line of responsibility represents one way of looking at it.
+We can trace how this works in the following risk management example.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Positions of Power in IT</title>
       <link>http://localhost:1313/book/power/positions-of-power-it/</link>
       <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
@@ -73,6 +86,37 @@ This is not necessarily the best outcome for the organization as a whole.&lt;/p&
       <description>&lt;p&gt;Power does not automatically flow from those that have it to those that are influenced by it.&lt;/p&gt;
 &lt;p&gt;As they say in dutch, quoting the poet Willem Elsschot: &amp;ldquo;tussen droom en daad staan wetten in de weg, en praktische bezwaren&amp;rdquo;. (&amp;ldquo;between dream and deed stand laws in the way, and practical objections&amp;rdquo;).&lt;/p&gt;
 &lt;p&gt;We want to understand this. If we want to exercise power, we need to understand the intermediaries. If we want to subvert power, the intermediaries are one of our disruptive points.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise Multiparty</title>
+      <link>http://localhost:1313/book/power/promise-multiparty/</link>
+      <pubDate>Tue, 13 May 2025 13:29:23 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/promise-multiparty/</guid>
+      <description>&lt;p&gt;Intermediaries, brokers. 3 actortypes (or more)&lt;/p&gt;
+&lt;p&gt;An intermediary adds value between client/server, source/sink
+I.e. index, filter, conversion, (de)couple
+(e.g. Relate to ’broker’)
+Indexen
+Gebruikersadministratie, ten behoeve van autorisatie en TTP diensten
+Abonnementadministratie, welke afnemers of belangstellenden zijn er?
+Bronindex, welke bronnen hebben informatie over een bepaald sofinummer (search engine)?
+Functionaliteit
+formaat conversie, filtering
+vraag/aanbod matching
+Performance
+verdelen en routeren van berichten, multicasting
+aggregatie
+caching
+bundeling van afspraken (bijv. SLA)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;distributor/directory
+authorization
+choice / arbitration / load balancer
+service integration
+pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
+multicast&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;subscription toepassing: chatbots streaming?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Who made podcasting big?</title>
