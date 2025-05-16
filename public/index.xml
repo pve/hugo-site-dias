@@ -6,7 +6,7 @@
     <description>Recent content in Diginf Scales on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 May 2025 21:03:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 May 2025 21:08:13 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -315,7 +315,7 @@ If you want the car to stop at an intended location, for example just in front o
       <pubDate>Thu, 15 May 2025 21:03:24 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/promise-contract/</guid>
       <description>&lt;h2 id=&#34;contracts-are-complementary-promises&#34;&gt;Contracts are complementary promises&lt;/h2&gt;
-&lt;p&gt;Once we have this in place, contracts between agents now become really simple to express.
+&lt;p&gt;Once we understand promises, contracts between agents now become really simple to express.
 They are a set of complementary conditional promises: &amp;ldquo;If you do this, I will promise that&amp;rdquo;.
 In our example this looks like the following.&lt;/p&gt;
 &lt;ul&gt;
@@ -398,6 +398,19 @@ This is not necessarily the best outcome for the organization as a whole.&lt;/p&
 &lt;p&gt;To illustrate this, I gave ChatGPT the following prompt:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Write a business case story about the conflict over shared computing resources.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Where the buck stops</title>
+      <link>http://localhost:1313/book/power/buck-stops/</link>
+      <pubDate>Thu, 15 May 2025 21:08:13 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/buck-stops/</guid>
+      <description>&lt;p&gt;The US president Harry S. Truman famously had a sign on his desk that said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The buck stops here.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This refers to the process of &amp;ldquo;passing up the buck&amp;rdquo;, meaning to escalate decisions to the next higher level in the organization.&lt;/p&gt;
+&lt;p&gt;Truman implied that he took responsibility but also that this is where power comes from.&lt;/p&gt;
+&lt;p&gt;This is an essential part of governance, and this vertical line of responsibility represents one way of looking at it.
+We can trace how this works in the following risk management example.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Is Trust</title>

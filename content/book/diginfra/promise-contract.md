@@ -6,7 +6,7 @@ weight: 15
 ---
 ## Contracts are complementary promises
 
-Once we have this in place, contracts between agents now become really simple to express.
+Once we understand promises, contracts between agents now become really simple to express.
 They are a set of complementary conditional promises: "If you do this, I will promise that".
 In our example this looks like the following.
 

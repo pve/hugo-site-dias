@@ -1,6 +1,6 @@
 ---
 date: '2025-05-15T21:08:13Z'
-draft: true
+draft: false
 title: 'Where the buck stops'
 weight: 25
 ---
