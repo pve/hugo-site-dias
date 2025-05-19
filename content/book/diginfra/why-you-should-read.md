@@ -21,7 +21,9 @@ Concerns were raised about Cambridge Analytica's alleged use of harvested Facebo
 This shows how digital infrastructures can be used to distort democratic processes.
 
 And even though failures in shared services projects are less global headline making, they do impact lots of organizations and their clients.
-I have seen many projects aiming to improve collaboration unnecessarily delayed because of a mismatch between expectations and what the technology and power structure could afford.
+
+For example, in my professional life, I have seen many projects aiming to improve collaboration unnecessarily delayed because of a mismatch between expectations and what the technology and power structure could afford.
+There will be examples of that throughout the book.
 
 What I write about in this book is shaped by the conversations I had with many people.
 I have worked with IT consultants, risk auditors, and their clients.

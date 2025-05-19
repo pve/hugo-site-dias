@@ -1,6 +1,6 @@
 ---
-title: "Diginf Scales"
-description: "Insights and strategies for scaling digital infrastructures."
+title: "Digital Power"
+description: "How Digital Infrastructures at Scale Lead to Value, Power, and Risk"
 cover:
   image: "craiyonmushrooms.png" # Add an image in `static/`
   alt: "Craiyon image"

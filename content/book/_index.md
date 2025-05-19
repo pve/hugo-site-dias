@@ -8,4 +8,4 @@ layout: "bookcontents"
 
 {{< book-chapters >}}
 
-> _Not all chapters are finalized. Blog articles might be included later!_
+> _This is a living book, updated in conversation with my clients and students_
