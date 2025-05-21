@@ -6,8 +6,22 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Apr 2025 12:46:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 May 2025 09:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe System Admin</title>
+      <link>http://localhost:1313/posts/vibe-system-admin/</link>
+      <pubDate>Tue, 20 May 2025 09:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/vibe-system-admin/</guid>
+      <description>&lt;p&gt;Can I use AI to help with running and securing my home network?&lt;/p&gt;
+&lt;p&gt;This post is going to be obsolete very soon..&lt;/p&gt;
+&lt;p&gt;My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.&lt;/p&gt;
+&lt;p&gt;Here is what I ran into.&lt;/p&gt;
+&lt;p&gt;I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
+This MCP server is cloned from &lt;a href=&#34;https://github.com/mikecutalo/unifi-mcp-server&#34;&gt;github&lt;/a&gt;.
+This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points.
+It answers questions like&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Three books on Zero Trust, and when you should read them</title>
       <link>http://localhost:1313/posts/three-books-zero-trust/</link>

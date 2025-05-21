@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 May 2025 21:08:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 May 2025 09:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -17,7 +17,7 @@
 While value is realized in the past and the present, risk is what can happen with that value in the &lt;em&gt;future&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
 &lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.
-In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business critical data, like our database of customers. Think data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
+In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business-critical data, like our database of customers. Think of data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Elements of the Digital World</title>
@@ -32,6 +32,40 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vibe System Admin</title>
+      <link>http://localhost:1313/posts/vibe-system-admin/</link>
+      <pubDate>Tue, 20 May 2025 09:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/vibe-system-admin/</guid>
+      <description>&lt;p&gt;Can I use AI to help with running and securing my home network?&lt;/p&gt;
+&lt;p&gt;This post is going to be obsolete very soon..&lt;/p&gt;
+&lt;p&gt;My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.&lt;/p&gt;
+&lt;p&gt;Here is what I ran into.&lt;/p&gt;
+&lt;p&gt;I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
+This MCP server is cloned from &lt;a href=&#34;https://github.com/mikecutalo/unifi-mcp-server&#34;&gt;github&lt;/a&gt;.
+This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points.
+It answers questions like&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Controls</title>
+      <link>http://localhost:1313/book/risk/controls/</link>
+      <pubDate>Mon, 19 May 2025 21:39:41 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/controls/</guid>
+      <description>&lt;p&gt;Once we have assets and risks identified, we think of ways to minimize these risks.
+Those ways are called controls or measures.
+If you have read through an IT risk management book, many of these should be familiar.
+For the rest of you, here is a brief outline of some control examples for data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Classification: organizing data in various categories. This could from public to top secret, with a few in between. This is not really a technical control, but rather a means to apply specific controls on that data.&lt;/li&gt;
+&lt;li&gt;Labelling: similar to classification. Data labels can relate data to specific use cases, such as development versus production, specific applications or owners.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Create: classify, label
+Store: encryption
+Use: logical controls
+Share: DLP, encryption
+Archive: asset management
+Destroy: crypto shredding (encrypting and deleting the key)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mitigation</title>
@@ -305,10 +339,14 @@ If you want the car to stop at an intended location, for example just in front o
       <pubDate>Sun, 11 May 2025 08:37:01 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/assets/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s dive a little deeper into assets, which is typically data that we have risks on, though we can also see the processing power that we need as an asset.&lt;/p&gt;
-&lt;p&gt;From a risk analysis, the asset is the unit that we consider.
-ENISA, the European Network Information Security Agency, is one of the many institutes in the world described IT risk management.
-In a report on cloud security (reference) they identified a number of assets.
-A few examples to illustrate the breadth of that are:&lt;/p&gt;</description>
+&lt;p&gt;Here are some examples of data assets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A customer record in a business system&lt;/li&gt;
+&lt;li&gt;An MRI scan&lt;/li&gt;
+&lt;li&gt;A browser cookie (on the server)&lt;/li&gt;
+&lt;li&gt;A logfile entry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As you can guess from these examples, many of these have regulatory concerns attached to them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Things Break at Scale</title>

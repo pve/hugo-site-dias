@@ -5,18 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Elements of the Digital World | Digital Infrastructures at Scale</title>
+<title>Vibe System Admin | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.
-The three major elements of digital infrastructures are:
-
-Storage
-Networks
-Processors
-
-In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.">
+<meta name="description" content="Can I use AI to help with running and securing my home network?
+This post is going to be obsolete very soon..
+My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.
+Here is what I ran into.
+I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
+This MCP server is cloned from github.
+This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points.
+It answers questions like">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/">
+<link rel="canonical" href="http://localhost:1313/posts/vibe-system-admin/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -25,7 +25,7 @@ In the cloud security world, it is customary to talk about data at rest, data in
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/vibe-system-admin/">
 <noscript>
     <style>
         #theme-toggle,
@@ -63,13 +63,6 @@ In the cloud security world, it is customary to talk about data at rest, data in
 
     </style>
 </noscript>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
-<script>
-  mermaid.initialize({ 
-    startOnLoad: true,
-  });
-</script>
-
 </head>
 
 <body class="" id="top">
@@ -139,105 +132,75 @@ In the cloud security world, it is customary to talk about data at rest, data in
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
-      Elements of the Digital World
+      Vibe System Admin
     </h1>
-    <div class="post-meta"><span title='2025-03-27 20:34:01 +0000 UTC'>March 27, 2025</span>
+    <div class="post-meta"><span title='2025-05-20 09:30:03 +0000 UTC'>May 20, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 3 min read</i>
+  <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.</p>
-<p>The three major elements of digital infrastructures are:</p>
-<ol>
-<li>Storage</li>
-<li>Networks</li>
-<li>Processors</li>
-</ol>
-<p>In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.</p>
-<p>All of these elements have a wide variety of different manifestations, with associated quality and performance attributes that matter enormously in the design and management of digital infrastructures.</p>
-<p>You&rsquo;ll also have to understand that these three concepts are very entangled. A storage system is connected to a network, but it also has network and processing elements inside. The same is true for the other two concepts. Once again, it is a way to draw maps of digital systems, and any map is inaccurate. As said elsewhere, this inaccuracy actually can make it a good map! It reduces complexity so that we can more easily think about it.</p>
-<p>Speaking of maps, a variety of diagrams is used in the field of IT.
-I&rsquo;d like to gently expose you some of those diagram types.</p>
-<p>The link between the digital elements is, in its simplest form, often depicted as follows:</p>
-<pre class="mermaid">block-beta
-
-in space env:2 space out
-in[&#34;Input&#34;] --&gt; env[&#34;Processor&#34;]
-env--&gt; out[&#34;Output&#34;]
-
-style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-   
-</pre>
-<p>A few comments on what this does, and does not show:</p>
+  <div class="post-content"><p>Can I use AI to help with running and securing my home network?</p>
+<p>This post is going to be obsolete very soon..</p>
+<p>My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.</p>
+<p>Here is what I ran into.</p>
+<p>I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
+This MCP server is cloned from <a href="https://github.com/mikecutalo/unifi-mcp-server">github</a>.
+This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points.
+It answers questions like</p>
+<blockquote>
+<p>What are the connected clients?</p></blockquote>
+<blockquote>
+<p>What are the active WiFi access points?</p></blockquote>
+<blockquote>
+<p>Which clients are connected to the Attic access point?</p></blockquote>
+<p>This is interesting, but it gets more interesting if we combine this with other tools.
+So I tried <code>nmap</code>.
+The MCP server I used for that is cloned from <a href="https://github.com/himanshusanecha/mcp-osint-server">https://github.com/himanshusanecha/mcp-osint-server</a>.
+Because I did not want to drag along the local installs that this does, I created a Docker version of that.</p>
+<p>This makes it possible to ask for:</p>
+<blockquote>
+<p>what are the open ports on all the raspberry devices?</p></blockquote>
+<p>Which it does, except it hallucinates that a few machines with <code>wlan0</code> interfaces are raspberries.
+In fact these are Tuya smart lights.
+A bit of prompt engineering will solve that.</p>
+<p>Here is a fragment of <code>claude_desktop_config.json</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">    <span class="s2">&#34;osint&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;docker&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;args&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;run&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;-i&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;--rm&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;mcp-osint-server&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;unifi-mcp-server&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;uv&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;args&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;--directory&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;/Users/peter/....../unifi-mcp-server&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;run&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;main.py&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">],</span>
+</span></span></code></pre></div><p>All good, but it does not work for local nodes, because of the way Docker Desktop implements isolation.</p>
+<p>An example that works is</p>
+<blockquote>
+<p>what are the open ports on domain digitalinfrastructures.nl
+It does the scan directly on the 2 IP addresses involved, and gives some more intel as well, involving tools from multiple MCP servers.</p></blockquote>
+<p>Notes:</p>
 <ul>
-<li>input is data, which is <em>transformed</em> into output, also data</li>
-<li>the diagram does not show if this is a one-off activity, or a stream of events, we need a time-sequence diagram for that</li>
-<li>there is no explicit mention of any &lsquo;state&rsquo; or &lsquo;persistent data&rsquo; inside the processing.</li>
+<li>The MCP osint server does not advertise its capabilities very well, it seems. For example, Claude fails to understand that it cannot give <code>nmap</code> options, it only takes 1 argument. Seems easy to fix.</li>
+<li>Claude container invocations. Despite the <code>--rm</code> argument, some but not all of the containers started by Claude&rsquo;s MCP activity do not seem to go away automatically.</li>
+<li>We could create a more remote server for the nmap scan of the network. This could have a better vantage point than my personal laptop.</li>
 </ul>
-<p>We will see later how this simple model is adequate to describe a vast variety of data processing tasks.
-A very simple example is adding two numbers. The input is formed by the two numbers, and the output it their sum.
-An AI example might be the input a voice recording, and output a file with the transcribed conversation.</p>
-<p>In an interactive world, it is more common to have the output returned to the source of the input.
-The following diagram illustrates that.</p>
-<pre class="mermaid">sequenceDiagram
-    User-&gt;&gt;Processor: Here is my input
-    Processor-&gt;&gt;User: Here is the output
-</pre>
-<p>A common example would be to send as input a question to a search engine, where the search results are the output.
-The vertical lines are <em>timelines</em> that show from top to bottom how time flows.</p>
 
 
   </div>
-  
 
-
-
-
-  
-    <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
-      
-      
-        
-        <a href="/book/diginfra/why-you-should-read/">Why You Should Read this Book &rarr;</a>
-      
-    </nav>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-  
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
   
 
   <footer class="post-footer">

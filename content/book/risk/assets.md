@@ -7,6 +7,15 @@ weight: 15
 
 Let's dive a little deeper into assets, which is typically data that we have risks on, though we can also see the processing power that we need as an asset.
 
+Here are some examples of data assets:
+
+- A customer record in a business system
+- An MRI scan
+- A browser cookie (on the server)
+- A logfile entry
+
+As you can guess from these examples, many of these have regulatory concerns attached to them.
+
 From a risk analysis, the asset is the unit that we consider.
 ENISA, the European Network Information Security Agency, is one of the many institutes in the world described IT risk management.
 In a report on cloud security (reference) they identified a number of assets.

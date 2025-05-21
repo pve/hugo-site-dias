@@ -5,18 +5,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Elements of the Digital World | Digital Infrastructures at Scale</title>
+<title>Controls | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.
-The three major elements of digital infrastructures are:
+<meta name="description" content="Once we have assets and risks identified, we think of ways to minimize these risks.
+Those ways are called controls or measures.
+If you have read through an IT risk management book, many of these should be familiar.
+For the rest of you, here is a brief outline of some control examples for data.
 
-Storage
-Networks
-Processors
+Classification: organizing data in various categories. This could from public to top secret, with a few in between. This is not really a technical control, but rather a means to apply specific controls on that data.
+Labelling: similar to classification. Data labels can relate data to specific use cases, such as development versus production, specific applications or owners.
 
-In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.">
+Create: classify, label
+Store: encryption
+Use: logical controls
+Share: DLP, encryption
+Archive: asset management
+Destroy: crypto shredding (encrypting and deleting the key)">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/">
+<link rel="canonical" href="http://localhost:1313/book/risk/controls/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -25,7 +31,7 @@ In the cloud security world, it is customary to talk about data at rest, data in
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/risk/controls/">
 <noscript>
     <style>
         #theme-toggle,
@@ -63,13 +69,6 @@ In the cloud security world, it is customary to talk about data at rest, data in
 
     </style>
 </noscript>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
-<script>
-  mermaid.initialize({ 
-    startOnLoad: true,
-  });
-</script>
-
 </head>
 
 <body class="" id="top">
@@ -139,58 +138,38 @@ In the cloud security world, it is customary to talk about data at rest, data in
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/risk/">Risks of digital infrastructures</a></div>
     <h1 class="post-title entry-hint-parent">
-      Elements of the Digital World
+      Controls
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h1>
-    <div class="post-meta"><span title='2025-03-27 20:34:01 +0000 UTC'>March 27, 2025</span>
+    <div class="post-meta"><span title='2025-05-19 21:39:41 +0000 UTC'>May 19, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 3 min read</i>
+  <i>⏳ 1 min read</i>
   
-  <div class="post-content"><p>It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.</p>
-<p>The three major elements of digital infrastructures are:</p>
-<ol>
-<li>Storage</li>
-<li>Networks</li>
-<li>Processors</li>
-</ol>
-<p>In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.</p>
-<p>All of these elements have a wide variety of different manifestations, with associated quality and performance attributes that matter enormously in the design and management of digital infrastructures.</p>
-<p>You&rsquo;ll also have to understand that these three concepts are very entangled. A storage system is connected to a network, but it also has network and processing elements inside. The same is true for the other two concepts. Once again, it is a way to draw maps of digital systems, and any map is inaccurate. As said elsewhere, this inaccuracy actually can make it a good map! It reduces complexity so that we can more easily think about it.</p>
-<p>Speaking of maps, a variety of diagrams is used in the field of IT.
-I&rsquo;d like to gently expose you some of those diagram types.</p>
-<p>The link between the digital elements is, in its simplest form, often depicted as follows:</p>
-<pre class="mermaid">block-beta
-
-in space env:2 space out
-in[&#34;Input&#34;] --&gt; env[&#34;Processor&#34;]
-env--&gt; out[&#34;Output&#34;]
-
-style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
-   
-</pre>
-<p>A few comments on what this does, and does not show:</p>
+  <div class="post-content"><p>Once we have assets and risks identified, we think of ways to minimize these risks.
+Those ways are called controls or measures.
+If you have read through an IT risk management book, many of these should be familiar.
+For the rest of you, here is a brief outline of some control examples for data.</p>
 <ul>
-<li>input is data, which is <em>transformed</em> into output, also data</li>
-<li>the diagram does not show if this is a one-off activity, or a stream of events, we need a time-sequence diagram for that</li>
-<li>there is no explicit mention of any &lsquo;state&rsquo; or &lsquo;persistent data&rsquo; inside the processing.</li>
+<li>Classification: organizing data in various categories. This could from public to top secret, with a few in between. This is not really a technical control, but rather a means to apply specific controls on that data.</li>
+<li>Labelling: similar to classification. Data labels can relate data to specific use cases, such as development versus production, specific applications or owners.</li>
 </ul>
-<p>We will see later how this simple model is adequate to describe a vast variety of data processing tasks.
-A very simple example is adding two numbers. The input is formed by the two numbers, and the output it their sum.
-An AI example might be the input a voice recording, and output a file with the transcribed conversation.</p>
-<p>In an interactive world, it is more common to have the output returned to the source of the input.
-The following diagram illustrates that.</p>
-<pre class="mermaid">sequenceDiagram
-    User-&gt;&gt;Processor: Here is my input
-    Processor-&gt;&gt;User: Here is the output
-</pre>
-<p>A common example would be to send as input a question to a search engine, where the search results are the output.
-The vertical lines are <em>timelines</em> that show from top to bottom how time flows.</p>
+<p>Create: classify, label
+Store: encryption
+Use: logical controls
+Share: DLP, encryption
+Archive: asset management
+Destroy: crypto shredding (encrypting and deleting the key)</p>
 
 
   </div>
@@ -200,11 +179,16 @@ The vertical lines are <em>timelines</em> that show from top to bottom how time 
 
 
   
+
+  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
+      
+        
+        <a href="/book/risk/intro-to-risk/">&larr; Introduction to Risk</a>
       
       
         
-        <a href="/book/diginfra/why-you-should-read/">Why You Should Read this Book &rarr;</a>
+        <a href="/book/risk/mitigation/">Mitigation &rarr;</a>
       
     </nav>
   
@@ -221,23 +205,8 @@ The vertical lines are <em>timelines</em> that show from top to bottom how time 
 
   
 
-  
-
-  
-
-  
-
-  
-
-  
 
 
-
-  
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
   
 
   <footer class="post-footer">
