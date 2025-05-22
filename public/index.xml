@@ -34,18 +34,18 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Vibe System Admin</title>
+      <title>Vibe System Admin with MCP proof of concept</title>
       <link>http://localhost:1313/posts/vibe-system-admin/</link>
       <pubDate>Tue, 20 May 2025 09:30:03 +0000</pubDate>
       <guid>http://localhost:1313/posts/vibe-system-admin/</guid>
       <description>&lt;p&gt;Can I use AI to help with running and securing my home network?&lt;/p&gt;
-&lt;p&gt;This post is going to be obsolete very soon..&lt;/p&gt;
+&lt;p&gt;This post is going to be obsolete very soon&amp;hellip;&lt;/p&gt;
 &lt;p&gt;My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.&lt;/p&gt;
 &lt;p&gt;Here is what I ran into.&lt;/p&gt;
 &lt;p&gt;I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
 This MCP server is cloned from &lt;a href=&#34;https://github.com/mikecutalo/unifi-mcp-server&#34;&gt;github&lt;/a&gt;.
 This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points.
-It answers questions like&lt;/p&gt;</description>
+It answers questions like:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Controls</title>
@@ -458,7 +458,7 @@ That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;<
       <pubDate>Sun, 09 Mar 2025 11:06:48 +0000</pubDate>
       <guid>http://localhost:1313/book/power/positions-of-power-it/</guid>
       <description>&lt;p&gt;One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.&lt;/p&gt;
-&lt;p&gt;Two important positions of influence in IT are architects and auditors/assessors.&lt;/p&gt;
+&lt;p&gt;Every stakeholder has power. Here I want to highlight two important positions of influence in IT where technology meets power are architects and auditors/assessors.&lt;/p&gt;
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>

@@ -5,16 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Vibe System Admin | Digital Infrastructures at Scale</title>
+<title>Vibe System Admin with MCP proof of concept | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Can I use AI to help with running and securing my home network?
-This post is going to be obsolete very soon..
+This post is going to be obsolete very soon&hellip;
 My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.
 Here is what I ran into.
 I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
 This MCP server is cloned from github.
 This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points.
-It answers questions like">
+It answers questions like:">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/vibe-system-admin/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -134,7 +134,7 @@ It answers questions like">
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
-      Vibe System Admin
+      Vibe System Admin with MCP proof of concept
     </h1>
     <div class="post-meta"><span title='2025-05-20 09:30:03 +0000 UTC'>May 20, 2025</span>
 
@@ -145,13 +145,13 @@ It answers questions like">
   <i>⏳ 2 min read</i>
   
   <div class="post-content"><p>Can I use AI to help with running and securing my home network?</p>
-<p>This post is going to be obsolete very soon..</p>
+<p>This post is going to be obsolete very soon&hellip;</p>
 <p>My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.</p>
 <p>Here is what I ran into.</p>
 <p>I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
 This MCP server is cloned from <a href="https://github.com/mikecutalo/unifi-mcp-server">github</a>.
 This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points.
-It answers questions like</p>
+It answers questions like:</p>
 <blockquote>
 <p>What are the connected clients?</p></blockquote>
 <blockquote>
@@ -164,8 +164,8 @@ The MCP server I used for that is cloned from <a href="https://github.com/himans
 Because I did not want to drag along the local installs that this does, I created a Docker version of that.</p>
 <p>This makes it possible to ask for:</p>
 <blockquote>
-<p>what are the open ports on all the raspberry devices?</p></blockquote>
-<p>Which it does, except it hallucinates that a few machines with <code>wlan0</code> interfaces are raspberries.
+<p>What are the open ports on all the Raspberry devices?</p></blockquote>
+<p>Which it does, except Claude hallucinates that a few machines with <code>wlan0</code> interfaces are Raspberry Pis.
 In fact these are Tuya smart lights.
 A bit of prompt engineering will solve that.</p>
 <p>Here is a fragment of <code>claude_desktop_config.json</code>.</p>
@@ -187,15 +187,15 @@ A bit of prompt engineering will solve that.</p>
 </span></span><span class="line"><span class="cl">        <span class="s2">&#34;main.py&#34;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">],</span>
 </span></span></code></pre></div><p>All good, but it does not work for local nodes, because of the way Docker Desktop implements isolation.</p>
-<p>An example that works is</p>
+<p>An example that works is:</p>
 <blockquote>
-<p>what are the open ports on domain digitalinfrastructures.nl
-It does the scan directly on the 2 IP addresses involved, and gives some more intel as well, involving tools from multiple MCP servers.</p></blockquote>
+<p>what are the open ports on domain digitalinfrastructures.nl?</p></blockquote>
+<p>It does the scan directly on the 2 IP addresses involved, and gives some more intelligence as well, involving tools from multiple MCP servers.</p>
 <p>Notes:</p>
 <ul>
 <li>The MCP osint server does not advertise its capabilities very well, it seems. For example, Claude fails to understand that it cannot give <code>nmap</code> options, it only takes 1 argument. Seems easy to fix.</li>
 <li>Claude container invocations. Despite the <code>--rm</code> argument, some but not all of the containers started by Claude&rsquo;s MCP activity do not seem to go away automatically.</li>
-<li>We could create a more remote server for the nmap scan of the network. This could have a better vantage point than my personal laptop.</li>
+<li>We could create a more remote server for the nmap scan of the network. This could have a better vantage point than my personal laptop. We&rsquo;d have to install a remote MCP server on a Linux box in the local network, advertising its services.</li>
 </ul>
 
 

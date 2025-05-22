@@ -6,7 +6,7 @@ weight: 25
 ---
 One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.
 
-Two important positions of influence in IT are architects and auditors/assessors.
+Every stakeholder has power. Here I want to highlight two important positions of influence in IT where technology meets power are architects and auditors/assessors.
 
 IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.
 
