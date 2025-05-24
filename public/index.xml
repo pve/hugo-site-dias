@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 May 2025 09:30:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 May 2025 12:45:13 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -32,6 +32,19 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI will replace coders, not software engineers</title>
+      <link>http://localhost:1313/posts/ai-code-software/</link>
+      <pubDate>Fri, 23 May 2025 12:45:13 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai-code-software/</guid>
+      <description>&lt;p&gt;A coder in the world of IT is somebody who writes code in some programming language.
+More typically they modify code instead of writing it from scratch.
+This is in response to bugs, feature requests, and so on.
+In the age of AI, a lot of coding can be automated.
+While senior people often also code, not all coders are senior.&lt;/p&gt;
+&lt;p&gt;A software engineer builds systems out of software.
+This may involve coding, but there are many other ways to create business value with software.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vibe System Admin with MCP proof of concept</title>

@@ -13,7 +13,7 @@ IT architects are builders. They design new applications, platforms, and infrast
 Auditors and risk assessors, on the other hand, focus on preventing failure. Every technology introduces risks, and without proper attention, these risks can derail progress—whether through security breaches, compliance fines, or operational breakdowns.
 
 Both roles involve power.
-Without power, things will not move in the way you want, and every initiative encounters resistance. 
+Without power, things will not move in the way you want, and every initiative encounters resistance.
 Understanding the sources of power—and the forces that push back—is essential for you to achieve meaningful outcomes.
 
 Money is a form of power, but it is often a blunt instrument. In organizations, other forces—such as survival and strategic priorities—can be even more influential. The key to driving transformation is linking these forces together with precision.
