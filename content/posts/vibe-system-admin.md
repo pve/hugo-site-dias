@@ -1,14 +1,14 @@
 ---
 date: '2025-05-20T09:30:03Z'
 draft: false
-title: 'Vibe System Admin with MCP proof of concept'
+title: 'Vibe System Ops with MCP proof of concept'
 weight: 10
 ---
-Can I use AI to help with running and securing my home network?
+Here is the story of how I started to use AI to help with running and securing my home network? I call it vibe ops, in analogy to vibe programming.
 
-This post is going to be obsolete very soon...
+This post is going to be obsolete very soon, even though it is already the second version ...
 
-My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.
+My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.
 
 Here is what I ran into.
 
@@ -25,7 +25,6 @@ It answers questions like:
 This is interesting, but it gets more interesting if we combine this with other tools.
 So I tried `nmap`.
 The MCP server I used for that is cloned from https://github.com/himanshusanecha/mcp-osint-server.
-Because I did not want to drag along the local installs that this does, I created a Docker version of that.
 
 This makes it possible to ask for:
 >What are the open ports on all the Raspberry devices?

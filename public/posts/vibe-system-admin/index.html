@@ -5,16 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Vibe System Admin with MCP proof of concept | Digital Infrastructures at Scale</title>
+<title>Vibe System Ops with MCP proof of concept | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Can I use AI to help with running and securing my home network?
-This post is going to be obsolete very soon&hellip;
-My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.
-Here is what I ran into.
-I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
-This MCP server is cloned from github.
-This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points.
-It answers questions like:">
+<meta name="description" content="Here is the story of how I started to use AI to help with running and securing my home network? I call it vibe ops, in analogy to vibe programming.
+This post is going to be obsolete very soon, even though it is already the second version &hellip;
+My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/vibe-system-admin/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -134,7 +129,7 @@ It answers questions like:">
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
-      Vibe System Admin with MCP proof of concept
+      Vibe System Ops with MCP proof of concept
     </h1>
     <div class="post-meta"><span title='2025-05-20 09:30:03 +0000 UTC'>May 20, 2025</span>
 
@@ -144,9 +139,9 @@ It answers questions like:">
   
   <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>Can I use AI to help with running and securing my home network?</p>
-<p>This post is going to be obsolete very soon&hellip;</p>
-<p>My home network is a nice lab as well, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.</p>
+  <div class="post-content"><p>Here is the story of how I started to use AI to help with running and securing my home network? I call it vibe ops, in analogy to vibe programming.</p>
+<p>This post is going to be obsolete very soon, even though it is already the second version &hellip;</p>
+<p>My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.</p>
 <p>Here is what I ran into.</p>
 <p>I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
 This MCP server is cloned from <a href="https://github.com/mikecutalo/unifi-mcp-server">github</a>.
@@ -160,8 +155,7 @@ It answers questions like:</p>
 <p>Which clients are connected to the Attic access point?</p></blockquote>
 <p>This is interesting, but it gets more interesting if we combine this with other tools.
 So I tried <code>nmap</code>.
-The MCP server I used for that is cloned from <a href="https://github.com/himanshusanecha/mcp-osint-server">https://github.com/himanshusanecha/mcp-osint-server</a>.
-Because I did not want to drag along the local installs that this does, I created a Docker version of that.</p>
+The MCP server I used for that is cloned from <a href="https://github.com/himanshusanecha/mcp-osint-server">https://github.com/himanshusanecha/mcp-osint-server</a>.</p>
 <p>This makes it possible to ask for:</p>
 <blockquote>
 <p>What are the open ports on all the Raspberry devices?</p></blockquote>
