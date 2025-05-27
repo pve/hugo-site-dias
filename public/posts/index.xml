@@ -22,13 +22,14 @@ While senior people often also code, not all coders are senior.&lt;/p&gt;
 This may involve coding, but there are many other ways to create business value with software.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Vibe System Ops with MCP proof of concept</title>
-      <link>http://localhost:1313/posts/vibe-system-admin/</link>
+      <title>Vibe OPSing with MCP: proof of concept</title>
+      <link>http://localhost:1313/posts/vibe-opsing/</link>
       <pubDate>Tue, 20 May 2025 09:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/vibe-system-admin/</guid>
-      <description>&lt;p&gt;Here is the story of how I started to use AI to help with running and securing my home network? I call it vibe ops, in analogy to vibe programming.&lt;/p&gt;
+      <guid>http://localhost:1313/posts/vibe-opsing/</guid>
+      <description>&lt;p&gt;Here is the story of how I started to use AI to help with running and securing my home network.
+I call it vibe ops, in analogy to vibe programming.&lt;/p&gt;
 &lt;p&gt;This post is going to be obsolete very soon, even though it is already the second version &amp;hellip;&lt;/p&gt;
-&lt;p&gt;My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.&lt;/p&gt;</description>
+&lt;p&gt;My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am doing some experiments.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Three books on Zero Trust, and when you should read them</title>

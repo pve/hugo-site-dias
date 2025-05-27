@@ -15,7 +15,6 @@ That is one of the core concepts of Zero Trust Security Architecture.
 
 Trust is an elusive concept, but I do have a couple of ways of looking at it that I have found very useful.
 One is from "the Prisoner's Dilemma," which is a story from game theory.
-Another is "authority," which is related to that, basically "I trust somebody, because somebody tells me so". 
+Another is "authority," which is related to that, basically "I trust somebody, because somebody tells me so".
 
 Trust can also be something that is fairly technical, as in: can I trust the webserver to be up all the time?
-

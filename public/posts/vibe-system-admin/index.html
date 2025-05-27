@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Vibe System Ops with MCP proof of concept | Digital Infrastructures at Scale</title>
+<title>Vibe Opsing with MCP: proof of concept | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Here is the story of how I started to use AI to help with running and securing my home network? I call it vibe ops, in analogy to vibe programming.
 This post is going to be obsolete very soon, even though it is already the second version &hellip;
-My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.">
+My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am doing some experiments.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/vibe-system-admin/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -129,7 +129,7 @@ My home network plays an additional role as a nice lab, and in the process of be
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
-      Vibe System Ops with MCP proof of concept
+      Vibe Opsing with MCP: proof of concept
     </h1>
     <div class="post-meta"><span title='2025-05-20 09:30:03 +0000 UTC'>May 20, 2025</span>
 
@@ -137,11 +137,14 @@ My home network plays an additional role as a nice lab, and in the process of be
   </header> 
 
   
-  <i>⏳ 2 min read</i>
+  <i>⏳ 3 min read</i>
   
   <div class="post-content"><p>Here is the story of how I started to use AI to help with running and securing my home network? I call it vibe ops, in analogy to vibe programming.</p>
 <p>This post is going to be obsolete very soon, even though it is already the second version &hellip;</p>
-<p>My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am running some experiments.</p>
+<p>My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am doing some experiments.</p>
+<p>The home network is built around a Unifi Cloud Gateway, three Unifi WiFi access points, and a few switches.
+Currently it is flat and unsegmented.
+We need to do better than that.</p>
 <p>Here is what I ran into.</p>
 <p>I started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet.
 This MCP server is cloned from <a href="https://github.com/mikecutalo/unifi-mcp-server">github</a>.
@@ -159,9 +162,9 @@ The MCP server I used for that is cloned from <a href="https://github.com/himans
 <p>This makes it possible to ask for:</p>
 <blockquote>
 <p>What are the open ports on all the Raspberry devices?</p></blockquote>
-<p>Which it does, except Claude hallucinates that a few machines with <code>wlan0</code> interfaces are Raspberry Pis.
+<p>Which it does, except Claude hallucinated that a few machines with <code>wlan0</code> interfaces are Raspberry Pis.
 In fact these are Tuya smart lights.
-A bit of prompt engineering will solve that.</p>
+A bit of prompt engineering solves that.</p>
 <p>Here is a fragment of <code>claude_desktop_config.json</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">    <span class="s2">&#34;osint&#34;</span><span class="err">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;docker&#34;</span><span class="p">,</span>
@@ -188,8 +191,10 @@ A bit of prompt engineering will solve that.</p>
 <p>Notes:</p>
 <ul>
 <li>The MCP osint server does not advertise its capabilities very well, it seems. For example, Claude fails to understand that it cannot give <code>nmap</code> options, it only takes 1 argument. Seems easy to fix.</li>
-<li>Claude container invocations. Despite the <code>--rm</code> argument, some but not all of the containers started by Claude&rsquo;s MCP activity do not seem to go away automatically.</li>
+<li>Claude container invocations. Despite the <code>--rm</code> argument, some but not all of the containers started by Claude&rsquo;s MCP activity seem to go away automatically.</li>
 <li>We could create a more remote server for the nmap scan of the network. This could have a better vantage point than my personal laptop. We&rsquo;d have to install a remote MCP server on a Linux box in the local network, advertising its services.</li>
+<li>As is often said, a AI tool like this often acts like an overconfident intern. It happily applies tools, while not necessarily thinking which tool is the best. Maybe we should apply some reasoning capabilities.</li>
+<li>It is interesting to watch Claude run with the tools. It makes you aware of the hidden knowledge and assumptions that go into a lot of this work.</li>
 </ul>
 
 

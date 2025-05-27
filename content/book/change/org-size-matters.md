@@ -7,6 +7,7 @@ weight: 100
 
 Over the years, I have worked with many organizations, large and small.
 In one case, I implemented the exact same change in more than 15 organizations, whose size ranged from 35 to 35 thousand employees.
+You can imagine that this plays out differently across these organizations.
 But that is a story for another unit.
 
 It led me to see patterns in decision making and trust.
@@ -19,7 +20,7 @@ I have come to identify four major categories.
 ### Individuals
 
 First is the individual, who decides for themselves.
-They do not need to consult anybody.
+They do not need to consult anybody, though they will be informed by friends and media.
 If they want a new app on their phone or laptop, they'll just get it.
 And if it breaks, they will fix it themselves.
 Or a friend will.
@@ -46,6 +47,8 @@ You may not call a company of 150 large, but when groups are larger than that, y
 That really changes the social and power dynamics.
 Instead of knowing people by name, you know them by role.
 And the interactions between people are less governed by personal shared histories, but by company shared histories.
+These company histories can take the shape of myths, not to be challenged.
+In contrast, you can always try to dig deeper in a personal history.
 Processes are established, which have to be followed, reviewed, and controlled.
 Bureaucracy sets in, and every request has to go through a lot of standardized paperwork.
 And it does not matter if this is a government organization, or a large business.
