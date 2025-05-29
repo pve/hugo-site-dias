@@ -5,18 +5,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Who Suffers? | Digital Infrastructures at Scale</title>
+<title>Lean Risk and Economics | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
-Make clear who has the pain.
-For my phone and laptop it is easy: if I lose them, I suffer.
-In a larger organization it is less clear.
-Suppose a server dies.
-Whose application then no longer runs?
-Who has to pay for a new server?
-This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.">
+<meta name="description" content="From the moment a security vulnerability is discovered, it represents a negative value to its potential victims.
+When it gets exploited, it can lead to loss of data or loss of integrity of the data.
+This in turn impacts the victim&rsquo;s business processes.
+For example, if personal data is leaked, reputations will be damaged, financial losses and fines can be expected. Credit card abuse forms another example of loss.
+This &ldquo;damage potential&rdquo; increases as the vulnerability becomes well-known, progressing from nation state actors, to organized crime, to script kiddies, just to name one example pathway.
+At first, few people know about it, but gradually more people will be able to inflict damage with it.
+Over time, each step adds to the likelihood of that vulnerability being exploited and causing real damage.
+The likelihood starts at near zero, and ends at close to 100% as the vulnerability is completely public.
+This only stops when an investment is made to mitigate the vulnerability, for example by updating the software.
+And hopefully, that investment is less costly than the damage potential.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/risk/who-suffers/">
+<link rel="canonical" href="http://localhost:1313/book/risk/lean-risk/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -25,7 +27,7 @@ This gets increasingly harder if we are talking about shared services, because t
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/risk/who-suffers/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/risk/lean-risk/">
 <noscript>
     <style>
         #theme-toggle,
@@ -134,58 +136,68 @@ This gets increasingly harder if we are talking about shared services, because t
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/risk/">Risks of digital infrastructures</a></div>
     <h1 class="post-title entry-hint-parent">
-      Who Suffers?
+      Lean Risk and Economics
     </h1>
-    <div class="post-meta"><span title='2025-04-15 21:27:25 +0000 UTC'>April 15, 2025</span>
+    <div class="post-meta"><span title='2025-05-27 19:58:41 +0000 UTC'>May 27, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 3 min read</i>
+  <i>⏳ 4 min read</i>
   
-  <div class="post-content"><p>I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
-Make clear who has the pain.
-For my phone and laptop it is easy: if I lose them, I suffer.
-In a larger organization it is less clear.
-Suppose a server dies.
-Whose application then no longer runs?
-Who has to pay for a new server?
-This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.</p>
-<p>A related complication pops up when a failing component or service is remote from the organizations main purpose, or mission.
-We see this a lot around software vulnerabilities.
-A software vulnerability can allow a malicious actor to fully take over a service.
-But unless you demonstrate that:</p>
-<ol>
-<li>this vulnerability can actually be exploited, and</li>
-<li>this exploit can cause damage to the mission</li>
-</ol>
-<p>it would be a waste of time to address it individually.</p>
-<p>If you are involved in risk analysis, make sure to complete the reasoning up to the point where the stakeholder with the budget feels the pain.
-To do less is a waste of resources.</p>
-<h2 id="external-victims">External victims<a hidden class="anchor" aria-hidden="true" href="#external-victims">#</a></h2>
-<p>It gets a little more complicated if those who suffer are not part of the organization that controls that risk.
-Example: as a merchant accepting credit card payments of your customers, the customers credit card number helps you get paid.
-But if you accidentally disclose it, and it falls in the hands of a bad actor, you don&rsquo;t suffer.
-The customer does, or their bank.</p>
-<p>From the perspective of the customer, your activity impacts something that is of value to them.
-Economists call this an externality, and we see various examples of that in the world of risk, and in digital infrastructures at large.</p>
-<p>As the example customer, there is little that you can do about it.
-Why the credit card system still works is that banks and credit card issuers have an interest in the system working, and they don&rsquo;t want to saddle either the card holder or themselves with these losses.</p>
-<p>They have the pain, and their response has been to create a mandatory certification scheme for everybody who touches a credit card number.
-You cannot process a credit card, and definitely not at scale, without being PCI/DSS certified.
-This is enforced by contract.
-If you can&rsquo;t abide, you can&rsquo;t process credit cards, which may be important to you.
-This is how they make the credit cards processors suffer.
-It is an industry regulation.</p>
-<p>Similarly, personal data loss is a risk to the person, not to the organization that collects your personal data.
-That is why there are privacy regulations, of which the EU GDPR (General Data Protection Regulation) is the most well-known.</p>
-<p>These aren&rsquo;t industry regulations, they are the law.
-And if you don&rsquo;t follow the law, countries can fine you.
-Unfortunately, as I mention elsewhere, money is a blunt instrument.
-So while privacy laws work, they are not a perfect solution.</p>
-<p>Summing up, this leads to a new category of risk: compliance risk.
-If you do not comply with regulations, whether they are industry or government, you will suffer the pain.</p>
+  <div class="post-content"><p>From the moment a security vulnerability is discovered, it represents a negative value to its potential victims.
+When it gets exploited, it can lead to loss of data or loss of integrity of the data.
+This in turn impacts the victim&rsquo;s business processes.</p>
+<p>For example, if personal data is leaked, reputations will be damaged, financial losses and fines can be expected. Credit card abuse forms another example of loss.</p>
+<p>This &ldquo;damage potential&rdquo; increases as the vulnerability becomes well-known, progressing from nation state actors, to organized crime, to script kiddies, just to name one example pathway.
+At first, few people know about it, but gradually more people will be able to inflict damage with it.
+Over time, each step adds to the likelihood of that vulnerability being exploited and causing real damage.
+The likelihood starts at near zero, and ends at close to 100% as the vulnerability is completely public.
+This only stops when an investment is made to mitigate the vulnerability, for example by updating the software.
+And hopefully, that investment is less costly than the damage potential.</p>
+<p>This damage potential resembles the concept of &ldquo;work in progress&rdquo; from lean production.
+Originally developed as the &ldquo;Toyota Production System&rdquo;, it is also applied to software development.</p>
+<p>For example, if your team spends three months with five staff members on building a feature, the work in progress is now valued at fifteen man-months.
+That is an investment, which you will only recover once the feature is delivered and accepted.
+Only then will you be paid for it, hopefully reflecting more value than you put in as an investment.
+The mantra of lean production is to reduce work in progress.
+Work in progress represents a liability: it is capital tied up, and maybe it won&rsquo;t bear fruit.
+For example, your new piece of software may solve the wrong problem.
+This is why entrepreneurs love the idea of a minimum viable product, it reduces work in progress.
+You want to drop bad ideas as fast as possible.</p>
+<p>Back to vulnerabilities:</p>
+<p>The longer you wait with mitigating a vulnerability, the more negative value it accrues.
+Fixing it represents an investment, which hopefully has a positive return.</p>
+<p>There is a parallel with software development.
+In software development, the net value drops as more money is poured into development, which then returns to positive as the feature is delivered and paid for (figuratively speaking).
+In cyber security, the net value drops as the vulnerability is accessible to more threat actors, which then returns to zero after an investment is made into its mitigation.
+Hopefully the cost of mitigation is less than the net value (i.e. damage potential) at that time.</p>
+<p>This may sound pretty abstract, but I think I will be able to show the usefulness of this approach.
+It helps us identify where and how investments are most productive in cyber security.</p>
+<p>At any given moment in time, a stream of new vulnerabilities is thrown at cyber defenders around the world.
+For example, in 2024 around 40.000 vulnerabilities were published in the CVE database (<a href="https://www.cve.org/about/Metrics">source</a>).
+Without additional information, all of these carry a negative value to an organization, as all of them have damage potential.</p>
+<p>What investments can reduce the damage potential, and more importantly, which of these have the best return on investment?</p>
+<p>Let&rsquo;s start at the beginning.
+If you can match vulnerabilities to the software you have, you&rsquo;ll find a lot of them are not relevant as they relate to software you don&rsquo;t have.
+A proper and accessible software inventory therefore represents an investment that can reduce the total negative value of vulnerabilities.</p>
+<blockquote>
+<p>Case in point: log4j affected a quarter of the world&rsquo;s organizations.
+So, without more information, your organization had a 25% chance of being pretty vulnerable.
+But, if you knew that this software was not in use anywhere, your vulnerability dropped to zero.</p></blockquote>
+<p>Then, fast forward through the value chain.
+How can we reduce the negative value of a vulnerability?
+One way is to reduce the damage potential through segmentation and similar Zero Trust techniques.</p>
+<p>In a future extension of this unit, we can discuss:</p>
+<ul>
+<li>actor analysis: we have two types of actors here: malicious actors and potential victims, but there are more actors</li>
+<li>self inflicted vulnerabilities such as misconfigurations</li>
+<li>the value streams for malicious actors</li>
+<li>the value stream for security researchers</li>
+<li>the value streams for security service providers</li>
+<li>why Zero Trust reduces the negative value of a vulnerability.</li>
+</ul>
 
 
   </div>
@@ -201,24 +213,24 @@ If you do not comply with regulations, whether they are industry or government, 
   
 
   
+
+  
+
+  
+
+  
+
+  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/risk/mitigation/">&larr; Mitigation</a>
+        <a href="/book/risk/what-is-trust/">&larr; What Is Trust</a>
       
       
         
-        <a href="/book/risk/assets/">Information Security Assets &rarr;</a>
+        <a href="/book/risk/retrofitting-zero-trust-existing-application/">Retrofitting Zero Trust on an existing application: an illustration &rarr;</a>
       
     </nav>
-  
-
-  
-
-  
-
-  
-
   
 
   
