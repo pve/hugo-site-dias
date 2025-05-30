@@ -29,7 +29,7 @@ It answers questions like:
 
 This is interesting, but it gets more interesting if we combine this with other tools.
 So I tried `nmap`.
-The MCP server I used for that is cloned from https://github.com/himanshusanecha/mcp-osint-server.
+The MCP server I used for that is cloned from <https://github.com/himanshusanecha/mcp-osint-server>.
 
 This makes it possible to ask for:
 >What are the open ports on all the Raspberry devices?
@@ -39,6 +39,7 @@ In fact these are Tuya smart lights.
 A bit of prompt engineering solves that.
 
 Here is a fragment of `claude_desktop_config.json`.
+
 ```json
     "osint": {
       "command": "docker",
@@ -73,4 +74,4 @@ Notes:
 - Claude container invocations. Despite the `--rm` argument, some but not all of the containers started by Claude's MCP activity seem to go away automatically.
 - We could create a more remote server for the nmap scan of the network. This could have a better vantage point than my personal laptop. We'd have to install a remote MCP server on a Linux box in the local network, advertising its services.
 - As is often said, a AI tool like this often acts like an overconfident intern. It happily applies tools, while not necessarily thinking which tool is the best. It gives analyses and recommendations that you did not ask for. Maybe we should apply some reasoning capabilities.
-- It is interesting to watch Claude run with the tools. It makes you aware of the hidden knowledge and assumptions that go into a lot of this work. 
+- It is interesting to watch Claude run with the tools. It makes you aware of the hidden knowledge and assumptions that go into a lot of this work.

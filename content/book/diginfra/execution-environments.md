@@ -28,6 +28,10 @@ Then it is time to look at the control boundary that this environment creates. T
 
 Let's take an example: your browser is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machine implements an access control on the network level: it only allows traffic on the https port to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.
 
-If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls. Each of these has processing inside, and each of these hold data. But the type of software, data, and configuration they have differs, as does the mechanisms they offer for access control.
+If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls.
+Each of these has processing inside, and each of these hold data.
+But the type of software, data, and configuration they have differs, as does the mechanisms they offer for access control.
 
 Deeper in the networking space you can see that a router is also an execution environment, though it does not have a lot of data, mainly the routing tables.
+
+We will return to discussing how useful this is elsewhere.

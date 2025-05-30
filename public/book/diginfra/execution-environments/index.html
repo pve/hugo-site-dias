@@ -153,8 +153,11 @@ For example, these things, or more accurately: their boundaries, are prime locat
 <p><strong>Who?</strong> Who is responsible for managing the environment and its access controls. In a cloud world, this is an important question. What does the provider do, what does the consumer do?</p>
 <p>Then it is time to look at the control boundary that this environment creates. The control boundary creates an outside and an inside. How is data from the outside allowed to go inside? What is the mechanism or protocol? How is that controlled? The same holds for the reverse. How is software inside that boundary allowed to access the outside?</p>
 <p>Let&rsquo;s take an example: your browser is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machine implements an access control on the network level: it only allows traffic on the https port to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.</p>
-<p>If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls. Each of these has processing inside, and each of these hold data. But the type of software, data, and configuration they have differs, as does the mechanisms they offer for access control.</p>
+<p>If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls.
+Each of these has processing inside, and each of these hold data.
+But the type of software, data, and configuration they have differs, as does the mechanisms they offer for access control.</p>
 <p>Deeper in the networking space you can see that a router is also an execution environment, though it does not have a lot of data, mainly the routing tables.</p>
+<p>We will return to discussing how useful this is elsewhere.</p>
 
 
   </div>
