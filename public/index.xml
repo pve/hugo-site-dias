@@ -542,7 +542,7 @@ Another example would be gmail, whose data model is a set of messages, and the f
       <link>http://localhost:1313/book/diginfra/execution-environments/</link>
       <pubDate>Sun, 20 Apr 2025 09:03:00 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/execution-environments/</guid>
-      <description>&lt;p&gt;What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a datacenter?&lt;/p&gt;
+      <description>&lt;p&gt;What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?&lt;/p&gt;
 &lt;p&gt;They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
 In a diagram we often depict them as a box, or an oval.
 Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.&lt;/p&gt;</description>

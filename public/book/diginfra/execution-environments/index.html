@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Execution Environments | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a datacenter?
+<meta name="description" content="What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?
 They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
 In a diagram we often depict them as a box, or an oval.
 Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.">
@@ -131,12 +131,6 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
       Execution Environments
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2025-04-20 09:03:00 +0000 UTC'>April 20, 2025</span>
 
@@ -144,22 +138,23 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
   </header> 
 
   
-  <i>⏳ 2 min read</i>
+  <i>⏳ 3 min read</i>
   
-  <div class="post-content"><p>What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a datacenter?</p>
+  <div class="post-content"><p>What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?</p>
 <p>They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
 In a diagram we often depict them as a box, or an oval.
 Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.</p>
 <p>Why does it matter? Well, the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.
-For example, these things, or more accurately: their boundaries, are a prime place where controls for security are.</p>
-<p>Whenever I look at a how a digital infrastructure is implemented, I start by looking at the execution environments, and ask three questions: what, where, and how.</p>
+For example, these things, or more accurately: their boundaries, are prime locations for implementing security controls.</p>
+<p>Whenever I look at how a digital infrastructure is implemented, I start by looking at the execution environments, and ask four questions: what, where, how, and who.</p>
 <p><strong>What?</strong> What is the data that is inside it, what is the software, the code, that is inside that environment? And in an AI world: which model is there inside?</p>
 <p><strong>Where?</strong>  Where is that execution environment located? In our current virtualized and cloud world, that environment is typically inside another environment. Ultimately, of course, there is a physical machine in which it sits.</p>
 <p><strong>How?</strong> How does the software get deployed inside that environment? There will be a manual process, or a continuous delivery pipeline, or something similar.</p>
+<p><strong>Who?</strong> Who is responsible for managing the environment and its access controls. In a cloud world, this is an important question. What does the provider do, what does the consumer do?</p>
 <p>Then it is time to look at the control boundary that this environment creates. The control boundary creates an outside and an inside. How is data from the outside allowed to go inside? What is the mechanism or protocol? How is that controlled? The same holds for the reverse. How is software inside that boundary allowed to access the outside?</p>
-<p>Let&rsquo;s take an example: your browser is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machines implements an access control on the network level: it only allows https to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.</p>
-<p>If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls.</p>
-<p>Link to Zero Trust Architecture.</p>
+<p>Let&rsquo;s take an example: your browser is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machine implements an access control on the network level: it only allows traffic on the https port to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.</p>
+<p>If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls. Each of these has processing inside, and each of these hold data. But the type of software, data, and configuration they have differs, as does the mechanisms they offer for access control.</p>
+<p>Deeper in the networking space you can see that a router is also an execution environment, though it does not have a lot of data, mainly the routing tables.</p>
 
 
   </div>
