@@ -4,9 +4,9 @@
     <title>Risks of digital infrastructures on Digital Infrastructures at Scale</title>
     <link>http://localhost:1313/book/risk/</link>
     <description>Recent content in Risks of digital infrastructures on Digital Infrastructures at Scale</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 May 2025 21:39:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 May 2025 19:58:41 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -105,6 +105,22 @@ Without trust, we will not be able to have confidence in the contribution of oth
 &lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
 Anytime we assume trust that is not warranted is also a risk.
 That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lean Risk and Economics</title>
+      <link>http://localhost:1313/book/risk/lean-risk/</link>
+      <pubDate>Tue, 27 May 2025 19:58:41 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/lean-risk/</guid>
+      <description>&lt;p&gt;From the moment a security vulnerability is discovered, it represents a negative value to its potential victims.
+When it gets exploited, it can lead to loss of data or loss of integrity of the data.
+This in turn impacts the victim&amp;rsquo;s business processes.&lt;/p&gt;
+&lt;p&gt;For example, if personal data is leaked, reputations will be damaged, financial losses and fines can be expected. Credit card abuse forms another example of loss.&lt;/p&gt;
+&lt;p&gt;This &amp;ldquo;damage potential&amp;rdquo; increases as the vulnerability becomes well-known, progressing from nation state actors, to organized crime, to script kiddies, just to name one example pathway.
+At first, few people know about it, but gradually more people will be able to inflict damage with it.
+Over time, each step adds to the likelihood of that vulnerability being exploited and causing real damage.
+The likelihood starts at near zero, and ends at close to 100% as the vulnerability is completely public.
+This only stops when an investment is made to mitigate the vulnerability, for example by updating the software.
+And hopefully, that investment is less costly than the damage potential.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>

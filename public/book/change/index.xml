@@ -4,7 +4,7 @@
     <title>Change and control on Digital Infrastructures at Scale</title>
     <link>http://localhost:1313/book/change/</link>
     <description>Recent content in Change and control on Digital Infrastructures at Scale</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 May 2025 20:45:16 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/change/index.xml" rel="self" type="application/rss+xml" />
@@ -77,6 +77,7 @@ I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;
       <guid>http://localhost:1313/book/change/org-size-matters/</guid>
       <description>&lt;p&gt;Over the years, I have worked with many organizations, large and small.
 In one case, I implemented the exact same change in more than 15 organizations, whose size ranged from 35 to 35 thousand employees.
+You can imagine that this plays out differently across these organizations.
 But that is a story for another unit.&lt;/p&gt;
 &lt;p&gt;It led me to see patterns in decision making and trust.
 Who takes decisions in an organization?
