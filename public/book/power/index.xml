@@ -161,7 +161,7 @@ bundeling van afspraken (bijv. SLA)&lt;/p&gt;
 authorization
 choice / arbitration / load balancer
 service integration
-pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
+pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
 multicast&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;subscription toepassing: chatbots streaming?&lt;/p&gt;</description>

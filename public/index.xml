@@ -34,12 +34,12 @@ In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think o
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Ai Coding Age</title>
+      <title>The AI Coding Age</title>
       <link>http://localhost:1313/posts/ai-coding-age/</link>
       <pubDate>Sun, 01 Jun 2025 13:13:09 +0000</pubDate>
       <guid>http://localhost:1313/posts/ai-coding-age/</guid>
       <description>&lt;p&gt;This is the dawn of a new age.
-I have been observing software development for more than fifty years, when I wrote my first computer program.
+I have been observing software development for more than fifty years, ever since I wrote my first computer program.
 In that entire time, I have never witnessed a development that has changed the profession deeper, faster, or more pervasively than now.
 AI-assisted coding has escaped from the lab, and is impacting the work of every software developer.&lt;/p&gt;
 &lt;p&gt;In the communities I track I hear stories of software engineers regret taking a single week of vacation because of the innovations that they now have to catch up to.&lt;/p&gt;</description>
@@ -612,7 +612,7 @@ bundeling van afspraken (bijv. SLA)&lt;/p&gt;
 authorization
 choice / arbitration / load balancer
 service integration
-pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
+pubsub. Intermediary holds source and subscriber directories. Notice the various commitments that can be made. Examples: newsletter, podcast subscription
 multicast&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;subscription toepassing: chatbots streaming?&lt;/p&gt;</description>
