@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Risks of digital infrastructures on Digital Infrastructures at Scale</title>
-    <link>http://localhost:1313/book/risk/</link>
+    <link>https://digitalinfrastructures.nl/book/risk/</link>
     <description>Recent content in Risks of digital infrastructures on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 27 May 2025 19:58:41 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/book/risk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://digitalinfrastructures.nl/book/risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
-      <link>http://localhost:1313/book/risk/intro-to-risk/</link>
+      <link>https://digitalinfrastructures.nl/book/risk/intro-to-risk/</link>
       <pubDate>Wed, 12 Mar 2025 13:13:35 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/intro-to-risk/</guid>
+      <guid>https://digitalinfrastructures.nl/book/risk/intro-to-risk/</guid>
       <description>&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances threatening that value.
 While value is realized in the past and the present, risk is what can happen with that value in the &lt;em&gt;future&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
@@ -20,38 +20,10 @@ While value is realized in the past and the present, risk is what can happen wit
 In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business-critical data, like our database of customers. Think of data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Controls</title>
-      <link>http://localhost:1313/book/risk/controls/</link>
-      <pubDate>Mon, 19 May 2025 21:39:41 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/controls/</guid>
-      <description>&lt;p&gt;Once we have assets and risks identified, we think of ways to minimize these risks.
-Those ways are called controls or measures.
-If you have read through an IT risk management book, many of these should be familiar.
-For the rest of you, here is a brief outline of some control examples for data.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Classification: organizing data in various categories. This could from public to top secret, with a few in between. This is not really a technical control, but rather a means to apply specific controls on that data.&lt;/li&gt;
-&lt;li&gt;Labelling: similar to classification. Data labels can relate data to specific use cases, such as development versus production, specific applications or owners.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Create: classify, label
-Store: encryption
-Use: logical controls
-Share: DLP, encryption
-Archive: asset management
-Destroy: crypto shredding (encrypting and deleting the key)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mitigation</title>
-      <link>http://localhost:1313/book/risk/mitigation/</link>
-      <pubDate>Tue, 13 May 2025 09:39:02 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/mitigation/</guid>
-      <description>&lt;p&gt;walk in with well spelled out risks, a clear connection to business impact, data, a mitigation plan, and measurable targets.&lt;/p&gt;
-&lt;p&gt;Providing third-party assurance enables the board to deliver on its risk management responsibilities.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Who Suffers?</title>
-      <link>http://localhost:1313/book/risk/who-suffers/</link>
+      <link>https://digitalinfrastructures.nl/book/risk/who-suffers/</link>
       <pubDate>Tue, 15 Apr 2025 21:27:25 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/who-suffers/</guid>
+      <guid>https://digitalinfrastructures.nl/book/risk/who-suffers/</guid>
       <description>&lt;p&gt;I have found that no discussion on risk is going to lead anywhere if it does not make clear who suffers from it.
 Make clear who has the pain.
 For my phone and laptop it is easy: if I lose them, I suffer.
@@ -62,55 +34,10 @@ Who has to pay for a new server?
 This gets increasingly harder if we are talking about shared services, because the owner and the consumer are now decoupled.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Information Security Assets</title>
-      <link>http://localhost:1313/book/risk/assets/</link>
-      <pubDate>Sun, 11 May 2025 08:37:01 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/assets/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s dive a little deeper into assets, which is typically data that we have risks on, though we can also see the processing power that we need as an asset.&lt;/p&gt;
-&lt;p&gt;Here are some examples of data assets:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A customer record in a business system&lt;/li&gt;
-&lt;li&gt;An MRI scan&lt;/li&gt;
-&lt;li&gt;A browser cookie (on the server)&lt;/li&gt;
-&lt;li&gt;A logfile entry&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As you can guess from these examples, many of these have regulatory concerns attached to them.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What about AI Risks?</title>
-      <link>http://localhost:1313/book/risk/querying-ai-risk/</link>
-      <pubDate>Thu, 01 May 2025 07:40:07 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/querying-ai-risk/</guid>
-      <description>&lt;p&gt;While Artificial Intelligence, especially the generative type, is a highly disruptive form of IT innovation, its risk management still follows the same basic principles.
-We just need to extend those principles to new forms of data and software.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;What are the assets?&lt;/li&gt;
-&lt;li&gt;What are the vulnerabilities and threats to it?&lt;/li&gt;
-&lt;li&gt;What is the damage that this can bring, realistically?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So let&amp;rsquo;s see how what the AI specifics are.&lt;/p&gt;
-&lt;h2 id=&#34;ai-assets&#34;&gt;AI Assets&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s focus on the AI assets that are the product of deep learning.
-Deep learning neural networks have represented a shift in AI technology.
-Before that, symbolic AI was more common.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What Is Trust</title>
-      <link>http://localhost:1313/book/risk/what-is-trust/</link>
-      <pubDate>Mon, 05 May 2025 10:18:17 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/what-is-trust/</guid>
-      <description>&lt;p&gt;Trust is an essential element in any collaboration.
-We want to trust things, people, and organizations to do the right thing, to keep their promises.
-Without trust, we will not be able to have confidence in the contribution of others, and that is a risk.&lt;/p&gt;
-&lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
-Anytime we assume trust that is not warranted is also a risk.
-That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Lean Risk and Economics</title>
-      <link>http://localhost:1313/book/risk/lean-risk/</link>
+      <link>https://digitalinfrastructures.nl/book/risk/lean-risk/</link>
       <pubDate>Tue, 27 May 2025 19:58:41 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/lean-risk/</guid>
+      <guid>https://digitalinfrastructures.nl/book/risk/lean-risk/</guid>
       <description>&lt;p&gt;From the moment a security vulnerability is discovered, it represents a negative value to its potential victims.
 When it gets exploited, it can lead to loss of data or loss of integrity of the data.
 This in turn impacts the victim&amp;rsquo;s business processes.&lt;/p&gt;
@@ -124,9 +51,9 @@ And hopefully, that investment is less costly than the damage potential.&lt;/p&g
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
-      <link>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</link>
+      <link>https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/</link>
       <pubDate>Fri, 28 Feb 2025 14:15:21 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</guid>
+      <guid>https://digitalinfrastructures.nl/book/risk/retrofitting-zero-trust-existing-application/</guid>
       <description>&lt;p&gt;Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.&lt;/p&gt;
 &lt;p&gt;Consider this hypothetical situation.&lt;/p&gt;
 &lt;p&gt;You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &amp;lsquo;who&amp;rsquo;, &amp;lsquo;what&amp;rsquo;, &amp;lsquo;when&amp;rsquo;, etcetera of allowed communication.&lt;/p&gt;</description>

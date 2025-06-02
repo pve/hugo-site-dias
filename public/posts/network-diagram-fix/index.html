@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Deployment diagrams for network security; fix this | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training.
@@ -13,16 +13,16 @@ But still. There are good drawings and there are drawings that can be improved.
 My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
 Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/network-diagram-fix/">
+<link rel="canonical" href="https://digitalinfrastructures.nl/posts/network-diagram-fix/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://digitalinfrastructures.nl/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://digitalinfrastructures.nl/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://digitalinfrastructures.nl/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://digitalinfrastructures.nl/apple-touch-icon.png">
+<link rel="mask-icon" href="https://digitalinfrastructures.nl/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/network-diagram-fix/">
+<link rel="alternate" hreflang="en" href="https://digitalinfrastructures.nl/posts/network-diagram-fix/">
 <noscript>
     <style>
         #theme-toggle,
@@ -60,6 +60,86 @@ Recently I ran into the following example. Here is an explanation of the differe
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="https://digitalinfrastructures.nl/posts/network-diagram-fix/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Deployment diagrams for network security; fix this">
+  <meta property="og:description" content="A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training. In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated. But still. There are good drawings and there are drawings that can be improved. My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them. Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-03-26T17:09:20+00:00">
+    <meta property="article:modified_time" content="2021-03-26T17:09:20+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deployment diagrams for network security; fix this">
+<meta name="twitter:description" content="A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training.
+In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated.
+But still. There are good drawings and there are drawings that can be improved.
+My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
+Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Peter's Griddle",
+      "item": "https://digitalinfrastructures.nl/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Deployment diagrams for network security; fix this",
+      "item": "https://digitalinfrastructures.nl/posts/network-diagram-fix/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Deployment diagrams for network security; fix this",
+  "name": "Deployment diagrams for network security; fix this",
+  "description": "A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training. In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated. But still. There are good drawings and there are drawings that can be improved. My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them. Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training. In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated. But still. There are good drawings and there are drawings that can be improved. My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them. Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.\nHere is the diagram. In my earlier post, I gave some informal principles for drawing these diagrams. In brief, they are:\nboxes denote ’execution environments’ where code runs and data resides lines denote connections between those execution environments closed curves enclose ‘control boundaries’. How does this diagram deviate from those principles? Let me know…\n",
+  "wordCount" : "199",
+  "inLanguage": "en",
+  "datePublished": "2021-03-26T17:09:20Z",
+  "dateModified": "2021-03-26T17:09:20Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://digitalinfrastructures.nl/posts/network-diagram-fix/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://digitalinfrastructures.nl/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -77,7 +157,7 @@ Recently I ran into the following example. Here is an explanation of the differe
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <a href="https://digitalinfrastructures.nl/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -103,22 +183,22 @@ Recently I ran into the following example. Here is an explanation of the differe
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/book/" title="Book">
+                <a href="https://digitalinfrastructures.nl/book/" title="Book">
                     <span>Book</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Blog">
+                <a href="https://digitalinfrastructures.nl/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://digitalinfrastructures.nl/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                <a href="https://digitalinfrastructures.nl/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
                     <span>🔎 Search</span>
                 </a>
             </li>
@@ -129,7 +209,7 @@ Recently I ran into the following example. Here is an explanation of the differe
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
+    <div class="breadcrumbs"><a href="https://digitalinfrastructures.nl/">Home</a>&nbsp;»&nbsp;<a href="https://digitalinfrastructures.nl/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Deployment diagrams for network security; fix this
     </h1>
@@ -170,7 +250,7 @@ Let me know…</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2025 <a href="https://digitalinfrastructures.nl/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by
