@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Value on Digital Infrastructures at Scale</title>
-    <link>https://digitalinfrastructures.nl/book/value/</link>
+    <link>http://localhost:1313/book/value/</link>
     <description>Recent content in Value on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 May 2025 11:33:28 +0000</lastBuildDate>
-    <atom:link href="https://digitalinfrastructures.nl/book/value/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/book/value/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is the value of information?</title>
-      <link>https://digitalinfrastructures.nl/book/value/value-of-information/</link>
+      <link>http://localhost:1313/book/value/value-of-information/</link>
       <pubDate>Sat, 10 May 2025 11:33:28 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/value/value-of-information/</guid>
+      <guid>http://localhost:1313/book/value/value-of-information/</guid>
       <description>&lt;p&gt;What is information really?
 If we know that, we can try to understand how we can judge its value, or even start to understand how we can create value with information.&lt;/p&gt;
 &lt;p&gt;In Claude Shannon&amp;rsquo;s theory of communication, information is about reducing uncertainty.
@@ -23,9 +23,9 @@ You will make more errors when trying to understand what the picture means.&lt;/
     </item>
     <item>
       <title>Value in Process Improvement</title>
-      <link>https://digitalinfrastructures.nl/book/value/value-in-process-improvement/</link>
+      <link>http://localhost:1313/book/value/value-in-process-improvement/</link>
       <pubDate>Thu, 27 Mar 2025 20:33:42 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/value/value-in-process-improvement/</guid>
+      <guid>http://localhost:1313/book/value/value-in-process-improvement/</guid>
       <description>&lt;p&gt;Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.
 That is where their prime value is.&lt;/p&gt;
 &lt;p&gt;The internet is a great example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
@@ -33,17 +33,17 @@ That is where their prime value is.&lt;/p&gt;
     </item>
     <item>
       <title>Provider Value</title>
-      <link>https://digitalinfrastructures.nl/book/value/intro-to-value/</link>
+      <link>http://localhost:1313/book/value/intro-to-value/</link>
       <pubDate>Tue, 11 Mar 2025 09:10:54 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/value/intro-to-value/</guid>
+      <guid>http://localhost:1313/book/value/intro-to-value/</guid>
       <description>&lt;p&gt;Consumers of digital infrastructures benefit from not running them themselves, but having a provider who serves more consumers do it for them.&lt;/p&gt;
 &lt;p&gt;Imagine stringing a wire to connect your PC to your neighbor&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does it take to string the wires and connect them? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agile Requires Cloud</title>
-      <link>https://digitalinfrastructures.nl/book/value/agile-requires-cloud/</link>
+      <link>http://localhost:1313/book/value/agile-requires-cloud/</link>
       <pubDate>Wed, 12 Oct 2016 15:12:04 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/value/agile-requires-cloud/</guid>
+      <guid>http://localhost:1313/book/value/agile-requires-cloud/</guid>
       <description>&lt;p&gt;Getting to value quickly has value in itself.
 The faster you get to value, the better it is, generally.
 We&amp;rsquo;ll discuss some of the reasons for that elsewhere.&lt;/p&gt;
@@ -53,20 +53,20 @@ Back in the old days, business software was primarily written to automate &lt;st
     </item>
     <item>
       <title>Business Model Canvas for IaaS Providers</title>
-      <link>https://digitalinfrastructures.nl/book/value/business-model-canvas-iaas/</link>
+      <link>http://localhost:1313/book/value/business-model-canvas-iaas/</link>
       <pubDate>Sat, 15 Nov 2014 11:18:17 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/value/business-model-canvas-iaas/</guid>
+      <guid>http://localhost:1313/book/value/business-model-canvas-iaas/</guid>
       <description>&lt;h2 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h2&gt;
 &lt;p&gt;The business model canvas is a visual template for developing and discussing business models. For more information, see &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;http://en.wikipedia.org/wiki/Business_Model_Canvas&lt;/a&gt; and &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;http://www.businessmodelgeneration.com/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The business model canvas has nine basic building blocks and specific relations between those blocks. I&amp;rsquo;ll illustrate them here.&lt;/p&gt;
 &lt;p&gt;The example used in this section is Amazon Web Services (AWS), particularly EC2 (virtual machines on demand). This is an Infrastructure as a Service offering. The power of the business model canvas approach becomes clear when we see how it can distinguish between various cloud service offerings.
-&lt;img alt=&#34;IaaS Cloud Canvas&#34; loading=&#34;lazy&#34; src=&#34;https://digitalinfrastructures.nl/book/value/business-model-canvas-iaas/BusinessCanvasIaaS.png&#34;&gt;&lt;/p&gt;</description>
+&lt;img alt=&#34;IaaS Cloud Canvas&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/book/value/business-model-canvas-iaas/BusinessCanvasIaaS.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Model Canvas for SaaS Providers</title>
-      <link>https://digitalinfrastructures.nl/book/value/business-model-canvas-saas/</link>
+      <link>http://localhost:1313/book/value/business-model-canvas-saas/</link>
       <pubDate>Mon, 15 Dec 2014 11:18:17 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/value/business-model-canvas-saas/</guid>
+      <guid>http://localhost:1313/book/value/business-model-canvas-saas/</guid>
       <description>&lt;p&gt;Here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.&lt;/p&gt;
 &lt;h2 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h2&gt;
 &lt;p&gt;The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models. To learn more, visit &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;Wikipedia&lt;/a&gt; or the &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;Business Model Generation&lt;/a&gt; website.&lt;/p&gt;
@@ -74,12 +74,35 @@ Back in the old days, business software was primarily written to automate &lt;st
     </item>
     <item>
       <title>Multiple Ways to Go Cloud</title>
-      <link>https://digitalinfrastructures.nl/book/value/three-ways-to-go-cloud/</link>
+      <link>http://localhost:1313/book/value/three-ways-to-go-cloud/</link>
       <pubDate>Sun, 03 Jun 2018 17:06:57 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/value/three-ways-to-go-cloud/</guid>
+      <guid>http://localhost:1313/book/value/three-ways-to-go-cloud/</guid>
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.&lt;/p&gt;
 &lt;h2 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h2&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise Theory and service hierarchies</title>
+      <link>http://localhost:1313/book/value/promise-theory-services/</link>
+      <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/promise-theory-services/</guid>
+      <description>&lt;p&gt;origin story promise theory&lt;/p&gt;
+&lt;p&gt;suwinet
+reisplanner&lt;/p&gt;
+&lt;p&gt;design patterns&lt;/p&gt;
+&lt;p&gt;customer service, can I get a new app/user account&lt;/p&gt;
+&lt;p&gt;Q: Can I get a unique IP address?
+R: Here is your address, let me know when you are done with it&lt;/p&gt;
+&lt;p&gt;A: thank you, I am done with this address&lt;/p&gt;
+&lt;p&gt;Example IP addresses allocation
+&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image.png&#34;&gt;
+&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Example TCP/IP
+picture&lt;/p&gt;
+&lt;p&gt;Connect
+Q: can you reserve buffer space for a connection?
+R: yes we promise, here is your initial window size
+A: thank you, here is your initial window size&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

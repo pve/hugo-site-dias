@@ -2,6 +2,7 @@
 date: '2025-02-28T14:15:21Z'
 draft: false
 title: 'Retrofitting Zero Trust on an existing application: an illustration'
+weight: 60
 ---
 Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.
 

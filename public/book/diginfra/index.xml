@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>What are digital infrastructures? on Digital Infrastructures at Scale</title>
-    <link>https://digitalinfrastructures.nl/book/diginfra/</link>
+    <link>http://localhost:1313/book/diginfra/</link>
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 May 2025 21:03:24 +0000</lastBuildDate>
-    <atom:link href="https://digitalinfrastructures.nl/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/elements-of-digitalinfrastructures/</link>
+      <link>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</link>
       <pubDate>Thu, 27 Mar 2025 20:34:01 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/elements-of-digitalinfrastructures/</guid>
+      <guid>http://localhost:1313/book/diginfra/elements-of-digitalinfrastructures/</guid>
       <description>&lt;p&gt;It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.&lt;/p&gt;
 &lt;p&gt;The three major elements of digital infrastructures are:&lt;/p&gt;
 &lt;ol&gt;
@@ -24,9 +24,9 @@
     </item>
     <item>
       <title>Why You Should Read this Book</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/why-you-should-read/</link>
+      <link>http://localhost:1313/book/diginfra/why-you-should-read/</link>
       <pubDate>Sun, 11 May 2025 08:47:28 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/why-you-should-read/</guid>
+      <guid>http://localhost:1313/book/diginfra/why-you-should-read/</guid>
       <description>&lt;p&gt;You should not read this book because I tell you to.
 After all, you are an autonomous person, making your own decisions.&lt;/p&gt;
 &lt;p&gt;You should read this book because you are convinced that it is likely to give you significant insights into a world that matters to you.&lt;/p&gt;
@@ -35,9 +35,9 @@ Most companies would go belly up in weeks, if not days, if their digital infrast
     </item>
     <item>
       <title>Promise Theory</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/promise-theory/</link>
+      <link>http://localhost:1313/book/diginfra/promise-theory/</link>
       <pubDate>Fri, 25 Apr 2025 21:21:54 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/promise-theory/</guid>
+      <guid>http://localhost:1313/book/diginfra/promise-theory/</guid>
       <description>&lt;p&gt;Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.&lt;/p&gt;
 &lt;p&gt;Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
 Introduced by Mark Burgess and others, it is about how autonomous agents work together.
@@ -49,9 +49,9 @@ In getting this from the drawing board to actual production, promise theory turn
     </item>
     <item>
       <title>Contracts are complementary promises</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/promise-contract/</link>
+      <link>http://localhost:1313/book/diginfra/promise-contract/</link>
       <pubDate>Thu, 15 May 2025 21:03:24 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/promise-contract/</guid>
+      <guid>http://localhost:1313/book/diginfra/promise-contract/</guid>
       <description>&lt;h2 id=&#34;contracts-are-complementary-promises&#34;&gt;Contracts are complementary promises&lt;/h2&gt;
 &lt;p&gt;Once we understand promises, contracts between agents now become really simple to express.
 They are a set of complementary conditional promises: &amp;ldquo;If you do this, I will promise that&amp;rdquo;.
@@ -68,9 +68,9 @@ In fact you can find more complicated versions as well.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Things Break at Scale</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/things-break-at-scale/</link>
+      <link>http://localhost:1313/book/diginfra/things-break-at-scale/</link>
       <pubDate>Wed, 16 Apr 2025 21:16:12 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/things-break-at-scale/</guid>
+      <guid>http://localhost:1313/book/diginfra/things-break-at-scale/</guid>
       <description>&lt;p&gt;Computers are terribly reliable, in general. Today&amp;rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.&lt;/p&gt;
 &lt;p&gt;In the early days of Google growth I read an &lt;a href=&#34;https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/&#34;&gt;article about their error numbers&lt;/a&gt;
 (a Google cluster has several thousands of machines):&lt;/p&gt;
@@ -79,28 +79,38 @@ In fact you can find more complicated versions as well.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Essence of Digital Infrastructures</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/essence-digital-infrastructures/</link>
+      <link>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</link>
       <pubDate>Mon, 10 Mar 2025 21:34:21 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/essence-digital-infrastructures/</guid>
+      <guid>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</guid>
       <description>&lt;p&gt;What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.&lt;/p&gt;
 &lt;p&gt;In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that is the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What a lunch in Spain taught me about digital infrastructures</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/lunch-spain/</link>
+      <link>http://localhost:1313/book/diginfra/lunch-spain/</link>
       <pubDate>Sat, 15 Mar 2025 16:06:44 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/lunch-spain/</guid>
+      <guid>http://localhost:1313/book/diginfra/lunch-spain/</guid>
       <description>&lt;p&gt;In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
 And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;At the restaurant&amp;rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;payment terminals&#34; loading=&#34;lazy&#34; src=&#34;https://digitalinfrastructures.nl/payterminal-716603.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;payment terminals&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/payterminal-716603.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparently not over here.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Applications</title>
+      <link>http://localhost:1313/book/diginfra/applications/</link>
+      <pubDate>Wed, 16 Apr 2025 21:11:32 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/applications/</guid>
+      <description>&lt;p&gt;An application is roughly a data model plus a certain number of functions operating on that.
+Networked applications typically live on servers, but will have a client component.
+A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
+Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Execution Environments</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/execution-environments/</link>
+      <link>http://localhost:1313/book/diginfra/execution-environments/</link>
       <pubDate>Sun, 20 Apr 2025 09:03:00 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/execution-environments/</guid>
+      <guid>http://localhost:1313/book/diginfra/execution-environments/</guid>
       <description>&lt;p&gt;What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?&lt;/p&gt;
 &lt;p&gt;They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
 In a diagram we often depict them as a box, or an oval.
@@ -108,9 +118,9 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
     </item>
     <item>
       <title>Deployment Diagrams</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/deployment-diagrams/</link>
+      <link>http://localhost:1313/book/diginfra/deployment-diagrams/</link>
       <pubDate>Sun, 09 Mar 2025 21:19:45 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/deployment-diagrams/</guid>
+      <guid>http://localhost:1313/book/diginfra/deployment-diagrams/</guid>
       <description>&lt;p&gt;Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.&lt;/p&gt;
 &lt;h2 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h2&gt;
 &lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
@@ -118,9 +128,9 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
     </item>
     <item>
       <title>What are AI digital infrastructures?</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/digital-inf-ai/</link>
+      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
       <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/digital-inf-ai/</guid>
+      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
       <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
 &lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
@@ -128,9 +138,9 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
     </item>
     <item>
       <title>A Unified Framework</title>
-      <link>https://digitalinfrastructures.nl/book/diginfra/unified-theory/</link>
+      <link>http://localhost:1313/book/diginfra/unified-theory/</link>
       <pubDate>Mon, 12 May 2025 21:05:36 +0000</pubDate>
-      <guid>https://digitalinfrastructures.nl/book/diginfra/unified-theory/</guid>
+      <guid>http://localhost:1313/book/diginfra/unified-theory/</guid>
       <description>&lt;p&gt;The units so far have explored quite a few, seemingly unrelated, concepts and observations.
 Here we&amp;rsquo;ll embed them in a unified framework that illustrates how they fit together.&lt;/p&gt;
 &lt;p&gt;From the title of this book you can see that the main pillars of that framework include value, power, and risk.

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Things Break at Scale | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
@@ -13,16 +13,16 @@ In the early days of Google growth I read an article about their error numbers
 
 In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.">
 <meta name="author" content="">
-<link rel="canonical" href="https://digitalinfrastructures.nl/book/diginfra/things-break-at-scale/">
+<link rel="canonical" href="http://localhost:1313/book/diginfra/things-break-at-scale/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://digitalinfrastructures.nl/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://digitalinfrastructures.nl/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://digitalinfrastructures.nl/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://digitalinfrastructures.nl/apple-touch-icon.png">
-<link rel="mask-icon" href="https://digitalinfrastructures.nl/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://digitalinfrastructures.nl/book/diginfra/things-break-at-scale/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/things-break-at-scale/">
 <noscript>
     <style>
         #theme-toggle,
@@ -60,94 +60,6 @@ In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual mac
 
     </style>
 </noscript>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-Y6WKY1Y13E');
-        }
-      </script><meta property="og:url" content="https://digitalinfrastructures.nl/book/diginfra/things-break-at-scale/">
-  <meta property="og:site_name" content="Digital Infrastructures at Scale">
-  <meta property="og:title" content="Things Break at Scale">
-  <meta property="og:description" content="Computers are terribly reliable, in general. Today’s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
-In the early days of Google growth I read an article about their error numbers (a Google cluster has several thousands of machines):
-In each cluster’s first year, it’s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will “go wonky,” with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there’s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="book">
-    <meta property="article:published_time" content="2025-04-16T21:16:12+00:00">
-    <meta property="article:modified_time" content="2025-04-16T21:16:12+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Things Break at Scale">
-<meta name="twitter:description" content="Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
-In the early days of Google growth I read an article about their error numbers
-(a Google cluster has several thousands of machines):
-
-In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Contents",
-      "item": "https://digitalinfrastructures.nl/book/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "What are digital infrastructures?",
-      "item": "https://digitalinfrastructures.nl/book/diginfra/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "Things Break at Scale",
-      "item": "https://digitalinfrastructures.nl/book/diginfra/things-break-at-scale/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Things Break at Scale",
-  "name": "Things Break at Scale",
-  "description": "Computers are terribly reliable, in general. Today\u0026rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.\nIn the early days of Google growth I read an article about their error numbers (a Google cluster has several thousands of machines):\nIn each cluster\u0026rsquo;s first year, it\u0026rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will \u0026ldquo;go wonky,\u0026rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there\u0026rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.\n",
-  "keywords": [
-    
-  ],
-  "articleBody": "Computers are terribly reliable, in general. Today’s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.\nIn the early days of Google growth I read an article about their error numbers (a Google cluster has several thousands of machines):\nIn each cluster’s first year, it’s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will “go wonky,” with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there’s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.\nA 2024 report puts storage drive failure rates at about 1.35% per year. With thousands of drives, failure is not an option, but a certainty.\nThese look like interesting considerations for both hardware and software planners.\nAdrian Cockcroft, while he was CTO of Netflix around 2010, summed it up as:\nSize breaks hardware\nNo matter how good your hardware is, if it becomes big enough, it breaks. In his view you therefore need to solve reliability problems in software, not in building better hardware.\nAs Google say:\n“Our view is it’s better to have twice as much hardware that’s not as reliable than half as much that’s more reliable,” Dean said. “You have to provide reliability on a software level. If you’re running 10,000 machines, something is going to die every day.”\nThe business case for this is that you will have to invest in software for reliability. Once you have done that, the hardware reliability no longer matter, within certain bounds, and you are financially better off with cheaper hardware.\nThe next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a ‘middleware’ software layer on which resilient applications can be build. We’ll cover that in another unit.\nFinally, scale does not only break hardware, but also organizations. For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job. When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks. That introduces a lot of communication overhead. Without being compensated with economies of scale, this can make the task too expensive to do.\n",
-  "wordCount" : "492",
-  "inLanguage": "en",
-  "datePublished": "2025-04-16T21:16:12Z",
-  "dateModified": "2025-04-16T21:16:12Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://digitalinfrastructures.nl/book/diginfra/things-break-at-scale/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Digital Infrastructures at Scale",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://digitalinfrastructures.nl/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -165,7 +77,7 @@ In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual mac
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://digitalinfrastructures.nl/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -191,22 +103,22 @@ In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual mac
         </div>
         <ul id="menu">
             <li>
-                <a href="https://digitalinfrastructures.nl/book/" title="Book">
+                <a href="http://localhost:1313/book/" title="Book">
                     <span>Book</span>
                 </a>
             </li>
             <li>
-                <a href="https://digitalinfrastructures.nl/posts/" title="Blog">
+                <a href="http://localhost:1313/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://digitalinfrastructures.nl/about/" title="About">
+                <a href="http://localhost:1313/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://digitalinfrastructures.nl/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
                     <span>🔎 Search</span>
                 </a>
             </li>
@@ -217,7 +129,7 @@ In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual mac
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://digitalinfrastructures.nl/">Home</a>&nbsp;»&nbsp;<a href="https://digitalinfrastructures.nl/book/">Contents</a>&nbsp;»&nbsp;<a href="https://digitalinfrastructures.nl/book/diginfra/">What are digital infrastructures?</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
       Things Break at Scale
     </h1>
@@ -294,6 +206,8 @@ Without being compensated with economies of scale, this can make the task too ex
 
   
 
+  
+
 
 
   
@@ -306,7 +220,7 @@ Without being compensated with economies of scale, this can make the task too ex
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://digitalinfrastructures.nl/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by
