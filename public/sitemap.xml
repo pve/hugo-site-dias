@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/book/risk/</loc>
-    <lastmod>2025-03-09T18:54:30+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/book/1-preface/</loc>
     <lastmod>2025-03-09T16:51:04+00:00</lastmod>
   </url><url>
@@ -127,6 +124,9 @@
   </url><url>
     <loc>http://localhost:1313/book/value/intro-to-value/</loc>
     <lastmod>2025-03-11T09:10:54+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/risk/</loc>
+    <lastmod>2025-03-09T18:54:30+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/power/governance-example/</loc>
     <lastmod>2025-05-01T11:07:46+00:00</lastmod>

@@ -5,12 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>The Essence of Digital Infrastructures | Digital Infrastructures at Scale</title>
+<title>Shared Services Lead to Conflicts | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.
-In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that is the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.">
+<meta name="description" content="Digital infrastructures serve, nearly always, multiple customers.
+These customers therefore share the resources provided by these digital infrastructures.
+With that sharing comes the potential for conflicts over those resources.
+When I talk to my friend over the phone, we share a connection, and that is exactly when sharing is part of the value of that infrastructure.
+But when multiple users draw computer capacity from the same pool, there is a risk that the pool is too small, and some users will not get the capacity that they require.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/essence-digital-infrastructures/">
+<link rel="canonical" href="http://localhost:1313/book/diginfra/shared-service-conflict/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -19,7 +22,7 @@ In this book I am mostly concerned with digital infrastructures. Their services 
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/essence-digital-infrastructures/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/shared-service-conflict/">
 <noscript>
     <style>
         #theme-toggle,
@@ -128,9 +131,9 @@ In this book I am mostly concerned with digital infrastructures. Their services 
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
-      The Essence of Digital Infrastructures
+      Shared Services Lead to Conflicts
     </h1>
-    <div class="post-meta"><span title='2025-03-10 21:34:21 +0000 UTC'>March 10, 2025</span>
+    <div class="post-meta"><span title='2025-06-06 10:32:19 +0000 UTC'>June 6, 2025</span>
 
 </div>
   </header> 
@@ -138,14 +141,24 @@ In this book I am mostly concerned with digital infrastructures. Their services 
   
   <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.</p>
-<p>In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that is the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.</p>
-<p>You&rsquo;ll also see that I talk about digital infrastructures as a service, not a product. It is not sufficient to buy a road, for example. For it to be truly useful to its users, it needs maintenance, repairs, incident management, and more. Any abandoned road will soon deteriorate without maintenance, and become useless.</p>
-<p>Digital infrastructures are sometimes called platforms. In the 1990s Windows was an example of a platform. A few decades later the concept of platform engineering started to be used for services that helped developers develop and deliver code faster.</p>
-<p>Defining it with scientific rigor is difficult, much like unambiguously defining what a car is.
-There will always be edge cases.</p>
-<p>What sets digital infrastructures apart, in my opinion, is that, thanks to automation, their scale, geographical reach, and deployment speed, can be orders of magnitude greater than that of other infrastructures. That has a lot in interesting effects, which we&rsquo;ll explore in this book.</p>
-<p>In summary, digital infrastructures are about services that organizations deliver to independent consumers, while at the same time these services are subject to automation. That gives a tremendous dynamic in that relationship, and leads to new value, new power, and new risk.</p>
+  <div class="post-content"><p>Digital infrastructures serve, nearly always, multiple customers.
+These customers therefore share the resources provided by these digital infrastructures.
+With that sharing comes the potential for conflicts over those resources.</p>
+<p>When I talk to my friend over the phone, we share a connection, and that is exactly when sharing is part of the value of that infrastructure.
+But when multiple users draw computer capacity from the same pool, there is a risk that the pool is too small, and some users will not get the capacity that they require.</p>
+<p>That is a conflict of interests, and it can play out in a variety of places.</p>
+<p>When the service is offered on a market (as is the case with a public cloud provider), the conflict is between the provider and the consumer, who are not getting what they think they have contracted. Secondly, there is a conflict between the delivery team, who are not getting the resources that they need to realize the service level objectives, and the sales teams who have sold more than can be delivered.</p>
+<p>In an in-company situation (for example, a private cloud), the conflict is more likely to occur out between various internal consumers.
+I have seen more than one example where a department with a lot of ego and budget manages to get their way at the expense of less politically savvy departments.
+Bullying your way into monopolizing resources may be effective for the bully, but it is not necessarily the best outcome for the organization as a whole.</p>
+<p>That is a governance issue, and there should be leadership supervising these conflicts and setting policies for their resolution.
+Failure to do so is a failure of governance and leadership.
+We&rsquo;ll talk more about that in another unit.</p>
+<p>For the moment we&rsquo;ll end here with the observation that in digital infrastructures it can involve technical and architectural insight to understand these resource conflicts and the means through which they can be resolved.
+I have seen governance fail in these situations because the leadership is not properly educated on these finesses.</p>
+<p>For example, capacity in an infrastructure setting could refer to storage, bandwidth, or processing power.
+These differ seriously in how their capacity can be managed.</p>
+<p>Where understanding is missing, politics, power, and ego, fill the void.</p>
 
 
   </div>
@@ -163,20 +176,20 @@ There will always be edge cases.</p>
   
 
   
-
-  
-
-  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/diginfra/things-break-at-scale/">&larr; Things Break at Scale</a>
+        <a href="/book/diginfra/promise-contract/">&larr; Contracts are complementary promises</a>
       
       
         
-        <a href="/book/diginfra/lunch-spain/">What a lunch in Spain taught me about digital infrastructures &rarr;</a>
+        <a href="/book/diginfra/things-break-at-scale/">Things Break at Scale &rarr;</a>
       
     </nav>
+  
+
+  
+
   
 
   

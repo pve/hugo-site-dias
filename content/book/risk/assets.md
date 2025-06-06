@@ -21,7 +21,7 @@ As you can guess from these examples, many involve regulatory concerns due to th
 One of the tasks of a risk analyst is to figure out what regulations apply exactly.
 
 From a risk analysis, the asset is the unit that we consider.
-ENISA, the European Network Information Security Agency, is one of the many institutes in the world that describe IT risk management.
+ENISA, the European Union Agency for Cybersecurity, is one of the many institutes in the world that describe IT risk management.
 Its [cloud security report](https://www.enisa.europa.eu/publications/cloud-computing-risk-assessment) identified a number of asset types.
 Here are a few examples to illustrate its breadth:
 
@@ -132,3 +132,6 @@ But if your data are the crown jewels of your organization, or give access to na
 
 When you have trouble quantifying probabilities, especially for malicious actor events, I find it useful to review the money and resources that the attacker is willing to spend on you, in addition to your value at risk.
 But beware organized crime, their operations are highly automated and well tuned, and you might be cheaper to compromise than you know.
+
+Finally, consider the special category of risks that Nassim Taleb calls "Black Swan" events, things that are so rare but so disruptive that statistics is hardly useful. Think of stock market crashes, or political revolutions.
+How to prepare for those would be a chapter in itself.

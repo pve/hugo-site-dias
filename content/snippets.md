@@ -29,7 +29,7 @@ Onderwerp: power, vendor lock-in
 
 Top search op CCC: certs, deploy, saas canvas, top 8 enisa.
 
-shared services
+shared services!
 De shared services business case. Voorbeeld Haven ook (journal feb 2025). Lees ook input van Robert (?)
 
 gov versus business: business has control over its budget.
@@ -48,13 +48,7 @@ chaos engineering
 
 todo /2020/02/tutorial-cloud-native uitbouwen, opnieuw doen. Is een voorbeeld van (best)practices in uitbouwen van software.
 
-De shared services business case
-
 Input Robert voor Governance (DI-AS) journal 6 feb 2025
-
-Verhaaltje over haven (journal feb 2025)
-
-feedback loops en data quality
 
 case study JCR
 
@@ -115,7 +109,9 @@ Don't fix the toast, fix the toaster.
 
 Er zijn verschillende boeken over "Digital Power".
 
-TSD. Promise theory; LMS CAE 3-1; LMS 5-45 slap aftreksel.
+TSD (done in intro). 
+
+Promise theory; LMS CAE 3-1; LMS 5-45 slap aftreksel.
 
 Who owns data? can data be owned?
 
@@ -126,6 +122,7 @@ power: "the website forces me to fill in this info first". " I can control what 
 Infrastructuur is ook architectuur. Bijv: gedeelde diensten zoals directories en SDN.
 
 SLA= legally binding; SLO=objectives. 1-SLO = error budget
+
 NTS: uitgebreider verhaal over conference call >24 hours. Online War Room.
 NTS: 100% cpu utilization is bad for interactive, good for batch.
 NTS: strive for a single pane of glass, then add more stuff to integrate.

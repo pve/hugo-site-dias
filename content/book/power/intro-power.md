@@ -40,7 +40,7 @@ In these examples, mechanisms include:
 - Collective governance and community action – Shared power through participation and collaboration.
 
 These are the building blocks of effective IT.
-The way these mechanisms are organised plays a critical role in shaping both the value and the risk of digital infrastructures.
+The way these mechanisms are organized plays a critical role in shaping both the value and the risk of digital infrastructures.
 
 A common thread is that power influences the future, and influences the outcomes of activities.
 The simplified definition of power, inspired by Oxford Languages, that I use here is:

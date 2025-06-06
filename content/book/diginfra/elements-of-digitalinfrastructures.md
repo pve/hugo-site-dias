@@ -56,4 +56,5 @@ sequenceDiagram
 ```
 
 A common example would be to send as input a question to a search engine, where the search results are the output.
-The vertical lines are _timelines_ that show from top to bottom how time flows.
+The vertical lines are _timelines_ that show from top to bottom how time flows, and what the sequence of interactions is.
+That is why we call these _time sequence diagrams_ (TSD).

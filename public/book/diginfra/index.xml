@@ -6,7 +6,7 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 May 2025 21:03:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Jun 2025 10:32:19 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
@@ -65,6 +65,17 @@ Of course there is the complication that somebody has to deliver first: do you g
 This requires trust.
 As you are probably aware, both types of contract exist in real life.
 In fact you can find more complicated versions as well.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shared Services Lead to Conflicts</title>
+      <link>http://localhost:1313/book/diginfra/shared-service-conflict/</link>
+      <pubDate>Fri, 06 Jun 2025 10:32:19 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/shared-service-conflict/</guid>
+      <description>&lt;p&gt;Digital infrastructures serve, nearly always, multiple customers.
+These customers therefore share the resources provided by these digital infrastructures.
+With that sharing comes the potential for conflicts over those resources.&lt;/p&gt;
+&lt;p&gt;When I talk to my friend over the phone, we share a connection, and that is exactly when sharing is part of the value of that infrastructure.
+But when multiple users draw computer capacity from the same pool, there is a risk that the pool is too small, and some users will not get the capacity that they require.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Things Break at Scale</title>
@@ -135,6 +146,19 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 &lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
 &lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
 &lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Customer Service</title>
+      <link>http://localhost:1313/book/diginfra/customer-service/</link>
+      <pubDate>Thu, 05 Jun 2025 15:03:13 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/customer-service/</guid>
+      <description>&lt;p&gt;Customer service is a great thinking model for a lot of what is going on in digital infrastructures, even if the customer is not a human, as we will see.
+We are often buying products, but we really mostly want a service.
+In an earlier unit, we talked about promise theory&lt;/p&gt;
+&lt;p&gt;An IT services organization deals with customer requests all the time.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Can I get a new laptop?&lt;/p&gt;
+&lt;p&gt;Joe from accounting needs permissions to access this application. Can you fix that?&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Unified Framework</title>

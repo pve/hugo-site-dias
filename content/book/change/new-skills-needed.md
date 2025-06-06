@@ -28,7 +28,7 @@ APIs also enable the essential cloud characteristic of automatic self-service pr
 ## Beyond the company boundary
 
 The new thing that cloud computing brings is sharing between independent companies, interconnecting different, independent providers and automating that. The whole technology architecture now spans the IT supply chain.
-This has big governance and security implications. For example, when that collaboration or isolation fails, we cannot escalate these problems to our own CTO or CIO to resolve them. These problems are not confined to a single company anymore. They have to be resolved  *between* companies.
+This has big governance and security implications. For example, when that collaboration or isolation fails, we cannot escalate these problems to our own CTO or CIO to resolve them. These problems are not confined to a single company anymore. They have to be resolved *between* companies.
 
 The technical collaboration between companies will only work with proper contracts and management processes. This has to be set up in advance, instead of figuring out how it works later, as is so common inside an enterprise. And the people whose competence is to review these contracts and set up the service management processes therefore must understand how the technology enables that collaboration.
 That is why technology architecture is so important for less technical people. And that is also why it can be hard.
