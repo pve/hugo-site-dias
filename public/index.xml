@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Jun 2025 10:32:19 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jun 2025 14:31:28 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -53,11 +53,17 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Shared Services Lead to Conflicts</title>
-      <link>http://localhost:1313/book/diginfra/shared-service-conflict/</link>
-      <pubDate>Fri, 06 Jun 2025 10:32:19 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/shared-service-conflict/</guid>
-      <description></description>
+      <title>How I Got Started in Computer Networks</title>
+      <link>http://localhost:1313/book/diginfra/first-network/</link>
+      <pubDate>Sun, 08 Jun 2025 14:31:28 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/first-network/</guid>
+      <description>&lt;p&gt;My first interest in networking came in the early 80s, as I was in the final years of my mathematics and computer science master&amp;rsquo;s program.&lt;/p&gt;
+&lt;p&gt;At the time, dial-up terminal networking was about the most advanced there was.
+And if you were lucky, you&amp;rsquo;d get 1200 baud (transmitting approximately 120 characters per second).
+My current fiber-optic home links are 1 Gigabit/sec, which is about 1 million times faster.&lt;/p&gt;
+&lt;p&gt;Beyond this, computer-to-computer communication was mostly confined to the local data center.
+Transferring files from one computer to another typically involved physically moving storage media around.
+I have a great story about that, but that will be in another unit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zero Trust Myths</title>
@@ -400,6 +406,17 @@ I can feel that, and I can definitely feel that about the abuse of power.&lt;/p&
 &lt;p&gt;But does that make it unethical to talk about power?
 Power is everywhere, and conflict too. There is no society without a power structure.
 There are always differences of opinions in any group, if only to decide when to have lunch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shared Services Lead to Conflicts</title>
+      <link>http://localhost:1313/book/diginfra/shared-service-conflict/</link>
+      <pubDate>Fri, 06 Jun 2025 10:32:19 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/shared-service-conflict/</guid>
+      <description>&lt;p&gt;Digital infrastructures serve, nearly always, multiple customers.
+These customers therefore share the resources provided by these digital infrastructures.
+With that sharing comes the potential for conflicts over those resources.&lt;/p&gt;
+&lt;p&gt;When I talk to my friend over the phone, we share a connection, and that is exactly when sharing is part of the value of that infrastructure.
+But when multiple users draw computer capacity from the same pool, there is a risk that the pool is too small, and some users will not get the capacity that they require.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control Through Feedback Loops</title>

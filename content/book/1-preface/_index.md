@@ -10,14 +10,14 @@ The two main reasons for that, as I look back on those years now, are that the f
 
 Instead I wrote smaller pieces from time to time, as well as lots of educational materials, triggered by a need from my learners.
 
-I did try to create a larger, organized collection of knowledge, and even had a basic taxonomy in place and raw input. But the dynamics of my professional life continuously outran my plans to turn it into a book.
+I did try to create a larger, organized collection of knowledge, and even had a basic taxonomy in place and raw input. But the dynamics of my professional life continuously outpaced my plans to turn it into a book.
 
 I have occupied myself with IT for over half a century now, most of that in a professional capacity. For a substantial part of that time, I have been searching for some focus. It took me until the turn of the millennium to finally get an expression of that in the form of a professional branding statement. It was an interesting process to come up with the following.
 
-> _Peter van Eijk is an innovative ICT strategist who makes connections between business, people and technology. With wit and confrontation he guides you to new approaches. He is inimitably hardcore Internet oriented, yet never forgets that communication is between people, not machines._
+> _Peter van Eijk is an innovative ICT strategist who makes connections between business, people, and technology. With wit and confrontation he guides you to new approaches. He is inimitably hardcore Internet-oriented, yet never forgets that communication is between people, not machines._
 
 That message has served me well for a long time. And in fact it was the basis for the name of the business I set up in 2005: "Digital Infrastructures".
-I would like to think that I made up that phrase, because it has taken up a life on its own on a much larger scale, but in 2005 there was already a small IT company serving the local dentists in Oregon by that name. Still, I am fairly confident that through my former colleagues its use has accelerated.
+I would like to think that I made up that phrase, because it has taken up a life on its own on a much larger scale, but in 2005 there was already a small IT company serving the local dentists in Oregon by that name. Still, I am fairly confident that my former colleagues helped accelerate its use.
 
 Nevertheless, "Digital Infrastructures" is too broad a concept to serve as the title for an attractive book. "Cloud Computing" was a term with much wider appeal, and it has served me well. Around 2010, my business pivoted to cloud security training, which I have delivered in many countries over many years to many people.
 
@@ -30,7 +30,7 @@ Technology develops in waves, is never stable, and cloud computing is now mainst
 At the same time, this adoption of more IT in general, and more cloud computing in particular, in businesses worldwide has raised the stakes. IT is becoming essential to many businesses. Marc Andreesen's 2011 essay "Why Software is Eating the World" already outlined why many businesses are effectively IT and software businesses. A decade later this has only become more true. And current day geopolitical tensions are spilling over to the digital domain in many different ways. There is no lack of importance in being able to navigate this space.
 
 How to make sense of this, and how to position myself in a new and helpful way then became my question of urgency.
-Obviously, understanding of technology and business has an important role in this, but it became increasingly clear to me that power dynamics are another important key to mapping the development of IT, its value, and its risks.
+Obviously, understanding of technology and business has an important role in this, but it became increasingly clear to me that power dynamics are another important key element to mapping the development of IT, its value, and its risks.
 
 The idea of more writing came back.
 
