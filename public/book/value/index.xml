@@ -87,22 +87,26 @@ Back in the old days, business software was primarily written to automate &lt;st
       <pubDate>Mon, 05 May 2025 05:58:14 +0000</pubDate>
       <guid>http://localhost:1313/book/value/promise-theory-services/</guid>
       <description>&lt;p&gt;origin story promise theory&lt;/p&gt;
-&lt;p&gt;suwinet
+&lt;p&gt;&amp;lt;aangestipt in promise theory, maar niet uitgewerkt&amp;gt;
+suwinet
 reisplanner&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;design patterns&lt;/p&gt;
-&lt;p&gt;customer service, can I get a new app/user account&lt;/p&gt;
-&lt;p&gt;Q: Can I get a unique IP address?
-R: Here is your address, let me know when you are done with it&lt;/p&gt;
-&lt;p&gt;A: thank you, I am done with this address&lt;/p&gt;
-&lt;p&gt;Example IP addresses allocation
-&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image.png&#34;&gt;
-&lt;img alt=&#34;alt text&#34; loading=&#34;lazy&#34; src=&#34;image-1.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Example TCP/IP
-picture&lt;/p&gt;
-&lt;p&gt;Connect
-Q: can you reserve buffer space for a connection?
-R: yes we promise, here is your initial window size
-A: thank you, here is your initial window size&lt;/p&gt;</description>
+&lt;p&gt;Service quality
+e.g. response time. fulfillment time.
+Fulfillment time: months, weeks, days, minutes, seconds, …&lt;/p&gt;
+&lt;p&gt;These quantitative measures can be used as Key Performance Indicator (KPI) metrics in a Service Level Agreement (SLA)&lt;/p&gt;
+&lt;p&gt;Average response time for primary service
+Provisioning latencies of users, instances, network, disks
+Minimum/maximum volumes
+Cost per user; typically registered user, not per concurrent user
+Latency and volumes of calls.
+Network latency by location
+Software resources (e.g.  # connections)
+Incident response times
+(and so on)
+(kan wellicht met mermaid annotations)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

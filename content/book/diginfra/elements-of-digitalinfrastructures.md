@@ -2,7 +2,7 @@
 date: '2025-03-27T20:34:01Z'
 draft: false
 title: 'Elements of the Digital World'
-weight: "5" 
+weight: 5
 ---
 
 It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.

@@ -2,7 +2,7 @@
 date: '2025-03-09T18:53:44Z'
 draft: false
 title: 'Introduction'
-weight: "2"
+weight: 2
 ---
 The internet is a _digital infrastructure at scale_. Let’s unpack that for a moment.
 

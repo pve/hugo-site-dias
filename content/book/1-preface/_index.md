@@ -2,7 +2,7 @@
 date: '2025-03-09T16:51:04Z'
 draft: false
 title: 'Preface'
-weight: "1"
+weight: 1
 ---
 
 This book has been more than thirty years in the making.

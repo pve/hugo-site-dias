@@ -2,7 +2,7 @@
 date: '2025-04-20T09:03:00Z'
 draft: false
 title: 'Execution Environments'
-weight: "30"
+weight: 30
 ---
 
 What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?

@@ -2,7 +2,7 @@
 title: 'Who made podcasting big?'
 date: '2005-09-05T13:35:00'
 draft: false
-weight: "50" 
+weight: 50
 ---
 Podcasting has its own digital infrastructures, for example in hosting them.
 Let's look at how podcasting has grown, and what made it take off anyway?

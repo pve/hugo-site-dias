@@ -2,7 +2,7 @@
 date: '2025-03-09T21:19:45Z'
 draft: false
 title: 'Deployment Diagrams'
-weight: "50" 
+weight: 50
 ---
 
 Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.
