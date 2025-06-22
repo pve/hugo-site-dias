@@ -7,7 +7,7 @@ weight: 50
 
 Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.
 
-## Why deployment diagrams?
+### Why deployment diagrams?
 
 Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.
 
@@ -18,7 +18,7 @@ The reason for that is that there is a lot of intuition on these types of diagra
 
 It turns out that the actual symbols to use are not so relevant. It is more important to understand what we mean by those symbols, and how these diagrams are useful.
 
-## What do we want to model?
+### What do we want to model?
 
 Modern IT systems are made up of many components, but all of them handle data in one way or another. Some of the important principles are that we want to understand where data is stored (at rest), where it is being processed, and how it moves from one place to another.
 
@@ -36,7 +36,7 @@ Now in a more formal notation such as UML or Archimate, this would look a bit di
 
 ![webclient formal](/deploy-images/webclient-formal.png)
 
-## How detailed should your model be?
+### How detailed should your model be?
 
 A diagram is meant to communicate. It should communicate the most essential thing that you want to bring across to the people who are looking at your diagram. In this diagram, we are focusing on how the WebServer and the DNS service are probably different services. As a result, this diagram emphasizes the protocols that are being used, and the separate execution environments that are involved.
 
@@ -46,7 +46,7 @@ Alternatively, we could introduce the Internet as an actor. In reality, by the w
 
 ![webserver internet formal](/deploy-images/webserver-DNS-internet.png)
 
-## Architectural decisions
+### Architectural decisions
 
 One of the purposes of deployment diagrams is to document and demonstrate architectural decisions. These decisions could, for example, be on the flow of data, the location of data, and where data is actually being processed. In the next example, we show how this works in a music distribution service, such as Spotify or Apple Music.
 
@@ -60,13 +60,13 @@ There are two options. The first option is that the music goes from the cloud to
 
 It is an interesting exercise to discuss the benefits and disadvantages of both options. You might also want to dive deeper into the actual protocols being used to make this work. Especially the protocols between the speakers and the rest are not so trivial.
 
-## Cloud-Native
+### Cloud-Native
 
 How is deployment different in a cloud-native age? To begin with, there is virtualization, there is containerization, we have functions as a service (such as AWS Lambda), we have DevOps, we have infrastructure as code, we have external services, APIs, and so on.
 
 And then we have also flexible infrastructure that can rapidly scale up and scaled-down. All of this brings complications to drawing deployment diagrams. Let’s see how we can accommodate each of these cloud-native concepts in our diagrams.
 
-## Virtualization
+### Virtualization
 
 A virtual machine is an execution environment that lives within another execution environment, probably a physical host. Remember that an execution environment is isolated from other execution environments. A virtual machine is in complete control of the entire memory address space in the machine that it runs on. It only shares the hypervisor on that machine. That is quite powerful isolation.  In fact, it also has network interfaces that are completely indistinguishable in capabilities from the network interfaces on a physical machine.
 
@@ -77,7 +77,7 @@ In the diagram below we have chosen not to show how the network is organized.
 ![VM and containers](/deploy-images/VMs-and-containers.png)
 Note that we have combined containers and VMs in one picture. This architecture actually happens in reality, it has its advantages. We’ve also chosen not to show any details of the underlying operating systems, hypervisors or Docker runtimes in this picture. Again, depending on what you want to communicate with the diagram, you might want to include those networking and other details.
 
-## Automated deployment
+### Automated deployment
 
 Let’s move into slightly more advanced cases of deployment. It is pretty common these days to automate the deployment of software on any given machine. That has many advantages in terms of reproducibility, maintainability, and ease of upgrade. And that also comes with security benefits. However, it does require additional software and deployment components to get this going. That is because there are many more moving parts in this type of IT architecture.
 
@@ -90,7 +90,7 @@ In the next diagram, the target machine is remotely configured from an Ansible p
 
 The old-fashioned flowchart symbol with the folded corner resembling a document is used to indicate where data is being stored. In this case, that is the Ansible playbook.
 
-## Cloud deployments
+### Cloud deployments
 
 In the previous diagram, we have simply installed the software onto an existing virtual machine. In a cloud world, however, we can go much beyond that. We can deploy what is called “infrastructure as code”, where complete architectures can be provisioned automatically. In the example below, we are using a deployment machine to run a Terraform script that automatically deploys 2 virtual machines and an internal network on the cloud provider. With the big oval, we indicate that there is some kind of ownership by the cloud provider of that part of the architecture, which also implies some isolation and control separation.
 
@@ -98,7 +98,7 @@ In the previous diagram, we have simply installed the software onto an existing 
 
 This diagram also shows how the Terraform script results in (is manifested to) actual deployment at the club provider. That is done through the cloud API.
 
-## Continuous integration and delivery
+### Continuous integration and delivery
 
 Next up in our journey towards ever deeper automation of software deployment, we have the continuous integration and delivery pipelines. As you might know, a continuous delivery pipeline takes software and other digital assets from a source code repository and builds it into something that can be deployed in an appropriate environment such as a cloud provider.
 

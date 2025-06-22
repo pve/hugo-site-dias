@@ -4,7 +4,6 @@ draft: false
 title: 'Contracts are complementary promises'
 weight: 11
 ---
-## Contracts are complementary promises
 
 Once we understand promises, contracts between agents now become really simple to express.
 They are a set of complementary conditional promises: "If you do this, I will promise that".

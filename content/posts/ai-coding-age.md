@@ -6,6 +6,7 @@ weight: 10
 ---
 
 This is the dawn of a new age.
+
 I have been observing software development for more than fifty years, ever since I wrote my first computer program.
 In that entire time, I have never witnessed a development that has changed the profession deeper, faster, or more pervasively than now.
 AI-assisted coding has escaped from the lab, and is impacting the work of every software developer.

@@ -155,3 +155,5 @@ Communicating in orgs: https://www.linkedin.com/posts/malykh_when-i-moved-to-the
 
 
 Bert Hubert, a former Dutch intelligence technologist, and advisor on lawful hacking — and he declared a pretty hefty warning in a gripping talk how apps like hashtag#AngryBirds helped intelligence agencies and survaillance states track millions by logging hashtag#IMEI numbers (which are unique hardware identifiers that allow devices and users to be tracked across networks and apps) without encryption ---- > turning a game into surveillance infrastructure. 
+
+https://calculatingempires.net gezien in A-kerk en in Parijs.

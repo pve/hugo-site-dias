@@ -46,7 +46,7 @@ Though you can also envision scenarios where putting your money on the counter o
 Many, if not most, business transactions can be modelled with this, as we will see.
 The key is to understand what the promises are that are being made and acquitted.
 
-## IT support is also a service
+### IT support is also a service
 
 Let's turn our attention to an example in digital infrastructures: we want a new laptop.
 Again, this proceeds by making a request, in this case typically to a service desk.
@@ -69,9 +69,12 @@ But the principle of setting up a call is the same, whether you ask a human or a
 It starts with "please connect me with this number".
 And the general promise, the commitment, of the telecommunications company remains to do that, irrespective of the technology.
 
-## What is a promise?
+### What is a promise?
 
-According to [Jeff Sussna](https://www.oreilly.com/library/view/designing-delivery/9781491903742/), a promise is "... a strongly stated intention to provide a service, which may or may not be kept".
+According to [Jeff Sussna](https://www.oreilly.com/library/view/designing-delivery/9781491903742/), a promise is 
+
+>"... a strongly stated intention to provide a service, which may or may not be kept".
+
 This makes it clear that there ultimately is a possibility for it to not be fulfilled.
 Jeff Sussna compares this to a teenager's promise to clean their room.
 It may happen, but there is a chance it does not.
@@ -107,7 +110,7 @@ sequenceDiagram
     Note right of Provider: I promise to pay you for the drink
 ```
 
-## Semantics
+### Semantics
 
 We can dive a little deeper into what such a promise means.
 In all our examples, messages were exchanged between agents.
@@ -129,13 +132,13 @@ It can also be about the information world, such as access rights to data, or co
 
 The beauty of this is that we have a lean and unifying framework that ties together services, contracts, resources, control, human and machine communication.
 
-## Tool in automation
+### Tool in automation
 
 Because we have this common language, we can now use this to describe an interaction process between humans, and then talk about how to automate that interaction.
 The agents can change from man to machine without the promises changing.
 We'll have some examples of that elsewhere.
 
-## Contracting
+### Contracting
 
 In the above we have assumed that the promises just exist, fixed and immutable.
 But we can also apply the theory and language to the creation and modification of these sets of promises.

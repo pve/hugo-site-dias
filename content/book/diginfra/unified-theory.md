@@ -15,7 +15,7 @@ For now, we'll call these pillars layers, though there is no implied hierarchy b
 At the core is the concept of promise-based interactions between autonomous agents (human and technical).
 Every digital infrastructure can be understood as a network of these promises across these layers.
 
-![DIAS Framework](/dias-framework-simple-s.png)
+![DIAS Framework](/deploy-images/dias-framework-simple-s.png)
 
 In the **value creation** layer, we are looking at how these promises lead to value for customers and providers. What are these services? How do we measure their quality?
 How are they provisioned in a cost-effective way, and how does that lead to business models for the provider?
