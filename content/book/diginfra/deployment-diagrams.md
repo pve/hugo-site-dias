@@ -28,13 +28,13 @@ We used to think that we are connecting computers. But these days we are really 
 
 Take the following simple example. On the left we have a user working on the web browser, on the right-hand side, we see the web server. They are connected through the Internet. The web server is an execution environment that serves up webpages. The user’s browser is an execution environment that renders these webpages to the user. And we annotate the connection link with the protocol that is being used.
 
-![simple client server](/deploy-images/simple-cs.png)
+![Simple client server diagram](/deploy-images/simple-cs.png)
 
 So we see two important concepts illustrated in this diagram: execution environments and connectivity.
 
 Now in a more formal notation such as UML or Archimate, this would look a bit different. Many would be able to argue about the specific symbols to use, but when I am pragmatic I am only concerned with how well the diagram communicates.
 
-![webclient formal](/deploy-images/webclient-formal.png)
+![More formal web interaction diagram](/deploy-images/webclient-formal.png)
 
 ### How detailed should your model be?
 
