@@ -11,15 +11,16 @@ Consider this hypothetical situation.
 You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the 'who', 'what', 'when', etcetera of allowed communication.
 
 ```mermaid
-architecture-beta
-group exec(server)[Execution environment]
-    service users(cloud)[Cloud Users]
-    service fw[Firewall]
-    service app(database)[App] in exec
-
-
-    users:R --> L:fw
-    fw:R --> L:app
+flowchart TD
+    subgraph exec["Execution Environment"]
+        app[(App)]
+    end
+    
+    users[Cloud Users]
+    fw[Firewall]
+    
+    users --> fw
+    fw --> app
 ```
 
 We want to allow specific access for specific use cases and be explicit about it. However, to focus our efforts, it makes sense to also identify that our biggest risk is the exfiltration of a lot of those sensitive records: a data breach.

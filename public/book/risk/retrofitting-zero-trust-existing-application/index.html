@@ -149,15 +149,16 @@ You have an application with hundreds of thousands of sensitive records, let’s
   <div class="post-content"><p>Zero Trust Architecture is an approach to better cybersecurity. To many, it seems daunting to implement. But it does not have to be hard to start.</p>
 <p>Consider this hypothetical situation.</p>
 <p>You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the &lsquo;who&rsquo;, &lsquo;what&rsquo;, &lsquo;when&rsquo;, etcetera of allowed communication.</p>
-<pre class="mermaid">architecture-beta
-group exec(server)[Execution environment]
-    service users(cloud)[Cloud Users]
-    service fw[Firewall]
-    service app(database)[App] in exec
-
-
-    users:R --&gt; L:fw
-    fw:R --&gt; L:app
+<pre class="mermaid">flowchart TD
+    subgraph exec[&#34;Execution Environment&#34;]
+        app[(App)]
+    end
+    
+    users[Cloud Users]
+    fw[Firewall]
+    
+    users --&gt; fw
+    fw --&gt; app
 </pre>
 <p>We want to allow specific access for specific use cases and be explicit about it. However, to focus our efforts, it makes sense to also identify that our biggest risk is the exfiltration of a lot of those sensitive records: a data breach.</p>
 <h2 id="the-allow-rules">The allow rules<a hidden class="anchor" aria-hidden="true" href="#the-allow-rules">#</a></h2>

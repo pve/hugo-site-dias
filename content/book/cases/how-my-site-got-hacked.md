@@ -4,7 +4,7 @@ draft: false
 title: 'How My Site Got Hacked'
 ---
 
-### Detection
+#### Detection
 
 I should have acted on the first signals more aggressively. But let’s talk about that later in this story.
 Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.
@@ -17,7 +17,7 @@ So, instead of continuing the conversation of how I could be of help to these pe
 
 That was the detection phase, one of the phases of the NIST incident response process. As I mentioned, I could have found it earlier. For more information on the NIST incident response process guidance at the time of this incident, you can refer to the [NIST Special Publication 800-61 Revision 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf). A new version is in preparation.
 
-## Analysis and Eradication
+### Analysis and Eradication
 
 Now for the analysis and eradication phase. What the heck was going on? I had very little luck in getting the security programs to tell me what was wrong with the site. [Virustotal](<http://www.virustotal.com>), which aggregates reports from security providers, reported 1 hit by Yandex, though the diagnostics on their webmaster pages were vague. McAfee and Kaspersky did not seem to have any service that is helpful with this.
 
@@ -28,7 +28,7 @@ After I discovered the problem, independently I got a report from a SEO expert, 
 
 It appeared to be an automated infection targeted at Mozilla users who had not updated their browsers. My site did not store any customer data, all form submissions go to a separate autoresponder and shopping cart service. So no data was lost or breached.
 
-## Recovery
+### Recovery
 
 Now for the recovery phase. Malware gone does not equal business problem gone. Even though the malware was erased, my site’s reputation was still suffering.
 
@@ -42,7 +42,7 @@ So this reputation might haunt me for who knows how long. Maybe the domain will 
 
 On the positive side, some corporate firewalls reset the reputation after a few weeks. But be aware that most corporate firewalls are extremely paranoid, as they probably should be. Just having a simple link in my email message pointing to my homepage had that message marked as [SUSPICIOUS MESSAGE] by one of the big four advisory firms.
 
-## Preparation
+### Preparation
 
 Finally, back to preparation. What could we have done to prevent this, or at least reduce the impact of the problem?
 
@@ -55,7 +55,7 @@ Externally spidering the website, and versioning it may be better. At any rate, 
 
 So, obviously the best direct preparation is regularly updating software and removing software you don’t need. Case in point: the malware was inserted into a piece of forum software that we never got to work properly. In the end we abandoned it in favor of a managed cloud solution (an e-learning platform).
 
-## Cloud security reference model
+### Cloud security reference model
 
 The cloud security reference model of the Cloud Security Alliance asks us to identify who is responsible for what piece of the software stack. I don’t think there is much confusion about who was supposed to keep the site’s software up to date. My site manager never denied that he was. But he did not put in any warning system, and ignored my F-Secure warning.
 He also did not yet provide adequate forensics to me after the fact. Maybe a regular customer won’t need those details, I can see that. But I have professional interests beyond that, as this article proves.
@@ -65,7 +65,7 @@ Managing one custom WordPress website at a time is not likely to be a very viabl
 
 As a business owner, I am ultimately accountable for all IT risks that affect my business. Remember, any provider, including a managed hosting provider, can fail. You need a plan B. I do have some backup of the most important documents on my site. I wrote them. But in the end, the most irrecoverable asset lost here might be the domain name. As a precaution against that, I could have considered to have the most important pages also hosted on another domain. In fact, I might have to do that, if this domain isn’t delisted quickly enough. It is a telling and disturbing sign that registrations for my newsletters these days mostly come from public email providers, not companies.
 
-## Wrapping up
+### Wrapping up
 
 I am disclosing my misfortune so that it may be of help to people. Whether you work in a large corporation or a small one, are on the consumer or on the provider side, you can use this case to improve your own management of IT risk.
 
