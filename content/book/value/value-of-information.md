@@ -11,12 +11,12 @@ If we know that, we can try to understand how we can judge its value, or even st
 In Claude Shannon's theory of communication, information is about reducing uncertainty.
 Another way is to say that more information means less noise because if you add noise to information, that information will have more uncertainty and less value.
 
-To visualise this, think of a picture that is obscured by a bit of fog or haze.
+To visualize this, think of a picture that is obscured by a bit of fog or haze.
 You can still see some of the picture, but not very clearly.
 You will make more errors when trying to understand what the picture means.
 
 Similarly, think of the difference between a grainy low resolution image, where you can see the individual pixels, versus a high resolution version of that image.
-More pixels, more bits, less uncertainty. 
+More pixels, more bits, less uncertainty.
 
 (we can use two pictures here)
 
@@ -32,7 +32,7 @@ If you know neither, you cannot take advantage of the weather.
 
 In business, the more you know about the potential customer, the more likely you can make them an offer that they will be interested in.
 
-In information security, if you know about potential vulnerabilities, you can make it less likely to suffer damage from them. 
+In information security, if you know about potential vulnerabilities, you can make it less likely to suffer damage from them.
 
 An example from service management. Suppose your digital infrastructure is down a day a year, on the average.
 Your consumers will suffer from that, because it reduces their potential to benefit.
@@ -42,8 +42,8 @@ With that information you can make more targeted investments in improving your d
 
 The pattern that we see here is that information on the current state of affairs allows us to influence the *future* outcome of a process, and with that, we can create value.
 
-One of the most dramatic examples of that in the history of computing is the breaking of the Enigma code in World War II, by Alan Turing and teammembers.
-This allowed the allies to reduce the loss that german U-boots were inflicting on transatlantics supply ships.
+One of the most dramatic examples of that in the history of computing is the breaking of the Enigma code in World War II, by Alan Turing and his team members.
+This allowed the allies to reduce the loss that german U-boats were inflicting on transatlantic supply ships.
 
 ### Information processing is information reduction
 
@@ -54,7 +54,7 @@ It was, in a way, already there.
 And if we don't show where the result came from (the two numbers) we are left with *less* information.
 
 If in a table of inventory, we update the inventory with the result of many transactions, the resulting inventory table does not have more information than before.
-Of course, the information is more relevant to the current state. 
+Of course, the information is more relevant to the current state.
 
 But, what about generative AI, you may ask.
 Isn't that generating information?

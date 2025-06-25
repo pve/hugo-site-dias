@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Jun 2025 14:31:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 14:37:11 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,17 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Can AI automate compliance?</title>
+      <link>http://localhost:1313/posts/risk-value/</link>
+      <pubDate>Tue, 24 Jun 2025 14:37:11 +0000</pubDate>
+      <guid>http://localhost:1313/posts/risk-value/</guid>
+      <description>&lt;p&gt;My AI-supported risk analysis assistant mirrors a common pitfall in risk management: focusing on irrelevant controls rather than genuine threats.&lt;/p&gt;
+&lt;p&gt;I have created a risk analyst AI based on industry best practices, or so I assume.
+This is part of a quest toward more compliance automation, because as an industry we are falling behind in security.&lt;/p&gt;
+&lt;p&gt;I am running through a simple example of a chatbot that answers questions over a nonsensitive dataset.
+The analyst dives deep into questions on all kinds of controls that, in my view, are quite irrelevant to the risk at the business level.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Got Started in Computer Networks</title>
@@ -872,7 +883,7 @@ Ze leiden daarom nog wel eens tot beslissingen die onhandig, of zelfs contraprod
       <link>http://localhost:1313/book/cases/how-my-site-got-hacked/</link>
       <pubDate>Sat, 29 Mar 2025 15:35:53 +0000</pubDate>
       <guid>http://localhost:1313/book/cases/how-my-site-got-hacked/</guid>
-      <description>&lt;h4 id=&#34;detection&#34;&gt;Detection&lt;/h4&gt;
+      <description>&lt;h3 id=&#34;detection&#34;&gt;Detection&lt;/h3&gt;
 &lt;p&gt;I should have acted on the first signals more aggressively. But let’s talk about that later in this story.
 Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.&lt;/p&gt;
 &lt;p&gt;The hack led to business damage at the end of one of my webinars. In 2016, on a Friday, I did a webinar, at the end of which I had two links to my site as a call to action.&lt;/p&gt;</description>

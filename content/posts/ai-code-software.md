@@ -29,7 +29,7 @@ The tooling for that is at the moment one of the hottest areas of business devel
 However, a software engineer might consider a few alternative options.
 Sure, they should be familiar with writing code, but there are a lot of other options.
 
-- It is very conceivable that there exists a SaaS solution (or more than one) that largely fulfills the needs of the business stakeholder.
+- It is very conceivable that there exists a SaaS solution (and probably more than one) that largely fulfills the needs of the business stakeholder.
 - It could be a feature from one of the core systems that the data was coming from in the first place.
 - Maybe most of the analysis could be done by an Excel or Google Sheets plugin.
 - A complete open source package may already exist.

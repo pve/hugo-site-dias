@@ -6,8 +6,19 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jun 2025 10:37:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 14:37:11 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Can AI automate compliance?</title>
+      <link>http://localhost:1313/posts/risk-value/</link>
+      <pubDate>Tue, 24 Jun 2025 14:37:11 +0000</pubDate>
+      <guid>http://localhost:1313/posts/risk-value/</guid>
+      <description>&lt;p&gt;My AI-supported risk analysis assistant mirrors a common pitfall in risk management: focusing on irrelevant controls rather than genuine threats.&lt;/p&gt;
+&lt;p&gt;I have created a risk analyst AI based on industry best practices, or so I assume.
+This is part of a quest toward more compliance automation, because as an industry we are falling behind in security.&lt;/p&gt;
+&lt;p&gt;I am running through a simple example of a chatbot that answers questions over a nonsensitive dataset.
+The analyst dives deep into questions on all kinds of controls that, in my view, are quite irrelevant to the risk at the business level.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Zero Trust Myths</title>
       <link>http://localhost:1313/posts/zt-myths/</link>
@@ -37,13 +48,13 @@ AI-assisted coding has escaped from the lab, and is impacting the work of every 
       <link>http://localhost:1313/posts/ai-code-software/</link>
       <pubDate>Fri, 23 May 2025 12:45:13 +0000</pubDate>
       <guid>http://localhost:1313/posts/ai-code-software/</guid>
-      <description>&lt;p&gt;A coder in the world of IT is somebody who writes code in some programming language.
+      <description>&lt;p&gt;If you build software for a living, generative AI may be a scary development, as it has the potential to take over a lot of software creation.
+But I think it depends on what you see as the job of creating software.&lt;/p&gt;
+&lt;p&gt;A coder in the world of IT is somebody who writes code in some programming language.
 More typically they modify code instead of writing it from scratch.
 This is in response to bugs, feature requests, and so on.
 In the age of AI, a lot of coding can be automated.
-While senior people often also code, not all coders are senior.&lt;/p&gt;
-&lt;p&gt;A software engineer builds systems out of software.
-This may involve coding, but there are many other ways to create business value with software.&lt;/p&gt;</description>
+We have seen many examples of AI generating lots of code based on fairly compact specifications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vibe OPSing with MCP: proof of concept</title>
