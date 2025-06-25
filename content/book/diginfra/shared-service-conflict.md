@@ -2,7 +2,7 @@
 date: '2025-06-06T10:32:19Z'
 draft: false
 title: 'Shared Services Lead to Conflicts'
-weight: 12
+weight: 15
 ---
 
 Digital infrastructures serve, nearly always, multiple customers.

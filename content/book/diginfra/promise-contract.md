@@ -2,7 +2,7 @@
 date: '2025-05-15T21:03:24Z'
 draft: false
 title: 'Contracts are complementary promises'
-weight: 11
+weight: 13
 ---
 
 Once we understand promises, contracts between agents now become really simple to express.

@@ -2,7 +2,7 @@
 date: "2025-04-25T21:21:54Z"
 draft: false
 title: "Promise Theory"
-weight: 10
+weight: 11
 ---
 Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.
 

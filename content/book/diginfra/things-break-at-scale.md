@@ -2,7 +2,7 @@
 date: '2025-04-16T21:16:12Z'
 draft: false
 title: 'Things Break at Scale'
-weight: 15
+weight: 16
 ---
 
 Computers are terribly reliable, in general. Today's computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.

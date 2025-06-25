@@ -2,7 +2,7 @@
 date: '2025-03-15T16:06:44Z'
 draft: false
 title: 'What a lunch in Spain taught me about digital infrastructures'
-weight: 20
+weight: 25
 ---
 
 In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
