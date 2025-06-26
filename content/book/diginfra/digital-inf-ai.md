@@ -19,7 +19,7 @@ A trained language model is effectively a piece of software. You feed it text, a
 block-beta
 
 space in space llm:2 space out space
-in["Prompt"] --> llm["Large Language Model"]
+in["Prompt"] --> llm["Large\nLanguage\nModel"]
 llm--> out["Completion"]
 
 style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
@@ -27,7 +27,8 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
    
 ```
 
-In cloud terms, we would call this Inferencing as a Service. In the NIST model, we'd call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.
+In cloud terms, we would call this Inference as a Service.
+In the NIST model, we'd call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.
 
 This gives us the option to look for this on the market, or create a shared service inside an organization or group of organizations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilities.
 

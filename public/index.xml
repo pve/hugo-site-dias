@@ -205,7 +205,7 @@ Most companies would go belly up in weeks, if not days, if their digital infrast
 If we know that, we can try to understand how we can judge its value, or even start to understand how we can create value with information.&lt;/p&gt;
 &lt;p&gt;In Claude Shannon&amp;rsquo;s theory of communication, information is about reducing uncertainty.
 Another way is to say that more information means less noise because if you add noise to information, that information will have more uncertainty and less value.&lt;/p&gt;
-&lt;p&gt;To visualise this, think of a picture that is obscured by a bit of fog or haze.
+&lt;p&gt;To visualize this, think of a picture that is obscured by a bit of fog or haze.
 You can still see some of the picture, but not very clearly.
 You will make more errors when trying to understand what the picture means.&lt;/p&gt;</description>
     </item>
@@ -264,20 +264,6 @@ However, without understanding how abstraction and automation change the IT secu
 &lt;p&gt;Here is the step by step approach that I followed to &amp;lsquo;&lt;a href=&#34;http://localhost:1313/posts/vibe-coding-real/&#34;&gt;vibe code&lt;/a&gt;&amp;rsquo; a Model Context Protocol server for my CRM and mailing list manager.&lt;/p&gt;
 &lt;p&gt;I journaled this description, so I have included most of the detours and false starts.
 For readability, I edited the description later, but the flow is as I went through it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Promise Theory</title>
-      <link>http://localhost:1313/book/diginfra/promise-theory/</link>
-      <pubDate>Fri, 25 Apr 2025 21:21:54 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/promise-theory/</guid>
-      <description>&lt;p&gt;Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.&lt;/p&gt;
-&lt;p&gt;Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
-Introduced by Mark Burgess and others, it is about how autonomous agents work together.
-It helped me a lot in getting a handle on various distributed systems.
-There was this project where we designed a scalable travel information system with what we now call microservices.
-We needed to describe how these parts work together.
-And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
-In getting this from the drawing board to actual production, promise theory turned out to be a great tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Look at MCP now to be ahead of AI risk</title>
@@ -388,6 +374,43 @@ That is where their prime value is.&lt;/p&gt;
 &lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Promise Theory</title>
+      <link>http://localhost:1313/book/diginfra/promise-theory/</link>
+      <pubDate>Fri, 25 Apr 2025 21:21:54 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/promise-theory/</guid>
+      <description>&lt;p&gt;Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.&lt;/p&gt;
+&lt;p&gt;Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
+Introduced by Mark Burgess and others, it is about how autonomous agents work together.
+It helped me a lot in getting a handle on various distributed systems.
+There was this project where we designed a scalable travel information system with what we now call microservices.
+We needed to describe how these parts work together.
+And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
+In getting this from the drawing board to actual production, promise theory turned out to be a great tool.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The moral necessity of talking about power</title>
+      <link>http://localhost:1313/book/power/ethics-of-power/</link>
+      <pubDate>Thu, 24 Apr 2025 20:30:57 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/ethics-of-power/</guid>
+      <description>&lt;p&gt;For many people, the word power has a negative connotation.
+They&amp;rsquo;d rather avoid using power altogether.
+I can feel that, and I can definitely feel that about the abuse of power.&lt;/p&gt;
+&lt;p&gt;But does that make it unethical to talk about power?
+Power is everywhere, and conflict too. There is no society without a power structure.
+There are always differences of opinions in any group, if only to decide when to have lunch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control Through Feedback Loops</title>
+      <link>http://localhost:1313/book/change/control-feedback/</link>
+      <pubDate>Sat, 19 Apr 2025 20:01:07 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/control-feedback/</guid>
+      <description>&lt;p&gt;There are many ways to influence and control a system, but one of the most controlled (pun intended) ways is to use feedback loops.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with an analogy first: driving a car.&lt;/p&gt;
+&lt;p&gt;If you want the car to stop as fast as possible, it suffices to push the brakes as hard as you can. But that does not give you much control.
+For example, your passengers might not like it, and it leads to wear on the tires.
+If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Contracts are complementary promises</title>
       <link>http://localhost:1313/book/diginfra/promise-contract/</link>
       <pubDate>Thu, 15 May 2025 21:03:24 +0000</pubDate>
@@ -406,18 +429,6 @@ As you are probably aware, both types of contract exist in real life.
 In fact you can find more complicated versions as well.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The moral necessity of talking about power</title>
-      <link>http://localhost:1313/book/power/ethics-of-power/</link>
-      <pubDate>Thu, 24 Apr 2025 20:30:57 +0000</pubDate>
-      <guid>http://localhost:1313/book/power/ethics-of-power/</guid>
-      <description>&lt;p&gt;For many people, the word power has a negative connotation.
-They&amp;rsquo;d rather avoid using power altogether.
-I can feel that, and I can definitely feel that about the abuse of power.&lt;/p&gt;
-&lt;p&gt;But does that make it unethical to talk about power?
-Power is everywhere, and conflict too. There is no society without a power structure.
-There are always differences of opinions in any group, if only to decide when to have lunch.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Shared Services Lead to Conflicts</title>
       <link>http://localhost:1313/book/diginfra/shared-service-conflict/</link>
       <pubDate>Fri, 06 Jun 2025 10:32:19 +0000</pubDate>
@@ -427,17 +438,6 @@ These customers therefore share the resources provided by these digital infrastr
 With that sharing comes the potential for conflicts over those resources.&lt;/p&gt;
 &lt;p&gt;When I talk to my friend over the phone, we share a connection, and that is exactly when sharing is part of the value of that infrastructure.
 But when multiple users draw computer capacity from the same pool, there is a risk that the pool is too small, and some users will not get the capacity that they require.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Control Through Feedback Loops</title>
-      <link>http://localhost:1313/book/change/control-feedback/</link>
-      <pubDate>Sat, 19 Apr 2025 20:01:07 +0000</pubDate>
-      <guid>http://localhost:1313/book/change/control-feedback/</guid>
-      <description>&lt;p&gt;There are many ways to influence and control a system, but one of the most controlled (pun intended) ways is to use feedback loops.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s start with an analogy first: driving a car.&lt;/p&gt;
-&lt;p&gt;If you want the car to stop as fast as possible, it suffices to push the brakes as hard as you can. But that does not give you much control.
-For example, your passengers might not like it, and it leads to wear on the tires.
-If you want the car to stop at an intended location, for example just in front of a traffic light, you apply a feedback loop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Controls</title>
@@ -457,6 +457,14 @@ If you have read through an IT risk management book, many of these should be fam
 For the rest of you, here is a brief outline of some control examples for data.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Mitigation</title>
+      <link>http://localhost:1313/book/risk/mitigation/</link>
+      <pubDate>Tue, 13 May 2025 09:39:02 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/mitigation/</guid>
+      <description>&lt;p&gt;walk in with well spelled out risks, a clear connection to business impact, data, a mitigation plan, and measurable targets.&lt;/p&gt;
+&lt;p&gt;Providing third-party assurance enables the board to deliver on its risk management responsibilities.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Things Break at Scale</title>
       <link>http://localhost:1313/book/diginfra/things-break-at-scale/</link>
       <pubDate>Wed, 16 Apr 2025 21:16:12 +0000</pubDate>
@@ -466,14 +474,6 @@ For the rest of you, here is a brief outline of some control examples for data.&
 (a Google cluster has several thousands of machines):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In each cluster&amp;rsquo;s first year, it&amp;rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &amp;ldquo;go wonky,&amp;rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&amp;rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mitigation</title>
-      <link>http://localhost:1313/book/risk/mitigation/</link>
-      <pubDate>Tue, 13 May 2025 09:39:02 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/mitigation/</guid>
-      <description>&lt;p&gt;walk in with well spelled out risks, a clear connection to business impact, data, a mitigation plan, and measurable targets.&lt;/p&gt;
-&lt;p&gt;Providing third-party assurance enables the board to deliver on its risk management responsibilities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Essence of Digital Infrastructures</title>
@@ -509,17 +509,6 @@ Before that, symbolic AI was more common.&lt;/p&gt;</description>
       <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
 &lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result, technology is not optimally applied.
 By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What a lunch in Spain taught me about digital infrastructures</title>
-      <link>http://localhost:1313/book/diginfra/lunch-spain/</link>
-      <pubDate>Sat, 15 Mar 2025 16:06:44 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/lunch-spain/</guid>
-      <description>&lt;p&gt;In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
-And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
-&lt;p&gt;At the restaurant&amp;rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;payment terminals&#34; loading=&#34;lazy&#34; src=&#34;payterminal-716603.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparently not over here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Provider Value</title>
@@ -567,6 +556,17 @@ Without trust, we will not be able to have confidence in the contribution of oth
 &lt;p&gt;Anything we don&amp;rsquo;t trust is a risk.
 Anytime we assume trust that is not warranted is also a risk.
 That is one of the core concepts of Zero Trust Security Architecture.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What a lunch in Spain taught me about digital infrastructures</title>
+      <link>http://localhost:1313/book/diginfra/lunch-spain/</link>
+      <pubDate>Sat, 15 Mar 2025 16:06:44 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/lunch-spain/</guid>
+      <description>&lt;p&gt;In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
+And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
+&lt;p&gt;At the restaurant&amp;rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;payment terminals&#34; loading=&#34;lazy&#34; src=&#34;payterminal-716603.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparently not over here.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Positions of Power in IT</title>
@@ -928,19 +928,6 @@ Instead, the word global is used to mean all nations, including the US.&lt;/p&gt
 &lt;p&gt;Well, the US Air Force is. Here is my summary, with some comments, of their strategy document for the benefit of my Certificate of Competence in Zero Trust (CCZT) learners. In fact, this is an edited version of a conversation we had during one of our classes.&lt;/p&gt;
 &lt;p&gt;You can download the full strategy &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20API%20Reference%20Architecture%202.0.pdf&#34;&gt;here&lt;/a&gt;, and the current roadmap &lt;a href=&#34;https://www.dafcio.af.mil/Portals/64/Documents/Strategy/DAF%20Enterprise%20Zero%20Trust%20Roadmap%20and%20Release%20Notes_v2.0.pdf?ver=36cbAKNEe7JiRVAPFwWepg%3d%3d&#34;&gt;here&lt;/a&gt;, all linked from &lt;a href=&#34;https://www.dafcio.af.mil/&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I think the fundamental first important point about the strategy document is that it exists at all. There is an actual organization of significant size that has a strategy and is implementing it. Many can learn from this.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Snippets</title>
-      <link>http://localhost:1313/snippets/</link>
-      <pubDate>Wed, 19 Mar 2025 12:05:12 +0000</pubDate>
-      <guid>http://localhost:1313/snippets/</guid>
-      <description>&lt;p&gt;Altijd bedenken: is er iets dat recent bij een klant is geweest?&lt;/p&gt;
-&lt;p&gt;Heel veel NTS bij de logs van recente trainingen en workshops.&lt;/p&gt;
-&lt;p&gt;Wat is server en client? Bij X is bijvoorbeeld de server op de client.&lt;/p&gt;
-&lt;p&gt;Oh ja, die discussie. Ben je verantwoordelijk als je onveilige software maakt, of alleen als je die als service beschikbaar stelt?&lt;/p&gt;
-&lt;p&gt;Risk: LMS 3-2&lt;/p&gt;
-&lt;p&gt;CERN data center&lt;/p&gt;
-&lt;p&gt;verhaal over corporate en MKB, maar ook individual, en society.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Infrastructures - the graphic novel</title>

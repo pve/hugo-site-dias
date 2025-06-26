@@ -34,7 +34,7 @@ Interestingly, the first provider could use this insight to extend its functiona
 Value propositions are delivered to customers through communications, distribution and sales channels.
 
 It is often assumed that cloud computing relies solely on self-service direct sales, but the reality is much more diverse. SaaS providers in particular are developing extensive partner programs.
-The typical enterprise software solution is not implemented overnight. It takes attention to change management and alignment on master data for example. That is why system integrators often experience the move from on-premis to SaaS as relatively painless. They are doing the same job on a different environment.
+The typical enterprise software solution is not implemented overnight. It takes attention to change management and alignment on master data for example. That is why system integrators often experience the move from on-premises to SaaS as relatively painless. They are doing the same job on a different environment.
 Less invasive SaaS offerings are frequently aggregated in broker portals, commonly referred to as 'enterprise app stores.' These portals add value through consolidated billing, self-service provisioning, identity management, and potentially some data integration. But that is one to paint on another business model canvas.
 
 Another natural extension of the SaaS model is exposing the core functionality through an API. While not directly accessed by the consumer, this does allow integration with other SaaS providers. Our project collaboration software could integrate with an existing cloud storage provider.
@@ -44,7 +44,7 @@ The main SaaS channels therefore are direct self-service sales, value added re-s
 
 Customer relations are established and maintained with each specific customer segment.
 
-The lure of cloud computing is that the provider can have a much more direct relation with the customer than is possible with an on-premis solution. Technically, the provider can potentially see each and every move from the users. Which software builder would not like to be able to see the popularity of every feature in real-time? This allows for much more rapid innovation cycles.
+The lure of cloud computing is that the provider can have a much more direct relation with the customer than is possible with an on-premises solution. Technically, the provider can potentially see each and every move from the users. Which software builder would not like to be able to see the popularity of every feature in real-time? This allows for much more rapid innovation cycles.
 
 It is not impossible for the loop from idea to wide customer feedback to be closed in a couple of hours.
 However, this power can bring the provider in conflict with the consumer who might object to its data being used. As an example that is close to the limit of what might be considered acceptable consider the following case. An on-line bookkeeping service for individuals allows them to categorize payments to merchants. Once enough individuals categorized Danny’s steakhouse as a restaurant, this can then also be suggested to other clients of Danny’s. Is it legal to use data from one cloud consumer to deliver value to another? Generally speaking, the answer is no, but it may be acceptable if only aggregate data is used.
@@ -94,8 +94,12 @@ Interestingly, for a lot of SaaS companies, most of the development cost is abou
 
 ### Summary
 
-Again we see the business model canvas as a good tool to map out the particularities of cloud provider business models. It points us to provider particularities and indicates some important strategic choices.
+Again we see the business model canvas as a good tool to map out the particularities of cloud provider business models.
+It points us to provider particularities and indicates some important strategic choices.
+
+<!-- start-hugo-only -->
 
 See also on YouTube:
 
 {{< youtube ASUGXqB8OTo >}}
+<!-- end-hugo-only -->

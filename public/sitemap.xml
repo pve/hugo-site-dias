@@ -20,6 +20,12 @@
     <loc>http://localhost:1313/book/diginfra/</loc>
     <lastmod>2025-03-09T18:54:11+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/risk-value/</loc>
+    <lastmod>2025-06-24T14:37:11+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/first-network/</loc>
+    <lastmod>2025-06-08T14:31:28+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/zt-myths/</loc>
     <lastmod>2025-06-03T10:37:45+00:00</lastmod>
   </url><url>
@@ -62,9 +68,6 @@
     <loc>http://localhost:1313/posts/vibe-mcp/</loc>
     <lastmod>2025-04-27T08:39:55+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/book/diginfra/promise-theory/</loc>
-    <lastmod>2025-04-25T21:21:54+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/mcp-risk/</loc>
     <lastmod>2025-04-23T06:03:44+00:00</lastmod>
   </url><url>
@@ -89,8 +92,8 @@
     <loc>http://localhost:1313/book/value/</loc>
     <lastmod>2025-03-09T18:54:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/book/diginfra/promise-contract/</loc>
-    <lastmod>2025-05-15T21:03:24+00:00</lastmod>
+    <loc>http://localhost:1313/book/diginfra/promise-theory/</loc>
+    <lastmod>2025-04-25T21:21:54+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/power/ethics-of-power/</loc>
     <lastmod>2025-04-24T20:30:57+00:00</lastmod>
@@ -98,17 +101,23 @@
     <loc>http://localhost:1313/book/change/control-feedback/</loc>
     <lastmod>2025-04-19T20:01:07+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/diginfra/promise-contract/</loc>
+    <lastmod>2025-05-15T21:03:24+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/shared-service-conflict/</loc>
+    <lastmod>2025-06-06T10:32:19+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/book/risk/controls/</loc>
     <lastmod>2025-05-19T21:39:41+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/book/diginfra/things-break-at-scale/</loc>
-    <lastmod>2025-04-16T21:16:12+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/power/</loc>
     <lastmod>2025-03-09T18:54:24+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/risk/mitigation/</loc>
     <lastmod>2025-05-13T09:39:02+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/things-break-at-scale/</loc>
+    <lastmod>2025-04-16T21:16:12+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/diginfra/essence-digital-infrastructures/</loc>
     <lastmod>2025-03-10T21:34:21+00:00</lastmod>
@@ -118,9 +127,6 @@
   </url><url>
     <loc>http://localhost:1313/book/change/technical-meta-model/</loc>
     <lastmod>2025-03-22T17:56:43+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/book/diginfra/lunch-spain/</loc>
-    <lastmod>2025-03-15T16:06:44+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/value/intro-to-value/</loc>
     <lastmod>2025-03-11T09:10:54+00:00</lastmod>
@@ -139,6 +145,9 @@
   </url><url>
     <loc>http://localhost:1313/book/change/</loc>
     <lastmod>2025-04-07T22:04:09+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/lunch-spain/</loc>
+    <lastmod>2025-03-15T16:06:44+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/power/positions-of-power-it/</loc>
     <lastmod>2025-03-09T11:06:48+00:00</lastmod>
@@ -203,14 +212,17 @@
     <loc>http://localhost:1313/book/value/promise-theory-services/</loc>
     <lastmod>2025-05-05T05:58:14+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/diginfra/customer-service/</loc>
+    <lastmod>2025-06-05T15:03:13+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/book/diginfra/unified-theory/</loc>
     <lastmod>2025-05-12T21:05:36+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-03T10:37:45+00:00</lastmod>
+    <lastmod>2025-06-24T14:37:11+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-06-03T10:37:45+00:00</lastmod>
+    <lastmod>2025-06-24T14:37:11+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/home/optimalisatie/</loc>
     <lastmod>2025-05-12T06:59:12+00:00</lastmod>
@@ -238,9 +250,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/airforce-zero-trust-strategy/</loc>
     <lastmod>2025-03-21T12:26:58+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/snippets/</loc>
-    <lastmod>2025-03-19T12:05:12+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/book/index/</loc>
     <lastmod>2025-03-09T16:52:22+00:00</lastmod>

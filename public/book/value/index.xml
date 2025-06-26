@@ -17,7 +17,7 @@
 If we know that, we can try to understand how we can judge its value, or even start to understand how we can create value with information.&lt;/p&gt;
 &lt;p&gt;In Claude Shannon&amp;rsquo;s theory of communication, information is about reducing uncertainty.
 Another way is to say that more information means less noise because if you add noise to information, that information will have more uncertainty and less value.&lt;/p&gt;
-&lt;p&gt;To visualise this, think of a picture that is obscured by a bit of fog or haze.
+&lt;p&gt;To visualize this, think of a picture that is obscured by a bit of fog or haze.
 You can still see some of the picture, but not very clearly.
 You will make more errors when trying to understand what the picture means.&lt;/p&gt;</description>
     </item>
@@ -56,7 +56,7 @@ Back in the old days, business software was primarily written to automate &lt;st
       <link>http://localhost:1313/book/value/business-model-canvas-iaas/</link>
       <pubDate>Sat, 15 Nov 2014 11:18:17 +0000</pubDate>
       <guid>http://localhost:1313/book/value/business-model-canvas-iaas/</guid>
-      <description>&lt;h2 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h2&gt;
+      <description>&lt;h3 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h3&gt;
 &lt;p&gt;The business model canvas is a visual template for developing and discussing business models. For more information, see &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;http://en.wikipedia.org/wiki/Business_Model_Canvas&lt;/a&gt; and &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;http://www.businessmodelgeneration.com/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The business model canvas has nine basic building blocks and specific relations between those blocks. I&amp;rsquo;ll illustrate them here.&lt;/p&gt;
 &lt;p&gt;The example used in this section is Amazon Web Services (AWS), particularly EC2 (virtual machines on demand). This is an Infrastructure as a Service offering. The power of the business model canvas approach becomes clear when we see how it can distinguish between various cloud service offerings.
@@ -68,7 +68,7 @@ Back in the old days, business software was primarily written to automate &lt;st
       <pubDate>Mon, 15 Dec 2014 11:18:17 +0000</pubDate>
       <guid>http://localhost:1313/book/value/business-model-canvas-saas/</guid>
       <description>&lt;p&gt;Here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.&lt;/p&gt;
-&lt;h2 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h2&gt;
+&lt;h3 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h3&gt;
 &lt;p&gt;The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models. To learn more, visit &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;Wikipedia&lt;/a&gt; or the &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;Business Model Generation&lt;/a&gt; website.&lt;/p&gt;
 &lt;p&gt;The Business Model Canvas is composed of nine essential building blocks, which define the interconnections and relationships within a business model. In this article, we&amp;rsquo;ll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.&lt;/p&gt;</description>
     </item>
@@ -78,7 +78,7 @@ Back in the old days, business software was primarily written to automate &lt;st
       <pubDate>Sun, 03 Jun 2018 17:06:57 +0000</pubDate>
       <guid>http://localhost:1313/book/value/three-ways-to-go-cloud/</guid>
       <description>&lt;p&gt;Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.&lt;/p&gt;
-&lt;h2 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h2&gt;
+&lt;h3 id=&#34;three-approaches&#34;&gt;Three approaches&lt;/h3&gt;
 &lt;p&gt;Companies dying to get rid of their data centers often get started on a &lt;strong&gt;‘lift and shift’&lt;/strong&gt; approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.&lt;/p&gt;</description>
     </item>
     <item>
