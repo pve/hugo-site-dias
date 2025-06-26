@@ -7,9 +7,10 @@ weight: 40
 
 ### Business Model Canvas
 
-The business model canvas is a visual template for developing and discussing business models. For more information, see <http://en.wikipedia.org/wiki/Business_Model_Canvas> and <http://www.businessmodelgeneration.com/>.
+The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models.
+For additional information, see <http://en.wikipedia.org/wiki/Business_Model_Canvas>.
 
-The business model canvas has nine basic building blocks and specific relations between those blocks. I'll illustrate them here.
+The business model canvas has nine basic building blocks. These define the interconnections and relationships within a business model.
 
 The example used in this section is Amazon Web Services (AWS), particularly EC2 (virtual machines on demand). This is an Infrastructure as a Service offering. The power of the business model canvas approach becomes clear when we see how it can distinguish between various cloud service offerings.
 ![IaaS Cloud Canvas](BusinessCanvasIaaS.png)
@@ -30,13 +31,16 @@ The value proposition of a cloud computing service is driven by its five essenti
 
 Value propositions are delivered to customers through communication, distribution, and sales channels.
 
-It is often assumed that cloud computing relies solely on self-service direct sales, but the reality is much more diverse. SaaS providers, in particular, are developing extensive partner programs. AWS primarily employs a self-service direct model, where delivery is through APIs. The model is enhanced by premium support.
+It is often assumed that cloud computing relies solely on self-service direct sales, but the reality is much more diverse. SaaS providers, in particular, are developing extensive partner programs. AWS primarily employed a self-service direct model, where delivery is through APIs. The model is enhanced by premium support.
 
 ### Customer Relationships (CR)
 
 Customer relations are established and maintained with each specific customer segment.
 
-One way AWS maintains relationships with its customer segments is through conferences. The 2013 re:Invent developer conference attracted 9,000 visitors. In 2024, the conference, no longer solely focused on developers, drew around 60,000 visitors. Additionally, there are vibrant online communities.
+One way AWS maintains relationships with its customer segments is through conferences. The 2013 re:Invent developer conference attracted 9,000 visitors.
+In 2024, the conference, no longer solely focused on developers, drew around 60,000 visitors.
+Additionally, there are vibrant online communities.
+AWS has shifted its customer relationships significantly since 2013, targeting new customer segments, and consequently, new relationship channels.
 
 ### Revenue Streams (RS)
 
@@ -52,7 +56,7 @@ AWS owns massive amounts of hardware, estimated at 1 million servers or more in 
 
 ### Key Activities (KA)
 
-At AWS the key activity, delivery, is highly automated. But at the AWS scale, oversight and resources
+At AWS the key activity, delivery, is highly automated. But at the AWS scale, oversight and resource
 planning is still a significant effort. Optimizing assets versus utilization is very essential in the IaaS
 business model. Through economies of scale, AWS is able to spend a lot of effort on these activities.
 
@@ -74,4 +78,6 @@ electrical power and telecommunications, and in people for managing the systems.
 
 ### Summary
 
-The business model canvas is a useful tool to map out the particulars of cloud provider business models. In this section, we have only looked at the basics of a particular infrastructure provider. For software-as-a-service providers and internal/private cloud providers, the canvas can also be used to discuss their differences.
+The business model canvas is a useful tool to map out the particulars of cloud provider business models. In this section, we have only looked at the basics of a particular infrastructure provider.
+It is also useful for software-as-a-service providers as we will see in the next unit.
+It can also be used to expand on the business model of internal/private cloud providers.

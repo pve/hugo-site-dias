@@ -18,7 +18,7 @@ You will make more errors when trying to understand what the picture means.
 Similarly, think of the difference between a grainy low resolution image, where you can see the individual pixels, versus a high resolution version of that image.
 More pixels, more bits, less uncertainty.
 
-(we can use two pictures here)
+![](/deploy-images/shannonresolution.png)
 
 It is the same with sound.
 Being in the hall with musicians gives you much more opportunity to hear all instruments and singers compared to listening to it over the phone.

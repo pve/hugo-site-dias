@@ -3,7 +3,6 @@ title: Controlling Cloud Sprawl in 2012
 draft: false
 date: '2012-02-01T07:21:00'
 ---
-A 2012 case study
 
 Even in a cloud world, reducing server count is a lofty goal in itself.
 

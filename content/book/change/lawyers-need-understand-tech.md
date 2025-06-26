@@ -16,6 +16,6 @@ Because of that, these people (in this case: procurement and legal) need to unde
 
 This is important. Insufficient understanding delays the whole assessment process, and reduces its quality. As one of my course participants, a legal person, once said:
 
-> “ _When I go into a conversation with a cloud provider I have time for let’s say 10 questions. If all these questions go to understanding basic cloud terminology and technology, I have missed the opportunity to talk about the real risk and opportunity for our company_ ”.
+> “_When I go into a conversation with a cloud provider I have time for let’s say 10 questions. If all these questions go to understanding basic cloud terminology and technology, I have missed the opportunity to talk about the real risk and opportunity for our company_”.
 
 The conclusion must be obvious. Educate your lawyers, procurement and so on. Help them understand the cloud well enough. Help them know where technical boundaries need to be translated into legal controls.

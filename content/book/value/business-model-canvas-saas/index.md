@@ -5,13 +5,11 @@ draft: false
 weight: 50
 ---
 
-Here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.
+Here is a high-level overview of the SaaS provider business model and some of the strategic options that are in there.
 
 ### Business Model Canvas
 
-The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models. To learn more, visit [Wikipedia](http://en.wikipedia.org/wiki/Business_Model_Canvas) or the [Business Model Generation](http://www.businessmodelgeneration.com/) website.
-
-The Business Model Canvas is composed of nine essential building blocks, which define the interconnections and relationships within a business model. In this article, we'll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.
+ In this unit, we'll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.
 
 ![SaaS Cloud Canvas](BusinessCanvasSaaS.png)
 
@@ -25,7 +23,7 @@ It is characteristic of the SaaS model that this could basically be anybody, not
 
 Value propositions reflect the customer problems and needs. This is the central element that describes why the customer would ultimately pay for the product or service.
 
-The essential characteristics of cloud computing may or may not relate directly to the core value proposition of the software application. In our first example, the core value proposition —automated bookkeeping— is unrelated to cloud computing. Of course cloud computing’s characteristics give the SaaS proposition an edge above its direct on-premises alternatives even if the functionality would be the same. Self-service provisioning leads to quicker time to deploy, more scalability in usage (whether accounts or transactions), lower investments or commitments, and potentially lower cost.
+The essential characteristics of cloud computing may or may not relate directly to the core value proposition of the software application. In our first example, the core value proposition —automated bookkeeping— is unrelated to cloud computing. Of course, cloud computing’s characteristics give the SaaS proposition an edge above its direct on-premises alternatives even if the functionality would be the same. Self-service provisioning leads to quicker time to deploy, more scalability in usage (whether accounts or transactions), lower investments or commitments, and potentially lower cost.
 The value proposition is fundamentally different in the second example, the project collaboration support site. In this example, the cloud's characteristic of broad network accessibility directly enhances the software's usefulness for users spanning company boundaries.
 Interestingly, the first provider could use this insight to extend its functionality beyond what would be possible in an on-premises solution. Think collaboration with accountants, suppliers and possibly customers, or channel partners.
 
@@ -37,7 +35,7 @@ It is often assumed that cloud computing relies solely on self-service direct sa
 The typical enterprise software solution is not implemented overnight. It takes attention to change management and alignment on master data for example. That is why system integrators often experience the move from on-premises to SaaS as relatively painless. They are doing the same job on a different environment.
 Less invasive SaaS offerings are frequently aggregated in broker portals, commonly referred to as 'enterprise app stores.' These portals add value through consolidated billing, self-service provisioning, identity management, and potentially some data integration. But that is one to paint on another business model canvas.
 
-Another natural extension of the SaaS model is exposing the core functionality through an API. While not directly accessed by the consumer, this does allow integration with other SaaS providers. Our project collaboration software could integrate with an existing cloud storage provider.
+Another natural extension of the SaaS model is exposing the core functionality through an API. While not often directly accessed by the consumer, this does allow integration with other SaaS providers. Our project collaboration software could integrate with an existing cloud storage provider.
 The main SaaS channels therefore are direct self-service sales, value added re-sellers, system integrators, and enterprise app-stores. The notion of cloud broker fits in here as well, but dissecting its many shapes and forms is a topic beyond the scope of this section.
 
 ### Customer Relationships (CR)
@@ -47,7 +45,8 @@ Customer relations are established and maintained with each specific customer se
 The lure of cloud computing is that the provider can have a much more direct relation with the customer than is possible with an on-premises solution. Technically, the provider can potentially see each and every move from the users. Which software builder would not like to be able to see the popularity of every feature in real-time? This allows for much more rapid innovation cycles.
 
 It is not impossible for the loop from idea to wide customer feedback to be closed in a couple of hours.
-However, this power can bring the provider in conflict with the consumer who might object to its data being used. As an example that is close to the limit of what might be considered acceptable consider the following case. An on-line bookkeeping service for individuals allows them to categorize payments to merchants. Once enough individuals categorized Danny’s steakhouse as a restaurant, this can then also be suggested to other clients of Danny’s. Is it legal to use data from one cloud consumer to deliver value to another? Generally speaking, the answer is no, but it may be acceptable if only aggregate data is used.
+However, this power can bring the provider in conflict with the consumer who might object to its data being used. As an example that is close to the limit of what might be considered acceptable consider the following case.
+An on-line bookkeeping service for individuals allows them to categorize payments to merchants. Once enough individuals categorized Danny’s steakhouse as a restaurant, this can then also be suggested to other clients of Danny’s. Is it legal to use data from one cloud consumer to deliver value to another? Generally speaking, the answer is no, but it may be acceptable if only aggregate data is used.
 Support is often easier on-line, and on-line communities often add considerable value for the consumer.
 
 ### Revenue Streams (RS)
@@ -87,19 +86,20 @@ An additional fundamental choice for a SaaS provider is: who runs and owns the d
 All business model elements discussed above impact the cost structure.
 
 In more traditional IT service models the revenue streams are tightly coupled to the cost structure. The cloud computing innovation is also about decoupling these.
-In software, revenue streams are pretty disconnected from the cost structure. After all, when the software is written, shipping it to customers has very low incremental cost, even though servicing customers has not. For software as a service this is a little less so, as there is actual infrastructure supporting the service. The cost of that infrastructure is related to the usage volume.
+In software, revenue streams are pretty disconnected from the cost structure. After all, when the software is written, shipping it to customers has very low incremental cost, even though servicing customers has not.
+For software as a service this is a little less so, as there is actual infrastructure necessary to support the service.
+The cost of that infrastructure is related to the usage volume.
 
 The most significant cost elements related to software development are in creating and maintaining functionality, and in maintaining the development and delivery infrastructure. For the software delivery side there will be costs related to in company server infrastructure or incurred from key partners such as IaaS providers.
-Interestingly, for a lot of SaaS companies, most of the development cost is about supporting future customer needs, not current customer needs. An exception could be the bookkeeping firm, that might be tracking tax regulations as they tend to change regularly.
+Interestingly, for a lot of SaaS companies, most of the development cost is about supporting future customer needs, not current customer needs. An exception could be the bookkeeping firm, which might be tracking tax regulations as they tend to change regularly.
 
 ### Summary
 
 Again we see the business model canvas as a good tool to map out the particularities of cloud provider business models.
 It points us to provider particularities and indicates some important strategic choices.
 
-<!-- start-hugo-only -->
-
+<div>
 See also on YouTube:
 
 {{< youtube ASUGXqB8OTo >}}
-<!-- end-hugo-only -->
+</div>

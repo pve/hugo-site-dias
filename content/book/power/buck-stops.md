@@ -5,6 +5,7 @@ title: 'Where the buck stops'
 weight: 25
 ---
 The US president Harry S. Truman famously had a sign on his desk that said:
+
 >The buck stops here.
 
 This refers to the process of "passing up the buck", meaning to escalate decisions to the next higher level in the organization.
