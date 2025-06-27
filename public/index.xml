@@ -906,7 +906,7 @@ Here is the story of my site being infected with malware, viewed by a profession
       <link>http://localhost:1313/posts/ai-risk-classification/</link>
       <pubDate>Mon, 24 Mar 2025 19:45:36 +0000</pubDate>
       <guid>http://localhost:1313/posts/ai-risk-classification/</guid>
-      <description>&lt;p&gt;How cool would it be to let an AI do some of the grunt work in analysing the risk of applications and services. This has the potential to speed up the work of risk assessors.&lt;/p&gt;
+      <description>&lt;p&gt;How cool would it be to let an AI do some of the grunt work in analyzing the risk of applications and services. This has the potential to speed up the work of risk assessors.&lt;/p&gt;
 &lt;p&gt;But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
     </item>
@@ -1025,8 +1025,7 @@ You can also get the story on my YouTube video.&lt;/p&gt;</description>
       <link>http://localhost:1313/book/cases/stopping-senseless-sprawl-of-private-clouds/</link>
       <pubDate>Wed, 01 Feb 2012 07:21:00 +0000</pubDate>
       <guid>http://localhost:1313/book/cases/stopping-senseless-sprawl-of-private-clouds/</guid>
-      <description>&lt;p&gt;A 2012 case study&lt;/p&gt;
-&lt;p&gt;Even in a cloud world, reducing server count is a lofty goal in itself.&lt;/p&gt;
+      <description>&lt;p&gt;Even in a cloud world, reducing server count is a lofty goal in itself.&lt;/p&gt;
 &lt;p&gt;After all, you would be paying for all those servers anyway. Understand that sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.&lt;/p&gt;
 &lt;p&gt;Back in 2012 I did an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.&lt;/p&gt;</description>
     </item>
