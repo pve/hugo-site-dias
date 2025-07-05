@@ -10,7 +10,7 @@ And as we had enough time, we had lunch in La Jonquera.
 
 At the restaurant's checkout I noticed a peculiar array of devices: there were four payment terminals.
 
-![payment terminals](payterminal-716603.jpg)
+![payment terminals](/payterminal-716603.jpg)
 
 I'd never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparently not over here.
 
