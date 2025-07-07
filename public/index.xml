@@ -404,23 +404,11 @@ There are always differences of opinions in any group, if only to decide when to
       <link>http://localhost:1313/book/value/automation-business-case/</link>
       <pubDate>Fri, 04 Jul 2025 06:51:53 +0000</pubDate>
       <guid>http://localhost:1313/book/value/automation-business-case/</guid>
-      <description>&lt;p&gt;IT is about automation, but not all automation brings value.&lt;/p&gt;
-&lt;p&gt;This XKCD graphic illustrates when automating repeating tasks, or even just parts of them, brings benefit.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;XKCD 1205&#34; loading=&#34;lazy&#34; src=&#34;https://imgs.xkcd.com/comics/is_it_worth_the_time.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The objective of this diagram is to show how much time you can invest in automating tasks.
-You can think of tasks such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;shaving 3 web clicks off a workflow&lt;/li&gt;
-&lt;li&gt;converting a spreadsheet to another data format&lt;/li&gt;
-&lt;li&gt;making an appointment&lt;/li&gt;
-&lt;li&gt;looking up some research&lt;/li&gt;
-&lt;li&gt;running a test&lt;/li&gt;
-&lt;li&gt;installing a new version of a piece of software&lt;/li&gt;
-&lt;li&gt;saving a piece of evidence for an audit&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Such manual tasks can be made shorter, or made to disappear all together with a bit more automation.
-The top row of the diagram indicates how often that task is done.
-The left column shows how much time the automation would save, per individual execution of the task.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Automation is a big part of IT, but not all automation brings value.
+Automation takes time and effort, upfront, and any benefits come later.&lt;/p&gt;
+&lt;p&gt;Think of the IT projects you were involved in, most of aimed at providing a measurable benefit somewhere.&lt;/p&gt;
+&lt;p&gt;This graphic (from xkcd, a series of webcomics) illustrates when automating repetitive tasks, or even just parts of them, brings benefit.
+In other words, is there a &lt;em&gt;business case&lt;/em&gt; for such an intervention?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control Through Feedback Loops</title>
