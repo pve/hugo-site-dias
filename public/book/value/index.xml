@@ -4,9 +4,9 @@
     <title>Value on Digital Infrastructures at Scale</title>
     <link>http://localhost:1313/book/value/</link>
     <description>Recent content in Value on Digital Infrastructures at Scale</description>
-    <generator>Hugo -- 0.147.6</generator>
+    <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 May 2025 11:33:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jul 2025 06:51:53 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/value/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is the value of information?</title>
@@ -30,6 +30,17 @@ You will make more errors when trying to understand what the picture means.&lt;/
 That is where their prime value is.&lt;/p&gt;
 &lt;p&gt;The internet is a great example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
 &lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Automation Business Case</title>
+      <link>http://localhost:1313/book/value/automation-business-case/</link>
+      <pubDate>Fri, 04 Jul 2025 06:51:53 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/automation-business-case/</guid>
+      <description>&lt;p&gt;Automation is a big part of IT, but not all automation brings value.
+Automation takes time and effort, upfront, and any benefits come later.&lt;/p&gt;
+&lt;p&gt;Think of the IT projects you were involved in, most of those aimed at providing a measurable benefit somewhere.&lt;/p&gt;
+&lt;p&gt;This diagram (from xkcd, a series of webcomics) illustrates when automating repetitive tasks, or even just parts of them, brings benefit.
+In other words, is there a &lt;em&gt;business case&lt;/em&gt; for such an intervention?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Provider Value</title>
@@ -57,8 +68,9 @@ Back in the old days, business software was primarily written to automate &lt;st
       <pubDate>Sat, 15 Nov 2014 11:18:17 +0000</pubDate>
       <guid>http://localhost:1313/book/value/business-model-canvas-iaas/</guid>
       <description>&lt;h3 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h3&gt;
-&lt;p&gt;The business model canvas is a visual template for developing and discussing business models. For more information, see &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;http://en.wikipedia.org/wiki/Business_Model_Canvas&lt;/a&gt; and &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;http://www.businessmodelgeneration.com/&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The business model canvas has nine basic building blocks and specific relations between those blocks. I&amp;rsquo;ll illustrate them here.&lt;/p&gt;
+&lt;p&gt;The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models.
+For additional information, see &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;http://en.wikipedia.org/wiki/Business_Model_Canvas&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The business model canvas has nine basic building blocks. These define the interconnections and relationships within a business model.&lt;/p&gt;
 &lt;p&gt;The example used in this section is Amazon Web Services (AWS), particularly EC2 (virtual machines on demand). This is an Infrastructure as a Service offering. The power of the business model canvas approach becomes clear when we see how it can distinguish between various cloud service offerings.
 &lt;img alt=&#34;IaaS Cloud Canvas&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/book/value/business-model-canvas-iaas/BusinessCanvasIaaS.png&#34;&gt;&lt;/p&gt;</description>
     </item>
@@ -67,10 +79,12 @@ Back in the old days, business software was primarily written to automate &lt;st
       <link>http://localhost:1313/book/value/business-model-canvas-saas/</link>
       <pubDate>Mon, 15 Dec 2014 11:18:17 +0000</pubDate>
       <guid>http://localhost:1313/book/value/business-model-canvas-saas/</guid>
-      <description>&lt;p&gt;Here is a high level overview of the SaaS provider business model and some of the strategic options that are in there.&lt;/p&gt;
+      <description>&lt;p&gt;Here is a high-level overview of the SaaS provider business model and some of the strategic options that are in there.&lt;/p&gt;
 &lt;h3 id=&#34;business-model-canvas&#34;&gt;Business Model Canvas&lt;/h3&gt;
-&lt;p&gt;The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models. To learn more, visit &lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Model_Canvas&#34;&gt;Wikipedia&lt;/a&gt; or the &lt;a href=&#34;http://www.businessmodelgeneration.com/&#34;&gt;Business Model Generation&lt;/a&gt; website.&lt;/p&gt;
-&lt;p&gt;The Business Model Canvas is composed of nine essential building blocks, which define the interconnections and relationships within a business model. In this article, we&amp;rsquo;ll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.&lt;/p&gt;</description>
+&lt;p&gt;In this unit, we&amp;rsquo;ll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;SaaS Cloud Canvas&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/book/value/business-model-canvas-saas/BusinessCanvasSaaS.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;customer-segments-cs&#34;&gt;Customer segments (CS)&lt;/h3&gt;
+&lt;p&gt;In the Business Model Canvas, “Customer Segments” are the groups of customers that the company ultimately serves, I.e. the ones that consume and pay for the services.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Multiple Ways to Go Cloud</title>

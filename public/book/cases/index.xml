@@ -4,7 +4,7 @@
     <title>Cases on Digital Infrastructures at Scale</title>
     <link>http://localhost:1313/book/cases/</link>
     <description>Recent content in Cases on Digital Infrastructures at Scale</description>
-    <generator>Hugo -- 0.147.6</generator>
+    <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 May 2025 14:57:38 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/cases/index.xml" rel="self" type="application/rss+xml" />
@@ -46,8 +46,7 @@ Here are the major features of the example:&lt;/p&gt;</description>
       <link>http://localhost:1313/book/cases/stopping-senseless-sprawl-of-private-clouds/</link>
       <pubDate>Wed, 01 Feb 2012 07:21:00 +0000</pubDate>
       <guid>http://localhost:1313/book/cases/stopping-senseless-sprawl-of-private-clouds/</guid>
-      <description>&lt;p&gt;A 2012 case study&lt;/p&gt;
-&lt;p&gt;Even in a cloud world, reducing server count is a lofty goal in itself.&lt;/p&gt;
+      <description>&lt;p&gt;Even in a cloud world, reducing server count is a lofty goal in itself.&lt;/p&gt;
 &lt;p&gt;After all, you would be paying for all those servers anyway. Understand that sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.&lt;/p&gt;
 &lt;p&gt;Back in 2012 I did an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.&lt;/p&gt;</description>
     </item>

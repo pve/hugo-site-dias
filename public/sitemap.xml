@@ -98,6 +98,9 @@
     <loc>http://localhost:1313/book/power/ethics-of-power/</loc>
     <lastmod>2025-04-24T20:30:57+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/book/value/automation-business-case/</loc>
+    <lastmod>2025-07-04T06:51:53+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/book/change/control-feedback/</loc>
     <lastmod>2025-04-19T20:01:07+00:00</lastmod>
   </url><url>
@@ -219,7 +222,7 @@
     <lastmod>2025-05-12T21:05:36+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-24T14:37:11+00:00</lastmod>
+    <lastmod>2025-07-04T06:51:53+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-06-24T14:37:11+00:00</lastmod>
