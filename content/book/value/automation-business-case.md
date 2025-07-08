@@ -8,9 +8,9 @@ weight: 12
 Automation is a big part of IT, but not all automation brings value.
 Automation takes time and effort, upfront, and any benefits come later.
 
-Think of the IT projects you were involved in, most of aimed at providing a measurable benefit somewhere.
+Think of the IT projects you were involved in, most of those aimed at providing a measurable benefit somewhere.
 
-This graphic (from xkcd, a series of webcomics) illustrates when automating repetitive tasks, or even just parts of them, brings benefit.
+This diagram (from xkcd, a series of webcomics) illustrates when automating repetitive tasks, or even just parts of them, brings benefit.
 In other words, is there a *business case* for such an intervention?
 
 ![xkcd 1205](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
@@ -35,7 +35,7 @@ Each cell in the table then shows the amount of effort that you can spend on tha
 The table contains a number of black (empty) cells.
 My understanding is that these are 'impossible' situations.
 For example, you cannot execute a one-hour task fifty times a day, according to this table.
-This is only true, in my opinion, if you assume only one person doing that task.
+This is only true, in my opinion, if you assume a single person is doing that task.
 If a whole team can benefit from the automation, there would be useful numbers in those cells as well.
 
 Each cell shows what investment would have a five-year *break-even point*, as it is called, that is: if you spend this amount of time on it, the break-even point will be five years.
