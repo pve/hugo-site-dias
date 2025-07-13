@@ -6,7 +6,22 @@
     <description>Recent content in Contents on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 12 Jul 2025 06:26:24 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Can Machines Code?</title>
+      <link>http://localhost:1313/book/posts/monkey-coding/</link>
+      <pubDate>Sat, 12 Jul 2025 06:26:24 +0000</pubDate>
+      <guid>http://localhost:1313/book/posts/monkey-coding/</guid>
+      <description>&lt;h3 id=&#34;can-machines-code&#34;&gt;Can machines code?&lt;/h3&gt;
+&lt;p&gt;People call LLMs statistical completion engines, and that they therefore cannot write computer code.
+While the first may be true, the conclusion not necessarily follows.&lt;/p&gt;
+&lt;p&gt;In this text I am reviewing my experiences with AI assisted coding.
+Inspired by modern discoveries in e.g. context engineering and swarm coding (references) I decided to give it a shot.&lt;/p&gt;
+&lt;p&gt;I had a little used SaaS application (an LMS) that was nevertheless costing serious money.
+It was relatively easy to extract the Gigabytes of content in there, also through a bit of AI assistance.
+So I decided to rebuild the app, or at least a minimal version of it.
+Hey, how hard can it be with Claude Code?&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

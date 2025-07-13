@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jul 2025 06:51:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jul 2025 06:26:24 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,21 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Can Machines Code?</title>
+      <link>http://localhost:1313/book/posts/monkey-coding/</link>
+      <pubDate>Sat, 12 Jul 2025 06:26:24 +0000</pubDate>
+      <guid>http://localhost:1313/book/posts/monkey-coding/</guid>
+      <description>&lt;h3 id=&#34;can-machines-code&#34;&gt;Can machines code?&lt;/h3&gt;
+&lt;p&gt;People call LLMs statistical completion engines, and that they therefore cannot write computer code.
+While the first may be true, the conclusion not necessarily follows.&lt;/p&gt;
+&lt;p&gt;In this text I am reviewing my experiences with AI assisted coding.
+Inspired by modern discoveries in e.g. context engineering and swarm coding (references) I decided to give it a shot.&lt;/p&gt;
+&lt;p&gt;I had a little used SaaS application (an LMS) that was nevertheless costing serious money.
+It was relatively easy to extract the Gigabytes of content in there, also through a bit of AI assistance.
+So I decided to rebuild the app, or at least a minimal version of it.
+Hey, how hard can it be with Claude Code?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Can AI automate compliance?</title>
@@ -781,6 +796,16 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
 &lt;p&gt;Cloud distributes responsibility for IT services across an IT supply chain. This supply chain is composed of independent providers. This implies that there are these companies have &lt;strong&gt;technical boundaries&lt;/strong&gt; that are matched by organizational and &lt;strong&gt;contractual boundaries&lt;/strong&gt;. This is new, we did not have that before the digital revolution.
 Amazon calls this the &lt;strong&gt;shared&lt;/strong&gt; responsibility model for cloud security.
 I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;? For example, who is responsible for patching the Operating System in an IaaS service model?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A guide to digital sovereignty, autonomy, and business resilience</title>
+      <link>http://localhost:1313/book/risk/guide-autonomy-resilience/</link>
+      <pubDate>Fri, 11 Jul 2025 14:57:31 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/guide-autonomy-resilience/</guid>
+      <description>&lt;p&gt;Imagine, you are part of the government of a medium sized nation, and you have just realized that IT has become a substantial factor in your operation.
+Or you have a similar position in a manufacturing industry, or in the financial sector.
+As IT increased in volume, you have tried to keep its costs down.
+Outsourcing to more experienced partners was an option, and so was the use of cloud computing, for example for your Office applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organization Size Matters - Dunbar&#39;s number</title>
