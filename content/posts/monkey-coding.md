@@ -5,13 +5,13 @@ title: 'Can Machines Code?'
 weight: 10
 ---
 
-### Can machines code?
+### The approach
 
 People call LLMs statistical completion engines, and that they therefore cannot write computer code.
 While the first may be true, the conclusion not necessarily follows.
 
-In this text I am reviewing my experiences with AI assisted coding.
-Inspired by modern discoveries in e.g. context engineering and swarm coding (references) I decided to give it a shot.
+Let's try this out!
+Inspired by modern discoveries in, for example, context engineering and swarm coding (references to come) I decided to give AI assisted coding it a shot.
 
 I had a little used SaaS application (an LMS) that was nevertheless costing serious money.
 It was relatively easy to extract the Gigabytes of content in there, also through a bit of AI assistance.
@@ -94,5 +94,5 @@ What I have learned here is that this is quite dependent on making the best prac
 ### Vibe coding
 
 An afterthought: in his original tweet Andrej Karpathy introduced 'vibe coding' as the flow of being engaged with the assistant in a cycle of giving commands and fixing bugs.
-I understand that as not paying attention to any higher level guidance or method.
+I understand that as not paying attention to any higher level guidance or method, which is not something to aspire to as a professional software engineer.
 Unfortunately, as it often goes, 'vibe coding' is now often used as a term for all AI assisted coding.
