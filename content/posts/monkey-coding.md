@@ -1,7 +1,7 @@
 ---
 date: '2025-07-12T06:26:24Z'
 draft: false
-title: 'Can Machines Code?'
+title: 'AI coding rabbit holes'
 weight: 10
 ---
 
@@ -35,7 +35,7 @@ There were some errors and mistakes in them, so I reflected that back to Claud C
 It dutifully tried to fix them.
 Some of the fixes worked, some of them did not.
 
-Then it started to feel that for every fix, a new issue appeared in the user interface, and the coding assistant dutifully was not so helpful any more.
+Then it started to feel that for every fix, a new issue appeared in the user interface, and the coding assistant,while acting dutifully, was not so helpful any more.
 
 ### The sting
 
@@ -54,8 +54,9 @@ I should be working on the methods, such as how the *coding assistant* can verif
 I should be thinking about the way this application we are building together is solving a business problem, or not, as the case may be.
 
 Maybe there is a better way to solve this problem than by writing code.
-In my case, the problem was already solved, I just thought the price was too high. But the business case for that was deteriorating by the hour.
+In my case, the problem was already solved, I already has a SaaS solution, I just thought the price was too high. But the business case for that was deteriorating by the hour.
 Still, the experiment allows me to research this approach and write about it.
+So that is my current business case.
 
 ### Monkeys
 
@@ -88,7 +89,7 @@ It seems to be trained on pleasing you with as little effort as possible, and wi
 And maybe it should start there, in the same way that making an inventory of your home kitchen cupboard does not start with building an ERP system.
 
 Can an AI assistant code?
-I would rather ask the question: can it adequately simulate humans that code.
+I would rather ask the question: can it adequately simulate humans that code?
 What I have learned here is that this is quite dependent on making the best practices of human programmers explicit.
 
 ### Vibe coding
