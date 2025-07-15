@@ -14,19 +14,20 @@ My answer to this question: let's try this out!
 Inspired by modern discoveries in, for example, context engineering and swarm coding (references to come) I decided to give AI assisted coding  a shot.
 
 I had a little used SaaS application (an LMS) that was nevertheless costing serious money.
+Yet, completely killing it was not an option.
 It was relatively easy to extract the Gigabytes of content in there, also through a bit of AI assistance.
 So I decided to rebuild the app, or at least a minimal version of it.
-Hey, how hard can it be with Claude Code?
+Of many options, I selected Claude as my coding assistant.
 
 I started out by adopting the prompt and repository structure by [Cole Medin](https://github.com/coleam00/context-engineering-intro).
 I fed Claude with the first prompt of that approach, and a bit of the structure of the backup of the SaaS application, and asked it to create the initial feature request.
-With just a few lines of text, plus the data structures, it created a multi page feature list, sorted by priority.
+With just a few lines of text, plus the data structures, Claude created a multi page feature list, sorted by priority.
 Quite nice.
 It even did an ASCII mockup of the GUI.
 
 Following the steps in Cole's method, Claude Code started ticking off tasks and building code.
 At first, it moved nicely, regularly asking me for certain permissions or decisions.
-The interval between those was sometimes minutes, so I quickly decided to introduce some audio feedback using the MacBook `say text` command as a notification hook.
+The interval between those was sometimes several minutes, so I quickly decided to introduce some audio feedback using the MacBook `say text` command, whenever the AI stopped for user interaction.
 
 It ran into a couple of errors, but most were fixed immediately.
 
@@ -35,7 +36,8 @@ There were some errors and mistakes in them, so I reflected that back to Claud C
 It dutifully tried to fix them.
 Some of the fixes worked, some of them did not.
 
-Then it started to feel that for every fix, a new issue appeared in the user interface, and the coding assistant, while acting dutifully, was not so helpful any more.
+Then it started to feel that for every fix, a new issue appeared in the user interface, and the coding assistant dutifully attempted fixes, with very limited results.
+
 We were going down a rabbit hole.
 
 ### The sting
@@ -43,12 +45,14 @@ We were going down a rabbit hole.
 What is going on here?
 
 The thing is, I had become part of a feedback loop involving the assistant and me on the implementation of small features.
+It gave me results, I commented on those results.
 While doing that, I am no longer a part of the solution, I have become part of the problem.
 
 And the problem is that I was interacting with the LLM on the wrong level.
 
 I was fixing code, I was not fixing the requirements and the methods.
 And while I am fixing the code, I am doing their job.
+Based on the error messages, the AI is typically quite capable of fixing the errors.
 
 I should be working on the requirements, such as clearly specifying required outcomes that can be independently verified by the coding assistant.
 I should be working on the methods, such as how the *coding assistant* can verify that those outcomes are achieved, instead of *me* verifying them.
