@@ -92,7 +92,7 @@ It is also capable of *identifying* relevant best practices and abstract rules b
 What does not happen automatically is identifying that the human has those demands to begin with.
 It seems to be trained on pleasing you with as little effort as possible, and without asking you questions that you may not like to hear.
 Maybe it should start there, with asking questions.
-That would allow it to understand whether you need in the same way that making an inventory of your home kitchen cupboard does not start with building an ERP system.
+Like: are you sure you want to apply a full ERP system to making an inventory of your home kitchen cupboard?
 
 Can an AI assistant code?
 I would rather ask the question: can it adequately simulate humans that code?
