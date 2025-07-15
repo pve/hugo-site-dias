@@ -8,10 +8,10 @@
 <title>AI coding rabbit holes | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="The approach
-People call LLMs statistical completion engines, and that they therefore cannot write computer code.
+People call LLMs statistical completion engines and that they therefore cannot write computer code.
 While the first may be true, the conclusion not necessarily follows.
-Let&rsquo;s try this out!
-Inspired by modern discoveries in, for example, context engineering and swarm coding (references to come) I decided to give AI assisted coding it a shot.
+My answer to this question: let&rsquo;s try this out!
+Inspired by modern discoveries in, for example, context engineering and swarm coding (references to come) I decided to give AI assisted coding  a shot.
 I had a little used SaaS application (an LMS) that was nevertheless costing serious money.
 It was relatively easy to extract the Gigabytes of content in there, also through a bit of AI assistance.
 So I decided to rebuild the app, or at least a minimal version of it.
@@ -146,16 +146,16 @@ Hey, how hard can it be with Claude Code?">
   <i>⏳ 6 min read</i>
   
   <div class="post-content"><h3 id="the-approach">The approach<a hidden class="anchor" aria-hidden="true" href="#the-approach">#</a></h3>
-<p>People call LLMs statistical completion engines, and that they therefore cannot write computer code.
+<p>People call LLMs statistical completion engines and that they therefore cannot write computer code.
 While the first may be true, the conclusion not necessarily follows.</p>
-<p>Let&rsquo;s try this out!
-Inspired by modern discoveries in, for example, context engineering and swarm coding (references to come) I decided to give AI assisted coding it a shot.</p>
+<p>My answer to this question: let&rsquo;s try this out!
+Inspired by modern discoveries in, for example, context engineering and swarm coding (references to come) I decided to give AI assisted coding  a shot.</p>
 <p>I had a little used SaaS application (an LMS) that was nevertheless costing serious money.
 It was relatively easy to extract the Gigabytes of content in there, also through a bit of AI assistance.
 So I decided to rebuild the app, or at least a minimal version of it.
 Hey, how hard can it be with Claude Code?</p>
 <p>I started out by adopting the prompt and repository structure by <a href="https://github.com/coleam00/context-engineering-intro">Cole Medin</a>.
-I fed Claud with the first prompt of that approach, and a bit of the structure of the backup of the SaaS application, and asked it to create the initial feature request.
+I fed Claude with the first prompt of that approach, and a bit of the structure of the backup of the SaaS application, and asked it to create the initial feature request.
 With just a few lines of text, plus the data structures, it created a multi page feature list, sorted by priority.
 Quite nice.
 It even did an ASCII mockup of the GUI.</p>
@@ -167,10 +167,11 @@ The interval between those was sometimes minutes, so I quickly decided to introd
 There were some errors and mistakes in them, so I reflected that back to Claud Code.
 It dutifully tried to fix them.
 Some of the fixes worked, some of them did not.</p>
-<p>Then it started to feel that for every fix, a new issue appeared in the user interface, and the coding assistant,while acting dutifully, was not so helpful any more.</p>
+<p>Then it started to feel that for every fix, a new issue appeared in the user interface, and the coding assistant, while acting dutifully, was not so helpful any more.
+We were going down a rabbit hole.</p>
 <h3 id="the-sting">The sting<a hidden class="anchor" aria-hidden="true" href="#the-sting">#</a></h3>
 <p>What is going on here?</p>
-<p>The thing is, I had become part of a feedback loop involving me and the assistant on the implementation of small features.
+<p>The thing is, I had become part of a feedback loop involving the assistant and me on the implementation of small features.
 While doing that, I am no longer a part of the solution, I have become part of the problem.</p>
 <p>And the problem is that I was interacting with the LLM on the wrong level.</p>
 <p>I was fixing code, I was not fixing the requirements and the methods.
@@ -188,19 +189,20 @@ I was reminded of the meme &ldquo;If you give enough monkeys enough typewriters,
 <p>The trick is to have a structure that makes an AI look after that.</p>
 <p>The peculiar thing is, if you ask the AI (Claude in this case) how we should simplify and strengthen the approach, so that there can be better end to end testability, it actually comes up with a very decent answer.
 That answer can even be translated into extensive project guidelines.
-This includes things such as modular application architecture, test driven design, proper git version control hygiene, CI/CD pipelines, browser based testing, and more.</p>
+This includes things such as modular application architecture, test-driven design, proper git version control hygiene, CI/CD pipelines, browser based testing, and more.</p>
 <p>The coding assistant managed to apply these guidelines to a smaller project I gave it, and then made very few errors that required my attention.</p>
 <p>I had transcended the feedback loop.</p>
 <p>One technique for that is making sure the assistant sees as much of the workings of the system, including its development and deployment process as possible, because you are the one who has to fill the gaps.
 For example, if the web app gives a server error (for example, code 500), the assistant should see it directly, instead of you manually relaying it to them.</p>
 <h3 id="the-lessons">The lessons<a hidden class="anchor" aria-hidden="true" href="#the-lessons">#</a></h3>
 <p>The AI coding assistant will happily do what you ask it to do, and is not necessarily challenging you on best practices, or the lack of them.</p>
-<p>The more we ask it to apply solid software engineering methods that work in teams of programmers, to better AI will perform.</p>
-<p>The assistant is capable of applying abstract rules to a specific situation (e.g. apply a modular structure, or introduce test driven design).
+<p>The more we ask it to apply solid software engineering methods that work in teams of programmers, to better the AI will perform.</p>
+<p>The assistant is capable of applying abstract rules to a specific situation (e.g. apply a modular structure, or introduce test-driven design).
 It is also capable of <em>identifying</em> relevant best practices and abstract rules based on quality criteria such as &lsquo;modern tools&rsquo;, and &lsquo;better testability&rsquo;.
 What does not happen automatically is identifying that the human has those demands to begin with.
 It seems to be trained on pleasing you with as little effort as possible, and without asking you questions that you may not like to hear.
-And maybe it should start there, in the same way that making an inventory of your home kitchen cupboard does not start with building an ERP system.</p>
+Maybe it should start there, with asking questions.
+That would allow it to understand whether you need in the same way that making an inventory of your home kitchen cupboard does not start with building an ERP system.</p>
 <p>Can an AI assistant code?
 I would rather ask the question: can it adequately simulate humans that code?
 What I have learned here is that this is quite dependent on making the best practices of human programmers explicit.</p>
