@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>AI Coding: &#34;Look Ma, no hands!&#34; | Digital Infrastructures at Scale</title>
+<meta name="keywords" content="">
+<meta name="description" content="Here is how I AI-coded a fully functional Tic-Tac-Toe web game without looking at a single line of code or manually identifying a GUI or logic error.
+I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.
+But it takes some effort and discipline to get there.
+The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.
+Today&rsquo;s method
+Many people are researching this, all with slightly different approaches.
+There are a variety of ways to do more or less the same thing.
+Here are some of the interesting approaches I found.
+Interestingly, they all popped up in the first half of 2025.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/ai-nocode/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/ai-nocode/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/book/" title="Book">
+                    <span>Book</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔎 Search (Alt &#43; /)" accesskey=/>
+                    <span>🔎 Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
+    <h1 class="post-title entry-hint-parent">
+      AI Coding: &#34;Look Ma, no hands!&#34;
+    </h1>
+    <div class="post-meta"><span title='2025-07-19 12:22:13 +0000 UTC'>July 19, 2025</span>
+
+</div>
+  </header> 
+
+  
+  <i>⏳ 5 min read</i>
+  
+  <div class="post-content"><p>Here is how I AI-coded a fully functional Tic-Tac-Toe web game <em>without</em> looking at a single line of code or manually identifying a GUI or logic error.
+I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.</p>
+<p>But it takes some effort and discipline to get there.
+The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.</p>
+<h3 id="todays-method">Today&rsquo;s method<a hidden class="anchor" aria-hidden="true" href="#todays-method">#</a></h3>
+<p>Many people are researching this, all with slightly different approaches.
+There are a variety of ways to do more or less the same thing.
+Here are some of the interesting approaches I found.
+Interestingly, they all popped up in the first half of 2025.</p>
+<ul>
+<li>Cole Medin <a href="https://github.com/coleam00/context-engineering-intro/tree/main">Github</a></li>
+<li>IndyDevDan <a href="https://agenticengineer.com/principled-ai-coding">Home page</a></li>
+<li>Ryan Carson <a href="https://github.com/snarktank/ai-dev-tasks/tree/main">Github</a></li>
+<li>Sean Matthew <a href="https://www.youtube.com/watch?v=OZej8sdVCP0">YouTube</a></li>
+</ul>
+<p>The simplest is Sean Matthew&rsquo;s, and while it works, you can add some precision and handy workflow items and shortcuts from the others.
+Again, there are often a variety of ways of doing more or less the same thing.</p>
+<p>I&rsquo;d start like this.</p>
+<ol>
+<li>create a directory for your codebase</li>
+<li>run Claude in your editor (e.g. VSCode)</li>
+<li>inside Claude, run <code>/init</code>, this will also create a CLAUDE.md, which you probably want to adapt or override, see later.</li>
+<li>run <code>git init</code>, and publish the folder to your git account</li>
+<li>edit, establish or copy a <code>CLAUDE.md</code>, I have curated a 350 line opinionated version, which is adapted to the project</li>
+</ol>
+<p>You could now start with your feature, as I will describe in a moment.
+I chose to have it create the simplest application that would result in an actually running web page with all the test scaffolding that I requested in my CLAUDE.md, which is quite extensive, and not application-specific.</p>
+<p>This created 1180 lines of Python for what is effectively a &lsquo;Hello world!&rsquo; application.</p>
+<h3 id="requirements">Requirements<a hidden class="anchor" aria-hidden="true" href="#requirements">#</a></h3>
+<p>Now it&rsquo;s time to get your Product Requirements Document (PRD).
+Starting from a small prompt you ask the AI to expand it to a PRD.
+I put the feature in a file called <code>tictactoe.md</code>.</p>
+<blockquote>
+<p>Create a simple single player web page where the user can play tic-tac-toe against the computer</p></blockquote>
+<p>The smallest prompt then is:</p>
+<blockquote>
+<p>Help me create a PRD for the feature in tictactoe.md, respecting the standards in CLAUDE.md, store it in file PRD-tictactoe.md</p></blockquote>
+<p>The other approaches mentioned above have a more extensive prompt to create the PRD, which presumably gives a more structured specification document, but this one works surprisingly well.
+In this example, the PRD is over 300 lines long.
+It has a variety of components, such as a set of user stories, but it also repeats a lot of information from the CLAUDE.md file.
+Allegedly, it pays to review and repeat this process to make sure you are not wasting time later.</p>
+<h3 id="planning">Planning<a hidden class="anchor" aria-hidden="true" href="#planning">#</a></h3>
+<p>The next steps are to translate this in a PLANNING and TASKS file.
+The latter one will be edited by the AI to record progress.
+Again, you can have a simple prompt to create these, or a more sophisticated one.
+For this experiment I took the shortest one.
+All these documents have some overlap.</p>
+<p>Then it is showtime!</p>
+<blockquote>
+<p>Please read PLANNING.md, CLAUDE.md, and TASKS.md to understand the project.  Then complete the first task on TASKS.md
+or pick up where we left.</p></blockquote>
+<p>Off to the races&hellip;</p>
+<p>Claude code chugs along nicely for a while.
+Because we have instructed it to create test cases for each and everything, it will backtrack automatically and fix all errors until all tests pass.
+This resulted in one commit and a locally working application.</p>
+<p>We are now outside of the feedback loop of fixing the misunderstandings, shortcomings, and hallucinations of Claude Code.</p>
+<p>In the end, this resulted in 1900 lines of Python for the core application, and more than 3200 lines of code for testing.
+I touched none of them.</p>
+<p>While this line count sounds big, understand that this includes a lot of monitoring and security features.
+There is also extensive commenting in the code, and it would be interesting to see if we could refactor this to make it much shorter.</p>
+<h3 id="next-level">Next level<a hidden class="anchor" aria-hidden="true" href="#next-level">#</a></h3>
+<p>Next, the prompt calls for a CI/CD pipeline.
+While the AI created one, including a full test suite, it failed for a variety of reasons, though many had to do with a mismatch between the local environment and the environment that the pipeline runs in.</p>
+<p>In the beginning, I was part of the feedback loop, so I screenshotted the Git Actions log and pasted these in Claude Code (really!).
+I later installed <code>gh</code>, allowing the AI to actually see the error messages.
+With this it could iterate until it was done.
+Again, we are now outside that feedback loop.</p>
+<h3 id="the-final-lesson">The final lesson<a hidden class="anchor" aria-hidden="true" href="#the-final-lesson">#</a></h3>
+<p>The final lesson here is that as a developer / software engineer, you will mainly be involved in fixing things where you are part of the feedback loop.
+Your job should therefore be to engineer the AI <em>in</em> the loop, and yourself <em>out</em> of the loop.</p>
+<p>You really don&rsquo;t want to babysit the AI for each error that it is perfectly capable of fixing itself.</p>
+<p>The main techniques for that are:</p>
+<ul>
+<li>giving the AI objectives (e.g. 90% test coverage)</li>
+<li>giving the AI information to see if those objectives are met (e.g. proper error messages and log files).</li>
+</ul>
+<p>In short, AI amplifies your capabilities, but if you don&rsquo;t have the high-level objectives clear, it can backfire.</p>
+
+
+  </div>
+
+  
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

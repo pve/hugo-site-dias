@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jul 2025 06:26:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jul 2025 12:22:13 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -53,19 +53,35 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Can Machines Code?</title>
-      <link>http://localhost:1313/book/posts/monkey-coding/</link>
+      <title>AI Coding: &#34;Look Ma, no hands!&#34;</title>
+      <link>http://localhost:1313/posts/ai-nocode/</link>
+      <pubDate>Sat, 19 Jul 2025 12:22:13 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai-nocode/</guid>
+      <description>&lt;p&gt;Here is how I AI-coded a fully functional Tic-Tac-Toe web game &lt;em&gt;without&lt;/em&gt; looking at a single line of code or manually identifying a GUI or logic error.
+I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.&lt;/p&gt;
+&lt;p&gt;But it takes some effort and discipline to get there.
+The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.&lt;/p&gt;
+&lt;h3 id=&#34;todays-method&#34;&gt;Today&amp;rsquo;s method&lt;/h3&gt;
+&lt;p&gt;Many people are researching this, all with slightly different approaches.
+There are a variety of ways to do more or less the same thing.
+Here are some of the interesting approaches I found.
+Interestingly, they all popped up in the first half of 2025.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI coding rabbit holes</title>
+      <link>http://localhost:1313/posts/monkey-coding/</link>
       <pubDate>Sat, 12 Jul 2025 06:26:24 +0000</pubDate>
-      <guid>http://localhost:1313/book/posts/monkey-coding/</guid>
-      <description>&lt;h3 id=&#34;can-machines-code&#34;&gt;Can machines code?&lt;/h3&gt;
-&lt;p&gt;People call LLMs statistical completion engines, and that they therefore cannot write computer code.
+      <guid>http://localhost:1313/posts/monkey-coding/</guid>
+      <description>&lt;h3 id=&#34;the-approach&#34;&gt;The approach&lt;/h3&gt;
+&lt;p&gt;People call LLMs statistical completion engines and that they therefore cannot write computer code.
 While the first may be true, the conclusion not necessarily follows.&lt;/p&gt;
-&lt;p&gt;In this text I am reviewing my experiences with AI assisted coding.
-Inspired by modern discoveries in e.g. context engineering and swarm coding (references) I decided to give it a shot.&lt;/p&gt;
+&lt;p&gt;My answer to this question: let&amp;rsquo;s try this out!
+Inspired by modern discoveries in, for example, context engineering and swarm coding (references to come) I decided to give AI assisted coding  a shot.&lt;/p&gt;
 &lt;p&gt;I had a little used SaaS application (an LMS) that was nevertheless costing serious money.
+Yet, completely killing it was not an option.
 It was relatively easy to extract the Gigabytes of content in there, also through a bit of AI assistance.
 So I decided to rebuild the app, or at least a minimal version of it.
-Hey, how hard can it be with Claude Code?&lt;/p&gt;</description>
+Of many options, I selected Claude as my coding assistant.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Can AI automate compliance?</title>

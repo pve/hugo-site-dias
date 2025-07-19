@@ -100,6 +100,6 @@ What I have learned here is that this is quite dependent on making the best prac
 
 ### Vibe coding
 
-An afterthought: in his original tweet Andrej Karpathy introduced 'vibe coding' as the flow of being engaged with the assistant in a cycle of giving commands and fixing bugs.
+An afterthought: in his original tweet, Andrej Karpathy introduced 'vibe coding' as the flow of being engaged with the AI coding assistant in a cycle of giving commands and fixing bugs.
 I understand that as not paying attention to any higher level guidance or method, which is not something to aspire to as a professional software engineer.
 Unfortunately, as it often goes, 'vibe coding' is now often used as a term for all AI assisted coding.

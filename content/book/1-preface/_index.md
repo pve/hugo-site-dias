@@ -12,7 +12,7 @@ Instead I wrote smaller pieces from time to time, as well as lots of educational
 
 I did try to create a larger, organized collection of knowledge, and even had a basic taxonomy in place and raw input. But the dynamics of my professional life continuously outpaced my plans to turn it into a book.
 
-I have occupied myself with IT for over half a century now, most of that in a professional capacity. For a substantial part of that time, I have been searching for some focus. It took me until the turn of the millennium to finally get an expression of that in the form of a professional branding statement. It was an interesting process to come up with the following.
+I have occupied myself with IT for over half a century now, most of that in a professional capacity. For a substantial part of that time, I have been searching for some focus. It took me until the turn of the millennium to finally get an expression of that in the form of a professional branding statement. It was an interesting process to come up with the following:
 
 > _Peter van Eijk is an innovative ICT strategist who makes connections between business, people, and technology. With wit and confrontation he guides you to new approaches. He is inimitably hardcore Internet-oriented, yet never forgets that communication is between people, not machines._
 
@@ -44,8 +44,20 @@ I am assuming that you will find that toolbox very relevant in your role, and th
 
 I sure hope you find it useful.
 
-My thanks go to many people. Professionally, my clients, learners, colleagues, readers, and even chance encounters at conferences, have taught me so much by providing me with insights, inspiration and criticism (even if it hurt). It goes to show that, contrary to what many people believe, technology is a team sport.
+A bit of warning.
+As this book covers many diverse topics and bridges many disciplines, it is hard to find a common baseline of knowledge and understanding that most readers have.
+In my courses I have found that my participants lean towards one of those disciplines, and are happy to learn about the others.
+Consequently, there are units in this book that you will find a meaningful extension of your understanding, and units that have content that feels so trivial to you that it is almost insulting.
+If some of this is new to you, I hope you manage to sit through the other stuff.
+Still, even if you understand parts completely already, you could appreciate the way they are illustrated as a way that you yourself can use in explaining this to others.
+If none of this is familiar to you, you may need some side-reading.
+If none of this is new to you, get in touch, we should write the next book together.
 
-I am grateful that you have come so far in reading this already, and the opportunity to share my experiences, and look forward to helping you uncover new ways of navigating the complexities of the digital age. I sincerely hope that you will find benefit in this.
+My thanks go to many people.
+Professionally, my clients, learners, colleagues, readers, and even chance encounters at conferences, have taught me so much by providing me with insights, inspiration and criticism (even if it hurt). 
+It goes to show that, contrary to what many people believe, technology is a team sport.
+
+I am grateful that you have come this far in reading this already, and the opportunity to share my experiences, and look forward to helping you uncover new ways of navigating the complexities of the digital age. 
+I sincerely hope that you will find benefit in this.
 
 Thanks for joining me.

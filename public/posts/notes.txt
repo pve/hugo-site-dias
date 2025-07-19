@@ -1,0 +1,36 @@
+1180 lines of python for what is effectively a hello world application.
+
+https://github.com/snarktank/ai-dev-tasks
+
+https://github.com/coleam00/context-engineering-intro/tree/main
+
+IndyDevDan https://www.youtube.com/watch?v=hGg3nWp7afg
+https://agenticengineer.com/principled-ai-coding
+
+<
+
+https://www.youtube.com/watch?v=Tq87IBhBCDA SEAN MATTHEW
+
+claude plan mode vergelijkbaar met generate PRD?
+/init overschrijft CLAUDE.md
+
+PROMPTS: 
+In claude, niet claude code
+- Help me create a PRD for this feature. 
+→ Prompt to create CLAUDE.md: Generate a CLAUDE.md file from this PRD that will guid Claude Code sesions on this project
+Handmatig:
+→ Put this in your CLAUDE.md file: Always read PLANNING.md at the start of every new conversation, check TASKS.md before starting your work, mark completed tasks to TASKS.md immediately, and add newly discovered tasks to TASKS.md when found.
+Claude:
+→ Prompt to create PLANNING.md: Create a PLANNING.md file that includes vision, architecture, technology stack, and required tools list for this app.
+→ Prompt to create TASKS.md: Create a TASKS.md file with bullet points tasks divided into milestones for building this app.
+Claude code
+in plan mode
+→ Prompt to initiate building app: Please read PLANNING.md, CLAUDE.md, and TASKS.md to understand the project.  Then complete the first task on TASKS.md
+or pick up where we left
+als compacting nodig is
+→ Prompt to add context to CLAUDE.md (before clearing history): Please add a session summary to CLAUDE.md summarizing what we’ve done so far.
+
+Echter, ik heb al een CLAUDE.md.
+
+1. Help me create a PRD for the feature in tictactoe.md, respecting the standards in CLAUDE.md, store it in file PRD-tictactoe.md
+2. Create a PLANNING.md file that includes vision, architecture, technology stack, and required tools list for this app.
