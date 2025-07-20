@@ -11,7 +11,7 @@ I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.
 But it takes some effort and discipline to get there.
 The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.
 
-### The AI way
+### The Agentic AI way
 
 Many people are researching this, all with slightly different approaches.
 There are a variety of ways to do more or less the same thing.
