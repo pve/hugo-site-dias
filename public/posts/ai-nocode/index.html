@@ -11,7 +11,7 @@
 I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.
 But it takes some effort and discipline to get there.
 The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.
-Today&rsquo;s method
+The AI way
 Many people are researching this, all with slightly different approaches.
 There are a variety of ways to do more or less the same thing.
 Here are some of the interesting approaches I found.
@@ -149,7 +149,7 @@ Interestingly, they all popped up in the first half of 2025.">
 I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.</p>
 <p>But it takes some effort and discipline to get there.
 The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.</p>
-<h3 id="todays-method">Today&rsquo;s method<a hidden class="anchor" aria-hidden="true" href="#todays-method">#</a></h3>
+<h3 id="the-ai-way">The AI way<a hidden class="anchor" aria-hidden="true" href="#the-ai-way">#</a></h3>
 <p>Many people are researching this, all with slightly different approaches.
 There are a variety of ways to do more or less the same thing.
 Here are some of the interesting approaches I found.
@@ -165,18 +165,18 @@ Again, there are often a variety of ways of doing more or less the same thing.</
 <p>I&rsquo;d start like this.</p>
 <ol>
 <li>create a directory for your codebase</li>
-<li>run Claude in your editor (e.g. VSCode)</li>
+<li>run Claude in your editor (e.g. VS Code)</li>
 <li>inside Claude, run <code>/init</code>, this will also create a CLAUDE.md, which you probably want to adapt or override, see later.</li>
 <li>run <code>git init</code>, and publish the folder to your git account</li>
-<li>edit, establish or copy a <code>CLAUDE.md</code>, I have curated a 350 line opinionated version, which is adapted to the project</li>
+<li>edit, establish or copy a <code>CLAUDE.md</code>, I have curated a 350 line opinionated version, which is adapted to this type of project</li>
 </ol>
 <p>You could now start with your feature, as I will describe in a moment.
-I chose to have it create the simplest application that would result in an actually running web page with all the test scaffolding that I requested in my CLAUDE.md, which is quite extensive, and not application-specific.</p>
+I chose to have it create the simplest application that would result in an actually running web page with all the test scaffolding that I requested in my CLAUDE.md, which is quite extensive and not application-specific.</p>
 <p>This created 1180 lines of Python for what is effectively a &lsquo;Hello world!&rsquo; application.</p>
 <h3 id="requirements">Requirements<a hidden class="anchor" aria-hidden="true" href="#requirements">#</a></h3>
 <p>Now it&rsquo;s time to get your Product Requirements Document (PRD).
 Starting from a small prompt you ask the AI to expand it to a PRD.
-I put the feature in a file called <code>tictactoe.md</code>.</p>
+I put the feature description in a file called <code>tictactoe.md</code>.</p>
 <blockquote>
 <p>Create a simple single player web page where the user can play tic-tac-toe against the computer</p></blockquote>
 <p>The smallest prompt then is:</p>
@@ -197,7 +197,7 @@ All these documents have some overlap.</p>
 <p>Please read PLANNING.md, CLAUDE.md, and TASKS.md to understand the project.  Then complete the first task on TASKS.md
 or pick up where we left.</p></blockquote>
 <p>Off to the races&hellip;</p>
-<p>Claude code chugs along nicely for a while.
+<p>Claude Code chugs along nicely for a while.
 Because we have instructed it to create test cases for each and everything, it will backtrack automatically and fix all errors until all tests pass.
 This resulted in one commit and a locally working application.</p>
 <p>We are now outside of the feedback loop of fixing the misunderstandings, shortcomings, and hallucinations of Claude Code.</p>
@@ -206,7 +206,7 @@ I touched none of them.</p>
 <p>While this line count sounds big, understand that this includes a lot of monitoring and security features.
 There is also extensive commenting in the code, and it would be interesting to see if we could refactor this to make it much shorter.</p>
 <h3 id="next-level">Next level<a hidden class="anchor" aria-hidden="true" href="#next-level">#</a></h3>
-<p>Next, the prompt calls for a CI/CD pipeline.
+<p>Next, the opinionated prompt calls for a CI/CD pipeline.
 While the AI created one, including a full test suite, it failed for a variety of reasons, though many had to do with a mismatch between the local environment and the environment that the pipeline runs in.</p>
 <p>In the beginning, I was part of the feedback loop, so I screenshotted the Git Actions log and pasted these in Claude Code (really!).
 I later installed <code>gh</code>, allowing the AI to actually see the error messages.
@@ -214,14 +214,14 @@ With this it could iterate until it was done.
 Again, we are now outside that feedback loop.</p>
 <h3 id="the-final-lesson">The final lesson<a hidden class="anchor" aria-hidden="true" href="#the-final-lesson">#</a></h3>
 <p>The final lesson here is that as a developer / software engineer, you will mainly be involved in fixing things where you are part of the feedback loop.
-Your job should therefore be to engineer the AI <em>in</em> the loop, and yourself <em>out</em> of the loop.</p>
+Your job should therefore be to engineer the AI <em>into</em> the loop, and yourself <em>out</em> of the loop.</p>
 <p>You really don&rsquo;t want to babysit the AI for each error that it is perfectly capable of fixing itself.</p>
 <p>The main techniques for that are:</p>
 <ul>
-<li>giving the AI objectives (e.g. 90% test coverage)</li>
+<li>giving the AI clear objectives (e.g. 90% test coverage)</li>
 <li>giving the AI information to see if those objectives are met (e.g. proper error messages and log files).</li>
 </ul>
-<p>In short, AI amplifies your capabilities, but if you don&rsquo;t have the high-level objectives clear, it can backfire.</p>
+<p>In short, AI amplifies your capabilities, but if you don&rsquo;t have the high-level objectives clear, it can backfire, and you will end up in a rabbit hole.</p>
 
 
   </div>

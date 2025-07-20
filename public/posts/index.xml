@@ -17,7 +17,7 @@
 I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.&lt;/p&gt;
 &lt;p&gt;But it takes some effort and discipline to get there.
 The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.&lt;/p&gt;
-&lt;h3 id=&#34;todays-method&#34;&gt;Today&amp;rsquo;s method&lt;/h3&gt;
+&lt;h3 id=&#34;the-ai-way&#34;&gt;The AI way&lt;/h3&gt;
 &lt;p&gt;Many people are researching this, all with slightly different approaches.
 There are a variety of ways to do more or less the same thing.
 Here are some of the interesting approaches I found.

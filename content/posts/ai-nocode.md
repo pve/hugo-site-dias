@@ -11,7 +11,7 @@ I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.
 But it takes some effort and discipline to get there.
 The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.
 
-### Today's method
+### The AI way
 
 Many people are researching this, all with slightly different approaches.
 There are a variety of ways to do more or less the same thing.
@@ -29,13 +29,13 @@ Again, there are often a variety of ways of doing more or less the same thing.
 I'd start like this.
 
 1. create a directory for your codebase
-1. run Claude in your editor (e.g. VSCode)
+1. run Claude in your editor (e.g. VS Code)
 1. inside Claude, run `/init`, this will also create a CLAUDE.md, which you probably want to adapt or override, see later.
 1. run `git init`, and publish the folder to your git account
-1. edit, establish or copy a `CLAUDE.md`, I have curated a 350 line opinionated version, which is adapted to the project
+1. edit, establish or copy a `CLAUDE.md`, I have curated a 350 line opinionated version, which is adapted to this type of project
 
 You could now start with your feature, as I will describe in a moment.
-I chose to have it create the simplest application that would result in an actually running web page with all the test scaffolding that I requested in my CLAUDE.md, which is quite extensive, and not application-specific.
+I chose to have it create the simplest application that would result in an actually running web page with all the test scaffolding that I requested in my CLAUDE.md, which is quite extensive and not application-specific.
 
 This created 1180 lines of Python for what is effectively a 'Hello world!' application.
 
@@ -43,7 +43,7 @@ This created 1180 lines of Python for what is effectively a 'Hello world!' appli
 
 Now it's time to get your Product Requirements Document (PRD).
 Starting from a small prompt you ask the AI to expand it to a PRD.
-I put the feature in a file called `tictactoe.md`.
+I put the feature description in a file called `tictactoe.md`.
 
 >Create a simple single player web page where the user can play tic-tac-toe against the computer
 
@@ -71,7 +71,7 @@ or pick up where we left.
 
 Off to the races...
 
-Claude code chugs along nicely for a while.
+Claude Code chugs along nicely for a while.
 Because we have instructed it to create test cases for each and everything, it will backtrack automatically and fix all errors until all tests pass.
 This resulted in one commit and a locally working application.
 
@@ -85,7 +85,7 @@ There is also extensive commenting in the code, and it would be interesting to s
 
 ### Next level
 
-Next, the prompt calls for a CI/CD pipeline.
+Next, the opinionated prompt calls for a CI/CD pipeline.
 While the AI created one, including a full test suite, it failed for a variety of reasons, though many had to do with a mismatch between the local environment and the environment that the pipeline runs in.
 
 In the beginning, I was part of the feedback loop, so I screenshotted the Git Actions log and pasted these in Claude Code (really!).
@@ -96,13 +96,13 @@ Again, we are now outside that feedback loop.
 ### The final lesson
 
 The final lesson here is that as a developer / software engineer, you will mainly be involved in fixing things where you are part of the feedback loop.
-Your job should therefore be to engineer the AI *in* the loop, and yourself *out* of the loop.
+Your job should therefore be to engineer the AI *into* the loop, and yourself *out* of the loop.
 
 You really don't want to babysit the AI for each error that it is perfectly capable of fixing itself.
 
 The main techniques for that are:
 
-- giving the AI objectives (e.g. 90% test coverage)
+- giving the AI clear objectives (e.g. 90% test coverage)
 - giving the AI information to see if those objectives are met (e.g. proper error messages and log files).
 
-In short, AI amplifies your capabilities, but if you don't have the high-level objectives clear, it can backfire.
+In short, AI amplifies your capabilities, but if you don't have the high-level objectives clear, it can backfire, and you will end up in a rabbit hole.

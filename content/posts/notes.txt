@@ -1,15 +1,4 @@
-1180 lines of python for what is effectively a hello world application.
 
-https://github.com/snarktank/ai-dev-tasks
-
-https://github.com/coleam00/context-engineering-intro/tree/main
-
-IndyDevDan https://www.youtube.com/watch?v=hGg3nWp7afg
-https://agenticengineer.com/principled-ai-coding
-
-<
-
-https://www.youtube.com/watch?v=Tq87IBhBCDA SEAN MATTHEW
 
 claude plan mode vergelijkbaar met generate PRD?
 /init overschrijft CLAUDE.md
