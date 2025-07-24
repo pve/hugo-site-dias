@@ -105,4 +105,6 @@ The main techniques for that are:
 - giving the AI clear objectives (e.g. 90% test coverage)
 - giving the AI information to see if those objectives are met (e.g. proper error messages and log files).
 
+I am calling this method 'Closed Loop Coding', because we are closing the feedback loop inside the AI assistant itself.
+
 In short, AI amplifies your capabilities, but if you don't have the high-level objectives clear, it can backfire, and you will end up in a rabbit hole.

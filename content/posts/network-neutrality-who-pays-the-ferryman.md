@@ -9,8 +9,12 @@ See the [Washington Post](<http://www.washingtonpost.com/wp-dyn/content/article/
 
 What is the issue?
 
-On the one hand people argue for 'universal service' that say that one person's bits should not be treated differently from another person's. This compares to the idea that the phone company should not be allowed to treat your calls differently depending on what you want to say, or that red haired people would have a different monthly fee. There are laws against this type of discrimination (at least in most nations), and some people want to extend this law to Internet traffic. On the other hand there are some Internet providers who want to charge different customers different rates for different service. "We can't have companies freeloading on our expensive pipes", they claim.
-Clearly we seem to want both. We don't want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.
+On the one hand people argue for 'universal service' that say that one person's bits should not be treated differently from another person's. 
+This compares to the idea that the phone company should not be allowed to treat your calls differently depending on what you want to say, or that red haired people would have a different monthly fee. 
+There are laws against this type of discrimination (at least in most nations), and some people want to extend this law to Internet traffic. 
+On the other hand there are some Internet providers who want to charge different customers different rates for different service. "We can't have companies freeloading on our expensive pipes", they claim.
+Clearly we seem to want both. 
+We don't want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.
 
 My idea is that the issue is a bit oversimplified, and will become more clear if we use the right model of who connects to whom, as well as who pays who. This model recognizes three types of players, instead of one or two as we were used to.
 There is the client ISP, which connects the access devices such as PCs, and the server ISP, which connects the website hosting to the network. They both charge money to the owners of the respective devices. Their interconnection is either direct, or through so called 'transit providers'. They both typically pay the transit provider (unless the ISP is really big, in which case it can probably negotiate free transit with equally big ISPs).
