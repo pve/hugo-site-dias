@@ -1,13 +1,18 @@
 ---
 date: '2025-04-16T21:11:32Z'
 draft: true
-title: 'Applications'
+title: 'Applications and Infrastructures'
 weight: 29
 ---
-An application is roughly a data model plus a certain number of functions operating on that.
-Networked applications typically live on servers, but will have a client component.
+Infrastructures are nice, but the applications that they enable are where the value of information technology is.
+Applications store and process data, so an application is roughly a data model plus a certain number of functions operating on that.
+
 A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
 Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.
+
+That is a simplistic view, but a good start from the perspective of understanding who is doing what. 
+
+Networked applications typically live on servers, but will have a client component.
 
 Digital infrastructures are made up of processors, storage and networking. The costs of these change rapidly, but at different rates. Memory is becoming cheaper a lot faster than processing, and network bandwidth prices are dropping slower than that. The cost of humans to manage this technology is dropping slowest, if at all. What this means is that there will be continuing shifts in what the optimal design is for networked computing.
 

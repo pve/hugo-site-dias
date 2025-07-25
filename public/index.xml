@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jul 2025 12:22:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jul 2025 07:45:07 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -622,13 +622,13 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;IT architects are builders. They design new applications, platforms, and infrastructures that enable businesses to operate more effectively. A CRM system, for example, is not just a technical solution—it transforms workflows, communication, and decision-making. Similarly, infrastructure architects create digital foundations that accelerate the deployment of such applications.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Applications</title>
+      <title>Applications and Infrastructures</title>
       <link>http://localhost:1313/book/diginfra/applications/</link>
       <pubDate>Wed, 16 Apr 2025 21:11:32 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/applications/</guid>
-      <description>&lt;p&gt;An application is roughly a data model plus a certain number of functions operating on that.
-Networked applications typically live on servers, but will have a client component.
-A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
+      <description>&lt;p&gt;Infrastructures are nice, but the applications that they enable are where the value of information technology is.
+Applications store and process data, so an application is roughly a data model plus a certain number of functions operating on that.&lt;/p&gt;
+&lt;p&gt;A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
 Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.&lt;/p&gt;</description>
     </item>
     <item>
@@ -749,16 +749,6 @@ These bodies of knowledge cover a lot of ground, and most of it is related to di
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What are AI digital infrastructures?</title>
-      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
-      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
-      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
-&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
-&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Business Model Canvas for SaaS Providers</title>
       <link>http://localhost:1313/book/value/business-model-canvas-saas/</link>
       <pubDate>Mon, 15 Dec 2014 11:18:17 +0000</pubDate>
@@ -784,6 +774,23 @@ So the rest goes online, and tries to find interesting content, but only 50 peop
 Ten people drop out because they find loading the content too complicated. Of these, another ten find out that the files are too big for the hardware they have (for example in 2005, they just had a simple MP3 player, no iPod or similar).
 Of the ones left, another five don’t have the patience for the downloads (we are talking dial-up internet access for a lot of people here, still).
 If you have been keeping tabs: we are down to 25 people who are capable and willing to regularly listen to podcasts. Now suppose each of these tells four friends, on the average. That means we are back to a hundred.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloud Computing</title>
+      <link>http://localhost:1313/book/diginfra/cloudcomputing/</link>
+      <pubDate>Fri, 25 Jul 2025 07:45:07 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/cloudcomputing/</guid>
+      <description>&lt;p&gt;Cloud Computing is an important and big set of digital infrastructures.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What are AI digital infrastructures?</title>
+      <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
+      <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
+      <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
+&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
+&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>

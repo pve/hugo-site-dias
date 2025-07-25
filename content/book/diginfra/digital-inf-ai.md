@@ -2,7 +2,7 @@
 date: '2025-03-08T17:57:16Z'
 draft: false
 title: 'What are AI digital infrastructures?'
-weight: 50
+weight: 56
 ---
 
 The AI landscape has many digital infrastructures.

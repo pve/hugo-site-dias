@@ -51,6 +51,7 @@ But for this conversation I suggest to specifically look at the following.
 - What do people mean when they talk about the need for more sovereignty and autonomy?
 - What are the risks that derive from having a geographically distributed IT supply chain?
 - What are, in detail, the components of that supply chain? For example, there is a difference between the location of a datacenter, the software that runs in it, and control over the operations of that hardware and software.
+- How can nation state actors and corporations exert power that is counter to sovereignty and autonomy?
 - What are the mitigations that cloud providers propose? How tenable are they?
 - What are mitigations, technical and political, that are applicable for cloud consumers and regulators?
 - In particular, what alternative sources for IT assets and services exist?
