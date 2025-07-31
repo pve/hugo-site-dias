@@ -6,7 +6,7 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Jun 2025 14:31:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jul 2025 07:45:07 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
@@ -122,13 +122,13 @@ And as we had enough time, we had lunch in La Jonquera.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparently not over here.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Applications</title>
+      <title>Applications and Infrastructures</title>
       <link>http://localhost:1313/book/diginfra/applications/</link>
       <pubDate>Wed, 16 Apr 2025 21:11:32 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/applications/</guid>
-      <description>&lt;p&gt;An application is roughly a data model plus a certain number of functions operating on that.
-Networked applications typically live on servers, but will have a client component.
-A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
+      <description>&lt;p&gt;Infrastructures are nice, but the applications that they enable are where the value of information technology is.
+Applications store and process data, so an application is roughly a data model plus a certain number of functions operating on that.&lt;/p&gt;
+&lt;p&gt;A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
 Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.&lt;/p&gt;</description>
     </item>
     <item>
@@ -150,6 +150,13 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 &lt;h3 id=&#34;why-deployment-diagrams&#34;&gt;Why deployment diagrams?&lt;/h3&gt;
 &lt;p&gt;Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.&lt;/p&gt;
 &lt;p&gt;There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloud Computing</title>
+      <link>http://localhost:1313/book/diginfra/cloudcomputing/</link>
+      <pubDate>Fri, 25 Jul 2025 07:45:07 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/cloudcomputing/</guid>
+      <description>&lt;p&gt;Cloud Computing is an important and big set of digital infrastructures.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are AI digital infrastructures?</title>

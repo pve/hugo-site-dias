@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jul 2025 07:45:07 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jul 2025 08:10:04 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,28 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why 2025 resources</title>
+      <link>http://localhost:1313/posts/why2025/</link>
+      <pubDate>Thu, 31 Jul 2025 08:10:04 +0000</pubDate>
+      <guid>http://localhost:1313/posts/why2025/</guid>
+      <description>&lt;p&gt;Powerpoints coming soon!&lt;/p&gt;
+&lt;p&gt;For the book: select book in the top row.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Real App With Ai</title>
+      <link>http://localhost:1313/posts/real-app-with-ai/</link>
+      <pubDate>Tue, 29 Jul 2025 21:28:51 +0000</pubDate>
+      <guid>http://localhost:1313/posts/real-app-with-ai/</guid>
+      <description>&lt;p&gt;Taking it for a spin.&lt;/p&gt;
+&lt;p&gt;After my playful tic-tac-toe app (blog post, the actual app) I moved on to create a real application.&lt;/p&gt;
+&lt;p&gt;I restarted the experiments I did earlier (&lt;a href=&#34;https://digitalinfrastructures.nl/posts/monkey-coding/&#34;&gt;https://digitalinfrastructures.nl/posts/monkey-coding/&lt;/a&gt;)
+Real app now.
+track 1. claude-flow.&lt;/p&gt;
+&lt;p&gt;biggest lesson: understand nested feedback loops.&lt;/p&gt;
+&lt;p&gt;method: learning from myself (DRY in prompting)&lt;/p&gt;
+&lt;p&gt;dont hesitate to start all over.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI Coding: &#34;Look Ma, no hands!&#34;</title>
