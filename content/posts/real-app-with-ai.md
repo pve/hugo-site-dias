@@ -18,3 +18,16 @@ biggest lesson: understand nested feedback loops.
 method: learning from myself (DRY in prompting)
 
 dont hesitate to start all over. 
+
+challenge: explaining to claude code what a good result is, and the means to check that.
+gh will help
+
+target is to get to production MVP as fast as possible, prioritizing short feedback loops.
+
+quota problemen en compacting maakt nog al eens dat het geheugen kwijt raakt.
+
+│ > you should ALWAYS validate passing. If you can't fix it yourself, escalate to user. Tips: the production server's IP address is in git secret  │
+│   HETZNER_HOST. Deployment at the server should also include a git pull. And the deploy scripts seem to be hiding errors for you.   
+
+Priority is end 2 end testing, then refactor and clean up.
+All before you run out of quota...
