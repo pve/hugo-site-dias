@@ -11,6 +11,7 @@ by the nature of scaling, very few digital infrastructures are influenced by a s
 A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
 In US vernacular, the word international appears to mean all nations, except the US.
 Instead, the word global is used to mean all nations, including the US.
+An example implication of this is that a US company would only consider ISO standards to be relevant to them if they also have operations outside the US.
 
 The international arena is complex, and there are conflicting views on how it is made up.
 These conflicting views can best be seen as maps of the territory. And as I have mentioned earlier, a map is only relevant for a specific purpose.

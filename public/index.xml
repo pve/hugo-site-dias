@@ -57,8 +57,10 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
       <link>http://localhost:1313/posts/why2025/</link>
       <pubDate>Thu, 31 Jul 2025 08:10:04 +0000</pubDate>
       <guid>http://localhost:1313/posts/why2025/</guid>
-      <description>&lt;p&gt;Powerpoints coming soon!&lt;/p&gt;
-&lt;p&gt;For the book, here is the link: &lt;a href=&#34;https://digitalinfrastructures.nl&#34;&gt;https://digitalinfrastructures.nl&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;For the book, here is the link: &lt;a href=&#34;https://digitalinfrastructures.nl&#34;&gt;https://digitalinfrastructures.nl&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PDF: &lt;a href=&#34;http://localhost:1313/How-to-bluff-ZT-WHY2025.pdf&#34;&gt;How to bluff your way into Zero Trust&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PDF: &lt;a href=&#34;&#34;&gt;Using deployment diagrams to explain architecture and security to everybody&lt;/a&gt; Coming soon.
+More on deployment diagrams in the book, which you can search.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Real App With Ai</title>
@@ -1017,7 +1019,8 @@ But the international arena matters, because
 by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
 &lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
 In US vernacular, the word international appears to mean all nations, except the US.
-Instead, the word global is used to mean all nations, including the US.&lt;/p&gt;</description>
+Instead, the word global is used to mean all nations, including the US.
+An example implication of this is that a US company would only consider ISO standards to be relevant to them if they also have operations outside the US.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The US Air Force Zero Trust Strategy</title>
