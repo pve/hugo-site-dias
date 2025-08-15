@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Jul 2025 12:30:29 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Aug 2025 11:30:02 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -602,6 +602,21 @@ This is not necessarily the best outcome for the organization as a whole.&lt;/p&
 &lt;p&gt;To illustrate this, I gave ChatGPT the following prompt:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Write a business case story about the conflict over shared computing resources.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise to Update</title>
+      <link>http://localhost:1313/book/change/promise-to-update/</link>
+      <pubDate>Thu, 14 Aug 2025 11:30:02 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/promise-to-update/</guid>
+      <description>&lt;p&gt;An important part of managing digital infrastructures is updating various software components.
+It does not matter if we are talking about operating systems, applications, AI models, configurations, software libraries, and so on.&lt;/p&gt;
+&lt;p&gt;What matters is: who is going to do that?&lt;/p&gt;
+&lt;p&gt;Updates happen for many reasons, but the major ones are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;new functionality&lt;/li&gt;
+&lt;li&gt;better security.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As you can imagine, there are different stakeholders for these changes, and different skill sets required.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Where the buck stops</title>
