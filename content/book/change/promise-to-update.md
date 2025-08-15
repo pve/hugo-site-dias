@@ -41,7 +41,12 @@ A SaaS provider promises to update its operating systems, libraries, configurati
 An IaaS provider does *not* promise to update the operating system on your virtual machine.
 In fact, they might even promise that they will *not* have access to it.
 
-Most people are familiar with calling a service desk (or customer support in general). Historically, this has often been a frustrating exper
+Most people are familiar with calling a service desk (or customer support in general) for help. Historically, this has often been a frustrating experience. That is why it is important to have quality attributes with them, such as 'time to respond' (which typically means, the time it takes for somebody to start working on it), and escalation paths.
+
+For software updates, you can think of quality attributes such as time to update after a new version has been tested.
+
+In a complex multi-provider environment, one of the most important things about promises is, who is making them.
+Many security issues have been the result of a responsibility falling in the cracks between two parties, where both think the other is taking care of it.
 
 
 
