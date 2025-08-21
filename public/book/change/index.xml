@@ -6,7 +6,7 @@
     <description>Recent content in Change and control on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 May 2025 20:45:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Aug 2025 11:30:02 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/change/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Change and Control</title>
@@ -42,6 +42,21 @@ If you want the car to stop at an intended location, for example just in front o
       <description>&lt;p&gt;How to fix the WiFi? How to find a new phone for grandma?&lt;/p&gt;
 &lt;p&gt;Applying technology follows certain rules. However, many people only have an intuitive understanding of these rules. As a result, technology is not optimally applied.
 By understanding how applying technology really works, you can be more effective, more efficient, reduce waste, and overall do a better job. It takes just a few simple steps to improve any attempt at applying technology. We&amp;rsquo;ll focus on information technology here, though most principles have wider applicability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promise to Update</title>
+      <link>http://localhost:1313/book/change/promise-to-update/</link>
+      <pubDate>Thu, 14 Aug 2025 11:30:02 +0000</pubDate>
+      <guid>http://localhost:1313/book/change/promise-to-update/</guid>
+      <description>&lt;p&gt;An important part of managing digital infrastructures is updating various software components.
+It does not matter if we are talking about operating systems, applications, AI models, configurations, software libraries, and so on.&lt;/p&gt;
+&lt;p&gt;What matters is: who is going to do that?&lt;/p&gt;
+&lt;p&gt;Updates happen for many reasons, but the major ones are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;new functionality&lt;/li&gt;
+&lt;li&gt;better security.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As you can imagine, there are different stakeholders for these changes, and different skill sets required.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network Management Automation - the DHCP case</title>
