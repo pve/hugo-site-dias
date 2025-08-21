@@ -47,3 +47,5 @@ For software updates, you can think of quality attributes such as time to update
 
 In a complex multi-provider environment, one of the most important things about promises is, who is making them.
 Many security issues have been the result of a responsibility falling in the cracks between two parties, where both think the other is taking care of it.
+
+Digital infrastructure management requires clearly defined responsibilities and quality promises from all parties to ensure timely and secure updates, preventing security gaps due to ambiguous responsibilities.
