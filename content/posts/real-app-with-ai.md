@@ -17,7 +17,7 @@ biggest lesson: understand nested feedback loops.
 
 method: learning from myself (DRY in prompting)
 
-dont hesitate to start all over. 
+dont hesitate to start all over.
 
 challenge: explaining to claude code what a good result is, and the means to check that.
 gh will help

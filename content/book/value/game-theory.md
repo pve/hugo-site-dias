@@ -1,28 +1,33 @@
 ---
 date: '2025-07-31T12:30:29Z'
-draft: true
+draft: false
 title: 'Games of value and power'
 weight: 110
 ---
 
 A great way to look at how value is created in interactions between autonomous actors is game theory.
 
-I have found this to be an effective model, or map, to think about the outcomes of sequences of interactions.
+I have found game theory to be an effective model to think about the outcomes of sequences of interactions.
+This is because it clearly identifies the actors (or players) and their interests.
 
 A game, in this view, has a number of *players*, who make *moves* that result in *payoffs*. The payoffs are defined by the rules of the game.
 
 A simple example is tic-tac-toe, where players take turns (make moves) in marking an X or O on a 3x3 board.
-Whoever has three in a row first wins (the payoff).
+Whichever player first aligns three in a row wins.
+The win is called the payoff.
 
-The digital infrastructures world has lots of examples and applications of this.
-Let's start by looking at a simple provider-consumer relationship.
+The digital infrastructures world has many examples and applications of this.
+One example can be found by looking at a simple provider-consumer relationship.
 
-The provider pools resources such as bandwidth and servers to multiple consumers, and charge a certain price to them.
-The move they make is setting a price and the size of the pool.
+In this relationship, the provider pools resources such as bandwidth and servers for multiple consumers, and charges a certain price to them.
+The moves they make are setting a price and setting the size of the pool of resources.
 
 The consumers' moves, simply stated, are to buy the service from this provider, or not.
 
-The rules of the game, if you could say so, are that the more consumers use the pool, the less performance they get.
+The rules of the game are that the more consumers use the same pool, the less performance they get, which reduces their payoff.
+Think of the cake at a birthday party: the more guests there are, the smaller the slice each gets.
+Note: this is an example of an externality (an outside factor that influences the value), which we discuss elsewhere.
 
-The payoff for the provider is the amount of revenue they get. More users means more revenue. The payoff for the consumers is the performance they get.
-
+The payoff for the provider is the amount of revenue they get.
+Having more users results in more revenue.
+The payoff for the consumers is the performance they get.
