@@ -5,22 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>What about AI Risks? | Digital Infrastructures at Scale</title>
+<title>The Uneasy Relationship Between Compliance and Risk | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="While Artificial Intelligence, especially the generative type, is a highly disruptive form of IT innovation, its risk management still follows the same basic principles.
-We just need to extend those principles to new forms of data and software.
-
-What are the assets?
-What are the vulnerabilities and threats to it?
-What is the damage that this can bring, realistically?
-
-So let&rsquo;s see how what the AI specifics are.
-AI Assets
-Let&rsquo;s focus on the AI assets that are the product of deep learning.
-Deep learning neural networks have represented a shift in AI technology.
-Before that, symbolic AI was more common.">
+<meta name="description" content="For people who care about risk in IT, compliance is a mixed blessing.
+Compliance in IT generally means compliance with regulations that are set up to reduce risk, for example across a chain of companies.
+A great example is the PCI/DSS regulation, which governs everybody who touches a credit card transaction.
+The objective of this regulation is to protect card holders and card issuers from credit card fraud.
+The reason why the regulation exists in the first place is because negligence at one actor can lead to damages at another actor.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/risk/querying-ai-risk/">
+<link rel="canonical" href="http://localhost:1313/book/risk/uneasy-compliance-risk/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -29,7 +22,7 @@ Before that, symbolic AI was more common.">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/risk/querying-ai-risk/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/book/risk/uneasy-compliance-risk/">
 <noscript>
     <style>
         #theme-toggle,
@@ -138,7 +131,7 @@ Before that, symbolic AI was more common.">
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/risk/">Risks of digital infrastructures</a></div>
     <h1 class="post-title entry-hint-parent">
-      What about AI Risks?
+      The Uneasy Relationship Between Compliance and Risk
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
           <path
@@ -146,7 +139,7 @@ Before that, symbolic AI was more common.">
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2025-05-01 07:40:07 +0000 UTC'>May 1, 2025</span>
+    <div class="post-meta"><span title='2025-08-22 09:18:35 +0000 UTC'>August 22, 2025</span>
 
 </div>
   </header> 
@@ -154,34 +147,33 @@ Before that, symbolic AI was more common.">
   
   <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>While Artificial Intelligence, especially the generative type, is a highly disruptive form of IT innovation, its risk management still follows the same basic principles.
-We just need to extend those principles to new forms of data and software.</p>
-<ul>
-<li>What are the assets?</li>
-<li>What are the vulnerabilities and threats to it?</li>
-<li>What is the damage that this can bring, realistically?</li>
-</ul>
-<p>So let&rsquo;s see how what the AI specifics are.</p>
-<h2 id="ai-assets">AI Assets<a hidden class="anchor" aria-hidden="true" href="#ai-assets">#</a></h2>
-<p>Let&rsquo;s focus on the AI assets that are the product of deep learning.
-Deep learning neural networks have represented a shift in AI technology.
-Before that, symbolic AI was more common.</p>
-<p>The reason to elaborate on this is that there is a fundamental difference between symbolic AI and neural network AI.
-Symbolic AI works by following programmatic rules, and is fairly deterministic.
-Neural networks are the result of training with large datasets.
-They have enabled <em>generative AI</em> which is much less deterministic.</p>
-<p>Furthermore, and this is really significant from a security perspective, in its operation, GenAI mixes data and instruction to operate on that data deeply.</p>
-<p>For example, anything an external user inputs to the system as data, might also be interpreted as an instruction.
-This represents a huge vulnerability for hackers to exploit.</p>
-<p>The trained models represent a lot of information, and that information is often hard to identify, and therefore to see the classic information risks of.</p>
-<p>Models are effectively software: you stick data in them, and data comes out.
-But because they also embody a lot of data (we are talking Gigabytes, Terabytes and beyond of training data) they combine the risks of software with the risks of data.</p>
-<p>An AI system has a few more traditional and less traditional data assets associated with it.
-Base models, or foundational models, such as Llama, often get additional training or finetuning.
-The data used for that may well include proprietary or sensitive data.</p>
-<p>Then there are system prompts and additional data sources that are fed into those models, together with user input.</p>
-<h2 id="ai-vulnerabilities">AI Vulnerabilities<a hidden class="anchor" aria-hidden="true" href="#ai-vulnerabilities">#</a></h2>
-<h2 id="damage">Damage<a hidden class="anchor" aria-hidden="true" href="#damage">#</a></h2>
+  <div class="post-content"><p>For people who care about risk in IT, compliance is a mixed blessing.</p>
+<p>Compliance in IT generally means compliance with regulations that are set up to reduce risk, for example across a chain of companies.
+A great example is the PCI/DSS regulation, which governs everybody who touches a credit card transaction.
+The objective of this regulation is to protect card holders and card issuers from credit card fraud.
+The reason why the regulation exists in the first place is because negligence at one actor can lead to damages at another actor.</p>
+<p>For example, it is not in the merchant&rsquo;s primary interest to keep customer credit card numbers secure.
+It involves work.
+The merchant&rsquo;s prime interest is in getting paid.</p>
+<p>The customers however, really would like their credit card to be safe, because it is them who bears the fraud risk.
+Actions by the merchant, or lack thereof, are an &rsquo;externality&rsquo;, as economists say.</p>
+<p>Compliance regulations are a way to force risk management on, e.g., the merchant.</p>
+<p>A similar pattern can be seen in privacy regulations.
+Personal data disclosure is primarily a risk to the individual involved, not to the organization that holds that data.
+Regulations on data privacy, such as the EU GDPR (General Data Protection Regulation) force risk management on the storing of personal data upon a lot or organizations.</p>
+<p>Compliance on IT risk management is becoming a national security issue.
+The EU NIS2 (Network and Information Systems) Directive forces critical infrastructure providers, such as telcos and electricity companies to be resilient.
+This is because our society is more and more dependent on these infrastructure providers.
+Even if they are not digital infrastructure providers, they need IT to operate.
+The threat landscape is also changing, with nation state actors actively targeting these critical infrastructures.</p>
+<p>As a side note, in the early 2000s I was part of a governmental working group investigating these critical infrastructure risks (or vital infrastructures, as we called them).
+Our research showed that they all depend on each other, but that they all depended most on electricity.</p>
+<p>While all these initiatives help, compliance does not imply security.
+Even if compliance is treated as more than a &lsquo;box-ticking&rsquo; exercise, there are many documented cases of compliant organizations being breached.
+(could use an example or two)</p>
+<p>Being secure does not automatically mean that you are compliant.</p>
+<p>But being compliant can be hard, especially with conflicting or ambiguous government regulations.
+In the end this means that being compliant also involves a risk decision: you accept the risk that you are not fully compliant.</p>
 
 
   </div>
@@ -201,26 +193,23 @@ The data used for that may well include proprietary or sensitive data.</p>
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/risk/mitigation/">&larr; Mitigation</a>
+        <a href="/book/risk/guide-autonomy-resilience/">&larr; A guide to digital sovereignty, autonomy, and business resilience</a>
       
-      
-        
-        <a href="/book/risk/what-is-trust/">What Is Trust &rarr;</a>
       
     </nav>
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
 

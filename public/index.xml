@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Aug 2025 11:30:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Aug 2025 09:18:35 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -874,6 +874,17 @@ As IT increased in volume, you have tried to keep its costs down, it was just a 
 Outsourcing to more experienced partners was an option, and so was the use of cloud computing, for example for your Office applications.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>The Uneasy Relationship Between Compliance and Risk</title>
+      <link>http://localhost:1313/book/risk/uneasy-compliance-risk/</link>
+      <pubDate>Fri, 22 Aug 2025 09:18:35 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/uneasy-compliance-risk/</guid>
+      <description>&lt;p&gt;For people who care about risk in IT, compliance is a mixed blessing.&lt;/p&gt;
+&lt;p&gt;Compliance in IT generally means compliance with regulations that are set up to reduce risk, for example across a chain of companies.
+A great example is the PCI/DSS regulation, which governs everybody who touches a credit card transaction.
+The objective of this regulation is to protect card holders and card issuers from credit card fraud.
+The reason why the regulation exists in the first place is because negligence at one actor can lead to damages at another actor.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Organization Size Matters - Dunbar&#39;s number</title>
       <link>http://localhost:1313/book/change/org-size-matters/</link>
       <pubDate>Thu, 08 May 2025 20:45:16 +0000</pubDate>
@@ -919,10 +930,11 @@ Incident response times
       <link>http://localhost:1313/book/value/game-theory/</link>
       <pubDate>Thu, 31 Jul 2025 12:30:29 +0000</pubDate>
       <guid>http://localhost:1313/book/value/game-theory/</guid>
-      <description>&lt;p&gt;A great way to look at how value is created in interactions between autonomous actors is game theory.&lt;/p&gt;
+      <description>&lt;p&gt;A great way to look at how value is created in interactions between autonomous actors is game theory.
+How do autonomous actors respond to other actors, is the core question here.
+How do you respond to an offer from a service provider? But also, how do they respond to you?&lt;/p&gt;
 &lt;p&gt;I have found game theory to be an effective model to think about the outcomes of sequences of interactions.
-This is because it clearly identifies the actors (or players) and their interests.&lt;/p&gt;
-&lt;p&gt;I use this all the time to think about me in relation to other parties that I choose to work with, or just have to work with.&lt;/p&gt;</description>
+This is because it clearly identifies the actors (or players) and their interests.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Customer Service</title>

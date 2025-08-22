@@ -6,11 +6,14 @@ weight: 110
 ---
 
 A great way to look at how value is created in interactions between autonomous actors is game theory.
+How do autonomous actors respond to other actors, is the core question here.
+How do you respond to an offer from a service provider? But also, how do they respond to you?
 
 I have found game theory to be an effective model to think about the outcomes of sequences of interactions.
 This is because it clearly identifies the actors (or players) and their interests.
 
 I use this all the time to think about me in relation to other parties that I choose to work with, or just have to work with.
+It also helps me to understand how parties and stakeholders act upon one another.
 
 A game, in this view, has a number of *players*, who make *moves* that result in *payoffs*. The payoffs are defined by the rules of the game.
 
