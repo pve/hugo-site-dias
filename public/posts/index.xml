@@ -6,8 +6,21 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Jul 2025 08:10:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Aug 2025 10:09:31 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agentic coding, the next level</title>
+      <link>http://localhost:1313/posts/claude-flow-ttt/</link>
+      <pubDate>Mon, 25 Aug 2025 10:09:31 +0000</pubDate>
+      <guid>http://localhost:1313/posts/claude-flow-ttt/</guid>
+      <description>&lt;p&gt;My AI coding journey continues.&lt;/p&gt;
+&lt;p&gt;My &lt;a href=&#34;fposts/ai-nocode/&#34;&gt;first version&lt;/a&gt; of the Tic Tac Toe game took some time to get right
+even though I already applied some serious automated top-down design.&lt;/p&gt;
+&lt;p&gt;As explained, it takes understanding of the feedback loops that help correct errors.
+Part of this is using explicit tests for desirable outcomes.
+A process for test-driven design would be even better.&lt;/p&gt;
+&lt;p&gt;The main question that comes out of that experience was: How can we let the AI check itself?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Why 2025 resources</title>
       <link>http://localhost:1313/posts/why2025/</link>
