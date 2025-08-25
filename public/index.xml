@@ -878,8 +878,9 @@ Outsourcing to more experienced partners was an option, and so was the use of cl
       <link>http://localhost:1313/book/risk/uneasy-compliance-risk/</link>
       <pubDate>Fri, 22 Aug 2025 09:18:35 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/uneasy-compliance-risk/</guid>
-      <description>&lt;p&gt;For people who care about risk in IT, compliance is a mixed blessing.&lt;/p&gt;
-&lt;p&gt;Compliance in IT generally means compliance with regulations that are set up to reduce risk, for example across a chain of companies.
+      <description>&lt;p&gt;For people who care about risk in IT, compliance is a mixed blessing.
+Compliance regulations can lead to better risk management, but sometimes it is more of a hindrance than a help.&lt;/p&gt;
+&lt;p&gt;Compliance in IT generally means compliance with regulations that are set up to reduce risk, for example, across a chain of actors.
 A great example is the PCI/DSS regulation, which governs everybody who touches a credit card transaction.
 The objective of this regulation is to protect card holders and card issuers from credit card fraud.
 The reason why the regulation exists in the first place is because negligence at one actor can lead to damages at another actor.&lt;/p&gt;</description>
