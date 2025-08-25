@@ -51,6 +51,8 @@ params:
         url: "/book/" 
       - name: "The blog"
         url: "/posts/"
+      - name: "Hard copy"
+        url: "https://www.amazon.com/Digital-Power-Infrastructures-Scale-Value/dp/B0FG1NPWLL"
       - name: "The OG site"
         url: "/ogsite/" 
 
@@ -66,6 +68,10 @@ menu:
     - identifier: posts
       name: Blog
       url: /posts/
+      weight: 20
+    - identifier: print
+      name: Hard copy
+      url: "https://www.amazon.com/Digital-Power-Infrastructures-Scale-Value/dp/B0FG1NPWLL"
       weight: 20
     - identifier: about
       name: About
