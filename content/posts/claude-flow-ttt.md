@@ -39,6 +39,7 @@ Approximately 20 minutes later, it produced [a solution that worked](/ttt/tic-ta
 A couple of observations:
 
 - it created a single static HTML page solution, in contrast to the more complicated front-end back-end solution that the earlier approach resulted in,
+- I did not look at a single line of code,
 - it still over-engineered it a bit by including a human-to-human mode, which was not requested.
 
 I found it impressive to see a solution that worked right the first time.

@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.13/html-to-image.min.js" integrity="sha512-iZ2ORl595Wx6miw+GuadDet4WQbdSWS3JLMoNfY8cRGoEFy6oT3G9IbcrBeL6AfkgpA51ETt/faX6yLV+/gFJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      (function() {
+        const originalConsole = window.console;
+        window.console = {
+          log: (...args) => {
+            originalConsole.log(...args);
+            window.parent.postMessage({ type: 'console', message: args.join(' ') }, '*');
+          },
+          error: (...args) => {
+            originalConsole.error(...args);
+            window.parent.postMessage({ type: 'console', message: 'Error: ' + args.join(' ') }, '*');
+          },
+          warn: (...args) => {
+            originalConsole.warn(...args);
+            window.parent.postMessage({ type: 'console', message: 'Warning: ' + args.join(' ') }, '*');
+          }
+        };
+
+        let requestId = 0;
+        let callbacksMap = new Map();
+        let streamControllers = new Map();
+        
+        window.claude = {
+          complete: (prompt) => {
+            return new Promise((resolve, reject) => {
+              const id = requestId++;
+              callbacksMap.set(id, { resolve, reject });
+              window.parent.postMessage({ type: 'claudeComplete', id, prompt }, '*');
+            });
+          }
+        };
+
+        window.storage = {
+          get: (key, shared = false) => {
+            return new Promise((resolve, reject) => {
+              const id = requestId++;
+              callbacksMap.set(id, { resolve, reject });
+              window.parent.postMessage({ type: 'storageGet', id, key, shared }, '*');
+            });
+          },
+          set: (key, value, shared = false) => {
+            return new Promise((resolve, reject) => {
+              const id = requestId++;
+              callbacksMap.set(id, { resolve, reject });
+              window.parent.postMessage({ type: 'storageSet', id, key, value, shared }, '*');
+            });
+          },
+          delete: (key, shared = false) => {
+            return new Promise((resolve, reject) => {
+              const id = requestId++;
+              callbacksMap.set(id, { resolve, reject });
+              window.parent.postMessage({ type: 'storageDelete', id, key, shared }, '*');
+            });
+          },
+          list: (prefix, shared = false) => {
+            return new Promise((resolve, reject) => {
+              const id = requestId++;
+              callbacksMap.set(id, { resolve, reject });
+              window.parent.postMessage({ type: 'storageList', id, prefix, shared }, '*');
+            });
+          }
+        };
+
+        let pendingBlobs = new Map();
+        URL.createObjectURL = (blob) => {
+          // Store the blob and create an ID and URL for it
+          const blobId = `blob-${Date.now()}-${Math.random()}`;
+          pendingBlobs.set(blobId, blob);
+          return `blob-request://${blobId}`;
+        };
+
+        URL.revokeObjectURL = (url) => {
+          // Remove the blob from our store
+          const blobId = url.replace("blob-request://", "");
+          pendingBlobs.delete(blobId);
+        };
+
+        const getBlobFromURL = (url) => {
+          const blobId = url.replace("blob-request://", "");
+          return pendingBlobs.get(blobId);
+        };
+
+        // Override global fetch with streaming support
+        window.fetch = (url, init = {}) => {
+          return new Promise((resolve, reject) => {
+            const id = requestId++;
+            const channelId = `fetch-${id}-${Date.now()}`;
+            
+            callbacksMap.set(id, { 
+              resolve: (response) => {
+                // Create a ReadableStream for the response body
+                const stream = new ReadableStream({
+                  start(controller) {
+                    streamControllers.set(channelId, controller);
+                  },
+                  cancel() {
+                    streamControllers.delete(channelId);
+                  }
+                });
+                
+                // Create and return the Response with the stream
+                resolve(new Response(stream, {
+                  status: response.status,
+                  statusText: response.statusText,
+                  headers: response.headers
+                }));
+              },
+              reject,
+              channelId
+            });
+            
+            window.parent.postMessage({
+              type: 'proxyFetch',
+              id,
+              url,
+              init,
+              channelId
+            }, '*');
+          });
+        };
+
+        window.addEventListener('message', async (event) => {
+          if (event.data.type === 'takeScreenshot') {
+            const rootElement = document.getElementById('artifacts-component-root-html');
+            if (!rootElement) {
+              window.parent.postMessage({
+                type: 'screenshotError',
+                error: new Error('Root element not found'),
+              }, '*');
+            }
+            const screenshot = await htmlToImage.toPng(rootElement, {
+              imagePlaceholder:
+                "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjePDgwX8ACOQDoNsk0PMAAAAASUVORK5CYII=",
+            });
+            window.parent.postMessage({
+              type: 'screenshotData',
+              data: screenshot,
+            }, '*');
+          } else if (event.data.type === 'claudeComplete') {
+            const callback = callbacksMap.get(event.data.id);
+            if (event.data.error) {
+              callback.reject(new Error(event.data.error));
+            } else {
+              callback.resolve(event.data.completion);
+            }
+            callbacksMap.delete(event.data.id);
+          } else if (event.data.type === 'proxyFetchResponse') {
+            const callback = callbacksMap.get(event.data.id);
+            if (event.data.error) {
+              callback.reject(new Error(event.data.error));
+              callbacksMap.delete(event.data.id);
+            } else {
+              // Initial response with headers, status, etc.
+              callback.resolve({
+                status: event.data.status,
+                statusText: event.data.statusText,
+                headers: event.data.headers
+              });
+              // Don't delete the callback yet if streaming
+              if (!event.data.body) {
+                callbacksMap.delete(event.data.id);
+              }
+            }
+          } else if (event.data.type === 'proxyFetchStream') {
+            // Handle streaming data chunks
+            const controller = streamControllers.get(event.data.channelId);
+            if (controller) {
+              if (event.data.error) {
+                controller.error(new Error(event.data.error));
+                streamControllers.delete(event.data.channelId);
+              } else if (event.data.done) {
+                controller.close();
+                streamControllers.delete(event.data.channelId);
+                // Clean up the callback
+                const callback = Array.from(callbacksMap.entries()).find(
+                  ([_, value]) => value.channelId === event.data.channelId
+                );
+                if (callback) {
+                  callbacksMap.delete(callback[0]);
+                }
+              } else if (event.data.chunk) {
+                controller.enqueue(new Uint8Array(event.data.chunk));
+              }
+            }
+          } else if (event.data.type === 'storageGet') {
+            const callback = callbacksMap.get(event.data.id);
+            if (event.data.error) {
+              callback.reject(new Error(event.data.error));
+            } else {
+              callback.resolve(event.data.result);
+            }
+            callbacksMap.delete(event.data.id);
+          } else if (event.data.type === 'storageSet') {
+            const callback = callbacksMap.get(event.data.id);
+            if (event.data.error) {
+              callback.reject(new Error(event.data.error));
+            } else {
+              callback.resolve(event.data.result);
+            }
+            callbacksMap.delete(event.data.id);
+          } else if (event.data.type === 'storageDelete') {
+            const callback = callbacksMap.get(event.data.id);
+            if (event.data.error) {
+              callback.reject(new Error(event.data.error));
+            } else {
+              callback.resolve(event.data.result);
+            }
+            callbacksMap.delete(event.data.id);
+          } else if (event.data.type === 'storageList') {
+            const callback = callbacksMap.get(event.data.id);
+            if (event.data.error) {
+              callback.reject(new Error(event.data.error));
+            } else {
+              callback.resolve(event.data.result);
+            }
+            callbacksMap.delete(event.data.id);
+          }
+        });
+
+        window.addEventListener('click', (event) => {
+          const isEl = event.target instanceof HTMLElement;
+          if (!isEl) return;
+    
+          // find ancestor links
+          const linkEl = event.target.closest("a");
+          if (!linkEl || !linkEl.href) return;
+    
+          event.preventDefault();
+          event.stopImmediatePropagation();
+    
+          if (linkEl.href.startsWith("blob-request:")) {
+            const blob = getBlobFromURL(linkEl.href);
+            if (!blob) return;
+            void blob.arrayBuffer().then((data) => {
+              window.parent.postMessage({
+                type: "downloadFile",
+                filename: linkEl.download,
+                data,
+                mimeType: blob.type || "application/octet-stream",
+              });
+            });
+          } else if (linkEl.href.startsWith("data:")) {
+            const [header, base64Data] = linkEl.href.split(",");
+            const mimeMatch = header.match(/data:([^;]+)/);
+            const mimeType = mimeMatch ? mimeMatch[1] : "application/octet-stream";
+            const binaryString = atob(base64Data);
+            const data = Uint8Array.from(binaryString, (c) =>
+              c.charCodeAt(0),
+            ).buffer;
+            window.parent.postMessage({
+              type: "downloadFile",
+              filename: linkEl.download,
+              data,
+              mimeType,
+            });
+          } else {
+            let linkUrl;
+            try {
+              linkUrl = new URL(linkEl.href);
+            } catch (error) {
+              return;
+            }
+    
+            if (linkUrl.hostname === window.location.hostname) return;
+      
+            window.parent.postMessage({
+              type: 'openExternal',
+              href: linkEl.href,
+            }, '*');
+          }
+      });
+
+        const originalOpen = window.open;
+        window.open = function (url) {
+          window.parent.postMessage({
+            type: "openExternal",
+            href: url,
+          }, "*");
+        };
+
+        window.addEventListener('error', (event) => {
+          window.parent.postMessage({ type: 'console', message: 'Uncaught Error: ' + event.message }, '*');
+        });
+      })();
+    </script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLRA AI Risk Controls Navigator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .risk-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .controls-panel {
+            padding: 25px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 15px;
+            align-items: end;
+            margin-bottom: 20px;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .control-label {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .search-input {
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .filter-select {
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .view-toggle {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            padding: 4px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .view-btn {
+            flex: 1;
+            padding: 8px 12px;
+            border: none;
+            background: transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .view-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .content-area {
+            padding: 25px;
+            min-height: 500px;
+        }
+
+        /* Table View Styles */
+        .table-container {
+            overflow-x: auto;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            background: linear-gradient(135deg, #4a5568, #2d3748);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background: #f7fafc;
+        }
+
+        .role-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: center;
+            min-width: 45px;
+        }
+
+        .role-aic { background: #fed7d7; color: #c53030; }
+        .role-ap { background: #c6f6d5; color: #22543d; }
+        .role-osp { background: #bee3f8; color: #1a365d; }
+        .role-mp { background: #fbb6ce; color: #702459; }
+        .role-csp { background: #faf089; color: #744210; }
+
+        .category-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .cat-awareness { background: #e6fffa; color: #234e52; }
+        .cat-governance { background: #edf2f7; color: #2d3748; }
+        .cat-technical { background: #e3f2fd; color: #1565c0; }
+        .cat-policy { background: #f3e5f5; color: #6a1b9a; }
+
+        /* Card View Styles */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .control-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .control-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .card-control {
+            font-weight: 600;
+            color: #2d3748;
+            line-height: 1.4;
+            flex: 1;
+            margin-right: 15px;
+        }
+
+        .card-badges {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .matrix-view {
+            display: grid;
+            grid-template-columns: auto repeat(5, 1fr);
+            gap: 1px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .matrix-header {
+            background: #4a5568;
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .matrix-row-header {
+            background: #718096;
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .matrix-cell {
+            background: white;
+            padding: 8px;
+            min-height: 60px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .matrix-cell.has-control {
+            background: #e6fffa;
+            border: 2px solid #38b2ac;
+            font-weight: 600;
+        }
+
+        .hidden { display: none !important; }
+
+        @media (max-width: 768px) {
+            .controls-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .matrix-view {
+                font-size: 10px;
+            }
+            
+            .matrix-cell {
+                min-height: 40px;
+                font-size: 10px;
+            }
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #718096;
+        }
+
+        .no-results h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, #38b2ac, #319795);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(56, 178, 172, 0.3);
+        }
+    </style>
+</head>
+<body id="artifacts-component-root-html">
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ OLRA OWASP LLM Risk Allocation Navigator</h1>
+            <p>Interactive tool for managing OWASP LLM security controls across stakeholder roles</p>
+        </div>
+
+        <div class="controls-panel">
+            <div class="controls-grid">
+                <div class="control-group">
+                    <label class="control-label">🔍 Search Controls</label>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search controls, roles, or categories...">
+                </div>
+                
+                <div class="control-group">
+                    <label class="control-label">👥 Filter by Role</label>
+                    <select id="roleFilter" class="filter-select">
+                        <option value="">All Roles</option>
+                        <option value="AIC">AI Consumer (AIC)</option>
+                        <option value="AP">AI Producer (AP)</option>
+                        <option value="OSP">Orchestration Service Provider (OSP)</option>
+                        <option value="MP">Model Provider (MP)</option>
+                        <option value="CSP">Cloud Service Provider (CSP)</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">📋 Filter by Category</label>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="Awareness">Awareness</option>
+                        <option value="Governance">Governance</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Policy">Policy</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">👁️ View Mode</label>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="table">Table</button>
+                        <button class="view-btn" data-view="cards">Cards</button>
+                        <button class="view-btn" data-view="matrix">Matrix</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalControls">16</div>
+                    <div class="stat-label">Total Controls</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="uniqueRoles">5</div>
+                    <div class="stat-label">Stakeholder Roles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="technicalControls">10</div>
+                    <div class="stat-label">Technical Controls</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="governanceControls">4</div>
+                    <div class="stat-label">Governance Controls</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="visibleControls">16</div>
+                    <div class="stat-label">Currently Showing</div>
+                </div>
+                <div class="stat-card">
+                    <button class="export-btn" onclick="exportData()">📊 Export CSV</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <!-- Table View -->
+            <div id="tableView" class="view-container">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Risk ID</th>
+                                <th>Risk Name</th>
+                                <th>Role</th>
+                                <th>Control</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Content populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Cards View -->
+            <div id="cardsView" class="view-container hidden">
+                <div class="cards-container" id="cardsContainer">
+                    <!-- Content populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Matrix View -->
+            <div id="matrixView" class="view-container hidden">
+                <div class="matrix-view" id="matrixContainer">
+                    <!-- Content populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- No Results -->
+            <div id="noResults" class="no-results hidden">
+                <h3>🔍 No controls found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const controlsData = [
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AIC", control: "Avoid entering secrets/PII in prompts; treat outputs as untrusted", category: "Awareness" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AIC", control: "Verify critical outputs against trusted sources before acting", category: "Governance" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AP", control: "Constrain model behavior (role/scope), isolate context, ignore override attempts", category: "Technical" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AP", control: "Enforce output schemas + deterministic validators before any action", category: "Technical" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AP", control: "Filter inputs/outputs (policy lists, semantic checks, retrieval relevance tests)", category: "Technical" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AP", control: "Human-in-the-loop approvals for high-risk actions (payments, data changes)", category: "Governance" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "OSP", control: "Least-privilege tool/function calls; allowlists; guardrails in orchestration", category: "Technical" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "MP", control: "Adversarially-evaluated alignment (jailbreak/indirect injection resistance)", category: "Technical" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "CSP", control: "API isolation, rate limits, logging/monitoring at platform edge", category: "Technical" },
+
+            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AIC", control: "Do not input confidential data; follow data-handling policy", category: "Awareness" },
+            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AP", control: "Sanitize/redact before training or storage; PII detectors", category: "Technical" },
+            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AP", control: "Opt-out & transparency on retention; limit external data sources", category: "Policy" },
+            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AP", control: "Enforce strict access controls/least privilege for data paths", category: "Technical" },
+            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "OSP", control: "Secrets management; policy enforcement in data routing", category: "Technical" },
+            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "MP", control: "Differential privacy/federated learning; inversion-resistance", category: "Technical" },
+            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "CSP", control: "Encryption (KMS), private networking, DLP/monitoring", category: "Technical" },
+
+            { riskId: "LLM03:2025", riskName: "Supply Chain", role: "AIC", control: "Prefer vendors with model/data SBOMs and provenance attestations", category: "Governance" },
+            { riskId: "LLM03:2025", riskName: "Supply Chain", role: "AP", control: "SBOM for models/datasets; pin versions; verify signatures/checksums", category: "Technical" },
+            { riskId: "LLM03:2025", riskName: "Supply Chain", role: "AP", control: "Scan/model-file quarantine (e.g., malicious pickle) before use", category: "Technical" },
+            { riskId: "LLM03:2025", riskName: "Supply Chain", role: "OSP", control: "Trusted registries; signature verification; CI/CD provenance (e.g., SLSA)", category: "Technical" },
+            { riskId: "LLM03:2025", riskName: "Supply Chain", role: "MP", control: "Signed releases; distribution hardening; timely vuln disclosures", category: "Policy" },
+            { riskId: "LLM03:2025", riskName: "Supply Chain", role: "CSP", control: "Artifact registries, image signing, private networks, supply-chain scans", category: "Technical" },
+
+            { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "AIC", control: "Avoid seeding knowledge bases with unverified/hidden-text content", category: "Awareness" },
+            { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "AP", control: "Validate/clean training, fine-tune, and RAG sources; detect hidden prompts", category: "Technical" },
+            { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "AP", control: "Moderation on ingestion; drift/behavior monitoring; canary triggers", category: "Technical" },
+            { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "OSP", control: "Source authentication; tamper-evident pipelines; retrieval logging", category: "Technical" },
+            { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "MP", control: "Backdoor/trigger testing; curated datasets; reproducible training", category: "Governance" },
+            { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "CSP", control: "Isolated training envs; secured storage; supply-chain scanning", category: "Technical" },
+
+            { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AIC", control: "Never copy-paste/execute model output (code/SQL) without review", category: "Awareness" },
+            { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AP", control: "Treat LLM as untrusted; encode/escape outputs by sink/context", category: "Technical" },
+            { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AP", control: "Use prepared statements/ORM; forbid eval/exec; path sanitization", category: "Technical" },
+            { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AP", control: "Strict CSP headers; egress filtering; comprehensive logging", category: "Technical" },
+            { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "OSP", control: "Validation layer before any actioning tool; break-glass controls", category: "Technical" },
+            { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "CSP", control: "WAF/signatures for LLM-generated payloads; anomaly detection", category: "Technical" },
+
+            { riskId: "LLM06:2025", riskName: "Excessive Agency", role: "AIC", control: "Manually approve sensitive actions; review AI-drafted changes", category: "Governance" },
+            { riskId: "LLM06:2025", riskName: "Excessive Agency", role: "AP", control: "Reduce functionality/permissions/autonomy; explicit scopes per tool", category: "Technical" },
+            { riskId: "LLM06:2025", riskName: "Excessive Agency", role: "AP", control: "Human-in-the-loop for privileged steps; confirmation dialogs", category: "Governance" },
+            { riskId: "LLM06:2025", riskName: "Excessive Agency", role: "AP", control: "Rate limits and action quotas; safe-mode/dry-run defaults", category: "Technical" },
+            { riskId: "LLM06:2025", riskName: "Excessive Agency", role: "OSP", control: "Policy engines; dual-LLM/guard model patterns; audit trails", category: "Governance" },
+            { riskId: "LLM06:2025", riskName: "Excessive Agency", role: "CSP", control: "OAuth scopes, API gateway quotas, fine-grained IAM", category: "Technical" },
+
+            { riskId: "LLM07:2025", riskName: "System Prompt Leakage", role: "AIC", control: "Avoid sharing convo transcripts that may reveal system config", category: "Awareness" },
+            { riskId: "LLM07:2025", riskName: "System Prompt Leakage", role: "AP", control: "Never store secrets/keys in prompts; externalize credentials", category: "Technical" },
+            { riskId: "LLM07:2025", riskName: "System Prompt Leakage", role: "AP", control: "Enforce critical controls outside the LLM; privilege separation", category: "Governance" },
+            { riskId: "LLM07:2025", riskName: "System Prompt Leakage", role: "OSP", control: "Redact system prompts from logs; rotate/mask any exposed tokens", category: "Technical" },
+            { riskId: "LLM07:2025", riskName: "System Prompt Leakage", role: "MP", control: "Train to refuse prompt reveal (with disclaimer it’s not a control)", category: "Policy" },
+            { riskId: "LLM07:2025", riskName: "System Prompt Leakage", role: "CSP", control: "Central secrets mgmt; short-lived credentials", category: "Technical" },
+
+            { riskId: "LLM08:2025", riskName: "Vector & Embedding Weaknesses", role: "AIC", control: "Don’t upload sensitive docs to shared RAG without approvals", category: "Awareness" },
+            { riskId: "LLM08:2025", riskName: "Vector & Embedding Weaknesses", role: "AP", control: "Permission-aware vector DB; tenant partitioning; encryption", category: "Technical" },
+            { riskId: "LLM08:2025", riskName: "Vector & Embedding Weaknesses", role: "AP", control: "Validate sources; tag/classify docs; monitor retrieval logs", category: "Technical" },
+            { riskId: "LLM08:2025", riskName: "Vector & Embedding Weaknesses", role: "OSP", control: "Access-controlled retrievers; immutable audit logs", category: "Technical" },
+            { riskId: "LLM08:2025", riskName: "Vector & Embedding Weaknesses", role: "MP", control: "Assess/mitigate embedding inversion leakage; document limits", category: "Technical" },
+            { riskId: "LLM08:2025", riskName: "Vector & Embedding Weaknesses", role: "CSP", control: "Private networking; at-rest/in-transit encryption", category: "Technical" },
+
+            { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AIC", control: "Treat outputs as suggestions; verify facts/citations", category: "Awareness" },
+            { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AP", control: "Automatic validation on high-stakes outputs; fallback workflows", category: "Technical" },
+            { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AP", control: "Risk communication in UI; clearly label AI content/limits", category: "Policy" },
+            { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AP", control: "Secure coding for code suggestions; require tests/review", category: "Technical" },
+            { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "OSP", control: "Quality gates; fact-checking/groundedness checks in orchestration", category: "Technical" },
+            { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "MP", control: "Publish model limitations, evals, and known failure modes", category: "Policy" },
+
+            { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AIC", control: "Follow usage/cost policy; report anomalies in spend/perf", category: "Awareness" },
+            { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AP", control: "Tiered rate limits (req/sec, tokens, $); quotas per user/org", category: "Technical" },
+            { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AP", control: "Input/token size caps; timeouts; circuit breakers; step limits for agents", category: "Technical" },
+            { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AP", control: "Caching/dedup; concurrency caps; budget alarms/kill-switches", category: "Governance" },
+            { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "OSP", control: "Orchestration-level budgets, token accounting, watchdogs", category: "Technical" },
+            { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "CSP", control: "API gateway quotas; billing alerts; autoscale with guardrails", category: "Technical" }
+        ];
+
+        let filteredData = [...controlsData];
+        let currentView = 'table';
+
+        const roleNames = {
+            'AIC': 'AI Consumer',
+            'AP': 'AI Producer', 
+            'OSP': 'Orchestration Service Provider',
+            'MP': 'Model Provider',
+            'CSP': 'Cloud Service Provider'
+        };
+
+        const categories = ['Awareness', 'Governance', 'Technical', 'Policy'];
+
+        function renderTableView() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            filteredData.forEach(item => {
+                const row = tbody.insertRow();
+                row.innerHTML = `
+                    <td>${item.riskId}</td>
+                    <td>${item.riskName}</td>
+                    <td><span class="role-badge role-${item.role.toLowerCase()}">${item.role}</span></td>
+                    <td>${item.control}</td>
+                    <td><span class="category-badge cat-${item.category.toLowerCase()}">${item.category}</span></td>
+                `;
+            });
+        }
+
+        function renderCardsView() {
+            const container = document.getElementById('cardsContainer');
+            container.innerHTML = '';
+
+            filteredData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'control-card';
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="card-control">${item.control}</div>
+                        <div class="card-badges">
+                            <span class="role-badge role-${item.role.toLowerCase()}">${item.role}</span>
+                            <span class="category-badge cat-${item.category.toLowerCase()}">${item.category}</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function renderMatrixView() {
+            const container = document.getElementById('matrixContainer');
+            const roles = [...new Set(controlsData.map(item => item.role))];
+            
+            // Create matrix grid
+            let html = '<div class="matrix-header">Categories / Roles</div>';
+            roles.forEach(role => {
+                html += `<div class="matrix-header">${role}<br><small>${roleNames[role]}</small></div>`;
+            });
+
+            categories.forEach(category => {
+                html += `<div class="matrix-row-header">${category}</div>`;
+                roles.forEach(role => {
+                    const controls = filteredData.filter(item => item.role === role && item.category === category);
+                    const hasControl = controls.length > 0;
+                    html += `<div class="matrix-cell ${hasControl ? 'has-control' : ''}">
+                        ${hasControl ? `${controls.length} control${controls.length > 1 ? 's' : ''}` : '–'}
+                    </div>`;
+                });
+            });
+
+            container.innerHTML = html;
+        }
+
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const roleFilter = document.getElementById('roleFilter').value;
+            const categoryFilter = document.getElementById('categoryFilter').value;
+
+            filteredData = controlsData.filter(item => {
+                const matchesSearch = searchTerm === '' || 
+                    item.control.toLowerCase().includes(searchTerm) ||
+                    item.role.toLowerCase().includes(searchTerm) ||
+                    item.category.toLowerCase().includes(searchTerm) ||
+                    roleNames[item.role].toLowerCase().includes(searchTerm);
+
+                const matchesRole = roleFilter === '' || item.role === roleFilter;
+                const matchesCategory = categoryFilter === '' || item.category === categoryFilter;
+
+                return matchesSearch && matchesRole && matchesCategory;
+            });
+
+            updateView();
+            updateStats();
+        }
+
+        function updateView() {
+            const hasResults = filteredData.length > 0;
+            
+            document.getElementById('tableView').classList.toggle('hidden', currentView !== 'table' || !hasResults);
+            document.getElementById('cardsView').classList.toggle('hidden', currentView !== 'cards' || !hasResults);
+            document.getElementById('matrixView').classList.toggle('hidden', currentView !== 'matrix' || !hasResults);
+            document.getElementById('noResults').classList.toggle('hidden', hasResults);
+
+            if (hasResults) {
+                if (currentView === 'table') renderTableView();
+                else if (currentView === 'cards') renderCardsView();
+                else if (currentView === 'matrix') renderMatrixView();
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('visibleControls').textContent = filteredData.length;
+            
+            const technicalCount = filteredData.filter(item => item.category === 'Technical').length;
+            const governanceCount = filteredData.filter(item => item.category === 'Governance').length;
+            
+            document.getElementById('technicalControls').textContent = technicalCount;
+            document.getElementById('governanceControls').textContent = governanceCount;
+        }
+
+        function exportData() {
+            const headers = ['Risk ID', 'Risk Name', 'Role', 'Control', 'Category'];
+            let csvContent = headers.join(',') + '\n';
+            
+            filteredData.forEach(item => {
+                const row = [
+                    `"${item.riskId}"`,
+                    `"${item.riskName}"`,
+                    `"${item.role}"`,
+                    `"${item.control.replace(/"/g, '""')}"`,
+                    `"${item.category}"`
+                ];
+                csvContent += row.join(',') + '\n';
+            });
+
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'ai-risk-controls.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+        document.getElementById('roleFilter').addEventListener('change', applyFilters);
+        document.getElementById('categoryFilter').addEventListener('change', applyFilters);
+
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                currentView = e.target.dataset.view;
+                updateView();
+            });
+        });
+
+        // Initialize
+        updateView();
+        updateStats();
+    </script>
+</body>
+</html>
