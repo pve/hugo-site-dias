@@ -1,7 +1,7 @@
 ---
 date: '2025-08-22T09:18:35Z'
 draft: false
-title: 'The Uneasy Relationship Between Compliance and Risk'
+title: 'Compliance is a Risk'
 weight: 100
 ---
 
