@@ -540,7 +540,7 @@
 
     <script>
         const controlsData = [
-            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AIC", control: "Avoid entering secrets/PII in prompts; treat outputs as untrusted", category: "Awareness" },
+            { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AIC", control: "Treat outputs as untrusted", category: "Awareness" },
             { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AIC", control: "Verify critical outputs against trusted sources before acting", category: "Governance" },
             { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AP", control: "Constrain model behavior (role/scope), isolate context, ignore override attempts", category: "Technical" },
             { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "AP", control: "Enforce output schemas + deterministic validators before any action", category: "Technical" },
@@ -551,7 +551,7 @@
             { riskId: "LLM01:2025", riskName: "Prompt Injection", role: "CSP", control: "API isolation, rate limits, logging/monitoring at platform edge", category: "Technical" },
 
             { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AIC", control: "Do not input confidential data; follow data-handling policy", category: "Awareness" },
-            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AP", control: "Sanitize/redact before training or storage; PII detectors", category: "Technical" },
+            { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AP", control: "Sanitize/redact before training or storage", category: "Technical" },
             { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AP", control: "Opt-out & transparency on retention; limit external data sources", category: "Policy" },
             { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "AP", control: "Enforce strict access controls/least privilege for data paths", category: "Technical" },
             { riskId: "LLM02:2025", riskName: "Sensitive Information Disclosure", role: "OSP", control: "Secrets management; policy enforcement in data routing", category: "Technical" },
@@ -566,7 +566,7 @@
             { riskId: "LLM03:2025", riskName: "Supply Chain", role: "CSP", control: "Artifact registries, image signing, private networks, supply-chain scans", category: "Technical" },
 
             { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "AIC", control: "Avoid seeding knowledge bases with unverified/hidden-text content", category: "Awareness" },
-            { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "AP", control: "Validate/clean training, fine-tune, and RAG sources; detect hidden prompts", category: "Technical" },
+            { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "AP", control: "Validate/clean training, fine-tune, and RAG sources", category: "Technical" },
             { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "AP", control: "Moderation on ingestion; drift/behavior monitoring; canary triggers", category: "Technical" },
             { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "OSP", control: "Source authentication; tamper-evident pipelines; retrieval logging", category: "Technical" },
             { riskId: "LLM04:2025", riskName: "Data & Model Poisoning", role: "MP", control: "Backdoor/trigger testing; curated datasets; reproducible training", category: "Governance" },
@@ -574,7 +574,7 @@
 
             { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AIC", control: "Never copy-paste/execute model output (code/SQL) without review", category: "Awareness" },
             { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AP", control: "Treat LLM as untrusted; encode/escape outputs by sink/context", category: "Technical" },
-            { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AP", control: "Use prepared statements/ORM; forbid eval/exec; path sanitization", category: "Technical" },
+            { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AP", control: "Use parameterized queries; path sanitization", category: "Technical" },
             { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "AP", control: "Strict CSP headers; egress filtering; comprehensive logging", category: "Technical" },
             { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "OSP", control: "Validation layer before any actioning tool; break-glass controls", category: "Technical" },
             { riskId: "LLM05:2025", riskName: "Improper Output Handling", role: "CSP", control: "WAF/signatures for LLM-generated payloads; anomaly detection", category: "Technical" },
@@ -601,14 +601,14 @@
             { riskId: "LLM08:2025", riskName: "Vector & Embedding Weaknesses", role: "CSP", control: "Private networking; at-rest/in-transit encryption", category: "Technical" },
 
             { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AIC", control: "Treat outputs as suggestions; verify facts/citations", category: "Awareness" },
-            { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AP", control: "Automatic validation on high-stakes outputs; fallback workflows", category: "Technical" },
+            { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AP", control: "Automatic validation on high-stakes outputs", category: "Technical" },
             { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AP", control: "Risk communication in UI; clearly label AI content/limits", category: "Policy" },
             { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "AP", control: "Secure coding for code suggestions; require tests/review", category: "Technical" },
             { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "OSP", control: "Quality gates; fact-checking/groundedness checks in orchestration", category: "Technical" },
             { riskId: "LLM09:2025", riskName: "Misinformation (Overreliance)", role: "MP", control: "Publish model limitations, evals, and known failure modes", category: "Policy" },
 
             { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AIC", control: "Follow usage/cost policy; report anomalies in spend/perf", category: "Awareness" },
-            { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AP", control: "Tiered rate limits (req/sec, tokens, $); quotas per user/org", category: "Technical" },
+            { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AP", control: "Rate limits; quotas per user", category: "Technical" },
             { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AP", control: "Input/token size caps; timeouts; circuit breakers; step limits for agents", category: "Technical" },
             { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "AP", control: "Caching/dedup; concurrency caps; budget alarms/kill-switches", category: "Governance" },
             { riskId: "LLM10:2025", riskName: "Unbounded Consumption", role: "OSP", control: "Orchestration-level budgets, token accounting, watchdogs", category: "Technical" },
@@ -729,6 +729,10 @@
 
         function updateStats() {
             document.getElementById('visibleControls').textContent = filteredData.length;
+            document.getElementById('totalControls').textContent = filteredData.length;
+            
+            const uniqueRoles = [...new Set(filteredData.map(item => item.role))].length;
+            document.getElementById('uniqueRoles').textContent = uniqueRoles;
             
             const technicalCount = filteredData.filter(item => item.category === 'Technical').length;
             const governanceCount = filteredData.filter(item => item.category === 'Governance').length;
