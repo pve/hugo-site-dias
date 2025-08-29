@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Digital Infrastructures at Scale</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Digital Infrastructures at Scale</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Aug 2025 09:33:34 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OLRA</title>
+      <link>http://localhost:1313/projects/olra/olra/</link>
+      <pubDate>Fri, 29 Aug 2025 09:33:34 +0000</pubDate>
+      <guid>http://localhost:1313/projects/olra/olra/</guid>
+      <description>&lt;p&gt;OLRA stands for OWASP LLM Risk Allocation.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP LLM top 10&lt;/a&gt; risks are a good start for analyzing the risks of an LLM system.&lt;/p&gt;
+&lt;p&gt;But, who is supposed to do each control?&lt;/p&gt;
+&lt;p&gt;This is where risk allocation comes in.&lt;/p&gt;
+&lt;p&gt;We identify the following roles, based on the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AICM&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
+&lt;p&gt;End users of AI applications.
+This includes the actual users as well as their organisational units.&lt;/p&gt;
+&lt;h2 id=&#34;application-provider-ap&#34;&gt;Application Provider (AP)&lt;/h2&gt;
+&lt;p&gt;These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

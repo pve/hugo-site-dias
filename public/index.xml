@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Aug 2025 10:09:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Aug 2025 09:33:34 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -53,17 +53,46 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>OLRA</title>
+      <link>http://localhost:1313/projects/olra/olra/</link>
+      <pubDate>Fri, 29 Aug 2025 09:33:34 +0000</pubDate>
+      <guid>http://localhost:1313/projects/olra/olra/</guid>
+      <description>&lt;p&gt;OLRA stands for &lt;strong&gt;OWASP LLM Risk Allocation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP LLM top 10&lt;/a&gt; risks are a good start for analyzing the risks of an LLM system.&lt;/p&gt;
+&lt;p&gt;But, who (which role) is supposed to do each control?&lt;/p&gt;
+&lt;p&gt;This is where allocation of risks and their controls to roles comes in.&lt;/p&gt;
+&lt;p&gt;We identify the following roles, based on the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AICM&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
+&lt;p&gt;End users of AI applications.
+This includes the actual users as well as their organizational units.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ai Roles</title>
+      <link>http://localhost:1313/book/diginfra/ai-roles/</link>
+      <pubDate>Tue, 26 Aug 2025 15:56:05 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
+      <description>&lt;h1 id=&#34;ai-roles-and-responsibilities&#34;&gt;AI Roles and Responsibilities&lt;/h1&gt;
+&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
+&lt;p&gt;End users of AI applications.&lt;/p&gt;
+&lt;h2 id=&#34;application-provider-ap&#34;&gt;Application Provider (AP)&lt;/h2&gt;
+&lt;p&gt;These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.&lt;/p&gt;
+&lt;p&gt;These applications are often delivered as software-as-a-service (SaaS) solutions.&lt;/p&gt;
+&lt;p&gt;These providers focus on user interfaces, application logic, domain-specific functionality, and overall user experience rather than underlying model development.&lt;/p&gt;
+&lt;h2 id=&#34;orchestrated-services-provider-osp&#34;&gt;Orchestrated Services Provider (OSP)&lt;/h2&gt;
+&lt;p&gt;This refers to entities that create the technical building blocks and management tools that enable AI implementation.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Agentic coding, the next level</title>
       <link>http://localhost:1313/posts/claude-flow-ttt/</link>
       <pubDate>Mon, 25 Aug 2025 10:09:31 +0000</pubDate>
       <guid>http://localhost:1313/posts/claude-flow-ttt/</guid>
       <description>&lt;p&gt;My AI coding journey continues.&lt;/p&gt;
-&lt;p&gt;My &lt;a href=&#34;fposts/ai-nocode/&#34;&gt;first version&lt;/a&gt; of the Tic Tac Toe game took some time to get right
+&lt;p&gt;My &lt;a href=&#34;http://localhost:1313/posts/ai-nocode/&#34;&gt;first version&lt;/a&gt; of the Tic-Tac-Toe game took some time to get right
 even though I already applied some serious automated top-down design.&lt;/p&gt;
-&lt;p&gt;As explained, it takes understanding of the feedback loops that help correct errors.
+&lt;p&gt;As explained, understanding feedback loops is crucial for correcting errors.
 Part of this is using explicit tests for desirable outcomes.
 A process for test-driven design would be even better.&lt;/p&gt;
-&lt;p&gt;The main question that comes out of that experience was: How can we let the AI check itself?&lt;/p&gt;</description>
+&lt;p&gt;The main question from that experience was: How can we let the AI check itself?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why 2025 resources</title>
@@ -73,6 +102,7 @@ A process for test-driven design would be even better.&lt;/p&gt;
       <description>&lt;p&gt;For the book, here is the link: &lt;a href=&#34;https://digitalinfrastructures.nl&#34;&gt;https://digitalinfrastructures.nl&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;PDF: &lt;a href=&#34;http://localhost:1313/How-to-bluff-ZT-WHY2025.pdf&#34;&gt;How to bluff your way into Zero Trust&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;PDF: &lt;a href=&#34;Diagrams-that-communicate&#34;&gt;Using deployment diagrams to explain architecture and security to everybody&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The presentations are also online in the WHY2025 YouTube channel and at the &lt;a href=&#34;https://media.ccc.de/b/conferences/camp-NL/why2025&#34;&gt;CCC&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;More on deployment diagrams in the book, in which you can search.&lt;/p&gt;
 &lt;p&gt;Find me on LinkedIN or Mastodon @petersgriddle@fosstodon.org.&lt;/p&gt;</description>
     </item>
@@ -887,7 +917,7 @@ As IT increased in volume, you have tried to keep its costs down, it was just a 
 Outsourcing to more experienced partners was an option, and so was the use of cloud computing, for example for your Office applications.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The Uneasy Relationship Between Compliance and Risk</title>
+      <title>Compliance is a Risk</title>
       <link>http://localhost:1313/book/risk/uneasy-compliance-risk/</link>
       <pubDate>Fri, 22 Aug 2025 09:18:35 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/uneasy-compliance-risk/</guid>

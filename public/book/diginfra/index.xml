@@ -6,7 +6,7 @@
     <description>Recent content in What are digital infrastructures? on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jul 2025 07:45:07 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Aug 2025 15:56:05 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/diginfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elements of the Digital World</title>
@@ -21,6 +21,21 @@
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ai Roles</title>
+      <link>http://localhost:1313/book/diginfra/ai-roles/</link>
+      <pubDate>Tue, 26 Aug 2025 15:56:05 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
+      <description>&lt;h1 id=&#34;ai-roles-and-responsibilities&#34;&gt;AI Roles and Responsibilities&lt;/h1&gt;
+&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
+&lt;p&gt;End users of AI applications.&lt;/p&gt;
+&lt;h2 id=&#34;application-provider-ap&#34;&gt;Application Provider (AP)&lt;/h2&gt;
+&lt;p&gt;These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.&lt;/p&gt;
+&lt;p&gt;These applications are often delivered as software-as-a-service (SaaS) solutions.&lt;/p&gt;
+&lt;p&gt;These providers focus on user interfaces, application logic, domain-specific functionality, and overall user experience rather than underlying model development.&lt;/p&gt;
+&lt;h2 id=&#34;orchestrated-services-provider-osp&#34;&gt;Orchestrated Services Provider (OSP)&lt;/h2&gt;
+&lt;p&gt;This refers to entities that create the technical building blocks and management tools that enable AI implementation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Got Started in Computer Networks</title>

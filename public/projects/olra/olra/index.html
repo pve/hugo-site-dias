@@ -5,15 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Things Break at Scale | Digital Infrastructures at Scale</title>
+<title>OLRA | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
-<meta name="description" content="Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.
-In the early days of Google growth I read an article about their error numbers
-(a Google cluster has several thousands of machines):
-
-In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.">
+<meta name="description" content="OLRA stands for OWASP LLM Risk Allocation.
+The OWASP LLM top 10 risks are a good start for analyzing the risks of an LLM system.
+But, who (which role) is supposed to do each control?
+This is where allocation of risks and their controls to roles comes in.
+We identify the following roles, based on the CSA AICM.
+AI Customer (AIC)
+End users of AI applications.
+This includes the actual users as well as their organizational units.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/book/diginfra/things-break-at-scale/">
+<link rel="canonical" href="http://localhost:1313/projects/olra/olra/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -22,7 +25,7 @@ In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual mac
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/book/diginfra/things-break-at-scale/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/olra/olra/">
 <noscript>
     <style>
         #theme-toggle,
@@ -140,96 +143,47 @@ In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual mac
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/projects/">Projects</a></div>
     <h1 class="post-title entry-hint-parent">
-      Things Break at Scale
+      OLRA
     </h1>
-    <div class="post-meta"><span title='2025-04-16 21:16:12 +0000 UTC'>April 16, 2025</span>
+    <div class="post-meta"><span title='2025-08-29 09:33:34 +0000 UTC'>August 29, 2025</span>
 
 </div>
   </header> 
 
   
-  <i>⏳ 3 min read</i>
+  <i>⏳ 2 min read</i>
   
-  <div class="post-content"><p>Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.</p>
-<p>In the early days of Google growth I read an <a href="https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/">article about their error numbers</a>
-(a Google cluster has several thousands of machines):</p>
-<blockquote>
-<p>In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.</p></blockquote>
-<p>A <a href="https://www.storagereview.com/news/backblaze-2024-drive-stats-hard-drive-failures-drop-as-high-capacity-models-take-over">2024 report</a> puts storage drive failure rates at about 1.35% per year.
-With thousands of drives, failure is not an option, but a certainty.</p>
-<p>These look like interesting considerations for both hardware and software planners.</p>
-<p>Adrian Cockcroft, while he was CTO of Netflix around 2010, summed it up as:</p>
-<blockquote>
-<p>Size breaks hardware</p></blockquote>
-<p>No matter how good your hardware is, if it becomes big enough, it breaks. In his view you therefore need to solve reliability problems in software, not in building better hardware.</p>
-<p>As Google say:</p>
-<blockquote>
-<p>&ldquo;Our view is it&rsquo;s better to have twice as much hardware that&rsquo;s not as reliable than half as much that&rsquo;s more reliable,&rdquo; Dean said. &ldquo;You have to provide reliability on a software level. If you&rsquo;re running 10,000 machines, something is going to die every day.&rdquo;</p></blockquote>
-<p>The business case for this is that you will have to invest in software for reliability.
-Once you have done that, the hardware reliability no longer matter, within certain bounds, and you are financially better off with cheaper hardware.</p>
-<p>The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a &lsquo;middleware&rsquo; software layer on which resilient applications can be build.
-We&rsquo;ll cover that in another unit.</p>
-<p>Finally, scale does not only break hardware, but also organizations.
-For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
-When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks.
-That introduces a lot of communication overhead.
-Without being compensated with economies of scale, this can make the task too expensive to do.</p>
+  <div class="post-content"><p>OLRA stands for <strong>OWASP LLM Risk Allocation</strong>.</p>
+<p>The <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/">OWASP LLM top 10</a> risks are a good start for analyzing the risks of an LLM system.</p>
+<p>But, who (which role) is supposed to do each control?</p>
+<p>This is where allocation of risks and their controls to roles comes in.</p>
+<p>We identify the following roles, based on the <a href="https://cloudsecurityalliance.org/artifacts/ai-controls-matrix">CSA AICM</a>.</p>
+<h2 id="ai-customer-aic">AI Customer (AIC)<a hidden class="anchor" aria-hidden="true" href="#ai-customer-aic">#</a></h2>
+<p>End users of AI applications.
+This includes the actual users as well as their organizational units.</p>
+<h2 id="application-provider-ap">Application Provider (AP)<a hidden class="anchor" aria-hidden="true" href="#application-provider-ap">#</a></h2>
+<p>These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.</p>
+<p>These applications are often delivered as software-as-a-service (SaaS) solutions.</p>
+<p>These providers focus on user interfaces, application logic, domain-specific functionality, and overall user experience rather than underlying model development.</p>
+<h2 id="orchestrated-services-provider-osp">Orchestrated Services Provider (OSP)<a hidden class="anchor" aria-hidden="true" href="#orchestrated-services-provider-osp">#</a></h2>
+<p>This refers to entities that create the technical building blocks and management tools that enable AI implementation.</p>
+<p>This can include platforms, frameworks, and tools that facilitate the integration, deployment, and management of AI models within enterprise workflows.</p>
+<p>These providers focus on model orchestration and offer services like API access, automated scaling, prompt management, workflow automation, monitoring, and governance rather than end-user functionality or raw infrastructure.</p>
+<p>They help businesses implement AI in a structured and efficient manner.</p>
+<h2 id="model-provider-mp">Model Provider (MP)<a hidden class="anchor" aria-hidden="true" href="#model-provider-mp">#</a></h2>
+<p>Model Providers are entities that develop, train, and distribute foundational and fine-tuned AI models for various applications.</p>
+<p>They create the underlying AI capabilities that other actors build upon. Model Providers are responsible for model architecture, training methodologies, performance characteristics, and documentation of capabilities and limitations.</p>
+<p>They operate at the foundation layer of the AI stack and may provide direct API access to their models.</p>
+<h2 id="cloud-service-provider-csp">Cloud Service Provider (CSP)<a hidden class="anchor" aria-hidden="true" href="#cloud-service-provider-csp">#</a></h2>
+<p>Non-AI specific cloud services.</p>
+<h2 id="more">MORE<a hidden class="anchor" aria-hidden="true" href="#more">#</a></h2>
+<p>The <a href="/olra/artifact3.html">OLRA Navigator</a> lists a very preliminary set of controls by actor.</p>
+<p>More coming soon!</p>
 
 
   </div>
-  
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
-      
-        
-        <a href="/book/diginfra/shared-service-conflict/">&larr; Shared Services Lead to Conflicts</a>
-      
-      
-        
-        <a href="/book/diginfra/essence-digital-infrastructures/">The Essence of Digital Infrastructures &rarr;</a>
-      
-    </nav>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
 
   
 
