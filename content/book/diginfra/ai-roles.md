@@ -1,16 +1,22 @@
 ---
 date: '2025-08-26T15:56:05Z'
-draft: true
-title: 'Ai Roles'
-weight: 10
+draft: false
+title: 'AI Roles and Responsibilities'
+weight: 80
 ---
+AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.
 
+We follow the roles outlined in the [CSA AICM](https://cloudsecurityalliance.org/artifacts/ai-controls-matrix).
 
-# AI Roles and Responsibilities
+Together these run AI systems, from image recognition systems to Large Language Model based customer support systems.
 
 ## AI Customer (AIC)
 
 End users of AI applications.
+This includes the actual users as well as their organizational units.
+Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
+Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
+For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.
 
 ## Application Provider (AP)
 
@@ -18,17 +24,19 @@ These providers build and offer end-user applications that leverage generative A
 
 These applications are often delivered as software-as-a-service (SaaS) solutions.  
 
-These providers focus on user interfaces, application logic, domain-specific functionality, and overall user experience rather than underlying model development.
+Application providers focus on user interfaces, application logic, domain-specific functionality, and overall user experience rather than underlying model development.
 
 ## Orchestrated Services Provider (OSP)
 
 This refers to entities that create the technical building blocks and management tools that enable AI implementation.  
 
-This can include platforms, frameworks, and tools that facilitate the integration, deployment, and management of AI models within enterprise workflows.  
+This includes platforms, frameworks, and tools that facilitate the integration, deployment, and management of AI models within enterprise workflows.  
 
 These providers focus on model orchestration and offer services like API access, automated scaling, prompt management, workflow automation, monitoring, and governance rather than end-user functionality or raw infrastructure.  
 
 They help businesses implement AI in a structured and efficient manner.
+
+While the lines can be a bit blurry, you can think of OSPs as being independent of specific applications and independent of specific models.
 
 ## Model Provider (MP)
 
@@ -40,4 +48,26 @@ They operate at the foundation layer of the AI stack and may provide direct API 
 
 ## Cloud Service Provider (CSP)
 
-Non-AI specific cloud services.
+Non-AI specific cloud services for servers, storage, messaging, and more.
+
+Beyond these AI specific roles, we can dig a bit deeper.
+For example, the AP and OSP may be linking to distinct other services that are outside their direct control, such as document management systems.
+
+## Data providers
+
+AI runs on data, and the more specific the data is, the greater its potential in enhancing AI capabilities.
+A typical use case is to provide access to large collections of company-internal text and images, some of which may be classified and, therefore, should only be accessible to authorized users.
+
+These systems are known under that names of DMS (Document Management System), CMS (Content Management System), or intranets.
+
+A popular approach for integrating text in an AI system is RAG (Retrieval Augmented Generation).
+Based on a user query, a selection of documents is retrieved from a data provider and then used by the model to formulate a targeted response.
+
+From a security perspective, it gets more interesting if not all data should be accessible to everybody.
+That is why the service of a data provider includes promises such as:
+
+- When asked for a document by an authenticated user, I promise to return the best matching answers.
+- I promise to only return answers to with the user is authorized
+- I promise to reveal the document classification to authorized users, but not to others.
+
+This makes these data providers enforcers of policy (or PEP in the Zero Trust jargon).

@@ -57,29 +57,12 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
       <link>http://localhost:1313/projects/olra/olra/</link>
       <pubDate>Fri, 29 Aug 2025 09:33:34 +0000</pubDate>
       <guid>http://localhost:1313/projects/olra/olra/</guid>
-      <description>&lt;p&gt;OLRA stands for &lt;strong&gt;OWASP LLM Risk Allocation&lt;/strong&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Overwhelmed by too many risks and controls to consider?
+That is why there is this risk navigator.&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP LLM top 10&lt;/a&gt; risks are a good start for analyzing the risks of an LLM system.&lt;/p&gt;
-&lt;p&gt;But, who (which role) is supposed to do each control?&lt;/p&gt;
-&lt;p&gt;This is where allocation of risks and their controls to roles comes in.&lt;/p&gt;
-&lt;p&gt;We identify the following roles, based on the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AICM&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
-&lt;p&gt;End users of AI applications.
-This includes the actual users as well as their organizational units.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ai Roles</title>
-      <link>http://localhost:1313/book/diginfra/ai-roles/</link>
-      <pubDate>Tue, 26 Aug 2025 15:56:05 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
-      <description>&lt;h1 id=&#34;ai-roles-and-responsibilities&#34;&gt;AI Roles and Responsibilities&lt;/h1&gt;
-&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
-&lt;p&gt;End users of AI applications.&lt;/p&gt;
-&lt;h2 id=&#34;application-provider-ap&#34;&gt;Application Provider (AP)&lt;/h2&gt;
-&lt;p&gt;These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.&lt;/p&gt;
-&lt;p&gt;These applications are often delivered as software-as-a-service (SaaS) solutions.&lt;/p&gt;
-&lt;p&gt;These providers focus on user interfaces, application logic, domain-specific functionality, and overall user experience rather than underlying model development.&lt;/p&gt;
-&lt;h2 id=&#34;orchestrated-services-provider-osp&#34;&gt;Orchestrated Services Provider (OSP)&lt;/h2&gt;
-&lt;p&gt;This refers to entities that create the technical building blocks and management tools that enable AI implementation.&lt;/p&gt;</description>
+&lt;p&gt;But, who is supposed to do each control? And which role do they have?&lt;/p&gt;
+&lt;p&gt;This is where allocation of risks and their controls to roles comes in, and why this tool is called the OLRA navigator.
+OLRA stands for &lt;strong&gt;OWASP LLM Risk Allocation&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agentic coding, the next level</title>
@@ -915,6 +898,21 @@ I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;
 Or you have a similar position in a manufacturing industry, or in the financial sector.
 As IT increased in volume, you have tried to keep its costs down, it was just a facility.
 Outsourcing to more experienced partners was an option, and so was the use of cloud computing, for example for your Office applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Roles and Responsibilities</title>
+      <link>http://localhost:1313/book/diginfra/ai-roles/</link>
+      <pubDate>Tue, 26 Aug 2025 15:56:05 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
+      <description>&lt;p&gt;AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.&lt;/p&gt;
+&lt;p&gt;We follow the roles outlined in the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AICM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Together these run AI systems, from image recognition systems to Large Language Model based customer support systems.&lt;/p&gt;
+&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
+&lt;p&gt;End users of AI applications.
+This includes the actual users as well as their organizational units.
+Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
+Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
+For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compliance is a Risk</title>
