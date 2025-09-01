@@ -13,16 +13,12 @@
       <link>http://localhost:1313/projects/olra/olra/</link>
       <pubDate>Fri, 29 Aug 2025 09:33:34 +0000</pubDate>
       <guid>http://localhost:1313/projects/olra/olra/</guid>
-      <description>&lt;p&gt;OLRA stands for OWASP LLM Risk Allocation.&lt;/p&gt;
+      <description>&lt;p&gt;Overwhelmed by too many risks and controls to consider?
+That is why there is this risk navigator.&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP LLM top 10&lt;/a&gt; risks are a good start for analyzing the risks of an LLM system.&lt;/p&gt;
-&lt;p&gt;But, who is supposed to do each control?&lt;/p&gt;
-&lt;p&gt;This is where risk allocation comes in.&lt;/p&gt;
-&lt;p&gt;We identify the following roles, based on the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AICM&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
-&lt;p&gt;End users of AI applications.
-This includes the actual users as well as their organisational units.&lt;/p&gt;
-&lt;h2 id=&#34;application-provider-ap&#34;&gt;Application Provider (AP)&lt;/h2&gt;
-&lt;p&gt;These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.&lt;/p&gt;</description>
+&lt;p&gt;But, who is supposed to do each control? And which role do they have?&lt;/p&gt;
+&lt;p&gt;This is where allocation of risks and their controls to roles comes in, and why this tool is called the OLRA navigator.
+OLRA stands for &lt;strong&gt;OWASP LLM Risk Allocation&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
