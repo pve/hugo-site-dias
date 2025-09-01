@@ -1,7 +1,7 @@
 ---
 date: '2025-09-01T11:28:58Z'
 draft: false
-title: 'Testing RSS'
+title: 'Testing RSS updates'
 weight: 10
 ---
 

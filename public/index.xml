@@ -53,7 +53,7 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Testing RSS</title>
+      <title>Testing RSS updates</title>
       <link>http://localhost:1313/blog/newblog/</link>
       <pubDate>Mon, 01 Sep 2025 11:28:58 +0000</pubDate>
       <guid>http://localhost:1313/blog/newblog/</guid>
@@ -190,65 +190,6 @@ I have a great story about that, but that will be in another unit.&lt;/p&gt;</de
 In that entire time, I have never witnessed a development that has changed the profession deeper, faster, or more pervasively than now.
 AI-assisted coding has escaped from the lab, and is impacting the work of every software developer.&lt;/p&gt;
 &lt;p&gt;In the communities I track I hear stories of software engineers regret taking a single week of vacation because of the innovations that they now have to catch up to.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Janvandijk</title>
-      <link>http://localhost:1313/book/power/janvandijk/</link>
-      <pubDate>Sun, 25 May 2025 20:32:17 +0000</pubDate>
-      <guid>http://localhost:1313/book/power/janvandijk/</guid>
-      <description>&lt;p&gt;Summary&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;p2 power is the ability to shape events.&lt;/li&gt;
-&lt;li&gt;p3 social vs natural vs technical power&lt;/li&gt;
-&lt;li&gt;p3 dialectical view. technology is a mediator, tech and society influence one another&lt;/li&gt;
-&lt;li&gt;pve: AI is now being trained on how AI is being used by humans. Which is better than AI being trained on whatever AI is generating.&lt;/li&gt;
-&lt;li&gt;p12 feedback loops in power: natural power is used to get more power (chain reaction). Power to versus power over.&lt;/li&gt;
-&lt;li&gt;p13 humans control natural power&lt;/li&gt;
-&lt;li&gt;p14 digital infrastructures transform: make things possible that weren&amp;rsquo;t before; automation of transformation. Control that is possible as a result of this. Tech introduces new stakeholders to the game (e.g. ultrasound, takes agency away from the pregnant woman), and shifts power.&lt;/li&gt;
-&lt;li&gt;p16 preventing is also power&lt;/li&gt;
-&lt;li&gt;p16 power always meets resistance and counterpower. Voorbeeld counterpower van buschauffeurs die gecontroleerd worden.&lt;/li&gt;
-&lt;li&gt;p16 power is a capacity (of negatief bekeken: een dreigement is ook macht)&lt;/li&gt;
-&lt;li&gt;p18 le pouvoir public&lt;/li&gt;
-&lt;li&gt;p19 is technolgoy zelf ook een actor?&lt;/li&gt;
-&lt;li&gt;p19 capacity van actoren, om te beinvloeden in een context teneinde ..&lt;/li&gt;
-&lt;li&gt;p23 is power positive or negative?&lt;/li&gt;
-&lt;li&gt;p24 game theory; political power comes from the barrel of a gun.&lt;/li&gt;
-&lt;li&gt;p25 voorbeeld. providers dwingen gebruikers om voorwaarden te accepteren. Niet eens eenmalig, maar creeping up. Hier zit een prisoners dilemma in?&lt;/li&gt;
-&lt;li&gt;p25 micro = humans, meso is groepen, instituties, macro is big tech en overheid. Ik denk zelf dat er verschil is onder en boven de 150 pax.&lt;/li&gt;
-&lt;li&gt;p27 belemmeren van keuze is ook een verschijning van macht. Terwijl grotere keuze vaak als meer keuze wordt gepresenteerd, maar dat niet altijd is.&lt;/li&gt;
-&lt;li&gt;p27 creators and users can have shifting foci of power&lt;/li&gt;
-&lt;li&gt;p27 voorbeeld internet, wie is er de baas over? private, public? tegelijkertijd is internet een middel tot subversiviteit tegen de centrale machten. Als zodanig is het internet nauweijiks meer te controleren.&lt;/li&gt;
-&lt;li&gt;p29 nudging is ook een vorm van macht.&lt;/li&gt;
-&lt;li&gt;p30 technologie wordt van een tool van individuen tot een tool voor organisaties (denk polders en irrigatiesystemen)&lt;/li&gt;
-&lt;li&gt;p31 ownership implies control (in hoeverre is dat zo)&lt;/li&gt;
-&lt;li&gt;p44 tech means artifacts&lt;/li&gt;
-&lt;li&gt;p45 tech implies skills, and in particular transferable (learnable) skills. If tech (a.o. AI) is an actor, it has a symbiotic relation with other actors (the skilled persons). Scalability shifts the power from the craftsmen to the capitalist who can bring together a: the scale, b: the investment for skills.&lt;/li&gt;
-&lt;li&gt;p45 socially transmittable skills require language, or at least some form of shared common concepts (symbol making).&lt;/li&gt;
-&lt;li&gt;p46 tools give power because they afford transformations, however this notion has critiques. e.g. it excludes morality.&lt;/li&gt;
-&lt;li&gt;p47 it also does not talk about second order effects (not anticipated now) and third order effects (not anticipated for the future)&lt;/li&gt;
-&lt;li&gt;p48 technology is an active mediator&lt;/li&gt;
-&lt;li&gt;p64 actors: creators, makers, users&lt;/li&gt;
-&lt;li&gt;p65 technology involves making choices within constraints. If you do X, you cannot do Y.&lt;/li&gt;
-&lt;li&gt;p67 the invention of capitalism (voc?). Who rules the internet? big tech, or big gov?&lt;/li&gt;
-&lt;li&gt;p78 mediation - introduction&lt;/li&gt;
-&lt;li&gt;p81 technological determinism -&amp;gt; tech determines social change (diamat?)&lt;/li&gt;
-&lt;li&gt;p81 does society use technology, or does technology use society (link: the selfish meme)&lt;/li&gt;
-&lt;li&gt;p92 techno optimism: societal problems can be solved by tech&lt;/li&gt;
-&lt;li&gt;p92 technology is a social construct - with a life of its own&lt;/li&gt;
-&lt;li&gt;p93 because one man has invented how to make a sword, the other has the have one too, even if you do not plan to use it. This implies that the sword itself has power, because it forces behaviour.&lt;/li&gt;
-&lt;li&gt;p84 fallacy of lone inventor: all tech is a social construct.&lt;/li&gt;
-&lt;li&gt;p85 ontwerp, versus productie versus gebruik. Met name bij sofware is productie niet langer een machtsfactor.&lt;/li&gt;
-&lt;li&gt;p86 (link met text niet helemaal duidelijk) stabilisatie en closure versus cambrian explosion. Voorbeeld al die computer firma&amp;rsquo;s: Prime, Harris, Electrologica, etc.&lt;/li&gt;
-&lt;li&gt;p87 can technology be fully autonomous?&lt;/li&gt;
-&lt;li&gt;p89 ANT shares Foucault&amp;rsquo;s definition of power as the ability to affect the actions of others.&lt;/li&gt;
-&lt;li&gt;p89 Karl Marx (following Hegel) historical materialism (Engels: dialectic materialism)&lt;/li&gt;
-&lt;li&gt;p91 tech change =&amp;gt; societal change? of andersom&lt;/li&gt;
-&lt;li&gt;p92 bv. om nut te halen uit AI, moet je je gedrag aanpassen, en dat wordt weer een gewoonte&lt;/li&gt;
-&lt;li&gt;p92 Winner, inherently political technologies (e.g. microtargeting)&lt;/li&gt;
-&lt;li&gt;p95 dialectic: interaction and mediation (requires 3rd party&lt;/li&gt;
-&lt;li&gt;p96 power is a relational affair&lt;/li&gt;
-&lt;li&gt;p115 Human machine interface. interaction is a dance constrained by both parties&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     <item>
       <title>AI will replace coders, not software engineers</title>
