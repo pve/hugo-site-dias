@@ -15,7 +15,7 @@ But, who is supposed to do each control? And which role do they have?
 This is where allocation of risks and their controls to roles comes in, and why this tool is called the OLRA navigator.
 OLRA stands for **OWASP LLM Risk Allocation**.
 
-For more detail refer to the [AI roles](/content/book/diginfra/ai-roles.md).
+For more detail refer to the [AI roles](/book/diginfra/ai-roles/).
 
 ## MORE
 
