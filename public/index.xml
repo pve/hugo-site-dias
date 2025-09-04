@@ -863,10 +863,14 @@ Outsourcing to more experienced partners was an option, and so was the use of cl
       <link>http://localhost:1313/book/risk/darico/</link>
       <pubDate>Mon, 01 Sep 2025 19:48:55 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/darico/</guid>
-      <description>&lt;p&gt;For many organizations, the start of their IT security journey is when they have to fulfill a compliance obligation to demonstrate that confidential information remains confidential.
-Maybe their customer is asking for an ISO27001 certification, demonstrating that an IT risk management system is in place. Maybe they are handling credit cards and therefore need to worry about PCI/DSS.
-The common theme in these is that they are &lt;em&gt;control&lt;/em&gt; based.
-The process is that you demonstrate compliance by implementing a set of controls, such as defining a password policy, or implementing a firewall of sorts.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Where do you start your IT security journey?
+It is important, but it can be confusing.&lt;/p&gt;
+&lt;p&gt;For many organizations, the trigger is a compliance obligation to show that confidential information remains confidential.
+Maybe their customers are asking for an ISO/IEC 27001 certification, demonstrating that an IT risk management system is in place.
+Maybe they are handling credit cards and therefore need to worry about compliance to PCI DSS.&lt;/p&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;p&gt;The common theme in these is that they are &lt;em&gt;control&lt;/em&gt; based.
+The process is that you realize compliance by implementing a set of controls, such as defining a password policy, or implementing a type of firewall.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI Roles and Responsibilities</title>
