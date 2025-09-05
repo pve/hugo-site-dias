@@ -83,8 +83,6 @@ This helps to more selectively filter the vulnerabilities that have to be taken 
 
 For example, if the most important data is stored in a MySQL database on a Linux system with a single sign on system, only vulnerabilities in those technologies need to be taken into account.
 
-But this requires a fundamentally different dialogue between the business process owners, risk assessors, and technical practitioners.
-
 It requires a common perspective on the value of data, that is a bit more nuanced than 'everything is important'.
 
 It also requires a nuanced perspective on risk tolerance in IT.
@@ -96,3 +94,7 @@ The loss of an entire database is a compliance event, with completely different 
 With that background, rate limiting of data exports now becomes one of the relevant controls.
 
 This is the type of common ground that is required for truly effective *and* efficient IT risk management.
+
+But this requires a fundamentally different dialogue between the business process owners, risk assessors, and technical practitioners.
+
+For starters, it requires that conversations are driven, not by a fear of doing the wrong thing, but by a desire to do the right thing.

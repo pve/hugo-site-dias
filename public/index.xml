@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Sep 2025 19:48:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Sep 2025 09:13:38 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,20 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scare and FUD</title>
+      <link>http://localhost:1313/posts/scare-fud/</link>
+      <pubDate>Fri, 05 Sep 2025 09:13:38 +0000</pubDate>
+      <guid>http://localhost:1313/posts/scare-fud/</guid>
+      <description>&lt;p&gt;Your IT security vendor wants you to be scared.&lt;/p&gt;
+&lt;p&gt;There.&lt;/p&gt;
+&lt;p&gt;I said it.&lt;/p&gt;
+&lt;p&gt;I scared you about being scared.&lt;/p&gt;
+&lt;p&gt;But that is not how I want to talk to you.
+I want to enable you to make better decisions faster, and I believe that better understanding of the essentials helps.
+This allows you to act from a position of autonomy, which is one of my values.&lt;/p&gt;
+&lt;p&gt;In the history of IT security, unfortunately, fear, uncertainty, and doubt (FUD) have always been effective sales tactics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing RSS updates</title>
