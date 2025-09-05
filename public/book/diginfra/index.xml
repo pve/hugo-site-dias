@@ -23,21 +23,6 @@
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Ai Roles</title>
-      <link>http://localhost:1313/book/diginfra/ai-roles/</link>
-      <pubDate>Tue, 26 Aug 2025 15:56:05 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
-      <description>&lt;h1 id=&#34;ai-roles-and-responsibilities&#34;&gt;AI Roles and Responsibilities&lt;/h1&gt;
-&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
-&lt;p&gt;End users of AI applications.&lt;/p&gt;
-&lt;h2 id=&#34;application-provider-ap&#34;&gt;Application Provider (AP)&lt;/h2&gt;
-&lt;p&gt;These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.&lt;/p&gt;
-&lt;p&gt;These applications are often delivered as software-as-a-service (SaaS) solutions.&lt;/p&gt;
-&lt;p&gt;These providers focus on user interfaces, application logic, domain-specific functionality, and overall user experience rather than underlying model development.&lt;/p&gt;
-&lt;h2 id=&#34;orchestrated-services-provider-osp&#34;&gt;Orchestrated Services Provider (OSP)&lt;/h2&gt;
-&lt;p&gt;This refers to entities that create the technical building blocks and management tools that enable AI implementation.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>How I Got Started in Computer Networks</title>
       <link>http://localhost:1313/book/diginfra/first-network/</link>
       <pubDate>Sun, 08 Jun 2025 14:31:28 +0000</pubDate>
@@ -182,6 +167,21 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 &lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
 &lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
 &lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Roles and Responsibilities</title>
+      <link>http://localhost:1313/book/diginfra/ai-roles/</link>
+      <pubDate>Tue, 26 Aug 2025 15:56:05 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
+      <description>&lt;p&gt;AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.&lt;/p&gt;
+&lt;p&gt;We follow the roles outlined in the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AICM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Together these run AI systems, from image recognition systems to Large Language Model based customer support systems.&lt;/p&gt;
+&lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
+&lt;p&gt;End users of AI applications.
+This includes the actual users as well as their organizational units.
+Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
+Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
+For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Customer Service</title>

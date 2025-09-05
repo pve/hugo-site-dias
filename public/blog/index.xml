@@ -9,11 +9,11 @@
     <lastBuildDate>Mon, 01 Sep 2025 11:28:58 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Newblog</title>
+      <title>Testing RSS updates</title>
       <link>http://localhost:1313/blog/newblog/</link>
       <pubDate>Mon, 01 Sep 2025 11:28:58 +0000</pubDate>
       <guid>http://localhost:1313/blog/newblog/</guid>
-      <description></description>
+      <description>&lt;p&gt;Testing RSS&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
