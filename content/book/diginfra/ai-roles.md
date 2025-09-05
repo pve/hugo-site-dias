@@ -53,7 +53,7 @@ Non-AI specific cloud services for servers, storage, messaging, and more.
 Beyond these AI specific roles, we can dig a bit deeper.
 For example, the AP and OSP may be linking to distinct other services that are outside their direct control, such as document management systems.
 
-## Data providers
+## Data providers (DP)
 
 AI runs on data, and the more specific the data is, the greater its potential in enhancing AI capabilities.
 A typical use case is to provide access to large collections of company-internal text and images, some of which may be classified and, therefore, should only be accessible to authorized users.
