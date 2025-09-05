@@ -260,8 +260,9 @@
 
         .role-aic { background: #fed7d7; color: #c53030; }
         .role-ap { background: #c6f6d5; color: #22543d; }
+        .role-dp { background: #fde2e7; color: #9b2c2c; }
         .role-osp { background: #bee3f8; color: #1a365d; }
-        .role-mp { background: #fbb6ce; color: #702459; }
+        .role-mp { background: #e6fffa; color: #234e52; }
         .role-csp { background: #faf089; color: #744210; }
 
         .category-badge {
@@ -322,7 +323,6 @@
 
         .matrix-view {
             display: grid;
-            grid-template-columns: auto repeat(5, 1fr);
             gap: 1px;
             background: #e2e8f0;
             border-radius: 10px;
@@ -447,7 +447,6 @@
                         <option value="Awareness">Awareness</option>
                         <option value="Governance">Governance</option>
                         <option value="Technical">Technical</option>
-                        <option value="Policy">Policy</option>
                     </select>
                 </div>
 
@@ -658,7 +657,7 @@
             'CSP': 'Cloud Service Provider'
         };
 
-        const categories = ['Awareness', 'Governance', 'Technical', 'Policy'];
+        const categories = ['Awareness', 'Governance', 'Technical'];
 
         function renderTableView() {
             const tbody = document.getElementById('tableBody');
@@ -698,7 +697,10 @@
 
         function renderMatrixView() {
             const container = document.getElementById('matrixContainer');
-            const roles = [...new Set(controlsData.map(item => item.role))];
+            const roles = ['AIC', 'DP', 'AP', 'OSP', 'MP', 'CSP']; // Fixed order
+            
+            // Dynamically set grid columns based on number of roles
+            container.style.gridTemplateColumns = `auto repeat(${roles.length}, 1fr)`;
             
             // Create matrix grid
             let html = '<div class="matrix-header">Categories / Roles</div>';
