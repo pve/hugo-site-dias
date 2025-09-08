@@ -53,7 +53,7 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Scare and FUD</title>
+      <title>Scare, FUD, and thinking</title>
       <link>http://localhost:1313/posts/scare-fud/</link>
       <pubDate>Fri, 05 Sep 2025 09:13:38 +0000</pubDate>
       <guid>http://localhost:1313/posts/scare-fud/</guid>
@@ -64,7 +64,8 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;But that is not how I want to talk to you.
 I want to enable you to make better decisions faster, and I believe that better understanding of the essentials helps.
 This allows you to act from a position of autonomy, which is one of my values.&lt;/p&gt;
-&lt;p&gt;In the history of IT security, unfortunately, fear, uncertainty, and doubt (FUD) have always been effective sales tactics.&lt;/p&gt;</description>
+&lt;p&gt;In the history of IT security, unfortunately, fear, uncertainty, and doubt (FUD) have always been effective sales tactics.
+And it is no different in the world of AI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing RSS updates</title>

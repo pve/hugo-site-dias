@@ -1,7 +1,7 @@
 ---
 date: '2025-09-05T09:13:38Z'
 draft: true
-title: 'Scare and FUD'
+title: 'Scare, FUD, and thinking'
 weight: 10
 ---
 Your IT security vendor wants you to be scared.
@@ -17,9 +17,11 @@ I want to enable you to make better decisions faster, and I believe that better 
 This allows you to act from a position of autonomy, which is one of my values.
 
 In the history of IT security, unfortunately, fear, uncertainty, and doubt (FUD) have always been effective sales tactics.
+And it is no different in the world of AI.
 
 The reason is clear.
 
+It is in how people think.
 Daniel Kahneman talks about two systems of thought: fast and slow.
 The fast one is more emotional, and quick to respond to fear.
 The slow one is more cognitive, and takes its time to think the situation through.
@@ -32,3 +34,7 @@ Think healthcare emergency responders, airline pilots, and combat soldiers.
 
 That is my challenge in writing about IT and IT security: I am not very good at scaring you.
 Instead, I am doing my best to make your system two as effective as possible.
+That is why my book [Digital Power](/book) is chock full of usable concepts.
+
+But you need to turn your system two on to get results.
+So I am trying to scare your system one into doing that.
