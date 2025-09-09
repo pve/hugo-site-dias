@@ -8,7 +8,7 @@ weight: 10
 Overwhelmed by too many risks and controls to consider?
 That is why there is this risk navigator.
 
-The [OWASP LLM top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/) risks are a good start for analyzing the risks of an LLM system.
+The [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) risks are a good start for analyzing the risks of an LLM system.
 
 But, who is supposed to do each control? And which role do they have?
 

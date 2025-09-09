@@ -6,8 +6,22 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 09:13:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Sep 2025 06:10:21 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Security and AI</title>
+      <link>http://localhost:1313/posts/cloud-sec-ai/</link>
+      <pubDate>Tue, 09 Sep 2025 06:10:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cloud-sec-ai/</guid>
+      <description>&lt;p&gt;How can you use cloud security lessons to better secure AI?
+This is what is keeping some of my clients busy recently.&lt;/p&gt;
+&lt;p&gt;Arguably the most important concept in cloud security is the allocation of responsibilities across the independent actors that contribute to any digital service.
+Often referred to as &amp;lsquo;shared responsibility&amp;rsquo;, this is about &amp;lsquo;who does what?&amp;rsquo;.
+For example, in an IaaS service model, the provider does the physical security of servers, offers a variety of network isolation options, and so forth.
+The IaaS consumer&amp;rsquo;s job is to use those features to, for example, organize logical server access, so only authorized access is permitted.
+In contrast, many mistakenly think it is the provider&amp;rsquo;s job to secure and update the operating system.
+It is not, in an IaaS model, it is the consumer&amp;rsquo;s job.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Scare, FUD, and thinking</title>
       <link>http://localhost:1313/posts/scare-fud/</link>
