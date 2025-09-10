@@ -3,10 +3,12 @@ date: '2025-07-31T12:30:29Z'
 draft: false
 title: 'Games of value and power'
 weight: 110
+aireview: strunk flow
 ---
 
 A great way to look at how value is created in interactions between autonomous actors is game theory.
-How do autonomous actors respond to other actors, is the core question here.
+How do autonomous actors respond to other actors?
+This is the core question here.
 How do you respond to an offer from a service provider? But also, how do they respond to you?
 
 I have found game theory to be an effective model to think about the outcomes of sequences of interactions.
@@ -21,9 +23,10 @@ A simple example is [tic-tac-toe](/ttt/tic-tac-toe), where players take turns (m
 Whichever player first aligns three in a row wins.
 The win is called the payoff.
 
-Is there a way to play to game so that we always win?
-We call that a *strategy*, and by the way, there is no winning strategy for tic-tac-toe.
-The best you can hope for is a mistake from your opponent.
+A *strategy* is a plan for the moves that you are going to make.
+A *winning strategy* is one that always wins, despite the moves of opponents.
+By the way, there is no winning strategy for tic-tac-toe.
+The best you can hope for is an opponent's mistake.
 
 The digital infrastructures world has many examples and applications of this.
 One example can be found by looking at a simple provider-consumer relationship.
@@ -61,14 +64,15 @@ An important part of the work of those lawyers is figuring out what the game is.
 - What are the payoffs?
 - Do other parties have a strategy that gives us negative payoffs?
 
-Negotiating a contract means trying to establish the rules of the game that will apply when the contract goes into operation.
+Negotiating a contract means trying to establish the rules of the game.
+These rules will apply when the contract goes into operation.
 
 Interestingly, and confusing to some, is that negotiating a contract is a game in itself.
 The moves are the various proposals, clauses, and amendments that are made.
 The payoff is a contract, which hopefully has value.
 But abandoning the negotiations is also a move.
-Negotiation experts therefor urge you to think, in advance, what the payoff of that is going to be.
-This is often called the BATNA, or Best Alternative To Negotiated Agreement.
+Negotiation experts therefore urge you to consider the payoff beforehand.
+BATNA, or Best Alternative To Negotiated Agreement, represents your moves if a negotiated agreement fails.
 Understanding it gives you power in a negotiation.
 
 ## Taking a risk is a game
@@ -83,6 +87,7 @@ If you play in a casino, you can assume that the casino has a winning strategy, 
 
 In cybersecurity we are playing games all the time.
 For example: your software has a vulnerability.
+Vulnerabilities may lead to hacks, where your data gets stolen, or other bad things happen.
 Your move is to either fix it (negative payoff, as it is an effort) or not (zero payoff).
 Then you either don't get hacked (zero payoff) or you are (big negative payoff).
 Statistics won't help you much here.
@@ -138,7 +143,7 @@ A game a tech provider likes to play is 'vendor lock-in'.
 
 Once a consumer has started using a particular service, there will be a cost associated with switching to different provider.
 This is known as the switching cost.
-Providers can make a number of moves:
+Providers can make several moves:
 
 - keep switching costs as low as possible, which will make it easy for customers to switch
 - drive up switching costs, of which the payoff is higher revenue
@@ -148,4 +153,3 @@ Customers can make defensive moves, if they plan ahead.
 
 And often, regulators step in to keep switching costs down, in order to protect customers.
 Phone number portability is an example regulatory move.
-

@@ -1,7 +1,7 @@
 ---
 date: '2025-09-05T09:13:38Z'
 draft: true
-title: 'Scare, FUD, and thinking'
+title: 'Scare, FUD, and thought systems'
 weight: 10
 ---
 Your IT security vendor wants you to be scared.
