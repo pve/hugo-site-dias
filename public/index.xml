@@ -842,14 +842,15 @@ Back in the day, Application Services Providers, as they were known, offered sof
 I could tell horror stories about how early client server application installations went, so not needing that was a key selling point.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What are AI digital infrastructures?</title>
+      <title>What are AI Digital Infrastructures?</title>
       <link>http://localhost:1313/book/diginfra/digital-inf-ai/</link>
       <pubDate>Sat, 08 Mar 2025 17:57:16 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/digital-inf-ai/</guid>
       <description>&lt;p&gt;The AI landscape has many digital infrastructures.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.&lt;/p&gt;
-&lt;p&gt;A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.&lt;/p&gt;
-&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.&lt;/p&gt;</description>
+&lt;p&gt;Let&amp;rsquo;s explain this step by step and focus on which data is stored where and how it is processed.&lt;/p&gt;
+&lt;p&gt;A core element of AI systems is a trained model. This is especially true for the dominant form of AI these days: deep learning neural networks.&lt;/p&gt;
+&lt;p&gt;A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a gigabyte, while recent public chat models run into multiple terabytes.
+LLM training costs hundreds, thousands, or more hours of compute time on specialized hardware.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
@@ -910,7 +911,7 @@ The process is that you realize compliance by implementing a set of controls, su
       <pubDate>Tue, 26 Aug 2025 15:56:05 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
       <description>&lt;p&gt;AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.&lt;/p&gt;
-&lt;p&gt;We follow the roles outlined in the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AICM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We follow the roles outlined in the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AI Controls Matrix (AICM)&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Together these run AI systems, from image recognition systems to Large Language Model based customer support systems.&lt;/p&gt;
 &lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
 &lt;p&gt;End users of AI applications.

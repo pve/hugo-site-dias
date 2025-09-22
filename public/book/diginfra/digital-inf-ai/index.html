@@ -5,12 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>What are AI digital infrastructures? | Digital Infrastructures at Scale</title>
+<title>What are AI Digital Infrastructures? | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="The AI landscape has many digital infrastructures.
-Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.
-A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.
-A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.">
+Let&rsquo;s explain this step by step and focus on which data is stored where and how it is processed.
+A core element of AI systems is a trained model. This is especially true for the dominant form of AI these days: deep learning neural networks.
+A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a gigabyte, while recent public chat models run into multiple terabytes.
+LLM training costs hundreds, thousands, or more hours of compute time on specialized hardware.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/book/diginfra/digital-inf-ai/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.678402628decf506127431a1841c9ce87fb7307134098e3601990b6ba55c49b9.css" integrity="sha256-Z4QCYo3s9QYSdDGhhByc6H&#43;3MHE0CY42AZkLa6VcSbk=" rel="preload stylesheet" as="style">
@@ -148,7 +149,7 @@ A trained model is the result of processing a lot of training data by a specific
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
-      What are AI digital infrastructures?
+      What are AI Digital Infrastructures?
     </h1>
     <div class="post-meta"><span title='2025-03-08 17:57:16 +0000 UTC'>March 8, 2025</span>
 
@@ -159,10 +160,21 @@ A trained model is the result of processing a lot of training data by a specific
   <i>⏳ 2 min read</i>
   
   <div class="post-content"><p>The AI landscape has many digital infrastructures.</p>
-<p>Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.</p>
-<p>A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.</p>
-<p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.</p>
-<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
+<p>Let&rsquo;s explain this step by step and focus on which data is stored where and how it is processed.</p>
+<p>A core element of AI systems is a trained model. This is especially true for the dominant form of AI these days: deep learning neural networks.</p>
+<p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a gigabyte, while recent public chat models run into multiple terabytes.
+LLM training costs hundreds, thousands, or more hours of compute time on specialized hardware.</p>
+<pre class="mermaid">block-beta
+
+space in space llm:2 space out space
+in[&#34;Lots of\ntraining\ndata&#34;] --&gt; llm[&#34;Training\nEngine&#34;]
+llm--&gt; out[&#34;Large\nLanguage\nModel&#34;]
+
+style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+   
+</pre>
+<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the simplest cases is this possible on a high-end laptop. For more interesting use cases, you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
 <pre class="mermaid">block-beta
 
 space in space llm:2 space out space
@@ -173,10 +185,10 @@ style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasha
 style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
    
 </pre>
-<p>In cloud terms, we would call this Inference as a Service.
-In the NIST model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
-<p>This gives us the option to look for this on the market, or create a shared service inside an organization or group of organizations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilities.</p>
-<p>More at: <a href="https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing">https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing</a></p>
+<p>In cloud computing, we would call this Inference as a Service.
+In the NIST cloud model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
+<p>This gives us the option to look for this on the market, or create a shared service inside an organization or group of organizations (e.g. private or community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilities.</p>
+<p>More at <a href="https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing">https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing</a></p>
 
 
   </div>
