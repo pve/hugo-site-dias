@@ -156,7 +156,10 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
       <link>http://localhost:1313/book/diginfra/cloudcomputing/</link>
       <pubDate>Fri, 25 Jul 2025 07:45:07 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/cloudcomputing/</guid>
-      <description>&lt;p&gt;Cloud Computing is an important and big set of digital infrastructures.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Cloud Computing is an important and big set of digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Between 2000 and 2010, as the internet was growing in reach, it also became a vehicle for the delivery of compute services.
+Back in the day, Application Services Providers, as they were known, offered software remotely, so it was no longer necessary to install it in a company&amp;rsquo;s datacenter.
+I could tell horror stories about how early client server application installations went, so not needing that was a key selling point.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are AI digital infrastructures?</title>

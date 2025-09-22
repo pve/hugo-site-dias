@@ -67,7 +67,7 @@ In contrast, many mistakenly think it is the provider&amp;rsquo;s job to secure 
 It is not, in an IaaS model, it is the consumer&amp;rsquo;s job.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Scare, FUD, and thinking</title>
+      <title>Scare, FUD, and thought systems</title>
       <link>http://localhost:1313/posts/scare-fud/</link>
       <pubDate>Fri, 05 Sep 2025 09:13:38 +0000</pubDate>
       <guid>http://localhost:1313/posts/scare-fud/</guid>
@@ -836,7 +836,10 @@ If you have been keeping tabs: we are down to 25 people who are capable and will
       <link>http://localhost:1313/book/diginfra/cloudcomputing/</link>
       <pubDate>Fri, 25 Jul 2025 07:45:07 +0000</pubDate>
       <guid>http://localhost:1313/book/diginfra/cloudcomputing/</guid>
-      <description>&lt;p&gt;Cloud Computing is an important and big set of digital infrastructures.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Cloud Computing is an important and big set of digital infrastructures.&lt;/p&gt;
+&lt;p&gt;Between 2000 and 2010, as the internet was growing in reach, it also became a vehicle for the delivery of compute services.
+Back in the day, Application Services Providers, as they were known, offered software remotely, so it was no longer necessary to install it in a company&amp;rsquo;s datacenter.
+I could tell horror stories about how early client server application installations went, so not needing that was a key selling point.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are AI digital infrastructures?</title>
@@ -975,7 +978,8 @@ Incident response times
       <pubDate>Thu, 31 Jul 2025 12:30:29 +0000</pubDate>
       <guid>http://localhost:1313/book/value/game-theory/</guid>
       <description>&lt;p&gt;A great way to look at how value is created in interactions between autonomous actors is game theory.
-How do autonomous actors respond to other actors, is the core question here.
+How do autonomous actors respond to other actors?
+This is the core question here.
 How do you respond to an offer from a service provider? But also, how do they respond to you?&lt;/p&gt;
 &lt;p&gt;I have found game theory to be an effective model to think about the outcomes of sequences of interactions.
 This is because it clearly identifies the actors (or players) and their interests.&lt;/p&gt;</description>
@@ -1222,6 +1226,27 @@ There are laws against this type of discrimination (at least in most nations), a
 On the other hand there are some Internet providers who want to charge different customers different rates for different service. &amp;ldquo;We can&amp;rsquo;t have companies freeloading on our expensive pipes&amp;rdquo;, they claim.
 Clearly we seem to want both.
 We don&amp;rsquo;t want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/li-notion/international/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/li-notion/international/</guid>
+      <description>&lt;p&gt;Digital sovereignty is concerned with which international actors can limit the independence of a country.&lt;/p&gt;
+&lt;p&gt;But what really are the international actors?&lt;/p&gt;
+&lt;p&gt;Without an answer to that question, the search for digital sovereignty will become difficult and ambiguous.&lt;/p&gt;
+&lt;p&gt;There are many differing opinions on that topic, which makes that a hard question.&lt;/p&gt;
+&lt;p&gt;I elaborate on a few of these opinions in my book: Digital Power: how digital infrastructures at scale lead to value, power, and risk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/li-notion/promise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/li-notion/promise/</guid>
+      <description>&lt;p&gt;What I particularly like about promise theory is that it allows us to understand and explain complex interactions in IT systems, independent of whether the participants in that interaction are machines, humans, or humanoid agents.&lt;/p&gt;
+&lt;p&gt;The cases where I have used it range from business interactions, e-commerce, and system administration, to service management.&lt;/p&gt;
+&lt;p&gt;It has allowed me to unlock collaboration in complex supply chains.&lt;/p&gt;
+&lt;p&gt;Promise theory is one of the few fundamental thoughts that I elaborate in my book: Digital Power: how digital infrastructures at scale lead to value, power, and risk.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

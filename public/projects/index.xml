@@ -15,7 +15,7 @@
       <guid>http://localhost:1313/projects/olra/olra/</guid>
       <description>&lt;p&gt;Overwhelmed by too many risks and controls to consider?
 That is why there is this risk navigator.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP LLM top 10&lt;/a&gt; risks are a good start for analyzing the risks of an LLM system.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP Top 10 for LLM Applications&lt;/a&gt; risks are a good start for analyzing the risks of an LLM system.&lt;/p&gt;
 &lt;p&gt;But, who is supposed to do each control? And which role do they have?&lt;/p&gt;
 &lt;p&gt;This is where allocation of risks and their controls to roles comes in, and why this tool is called the OLRA navigator.
 OLRA stands for &lt;strong&gt;OWASP LLM Risk Allocation&lt;/strong&gt;.&lt;/p&gt;</description>

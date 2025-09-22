@@ -8,7 +8,8 @@ In claude, niet claude code
 - Help me create a PRD for this feature. 
 → Prompt to create CLAUDE.md: Generate a CLAUDE.md file from this PRD that will guid Claude Code sesions on this project
 Handmatig:
-→ Put this in your CLAUDE.md file: Always read PLANNING.md at the start of every new conversation, check TASKS.md before starting your work, mark completed tasks to TASKS.md immediately, and add newly discovered tasks to TASKS.md when found.
+→ Put this in your CLAUDE.md file: Always read PLANNING.md at the start of every new conversation, check TASKS.md before starting your work, mark completed tasks to TASKS.md immediately, 
+and add newly discovered tasks to TASKS.md when found.
 Claude:
 → Prompt to create PLANNING.md: Create a PLANNING.md file that includes vision, architecture, technology stack, and required tools list for this app.
 → Prompt to create TASKS.md: Create a TASKS.md file with bullet points tasks divided into milestones for building this app.

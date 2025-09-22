@@ -128,7 +128,8 @@ Incident response times
       <pubDate>Thu, 31 Jul 2025 12:30:29 +0000</pubDate>
       <guid>http://localhost:1313/book/value/game-theory/</guid>
       <description>&lt;p&gt;A great way to look at how value is created in interactions between autonomous actors is game theory.
-How do autonomous actors respond to other actors, is the core question here.
+How do autonomous actors respond to other actors?
+This is the core question here.
 How do you respond to an offer from a service provider? But also, how do they respond to you?&lt;/p&gt;
 &lt;p&gt;I have found game theory to be an effective model to think about the outcomes of sequences of interactions.
 This is because it clearly identifies the actors (or players) and their interests.&lt;/p&gt;</description>
