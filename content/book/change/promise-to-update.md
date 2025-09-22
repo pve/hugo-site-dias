@@ -24,6 +24,7 @@ Ideally, a cloud service comes with a clear shared responsibility model that exp
 What is it the cloud provider does, what is an external service provider doing, and what should cloud consumers do themselves?
 
 A great way to then detail out the responsibilities is by using the terminology of *promise theory*, which is discussed elsewhere in this book.
+In brief, it breaks down interactions into promises that are made and fulfilled.
 
 Here are some examples from service providers:
 
@@ -41,7 +42,9 @@ A SaaS provider promises to update its operating systems, libraries, configurati
 An IaaS provider does *not* promise to update the operating system on your virtual machine.
 In fact, they might even promise that they will *not* have access to it.
 
-Most people are familiar with calling a service desk (or customer support in general) for help. Historically, this has often been a frustrating experience. That is why it is important to have quality attributes with them, such as 'time to respond' (which typically means, the time it takes for somebody to start working on it), and escalation paths.
+Most people are familiar with calling a service desk (or customer support in general) for help.
+
+Historically, this has often been a frustrating experience. That is why it is important to have quality attributes with them, such as 'time to respond' (which typically means, the time it takes for somebody to start working on it), and escalation paths.
 
 For software updates, you can think of quality attributes such as time to update after a new version has been tested.
 
@@ -49,3 +52,6 @@ In a complex multi-provider environment, one of the most important things about 
 Many security issues have been the result of a responsibility falling in the cracks between two parties, where both think the other is taking care of it.
 
 Digital infrastructure management requires clearly defined responsibilities and quality promises from all parties to ensure timely and secure updates, preventing security gaps due to ambiguous responsibilities.
+
+Yes, the real world can be a bit messy.
+But I have found promise theory a great tool to help clean some of it up.

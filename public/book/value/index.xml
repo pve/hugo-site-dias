@@ -134,5 +134,16 @@ How do you respond to an offer from a service provider? But also, how do they re
 &lt;p&gt;I have found game theory to be an effective model to think about the outcomes of sequences of interactions.
 This is because it clearly identifies the actors (or players) and their interests.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>&#39;Value&#39;</title>
+      <link>http://localhost:1313/book/value/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/chapter/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.
+That is where their prime value is.&lt;/p&gt;
+&lt;p&gt;The internet is a great example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
+&lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

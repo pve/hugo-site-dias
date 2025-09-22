@@ -8,13 +8,17 @@
 <title>&#39;What are digital infrastructures?&#39; | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="
-An application is roughly a data model plus a certain number of functions operating on that.
-Networked applications typically live on servers, but will have a client component.
-A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
-Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.">
+It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.
+The three major elements of digital infrastructures are:
+
+Storage
+Networks
+Processors
+
+In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/book/diginfra/chapter/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.678402628decf506127431a1841c9ce87fb7307134098e3601990b6ba55c49b9.css" integrity="sha256-Z4QCYo3s9QYSdDGhhByc6H&#43;3MHE0CY42AZkLa6VcSbk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -120,6 +124,17 @@ Another example would be gmail, whose data model is a set of messages, and the f
                 </a>
             </li>
             <li>
+                <a href="https://www.amazon.com/Digital-Power-Infrastructures-Scale-Value/dp/B0FG1NPWLL" title="Hard copy">
+                    <span>Hard copy</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/about/" title="About">
                     <span>About</span>
                 </a>
@@ -146,282 +161,9 @@ Another example would be gmail, whose data model is a set of messages, and the f
   </header> 
 
   
-  <i>⏳ 32 min read</i>
+  <i>⏳ 53 min read</i>
   
   <div class="post-content"><hr>
-<p>An application is roughly a data model plus a certain number of functions operating on that.
-Networked applications typically live on servers, but will have a client component.
-A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
-Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.</p>
-<p>Digital infrastructures are made up of processors, storage and networking. The costs of these change rapidly, but at different rates. Memory is becoming cheaper a lot faster than processing, and network bandwidth prices are dropping slower than that. The cost of humans to manage this technology is dropping slowest, if at all. What this means is that there will be continuing shifts in what the optimal design is for networked computing.</p>
-<p>Now for the research questions. How fast is it actually changing? How do we organize this, technically and people wise, in order to control the cost, improve the quality, and speed up the change and development process?<br>
-For example, technology development in this area is very much structured by standards. This allows people to collaborate on the design of system components so that those components then later work together. These standards can be set by a vendor for example, or agreed in a standardization committee. What is the dynamics of that?<br>
-In which way can we best organize the development and in particular the management of large digital infrastructures?</p>
-<hr>
-<p>Digital infrastructures are about services, not products.
-It can be elusive to describe these services, and specifically, how to describe the somewhat loose interaction between the service providers and the service consumers.</p>
-<p>Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
-Introduced by Mark Burgess and others, it is about how autonomous agents work together.
-It helped me a lot in getting a handle on various distributed systems.
-There was this project where we envisioned a scalable travel information system with what we now call microservices.
-We needed to describe how these parts work together.
-And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
-In getting this from the drawing board to actual production, promise theory turned out to be a great tool.</p>
-<p>Let&rsquo;s start with the basics, and we&rsquo;ll cover some of the background details later.</p>
-<p>Imagine you are in a café or restaurant, and you wish to avail yourself of the service to order a beverage.
-You have the attention of the waiter, and you politely ask them for a coffee. The waiter responds with a &lsquo;yes, by all means&rsquo; statement. After a while, the waiter returns with the coffee and says: &rsquo;there you go&rsquo;, to which you reply: &rsquo;thank you!&rsquo;</p>
-<p>This is a transaction between two autonomous agents. Both have the option to not participate.</p>
-<p>Now what is really going on here?</p>
-<p>Our question to the waiter is really a request for a commitment.
-We want the waiter to commit to delivering us the coffee.
-The &lsquo;yes, by all means&rsquo; statement amounts to an acceptance of this commitment.
-Once the coffee is there, the statement &rsquo;there you go&rsquo; in fact signifies a request to be acquitted of the earlier commitment, that is to say: a declaration that the commitment is fulfilled.
-And once we say &rsquo;thank you&rsquo;, we have answered to that acquittal request, and stated that there are no more open commitments.</p>
-<p>This basic interaction is an enormously universal pattern as we will see, and it can be used to describe interactions on many levels.
-I have examples ranging from technical internet protocols to the organisation of service management and legal contracts.</p>
-<p>But before we move on, I&rsquo;ll have to discuss some variations that allow you to see how universal the pattern is.</p>
-<ul>
-<li>Some of the steps can be combined, or are implicit.</li>
-<li>The two steps by the provider can be combined if there is little time delay between them.</li>
-<li>The final acquittal can be implicit.</li>
-<li>What we have described is the &lsquo;happy path&rsquo;. Alternative messages are also possible. The waiter can refuse the request: &lsquo;we ran out of coffee unfortunately&rsquo;. We may not accept the drink: &lsquo;could you make that an iced latte, please&rsquo;.</li>
-</ul>
-<p>Another point to make is that these transactions are often part of a bigger picture.
-For example, once we accept the coffee, we are making an implicit promise to pay for it, at some later stage.
-Though you can also envision scenarios where putting your money on the counter of the barista is an implicit acquittal.</p>
-<p>Many, if not most, business transactions can be modelled with this, as we will see.
-The key is to understand what the promises are that are being made and acquitted.</p>
-<h2 id="it-support-is-also-a-service">IT support is also a service<a hidden class="anchor" aria-hidden="true" href="#it-support-is-also-a-service">#</a></h2>
-<p>Let&rsquo;s turn our attention to an example in digital infrastructures: we want a new laptop.
-Again, this proceeds by making a request, in this case typically to a service desk.
-It is the exact same flow of messages, although there may be more detail involved and a paper or web form needs to be filled in.</p>
-<p>In our example, we have humans trading with humans.
-But the same principles hold between humans and machines, machines and other machines, as well as between organisations and machines.
-The core idea is that we are describing how agents transact.</p>
-<p>Once we understand and describe the essence of such a transaction, we can automate it without changing the meaning.
-That is a very powerful insight in a cyber world.
-As an organisation, we want to have machines service our customers.
-And as customers, we don&rsquo;t seem to mind talking to a website as a substitute to talking to an organisation.</p>
-<p>In the course of the 20th century, most countries completed the automation of their telephone systems.
-Requesting a call through an operator was replaced by &lsquo;direct dialling&rsquo;, or self-service as we would call it in other situations.
-As late as the 1970s there were destinations you could not directly dial, even in developed countries.</p>
-<p>But the principle of setting up a call is the same, whether you ask a human or a machine.
-It starts with &lsquo;please connect me with this number&rsquo;.
-And the general promise, the commitment, of the telecommunications company remains to do that, irrespective of the technology.</p>
-<h2 id="what-is-a-promise">What is a promise?<a hidden class="anchor" aria-hidden="true" href="#what-is-a-promise">#</a></h2>
-<p>According to <a href="https://www.oreilly.com/library/view/designing-delivery/9781491903742/">Jeff Sussna</a>, a promise is &ldquo;&hellip; a strongly stated intention to provide a service, which may or may not be kept&rdquo;.
-This makes it clear that there ultimately is a possibility for it to not be fulfilled.
-Jeff Sussna compares this to a teenager&rsquo;s promise to clean their room.
-It may happen, but there is a chance it does not.</p>
-<p>Autonomous agents can only make promises to each other, they cannot force each other to do things.
-However, we can <em>ask</em> other agents to make a promise to us.
-In our example, we ask the waiter to bring us a coffee.
-The waiter may chose to respond by making the actual promise.</p>
-<p>The next important construct is the <em>conditional</em> promise.
-An example would be: &ldquo;If you bring me a coffee, I will promise to pay you for it&rdquo;.</p>
-<p>With these basic primitives, we can model a lot of conversations.</p>
-<p>Our example coffee conversation now becomes:</p>
-<ul>
-<li>Query: Please promise me to bring a drink</li>
-<li>Ack:  I promise to bring you a drink in a short while</li>
-<li>Reply: Please promise me that you are satisfied and will pay</li>
-<li>Ack: I promise to pay you for the drink</li>
-</ul>
-<h2 id="contracts-are-complementary-promises">Contracts are complementary promises<a hidden class="anchor" aria-hidden="true" href="#contracts-are-complementary-promises">#</a></h2>
-<p>Once we have this in place, contracts between agents now become really simple to express.
-They are a set of complementary conditional promises: &ldquo;If you do this, I will promise that&rdquo;.
-In our example this looks like the following.</p>
-<ul>
-<li>If you promise to pay me, I will promise to bring you coffee.</li>
-<li>If you promise to bring me coffee, I will promise to pay you.</li>
-</ul>
-<p>If one party does not keep its end of the bargain, the other party is free to witdraw from their part of the deal.
-Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
-This requires trust.
-As you are probably aware, both types of contract exist in real life.
-In fact you can find more complicated versions as well.</p>
-<p>It is typical to have additional promises for any deviations from the happy path.
-An example would be: &ldquo;If you do not pay for your coffee, I promise to call the police&rdquo;.
-This is a simple approach.
-We will discuss later how we can model trust and trust violations.</p>
-<p>One way to sum it up is by this question:</p>
-<blockquote>
-<p>What do I do, what do you do, what do I do if you don’t?</p></blockquote>
-<p>This was the longest English sentence I made that only has monosyllabical words.
-I had a rap song produced from it.</p>
-<h2 id="semantics">Semantics<a hidden class="anchor" aria-hidden="true" href="#semantics">#</a></h2>
-<p>We can dive a little deeper into what such a promise means.
-In all our examples, messages were exchanged between agents.
-These messages control a process of interaction, and in that interaction, a shared reality is created.
-This sounds abstract, I know, so let&rsquo;s have an example.
-At a marriage, the magic sentence is:</p>
-<blockquote>
-<p>“I now pronounce you husband and wife”.</p></blockquote>
-<p>What changed after that sentence is said?
-Legally, these people are now married, which creates a whole new world of possibilities and obligations.
-Before that sentence was spoken, they were not married.</p>
-<p>That is why this is also called &lsquo;speech act theory&rsquo;: the statement acts upon our reality.
-In the theory this example is a &lsquo;performative&rsquo; or &lsquo;declarative&rsquo; statement.</p>
-<p>This view of messages helps us see how our interaction is a shared reality between the agents, and can actually control that shared reality.
-That reality can be about the physical world, as in our coffee example, or it can be about the legal world that we use to control the physical world, as in our matrimonial example.
-It can also be about the information world, such as access rights to data, or control over a virtual server.</p>
-<p>The beauty of this is that we have a lean and unifying framework that ties together services, contracts, resources, control, human and machine communication.</p>
-<h2 id="tool-in-automation">Tool in automation<a hidden class="anchor" aria-hidden="true" href="#tool-in-automation">#</a></h2>
-<p>Because we have this common language, we can now use this to describe an interaction process between humans, and then talk about how to automate that interaction.
-The agents can change from man to machine without the promises changing.
-We&rsquo;ll have some examples of that elsewhere.</p>
-<h2 id="contracting">Contracting<a hidden class="anchor" aria-hidden="true" href="#contracting">#</a></h2>
-<p>In the above we have assumed that the promises just exist, fixed and immutable.
-But we can also apply the theory and language to the creation and modification of these sets of promises.</p>
-<p>How does the customer know that they can ask for coffee, not to mention being confident that they will not be charged outrageously?</p>
-<p>That is because the café has a large blackboard on the wall that effectively says:</p>
-<blockquote>
-<p>We promise that, if you ask us to promise to bring you coffee, we will do so, under a set of conditions.</p></blockquote>
-<p>And there are a lot of conditions. The price is just one of them.
-The conditions aren&rsquo;t all set by the café.
-They can also originate from civil law, for example, or local municipality regulations.</p>
-<p>By the way, in promise theory you can never ask an agent to do something.
-You can only ask them to <em>promise</em> to do something.</p>
-<p>In this scenario, you enter into a contract implicitly the moment that you place your order.
-If you only order a single coffee, there is not much distinction between the contract and the order.
-But if you are in a multicourse meal in a restaurant, it is different.
-You have a contract when you accept the table.
-Then there will typically be a sequence of food and beverage orders that will be rolled up into a single payment.
-Typically.</p>
-<hr>
-<p>Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.</p>
-<p>In the early days of Google growth I read an <a href="https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/">article about their error numbers</a>
-(a Google cluster has several thousands of machines):</p>
-<blockquote>
-<p>In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.</p></blockquote>
-<p>A <a href="https://www.storagereview.com/news/backblaze-2024-drive-stats-hard-drive-failures-drop-as-high-capacity-models-take-over">2024 report</a> puts storage drive failure rates at about 1.35% per year.
-With thousands of drives, failure is not an option, but a certainty.</p>
-<p>These look like interesting considerations for both hardware and software planners.</p>
-<p>Adrian Cockcroft, while he was CTO of Netflix around 2010, summed it up as:</p>
-<blockquote>
-<p>Size breaks hardware</p></blockquote>
-<p>No matter how good your hardware is, if it becomes big enough, it breaks. In his view you therefore need to solve reliability problems in software, not in building better hardware.</p>
-<p>As Google say:</p>
-<blockquote>
-<p>&ldquo;Our view is it&rsquo;s better to have twice as much hardware that&rsquo;s not as reliable than half as much that&rsquo;s more reliable,&rdquo; Dean said. &ldquo;You have to provide reliability on a software level. If you&rsquo;re running 10,000 machines, something is going to die every day.&rdquo;</p></blockquote>
-<p>The business case for this is that you will have to invest in software for reliability.
-Once you have done that, the hardware reliability no longer matter, within certain bounds, and you are financially better off with cheaper hardware.</p>
-<p>The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a &lsquo;middleware&rsquo; software layer on which resilient applications can be build.
-We&rsquo;ll cover that in another unit.</p>
-<p>Finally, scale does not only break hardware, but also organisations.
-For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
-When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks.
-That introduces a lot of communication overhead.
-Without being compensated with economies of scale, this can make the task too expensive to do.</p>
-<hr>
-<p>Rooted in Deontic logic (obligations, commitments, permissions)</p>
-<hr>
-<p>What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.</p>
-<p>In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures. An example of that are the trading platforms that enable the planning of electricity supply and demand. In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.</p>
-<p>You&rsquo;ll also see that I talk about digital infrastructures as a service, not a product. It is not sufficient to buy a road, for example. For it to be truly useful to its users, it needs maintenance, repairs, incident management, and more. Any abandoned road will soon deteriorate without maintenance, and become useless.</p>
-<p>Digital infrastructures are sometimes called platforms. In the 1990s Windows was an example of a platform. A few decades later the concept of platform engineering started to be used for services that helped developers develop and deliver code faster.
-x
-It will be hard to define it with scientific rigor, in the same way that it is hard to unambiguously define what, for example, a car is.
-There will always be edge cases.</p>
-<p>What sets digital infrastructures apart in my opinion is that, thanks to automation, their scale, geographical reach and deployment speed can be orders of magnitude bigger than that of other infrastructures. That has a lot in interesting effects, which we&rsquo;ll explore in this book.</p>
-<p>In summary, digital infrastructures are about services that organisations deliver to independent consumers, while at the same time these services are subject to automation. That gives a tremendous dynamic in that relationship, and leads to new value, new power, and new risk.</p>
-<hr>
-<p>In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
-And as we had enough time, we had lunch in La Jonquera.</p>
-<p>At the restaurant&rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.</p>
-<p><img alt="payment terminals" loading="lazy" src="/payterminal-716603.jpg"></p>
-<p>I&rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparentely not over here.</p>
-<p>A closer inspection revealed that each was associated with a different bank.
-So apparently, depending on the bank that a <strong>customer</strong> of the restaurant works with, the restaurant needed to have a payment terminal associated with that.</p>
-<p>To me, this does not sound optimal for the merchant. It takes money and deskspace to accomodate all those different payment networks. And if you have only one terminal many customers can&rsquo;t pay by card. That won&rsquo;t make them happy, and the last thing you want as a merchant is to have unhappy customers.</p>
-<p>An online payment system, in this case with cards and terminals, is an infrastructure. and arguably a digital infrastructure. It serves many users: customers, merchants, and in this case the bank. One infrastructure for each bank.</p>
-<p>It sounds obvious that there is a benefit in having a digital infrastructure like this that serves most banks, instead of just one. For example, you would not have to replicate installation and maintenance of those payment terminals. And indeed, in the current day and age, it seems to be the normal thing to do.</p>
-<p>But apparently, it was hard to get to such a common system. So hard in fact, that it made sense for the banks and the merchants to waste all that money on replicating an infrastructure and foregoing all the benefits of a shared system.</p>
-<p>There are a few hypotheses on why this is so.</p>
-<p>Let&rsquo;s analyse this and see what causes this situation.</p>
-<p>For one, services like these don&rsquo;t appear out of thin air. They evolve. They don&rsquo;t come into existence and remain stationary forever. There are actors and stakeholders that make them change.We&rsquo;ll have to look at the actors involved and their objectives and possible actions if we want to understand how such systems look like at any given moment.</p>
-<p>The main actors involved here are the bank(s), the merchants and the customers. When it comes to actual payments, these are the most important ones.</p>
-<p>The banks probably expected to reduce costs and have more happy merchants and customers. And having this benefit earlier rather than later probably compensated for the higher cost of building out your own digital infrastructure for your merchants.</p>
-<p>While it would be cheaper overall to have a digital infrastructure that is shared across all banks, there seems to be a valid reason to not have that, at least not to begin with.</p>
-<p>My hypotheses are: it takes time to agree on standards for interoperability and for actually setting up the service that is shared across banks. Not the least of your problems is who is going to own that infrastructure. It is likely to be a new legal entity. And that introduces a new stakeholder.</p>
-<p>Now back to the power dynamics that created the situation in the picture. Who benefits, who does not?</p>
-<p>The banks are faced with a choice between the short term gain of realizing a payment infrastructure, and the long term gain of reducing its cost. And as they are investing, they have some power.</p>
-<p>The merchant can chose between having multiple terminals, or sticking to just one, which amounts to a choice between spending money (and desk space) versus making customers unhappy.</p>
-<p>Finally, the choice for the customer is to pay cash or by card. The customer (and the other stakeholders) probably think that cards are a safer, and possibly cheaper alternative. The customer might therefore be led to feel that they prefer a merchant who accepts cards.</p>
-<p>The banks and the merchant apparently prefer short term revenu increase over long term cost savings.</p>
-<p>And as a result the power dynamics play out so that it is the customer who benefits, the banks that invest and reap more benefits, and the merchant has to pay for a lot of that. Maybe the merchant will see some cost reduction in their payments handling.</p>
-<hr>
-<p>What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a datacenter?</p>
-<p>They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
-In a diagram we often depict them as a box, or an oval.
-Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.</p>
-<p>Why does it matter? Well, the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.
-For example, these things, or more accurateley: their boundaries, are a prime place where controls for security are.</p>
-<p>Whenever I look at a how a digital infrastructure is implemented, I start by looking at the execution environments, and ask three questions: what, where, and how.</p>
-<p><strong>What?</strong> What is the data that is inside it, what is the software, the code, that is inside that environment? And in an AI world: which model is there inside?</p>
-<p><strong>Where?</strong>  Where is that execution environment located? In our current virtualized and cloud world, that environment is typically inside another environment. Ultimately, of course, there is a physical machine in which it sits.</p>
-<p><strong>How?</strong> How does the software get deployed inside that environment? There will be a manual process, or a continuous delivery pipeline, or something similar.</p>
-<p>Then it is time to look at the control boundary that this environment creates. The control boundary creates an outside and an inside. How is data from the outside allowed to go inside? What is the mechanism or protocol? How is that controlled? The same holds for the reverse. How is software inside that boundary allowed to access the outside?</p>
-<p>Let&rsquo;s take an example: your browswer is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machines implements an access control on the network level: it only allows https to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.</p>
-<p>If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls.</p>
-<p>Link to Zero Trust Architecture.</p>
-<hr>
-<p>Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.</p>
-<h2 id="why-deployment-diagrams">Why deployment diagrams?<a hidden class="anchor" aria-hidden="true" href="#why-deployment-diagrams">#</a></h2>
-<p>Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.</p>
-<p>There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.</p>
-<p>In this section, I’m setting out to define the principles that these maps should adhere to.
-The reason for that is that there is a lot of intuition on these types of diagram and their visualisation.</p>
-<p>It turns out that the actual symbols to use are not so relevant. It is more important to understand what we mean by those symbols, and how these diagrams are useful.</p>
-<h2 id="what-do-we-want-to-model">What do we want to model?<a hidden class="anchor" aria-hidden="true" href="#what-do-we-want-to-model">#</a></h2>
-<p>Modern IT systems are made up of many components, but all of them handle data in one way or another. Some of the important principles are that we want to understand where data is stored (at rest), where it is being processed, and how it moves from one place to another.</p>
-<p>What you want to explore is how data is connected because that tells us something about who can access which data.  The converse of that is that we can also then see how things are isolated from one another. And this is a really important thing for security. If we know who is responsible for which component we can also understand who is responsible for capacity, for security, and for making it into production bringing it into production.</p>
-<p>We used to think that we are connecting computers. But these days we are really connecting execution environments. An execution environment can be a computer, but it could also be a virtual machine or a container. Or it could be a Lambda function. The essence of an execution environment is that it runs code and that it is somewhat isolated from its environment. It also implies that we can then look at how these execution environments are connected.</p>
-<p>Take the following simple example. On the left we have a user working on the web browser, on the right-hand side, we see the web server. They are connected through the Internet. The web server is an execution environment that serves up webpages. The user’s browser is an execution environment that renders these webpages to the user. And we annotate the connection link with the protocol that is being used.</p>
-<p><img alt="simple client server" loading="lazy" src="/deploy-images/simple-cs.png"></p>
-<p>So we see two important concepts illustrated in this diagram: execution environments and connectivity.</p>
-<p>Now in a more formal notation such as UML or Archimate, this would look a bit different. Many would be able to argue about the specific symbols to use, but when I am pragmatic I am only concerned with how well the diagram communicates.</p>
-<p><img alt="webclient formal" loading="lazy" src="/deploy-images/webclient-formal.png"></p>
-<h2 id="how-detailed-should-your-model-be">How detailed should your model be?<a hidden class="anchor" aria-hidden="true" href="#how-detailed-should-your-model-be">#</a></h2>
-<p>A diagram is meant to communicate. It should communicate the most essential thing that you want to bring across to the people who are looking at your diagram. In this diagram, we are focusing on how the WebServer and the DNS service are probably different services. As a result, this diagram emphasizes the protocols that are being used, and the separate execution environments that are involved.</p>
-<p><img alt="webserver DNS" loading="lazy" src="/deploy-images/webserver-dns.png"></p>
-<p>Alternatively, we could introduce the Internet as an actor. In reality, by the way, the Internet is actually a set of actors, but we don’t show that here. What this diagram also shows, in comparison to the previous picture, is that there are multiple levels of detail on which you can draw these diagrams. Again, it all depends on what you want to illustrate.</p>
-<p><img alt="webserver internet formal" loading="lazy" src="/deploy-images/webserver-DNS-internet.png"></p>
-<h2 id="architectural-decisions">Architectural decisions<a hidden class="anchor" aria-hidden="true" href="#architectural-decisions">#</a></h2>
-<p>One of the purposes of deployment diagrams is to document and demonstrate architectural decisions. These decisions could, for example, be on the flow of data, the location of data, and where data is actually being processed. In the next example, we show how this works in a music distribution service, such as Spotify or Apple Music.</p>
-<p>In your typical setup, there are three major components: the cloud-based music storage, the speaker or sound system to play the music on, and a mobile device to control it all from. This potentially gives us three connections. The first one is from the mobile device to the cloud-based music service to select the music that you want to play.</p>
-<p>But how does the music get to the speaker?</p>
-<p>There are two options. The first option is that the music goes from the cloud to the mobile, and then to the speaker. The other option is that the music goes straight from the cloud to the speaker. In fact, both options happen in reality. The first one describes a Bluetooth connection between the mobile and speaker, and the second one can be seen with Spotify connected speakers.</p>
-<p><img alt="music distribution" loading="lazy" src="/deploy-images/music-distribution.png"></p>
-<p>It is an interesting exercise to discuss the benefits and disadvantages of both options. You might also want to dive deeper into the actual protocols being used to make this work. Especially the protocols between the speakers and the rest are not so trivial.</p>
-<h2 id="cloud-native">Cloud-Native<a hidden class="anchor" aria-hidden="true" href="#cloud-native">#</a></h2>
-<p>How is deployment different in a cloud-native age? To begin with, there is virtualization, there is containerization, we have functions as a service (such as AWS Lambda), we have DevOps, we have infrastructure as code, we have external services, APIs, and so on.</p>
-<p>And then we have also flexible infrastructure that can rapidly scale up and scaled-down. All of this brings complications to drawing deployment diagrams. Let’s see how we can accommodate each of these cloud-native concepts in our diagrams.</p>
-<h2 id="virtualization">Virtualization<a hidden class="anchor" aria-hidden="true" href="#virtualization">#</a></h2>
-<p>A virtual machine is an execution environment that lives within another execution environment, probably a physical host. Remember that an execution environment is isolated from other execution environments. A virtual machine is in complete control of the entire memory address space in the machine that it runs on. It only shares the hypervisor on that machine. That is quite powerful isolation.  In fact, it also has network interfaces that are completely indistinguishable in capabilities from the network interfaces on a physical machine.</p>
-<p>Similarly, a container (such as a Docker container) is an execution environment that lives within another environment. Each container is pretty isolated from the other containers that run on the same host, although not so isolated as a virtual machine is from another virtual machine. For example, containers share network port address space. This means that two containers on the same post cannot use the same IP address port number.</p>
-<p>In the diagram below we have chosen not to show how the network is organized.</p>
-<p><img alt="VM and containers" loading="lazy" src="/deploy-images/VMs-and-containers.png">
-Note that we have combined containers and VMs in one picture. This architecture actually happens in reality, it has its advantages. We’ve also chosen not to show any details of the underlying operating systems, hypervisors or Docker runtimes in this picture. Again, depending on what you want to communicate with the diagram, you might want to include those networking and other details.</p>
-<h2 id="automated-deployment">Automated deployment<a hidden class="anchor" aria-hidden="true" href="#automated-deployment">#</a></h2>
-<p>Let’s move into slightly more advanced cases of deployment. It is pretty common these days to automate the deployment of software on any given machine. That has many advantages in terms of reproducibility, maintainability, and ease of upgrade. And that also comes with security benefits. However, it does require additional software and deployment components to get this going. That is because there are many more moving parts in this type of IT architecture.</p>
-<p>For example, you need some kind of machine to deploy from, and a machine or environment to deploy to. You also need some technology to remotely deploy and configure the software. A popular tool for that these days is Ansible. Instead of typing commands on the command line, or clicking in a user interface, the configuration of the target machine is the result of a script that is executed. We say that this script is then ‘manifested’ into the target environment. As a side note, the word manifest originates from shipping, where it describes a document that lists the cargo items that are to be on the ship.</p>
-<p>In automated deployment, it is very important to understand what type of infrastructure and software is created by whom or what. For that reason, we introduce a special type of relation, the manifestation relation. We signify this relation by a dashed line. Of course, there is still an underlying communication protocol that is necessary for this to work.</p>
-<p>In the next diagram, the target machine is remotely configured from an Ansible playbook. On the target machine, we indicate the components and software that are to be installed there, and those should be described in the Ansible playbook. To make this a completely reproducible architecture, we also need to describe what the software components are that should be on the deployment machine to begin with.
-<img alt="vm deploy" loading="lazy" src="/deploy-images/vm-deploy.png"></p>
-<p>The old-fashioned flowchart symbol with the folded corner resembling a document is used to indicate where data is being stored. In this case, that is the Ansible playbook.</p>
-<h2 id="cloud-deployments">Cloud deployments<a hidden class="anchor" aria-hidden="true" href="#cloud-deployments">#</a></h2>
-<p>In the previous diagram, we have simply installed the software onto an existing virtual machine. In a cloud world, however, we can go much beyond that. We can deploy what is called “infrastructure as code”, where complete architectures can be provisioned automatically. In the example below, we are using a deployment machine to run a Terraform script that automatically deploys 2 virtual machines and an internal network on the cloud provider. With the big oval, we indicate that there is some kind of ownership by the cloud provider of that part of the architecture, which also implies some isolation and control separation.</p>
-<p><img alt="cloud deployment" loading="lazy" src="/deploy-images/cloud-deployment.png"></p>
-<p>This diagram also shows how the Terraform script results in (is manifested to) actual deployment at the club provider. That is done through the cloud API.</p>
-<h2 id="continuous-integration-and-delivery">Continuous integration and delivery<a hidden class="anchor" aria-hidden="true" href="#continuous-integration-and-delivery">#</a></h2>
-<p>Next up in our journey towards ever deeper automation of software deployment, we have the continuous integration and delivery pipelines. As you might know, a continuous delivery pipeline takes software and other digital assets from a source code repository and builds it into something that can be deployed in an appropriate environment such as a cloud provider.</p>
-<p>There are many examples of deployable artifacts. They could be AWS machine images, Docker images, or whatever you can think of. The artifacts are often stored in separate systems, across control boundaries. This is one of the reasons to put them outside of the pipeline.</p>
-<p>The diagram shows the three major components, each of which could be under the control of a separate department or even organization. Note also how the diagram poses the question of how the build server (tagged ‘CI CD Pipeline’ in the picture) communicates with the software repository. In practice, there is some kind of trust relationship, where the build server is triggered whenever there is a commit to the repository.</p>
-<p><img alt="ci/cd" loading="lazy" src="/deploy-images/cicd.png">
-From the perspective of control, we see that this diagram identifies two pieces of data. On the right-hand side, we see the deployable artifact, and on the left-hand side, we see the source code repository. Different groups of people may have responsibility for these. We have taken the liberty to draw the deployable artifact as a kind of document, whereas the source code repository is depicted with the old-fashioned flowchart database symbol: the cylinder or disk. (As a completely irrelevant side note, this symbol might actually have been derived from magnetic drum memory, which ceased to be relevant in the 1960s).</p>
-<p>At this point, we may feel the opportunity to combine these diagrams into one huge big diagram that allows us to see each and every detail of our full-blown architecture. It can be done of course. But often it is better to illustrate the architecture with a sequence of simple diagrams.</p>
-<hr>
 <p>It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.</p>
 <p>The three major elements of digital infrastructures are:</p>
 <ol>
@@ -461,27 +203,638 @@ The following diagram illustrates that.</p>
     Processor-&gt;&gt;User: Here is the output
 </pre>
 <p>A common example would be to send as input a question to a search engine, where the search results are the output.
-The vertical lines are <em>timelines</em> that show from top to bottom how time flows.</p>
+The vertical lines are <em>timelines</em> that show from top to bottom how time flows, and what the sequence of interactions is.
+That is why we call these <em>time sequence diagrams</em> (TSD).</p>
 <hr>
+<p>My first interest in networking came in the early 80s, as I was in the final years of my mathematics and computer science master&rsquo;s program.</p>
+<p>At the time, dial-up terminal networking was about the most advanced there was.
+And if you were lucky, you&rsquo;d get 1200 baud (transmitting approximately 120 characters per second).
+My current fiber-optic home links are 1 Gigabit/sec, which is about 1 million times faster.</p>
+<p>Beyond this, computer-to-computer communication was mostly confined to the local data center.
+Transferring files from one computer to another typically involved physically moving storage media around.
+I have a great story about that, but that will be in another unit.</p>
+<p>Eager to learn, we browsed the library to find a new book by Andrew Tanenbaum: Computer Networks.
+We already worked through most of his book &ldquo;Structured Computer Organization&rdquo; and we liked his approach and style.
+Many years later, I had the chance to meet and work with him a few times. He is both smart and personable.</p>
+<p>Our professors did not have time to set up a new course on computer networks, so we proposed teaming up with other students to each present a chapter to the group.
+That worked, but we could not do much practical work, as we lacked internet connectivity and even the hardware and software to run that on.
+I had to wait many years for that.</p>
+<p>After my Master&rsquo;s, I got the chance to pursue a Ph.D. in a research group that was focussed on networking and computer communications.
+Even then, it took a few years before I moved from dial-up networking to planet scale internet.</p>
+<p>It may seem archaic from today&rsquo;s perspective, but that is how it was.
+You can&rsquo;t expect to be using the network much when you are still in the process of building it out.</p>
+<hr>
+<p>You should not read this book because I tell you to.
+After all, you are an autonomous person, making your own decisions.</p>
+<p>You should read this book because you are convinced that it is likely to give you significant insights into a world that matters to you.</p>
+<p>Digital infrastructures, and information technology at large, have moved from a fringe niche technology to becoming an essential part of modern life.
+Most companies would go belly up in weeks, if not days, if their digital infrastructures would fail.</p>
+<p>Let&rsquo;s have a look at some examples. Maersk, the world&rsquo;s largest shipping company, suffered a large cyberattack (known as NotPetya) in 2017 that disrupted global supply chains and cost over $300 million in damages.
+Colonial Pipeline, which supplies nearly half of the US East Coast&rsquo;s fuel, was hit by a ransomware attack in 2021 that forced a shutdown of its 5,500-mile pipeline system, causing fuel shortages and panic buying across the southeastern United States.</p>
+<p>Society is impacted in other ways too.
+Concerns were raised about Cambridge Analytica&rsquo;s alleged use of harvested Facebook data to influence voter behavior in multiple elections worldwide.
+This shows how digital infrastructures can be used to distort democratic processes.</p>
+<p>And even though failures in shared services projects are less global headline making, they do impact lots of organizations and their clients.</p>
+<p>For example, in my professional life, I have seen many projects aiming to improve collaboration unnecessarily delayed because of a mismatch between expectations and what the technology and power structure could afford.
+There will be examples of that throughout the book.</p>
+<p>What I write about in this book is shaped by the conversations I had with many people.
+I have worked with IT consultants, risk auditors, and their clients.
+I have worked with architects, CIOs, CISOs, and boards of large organizations.
+I have also worked with college students who were one third of my age, and whose parents weren&rsquo;t even born when I wrote my first computer program.</p>
+<p>So if you identify with any of these, or the topics I mentioned, this book is for you.</p>
+<hr>
+<p>Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.</p>
+<p>Promise theory is a little-known approach to interaction, though it has quite a few great thinkers behind it.
+Introduced by Mark Burgess and others, it is about how autonomous agents work together.
+It helped me a lot in getting a handle on various distributed systems.
+There was this project where we designed a scalable travel information system with what we now call microservices.
+We needed to describe how these parts work together.
+And there was a project that required lots of independent and autonomous social security agencies to work together on providing a service.
+In getting this from the drawing board to actual production, promise theory turned out to be a great tool.</p>
+<p>Let&rsquo;s start with the basics, and we&rsquo;ll cover some of the background details later.</p>
+<p>Imagine you are in a café or restaurant, and you wish to avail yourself of the service to order a beverage.
+You have the attention of the waiter, and you politely ask them for a coffee. The waiter responds with a &ldquo;yes, by all means&rdquo; statement. After a while, the waiter returns with the coffee and says &ldquo;there you go&rdquo;, to which you reply &ldquo;thank you!&rdquo;</p>
+<p>This is a transaction between two autonomous agents. Both have the option to not participate.</p>
+<p>Now what is really going on here?</p>
+<p>Our question to the waiter is really a request for a commitment.
+We want the waiter to commit to delivering us the coffee.
+The &ldquo;yes, by all means&rdquo; statement amounts to an acceptance of this commitment.
+Once the coffee is there, the statement &ldquo;there you go&rdquo; in fact signifies a request to be acquitted of the earlier commitment, that is to say: a declaration that the commitment is fulfilled.
+And once we say &ldquo;thank you&rdquo;, we have answered to that acquittal request, and stated that there are no more open commitments.</p>
+<p>This basic interaction is an enormously universal pattern as we will see, and it can be used to describe interactions on many levels.
+I have examples ranging from technical internet protocols to the organization of service management and legal contracts.</p>
+<p>But before we move on, I&rsquo;ll have to discuss some variations that allow you to see how universal the pattern is.</p>
+<ul>
+<li>Some of the steps can be combined, or are implicit.</li>
+<li>The two steps by the provider can be combined if there is little time delay between them.</li>
+<li>The final acquittal can be implicit.</li>
+<li>What we have described is the &ldquo;happy path&rdquo;. Alternative messages are also possible. The waiter can refuse the request: &ldquo;we ran out of coffee unfortunately&rdquo;. We may not accept the drink: &ldquo;could you make that an iced latte, please&rdquo;.</li>
+</ul>
+<p>Another point to make is that these transactions are often part of a bigger picture.
+For example, once we accept the coffee, we are making an implicit promise to pay for it, at some later stage.
+Though you can also envision scenarios where putting your money on the counter of the barista is an implicit acquittal.</p>
+<p>Many, if not most, business transactions can be modelled with this, as we will see.
+The key is to understand what the promises are that are being made and acquitted.</p>
+<h3 id="it-support-is-also-a-service">IT support is also a service<a hidden class="anchor" aria-hidden="true" href="#it-support-is-also-a-service">#</a></h3>
+<p>Let&rsquo;s turn our attention to an example in digital infrastructures: we want a new laptop.
+Again, this proceeds by making a request, in this case typically to a service desk.
+It is the exact same flow of messages, although there may be more detail involved and a paper or web form needs to be filled in.</p>
+<p>In our example, we have humans trading with humans.
+But the same principles hold between humans and machines, machines and other machines, as well as between organizations and machines.
+The core idea is that we are describing how agents transact.</p>
+<p>Once we understand and describe the essence of such a transaction, we can automate it without changing the meaning.
+That is a very powerful insight in a cyber world.
+As an organization, we want to have machines service our customers.
+And as customers, we don&rsquo;t seem to mind talking to a website as a substitute to talking to an organization.</p>
+<p>In the course of the 20th century, most countries completed the automation of their telephone systems.
+Requesting a call through an operator was replaced by &ldquo;direct dialling&rdquo;, or self-service as we would call it in other situations.
+As late as the 1970s there were destinations you could not directly dial, even in developed countries.</p>
+<p>But the principle of setting up a call is the same, whether you ask a human or a machine.
+It starts with &ldquo;please connect me with this number&rdquo;.
+And the general promise, the commitment, of the telecommunications company remains to do that, irrespective of the technology.</p>
+<h3 id="what-is-a-promise">What is a promise?<a hidden class="anchor" aria-hidden="true" href="#what-is-a-promise">#</a></h3>
+<p>According to <a href="https://www.oreilly.com/library/view/designing-delivery/9781491903742/">Jeff Sussna</a>, a promise is</p>
+<blockquote>
+<p>&ldquo;&hellip; a strongly stated intention to provide a service, which may or may not be kept&rdquo;.</p></blockquote>
+<p>This makes it clear that there ultimately is a possibility for it to not be fulfilled.
+Jeff Sussna compares this to a teenager&rsquo;s promise to clean their room.
+It may happen, but there is a chance it does not.</p>
+<p>Autonomous agents can only make promises to each other, they cannot force each other to do things.
+However, we can <em>ask</em> other agents to make a promise to us.
+In our example, we ask the waiter to bring us a coffee.
+The waiter may chose to respond by making the actual promise.</p>
+<p>The next important construct is the <em>conditional</em> promise.
+An example would be: &ldquo;If you bring me a coffee, I will promise to pay you for it&rdquo;.</p>
+<p>With these basic primitives, we can model a lot of conversations.</p>
+<p>Our example coffee conversation now becomes:</p>
+<ul>
+<li>Query: Please promise me to bring a drink</li>
+<li>Ack:  I promise to bring you a drink in a short while</li>
+<li>Reply: Please promise me that you are satisfied and will pay</li>
+<li>Ack: I promise to pay you for the drink</li>
+</ul>
+<pre class="mermaid">sequenceDiagram
+    actor Client
+    actor Provider
+    Client-&gt;&gt;Provider: Query
+    Note right of Provider: Please promise me to bring a drink
+    Provider-&gt;&gt;Client: Ack
+    Note right of Provider: I promise to bring you a drink in a short while
+    Provider-&gt;&gt;Client: Reply
+    Note right of Provider: Please promise me that you are satisfied and will pay
+    Client-&gt;&gt;Provider: Ack
+    Note right of Provider: I promise to pay you for the drink
+</pre>
+<h3 id="semantics">Semantics<a hidden class="anchor" aria-hidden="true" href="#semantics">#</a></h3>
+<p>We can dive a little deeper into what such a promise means.
+In all our examples, messages were exchanged between agents.
+These messages control a process of interaction, and in that interaction, a shared reality is created.
+This sounds abstract, I know, so let&rsquo;s have an example.
+At a marriage, the magic sentence is:</p>
+<blockquote>
+<p>“I now pronounce you husband and wife”.</p></blockquote>
+<p>What changed after that sentence is said?
+Legally, these people are now married, which creates a whole new world of possibilities and obligations.
+Before that sentence was spoken, they were not married.</p>
+<p>That is why this is also called &ldquo;speech act theory&rdquo;: the statement acts upon our reality.
+In the theory this example is a &ldquo;performative&rdquo; or &ldquo;declarative&rdquo; statement.</p>
+<p>This view of messages helps us see how our interaction is a shared reality between the agents, and can actually control that shared reality.
+That reality can be about the physical world, as in our coffee example, or it can be about the legal world that we use to control the physical world, as in our matrimonial example.
+It can also be about the information world, such as access rights to data, or control over a virtual server.</p>
+<p>The beauty of this is that we have a lean and unifying framework that ties together services, contracts, resources, control, human and machine communication.</p>
+<h3 id="tool-in-automation">Tool in automation<a hidden class="anchor" aria-hidden="true" href="#tool-in-automation">#</a></h3>
+<p>Because we have this common language, we can now use this to describe an interaction process between humans, and then talk about how to automate that interaction.
+The agents can change from man to machine without the promises changing.
+We&rsquo;ll have some examples of that elsewhere.</p>
+<h3 id="contracting">Contracting<a hidden class="anchor" aria-hidden="true" href="#contracting">#</a></h3>
+<p>In the above we have assumed that the promises just exist, fixed and immutable.
+But we can also apply the theory and language to the creation and modification of these sets of promises.</p>
+<p>How does the customer know that they can ask for coffee, not to mention being confident that they will not be charged outrageously?</p>
+<p>That is because the café has a large blackboard on the wall that effectively says:</p>
+<blockquote>
+<p>We promise that, if you ask us to promise to bring you coffee, we will do so, under a set of conditions.</p></blockquote>
+<p>And there are a lot of conditions. The price is just one of them.
+The conditions aren&rsquo;t all set by the café.
+They can also originate from civil law, for example, or local municipality regulations.</p>
+<p>By the way, in promise theory you can never ask an agent to do something.
+You can only ask them to <em>promise</em> to do something.</p>
+<p>In this scenario, you enter into a contract implicitly the moment that you place your order.
+If you only order a single coffee, there is not much distinction between the contract and the order.
+But if you are in a multicourse meal in a restaurant, it is different.
+You have a contract when you accept the table.
+Then there will typically be a sequence of food and beverage orders that will be rolled up into a single payment.
+Typically.</p>
+<hr>
+<p>Once we understand promises, contracts between agents now become really simple to express.
+They are a set of complementary conditional promises: &ldquo;If you do this, I will promise that&rdquo;.
+In our example this looks like the following.</p>
+<ul>
+<li>&ldquo;If you promise to pay me, I will promise to bring you coffee.&rdquo;</li>
+<li>&ldquo;If you promise to bring me coffee, I will promise to pay you.&rdquo;</li>
+</ul>
+<p>If one party does not keep its end of the bargain, the other party is free to withdraw from their part of the deal.
+Of course there is the complication that somebody has to deliver first: do you get coffee first, or do you have to pay first?
+This requires trust.
+As you are probably aware, both types of contract exist in real life.
+In fact you can find more complicated versions as well.</p>
+<p>It is typical to have additional promises for any deviations from the happy path.
+An example would be: &ldquo;If you do not pay for your coffee, I promise to call the police&rdquo;.
+This is a simple approach.
+We will discuss later how we can model trust and trust violations.</p>
+<p>One way to sum it up is by this question:</p>
+<blockquote>
+<p>What do I do, what do you do, what do I do if you don’t?</p></blockquote>
+<p>This was the longest English sentence I made that only has monosyllabic words.
+I had a rap song produced from it.</p>
+<hr>
+<p>Digital infrastructures serve, nearly always, multiple customers.
+These customers therefore share the resources provided by these digital infrastructures.
+With that sharing comes the potential for conflicts over those resources.</p>
+<p>When I talk to my friend over the phone, we share a connection, and that is exactly when sharing is part of the value of that infrastructure.
+But when multiple users draw computer capacity from the same pool, there is a risk that the pool is too small, and some users will not get the capacity that they require.</p>
+<p>That is a conflict of interests, and it can play out in a variety of places.</p>
+<p>When the service is offered on a market (as is the case with a public cloud provider), the conflict is between the provider and the consumer, who are not getting what they think they have contracted. Secondly, there is a conflict between the delivery team, who are not getting the resources that they need to realize the service level objectives, and the sales teams who have sold more than can be delivered.</p>
+<p>In an in-company situation (for example, a private cloud), the conflict is more likely to occur out between various internal consumers.
+I have seen more than one example where a department with a lot of ego and budget manages to get their way at the expense of less politically savvy departments.
+Bullying your way into monopolizing resources may be effective for the bully, but it is not necessarily the best outcome for the organization as a whole.</p>
+<p>That is a governance issue, and there should be leadership supervising these conflicts and setting policies for their resolution.
+Failure to do so is a failure of governance and leadership.
+We&rsquo;ll talk more about that in another unit.</p>
+<p>For the moment we&rsquo;ll end here with the observation that in digital infrastructures it can involve technical and architectural insight to understand these resource conflicts and the means through which they can be resolved.
+I have seen governance fail in these situations because the leadership is not properly educated on these finesses.</p>
+<p>For example, capacity in an infrastructure setting could refer to storage, bandwidth, or processing power.
+These differ seriously in how their capacity can be managed.</p>
+<p>Where understanding is missing, politics, power, and ego, fill the void.</p>
+<hr>
+<p>Computers are terribly reliable, in general. Today&rsquo;s computer systems execute millions, even trillions, of instructions each second, with an error rate that is inconceivable in other technologies. Yet, if you have hundreds of thousands of machines, you do need to take care of failures.</p>
+<p>In the early days of Google growth I read an <a href="https://www.cnet.com/culture/google-spotlights-data-center-inner-workings/">article about their error numbers</a>
+(a Google cluster has several thousands of machines):</p>
+<blockquote>
+<p>In each cluster&rsquo;s first year, it&rsquo;s typical that 1,000 individual machine failures will occur; thousands of hard drive failures will occur; one power distribution unit will fail, bringing down 500 to 1,000 machines for about 6 hours; 20 racks will fail, each time causing 40 to 80 machines to vanish from the network; 5 racks will &ldquo;go wonky,&rdquo; with half their network packets missing in action; and the cluster will have to be rewired once, affecting 5 percent of the machines at any given moment over a 2-day span, Dean said. And there&rsquo;s about a 50 percent chance that the cluster will overheat, taking down most of the servers in less than 5 minutes and taking 1 to 2 days to recover.</p></blockquote>
+<p>A <a href="https://www.storagereview.com/news/backblaze-2024-drive-stats-hard-drive-failures-drop-as-high-capacity-models-take-over">2024 report</a> puts storage drive failure rates at about 1.35% per year.
+With thousands of drives, failure is not an option, but a certainty.</p>
+<p>These look like interesting considerations for both hardware and software planners.</p>
+<p>Adrian Cockcroft, while he was CTO of Netflix around 2010, summed it up as:</p>
+<blockquote>
+<p>Size breaks hardware</p></blockquote>
+<p>No matter how good your hardware is, if it becomes big enough, it breaks. In his view you therefore need to solve reliability problems in software, not in building better hardware.</p>
+<p>As Google say:</p>
+<blockquote>
+<p>&ldquo;Our view is it&rsquo;s better to have twice as much hardware that&rsquo;s not as reliable than half as much that&rsquo;s more reliable,&rdquo; Dean said. &ldquo;You have to provide reliability on a software level. If you&rsquo;re running 10,000 machines, something is going to die every day.&rdquo;</p></blockquote>
+<p>The business case for this is that you will have to invest in software for reliability.
+Once you have done that, the hardware reliability no longer matter, within certain bounds, and you are financially better off with cheaper hardware.</p>
+<p>The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a &lsquo;middleware&rsquo; software layer on which resilient applications can be build.
+We&rsquo;ll cover that in another unit.</p>
+<p>Finally, scale does not only break hardware, but also organizations.
+For example, a task that takes half a day every week can be done by a single person. When the volume increases tenfold, this becomes a fulltime job.
+When the volume increases a hundredfold, you need a small department to do it, and with that comes a whole range of coordination and management tasks.
+That introduces a lot of communication overhead.
+Without being compensated with economies of scale, this can make the task too expensive to do.</p>
+<hr>
+<p>What do roads, airports, the internet, the electricity network, and a search engine have in common? They are all services that are independent of a specific user or usage. They are provisioned on a longer timescale than that of an individual usage. And they are typically not owned by their users, or at least, not directly.</p>
+<p>In this book I am mostly concerned with digital infrastructures. Their services are digitally accessible. Of the above examples, the internet and the search engine are the best examples of that. Interestingly, the other services increasingly rely on digital infrastructures themselves, or even incorporate specific digital infrastructures.
+Trading platforms, for example, enable the planning of electricity supply and demand.
+In many countries, electricity is a market, not a monopoly, which requires coordination between the various players.</p>
+<p>You&rsquo;ll also see that I talk about digital infrastructures as a service, not a product. It is not sufficient to buy a road, for example. For it to be truly useful to its users, it needs maintenance, repairs, incident management, and more. Any abandoned road will soon deteriorate without maintenance, and become useless.</p>
+<p>Digital infrastructures are sometimes called platforms. In the 1990s Windows was an example of a platform. A few decades later the concept of platform engineering started to be used for services that helped developers develop and deliver code faster.</p>
+<p>Defining it with scientific rigor is difficult, much like unambiguously defining what a car is.
+There will always be edge cases.</p>
+<p>What sets digital infrastructures apart, in my opinion, is that, thanks to automation, their scale, geographical reach, and deployment speed, can be orders of magnitude greater than that of other infrastructures. That has a lot in interesting effects, which we&rsquo;ll explore in this book.</p>
+<p>In summary, digital infrastructures are about services that organizations deliver to independent consumers, while at the same time these services are subject to automation. That gives a tremendous dynamic in that relationship, and leads to new value, new power, and new risk.</p>
+<hr>
+<p>In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
+And as we had enough time, we had lunch in La Jonquera.</p>
+<p>At the restaurant&rsquo;s checkout I noticed a peculiar array of devices: there were four payment terminals.</p>
+<p><img alt="payment terminals" loading="lazy" src="/payterminal-716603.jpg"></p>
+<p>I&rsquo;d never seen that. From what I know, a merchant works with a bank which handles all their payments. Apparently not over here.</p>
+<p>A closer inspection revealed that each was associated with a different bank.
+So apparently, depending on the bank that a <strong>customer</strong> of the restaurant works with, the restaurant needed to have a payment terminal associated with that.</p>
+<p>To me, this does not sound optimal for the merchant. It takes money and on the desk to accommodate all those different payment networks. And if you have only one terminal many customers can&rsquo;t pay by card. That won&rsquo;t make them happy, and the last thing you want as a merchant is to have unhappy customers.</p>
+<p>An online payment system, in this case with cards and terminals, is an infrastructure. and arguably a digital infrastructure. It serves many users: customers, merchants, and in this case the bank. One infrastructure for each bank.</p>
+<p>It sounds obvious that there is a benefit in having a digital infrastructure like this that serves most banks, instead of just one. For example, you would not have to replicate installation and maintenance of those payment terminals. And indeed, in the current day and age, it seems to be the normal thing to do.</p>
+<p>But apparently, it was hard to get to such a common system. So hard in fact, that it made sense for the banks and the merchants to waste all that money on replicating an infrastructure and foregoing all the benefits of a shared system.</p>
+<p>There are a few hypotheses on why this is so.</p>
+<p>Let&rsquo;s analyse this and see what causes this situation.</p>
+<p>For one, services like these don&rsquo;t appear out of thin air. They evolve. They don&rsquo;t come into existence and remain stationary forever. There are actors and stakeholders that make them change.We&rsquo;ll have to look at the actors involved and their objectives and possible actions if we want to understand how such systems look like at any given moment.</p>
+<p>The main actors involved here are the bank(s), the merchants and the customers. When it comes to actual payments, these are the most important ones.</p>
+<p>The banks probably expected to reduce costs and have more happy merchants and customers. And having this benefit earlier rather than later probably compensated for the higher cost of building out your own digital infrastructure for your merchants.</p>
+<p>While it would be cheaper overall to have a digital infrastructure that is shared across all banks, there seems to be a valid reason to not have that, at least not to begin with.</p>
+<p>My hypotheses are: it takes time to agree on standards for interoperability and for actually setting up the service that is shared across banks. Not the least of your problems is who is going to own that infrastructure. It is likely to be a new legal entity. And that introduces a new stakeholder.</p>
+<p>Now back to the power dynamics that created the situation in the picture. Who benefits, who does not?</p>
+<p>The banks are faced with a choice between the short term gain of realizing a payment infrastructure, and the long term gain of reducing its cost. And as they are investing, they have some power.</p>
+<p>The merchant can chose between having multiple terminals, or sticking to just one, which amounts to a choice between spending money (and desk space) versus making customers unhappy.</p>
+<p>Finally, the choice for the customer is to pay cash or by card. The customer (and the other stakeholders) probably think that cards are a safer, and possibly cheaper alternative. The customer might therefore be led to feel that they prefer a merchant who accepts cards.</p>
+<p>The banks and the merchant apparently prefer short term revenue increase over long term cost savings.</p>
+<p>And as a result the power dynamics play out so that it is the customer who benefits, the banks that invest and reap more benefits, and the merchant has to pay for a lot of that. Maybe the merchant will see some cost reduction in their payments handling.</p>
+<hr>
+<p>Infrastructures are nice, but the applications that they enable are where the value of information technology is.
+Applications store and process data, so an application is roughly a data model plus a certain number of functions operating on that.</p>
+<p>A word processor is an application. Its data model is formatted text, and the functionality allows you to manipulate that text.
+Another example would be gmail, whose data model is a set of messages, and the functionality allows you to manipulate the messages and their flow.</p>
+<p>That is a simplistic view, but a good start from the perspective of understanding who is doing what.</p>
+<p>Networked applications typically live on servers, but will have a client component.</p>
+<p>Digital infrastructures are made up of processors, storage and networking. The costs of these change rapidly, but at different rates. Memory is becoming cheaper a lot faster than processing, and network bandwidth prices are dropping slower than that. The cost of humans to manage this technology is dropping slowest, if at all. What this means is that there will be continuing shifts in what the optimal design is for networked computing.</p>
+<p>Now for the research questions. How fast is it actually changing? How do we organize this, technically and people wise, in order to control the cost, improve the quality, and speed up the change and development process?<br>
+For example, technology development in this area is very much structured by standards. This allows people to collaborate on the design of system components so that those components then later work together. These standards can be set by a vendor for example, or agreed in a standardization committee. What is the dynamics of that?<br>
+In which way can we best organize the development and in particular the management of large digital infrastructures?</p>
+<hr>
+<p>What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?</p>
+<p>They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
+In a diagram we often depict them as a box, or an oval.
+Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.</p>
+<p>Why does it matter? Well, the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments.
+For example, these things, or more accurately: their boundaries, are prime locations for implementing security controls.</p>
+<p>Whenever I look at how a digital infrastructure is implemented, I start by looking at the execution environments, and ask four questions: what, where, how, and who.</p>
+<p><strong>What?</strong> What is the data that is inside it, what is the software, the code, that is inside that environment? And in an AI world: which model is there inside?</p>
+<p><strong>Where?</strong>  Where is that execution environment located? In our current virtualized and cloud world, that environment is typically inside another environment. Ultimately, of course, there is a physical machine in which it sits.</p>
+<p><strong>How?</strong> How does the software get deployed inside that environment? There will be a manual process, or a continuous delivery pipeline, or something similar.</p>
+<p><strong>Who?</strong> Who is responsible for managing the environment and its access controls. In a cloud world, this is an important question. What does the provider do, what does the consumer do?</p>
+<p>Then it is time to look at the control boundary that this environment creates. The control boundary creates an outside and an inside. How is data from the outside allowed to go inside? What is the mechanism or protocol? How is that controlled? The same holds for the reverse. How is software inside that boundary allowed to access the outside?</p>
+<p>Let&rsquo;s take an example: your browser is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machine implements an access control on the network level: it only allows traffic on the https port to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.</p>
+<p>If you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls.
+Each of these has processing inside, and each of these hold data.
+But the type of software, data, and configuration they have differs, as does the mechanisms they offer for access control.</p>
+<p>Deeper in the networking space you can see that a router is also an execution environment, though it does not have a lot of data, mainly the routing tables.</p>
+<p>We will return to discussing how useful this is elsewhere.</p>
+<hr>
+<p>Deployment is everything that happens between writing software and actually using that software by its intended users. And as we get more software and more users, deployment becomes more complex.</p>
+<h3 id="why-deployment-diagrams">Why deployment diagrams?<a hidden class="anchor" aria-hidden="true" href="#why-deployment-diagrams">#</a></h3>
+<p>Deployment diagrams are a great technique for communicating about important decisions in deploying software. Decisions such as who is going to do what, how are things connected, and so on.</p>
+<p>There are many ways to draw deployment diagrams and many standards to choose from. UML and Archimate are just a few of them. To me, there is no single right way to create deployment diagrams. In that sense, these diagrams are more like maps. And the usefulness of a map depends on the journey that you are going to make. A map for a mountain walk is pretty useless if you want to make a railroad journey and vice versa.</p>
+<p>In this section, I’m setting out to define the principles that these maps should adhere to.
+The reason for that is that there is a lot of intuition on these types of diagram and their visualization.</p>
+<p>It turns out that the actual symbols to use are not so relevant. It is more important to understand what we mean by those symbols, and how these diagrams are useful.</p>
+<h3 id="what-do-we-want-to-model">What do we want to model?<a hidden class="anchor" aria-hidden="true" href="#what-do-we-want-to-model">#</a></h3>
+<p>Modern IT systems are made up of many components, but all of them handle data in one way or another. Some of the important principles are that we want to understand where data is stored (at rest), where it is being processed, and how it moves from one place to another.</p>
+<p>What you want to explore is how data is connected because that tells us something about who can access which data.  The converse of that is that we can also then see how things are isolated from one another. And this is a really important thing for security. If we know who is responsible for which component we can also understand who is responsible for capacity, for security, and for making it into production bringing it into production.</p>
+<p>We used to think that we are connecting computers. But these days we are really connecting execution environments. An execution environment can be a computer, but it could also be a virtual machine or a container. Or it could be a Lambda function. The essence of an execution environment is that it runs code and that it is somewhat isolated from its environment. It also implies that we can then look at how these execution environments are connected.</p>
+<p>Take the following simple example. On the left we have a user working on the web browser, on the right-hand side, we see the web server. They are connected through the Internet. The web server is an execution environment that serves up webpages. The user’s browser is an execution environment that renders these webpages to the user. And we annotate the connection link with the protocol that is being used.</p>
+<p><img alt="Simple client server diagram" loading="lazy" src="/deploy-images/simple-cs.png"></p>
+<p>So we see two important concepts illustrated in this diagram: execution environments and connectivity.</p>
+<p>Now in a more formal notation such as UML or Archimate, this would look a bit different. Many would be able to argue about the specific symbols to use, but when I am pragmatic I am only concerned with how well the diagram communicates.</p>
+<p><img alt="More formal web interaction diagram" loading="lazy" src="/deploy-images/webclient-formal.png"></p>
+<h3 id="how-detailed-should-your-model-be">How detailed should your model be?<a hidden class="anchor" aria-hidden="true" href="#how-detailed-should-your-model-be">#</a></h3>
+<p>A diagram is meant to communicate. It should communicate the most essential thing that you want to bring across to the people who are looking at your diagram. In this diagram, we are focusing on how the WebServer and the DNS service are probably different services. As a result, this diagram emphasizes the protocols that are being used, and the separate execution environments that are involved.</p>
+<p><img alt="webserver DNS" loading="lazy" src="/deploy-images/webserver-dns.png"></p>
+<p>Alternatively, we could introduce the Internet as an actor. In reality, by the way, the Internet is actually a set of actors, but we don’t show that here. What this diagram also shows, in comparison to the previous picture, is that there are multiple levels of detail on which you can draw these diagrams. Again, it all depends on what you want to illustrate.</p>
+<p><img alt="webserver internet formal" loading="lazy" src="/deploy-images/webserver-DNS-internet.png"></p>
+<h3 id="architectural-decisions">Architectural decisions<a hidden class="anchor" aria-hidden="true" href="#architectural-decisions">#</a></h3>
+<p>One of the purposes of deployment diagrams is to document and demonstrate architectural decisions. These decisions could, for example, be on the flow of data, the location of data, and where data is actually being processed. In the next example, we show how this works in a music distribution service, such as Spotify or Apple Music.</p>
+<p>In your typical setup, there are three major components: the cloud-based music storage, the speaker or sound system to play the music on, and a mobile device to control it all from. This potentially gives us three connections. The first one is from the mobile device to the cloud-based music service to select the music that you want to play.</p>
+<p>But how does the music get to the speaker?</p>
+<p>There are two options. The first option is that the music goes from the cloud to the mobile, and then to the speaker. The other option is that the music goes straight from the cloud to the speaker. In fact, both options happen in reality. The first one describes a Bluetooth connection between the mobile and speaker, and the second one can be seen with Spotify connected speakers.</p>
+<p><img alt="music distribution" loading="lazy" src="/deploy-images/music-distribution.png"></p>
+<p>It is an interesting exercise to discuss the benefits and disadvantages of both options. You might also want to dive deeper into the actual protocols being used to make this work. Especially the protocols between the speakers and the rest are not so trivial.</p>
+<h3 id="cloud-native">Cloud-Native<a hidden class="anchor" aria-hidden="true" href="#cloud-native">#</a></h3>
+<p>How is deployment different in a cloud-native age? To begin with, there is virtualization, there is containerization, we have functions as a service (such as AWS Lambda), we have DevOps, we have infrastructure as code, we have external services, APIs, and so on.</p>
+<p>And then we have also flexible infrastructure that can rapidly scale up and scaled-down. All of this brings complications to drawing deployment diagrams. Let’s see how we can accommodate each of these cloud-native concepts in our diagrams.</p>
+<h3 id="virtualization">Virtualization<a hidden class="anchor" aria-hidden="true" href="#virtualization">#</a></h3>
+<p>A virtual machine is an execution environment that lives within another execution environment, probably a physical host. Remember that an execution environment is isolated from other execution environments. A virtual machine is in complete control of the entire memory address space in the machine that it runs on. It only shares the hypervisor on that machine. That is quite powerful isolation.  In fact, it also has network interfaces that are completely indistinguishable in capabilities from the network interfaces on a physical machine.</p>
+<p>Similarly, a container (such as a Docker container) is an execution environment that lives within another environment. Each container is pretty isolated from the other containers that run on the same host, although not so isolated as a virtual machine is from another virtual machine. For example, containers share network port address space. This means that two containers on the same post cannot use the same IP address port number.</p>
+<p>In the diagram below we have chosen not to show how the network is organized.</p>
+<p><img alt="VM and containers" loading="lazy" src="/deploy-images/VMs-and-containers.png">
+Note that we have combined containers and VMs in one picture. This architecture actually happens in reality, it has its advantages. We’ve also chosen not to show any details of the underlying operating systems, hypervisors or Docker runtimes in this picture. Again, depending on what you want to communicate with the diagram, you might want to include those networking and other details.</p>
+<h3 id="automated-deployment">Automated deployment<a hidden class="anchor" aria-hidden="true" href="#automated-deployment">#</a></h3>
+<p>Let’s move into slightly more advanced cases of deployment. It is pretty common these days to automate the deployment of software on any given machine. That has many advantages in terms of reproducibility, maintainability, and ease of upgrade. And that also comes with security benefits. However, it does require additional software and deployment components to get this going. That is because there are many more moving parts in this type of IT architecture.</p>
+<p>For example, you need some kind of machine to deploy from, and a machine or environment to deploy to. You also need some technology to remotely deploy and configure the software. A popular tool for that these days is Ansible. Instead of typing commands on the command line, or clicking in a user interface, the configuration of the target machine is the result of a script that is executed. We say that this script is then ‘manifested’ into the target environment. As a side note, the word manifest originates from shipping, where it describes a document that lists the cargo items that are to be on the ship.</p>
+<p>In automated deployment, it is very important to understand what type of infrastructure and software is created by whom or what. For that reason, we introduce a special type of relation, the manifestation relation. We signify this relation by a dashed line. Of course, there is still an underlying communication protocol that is necessary for this to work.</p>
+<p>In the next diagram, the target machine is remotely configured from an Ansible playbook. On the target machine, we indicate the components and software that are to be installed there, and those should be described in the Ansible playbook. To make this a completely reproducible architecture, we also need to describe what the software components are that should be on the deployment machine to begin with.
+<img alt="vm deploy" loading="lazy" src="/deploy-images/vm-deploy.png"></p>
+<p>The old-fashioned flowchart symbol with the folded corner resembling a document is used to indicate where data is being stored. In this case, that is the Ansible playbook.</p>
+<h3 id="cloud-deployments">Cloud deployments<a hidden class="anchor" aria-hidden="true" href="#cloud-deployments">#</a></h3>
+<p>In the previous diagram, we have simply installed the software onto an existing virtual machine. In a cloud world, however, we can go much beyond that. We can deploy what is called “infrastructure as code”, where complete architectures can be provisioned automatically. In the example below, we are using a deployment machine to run a Terraform script that automatically deploys 2 virtual machines and an internal network on the cloud provider. With the big oval, we indicate that there is some kind of ownership by the cloud provider of that part of the architecture, which also implies some isolation and control separation.</p>
+<p><img alt="cloud deployment" loading="lazy" src="/deploy-images/cloud-deployment.png"></p>
+<p>This diagram also shows how the Terraform script results in (is manifested to) actual deployment at the club provider. That is done through the cloud API.</p>
+<h3 id="continuous-integration-and-delivery">Continuous integration and delivery<a hidden class="anchor" aria-hidden="true" href="#continuous-integration-and-delivery">#</a></h3>
+<p>Next up in our journey towards ever deeper automation of software deployment, we have the continuous integration and delivery pipelines. As you might know, a continuous delivery pipeline takes software and other digital assets from a source code repository and builds it into something that can be deployed in an appropriate environment such as a cloud provider.</p>
+<p>There are many examples of deployable artifacts. They could be AWS machine images, Docker images, or whatever you can think of. The artifacts are often stored in separate systems, across control boundaries. This is one of the reasons to put them outside of the pipeline.</p>
+<p>The diagram shows the three major components, each of which could be under the control of a separate department or even organization. Note also how the diagram poses the question of how the build server (tagged ‘CI CD Pipeline’ in the picture) communicates with the software repository. In practice, there is some kind of trust relationship, where the build server is triggered whenever there is a commit to the repository.</p>
+<p><img alt="ci/cd" loading="lazy" src="/deploy-images/cicd.png">
+From the perspective of control, we see that this diagram identifies two pieces of data. On the right-hand side, we see the deployable artifact, and on the left-hand side, we see the source code repository. Different groups of people may have responsibility for these. We have taken the liberty to draw the deployable artifact as a kind of document, whereas the source code repository is depicted with the old-fashioned flowchart database symbol: the cylinder or disk. (As a completely irrelevant side note, this symbol might actually have been derived from magnetic drum memory, which ceased to be relevant in the 1960s).</p>
+<p>At this point, we may feel the opportunity to combine these diagrams into one huge big diagram that allows us to see each and every detail of our full-blown architecture. It can be done of course. But often it is better to illustrate the architecture with a sequence of simple diagrams.</p>
+<hr>
+<p>Cloud Computing is an important and big set of digital infrastructures.</p>
+<p>Between 2000 and 2010, as the internet was growing in reach, it also became a vehicle for the delivery of compute services.
+Back in the day, Application Services Providers, as they were known, offered software remotely, so it was no longer necessary to install it in a company&rsquo;s datacenter.
+I could tell horror stories about how early client server application installations went, so not needing that was a key selling point.</p>
+<p>A little later, Amazon was one of the pioneers of offering storage and servers over the internet.
+In addition, there were a bunch of other providers offering a variety of platforms on which you could develop and deploy software.
+These offerings were often &lsquo;opinionated&rsquo;, which means they made a lot of technology choices for you.</p>
+<p>These seemingly disparate developments were brought under a single umbrella term: cloud computing.
+The history of that term is not easy to trace.
+It is one of those concepts that seem to have been discovered independently in multiple ways.
+As early as 2001 we talked about putting servers &lsquo;in the cloud&rsquo;, meaning we did not care much where they actually were.</p>
+<p>NIST, the US National Institute of Standards and Technology, solidified the concept in 2011.
+They lumped together all kinds of online services and access to resources in a single definition, by identifying <em>five essential characteristics</em> of such services.</p>
+<p>I have spent many hours explaining these, and answering questions about them.
+Technical people used to be confused about the vagueness of these characteristics, but once we start looking at them as drivers of value and risk, it becomes a bit more applicable.</p>
+<p>We&rsquo;ll get to those characteristics in a moment, but first I want to point out that there is a more fundamental characteristic than the five of NIST.</p>
+<h2 id="the-service">The service<a hidden class="anchor" aria-hidden="true" href="#the-service">#</a></h2>
+<p>Cloud computing is a service, rather than a product.</p>
+<p>It is not a unit that you buy, like a laptop, but a service that you rent.
+The consumer and the provider are in a continuous relationship.
+If one of them goes away, the relationship ends.
+This is different from owning something.
+There are many computers still in operation of which the manufacturers have long gone out of business.
+The sections on promise theory explain how you can describe and even quantify such services and their quality.</p>
+<p>The NIST essential characteristics fit into that framework.
+Let&rsquo;s go over them.</p>
+<h2 id="on-demand-self-service">On-demand self-service<a hidden class="anchor" aria-hidden="true" href="#on-demand-self-service">#</a></h2>
+<blockquote>
+<p>A consumer can unilaterally provision computing capabilities, such as
+server time and network storage, as needed automatically without requiring human
+interaction with each service provider.</p></blockquote>
+<p>The value that this brings is in the speed at which it can happen.
+As a general rule, delay brings cost, or at least missed opportunities.
+Not having a human in the loop at a provider can speed up things.
+Not having a human in the loop at the consumer can speed up things even more.
+This is why cloud providers generally offer APIs and web interfaces to provision their services.</p>
+<p>Self-service also brings risk.
+In order to reap the benefits, organizations must delegate their control over this provisioning to where it is needed, which is often at a much more operational level.
+This can lead to uncontrolled consumption, unless technical and governance measures are put in place to mitigate these risks.</p>
+<h2 id="broad-network-access">Broad network access<a hidden class="anchor" aria-hidden="true" href="#broad-network-access">#</a></h2>
+<blockquote>
+<p>Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g.,
+mobile phones, tablets, laptops, and workstations).</p></blockquote>
+<p>There are a couple of things in this NIST definition that are obvious to some, and confusing to others.
+It depends on your background, so be aware of that.</p>
+<ul>
+<li>Broad means ubiquitous here, distinct from broadband networks.
+It assumes the network is available to everybody.
+Broadband refers to the speed of networks, such as Gigabit fiber and 5G mobile.</li>
+<li>The network does not come included as a part of the service.
+Consumers are supposed to already have some network access.
+That is part of the value: no need to have separate networks for separate services.</li>
+<li>The network is a shared service between the consumer and the provider.
+However, that does not mean that the network has a single owner.</li>
+<li>The NIST definition tries to avoid mentioning the internet, or internet protocols.
+While the public internet is a major delivery infrastructure for delivering cloud services, major cloud providers also offer dedicated communication services where capacity and isolation can be agreed upon bilaterally.
+Those services still run internet protocols, typically.</li>
+<li>The network is viewed here from the perspective of the service: what does it take to get to the users? It includes connectivity but also the user devices. In contrast, a typical network engineer excludes both the clients and the server from their definition of the network, whereas the average user sees all <em>services</em> as part of the network. Confusing, isn&rsquo;t it?</li>
+<li>In the old days (1960-1990), services such as airline reservations, Compuserve, the French Minitel, and financial market information (Bloomberg terminals) were provisioned as end-to-end services and the fee included data communications as well as the end user device.</li>
+<li>The risk associated with this characteristic is lack of isolation between clients and between services.
+When a cloud service is on the internet, your accounts on that service are on the internet too, and therefore potentially accessible by bad actors.</li>
+</ul>
+<p>This cloud characteristic compares to what economists call &lsquo;unbundling&rsquo; of services.</p>
+<h2 id="resource-pooling">Resource pooling<a hidden class="anchor" aria-hidden="true" href="#resource-pooling">#</a></h2>
+<blockquote>
+<p>The provider’s computing resources are pooled to serve multiple consumers
+using a multi-tenant model, with different physical and virtual resources dynamically
+assigned and reassigned according to consumer demand. There is a sense of location
+independence in that the customer generally has no control or knowledge over the exact
+location of the provided resources but may be able to specify location at a higher level of
+abstraction (e.g., country, state, or datacenter). Examples of resources include storage,
+processing, memory, and network bandwidth.</p></blockquote>
+<p>This one is a mouthful, probably because the concept of resource here is pretty broad.
+It tries to cover all bases.</p>
+<p>Cloud providers are shared services, as I have explained elsewhere.
+What makes that work economically is a combination of factors.
+There are economies of scale at work that individual consumers can&rsquo;t reach.
+But in combination with the characteristic of rapid elasticity, consumers can provision just enough capacity for their needs without paying for excess or unused capacity.
+The slack is taken up by the provider, who can average out the consumption over multiple consumers, in the same way that the average electricity user is only occasionally using ten times their average consumption.</p>
+<p>That is a clear business benefit, but the risk of it is that the resources may not be available when the consumer needs them.
+And of course, the provider bears the risk of unused spare capacity that cost them money and does not bring immediate revenue.
+As an internal IT department is typically a cost center, accounting rules in an organization won&rsquo;t allow them to take on this risk.</p>
+<h2 id="rapid-elasticity">Rapid elasticity<a hidden class="anchor" aria-hidden="true" href="#rapid-elasticity">#</a></h2>
+<blockquote>
+<p>Capabilities can be elastically provisioned and released, in some cases
+automatically, to scale rapidly outward and inward commensurate with demand. To the
+consumer, the capabilities available for provisioning often appear to be unlimited and can
+be appropriated in any quantity at any time.</p></blockquote>
+<p>We discussed on-demand self service, but that did not state how fast the capabilities were scaled.
+It also did not discuss de-provisioning.
+To the consumer, the speed of provisioning matters.
+And in order to control costs, release must also be fast.</p>
+<p>How fast? That depends on the business process that it needs to support.
+An incoming storm of new shoppers should probably be handled in minutes.
+In contrast, a flood of new employees would still be well served in hours, or even days.</p>
+<p>Rapid elasticity also has risks, in particular uncontrolled spending.
+If spend can grow faster than the review cycles can keep up with, there is a monetary risk.</p>
+<p>The provider also faces risks.
+It is hard to predict how much capacity is required to serve the customers.
+And the demand can change much faster than a provider can build the resources.</p>
+<p>This is probably one of the reasons that infrastructure providers have reserved instances and spot instances, on top of the regular server instances.
+The reserved instances do not run the risk of a sudden scale down.
+The spot instances can typically be pre-empted by the provider, so when they are running low on capacity for better paying consumers, they can just terminate the spot instances, and reallocate the capacity.</p>
+<h2 id="measured-service">Measured service<a hidden class="anchor" aria-hidden="true" href="#measured-service">#</a></h2>
+<blockquote>
+<p>Cloud systems automatically control and optimize resource use by leveraging
+a metering capability at some level of abstraction appropriate to the type of service (e.g.,
+storage, processing, bandwidth, and active user accounts). Resource usage can be
+monitored, controlled, and reported, providing transparency for both the provider and
+consumer of the utilized service.</p></blockquote>
+<p>If nobody pays for what they are using, they will hoard everything they can lay their hands on.
+Before cloud computing existed, IT resources went to the departments that were most savvy in budget discussions,
+not necessarily the departments and applications that needed it most or had the best use for it.
+I discuss these governance issues in more detail elsewhere.</p>
+<p>The promise of measure service is that you pay for what you use, or more specifically, you pay for what is <em>valuable</em> to you.
+That is why some services are priced by the account: the more users you have, the more valuable the service becomes.
+Think of email as an example.</p>
+<p>More simply, an infrastructure service does not charge you for the storage box, but only for the part that you are using.</p>
+<p>This is different from the cost structure of the provider.
+For the provider, the number of email accounts is not a cost driver.
+Instead the storage of mailboxes is, as well as the number of messages processed.
+Again, the difference between cost and value is taken up by the provider as profit or loss (as the case may be).</p>
+<p>Setting prices like these can be complicated.
+One approach that works quite often is to consider pricing and consumption as a game.
+The moves of the providers are not just setting the prices, they also set the dimensions, e.g. charge per user or charge for consumption.
+The consumer can primarily accept or reject the pricing, based on the payoffs they are getting.
+In a business context the payoff is closely tied to the business benefit.</p>
+<p>The NIST definition tries to not talk about money, but instead talks of control.
+Money is a form of control, but inside an organization there are other forms of control, such as quota.</p>
+<h2 id="wrap-up">Wrap up<a hidden class="anchor" aria-hidden="true" href="#wrap-up">#</a></h2>
+<p>Cloud computing brings power to at least two types of actors.
+The consumers get to ship new features, and deploy new software faster.
+The providers are building a scalable business for themselves.</p>
+<p>So everybody wins, right?
+Maybe, maybe not.
+Maybe there is a party that is not getting benefits.
+It is up to you to figure that out in your situation, because those are the ones that may sabotage any cloud migration project.
+For example, if adoption of new technology reduces opportunities for professionals whose careers are based on mastering the old technology, those professionals are likely to strongly oppose the adoption.</p>
+<p>Every change in technology changes power structures.</p>
 <hr>
 <p>The AI landscape has many digital infrastructures.</p>
-<p>Let&rsquo;s explain this step by step and focus on which data is stored where, and how it is processed.</p>
-<p>A core element of AI systems is a trained model. At least that is true for the dominant AI form these days: deep learning neural networks.</p>
-<p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a Gigabyte, while recent public chat models run into multiple Terabytes.</p>
-<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the most minimal cases is this possible on a high end laptop. For more interesting use cases you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
+<p>Let&rsquo;s explain this step by step and focus on which data is stored where and how it is processed.</p>
+<p>A core element of AI systems is a trained model. This is especially true for the dominant form of AI these days: deep learning neural networks.</p>
+<p>A trained model is the result of processing a lot of training data by a specific neural network. These models are fixed in size, but typically very big. The smallest useful models are close to a gigabyte, while recent public chat models run into multiple terabytes.
+LLM training costs hundreds, thousands, or more hours of compute time on specialized hardware.</p>
 <pre class="mermaid">block-beta
 
 space in space llm:2 space out space
-in[&#34;Prompt&#34;] --&gt; llm[&#34;Large Language Model&#34;]
+in[&#34;Lots of\ntraining\ndata&#34;] --&gt; llm[&#34;Training\nEngine&#34;]
+llm--&gt; out[&#34;Large\nLanguage\nModel&#34;]
+
+style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
+   
+</pre>
+<p>A trained language model is effectively a piece of software. You feed it text, and text comes out. This is called inferencing, and it requires that the entire model fit into RAM memory. Only for the simplest cases is this possible on a high-end laptop. For more interesting use cases, you&rsquo;ll need a lot more hardware. Therefore there is a good business case for sharing this across many users.</p>
+<pre class="mermaid">block-beta
+
+space in space llm:2 space out space
+in[&#34;Prompt&#34;] --&gt; llm[&#34;Large\nLanguage\nModel&#34;]
 llm--&gt; out[&#34;Completion&#34;]
 
 style in fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
 style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dasharray: 5 5
    
 </pre>
-<p>In cloud terms, we would call this Inferencing as a Service. In the NIST model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
-<p>This gives us the option to look for this on the market, or create a shared service inside an organisation or group of organisations (e.g. private / community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilies.</p>
-<p>More at: <a href="https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing">https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing</a></p>
+<p>In cloud computing, we would call this Inference as a Service.
+In the NIST cloud model, we&rsquo;d call this SaaS or PaaS, depending on whether is it consumed directly or as part of a larger application.</p>
+<p>This gives us the option to look for this on the market, or create a shared service inside an organization or group of organizations (e.g. private or community cloud). It also implies that we need to have a clear definition of the service and related service level objectives. This includes any allocation of security responsibilities.</p>
+<p>More at <a href="https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing">https://www.cloudsecuritynewsletter.com/p/securing-ai-applications-in-cloud-what-are-we-really-securing</a></p>
+<hr>
+<p>AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.</p>
+<p>We follow the roles outlined in the <a href="https://cloudsecurityalliance.org/artifacts/ai-controls-matrix">CSA AI Controls Matrix (AICM)</a>.</p>
+<p>Together these run AI systems, from image recognition systems to Large Language Model based customer support systems.</p>
+<h2 id="ai-customer-aic">AI Customer (AIC)<a hidden class="anchor" aria-hidden="true" href="#ai-customer-aic">#</a></h2>
+<p>End users of AI applications.
+This includes the actual users as well as their organizational units.
+Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
+Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
+For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.</p>
+<h2 id="application-provider-ap">Application Provider (AP)<a hidden class="anchor" aria-hidden="true" href="#application-provider-ap">#</a></h2>
+<p>These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.</p>
+<p>These applications are often delivered as software-as-a-service (SaaS) solutions.</p>
+<p>Application providers focus on user interfaces, application logic, domain-specific functionality, and overall user experience rather than underlying model development.</p>
+<h2 id="orchestrated-services-provider-osp">Orchestrated Services Provider (OSP)<a hidden class="anchor" aria-hidden="true" href="#orchestrated-services-provider-osp">#</a></h2>
+<p>This refers to entities that create the technical building blocks and management tools that enable AI implementation.</p>
+<p>This includes platforms, frameworks, and tools that facilitate the integration, deployment, and management of AI models within enterprise workflows.</p>
+<p>These providers focus on model orchestration and offer services like API access, automated scaling, prompt management, workflow automation, monitoring, and governance rather than end-user functionality or raw infrastructure.</p>
+<p>They help businesses implement AI in a structured and efficient manner.</p>
+<p>While the lines can be a bit blurry, you can think of OSPs as being independent of specific applications and independent of specific models.</p>
+<h2 id="model-provider-mp">Model Provider (MP)<a hidden class="anchor" aria-hidden="true" href="#model-provider-mp">#</a></h2>
+<p>Model Providers are entities that develop, train, and distribute foundational and fine-tuned AI models for various applications.</p>
+<p>They create the underlying AI capabilities that other actors build upon. Model Providers are responsible for model architecture, training methodologies, performance characteristics, and documentation of capabilities and limitations.</p>
+<p>They operate at the foundation layer of the AI stack and may provide direct API access to their models,
+at least according to the AICM.
+In the case of so-called open models, there is a clear case for distinguishing between the responsibilities of the model provider, who effectively just hands over a large file with the trained model, and the &lsquo;inferencing provider&rsquo;, who completes prompts, as described earlier.</p>
+<h2 id="cloud-service-provider-csp">Cloud Service Provider (CSP)<a hidden class="anchor" aria-hidden="true" href="#cloud-service-provider-csp">#</a></h2>
+<p>Non-AI specific cloud services for servers, storage, messaging, and more.
+If you can run a non-AI workload on it, it is probably a cloud service in this definition.
+An example would be a Kubernetes cluster, or other container orchestration platform.</p>
+<p>Beyond these AI specific roles, we can dig a bit deeper.
+For example, the AP and OSP may be linking to distinct other services that are outside their direct control, such as document management systems.</p>
+<h2 id="data-providers-dp">Data providers (DP)<a hidden class="anchor" aria-hidden="true" href="#data-providers-dp">#</a></h2>
+<p>AI runs on data, and the more specific the data is, the greater its potential in enhancing AI capabilities.
+A typical use case is to provide access to large collections of company-internal text and images, some of which may be classified and, therefore, should only be accessible to authorized users.</p>
+<p>These systems are known under that names of DMS (Document Management System), CMS (Content Management System), or intranets.</p>
+<p>A popular approach for integrating text in an AI system is RAG (Retrieval Augmented Generation).
+Based on a user query, a selection of documents is retrieved from a data provider and then used by the model to formulate a targeted response.</p>
+<p>From a security perspective, it gets more interesting if not all data should be accessible to everybody.
+That is why the service of a data provider includes promises such as:</p>
+<ul>
+<li>When asked for a document by an authenticated user, I promise to return the best matching answers.</li>
+<li>I promise to only return answers to with the user is authorized</li>
+<li>I promise to reveal the document classification to authorized users, but not to others.</li>
+</ul>
+<p>This makes these data providers enforcers of policy (or PEP in the Zero Trust jargon).</p>
+<!-- Comments in markdown -->
+<hr>
+<p>Customer service is a great thinking model for a lot of what is going on in digital infrastructures, even if the customer is not a human, as we will see.
+We are often buying products, but we really mostly want a service.
+In an earlier unit, we talked about promise theory</p>
+<p>An IT services organization deals with customer requests all the time.</p>
+<blockquote>
+<p>Can I get a new laptop?</p>
+<p>Joe from accounting needs permissions to access this application. Can you fix that?</p>
+<p>I think I clicked on a phishing link. What now?</p></blockquote>
+<p>The list is endless.</p>
+<p>Most of these scenarios can be described very nicely with promise theory.</p>
+<p>Q: Can I get a unique IP address?
+R: Here is your address, let me know when you are done with it</p>
+<p>A: thank you, I am done with this address</p>
+<p>Example IP addresses allocation
+<img alt="alt text" loading="lazy" src="image.png">
+<img alt="alt text" loading="lazy" src="image-1.png"></p>
+<p>Example TCP/IP
+picture</p>
+<p>Connect
+Q: can you reserve buffer space for a connection?
+R: yes we promise, here is your initial window size
+A: thank you, here is your initial window size</p>
+<p>Transmission
+Q: please accept this data
+A: thank you, I will forward it, here is your new window size</p>
+<p>Rinse and Repeat
+=-</p>
+<p>Service elements: consumer actions and provider responses</p>
+<p>Every service has multiple components/elements, i.e.
+Access resource (login, get webpage, …)
+Create resource (server, virtual disk, mailbox, …)
+Modify resource (bigger disk/mailbox, new functional module, add friend, …)
+Create user (provisioning)
+Create account
+Talk to a sales representative
+Negotiate and set up contract
+Reset password
+Delete account
+Delete data (deprovisioning)</p>
+<p>Generally: anything that can be governed by a permission or can lead to a commitment or obligation</p>
+<p>Hierarchy of services
+Extra note: can you group these in phases: contract, provision, use..
+Contract (start – end)
+Provisioning users within a contract, deprovision
+Using resources by a user</p>
+<hr>
+<p>The units so far have explored quite a few, seemingly unrelated, concepts and observations.
+Here we&rsquo;ll embed them in a unified framework that illustrates how they fit together.</p>
+<p>From the title of this book you can see that the main pillars of that framework include value, power, and risk.
+To get there, we need a fourth pillar: change.
+For now, we&rsquo;ll call these pillars layers, though there is no implied hierarchy between them.</p>
+<p>At the core is the concept of promise-based interactions between autonomous agents (human and technical).
+Every digital infrastructure can be understood as a network of these promises across these layers.</p>
+<p><img alt="DIAS Framework" loading="lazy" src="/deploy-images/dias-framework-simple-s.png"></p>
+<p>In the <strong>value creation</strong> layer, we are looking at how these promises lead to value for customers and providers. What are these services? How do we measure their quality?
+How are they provisioned in a cost-effective way, and how does that lead to business models for the provider?</p>
+<p>In the <strong>power distribution</strong> layer, we are looking at who is making which promises to whom (governance), how promises are enforced (contracts, standards, regulations), how control boundaries work between agents, and how scale shifts power dynamics.</p>
+<p>In the <strong>risk management</strong> layer, we analyze what happens when promises are broken, how we can find vulnerabilities in these promise networks (security, compliance). We also look at trust assumptions, and how externalities distort risk across stakeholders.</p>
+<p>Finally, the <strong>change management</strong> layer is where we find feedback loops that stabilize or destabilize systems, technology maturity cycles (from manual to automated), and how promises evolve over time, perhaps as the result of new agents entering the ecosystem.</p>
+<p>This framework shows how these layers interact. For example, how power structures affect what promises can be made (value), how those promises create potential failure points (risk), and how adaptive change processes respond to those risks (change).</p>
+<p>For each real-world digital infrastructure (e.g. telecommunications, cloud computing, social media platforms, payment systems), the framework provides a consistent analytical approach that reveals the underlying dynamics shaping its development, adoption, and governance.</p>
+<p>What makes this powerful is that it creates a universal language for understanding everything from a simple client-server relationship to complex multi-stakeholder global systems, while acknowledging both technical and social dimensions of digital infrastructures.</p>
+<p>In the next chapters we&rsquo;ll dive deeper in each of these layers.</p>
+<hr>
 
 
   </div>
@@ -511,10 +864,24 @@ style out fill:#fff,color:#000,line:#000;stroke-width:0px,color:#000,stroke-dash
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     <nav class="book-nav" style="display: flex; justify-content: space-between; margin-top: 2rem;">
       
         
-        <a href="/book/diginfra/digital-inf-ai/">&larr; What are AI digital infrastructures?</a>
+        <a href="/book/diginfra/unified-theory/">&larr; A Unified Framework</a>
       
       
     </nav>

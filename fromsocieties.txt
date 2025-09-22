@@ -1,0 +1,78 @@
+
+
+"Making sense of tech and business"
+"Blending technology with business are spot on"
+"Intersection of technology, business, and power dynamics"
+
+Cloud migration stuck? 3 ways to rethink it.
+
+Cloud IT migration: Avoid getting stuck, start smart.
+
+To really grab their attention, we need to move faster into the concrete impact of these legal aspects on *their* work. For example, how does a poorly defined contract directly cause delays in a deployment, or lead to technical rework they have to do? We should focus on streamlining processes and improving data governance in a way that highlights a clear, immediate benefit to their technical projects, rather than just the general need for lawyers to understand cloud. Let's think about bringing those specific, tangible impacts and solutions higher up in the narrative.
+
+
+Exceptional: Pick your cloud entry point: 3 pragmatic options
+
+Exceptional: Make AI code for you: 3 practical steps
+
+matig:
+Risk is the flip side of value. For everything that is of value, there can be circumstances threatening that value.
+
+While value is realized in the past and the present, risk is what can happen with that value in the future.
+Risk in a digital world is not always easy to think through. Even though we can borrow a lot from the real world, certain important differences exist.
+At the core of every risk assessment there is the thing we worry about the most: the ‘asset’.
+In a digital world, this is often the data. Think of business-critical data, like our database of customers. Think of data that we have a compliance obligation on, such as personal data.
+
+beter:
+Risk is the flip side of value. Yet too often we talk about controls without first asking what we are actually protecting.
+
+Value is realised in the past and present; risk is what can happen to that value in the future. In the digital world this is tricky because digital assets behave very differently: they can be copied, moved, accessed from anywhere, and their harm often comes from combinations of people, processes and technology  -  not a single failed control.
+
+At the core of every sensible risk assessment is a clear answer to one question: what would hurt the business?
+
+In practice that means focusing on the asset that creates value (often data) and then working backwards to credible harm. Examples:
+- Business-critical data: losing or corrupting a customer database delays operations and damages revenue and trust.
+- Compliance data: mishandling personal data creates regulatory fines and reputational damage.
+- Even “non-sensitive” data can matter if its loss breaks a business process.
+
+A pragmatic approach I use with teams:
+- Identify the value: which data, service or capability causes the business pain if harmed.
+- Build realistic harm scenarios: how could a threat lead to real stakeholder pain?
+- Filter controls by impact on those scenarios: will this control actually break the threat-to-harm chain?
+- Prioritise by expected reduction of harm and cost to implement.
+
+If there is no realistic path from threat to stakeholder pain, don’t waste cycles on the control. I see that mistake often  -  long lists of technically neat controls that don’t change the business outcome.
+
+What do you focus on when you assess risk in your projects? Share one practical rule you use.
+
+LI:
+Ever had a cloud project grind to a halt because legal or procurement didn't quite grasp the technical nuances? Or worse, inherited a cloud setup with murky responsibilities, leaving you scratching your head about who patches what? Been there.
+
+The truth is, cloud deployments *demand* clear lines. Not just technical architecture, but how those technical boundaries map to organizational and contractual ones. It's not about making lawyers into engineers, but making sure *everyone* understands what's on their plate in this distributed IT supply chain.
+
+Think about it: who's *really* on the hook for patching the Operating System in an IaaS setup? If that's not crystal clear in the contract, it's a ticking time bomb for your operations, creating delays and unexpected risks. And trust me, your engineers hate unexpected risks.
+
+We need to empower our legal and procurement teams to ask the *right* questions. Equip them to translate technical dependencies into enforceable legal controls. Because when they're spending precious meeting time on basic cloud terminology, they're missing the chance to tackle the real risks and opportunities for our company. As one of my course participants, a legal person, once told me: "When I go into a conversation with a cloud provider I have time for let’s say 10 questions. If all these questions go to understanding basic cloud terminology and technology, I have missed the opportunity to talk about the real risk and opportunity for our company.”
+
+So, if you want your cloud projects to run smoother, with fewer headaches and clearer responsibilities, then let's get everyone speaking the same language. It's about empowering the whole team, not just the techies, to get cloud right.
+
+###
+How can you use cloud security lessons to better secure AI? This is what is keeping some of my clients busy recently.
+
+After 30+ years in IT, I've seen this pattern before. New technology emerges, everyone rushes to adopt it, and security becomes an afterthought. We did this with cloud computing. We're doing it again with AI.
+
+But here's the thing: the fundamentals of cloud security can guide your AI security strategy.
+
+In cloud security, we learned to focus on data classification first. What data are you processing? Where does it live? Who has access? The same questions apply to AI systems, but with new twists. Your training data becomes as critical as your production data.
+
+We learned about shared responsibility models in cloud. With AI, this gets more complex. Who's responsible when your AI model gives bad advice? When it leaks sensitive information in its responses? When it gets poisoned by malicious training data?
+
+We developed Zero Trust for cloud environments. For AI, this means never trusting model outputs without validation, implementing proper access controls around AI systems, and continuously monitoring for drift and anomalies.
+
+The biggest lesson from cloud security? Start with governance, not technology. Define your AI use cases, understand your risks, then build controls around them.
+
+Most organizations I work with are still figuring out basic AI governance while their developers are already deploying models in production. Sound familiar?
+
+The good news is we don't have to reinvent the wheel. The risk frameworks, control categories, and governance structures from cloud security translate well to AI security.
+
+What AI security challenges are you seeing in your organization?

@@ -1229,36 +1229,136 @@ Clearly we seem to want both.
 We don&amp;rsquo;t want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/home/li-notion/international/</link>
+      <title>&#39;Cases&#39;</title>
+      <link>http://localhost:1313/book/cases/chapter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/li-notion/international/</guid>
-      <description>&lt;p&gt;Digital sovereignty is concerned with which international actors can limit the independence of a country.&lt;/p&gt;
-&lt;p&gt;But what really are the international actors?&lt;/p&gt;
-&lt;p&gt;Without an answer to that question, the search for digital sovereignty will become difficult and ambiguous.&lt;/p&gt;
-&lt;p&gt;There are many differing opinions on that topic, which makes that a hard question.&lt;/p&gt;
-&lt;p&gt;I elaborate on a few of these opinions in my book: Digital Power: how digital infrastructures at scale lead to value, power, and risk.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/book/cases/chapter/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;In order to illustrate the development of technology through tracking the development of LLM related tooling.&lt;/p&gt;
+&lt;p&gt;In December 2023 (check) ChatGPT came out.
+Within days people from around the world were using it.&lt;/p&gt;
+&lt;p&gt;RAG - companies
+Langchain&lt;/p&gt;
+&lt;p&gt;Agents&lt;/p&gt;
+&lt;p&gt;MCP and A2A&lt;/p&gt;
+&lt;p&gt;MCP spinoffs&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;detection&#34;&gt;Detection&lt;/h3&gt;
+&lt;p&gt;I should have acted on the first signals more aggressively. But let’s talk about that later in this story.
+Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/li-notion/international/</link>
+      <title>&#39;Change and control&#39;</title>
+      <link>http://localhost:1313/book/change/chapter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/li-notion/international/</guid>
-      <description>&lt;p&gt;Digital sovereignty is concerned with which international actors can limit the independence of a country.&lt;/p&gt;
-&lt;p&gt;But what really are the international actors?&lt;/p&gt;
-&lt;p&gt;Without an answer to that question, the search for digital sovereignty will become difficult and ambiguous.&lt;/p&gt;
-&lt;p&gt;There are many differing opinions on that topic, which makes that a hard question.&lt;/p&gt;
-&lt;p&gt;I elaborate on a few of these opinions in my book: Digital Power: how digital infrastructures at scale lead to value, power, and risk.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/book/change/chapter/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Change is quite inherent in technology, and in particular in information technology.
+At the same time we want technology to provide a reliable service, and that requires a degree of control.
+In this chapter we&amp;rsquo;ll explore some fundamentals of change, in particular how this works with groups of people.&lt;/p&gt;
+&lt;p&gt;Change and control mindsets complement each other.
+We need both, even if they conflict at times.&lt;/p&gt;
+&lt;p&gt;For example, in a typical IT environment, you have developers and system administrators.
+The output of the developers is a stream of changes: new features, improvements, bug fixes, and so on.
+Adminstrators are in the business of keeping everything stable, the same.
+They see no fundamental difference between a new feature and an incident. Both are disrupting the normal flow of business. Consequently, they are seen as a threat, and that is why it often feels that developers and system administrators are from different planets.&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/li-notion/promise/</link>
+      <title>&#39;Index&#39;</title>
+      <link>http://localhost:1313/book/index/chapter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/li-notion/promise/</guid>
-      <description>&lt;p&gt;What I particularly like about promise theory is that it allows us to understand and explain complex interactions in IT systems, independent of whether the participants in that interaction are machines, humans, or humanoid agents.&lt;/p&gt;
-&lt;p&gt;The cases where I have used it range from business interactions, e-commerce, and system administration, to service management.&lt;/p&gt;
-&lt;p&gt;It has allowed me to unlock collaboration in complex supply chains.&lt;/p&gt;
-&lt;p&gt;Promise theory is one of the few fundamental thoughts that I elaborate in my book: Digital Power: how digital infrastructures at scale lead to value, power, and risk.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/book/index/chapter/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Introduction&#39;</title>
+      <link>http://localhost:1313/book/intro/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/intro/chapter/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Introduction&#39;</title>
+      <link>http://localhost:1313/book/posts/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/posts/chapter/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Power&#39;</title>
+      <link>http://localhost:1313/book/power/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/chapter/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.
+Before we attempt to define power formally, let&amp;rsquo;s see how the word in used in everyday IT situations.&lt;/p&gt;
+&lt;p&gt;Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works, and creates value and risk.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The cloud architect held significant power in deciding which platforms the organization would adopt for its digital transformation.&lt;/li&gt;
+&lt;li&gt;Automated deployment pipelines gave development teams the power to release software faster and with fewer errors.&lt;/li&gt;
+&lt;li&gt;Legacy systems often retain unexpected power in large organizations, simply because so many critical processes still depend on them.&lt;/li&gt;
+&lt;li&gt;Regulators have the power to halt digital initiatives if data protection requirements are not met.&lt;/li&gt;
+&lt;li&gt;By owning the central identity management service, the security team had the power to control access across the entire infrastructure.&lt;/li&gt;
+&lt;li&gt;Outages at major cloud providers show how concentrated power in digital infrastructures can lead to systemic risk.&lt;/li&gt;
+&lt;li&gt;The CIO used the power of budget approval to steer the enterprise toward adopting more secure infrastructure patterns.&lt;/li&gt;
+&lt;li&gt;Power struggles between central IT and business units can delay the rollout of shared infrastructure services.&lt;/li&gt;
+&lt;li&gt;With real-time observability tools, operations teams gained the power to detect and respond to incidents before users were affected.&lt;/li&gt;
+&lt;li&gt;An open-source community can collectively wield more power than a single vendor when shaping the direction of a software tool.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Preface&#39;</title>
+      <link>http://localhost:1313/book/1-preface/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/1-preface/chapter/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Risks of digital infrastructures&#39;</title>
+      <link>http://localhost:1313/book/risk/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/chapter/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances threatening that value.
+While value is realized in the past and the present, risk is what can happen with that value in the &lt;em&gt;future&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
+&lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.
+In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business-critical data, like our database of customers. Think of data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>&#39;The Journey Continues&#39;</title>
+      <link>http://localhost:1313/book/wrap/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/wrap/chapter/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Value&#39;</title>
+      <link>http://localhost:1313/book/value/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/chapter/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.
+That is where their prime value is.&lt;/p&gt;
+&lt;p&gt;The internet is a great example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
+&lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>&#39;What are digital infrastructures?&#39;</title>
+      <link>http://localhost:1313/book/diginfra/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/chapter/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.&lt;/p&gt;
+&lt;p&gt;The three major elements of digital infrastructures are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Storage&lt;/li&gt;
+&lt;li&gt;Networks&lt;/li&gt;
+&lt;li&gt;Processors&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

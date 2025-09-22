@@ -27,4 +27,4 @@ After my Master's, I got the chance to pursue a Ph.D. in a research group that w
 Even then, it took a few years before I moved from dial-up networking to planet scale internet.
 
 It may seem archaic from today's perspective, but that is how it was.
-You can't expect to be using the network much when you are still in the proces of building it out.
+You can't expect to be using the network much when you are still in the process of building it out.

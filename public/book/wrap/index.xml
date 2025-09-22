@@ -6,7 +6,14 @@
     <description>Recent content in The Journey Continues on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/wrap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#39;The Journey Continues&#39;</title>
+      <link>http://localhost:1313/book/wrap/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/wrap/chapter/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
   </channel>
 </rss>

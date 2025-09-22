@@ -4,7 +4,7 @@ draft: false
 title: 'International Actors'
 ---
 
-The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
+The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are, as we will see.
 But the international arena matters, because 
 by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.
 
@@ -37,7 +37,7 @@ In contrast to the multi-nation view of the world is the perspective that what r
 
 Large businesses have the capability to drive government policies. Even US presidents see that. President Eisenhower warned about the military-industrial complex in 1961. President Biden extended that, and warned against the power of the tech industry and AI in particular in his last speech in 2024.
 
-This is not hypothetical. There has been succesful lobbying by US companies against international regulation that is seen as limiting to them.
+This is not hypothetical. There has been successful lobbying by US companies against international regulation that is seen as limiting to them.
 
 Many multinational organizations are largely legitimate, but there are quite a few whose main objective is to launder money outside of the control of nations. Beyond that, when it comes to cybersecurity, internationally organised crime has business models that include ransomware extortion and bitcoin mining on hacked computers.
 

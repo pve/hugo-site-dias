@@ -338,13 +338,31 @@
     <loc>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</loc>
     <lastmod>2006-08-18T13:54:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/li-notion/promise/</loc>
+    <loc>http://localhost:1313/book/cases/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/change/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/index/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/intro/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/posts/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/power/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/1-preface/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/risk/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/wrap/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/value/chapter/</loc>
+  </url><url>
+    <loc>http://localhost:1313/book/diginfra/chapter/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/li-notion/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url><url>

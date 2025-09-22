@@ -50,5 +50,25 @@ Here are the major features of the example:&lt;/p&gt;</description>
 &lt;p&gt;After all, you would be paying for all those servers anyway. Understand that sticking all your servers in a private cloud makes them more flexible, but not necessarily more efficient or cheaper.&lt;/p&gt;
 &lt;p&gt;Back in 2012 I did an interview with a guy who has a full time job in keeping those server counts down. Ron Kaminski is a capacity planner at Kimberly Clark Corporation (KCC). This interview is a composite of several conversations I had with Ron at the annual Computer Measurement Group (CMG) conferences, and a number of messages Ron wrote.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>&#39;Cases&#39;</title>
+      <link>http://localhost:1313/book/cases/chapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/cases/chapter/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;In order to illustrate the development of technology through tracking the development of LLM related tooling.&lt;/p&gt;
+&lt;p&gt;In December 2023 (check) ChatGPT came out.
+Within days people from around the world were using it.&lt;/p&gt;
+&lt;p&gt;RAG - companies
+Langchain&lt;/p&gt;
+&lt;p&gt;Agents&lt;/p&gt;
+&lt;p&gt;MCP and A2A&lt;/p&gt;
+&lt;p&gt;MCP spinoffs&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;detection&#34;&gt;Detection&lt;/h3&gt;
+&lt;p&gt;I should have acted on the first signals more aggressively. But let’s talk about that later in this story.
+Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
