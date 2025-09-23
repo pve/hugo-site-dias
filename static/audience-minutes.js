@@ -20,7 +20,10 @@ function reportOrNot()
         activityCount++;
         if(Math.random() < reportingProbability) {
 //            let url = '/articles/report.json?scrollPerc='+Math.round(scrollPerc)+"&count="+activityCount;
-            let url = 'https://us-central1-teachable-apidump.cloudfunctions.net/log-url-request?scrollPerc='+Math.round(scrollPerc)+"&count="+activityCount;
+//           let url = 'https://us-central1-teachable-apidump.cloudfunctions.net/log-url-request?scrollPerc='+Math.round(scrollPerc)+"&count="+activityCount;
+            let pageUrl = encodeURIComponent(window.location.href);
+            let url = 'https://us-central1-teachable-apidump.cloudfunctions.net/log-url-request?scrollPerc=' + Math.round(scrollPerc) + "&count=" + activityCount + "&pageUrl=" + pageUrl;
+
             var oReq = new XMLHttpRequest();
             oReq.open("GET", url);
             oReq.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
