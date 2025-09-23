@@ -55,4 +55,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     setInterval(reportOrNot, intervalSeconds * 1000);
+    reportOrNot();
 });
