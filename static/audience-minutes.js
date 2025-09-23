@@ -9,7 +9,7 @@ var intervalSeconds=60;
 // still get sufficient reports
 var reportingProbability=0.99;
 
-var hadActivity=false;
+var hadActivity=true; // count the first load as activity
 var scrollPerc=0;
 var activityCount=0;
 
