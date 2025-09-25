@@ -165,3 +165,5 @@ lethal trifecta https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
 
 https://cdn.securosis.com/assets/library/reports/Securosis_DataSecurityintheSaaSAge_FINAL.pdf
 Data, exploit, egress.
+
+Network effects bible: https://www.nfx.com/post/network-effects-bible

@@ -1,0 +1,15 @@
+Bridging the worlds of technology and business is what I have spent most of my career doing.
+
+While these worlds often seem to speak different languages, I find that there are ways in which they can talk to each other.
+
+Let me give you an example.
+
+In the early days of computer networks, addresses of machines were administered manually.
+That was a business process, involving paperwork.
+These days, we have a technology for that (DHCP), so that you don't have to do the paperwork every time you log into the WiFi somewhere.
+
+But once we see that these are just two different ways of doing the same thing, we can have more people share their insights into this, which makes talking about automation easier.
+If you like, you can use buzzwords such as digital transformation here (just kidding).
+
+I am exploring concepts such as these in a book I am writing.
+For example, the DHCP case I just mentioned is explained in more detail here: https://digitalinfrastructures.nl/book/change/dhcp-automation/

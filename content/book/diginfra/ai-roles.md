@@ -17,6 +17,7 @@ This includes the actual users as well as their organizational units.
 Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
 Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
 For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.
+Customers are also responsible for the business use of the data that is returned by the AI application.
 
 ## Application Provider (AP)
 
