@@ -185,7 +185,8 @@ LLM training costs hundreds, thousands, or more hours of compute time on special
 This includes the actual users as well as their organizational units.
 Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
 Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
-For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.&lt;/p&gt;</description>
+For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.
+Customers are also responsible for the business use of the data that is returned by the AI application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Customer Service</title>
@@ -210,21 +211,6 @@ Here we&amp;rsquo;ll embed them in a unified framework that illustrates how they
 &lt;p&gt;From the title of this book you can see that the main pillars of that framework include value, power, and risk.
 To get there, we need a fourth pillar: change.
 For now, we&amp;rsquo;ll call these pillars layers, though there is no implied hierarchy between them.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>&#39;What are digital infrastructures?&#39;</title>
-      <link>http://localhost:1313/book/diginfra/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.&lt;/p&gt;
-&lt;p&gt;The three major elements of digital infrastructures are:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Storage&lt;/li&gt;
-&lt;li&gt;Networks&lt;/li&gt;
-&lt;li&gt;Processors&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

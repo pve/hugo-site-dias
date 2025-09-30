@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Sep 2025 06:10:21 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Sep 2025 11:24:47 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -53,6 +53,20 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Claude Swarm Deep</title>
+      <link>http://localhost:1313/posts/claude-swarm-deep/</link>
+      <pubDate>Sat, 27 Sep 2025 11:24:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/claude-swarm-deep/</guid>
+      <description>&lt;p&gt;Agentic swarm coding feels like the next big thing.&lt;/p&gt;
+&lt;p&gt;While I had success with claude-swarm in a small proof of concept (link), I struggled to understand in more detail how it work.&lt;/p&gt;
+&lt;p&gt;Quick recall, here is what I did:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npx claude-flow@alpha init --force
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npx claude-flow@alpha hive-mind spawn &lt;span class=&#34;s2&#34;&gt;&amp;#34;Create a simple single player web page where the user can play tic-tac-toe against the computer&amp;#34;&lt;/span&gt; --claude
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With this, Claude starts doing the work.
+Approximately 20 minutes later, it produced &lt;a href=&#34;http://localhost:1313/ttt/tic-tac-toe.html&#34;&gt;a solution that worked&lt;/a&gt; at the first attempt!&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Cloud Security and AI</title>
       <link>http://localhost:1313/posts/cloud-sec-ai/</link>
       <pubDate>Tue, 09 Sep 2025 06:10:21 +0000</pubDate>
@@ -89,16 +103,17 @@ And it is no different in the world of AI.&lt;/p&gt;</description>
       <description>&lt;p&gt;Testing RSS&lt;/p&gt;</description>
     </item>
     <item>
-      <title>OLRA</title>
+      <title>OWASP LLM Risk Allocation</title>
       <link>http://localhost:1313/projects/olra/olra/</link>
       <pubDate>Fri, 29 Aug 2025 09:33:34 +0000</pubDate>
       <guid>http://localhost:1313/projects/olra/olra/</guid>
-      <description>&lt;p&gt;Overwhelmed by too many risks and controls to consider?
-That is why there is this risk navigator.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP Top 10 for LLM Applications&lt;/a&gt; risks are a good start for analyzing the risks of an LLM system.&lt;/p&gt;
-&lt;p&gt;But, who is supposed to do each control? And which role do they have?&lt;/p&gt;
-&lt;p&gt;This is where allocation of risks and their controls to roles comes in, and why this tool is called the OLRA navigator.
-OLRA stands for &lt;strong&gt;OWASP LLM Risk Allocation&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Applications based on LLMs (Large Language Models) have risks too.
+The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP Top 10 for LLM Applications&lt;/a&gt; risks are a good start for analyzing the risks of such a system.&lt;/p&gt;
+&lt;p&gt;These types of applications, like many others, are also cloud applications.
+This means that there is a variety of parties responsible for controlling those risks.&lt;/p&gt;
+&lt;p&gt;But, who is supposed to do each control? And which role do they have?
+For example, there are model providers, there is the AI consumer, and so on.
+For a deeper story on these roles look at &lt;a href=&#34;http://localhost:1313/book/diginfra/ai-roles/&#34;&gt;AI roles&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agentic coding, the next level</title>
@@ -912,13 +927,15 @@ The process is that you realize compliance by implementing a set of controls, su
       <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
       <description>&lt;p&gt;AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.&lt;/p&gt;
 &lt;p&gt;We follow the roles outlined in the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AI Controls Matrix (AICM)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Each role also has promises associated with them (read more on &lt;a href=&#34;http://localhost:1313/book/diginfra/promise-theory/&#34;&gt;promise theory here&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Together these run AI systems, from image recognition systems to Large Language Model based customer support systems.&lt;/p&gt;
 &lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
 &lt;p&gt;End users of AI applications.
 This includes the actual users as well as their organizational units.
 Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
 Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
-For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.&lt;/p&gt;</description>
+For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.
+Customers are also responsible for the business use of the data that is returned by the AI application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compliance is a Risk</title>
@@ -1090,7 +1107,7 @@ Some of the systems in the registry are AI-based. Indeed, we have AI to help che
       <link>http://localhost:1313/book/power/international-actors/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
       <guid>http://localhost:1313/book/power/international-actors/</guid>
-      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
+      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are, as we will see.
 But the international arena matters, because
 by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
 &lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
@@ -1227,138 +1244,6 @@ There are laws against this type of discrimination (at least in most nations), a
 On the other hand there are some Internet providers who want to charge different customers different rates for different service. &amp;ldquo;We can&amp;rsquo;t have companies freeloading on our expensive pipes&amp;rdquo;, they claim.
 Clearly we seem to want both.
 We don&amp;rsquo;t want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Cases&#39;</title>
-      <link>http://localhost:1313/book/cases/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/cases/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;In order to illustrate the development of technology through tracking the development of LLM related tooling.&lt;/p&gt;
-&lt;p&gt;In December 2023 (check) ChatGPT came out.
-Within days people from around the world were using it.&lt;/p&gt;
-&lt;p&gt;RAG - companies
-Langchain&lt;/p&gt;
-&lt;p&gt;Agents&lt;/p&gt;
-&lt;p&gt;MCP and A2A&lt;/p&gt;
-&lt;p&gt;MCP spinoffs&lt;/p&gt;
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;detection&#34;&gt;Detection&lt;/h3&gt;
-&lt;p&gt;I should have acted on the first signals more aggressively. But let’s talk about that later in this story.
-Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Change and control&#39;</title>
-      <link>http://localhost:1313/book/change/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/change/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;Change is quite inherent in technology, and in particular in information technology.
-At the same time we want technology to provide a reliable service, and that requires a degree of control.
-In this chapter we&amp;rsquo;ll explore some fundamentals of change, in particular how this works with groups of people.&lt;/p&gt;
-&lt;p&gt;Change and control mindsets complement each other.
-We need both, even if they conflict at times.&lt;/p&gt;
-&lt;p&gt;For example, in a typical IT environment, you have developers and system administrators.
-The output of the developers is a stream of changes: new features, improvements, bug fixes, and so on.
-Adminstrators are in the business of keeping everything stable, the same.
-They see no fundamental difference between a new feature and an incident. Both are disrupting the normal flow of business. Consequently, they are seen as a threat, and that is why it often feels that developers and system administrators are from different planets.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Index&#39;</title>
-      <link>http://localhost:1313/book/index/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/index/chapter/</guid>
-      <description>&lt;hr&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Introduction&#39;</title>
-      <link>http://localhost:1313/book/intro/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/intro/chapter/</guid>
-      <description>&lt;hr&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Introduction&#39;</title>
-      <link>http://localhost:1313/book/posts/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/posts/chapter/</guid>
-      <description>&lt;hr&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Power&#39;</title>
-      <link>http://localhost:1313/book/power/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/power/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.
-Before we attempt to define power formally, let&amp;rsquo;s see how the word in used in everyday IT situations.&lt;/p&gt;
-&lt;p&gt;Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works, and creates value and risk.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The cloud architect held significant power in deciding which platforms the organization would adopt for its digital transformation.&lt;/li&gt;
-&lt;li&gt;Automated deployment pipelines gave development teams the power to release software faster and with fewer errors.&lt;/li&gt;
-&lt;li&gt;Legacy systems often retain unexpected power in large organizations, simply because so many critical processes still depend on them.&lt;/li&gt;
-&lt;li&gt;Regulators have the power to halt digital initiatives if data protection requirements are not met.&lt;/li&gt;
-&lt;li&gt;By owning the central identity management service, the security team had the power to control access across the entire infrastructure.&lt;/li&gt;
-&lt;li&gt;Outages at major cloud providers show how concentrated power in digital infrastructures can lead to systemic risk.&lt;/li&gt;
-&lt;li&gt;The CIO used the power of budget approval to steer the enterprise toward adopting more secure infrastructure patterns.&lt;/li&gt;
-&lt;li&gt;Power struggles between central IT and business units can delay the rollout of shared infrastructure services.&lt;/li&gt;
-&lt;li&gt;With real-time observability tools, operations teams gained the power to detect and respond to incidents before users were affected.&lt;/li&gt;
-&lt;li&gt;An open-source community can collectively wield more power than a single vendor when shaping the direction of a software tool.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Preface&#39;</title>
-      <link>http://localhost:1313/book/1-preface/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/1-preface/chapter/</guid>
-      <description>&lt;hr&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Risks of digital infrastructures&#39;</title>
-      <link>http://localhost:1313/book/risk/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/risk/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;Risk is the flip side of value. For everything that is of value, there can be circumstances threatening that value.
-While value is realized in the past and the present, risk is what can happen with that value in the &lt;em&gt;future&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Risk in a digital world is not always easy to think through. While we can borrow a lot from the real world, certain important differences exist.&lt;/p&gt;
-&lt;p&gt;At the core of every risk assessment there is the thing we worry about the most: the &amp;lsquo;&lt;strong&gt;asset&lt;/strong&gt;&amp;rsquo;.
-In a digital world, this is often the &lt;strong&gt;data&lt;/strong&gt;. Think of business-critical data, like our database of customers. Think of data that we have a compliance obligation on, such as personal data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>&#39;The Journey Continues&#39;</title>
-      <link>http://localhost:1313/book/wrap/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/wrap/chapter/</guid>
-      <description>&lt;hr&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Value&#39;</title>
-      <link>http://localhost:1313/book/value/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/value/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.
-That is where their prime value is.&lt;/p&gt;
-&lt;p&gt;The internet is a great example. It is designed to enable computers to communicate by moving data packets between them.&lt;/p&gt;
-&lt;p&gt;Social media is another example, used by people to communicate with each other. Its success is a testament to the fact that communication is a fundamental human need.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>&#39;What are digital infrastructures?&#39;</title>
-      <link>http://localhost:1313/book/diginfra/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/diginfra/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;It all starts with bits: digital units of information. It is about how we store these bits, how we move these bits, and how we transform or process these bits.&lt;/p&gt;
-&lt;p&gt;The three major elements of digital infrastructures are:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Storage&lt;/li&gt;
-&lt;li&gt;Networks&lt;/li&gt;
-&lt;li&gt;Processors&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

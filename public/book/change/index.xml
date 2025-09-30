@@ -99,21 +99,5 @@ Who takes decisions in an organization?
 How do people even talk about decisions, especially when they concern digital technology?
 Who do you trust?&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>&#39;Change and control&#39;</title>
-      <link>http://localhost:1313/book/change/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/change/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;Change is quite inherent in technology, and in particular in information technology.
-At the same time we want technology to provide a reliable service, and that requires a degree of control.
-In this chapter we&amp;rsquo;ll explore some fundamentals of change, in particular how this works with groups of people.&lt;/p&gt;
-&lt;p&gt;Change and control mindsets complement each other.
-We need both, even if they conflict at times.&lt;/p&gt;
-&lt;p&gt;For example, in a typical IT environment, you have developers and system administrators.
-The output of the developers is a stream of changes: new features, improvements, bug fixes, and so on.
-Adminstrators are in the business of keeping everything stable, the same.
-They see no fundamental difference between a new feature and an incident. Both are disrupting the normal flow of business. Consequently, they are seen as a threat, and that is why it often feels that developers and system administrators are from different planets.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

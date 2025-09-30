@@ -151,36 +151,13 @@ Think of ELIZA, the 60s era psychology chatbot by Joseph Weizenbaum.&lt;/p&gt;</
       <link>http://localhost:1313/book/power/international-actors/</link>
       <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
       <guid>http://localhost:1313/book/power/international-actors/</guid>
-      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are.
+      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are, as we will see.
 But the international arena matters, because
 by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
 &lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
 In US vernacular, the word international appears to mean all nations, except the US.
 Instead, the word global is used to mean all nations, including the US.
 An example implication of this is that a US company would only consider ISO standards to be relevant to them if they also have operations outside the US.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>&#39;Power&#39;</title>
-      <link>http://localhost:1313/book/power/chapter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/book/power/chapter/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.
-Before we attempt to define power formally, let&amp;rsquo;s see how the word in used in everyday IT situations.&lt;/p&gt;
-&lt;p&gt;Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works, and creates value and risk.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The cloud architect held significant power in deciding which platforms the organization would adopt for its digital transformation.&lt;/li&gt;
-&lt;li&gt;Automated deployment pipelines gave development teams the power to release software faster and with fewer errors.&lt;/li&gt;
-&lt;li&gt;Legacy systems often retain unexpected power in large organizations, simply because so many critical processes still depend on them.&lt;/li&gt;
-&lt;li&gt;Regulators have the power to halt digital initiatives if data protection requirements are not met.&lt;/li&gt;
-&lt;li&gt;By owning the central identity management service, the security team had the power to control access across the entire infrastructure.&lt;/li&gt;
-&lt;li&gt;Outages at major cloud providers show how concentrated power in digital infrastructures can lead to systemic risk.&lt;/li&gt;
-&lt;li&gt;The CIO used the power of budget approval to steer the enterprise toward adopting more secure infrastructure patterns.&lt;/li&gt;
-&lt;li&gt;Power struggles between central IT and business units can delay the rollout of shared infrastructure services.&lt;/li&gt;
-&lt;li&gt;With real-time observability tools, operations teams gained the power to detect and respond to incidents before users were affected.&lt;/li&gt;
-&lt;li&gt;An open-source community can collectively wield more power than a single vendor when shaping the direction of a software tool.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;From these examples, we can see certain recurring features of power in the context of IT and digital infrastructures.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

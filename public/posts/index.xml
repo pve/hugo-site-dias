@@ -6,8 +6,22 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Sep 2025 06:10:21 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Sep 2025 11:24:47 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Swarm Deep</title>
+      <link>http://localhost:1313/posts/claude-swarm-deep/</link>
+      <pubDate>Sat, 27 Sep 2025 11:24:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/claude-swarm-deep/</guid>
+      <description>&lt;p&gt;Agentic swarm coding feels like the next big thing.&lt;/p&gt;
+&lt;p&gt;While I had success with claude-swarm in a small proof of concept (link), I struggled to understand in more detail how it work.&lt;/p&gt;
+&lt;p&gt;Quick recall, here is what I did:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npx claude-flow@alpha init --force
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npx claude-flow@alpha hive-mind spawn &lt;span class=&#34;s2&#34;&gt;&amp;#34;Create a simple single player web page where the user can play tic-tac-toe against the computer&amp;#34;&lt;/span&gt; --claude
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With this, Claude starts doing the work.
+Approximately 20 minutes later, it produced &lt;a href=&#34;http://localhost:1313/ttt/tic-tac-toe.html&#34;&gt;a solution that worked&lt;/a&gt; at the first attempt!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Cloud Security and AI</title>
       <link>http://localhost:1313/posts/cloud-sec-ai/</link>

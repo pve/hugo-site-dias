@@ -1,0 +1,22 @@
+Everybody suddenly seems to be an experienced AI expert these days.
+How is that possible?
+
+Sometimes I wonder if we as an industry are just jumping on a bandwagon, blindly following the newest fad, and today it is genAI.
+With that I can even feel some guilt that we are just following buzzwords.
+
+But when I have had a good night's rest and reflect on how we got here, I have a more positive image.
+
+Technology has a life of its own, and it progresses autonomously.
+None of us has individually invented this.
+We are all standing on the shoulders of those who were before us.
+
+We are contributing what we are capable of.
+The difference is in having access to fundamental concepts in IT that don't change over the years.
+The 'new' thing in IT is rarely different from doing the same all over again, but with different means.
+And that is what makes the difference.
+
+Those whose mental model is good can adjust to this much quicker.
+Those who just picked up a bunch of hype terms will have a harder time.
+
+If you want to enrich your mental model, you can read about the concepts that I have found to be useful across many decades of IT innovation in my book.
+It's online at https://digitalinfrastructures.nl

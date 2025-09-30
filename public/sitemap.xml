@@ -20,6 +20,9 @@
     <loc>http://localhost:1313/book/diginfra/</loc>
     <lastmod>2025-03-09T18:54:11+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/claude-swarm-deep/</loc>
+    <lastmod>2025-09-27T11:24:47+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/cloud-sec-ai/</loc>
     <lastmod>2025-09-09T06:10:21+00:00</lastmod>
   </url><url>
@@ -267,10 +270,10 @@
     <lastmod>2025-05-12T21:05:36+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-09T06:10:21+00:00</lastmod>
+    <lastmod>2025-09-27T11:24:47+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-09T06:10:21+00:00</lastmod>
+    <lastmod>2025-09-27T11:24:47+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-09-01T11:28:58+00:00</lastmod>
@@ -337,28 +340,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</loc>
     <lastmod>2006-08-18T13:54:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/book/cases/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/change/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/index/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/intro/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/posts/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/power/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/1-preface/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/risk/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/wrap/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/value/chapter/</loc>
-  </url><url>
-    <loc>http://localhost:1313/book/diginfra/chapter/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
