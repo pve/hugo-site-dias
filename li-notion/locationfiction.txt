@@ -1,0 +1,16 @@
+Does the region or availability zone of a cloud provider matter from a security standpoint? 
+
+While we know that there are differences in versions and feature sets between regions in, for example, Amazon Web Services, they all follow the same operational procedures,
+As a result, they are likely to face the same risks.
+This leads to the idea that they all have the same security.
+
+Does geographic location matter from a compliance perspective?
+The same operational procedures are at work, and it all falls under the same management.
+In a cloud world, I see no realistic difference in the power that a sovereign state has over the data in a cloud zone in their own territory versus that in another jurisdiction.
+In my opinion, the idea that geographic location has any significance is therefore a legal fiction.
+
+From a compliance perspective, that fiction is a reality that we have to deal with, one way or another.
+
+But we may be better off looking at control over the management and ownership of a cloud provider than at its geographical footprint.
+
+What do you think?

@@ -17,7 +17,7 @@ Together these run AI systems, from image recognition systems to Large Language 
 End users of AI applications.
 This includes the actual users as well as their organizational units.
 Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
-Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
+Some of these responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
 For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.
 Customers are also responsible for the business use of the data that is returned by the AI application.
 
@@ -49,7 +49,7 @@ These providers focus on model orchestration and offer services like API access,
 
 They help businesses implement AI in a structured and efficient manner.
 
-While the lines can be a bit blurry, you can think of OSPs as being independent of specific applications and independent of specific models.
+While the lines can be a bit blurry, you can think of OSPs as being independent of specific applications and models.
 
 The OSP promises:
 
@@ -61,7 +61,7 @@ Model Providers are entities that develop, train, and distribute foundational an
 
 They create the underlying AI capabilities that other actors build upon.
 Model Providers are responsible for model architecture, training methodologies, performance characteristics, maintenance, and documentation of capabilities and limitations.  
-This is fundamentally about model quality, safety evaluations, and transparent documentation of what the model can and cannot do, and is based on.
+This is fundamentally about model quality, safety evaluations, and transparent documentation of what the model can and cannot do, and the training data that it is based on.
 Model providers are responsible for collecting and curating the data on which the model is trained.
 
 They operate at the foundation layer of the AI stack and may provide direct API access to their models,
@@ -100,7 +100,7 @@ From a security perspective, it gets more interesting if not all data should be 
 That is why the service of a data provider includes promises such as:
 
 - When asked for a document by an authenticated user, I promise to return the best matching answers.
-- I promise to only return answers to with the user is authorized
+- I promise to only return answers to which the user is authorized
 - I promise to reveal the document classification to authorized users, but not to others.
 
 This makes these data providers enforcers of policy (or PEP in the Zero Trust jargon).

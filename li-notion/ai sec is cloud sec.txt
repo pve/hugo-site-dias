@@ -1,0 +1,14 @@
+AI involves many parties, with many services that depend on each other.
+That brings security challenges that we know from cloud security.
+
+Both in AI and cloud computing, different actors have different roles, and provide complementary services.
+That includes responsibilities for security, and it brings to mind shared responsibilities models.
+
+I have seen little guidance in that area, which is why I am developing a risk allocation model.
+It maps the risks and controls of the OWASP LLM top 10 risks document to specific roles.
+
+To make it more accessible, it is in the form of a navigable web page.
+
+Here is the link: https://digitalinfrastructures.nl/projects/olra/olra/
+
+How useful is this?

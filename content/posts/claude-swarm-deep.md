@@ -412,3 +412,9 @@ For survival across session breaks, use Hive-Mind with persistent memory:
   npx claude-flow@alpha hive-mind workflow create "parallaxr-spec" \
     --name "ParallaxR Specification Analysis" \
     --persistence true
+
+
+## still a bit confused about this.
+
+
+

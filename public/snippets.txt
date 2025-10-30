@@ -171,3 +171,15 @@ Network effects bible: https://www.nfx.com/post/network-effects-bible
 
 Once we accept that software is an important asset, we can think about how we create that asset.
 After all, software isn't dug in mines, or grown on a field.
+
+Concept extraterritorial. 
+
+prompts:
+/prompts
+- framework with friction
+- pragmatic insights, help explain
+- is there a mental model in here?
+- is there an example of any Concept
+- systems, stakeholders, and collisions. is eigenlijk een text unit.
+- I know what you are thinking, you thought it wrong
+- informal

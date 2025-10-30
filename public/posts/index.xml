@@ -6,8 +6,36 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Sep 2025 11:24:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 20:01:08 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Claude Flow helped me create my next tool</title>
+      <link>http://localhost:1313/posts/claude-flow-parallamr/</link>
+      <pubDate>Wed, 15 Oct 2025 20:01:08 +0000</pubDate>
+      <guid>http://localhost:1313/posts/claude-flow-parallamr/</guid>
+      <description>&lt;p&gt;After &lt;a href=&#34;http://localhost:1313/posts/Claude-flow-ttt&#34;&gt;coding a demo application with Claude Flow&lt;/a&gt; it was time to do a larger project.&lt;/p&gt;
+&lt;p&gt;Claude Flow has an impressive set of features, supporting a very innovative approach to the agentic software development.
+But even after a few projects, I still find it hard to grasp the subtleties and intricacies of its various agents, components and options.&lt;/p&gt;
+&lt;p&gt;So I decided to stop worrying and just dive in, while documenting the successes and edge cases.
+This time my application is a tool to run batches of prompts through various models.
+The primary use case is to analyze service descriptions against risk and control frameworks.
+The core step is to give an LLM a question to answer with a lot of specific background, such as those service descriptions and frameworks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Selecting Software</title>
+      <link>http://localhost:1313/posts/selecting-software/</link>
+      <pubDate>Tue, 30 Sep 2025 08:46:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/selecting-software/</guid>
+      <description>&lt;p&gt;Whenever we need a new piece of software, big or small, there are a few alternative roads to follow.
+They include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Buy the software&lt;/li&gt;
+&lt;li&gt;Use some SaaS, paid or freemium&lt;/li&gt;
+&lt;li&gt;Use an open source solution&lt;/li&gt;
+&lt;li&gt;Build it yourself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is true for individuals as well as large corporations, and for stuff that you spend less than 10 minutes thinking about up to projects that take hundreds of man-years to complete.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Claude Swarm Deep</title>
       <link>http://localhost:1313/posts/claude-swarm-deep/</link>
