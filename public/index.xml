@@ -58,12 +58,10 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
       <pubDate>Wed, 15 Oct 2025 20:01:08 +0000</pubDate>
       <guid>http://localhost:1313/posts/claude-flow-parallamr/</guid>
       <description>&lt;p&gt;After &lt;a href=&#34;http://localhost:1313/posts/Claude-flow-ttt&#34;&gt;coding a demo application with Claude Flow&lt;/a&gt; it was time to do a larger project.&lt;/p&gt;
-&lt;p&gt;Claude Flow has an impressive set of features, supporting a very innovative approach to the agentic software development.
-But even after a few projects, I still find it hard to grasp the subtleties and intricacies of its various agents, components and options.&lt;/p&gt;
-&lt;p&gt;So I decided to stop worrying and just dive in, while documenting the successes and edge cases.
-This time my application is a tool to run batches of prompts through various models.
-The primary use case is to analyze service descriptions against risk and control frameworks.
-The core step is to give an LLM a question to answer with a lot of specific background, such as those service descriptions and frameworks.&lt;/p&gt;</description>
+&lt;p&gt;Claude Flow allows the distribution of coding work over a variety of agents.
+Each of the agents has a specific role in the project, such as coder, tester, analyst, and others.&lt;/p&gt;
+&lt;p&gt;These agents create stuff, inform each other, and check each other&amp;rsquo;s results.&lt;/p&gt;
+&lt;p&gt;But even after a few projects, I still find it difficult to grasp the subtleties and intricacies of its various agents, components and options.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Selecting Software</title>

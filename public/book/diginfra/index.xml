@@ -179,12 +179,13 @@ LLM training costs hundreds, thousands, or more hours of compute time on special
       <guid>http://localhost:1313/book/diginfra/ai-roles/</guid>
       <description>&lt;p&gt;AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.&lt;/p&gt;
 &lt;p&gt;We follow the roles outlined in the &lt;a href=&#34;https://cloudsecurityalliance.org/artifacts/ai-controls-matrix&#34;&gt;CSA AI Controls Matrix (AICM)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Each role also has promises associated with them (read more on &lt;a href=&#34;http://localhost:1313/book/diginfra/promise-theory/&#34;&gt;promise theory here&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Together these run AI systems, from image recognition systems to Large Language Model based customer support systems.&lt;/p&gt;
 &lt;h2 id=&#34;ai-customer-aic&#34;&gt;AI Customer (AIC)&lt;/h2&gt;
 &lt;p&gt;End users of AI applications.
 This includes the actual users as well as their organizational units.
 Even though they are only providing a service to themselves, they are still responsible for certain security and control functions.
-Some of responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
+Some of these responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
 For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.
 Customers are also responsible for the business use of the data that is returned by the AI application.&lt;/p&gt;</description>
     </item>

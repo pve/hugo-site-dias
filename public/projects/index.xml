@@ -9,16 +9,17 @@
     <lastBuildDate>Fri, 29 Aug 2025 09:33:34 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OLRA</title>
+      <title>OWASP LLM Risk Allocation</title>
       <link>http://localhost:1313/projects/olra/olra/</link>
       <pubDate>Fri, 29 Aug 2025 09:33:34 +0000</pubDate>
       <guid>http://localhost:1313/projects/olra/olra/</guid>
-      <description>&lt;p&gt;Overwhelmed by too many risks and controls to consider?
-That is why there is this risk navigator.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP Top 10 for LLM Applications&lt;/a&gt; risks are a good start for analyzing the risks of an LLM system.&lt;/p&gt;
-&lt;p&gt;But, who is supposed to do each control? And which role do they have?&lt;/p&gt;
-&lt;p&gt;This is where allocation of risks and their controls to roles comes in, and why this tool is called the OLRA navigator.
-OLRA stands for &lt;strong&gt;OWASP LLM Risk Allocation&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Applications based on LLMs (Large Language Models) have risks too.
+The &lt;a href=&#34;https://owasp.org/www-project-top-10-for-large-language-model-applications/&#34;&gt;OWASP Top 10 for LLM Applications&lt;/a&gt; risks are a good start for analyzing the risks of such a system.&lt;/p&gt;
+&lt;p&gt;These types of applications, like many others, are also cloud applications.
+This means that there is a variety of parties responsible for controlling those risks.&lt;/p&gt;
+&lt;p&gt;But, who is supposed to do each control? And which role do they have?
+For example, there are model providers, there is the AI consumer, and so on.
+For a deeper story on these roles look at &lt;a href=&#34;http://localhost:1313/book/diginfra/ai-roles/&#34;&gt;AI roles&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
