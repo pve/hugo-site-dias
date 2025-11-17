@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Oct 2025 20:01:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Nov 2025 09:13:10 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,30 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AR Nov14 25</title>
+      <link>http://localhost:1313/projects/ar-nov14-25/</link>
+      <pubDate>Fri, 14 Nov 2025 09:13:10 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-nov14-25/</guid>
+      <description>&lt;p&gt;Subject: When being a professional is not enough&lt;/p&gt;
+&lt;p&gt;I have worked with many people who felt stuck in their professional lives.&lt;/p&gt;
+&lt;p&gt;Often these were people having outstanding professional skills in cloud computing, security, IT architecture, artificial intelligence, and more.&lt;/p&gt;
+&lt;p&gt;These also don&amp;rsquo;t lack ambition.&lt;/p&gt;
+&lt;p&gt;Yet, they feel unable to progress in the direction they want.
+They have a strong feeling that they should be capable of more than what they achieve.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AR newsletter Nov9 25</title>
+      <link>http://localhost:1313/projects/nov9-25/</link>
+      <pubDate>Sun, 09 Nov 2025 09:39:50 +0000</pubDate>
+      <guid>http://localhost:1313/projects/nov9-25/</guid>
+      <description>&lt;p&gt;(sent nov 11. How to make AI work for you)
+By now, you probably had your first encounters with AI.
+What did you run into? Would love to know about that.&lt;/p&gt;
+&lt;p&gt;While I am currently on a sabbatical, these things are top of mind for me.&lt;/p&gt;
+&lt;p&gt;For me, I am focussing on two AI directions.
+Given my background in cloud security, I cannot help but think about AI security and governance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Claude Flow helped me create my next tool</title>

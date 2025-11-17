@@ -27,7 +27,7 @@ This explains the need for agile development. Between idea and realization (time
 
 ## What kind of digital infrastructures does that require?
 
-The prime objective of digital infrastructures is to enable the deployment of application functionality. The quality of digital infrastructures used to be measured in the number of users it could support well. I.e. we used to talk about a system supporting 10.000 concurrent users with less than 4 seconds response time.
+The prime objective of digital infrastructures is to enable the deployment of application functionality. The quality of digital infrastructures used to be measured in the number of users it could support well. E.g. we used to talk about a system supporting 10.000 concurrent users with less than 4 seconds response time.
 
 But agile development comes with a new goal: 'feature velocity’. That is the speed with which new features can be deployed. The time between inception of a feature and its deployment to a large user base has to be shorter than the time it takes for the environment to change. In a dance you want to anticipate your partner, not stand on their toes.
 

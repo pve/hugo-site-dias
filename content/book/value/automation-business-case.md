@@ -18,7 +18,6 @@ In other words, is there a *business case* for such an intervention?
 The objective of this diagram is to show how much time you can invest in automating tasks.
 You can think of tasks such as:
 
-- reducing 3 clicks off a digital workflow
 - converting a spreadsheet to another data format
 - scheduling an appointment
 - looking up some research
@@ -53,4 +52,4 @@ A couple of examples of that:
 - the use case you are automating could change drastically in five years, making your automation obsolete
 - automation often leads to more consistent quality, especially as you use it more often, a great example of that is in automated testing
 
-All of this uncertainty favors focusing on automating tasks where the benefit substantially outweighs the cost.
+All of this uncertainty favors focusing on automating tasks where the benefit substantially outweighs the cost. Don't get carried away by automation with small returns.

@@ -15,9 +15,6 @@ reisplanner
 
 design patterns
 
-
-
-
 Service quality
 e.g. response time. fulfillment time.
 Fulfillment time: months, weeks, days, minutes, seconds, …
