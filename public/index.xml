@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Nov 2025 09:13:10 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Nov 2025 20:10:47 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -1064,6 +1064,16 @@ In an earlier unit, we talked about promise theory&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Can I get a new laptop?&lt;/p&gt;
 &lt;p&gt;Joe from accounting needs permissions to access this application. Can you fix that?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Non-Monetary Values</title>
+      <link>http://localhost:1313/book/value/non-monetary/</link>
+      <pubDate>Wed, 19 Nov 2025 20:10:47 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/non-monetary/</guid>
+      <description>&lt;p&gt;While value is often expressed in monetary terms, there are many other sources of value for individuals as well as for organizations.
+This implies that there are many other forms of power too, which is one of the reasons to look at this.&lt;/p&gt;
+&lt;p&gt;Individuals do not just have economic needs, they also have emotional needs.
+They don&amp;rsquo;t just want to support themselves and their families financially, they also want to belong to a group, act ethically, and be recognized as independent individuals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Unified Framework</title>
