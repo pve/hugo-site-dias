@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Nov 2025 20:10:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Nov 2025 05:06:40 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,19 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What certificate to pursue</title>
+      <link>http://localhost:1313/projects/ar-nov27-25/</link>
+      <pubDate>Thu, 27 Nov 2025 05:06:40 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-nov27-25/</guid>
+      <description>&lt;p&gt;A question I often get is &amp;ldquo;what certification or knowledge should I pursue to get me a better job?&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Or variants such as &amp;ldquo;which cert is going to get me employed?&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Here is my opinion on it.&lt;/p&gt;
+&lt;p&gt;Certificates only bring you so far.
+Most companies aren&amp;rsquo;t looking for people with knowledge.
+They are looking for the results that the knowledge brings, such as improved processes, new revenue, etcetera.&lt;/p&gt;
+&lt;p&gt;Today&amp;rsquo;s major innovations are in using generative AI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AR Nov14 25</title>
