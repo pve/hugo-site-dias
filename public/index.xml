@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Nov 2025 05:06:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Nov 2025 00:07:54 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,13 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intell Is Attention</title>
+      <link>http://localhost:1313/projects/intell-is-attention/</link>
+      <pubDate>Sun, 30 Nov 2025 00:07:54 +0000</pubDate>
+      <guid>http://localhost:1313/projects/intell-is-attention/</guid>
+      <description></description>
     </item>
     <item>
       <title>What certificate to pursue</title>

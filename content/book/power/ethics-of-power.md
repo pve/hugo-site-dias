@@ -23,7 +23,8 @@ And when it comes to power abuse, we still need to understand the power in order
 As the famous general Sun Tzu allegedly wrote more than 2000 years ago: "If you know the enemy and know yourself, you need not fear the result of a hundred battles."
 
 This understanding of power structures extends to our modern contexts as well.
-For example, creating digital infrastructures at scale requires agreements on technical standards. organizations like the Internet Engineering Task Force and the World Wide Web Consortium (W3C) create standards that are subsequently used to enforce collaboration on interoperability.
+For example, creating digital infrastructures at scale requires agreements on technical standards.
+Organizations like the Internet Engineering Task Force and the World Wide Web Consortium (W3C) create standards that are subsequently used to enforce collaboration on interoperability.
 This resolves conflicts between individual companies and benefits all of them.
 Successful Open Source projects have clear governance structures which balance power and interests of individuals with that of the community as a whole. Linux, Apache and Mozilla are great examples here.
 

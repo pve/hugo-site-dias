@@ -170,7 +170,8 @@ Network effects bible: https://www.nfx.com/post/network-effects-bible
 
 
 Once we accept that software is an important asset, we can think about how we create that asset.
-After all, software isn't dug in mines, or grown on a field.
+After all, software isn't dug in mines, or grown on a field, it is produced by humans.
+Can we use machines to produce better software?
 
 Concept extraterritorial. 
 
