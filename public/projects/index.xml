@@ -6,8 +6,52 @@
     <description>Recent content in Projects on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Aug 2025 09:33:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Nov 2025 00:07:54 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intell Is Attention</title>
+      <link>http://localhost:1313/projects/intell-is-attention/</link>
+      <pubDate>Sun, 30 Nov 2025 00:07:54 +0000</pubDate>
+      <guid>http://localhost:1313/projects/intell-is-attention/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>What certificate to pursue</title>
+      <link>http://localhost:1313/projects/ar-nov27-25/</link>
+      <pubDate>Thu, 27 Nov 2025 05:06:40 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-nov27-25/</guid>
+      <description>&lt;p&gt;A question I often get is &amp;ldquo;what certification or knowledge should I pursue to get me a better job?&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Or variants such as &amp;ldquo;which cert is going to get me employed?&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Here is my opinion on it.&lt;/p&gt;
+&lt;p&gt;Certificates only bring you so far.
+Most companies aren&amp;rsquo;t looking for people with knowledge.
+They are looking for the results that the knowledge brings, such as improved processes, new revenue, etcetera.&lt;/p&gt;
+&lt;p&gt;Today&amp;rsquo;s major innovations are in using generative AI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AR Nov14 25</title>
+      <link>http://localhost:1313/projects/ar-nov14-25/</link>
+      <pubDate>Fri, 14 Nov 2025 09:13:10 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-nov14-25/</guid>
+      <description>&lt;p&gt;Subject: When being a professional is not enough&lt;/p&gt;
+&lt;p&gt;I have worked with many people who felt stuck in their professional lives.&lt;/p&gt;
+&lt;p&gt;Often these were people having outstanding professional skills in cloud computing, security, IT architecture, artificial intelligence, and more.&lt;/p&gt;
+&lt;p&gt;These also don&amp;rsquo;t lack ambition.&lt;/p&gt;
+&lt;p&gt;Yet, they feel unable to progress in the direction they want.
+They have a strong feeling that they should be capable of more than what they achieve.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AR newsletter Nov9 25</title>
+      <link>http://localhost:1313/projects/nov9-25/</link>
+      <pubDate>Sun, 09 Nov 2025 09:39:50 +0000</pubDate>
+      <guid>http://localhost:1313/projects/nov9-25/</guid>
+      <description>&lt;p&gt;(sent nov 11. How to make AI work for you)
+By now, you probably had your first encounters with AI.
+What did you run into? Would love to know about that.&lt;/p&gt;
+&lt;p&gt;While I am currently on a sabbatical, these things are top of mind for me.&lt;/p&gt;
+&lt;p&gt;For me, I am focussing on two AI directions.
+Given my background in cloud security, I cannot help but think about AI security and governance.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>OWASP LLM Risk Allocation</title>
       <link>http://localhost:1313/projects/olra/olra/</link>

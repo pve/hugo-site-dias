@@ -1,4 +1,4 @@
-baseURL: https://digitalinfrastructures.nl
+baseURL: https://digitalinfrastructures.nl/
 languageCode: en-us
 title: Digital Infrastructures at Scale
 theme: ["PaperMod"]
@@ -17,8 +17,10 @@ markup:
     noClasses: false
 
 params:
+  env: production
   enableMermaid: true
   showReadingTime: true
+  keywords: [digital infrastructures, digital services]
   assets:
     disableHLJS: true
     disableFingerprinting: true
@@ -27,17 +29,10 @@ params:
     disableHighlighting: true
     preventFingerprinting: true
     allowSearch: true
-
-services:
-  googleAnalytics:
-    id: G-Y6WKY1Y13E
-
-params:
   showBreadcrumbs: true
   homeInfoParams:
     Title: "🚀 Welcome to Digital Infrastructures"
     Content: "Exploring digital infrastructures, AI, cloud security and business strategies."
-
   profileMode:
     enabled: true
     title: "Digital Power"
@@ -72,11 +67,11 @@ menu:
     - identifier: print
       name: Hard copy
       url: "https://www.amazon.com/Digital-Power-Infrastructures-Scale-Value/dp/B0FG1NPWLL"
-      weight: 20
+      weight: 30
     - identifier: about
       name: About
       url: /about/
-      weight: 30
+      weight: 40
     - identifier: search
       name: "🔎 Search"
       url: /search/
@@ -84,3 +79,7 @@ menu:
 
 outputs:
   home: ["HTML", "RSS", "JSON"] 
+
+services:
+  googleAnalytics:
+    id: G-Y6WKY1Y13E
