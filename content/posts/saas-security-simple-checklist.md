@@ -1,12 +1,12 @@
 ---
 date: '2025-04-30T10:56:37Z'
 draft: false
-title: 'Saas Security: a Simple Checklist'
+title: 'Saas Security: the first three steps'
 weight: 10
 ---
 
 The security of your SaaS cloud solutions starts with the review of three major areas. Practically all companies are using SaaS providers in one way or another.
-SaaS includes Services such as Trello for project management, Microsoft 365, and e.g. specialized solutions for marketing intelligence services. The sky is the limit. Most companies using are using hundreds of SaaS solutions.
+SaaS includes Services such as Trello for project management, Microsoft 365, and e.g. specialized solutions for marketing intelligence services. The sky is the limit. Most companies are using hundreds of SaaS solutions.
 
 Here are 3 tips to start with.
 
