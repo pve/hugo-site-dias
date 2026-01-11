@@ -6,8 +6,18 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Dec 2025 08:02:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 00:39:13 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wicked problems in 2026</title>
+      <link>http://localhost:1313/posts/wicked-2026/</link>
+      <pubDate>Thu, 25 Dec 2025 00:39:13 +0000</pubDate>
+      <guid>http://localhost:1313/posts/wicked-2026/</guid>
+      <description>&lt;p&gt;As 2025 ends, I reflected on the major topics that I see evolving in my practice.
+They are digital sovereignty and AI security, in particular the security of AI agent systems.
+These are systems where AI is not just used as an advanced data processor, but is undertaking autonomous actions.&lt;/p&gt;
+&lt;p&gt;I focus specifically on so-called wicked problems: problems that do not have simple solution because they are intertwined with many other issues and conflicting interests.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Technoloy Is Power Leverage</title>
       <link>http://localhost:1313/posts/tech-is-leverage/</link>
