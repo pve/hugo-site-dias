@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>AI Coding: &#34;Look Ma, no hands!&#34; | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Here is how I AI-coded a fully functional Tic-Tac-Toe web game without looking at a single line of code or manually identifying a GUI or logic error.
@@ -64,6 +64,92 @@ Interestingly, they all popped up in the first half of 2025.">
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/ai-nocode/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="AI Coding: &#34;Look Ma, no hands!&#34;">
+  <meta property="og:description" content="Here is how I AI-coded a fully functional Tic-Tac-Toe web game without looking at a single line of code or manually identifying a GUI or logic error. I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.
+But it takes some effort and discipline to get there. The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.
+The Agentic AI way Many people are researching this, all with slightly different approaches. There are a variety of ways to do more or less the same thing. Here are some of the interesting approaches I found. Interestingly, they all popped up in the first half of 2025.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-19T12:22:13+00:00">
+    <meta property="article:modified_time" content="2025-07-19T12:22:13+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Coding: &#34;Look Ma, no hands!&#34;">
+<meta name="twitter:description" content="Here is how I AI-coded a fully functional Tic-Tac-Toe web game without looking at a single line of code or manually identifying a GUI or logic error.
+I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.
+But it takes some effort and discipline to get there.
+The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.
+The Agentic AI way
+Many people are researching this, all with slightly different approaches.
+There are a variety of ways to do more or less the same thing.
+Here are some of the interesting approaches I found.
+Interestingly, they all popped up in the first half of 2025.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Peter's Griddle",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI Coding: \"Look Ma, no hands!\"",
+      "item": "http://localhost:1313/posts/ai-nocode/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI Coding: \"Look Ma, no hands!\"",
+  "name": "AI Coding: \u0022Look Ma, no hands!\u0022",
+  "description": "Here is how I AI-coded a fully functional Tic-Tac-Toe web game without looking at a single line of code or manually identifying a GUI or logic error. I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.\nBut it takes some effort and discipline to get there. The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.\nThe Agentic AI way Many people are researching this, all with slightly different approaches. There are a variety of ways to do more or less the same thing. Here are some of the interesting approaches I found. Interestingly, they all popped up in the first half of 2025.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Here is how I AI-coded a fully functional Tic-Tac-Toe web game without looking at a single line of code or manually identifying a GUI or logic error. I ran Claude Code (Pro) in VS Code without any other IDE/AI tooling.\nBut it takes some effort and discipline to get there. The core idea is to be very specific and use an opinionated environment that includes extensive automated testing.\nThe Agentic AI way Many people are researching this, all with slightly different approaches. There are a variety of ways to do more or less the same thing. Here are some of the interesting approaches I found. Interestingly, they all popped up in the first half of 2025.\nCole Medin Github IndyDevDan Home page Ryan Carson Github Sean Matthew YouTube The simplest is Sean Matthew’s, and while it works, you can add some precision and handy workflow items and shortcuts from the others. Again, there are often a variety of ways of doing more or less the same thing.\nI’d start like this.\ncreate a directory for your codebase run Claude in your editor (e.g. VS Code) inside Claude, run /init, this will also create a CLAUDE.md, which you probably want to adapt or override, see later. run git init, and publish the folder to your git account edit, establish or copy a CLAUDE.md, I have curated a 350 line opinionated version, which is adapted to this type of project You could now start with your feature, as I will describe in a moment. I chose to have it create the simplest application that would result in an actually running web page with all the test scaffolding that I requested in my CLAUDE.md, which is quite extensive and not application-specific.\nThis created 1180 lines of Python for what is effectively a ‘Hello world!’ application.\nRequirements Now it’s time to get your Product Requirements Document (PRD). Starting from a small prompt you ask the AI to expand it to a PRD. I put the feature description in a file called tictactoe.md.\nCreate a simple single player web page where the user can play tic-tac-toe against the computer\nThe smallest prompt then is:\nHelp me create a PRD for the feature in tictactoe.md, respecting the standards in CLAUDE.md, store it in file PRD-tictactoe.md\nThe other approaches mentioned above have a more extensive prompt to create the PRD, which presumably gives a more structured specification document, but this one works surprisingly well. In this example, the PRD is over 300 lines long. It has a variety of components, such as a set of user stories, but it also repeats a lot of information from the CLAUDE.md file. Allegedly, it pays to review and repeat this process to make sure you are not wasting time later.\nPlanning The next steps are to translate this in a PLANNING and TASKS file. The latter one will be edited by the AI to record progress. Again, you can have a simple prompt to create these, or a more sophisticated one. For this experiment I took the shortest one. All these documents have some overlap.\nThen it is showtime!\nPlease read PLANNING.md, CLAUDE.md, and TASKS.md to understand the project. Then complete the first task on TASKS.md or pick up where we left.\nOff to the races…\nClaude Code chugs along nicely for a while. Because we have instructed it to create test cases for each and everything, it will backtrack automatically and fix all errors until all tests pass. This resulted in one commit and a locally working application.\nWe are now outside of the feedback loop of fixing the misunderstandings, shortcomings, and hallucinations of Claude Code.\nIn the end, this resulted in 1900 lines of Python for the core application, and more than 3200 lines of code for testing. I touched none of them.\nWhile this line count sounds big, understand that this includes a lot of monitoring and security features. There is also extensive commenting in the code, and it would be interesting to see if we could refactor this to make it much shorter.\nNext level Next, the opinionated prompt calls for a CI/CD pipeline. While the AI created one, including a full test suite, it failed for a variety of reasons, though many had to do with a mismatch between the local environment and the environment that the pipeline runs in.\nIn the beginning, I was part of the feedback loop, so I screenshotted the Git Actions log and pasted these in Claude Code (really!). I later installed gh, allowing the AI to actually see the error messages. With this it could iterate until it was done. Again, we are now outside that feedback loop.\nThe final lesson The final lesson here is that as a developer / software engineer, you will mainly be involved in fixing things where you are part of the feedback loop. Your job should therefore be to engineer the AI into the loop, and yourself out of the loop.\nYou really don’t want to babysit the AI for each error that it is perfectly capable of fixing itself.\nThe main techniques for that are:\ngiving the AI clear objectives (e.g. 90% test coverage) giving the AI information to see if those objectives are met (e.g. proper error messages and log files). I am calling this method ‘Closed Loop Coding’, because we are closing the feedback loop inside the AI assistant itself.\nIn short, AI amplifies your capabilities, but if you don’t have the high-level objectives clear, it can backfire, and you will end up in a rabbit hole.\n",
+  "wordCount" : "927",
+  "inLanguage": "en",
+  "datePublished": "2025-07-19T12:22:13Z",
+  "dateModified": "2025-07-19T12:22:13Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/ai-nocode/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -144,11 +230,11 @@ Interestingly, they all popped up in the first half of 2025.">
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       AI Coding: &#34;Look Ma, no hands!&#34;
     </h1>
-    <div class="post-meta"><span title='2025-07-19 12:22:13 +0000 UTC'>July 19, 2025</span>
+    <div class="post-meta"><span title='2025-07-19 12:22:13 +0000 UTC'>July 19, 2025</span>&nbsp;·&nbsp;5 min
 
 </div>
   </header> 
@@ -249,7 +335,7 @@ Your job should therefore be to engineer the AI <em>into</em> the loop, and your
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by

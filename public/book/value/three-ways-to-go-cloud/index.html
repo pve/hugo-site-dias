@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Multiple Ways to Go Cloud | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.
@@ -58,6 +58,91 @@ Companies dying to get rid of their data centers often get started on a ‘lift 
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/book/value/three-ways-to-go-cloud/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Multiple Ways to Go Cloud">
+  <meta property="og:description" content="Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.
+Three approaches Companies dying to get rid of their data centers often get started on a ‘lift and shift’ approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="book">
+    <meta property="article:published_time" content="2018-06-03T17:06:57+00:00">
+    <meta property="article:modified_time" content="2018-06-03T17:06:57+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Multiple Ways to Go Cloud">
+<meta name="twitter:description" content="Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.
+Three approaches
+Companies dying to get rid of their data centers often get started on a ‘lift and shift’ approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Contents",
+      "item": "http://localhost:1313/book/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Value",
+      "item": "http://localhost:1313/book/value/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Multiple Ways to Go Cloud",
+      "item": "http://localhost:1313/book/value/three-ways-to-go-cloud/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Multiple Ways to Go Cloud",
+  "name": "Multiple Ways to Go Cloud",
+  "description": "Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.\nThree approaches Companies dying to get rid of their data centers often get started on a ‘lift and shift’ approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.\nThree approaches Companies dying to get rid of their data centers often get started on a ‘lift and shift’ approach, where applications are moved from existing servers to equivalent servers in the cloud. The cloud service model consumed here is mainly IaaS (infrastructure as a service). Not much is outsourced to cloud providers here. Contrast that with SaaS.\nThe other side of the spectrum is adopting SaaS solutions. More often than not, these trickle in from the business side, not from IT. These could range from small meeting planners to full blown sales support systems.\nMore recently, developers have started to embrace cloud native architectures. Ultimately, both the target environment as well as the development environment can be cloud based. The cloud service model consumed here is typically PaaS.\nI am not here to advocate the benefits of one over the other, I think there can be business case for each of these.\nThe categories also have some overlap. Lift and shift can require some refactoring of code, to have it better fit cloud native deployments. And hardly any SaaS application is stand alone, so some (cloud native) integration with other software is often required.\nProfound differences The big point I want to make here is that there are profound differences in the issues that each of these categories faces, and the hard decisions that have to be made. Most of these decisions are about governance and risk management.\nWith lift and shift, the application functionality is pretty clear, but bringing that out to the cloud introduces data risks and technical risks. Data controls may be insufficient, and the application’s architecture may not be a good match for cloud, leading to poor performance and high cost.\nOne group of SaaS applications stems from ‘shadow IT’. The people that adopt them typically pay little attention to existing risk management policies. These can also add useless complexity to the application landscape. The governance challenges for these are obvious: consolidate and make them more compliant with company policies.\nAnother group of SaaS applications is the reincarnation of the ‘enterprise software package’. Think ERP, CRM or HR applications. These are typically run as a corporate project, with all its change management issues, except that you don’t have to run it yourself.\nThe positive side of SaaS solutions, in general, is that they are likely to be cloud native, which could greatly reduce their risk profile. Of course, this has to be validated, and a minimum risk control is to have a good exit strategy.\nFinally, cloud native development is the most exciting, rewarding and risky approach. This is because it explores and creates new possibilities that can truly transform an organization.\nOne of the most obvious balances to strike here is between speed of innovation and independence of platform providers. The more you are willing to commit yourself to an innovative platform, the faster you may be able to move. The two big examples I see of that are big data and internet of things. The major cloud providers have very interesting offerings there, but moving a fully developed application from one provider to another is going to be a really painful proposition. And of course, the next important thing is for developers to truly understand the risks and benefits of cloud native development.\nAgain, big governance and risk management issues to address.\n",
+  "wordCount" : "593",
+  "inLanguage": "en",
+  "datePublished": "2018-06-03T17:06:57Z",
+  "dateModified": "2018-06-03T17:06:57Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/book/value/three-ways-to-go-cloud/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -138,11 +223,11 @@ Companies dying to get rid of their data centers often get started on a ‘lift 
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/value/">Value</a></div>
     <h1 class="post-title entry-hint-parent">
       Multiple Ways to Go Cloud
     </h1>
-    <div class="post-meta"><span title='2018-06-03 17:06:57 +0000 UTC'>June 3, 2018</span>
+    <div class="post-meta"><span title='2018-06-03 17:06:57 +0000 UTC'>June 3, 2018</span>&nbsp;·&nbsp;3 min
 
 </div>
   </header> 
@@ -220,7 +305,7 @@ Companies dying to get rid of their data centers often get started on a ‘lift 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by

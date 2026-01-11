@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Vibe OPSing with MCP: proof of concept | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Here is the story of how I started to use AI to help with running and securing my home network.
@@ -59,6 +59,87 @@ My home network plays an additional role as a nice lab, and in the process of be
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/vibe-opsing/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Vibe OPSing with MCP: proof of concept">
+  <meta property="og:description" content="Here is the story of how I started to use AI to help with running and securing my home network. I call it vibe ops, in analogy to vibe programming.
+This post is going to be obsolete very soon, even though it is already the second version …
+My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am doing some experiments.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-20T09:30:03+00:00">
+    <meta property="article:modified_time" content="2025-05-20T09:30:03+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vibe OPSing with MCP: proof of concept">
+<meta name="twitter:description" content="Here is the story of how I started to use AI to help with running and securing my home network.
+I call it vibe ops, in analogy to vibe programming.
+This post is going to be obsolete very soon, even though it is already the second version &hellip;
+My home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am doing some experiments.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Peter's Griddle",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Vibe OPSing with MCP: proof of concept",
+      "item": "http://localhost:1313/posts/vibe-opsing/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Vibe OPSing with MCP: proof of concept",
+  "name": "Vibe OPSing with MCP: proof of concept",
+  "description": "Here is the story of how I started to use AI to help with running and securing my home network. I call it vibe ops, in analogy to vibe programming.\nThis post is going to be obsolete very soon, even though it is already the second version \u0026hellip;\nMy home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am doing some experiments.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Here is the story of how I started to use AI to help with running and securing my home network. I call it vibe ops, in analogy to vibe programming.\nThis post is going to be obsolete very soon, even though it is already the second version …\nMy home network plays an additional role as a nice lab, and in the process of better securing it, preferably with Zero Trust Architectures, I am doing some experiments.\nThe home network is built around a Unifi Cloud Gateway, three Unifi WiFi access points, and a few switches. Currently it is flat and unsegmented. We need to do better security than that.\nHere is what I ran into.\nI started with a Unifi MCP server connected to my Claude Desktop, running Claude 3.7 Sonnet. This MCP server is cloned from github. This allows us to query, from Claude Desktop, the Unifi Cloud Gateway that controls my internet connection as well as the WiFi access points. It answers questions like:\nWhat are the connected clients? What are the active WiFi access points? Which clients are connected to the Attic access point?\nThis is interesting, but it gets more interesting if we combine this with other tools. So I tried nmap. The MCP server I used for that is cloned from https://github.com/himanshusanecha/mcp-osint-server.\nThis makes it possible to ask for:\nWhat are the open ports on all the Raspberry devices?\nWhich it does, except Claude hallucinated that a few machines with wlan0 interfaces are Raspberry Pis. In fact these are Tuya smart lights. A bit of prompt engineering solves that.\nHere is a fragment of claude_desktop_config.json.\n\"osint\": { \"command\": \"docker\", \"args\": [ \"run\", \"-i\", \"--rm\", \"mcp-osint-server\" ] }, \"unifi-mcp-server\": { \"command\": \"uv\", \"args\": [ \"--directory\", \"/Users/peter/....../unifi-mcp-server\", \"run\", \"main.py\" ], All good, but it does not work for local nodes, because of the way Docker Desktop implements isolation.\nAn example that works is:\nwhat are the open ports on domain digitalinfrastructures.nl?\nIt does the scan directly on the 2 IP addresses involved, and gives some more intelligence as well, involving tools from multiple MCP servers.\nNotes:\nThe MCP osint server does not advertise its capabilities very well, it seems. For example, Claude fails to understand that it cannot give nmap options, it only takes 1 argument. Seems easy to fix. Claude container invocations. Despite the --rm argument, some but not all of the containers started by Claude’s MCP activity seem to go away automatically. We could create a more remote server for the nmap scan of the network. This could have a better vantage point than my personal laptop. We’d have to install a remote MCP server on a Linux box in the local network, advertising its services. As is often said, a AI tool like this often acts like an overconfident intern. It happily applies tools, while not necessarily thinking which tool is the best. It gives analyses and recommendations that you did not ask for. Maybe we should apply some reasoning capabilities. It is interesting to watch Claude run with the tools. It makes you aware of the hidden knowledge and assumptions that go into a lot of this work. ",
+  "wordCount" : "526",
+  "inLanguage": "en",
+  "datePublished": "2025-05-20T09:30:03Z",
+  "dateModified": "2025-05-20T09:30:03Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/vibe-opsing/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -139,11 +220,11 @@ My home network plays an additional role as a nice lab, and in the process of be
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Vibe OPSing with MCP: proof of concept
     </h1>
-    <div class="post-meta"><span title='2025-05-20 09:30:03 +0000 UTC'>May 20, 2025</span>
+    <div class="post-meta"><span title='2025-05-20 09:30:03 +0000 UTC'>May 20, 2025</span>&nbsp;·&nbsp;3 min
 
 </div>
   </header> 
@@ -222,7 +303,7 @@ A bit of prompt engineering solves that.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by

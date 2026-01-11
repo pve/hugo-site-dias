@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Nov 2025 00:07:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 00:39:13 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,36 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wicked problems in 2026</title>
+      <link>http://localhost:1313/blog/wicked-2026/</link>
+      <pubDate>Thu, 25 Dec 2025 00:39:13 +0000</pubDate>
+      <guid>http://localhost:1313/blog/wicked-2026/</guid>
+      <description>&lt;p&gt;As 2025 ends, I reflected on the major topics that I see evolving in my practice.
+They are digital sovereignty and AI security, in particular the security of AI agent systems.
+These are systems where AI is not just used as an advanced data processor, but is undertaking autonomous actions.&lt;/p&gt;
+&lt;p&gt;I focus specifically on so-called wicked problems: problems that do not have simple solution because they are intertwined with many other issues and conflicting interests.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wicked problems in 2026</title>
+      <link>http://localhost:1313/projects/wicked-2026/</link>
+      <pubDate>Thu, 25 Dec 2025 00:39:13 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wicked-2026/</guid>
+      <description>&lt;p&gt;As 2025 ends, I reflected on the major topics that I see evolving in my practice.
+They are digital sovereignty and AI security, in particular the security of AI agent systems.
+These are systems where AI is not just used as an advanced data processor, but is undertaking autonomous actions.&lt;/p&gt;
+&lt;p&gt;I focus specifically on so-called wicked problems: problems that do not have simple solution because they are intertwined with many other issues and conflicting interests.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technoloy Is Power Leverage</title>
+      <link>http://localhost:1313/posts/tech-is-leverage/</link>
+      <pubDate>Tue, 23 Dec 2025 08:02:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tech-is-leverage/</guid>
+      <description>&lt;p&gt;In the late 80s we were traveling with a group of friends in Tsavo East, a wild-life nature park in the south-east of Kenya, Africa.&lt;/p&gt;
+&lt;p&gt;This was a really remote area back then.
+We drove for hours without seeing anyone, and had lunch in the middle of the road because there wasn&amp;rsquo;t any traffic.&lt;/p&gt;
+&lt;p&gt;For miles around you only see bush, sand, and a few trees. It is a large savannah.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Intell Is Attention</title>
@@ -377,12 +407,12 @@ You will make more errors when trying to understand what the picture means.&lt;/
 &lt;p&gt;I know that feeling well. Years ago, I joined my first Zero Trust working group, swimming in a sea of frameworks, agency guidelines, and vendor whitepapers. I even had the privilege of attending sessions with John Kindervag, the father of Zero Trust himself. Yet the gap between theory and implementation remained stubbornly wide.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Saas Security: a Simple Checklist</title>
+      <title>Saas Security: the first three steps</title>
       <link>http://localhost:1313/posts/saas-security-simple-checklist/</link>
       <pubDate>Wed, 30 Apr 2025 10:56:37 +0000</pubDate>
       <guid>http://localhost:1313/posts/saas-security-simple-checklist/</guid>
       <description>&lt;p&gt;The security of your SaaS cloud solutions starts with the review of three major areas. Practically all companies are using SaaS providers in one way or another.
-SaaS includes Services such as Trello for project management, Microsoft 365, and e.g. specialized solutions for marketing intelligence services. The sky is the limit. Most companies using are using hundreds of SaaS solutions.&lt;/p&gt;
+SaaS includes Services such as Trello for project management, Microsoft 365, and e.g. specialized solutions for marketing intelligence services. The sky is the limit. Most companies are using hundreds of SaaS solutions.&lt;/p&gt;
 &lt;p&gt;Here are 3 tips to start with.&lt;/p&gt;
 &lt;h2 id=&#34;maturity-match&#34;&gt;Maturity match&lt;/h2&gt;
 &lt;p&gt;The first thing to worry about is if the maturity of the provider matches your risk appetite. Are they good enough for your use case?
@@ -1044,7 +1074,7 @@ suwinet
 reisplanner&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;design patterns&lt;/p&gt;
+&lt;p&gt;design patterns / zie multiparty&lt;/p&gt;
 &lt;p&gt;Service quality
 e.g. response time. fulfillment time.
 Fulfillment time: months, weeks, days, minutes, seconds, …&lt;/p&gt;
@@ -1324,6 +1354,78 @@ There are laws against this type of discrimination (at least in most nations), a
 On the other hand there are some Internet providers who want to charge different customers different rates for different service. &amp;ldquo;We can&amp;rsquo;t have companies freeloading on our expensive pipes&amp;rdquo;, they claim.
 Clearly we seem to want both.
 We don&amp;rsquo;t want the phone companies to decide which traffic gets carried, and we also don’t want a bland one-size-fits-all service that is expensive for some and inadequate for others.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-18/</guid>
+      <description>&lt;p&gt;Typical mistake.&lt;/p&gt;
+&lt;p&gt;Manage your IT by reviewing all the tech and trying to figure out how to make sure it works, so that it can deliver value.&lt;/p&gt;
+&lt;p&gt;That is the wrong sequence, you likely to overlook the important bits.&lt;/p&gt;
+&lt;p&gt;You can’t manage your IT without looking at resource conflicts.
+Most IT systems act as some kind of digital infrastructure to its users, meaning that it has shared resources.&lt;/p&gt;
+&lt;p&gt;This sharing drives the benefits, for example by reducing cost or exchanging information.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-20/</guid>
+      <description>&lt;p&gt;Many in the IT profession confuse risk treatment with risk management.&lt;/p&gt;
+&lt;p&gt;Risk treatment is the process of reviewing a relevant risk and finding out what to do about it: mitigate, accept, or whatever it is you deem appropriate.
+If you look closely, there is so much risk in IT. Every individual device, every configuration setting (MS-Teams has over 2000 of them), every line of code, is potentially a risk.&lt;/p&gt;
+&lt;p&gt;That is a lot of risk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-22/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-22/</guid>
+      <description>&lt;h1 id=&#34;to-publish-22-dec--nr-3&#34;&gt;to publish 22 dec ; nr 3.&lt;/h1&gt;
+&lt;p&gt;In a previous message I wrote about the differences between risk treatment and risk management.&lt;/p&gt;
+&lt;p&gt;These are typically different activities, carried out by different parts of the organization.&lt;/p&gt;
+&lt;p&gt;But here is what often goes wrong with these activities.&lt;/p&gt;
+&lt;p&gt;If you understand the difference, you might be able to do something about it.&lt;/p&gt;
+&lt;p&gt;Risk management starts at the top as a paper policy and then gets translated into more and more paper.
+This process gets stuck when the higher layers in the organization don’t understand when their bureaucratic system can actually be translated into real tech.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-nr-4-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-nr-4-2025/</guid>
+      <description>&lt;h1 id=&#34;ar-nr-4-dec-2025-23-dec&#34;&gt;AR nr 4 dec 2025. 23 dec&lt;/h1&gt;
+&lt;p&gt;IT has not much value of itself, but it is a tool to create value elsewhere.&lt;/p&gt;
+&lt;p&gt;Often IT is about controlling a process better.&lt;/p&gt;
+&lt;p&gt;With more information about, for example, prospective customers, you can make them better offers.&lt;/p&gt;
+&lt;p&gt;With more information about the temperatures of your house, you can heat or cool it more efficiently.&lt;/p&gt;
+&lt;p&gt;With more information about stock, you can run better logistics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-nr-5-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-nr-5-2025/</guid>
+      <description>&lt;h1 id=&#34;ar-nr-5-dec-2025-29-dec&#34;&gt;AR nr 5 dec 2025. 29 dec&lt;/h1&gt;
+&lt;p&gt;Subject: Velocity: the key to realizing value with IT&lt;/p&gt;
+&lt;p&gt;Many companies struggle to realize the value that they think should be realized with their IT.&lt;/p&gt;
+&lt;p&gt;Especially when they have multiple related projects going on, and a substantial set of applications.&lt;/p&gt;
+&lt;p&gt;What is often missing is velocity. Velocity is not just speed, it is speed with a direction.&lt;/p&gt;
+&lt;p&gt;Velocity is important, because when IT features become available sooner, two things happen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-nr-6-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-nr-6-2025/</guid>
+      <description>&lt;h1 id=&#34;ar-nr-6-dec-30-dec&#34;&gt;AR nr 6 dec. 30 dec.&lt;/h1&gt;
+&lt;p&gt;AI is dangerous. Really dangerous.&lt;/p&gt;
+&lt;p&gt;People project all kinds of human intelligence to it. But it is only a simulation of humans.
+Yes it is right a lot of the time. But unchecked its disasters can be colossal.&lt;/p&gt;
+&lt;p&gt;Uncanny valley.&lt;/p&gt;
+&lt;p&gt;AI is dangerous for the same reason large infrastructures are dangerous when misunderstood.&lt;/p&gt;
+&lt;p&gt;I have collected the best parts of my years of consulting experience on real projects into my book Digital Power: How Digital Infrastructures at Scale lead to Value, Power, and Risk.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

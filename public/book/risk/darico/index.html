@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Data, Risk, or Controls: where to start? | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Where do you start your IT security journey?
@@ -63,6 +63,97 @@ The process is that you realize compliance by implementing a set of controls, su
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/book/risk/darico/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Data, Risk, or Controls: where to start?">
+  <meta property="og:description" content="Where do you start your IT security journey? It is important, but it can be confusing.
+For many organizations, the trigger is a compliance obligation to show that confidential information remains confidential. Maybe their customers are asking for an ISO/IEC 27001 certification, demonstrating that an IT risk management system is in place. Maybe they are handling credit cards and therefore need to worry about compliance to PCI DSS.
+Controls The common theme in these is that they are control based. The process is that you realize compliance by implementing a set of controls, such as defining a password policy, or implementing a type of firewall.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="book">
+    <meta property="article:published_time" content="2025-09-01T19:48:55+00:00">
+    <meta property="article:modified_time" content="2025-09-01T19:48:55+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Data, Risk, or Controls: where to start?">
+<meta name="twitter:description" content="Where do you start your IT security journey?
+It is important, but it can be confusing.
+For many organizations, the trigger is a compliance obligation to show that confidential information remains confidential.
+Maybe their customers are asking for an ISO/IEC 27001 certification, demonstrating that an IT risk management system is in place.
+Maybe they are handling credit cards and therefore need to worry about compliance to PCI DSS.
+Controls
+The common theme in these is that they are control based.
+The process is that you realize compliance by implementing a set of controls, such as defining a password policy, or implementing a type of firewall.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Contents",
+      "item": "http://localhost:1313/book/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Risks of digital infrastructures",
+      "item": "http://localhost:1313/book/risk/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Data, Risk, or Controls: where to start?",
+      "item": "http://localhost:1313/book/risk/darico/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Data, Risk, or Controls: where to start?",
+  "name": "Data, Risk, or Controls: where to start?",
+  "description": "Where do you start your IT security journey? It is important, but it can be confusing.\nFor many organizations, the trigger is a compliance obligation to show that confidential information remains confidential. Maybe their customers are asking for an ISO/IEC 27001 certification, demonstrating that an IT risk management system is in place. Maybe they are handling credit cards and therefore need to worry about compliance to PCI DSS.\nControls The common theme in these is that they are control based. The process is that you realize compliance by implementing a set of controls, such as defining a password policy, or implementing a type of firewall.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Where do you start your IT security journey? It is important, but it can be confusing.\nFor many organizations, the trigger is a compliance obligation to show that confidential information remains confidential. Maybe their customers are asking for an ISO/IEC 27001 certification, demonstrating that an IT risk management system is in place. Maybe they are handling credit cards and therefore need to worry about compliance to PCI DSS.\nControls The common theme in these is that they are control based. The process is that you realize compliance by implementing a set of controls, such as defining a password policy, or implementing a type of firewall.\nThere are many positive elements to this approach, especially if it promotes a structured management approach.\nThe downside of this approach is that not all controls are equally relevant in a given situation. It also lends itself to a ‘box-ticking’ approach, where controls are implemented only in a superficial way, and their actual effectiveness remains unclear.\nThreats In the security community, the topic of the day is what the most current threat is. Money and effort are spent on investigating the latest threats, and discussing how they can be averted. Every day a seemingly endless stream of new vulnerabilities is discovered, each and every one having the potential to endanger all sensitive data that an organization has.\nThis can be a relevant approach. After all, many vulnerabilities have actual exploits associated with them. Yet, exploitable does not imply that actual damage is imminent. A server that is hacked but has no valuable data or relevant connectivity does not result in any significant actual damage to the organization.\nData A third approach is more strategic, and focuses on the value at risk: the data. This is the core of the Zero Trust approach: start with one important data set at a time. That set is isolated, and by tracing where that data is allowed to flow, access to that data can be controlled by a variety of techniques. While there are a number of described approaches to Zero Trust, including the CCZT (Certificate of Competence in Zero Trust) by the Cloud Security Alliance, there is little guidance on how to implement it within specific technologies.\nHow good are these? The control based approach is top-down, starting with policies, working your way down. From a management perspective, setting up a system for overseeing IT risk management promises that eventually all risks will be treated.\nHowever, control frameworks can be big. The CSA Cloud Controls Matrix contains more than 100 controls. These controls are also quite high-level, and translating them into more system and technology specific language is hard. The result is risk management progress that is forever ‘half’ finished, with unknown gaps. Or worse, continued effort is spent on rewording the policies to make them more detailed, but never getting specific. Nevertheless, regulators love this approach, because it speaks to the senior management and board members who need to take responsibility.\nThe threat based approach is more bottom-up. Starting with the technologies in place, relevant threats are identified and prioritized. Often, these are very technical, and need technology specific expertise to be evaluated. Overlooking just one threat can be disastrous. As is often said: defenders have to defend everything, attackers need only one path in.\nThis approach is the one practitioners take, if they have no other way to prioritize their efforts. Though it sounds cynical, security vendors love this approach because it is an easier sell: the dangers are clear to explain.\nThe data based approach is inside-out, so to say. Identifying the most important data deep inside allows to build out layered defenses. Zero Trust calls this the ‘protect surface’ as opposed to the ‘attack surface’. As said, the problem with this approach is not knowing where to start, and not understanding how to scale up.\nI have seen a few maturity assessments, and while the capabilities differ across organizations, a common theme is insufficient data governance. And that makes it hard to guide the efforts on the technology side.\nAnother pitfall of Zero Trust is to get stuck in not trusting anything, so where do you start with trust? Or, in scaling up, get twisted into ‘implement two factor authentication everywhere’, which is neither necessary nor sufficient.\nSynthesis In the end, these three approaches need to be merged, as they all bring relevant perspectives.\nStart with a top down inventory of the most strategic data. That allows to focus the other approaches and maximizes the risk reduced per invested effort. Zooming in on the most important data, relevant controls can then be applied there, while identifying the technology that is used. This helps to more selectively filter the vulnerabilities that have to be taken seriously.\nFor example, if the most important data is stored in a MySQL database on a Linux system with a single sign on system, only vulnerabilities in those technologies need to be taken into account.\nIt requires a common perspective on the value of data, that is a bit more nuanced than ’everything is important’.\nIt also requires a nuanced perspective on risk tolerance in IT. For example, to an IT security professional leaking an individual record is as bad as leaking the entire database. After all, if an attacker can access one record, they can access them all, is the thinking. But from a company risk perspective they are not the same. Individual record leakage is already an accepted risk, just think of insider threats. The loss of an entire database is a compliance event, with completely different consequences. With that background, rate limiting of data exports now becomes one of the relevant controls.\nThis is the type of common ground that is required for truly effective and efficient IT risk management.\nBut this requires a fundamentally different dialogue between the business process owners, risk assessors, and technical practitioners.\nFor starters, it requires that conversations are driven, not by a fear of doing the wrong thing, but by a desire to do the right thing.\n",
+  "wordCount" : "1006",
+  "inLanguage": "en",
+  "datePublished": "2025-09-01T19:48:55Z",
+  "dateModified": "2025-09-01T19:48:55Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/book/risk/darico/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -143,11 +234,11 @@ The process is that you realize compliance by implementing a set of controls, su
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/risk/">Risks of digital infrastructures</a></div>
     <h1 class="post-title entry-hint-parent">
       Data, Risk, or Controls: where to start?
     </h1>
-    <div class="post-meta"><span title='2025-09-01 19:48:55 +0000 UTC'>September 1, 2025</span>
+    <div class="post-meta"><span title='2025-09-01 19:48:55 +0000 UTC'>September 1, 2025</span>&nbsp;·&nbsp;5 min
 
 </div>
   </header> 
@@ -277,7 +368,7 @@ With that background, rate limiting of data exports now becomes one of the relev
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by

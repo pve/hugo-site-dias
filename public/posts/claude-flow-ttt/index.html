@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Agentic coding, the next level | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="My AI coding journey continues.
@@ -62,6 +62,91 @@ The main question from that experience was: How can we let the AI check itself?"
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/claude-flow-ttt/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Agentic coding, the next level">
+  <meta property="og:description" content="My AI coding journey continues.
+My first version of the Tic-Tac-Toe game took some time to get right even though I already applied some serious automated top-down design.
+As explained, understanding feedback loops is crucial for correcting errors. Part of this is using explicit tests for desirable outcomes. A process for test-driven design would be even better.
+The main question from that experience was: How can we let the AI check itself?">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-25T10:09:31+00:00">
+    <meta property="article:modified_time" content="2025-08-25T10:09:31+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Agentic coding, the next level">
+<meta name="twitter:description" content="My AI coding journey continues.
+My first version of the Tic-Tac-Toe game took some time to get right
+even though I already applied some serious automated top-down design.
+As explained, understanding feedback loops is crucial for correcting errors.
+Part of this is using explicit tests for desirable outcomes.
+A process for test-driven design would be even better.
+The main question from that experience was: How can we let the AI check itself?">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Peter's Griddle",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Agentic coding, the next level",
+      "item": "http://localhost:1313/posts/claude-flow-ttt/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Agentic coding, the next level",
+  "name": "Agentic coding, the next level",
+  "description": "My AI coding journey continues.\nMy first version of the Tic-Tac-Toe game took some time to get right even though I already applied some serious automated top-down design.\nAs explained, understanding feedback loops is crucial for correcting errors. Part of this is using explicit tests for desirable outcomes. A process for test-driven design would be even better.\nThe main question from that experience was: How can we let the AI check itself?\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "My AI coding journey continues.\nMy first version of the Tic-Tac-Toe game took some time to get right even though I already applied some serious automated top-down design.\nAs explained, understanding feedback loops is crucial for correcting errors. Part of this is using explicit tests for desirable outcomes. A process for test-driven design would be even better.\nThe main question from that experience was: How can we let the AI check itself?\nThis is what agentic-coding, or swarm coding, is all about, and there are a couple of approaches to that.\nI found the most impressive system to be Claude-flow. The core idea is to have multiple dedicated agents work in parallel and check each other. For example, you want the tester to be a separate agent from the coder.\nClaude-flow has a lot of features and agents, which can feel a bit overwhelming. Despite its complexity, getting started was easy.\nHere is what I did:\nnpx claude-flow@alpha init --force npx claude-flow@alpha hive-mind spawn \"Create a simple single player web page where the user can play tic-tac-toe against the computer\" --claude With this, Claude starts doing the work. Approximately 20 minutes later, it produced a solution that worked at the first attempt!\nA couple of observations.\nIt created a single static HTML page solution, in contrast to the more complicated front-end back-end solution that the earlier approach resulted in. I did not look at a single line of code. It still over-engineered it a bit by including a human-to-human mode, which was not requested. I found it impressive that the solution worked immediately. While the absence of a back-end simplifies matters, the swarm’s ability to generate a test set likely drives this success.\nIt is clear to me that it no longer makes sense to try and write software at this level of complexity entirely by myself.\nI also did some experiments at a higher level of architectural complexity, and those did not all go very smoothly. AI coding assistants tend to be overly creative, leading to a codebase or deployment architecture that irrecoverably goes off the rails.\nMy expectation is that more agents are required, with more embedded specialized knowledge, to stay on track. That is the next step in the journey.\n",
+  "wordCount" : "373",
+  "inLanguage": "en",
+  "datePublished": "2025-08-25T10:09:31Z",
+  "dateModified": "2025-08-25T10:09:31Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/claude-flow-ttt/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -142,11 +227,11 @@ The main question from that experience was: How can we let the AI check itself?"
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Agentic coding, the next level
     </h1>
-    <div class="post-meta"><span title='2025-08-25 10:09:31 +0000 UTC'>August 25, 2025</span>
+    <div class="post-meta"><span title='2025-08-25 10:09:31 +0000 UTC'>August 25, 2025</span>&nbsp;·&nbsp;2 min
 
 </div>
   </header> 
@@ -201,7 +286,7 @@ That is the next step in the journey.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by

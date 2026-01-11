@@ -13,7 +13,7 @@ reisplanner
 >
 
 
-design patterns
+design patterns / zie multiparty
 
 Service quality
 e.g. response time. fulfillment time.
@@ -49,6 +49,11 @@ Create mailbox
 Add virtual disk
 Ask external service to process a payment (in webshop)
 Request rack in data center
+
+Link met deployment diagrams
+
+Diagram Analysis and Application of Frameworks: Regarding the project diagram Maria shared, Peter explains it as a deployment diagram showing data, processing, control boundaries (the boxes), and communication/messages (the lines crossing boundaries). He then explains how to apply the concept of service agreement items and promises to each boundary crossing in the diagram.
+
 
 Manage the CMS content
 Configure the CMS
@@ -98,6 +103,7 @@ Examples:
 TCP connections
 Processing capacity
 
+Starting point for threat modelling.
 
 
 Nog meer leftovers:
@@ -126,19 +132,21 @@ Acceptable Use Policy (like a reverse SLA)
 
 =-
 
-Promise Theory and Services: Peter explains that a service is actually a set of promises. He discusses how this framework applies to daily work, particularly with customers using services. He contrasts thinking in terms of buying products versus services. He also mentions a book by Jeff Sesna that dives deeper into this.
+Promise Theory and Services: Peter explains that a service is actually a set of promises. He discusses how this framework applies to daily work, particularly with customers using services. He contrasts thinking in terms of buying products versus services. He also mentions a book by Jeff Sussna that dives deeper into this.
+(staat al in http://localhost:1313/book/diginfra/promise-theory/)
 •
-Contracts and Service Level Agreements (SLAs): Peter connects the idea of a contract to a set of complimentary promises, where if one party does something, the other will do something else. He clarifies that an SLA is a type of contract. He also notes that an SLA might be an "upstream SLA".
+Contracts and Service Level Agreements (SLAs): Peter connects the idea of a contract to a set of complimentary promises, http://localhost:1313/book/diginfra/promise-contract/ where if one party does something, the other will do something else. He clarifies that an SLA is a type of contract. He also notes that an SLA might be an "upstream SLA". Contracts in http://localhost:1313/book/diginfra/promise-theory/, 
+SLA nog niet uitgelegd!
 •
-Handling Broken Promises: Peter elaborates on what happens if a provider doesn't keep their promise. He discusses standard contractual elements like guarantees or penalties. He also introduces two ways of handling broken promises:
+Handling Broken Promises: Peter elaborates on what happens if a provider doesn't keep their promise. He discusses standard contractual elements like guarantees or penalties. SLA. He also introduces two ways of handling broken promises:
 ◦
-A hierarchy of contracts/promises, using the example of a restaurant transaction nested within higher-level promises like menu availability and societal promises about restaurant licensing and quality. This hierarchy can extend to international legal levels.
+=A hierarchy of contracts/promises, using the example of a restaurant transaction nested within higher-level promises like menu availability and societal promises about restaurant licensing and quality. This hierarchy can extend to international legal levels.
 ◦
-A game theoretical approach where repeated interactions allow parties to punish each other for broken promises, fostering trust. He mentions the prisoner's dilemma and the concept of credible retaliation as part of this.
+=A game theoretical approach where repeated interactions allow parties to punish each other for broken promises, () fostering trust. He mentions the prisoner's dilemma and the concept of credible retaliation as part of this.
 •
 Risk Management: Peter introduces the concept that every promise is a risk and that one significant risk is assuming a promise that is not actually there from a provider. He emphasizes that risk management involves finding somebody who suffers a bad consequence when a service isn't working. He also contrasts the compliance perspective on risk (assuming internal is better than external) with potentially different "real" risks.
 •
-Diagram Analysis and Application of Frameworks: Regarding the project diagram Maria shared, Peter explains it as a deployment diagram showing data, processing, control boundaries (the boxes), and communication/messages (the lines crossing boundaries). He then explains how to apply the concept of service agreement items and promises to each boundary crossing in the diagram.
+
 •
 Zero Trust Principles: In the context of the diagram and sensitive data flow, Peter introduces Zero Trust principles. He explains thinking in terms of "allow rules" for specific transaction flows (e.g., allowing sensitive data to the local LLM but not outside) and showing where there is no "allow rule" to prevent unwanted flow. He mentions that a policy enforcement point would be where this control is implemented.
 •

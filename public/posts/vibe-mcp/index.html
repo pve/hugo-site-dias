@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Vibe coding an MCP Server | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Model Context Protocols (MCP, see my post on their security) are the new glue between humans, chatbots, and old school IT.
@@ -59,6 +59,87 @@ For readability, I edited the description later, but the flow is as I went throu
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/vibe-mcp/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Vibe coding an MCP Server">
+  <meta property="og:description" content="Model Context Protocols (MCP, see my post on their security) are the new glue between humans, chatbots, and old school IT.
+Here is the step by step approach that I followed to ‘vibe code’ a Model Context Protocol server for my CRM and mailing list manager.
+I journaled this description, so I have included most of the detours and false starts. For readability, I edited the description later, but the flow is as I went through it.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-27T08:39:55+00:00">
+    <meta property="article:modified_time" content="2025-04-27T08:39:55+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vibe coding an MCP Server">
+<meta name="twitter:description" content="Model Context Protocols (MCP, see my post on their security) are the new glue between humans, chatbots, and old school IT.
+Here is the step by step approach that I followed to &lsquo;vibe code&rsquo; a Model Context Protocol server for my CRM and mailing list manager.
+I journaled this description, so I have included most of the detours and false starts.
+For readability, I edited the description later, but the flow is as I went through it.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Peter's Griddle",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Vibe coding an MCP Server",
+      "item": "http://localhost:1313/posts/vibe-mcp/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Vibe coding an MCP Server",
+  "name": "Vibe coding an MCP Server",
+  "description": "Model Context Protocols (MCP, see my post on their security) are the new glue between humans, chatbots, and old school IT.\nHere is the step by step approach that I followed to \u0026lsquo;vibe code\u0026rsquo; a Model Context Protocol server for my CRM and mailing list manager.\nI journaled this description, so I have included most of the detours and false starts. For readability, I edited the description later, but the flow is as I went through it.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Model Context Protocols (MCP, see my post on their security) are the new glue between humans, chatbots, and old school IT.\nHere is the step by step approach that I followed to ‘vibe code’ a Model Context Protocol server for my CRM and mailing list manager.\nI journaled this description, so I have included most of the detours and false starts. For readability, I edited the description later, but the flow is as I went through it.\nThe CRM system is called Autorespond, and the description of the API is here. The API doc is not in any standard format, but I had Claude Pro convert it to Markdown using the fetch MCP. I also uploaded the doc to context7, an API documentation site for LLMs, but since Claude already had it in its context, I did not pursue that further, for the moment.\nWith that, I asked Claude:\nWhat do you need to know in order to write an pilot Model Context Protocol server in Python for retrieving the tags in an Autorespond administration?\nIt basically started reasoning and immediately writing code. However, it was clear that it did not really have a clue on MCP, not surprising, since MCP was introduced just a couple of months ago.\nI told it the doc could be found on github, which it downloaded partially (because of robots.txt limitation). It then basically parroted that documentation to create similar code for Autorespond.\nI manually put the resulting code in a new git repo, though I could probably ask some AI assistant to do that for me.\nIn my workflow I like to set up a virtual environment based off a requirements.txt file. I did not get that, so I wrote that myself. However, as we see later, there is a more modern approach.\nAfter fixing that, it runs, but throws an error\nMismatch between URI parameters set() and function parameters {'ctx'} Throwing the error message into Claude, and it changes two lines in the Python code to make this work. Of course, I did a git commit before replacing the Python code.\nThen I got a bit lost in the usage of uv in relation to registering this MCP at Claude desktop. This is the new Python package manager, and it seems to be the default for almost all MCP server installations. My Python instructor friend regards it very highly. It appears that I did not have that setup done well.\nThe main benefit of uv here seems to be that it isolates the execution of a specific version of Python and its libraries. You could use venv for that, but since the MCP runs from the context of Claude desktop, I am not sure if that would work well enough. No time to figure that out, just follow the herd. Another way of doing that is through the use of Docker, which isolates the code further. I do that for most external MCPs, but for a local development I consider this good enough.\nRebuilding the virtual environment with uv worked a bit better, though I still have limited understanding of it. Here is a snippet from the Claude config.\n\"command\": \"uv\", \"args\": [ \"--directory\", \"/Users/peter/Documents/-----/AutorespondMCP/\", \"run\", \"autorespond-mcp-server.py\" ], \"env\": { \"AUTORESPOND_ADMIN_ID\": \"***\", \"AUTORESPOND_API_KEY\": \"***\" The good news is: the generated code runs. The bad news is: setting up the package manager takes a bit more time. The ugly: I should have set up environment secrets first, instead of hard coding them in the code.\nWe can now start to use the MCP server in Claude, but it looks like it hallucinates a few of the search functions. It makes up function uses that are not in the Autorespond API, which therefore fail.\nSo I asked it to enumerate the read-only functions, which reduces the number of hallucinated functions. It then still does not quite understand parameters in the MCP context.\nValueError: Mismatch between URI parameters set() and function parameters {'email'} Sounds like it is time to tell Claude how MCP really works.\nOff to a fresh start, with a new git repo, and a new Claude context window. This time Context7 sounds like the proper way to ingest up to date libraries. I added the MCP server for Context7, and added it to the coding conversation.\nAutorespond was easy, I put it there myself. For the Python SDK it took a detour, but it managed to find the doc through /modelcontextprotocol/python-sdk.\nBack to uv. This time around, this seems to be the best workflow for starting a new repo, even with VScode.\nuv init uv add \"mcp[cli]\" httpx Claude gave the correct uv steps.\nHowever, this error comes back: ValueError: Mismatch between URI parameters set() and function parameters {'ctx'}\nClaude still does not get it. So I told it:\nthe problem is more generic. Here is the next message: ValueError: Mismatch between URI parameters set() and function parameters {‘api_key’, ‘admin_id’} please check for all potential mismatches.\nClaude kind of fixed it, but it appeared it did not understand the fastmcp library, which is referred to in the Python MCP SDK. I had it include that from Context7.\nIt is tempting to try and fix the few lines of code that needed to be changed in my MCP server program. However, one of my software engineering rules is that you don’t manually fix automatically generated code.\nSo we git commit the Python code, and then replace it with a new version. From the git diffs we can see that the changes are indeed quite local. But I have seen sessions like these where instead of the local change that would be sufficient, large parts of the codebase are fully rewritten for no apparent reason.\nOK, now it runs in Python:\n% python autorespond-mcp-server.py [04/29/25 10:34:06] INFO Starting server \"Autorespond API\"... Let’s look at how it runs in Claude. It kind of works. But it did not understand that the authorization is in ENV variables. In the earlier version it did, by the way. Now it thinks the authorization is an additional API parameter, and it then starts to hallucinate the actual values there. It randomly generates API keys, quite amusing in fact.\nWe tell it to regenerate the code with the note:\nThe admin key and api key are environment variables. Rewrite the code.\nNow it works, as this Claude screenshot of a conversation shows:\nBut it has forgotten certain API calls (invoices, orders). And some of the calls don’t work, which seems related to the interpretation of the Autorespond API doc. I am not an API specialist, but I have been told that this doc is generated from code annotations https://apidocjs.com/. I believe these days you would do it the other way around, like what we did with Kimwitu a couple of decades ago.\nInterestingly, Claude (the coder) decides to label certain calls as MPC resources, rather than tools. An example would be getting all the tags or groups. While this sounds fair, in Claude (the desktop) these will not be used unless explicitly added by the user. This means they are excluded from the reasoning that Claude can do.\nSo far this took me a few hours, including the updates of my tooling, resulting in about 450 lines of code for the Autorespond MCP code.\nUp next. Giving better instructions on the coverage of the API. And, should we be writing some test cases? I have seen that explored in some of the meetups I visited recently. To do that well, we need a test instance of the Autorespond system.\nStay tuned for more …\nGithub\n",
+  "wordCount" : "1265",
+  "inLanguage": "en",
+  "datePublished": "2025-04-27T08:39:55Z",
+  "dateModified": "2025-04-27T08:39:55Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/vibe-mcp/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -139,11 +220,11 @@ For readability, I edited the description later, but the flow is as I went throu
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Vibe coding an MCP Server
     </h1>
-    <div class="post-meta"><span title='2025-04-27 08:39:55 +0000 UTC'>April 27, 2025</span>
+    <div class="post-meta"><span title='2025-04-27 08:39:55 +0000 UTC'>April 27, 2025</span>&nbsp;·&nbsp;6 min
 
 </div>
   </header> 
@@ -267,7 +348,7 @@ I have seen that explored in some of the meetups I visited recently. To do that 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by

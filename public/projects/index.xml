@@ -6,8 +6,18 @@
     <description>Recent content in Projects on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Nov 2025 00:07:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 00:39:13 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wicked problems in 2026</title>
+      <link>http://localhost:1313/projects/wicked-2026/</link>
+      <pubDate>Thu, 25 Dec 2025 00:39:13 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wicked-2026/</guid>
+      <description>&lt;p&gt;As 2025 ends, I reflected on the major topics that I see evolving in my practice.
+They are digital sovereignty and AI security, in particular the security of AI agent systems.
+These are systems where AI is not just used as an advanced data processor, but is undertaking autonomous actions.&lt;/p&gt;
+&lt;p&gt;I focus specifically on so-called wicked problems: problems that do not have simple solution because they are intertwined with many other issues and conflicting interests.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Intell Is Attention</title>
       <link>http://localhost:1313/projects/intell-is-attention/</link>
@@ -64,6 +74,78 @@ This means that there is a variety of parties responsible for controlling those 
 &lt;p&gt;But, who is supposed to do each control? And which role do they have?
 For example, there are model providers, there is the AI consumer, and so on.
 For a deeper story on these roles look at &lt;a href=&#34;http://localhost:1313/book/diginfra/ai-roles/&#34;&gt;AI roles&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-18/</guid>
+      <description>&lt;p&gt;Typical mistake.&lt;/p&gt;
+&lt;p&gt;Manage your IT by reviewing all the tech and trying to figure out how to make sure it works, so that it can deliver value.&lt;/p&gt;
+&lt;p&gt;That is the wrong sequence, you likely to overlook the important bits.&lt;/p&gt;
+&lt;p&gt;You can’t manage your IT without looking at resource conflicts.
+Most IT systems act as some kind of digital infrastructure to its users, meaning that it has shared resources.&lt;/p&gt;
+&lt;p&gt;This sharing drives the benefits, for example by reducing cost or exchanging information.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-20/</guid>
+      <description>&lt;p&gt;Many in the IT profession confuse risk treatment with risk management.&lt;/p&gt;
+&lt;p&gt;Risk treatment is the process of reviewing a relevant risk and finding out what to do about it: mitigate, accept, or whatever it is you deem appropriate.
+If you look closely, there is so much risk in IT. Every individual device, every configuration setting (MS-Teams has over 2000 of them), every line of code, is potentially a risk.&lt;/p&gt;
+&lt;p&gt;That is a lot of risk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-22/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-22/</guid>
+      <description>&lt;h1 id=&#34;to-publish-22-dec--nr-3&#34;&gt;to publish 22 dec ; nr 3.&lt;/h1&gt;
+&lt;p&gt;In a previous message I wrote about the differences between risk treatment and risk management.&lt;/p&gt;
+&lt;p&gt;These are typically different activities, carried out by different parts of the organization.&lt;/p&gt;
+&lt;p&gt;But here is what often goes wrong with these activities.&lt;/p&gt;
+&lt;p&gt;If you understand the difference, you might be able to do something about it.&lt;/p&gt;
+&lt;p&gt;Risk management starts at the top as a paper policy and then gets translated into more and more paper.
+This process gets stuck when the higher layers in the organization don’t understand when their bureaucratic system can actually be translated into real tech.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-nr-4-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-nr-4-2025/</guid>
+      <description>&lt;h1 id=&#34;ar-nr-4-dec-2025-23-dec&#34;&gt;AR nr 4 dec 2025. 23 dec&lt;/h1&gt;
+&lt;p&gt;IT has not much value of itself, but it is a tool to create value elsewhere.&lt;/p&gt;
+&lt;p&gt;Often IT is about controlling a process better.&lt;/p&gt;
+&lt;p&gt;With more information about, for example, prospective customers, you can make them better offers.&lt;/p&gt;
+&lt;p&gt;With more information about the temperatures of your house, you can heat or cool it more efficiently.&lt;/p&gt;
+&lt;p&gt;With more information about stock, you can run better logistics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-nr-5-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-nr-5-2025/</guid>
+      <description>&lt;h1 id=&#34;ar-nr-5-dec-2025-29-dec&#34;&gt;AR nr 5 dec 2025. 29 dec&lt;/h1&gt;
+&lt;p&gt;Subject: Velocity: the key to realizing value with IT&lt;/p&gt;
+&lt;p&gt;Many companies struggle to realize the value that they think should be realized with their IT.&lt;/p&gt;
+&lt;p&gt;Especially when they have multiple related projects going on, and a substantial set of applications.&lt;/p&gt;
+&lt;p&gt;What is often missing is velocity. Velocity is not just speed, it is speed with a direction.&lt;/p&gt;
+&lt;p&gt;Velocity is important, because when IT features become available sooner, two things happen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/projects/ar-dec-nr-6-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ar-dec-nr-6-2025/</guid>
+      <description>&lt;h1 id=&#34;ar-nr-6-dec-30-dec&#34;&gt;AR nr 6 dec. 30 dec.&lt;/h1&gt;
+&lt;p&gt;AI is dangerous. Really dangerous.&lt;/p&gt;
+&lt;p&gt;People project all kinds of human intelligence to it. But it is only a simulation of humans.
+Yes it is right a lot of the time. But unchecked its disasters can be colossal.&lt;/p&gt;
+&lt;p&gt;Uncanny valley.&lt;/p&gt;
+&lt;p&gt;AI is dangerous for the same reason large infrastructures are dangerous when misunderstood.&lt;/p&gt;
+&lt;p&gt;I have collected the best parts of my years of consulting experience on real projects into my book Digital Power: How Digital Infrastructures at Scale lead to Value, Power, and Risk.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

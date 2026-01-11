@@ -11,7 +11,7 @@ We drove for hours without seeing anyone, and had lunch in the middle of the roa
 
 For miles around you only see bush, sand, and a few trees. It is a large savannah.
 
-The road was somewhat uneven, and our friends did not have a 4-wheel drive.
+The road was uneven, and our friends did not have a 4-wheel drive.
 
 So it happened that we had to cross a riverbed (a wadi) that had a lot of rocks in them, larger than we could comfortably drive the car over.
 

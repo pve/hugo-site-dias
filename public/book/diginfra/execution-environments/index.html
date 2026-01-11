@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Execution Environments | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?
@@ -59,6 +59,92 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/book/diginfra/execution-environments/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Execution Environments">
+  <meta property="og:description" content="What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?
+They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures. In a diagram we often depict them as a box, or an oval. Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="book">
+    <meta property="article:published_time" content="2025-04-20T09:03:00+00:00">
+    <meta property="article:modified_time" content="2025-04-20T09:03:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Execution Environments">
+<meta name="twitter:description" content="What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?
+They are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures.
+In a diagram we often depict them as a box, or an oval.
+Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Contents",
+      "item": "http://localhost:1313/book/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "What are digital infrastructures?",
+      "item": "http://localhost:1313/book/diginfra/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Execution Environments",
+      "item": "http://localhost:1313/book/diginfra/execution-environments/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Execution Environments",
+  "name": "Execution Environments",
+  "description": "What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?\nThey are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures. In a diagram we often depict them as a box, or an oval. Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?\nThey are all execution environments that contain software and data, and that makes them building blocks for deploying digital infrastructures. In a diagram we often depict them as a box, or an oval. Inside the box, software gets executed, instructions get interpreted, actions are done. Software without execution is just dead data.\nWhy does it matter? Well, the more we know about those building blocks, the more efficient we can think about all the various manifestations of execution environments. For example, these things, or more accurately: their boundaries, are prime locations for implementing security controls.\nWhenever I look at how a digital infrastructure is implemented, I start by looking at the execution environments, and ask four questions: what, where, how, and who.\nWhat? What is the data that is inside it, what is the software, the code, that is inside that environment? And in an AI world: which model is there inside?\nWhere? Where is that execution environment located? In our current virtualized and cloud world, that environment is typically inside another environment. Ultimately, of course, there is a physical machine in which it sits.\nHow? How does the software get deployed inside that environment? There will be a manual process, or a continuous delivery pipeline, or something similar.\nWho? Who is responsible for managing the environment and its access controls. In a cloud world, this is an important question. What does the provider do, what does the consumer do?\nThen it is time to look at the control boundary that this environment creates. The control boundary creates an outside and an inside. How is data from the outside allowed to go inside? What is the mechanism or protocol? How is that controlled? The same holds for the reverse. How is software inside that boundary allowed to access the outside?\nLet’s take an example: your browser is talking to a webserver, which could be a computer that runs Linux and an Nginx instance. The Linux machine implements an access control on the network level: it only allows traffic on the https port to go to the Nginx webserver process. The Nginx webserver then guards its data, and only allows read only access.\nIf you want more examples of execution environments, consider containers, functions as a service such as AWS Lambda, AWS S3 storage buckets, SaaS/PaaS providers, Antivirus agents, firewalls. Each of these has processing inside, and each of these hold data. But the type of software, data, and configuration they have differs, as does the mechanisms they offer for access control.\nDeeper in the networking space you can see that a router is also an execution environment, though it does not have a lot of data, mainly the routing tables.\nWe will return to discussing how useful this is elsewhere.\n",
+  "wordCount" : "482",
+  "inLanguage": "en",
+  "datePublished": "2025-04-20T09:03:00Z",
+  "dateModified": "2025-04-20T09:03:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/book/diginfra/execution-environments/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -139,11 +225,11 @@ Inside the box, software gets executed, instructions get interpreted, actions ar
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/">Contents</a>&nbsp;»&nbsp;<a href="http://localhost:1313/book/diginfra/">What are digital infrastructures?</a></div>
     <h1 class="post-title entry-hint-parent">
       Execution Environments
     </h1>
-    <div class="post-meta"><span title='2025-04-20 09:03:00 +0000 UTC'>April 20, 2025</span>
+    <div class="post-meta"><span title='2025-04-20 09:03:00 +0000 UTC'>April 20, 2025</span>&nbsp;·&nbsp;3 min
 
 </div>
   </header> 
@@ -235,7 +321,7 @@ But the type of software, data, and configuration they have differs, as does the
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by

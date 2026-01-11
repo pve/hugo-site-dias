@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Deployment diagrams for network security; fix this | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training.
@@ -60,6 +60,86 @@ Recently I ran into the following example. Here is an explanation of the differe
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/network-diagram-fix/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Deployment diagrams for network security; fix this">
+  <meta property="og:description" content="A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training. In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated. But still. There are good drawings and there are drawings that can be improved. My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them. Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-03-26T17:09:20+00:00">
+    <meta property="article:modified_time" content="2021-03-26T17:09:20+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deployment diagrams for network security; fix this">
+<meta name="twitter:description" content="A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training.
+In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated.
+But still. There are good drawings and there are drawings that can be improved.
+My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
+Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Peter's Griddle",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Deployment diagrams for network security; fix this",
+      "item": "http://localhost:1313/posts/network-diagram-fix/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Deployment diagrams for network security; fix this",
+  "name": "Deployment diagrams for network security; fix this",
+  "description": "A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training. In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated. But still. There are good drawings and there are drawings that can be improved. My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them. Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "A while back, I introduced my take on deployment diagrams for cloud and devops infrastructure. Some of the big points there are: it starts with intuitive drawings. Many people draw these things in similar ways, even without them having formal training. In fact, formal training in architecture diagrams will not necessarily make those drawings easier to understand for the uninitiated. But still. There are good drawings and there are drawings that can be improved. My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them. Recently I ran into the following example. Here is an explanation of the difference between VPC and security groups. Great story, but I have some comments on the diagram, which used to come from AWS itself, by the way, but has been removed.\nHere is the diagram. In my earlier post, I gave some informal principles for drawing these diagrams. In brief, they are:\nboxes denote ’execution environments’ where code runs and data resides lines denote connections between those execution environments closed curves enclose ‘control boundaries’. How does this diagram deviate from those principles? Let me know…\n",
+  "wordCount" : "199",
+  "inLanguage": "en",
+  "datePublished": "2021-03-26T17:09:20Z",
+  "dateModified": "2021-03-26T17:09:20Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/network-diagram-fix/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -140,11 +220,11 @@ Recently I ran into the following example. Here is an explanation of the differe
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Deployment diagrams for network security; fix this
     </h1>
-    <div class="post-meta"><span title='2021-03-26 17:09:20 +0000 UTC'>March 26, 2021</span>
+    <div class="post-meta"><span title='2021-03-26 17:09:20 +0000 UTC'>March 26, 2021</span>&nbsp;·&nbsp;1 min
 
 </div>
   </header> 
@@ -182,7 +262,7 @@ Let me know…</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by

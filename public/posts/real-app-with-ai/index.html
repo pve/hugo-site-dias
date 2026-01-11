@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Real App With Ai | Digital Infrastructures at Scale</title>
 <meta name="keywords" content="">
 <meta name="description" content="Taking it for a spin.
@@ -65,6 +65,97 @@ gh will help">
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6WKY1Y13E"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y6WKY1Y13E');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/real-app-with-ai/">
+  <meta property="og:site_name" content="Digital Infrastructures at Scale">
+  <meta property="og:title" content="Real App With Ai">
+  <meta property="og:description" content="Taking it for a spin.
+After my playful tic-tac-toe app (blog post, the actual app) I moved on to create a real application.
+I restarted the experiments I did earlier (https://digitalinfrastructures.nl/posts/monkey-coding/) Real app now. track 1. claude-flow.
+biggest lesson: understand nested feedback loops.
+method: learning from myself (DRY in prompting)
+dont hesitate to start all over.
+challenge: explaining to claude code what a good result is, and the means to check that. gh will help">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-29T21:28:51+00:00">
+    <meta property="article:modified_time" content="2025-07-29T21:28:51+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Real App With Ai">
+<meta name="twitter:description" content="Taking it for a spin.
+After my playful tic-tac-toe app (blog post, the actual app) I moved on to create a real application.
+I restarted the experiments I did earlier (https://digitalinfrastructures.nl/posts/monkey-coding/)
+Real app now.
+track 1. claude-flow.
+biggest lesson: understand nested feedback loops.
+method: learning from myself (DRY in prompting)
+dont hesitate to start all over.
+challenge: explaining to claude code what a good result is, and the means to check that.
+gh will help">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Peter's Griddle",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Real App With Ai",
+      "item": "http://localhost:1313/posts/real-app-with-ai/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Real App With Ai",
+  "name": "Real App With Ai",
+  "description": "Taking it for a spin.\nAfter my playful tic-tac-toe app (blog post, the actual app) I moved on to create a real application.\nI restarted the experiments I did earlier (https://digitalinfrastructures.nl/posts/monkey-coding/) Real app now. track 1. claude-flow.\nbiggest lesson: understand nested feedback loops.\nmethod: learning from myself (DRY in prompting)\ndont hesitate to start all over.\nchallenge: explaining to claude code what a good result is, and the means to check that. gh will help\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Taking it for a spin.\nAfter my playful tic-tac-toe app (blog post, the actual app) I moved on to create a real application.\nI restarted the experiments I did earlier (https://digitalinfrastructures.nl/posts/monkey-coding/) Real app now. track 1. claude-flow.\nbiggest lesson: understand nested feedback loops.\nmethod: learning from myself (DRY in prompting)\ndont hesitate to start all over.\nchallenge: explaining to claude code what a good result is, and the means to check that. gh will help\ntarget is to get to production MVP as fast as possible, prioritizing short feedback loops.\nquota problemen en compacting maakt nog al eens dat het geheugen kwijt raakt.\n│ \u003e you should ALWAYS validate passing. If you can’t fix it yourself, escalate to user. Tips: the production server’s IP address is in git secret │ │ HETZNER_HOST. Deployment at the server should also include a git pull. And the deploy scripts seem to be hiding errors for you.\nPriority is end 2 end testing, then refactor and clean up. All before you run out of quota…\n",
+  "wordCount" : "171",
+  "inLanguage": "en",
+  "datePublished": "2025-07-29T21:28:51Z",
+  "dateModified": "2025-07-29T21:28:51Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/real-app-with-ai/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Digital Infrastructures at Scale",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -145,7 +236,7 @@ gh will help">
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Peter&#39;s Griddle</a></div>
     <h1 class="post-title entry-hint-parent">
       Real App With Ai
       <span class="entry-hint" title="Draft">
@@ -155,7 +246,7 @@ gh will help">
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2025-07-29 21:28:51 +0000 UTC'>July 29, 2025</span>
+    <div class="post-meta"><span title='2025-07-29 21:28:51 +0000 UTC'>July 29, 2025</span>&nbsp;·&nbsp;1 min
 
 </div>
   </header> 
@@ -194,7 +285,7 @@ All before you run out of quota&hellip;</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Digital Infrastructures at Scale</a></span> · 
 
     <span>
         Powered by
