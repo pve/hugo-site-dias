@@ -35,6 +35,17 @@ It took us about an hour to cross the riverbed, but the memory of that experienc
 
 Ingenuity and the use of materials at hand had gotten us out of a difficult situation.
 
-It looks like a big leap from that situation to artificial intelligence, but the principles remain the same.
+At the same time, we should be aware of the risks of using any technology.
+In this case, we need to consider if the pole is strong enough for the forces that we apply.
+Apparently it was.
+But the other tool in the story, the car, although sufficient to bring is to Tsavo, was not sufficient to bring us across Tsavo.
+
+It looks like a big leap from that situation to IT and artificial intelligence, but the principles remain the same.
 Artificial intelligence is the newest technology that we apply to a data processing task.
+
+AI allows us to do certain data processing tasks easier, better, faster.
+But to really benefit from this technology we have to, as always, understand the materials and how to apply them.
+
+The 'materials' here are the various tools, models, frameworks and services.
+How to apply them involves understanding their strengths, weaknesses, and risks.
 

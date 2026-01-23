@@ -2,6 +2,8 @@
 date: '2025-08-26T15:56:05Z'
 draft: false
 title: 'AI Roles and Responsibilities'
+aliases:
+- "/diginfra/ai-roles.md"
 weight: 80
 ---
 AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.
