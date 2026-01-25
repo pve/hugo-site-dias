@@ -24,11 +24,11 @@ After all, AI is just somebody's data on somebody's computer.
 
 The AI supply chain is a bit more complex than that of a simple web application.
 The Cloud Security Alliance recently developed an AI version of their Cloud Controls Matrix.
-It is called AICM (for AI Control Matrix), and one of its interesting features is a list of roles.
+It is called the AICM (for AI Control Matrix), and one of its interesting features is a list of roles.
 The AICM distinguishes the AI consumer, Application Provider, Orchestrated Services Provider, Model Provider, and Cloud Service Provider.
-You'll find my [discussion of those roles](/diginfra/ai-roles.md) elsewhere.
+You'll find my [discussion of those roles](book/diginfra/ai-roles/) elsewhere.
 
-With that list of roles, as described in AICM, we can then allocate security responsibilities to specific actors.
+With that list of roles, as described in the AICM, we can then allocate security responsibilities to specific actors.
 But first, we need a set of controls that we want actors to take responsibility for.
 
 There is no lack of risk and control frameworks for AI.

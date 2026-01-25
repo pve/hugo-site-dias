@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Dec 2025 00:39:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jan 2026 09:55:29 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -53,20 +53,20 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Wicked problems in 2026</title>
-      <link>http://localhost:1313/blog/wicked-2026/</link>
-      <pubDate>Thu, 25 Dec 2025 00:39:13 +0000</pubDate>
-      <guid>http://localhost:1313/blog/wicked-2026/</guid>
-      <description>&lt;p&gt;As 2025 ends, I reflected on the major topics that I see evolving in my practice.
-They are digital sovereignty and AI security, in particular the security of AI agent systems.
-These are systems where AI is not just used as an advanced data processor, but is undertaking autonomous actions.&lt;/p&gt;
-&lt;p&gt;I focus specifically on so-called wicked problems: problems that do not have simple solution because they are intertwined with many other issues and conflicting interests.&lt;/p&gt;</description>
+      <title>My AI travel mail bot and its security</title>
+      <link>http://localhost:1313/posts/travel-mail-bot/</link>
+      <pubDate>Fri, 23 Jan 2026 09:55:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/travel-mail-bot/</guid>
+      <description>&lt;p&gt;I wanted to experiment with AI automation while also paying particular attention to security concerns.
+Security is something I take seriously (I delivered cloud security training for more than 10 years), and the power that AI has is very scary.&lt;/p&gt;
+&lt;p&gt;There are lots of frameworks related to AI security, and I feel that it is hard to apply them to the real world.&lt;/p&gt;
+&lt;p&gt;For example how would you mitigate LLM06 – Sensitive Information Disclosure, or ASI05 - Inadequate Guardrails and Sandboxing from the OWASP guidelines?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wicked problems in 2026</title>
-      <link>http://localhost:1313/projects/wicked-2026/</link>
+      <link>http://localhost:1313/posts/wicked-2026/</link>
       <pubDate>Thu, 25 Dec 2025 00:39:13 +0000</pubDate>
-      <guid>http://localhost:1313/projects/wicked-2026/</guid>
+      <guid>http://localhost:1313/posts/wicked-2026/</guid>
       <description>&lt;p&gt;As 2025 ends, I reflected on the major topics that I see evolving in my practice.
 They are digital sovereignty and AI security, in particular the security of AI agent systems.
 These are systems where AI is not just used as an advanced data processor, but is undertaking autonomous actions.&lt;/p&gt;
