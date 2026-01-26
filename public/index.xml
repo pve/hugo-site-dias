@@ -53,7 +53,7 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My AI travel mail bot and its security</title>
+      <title>Securing my AI travel mail bot</title>
       <link>http://localhost:1313/posts/travel-mail-bot/</link>
       <pubDate>Fri, 23 Jan 2026 09:55:29 +0000</pubDate>
       <guid>http://localhost:1313/posts/travel-mail-bot/</guid>

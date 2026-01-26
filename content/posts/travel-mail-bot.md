@@ -1,7 +1,7 @@
 ---
 date: '2026-01-23T09:55:29Z'
 draft: false
-title: 'My AI travel mail bot and its security'
+title: 'Securing my AI travel mail bot'
 weight: 10
 ---
 
