@@ -2,6 +2,7 @@
 title: A Small Example of Cloud Native Development
 date: '2020-02-10T23:29:51'
 draft: false
+weight: 20
 ---
 
 Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.

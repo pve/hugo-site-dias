@@ -746,6 +746,15 @@ By understanding how applying technology really works, you can be more effective
 &lt;p&gt;Imagine stringing a wire to connect your PC to your neighbor&amp;rsquo;s PC in order to play a game together. People have been doing these things. How long does it take to string the wires and connect them? What is the cost? Where do you buy the cable? How are you going to run that cable? It is a lot faster to just use the internet for that.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>A Small Example of Cloud Native Development</title>
+      <link>http://localhost:1313/book/cases/tutorial-cloud-native/</link>
+      <pubDate>Mon, 10 Feb 2020 23:29:51 +0000</pubDate>
+      <guid>http://localhost:1313/book/cases/tutorial-cloud-native/</guid>
+      <description>&lt;p&gt;Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.
+To illustrate this new approach, I have started to develop a minimal application. Although minimal, I run it in production. Its basic function is to regularly pull out data from an air quality sensor into a cloud-based database. Together it is a few hundred lines of code.
+Here are the major features of the example:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Governance over IT, an example</title>
       <link>http://localhost:1313/book/power/governance-example/</link>
       <pubDate>Thu, 01 May 2025 11:07:46 +0000</pubDate>
@@ -1331,15 +1340,6 @@ In fact, formal training in architecture diagrams will not necessarily make thos
 But still. There are good drawings and there are drawings that can be improved.
 My other big point is that deployment diagrams can be a great tool for security analysis. I am in some conversations with friends at banks who use them.
 Recently I ran into the following example. Here is an &lt;a href=&#34;https://syang.substack.com/p/security-group-and-network-acl-in&#34;&gt;explanation of the difference between VPC and security groups&lt;/a&gt;. Great story, but I have some comments on the diagram, which used to come &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html&#34;&gt;from AWS itself&lt;/a&gt;, by the way, but has been removed.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>A Small Example of Cloud Native Development</title>
-      <link>http://localhost:1313/book/cases/tutorial-cloud-native/</link>
-      <pubDate>Mon, 10 Feb 2020 23:29:51 +0000</pubDate>
-      <guid>http://localhost:1313/book/cases/tutorial-cloud-native/</guid>
-      <description>&lt;p&gt;Cloud-native software development enables new practices. But it also requires them. It is a new level of working. However, putting all these new practices together requires integrating a lot of pieces.
-To illustrate this new approach, I have started to develop a minimal application. Although minimal, I run it in production. Its basic function is to regularly pull out data from an air quality sensor into a cloud-based database. Together it is a few hundred lines of code.
-Here are the major features of the example:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Top 8 cloud risks according to ENISA</title>

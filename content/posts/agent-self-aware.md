@@ -131,7 +131,7 @@ cli_direct:
 But in reality it is in config.json
 
 {"role": "user", "content": "het zit eigenlijk in de config.json", "timestamp": "2026-02-02T13:08:48.846389"}
-{"role": "assistant", "content": "Hmm, de key staat in config maar wordt niet opgepikt. Mogelijk leest nanobot de `tools.web.search.apiKey` niet goed, of verwacht hij toch de **environment variable**.\n\n**Quick fix:**\n```bash\nexport BRAVE_API_KEY=\"BSAWAfb0L00VbNzvn4CfI1BOBOraOZA\"\n```\n\nDan nanobot herstarten.\n\nWil je dat ik dit onderzoek in de code, of gewoon de env var toevoegen aan je shell config?", "timestamp": "2026-02-02T13:08:48.846440"}
+{"role": "assistant", "content": "Hmm, de key staat in config maar wordt niet opgepikt. Mogelijk leest nanobot de `tools.web.search.apiKey` niet goed, of verwacht hij toch de **environment variable**.\n\n**Quick fix:**\n```bash\nexport BRAVE_API_KEY=\"redact\"\n```\n\nDan nanobot herstarten.\n\nWil je dat ik dit onderzoek in de code, of gewoon de env var toevoegen aan je shell config?", "timestamp": "2026-02-02T13:08:48.846440"}
 
 Where does this come from?
 =-=-
