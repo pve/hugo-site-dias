@@ -6,8 +6,35 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Jan 2026 09:55:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 07:31:06 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architectural Integrity, Angkor Wat, and open source</title>
+      <link>http://localhost:1313/posts/architecture-integrity/</link>
+      <pubDate>Fri, 06 Feb 2026 07:31:06 +0000</pubDate>
+      <guid>http://localhost:1313/posts/architecture-integrity/</guid>
+      <description>&lt;p&gt;Angkor Wat (Cambodia) is the world&amp;rsquo;s largest religious building and site.
+Built in the 12th century, it is still a stunning building, featuring high symmetry and perfect north-south alignment.&lt;/p&gt;
+&lt;p&gt;As I was visiting this and other temples, I got to think about architectural integrity.
+For example, Angkor Wat has 4 major towers around a central tower.
+I call that an architectural feature.&lt;/p&gt;
+&lt;p&gt;Symmetry like this does not happen automatically.
+It takes an architect and good execution, in other words carefully controlled power, to realize this.
+As a visitor, you notice, maybe only subconsciously, that great power was required to construct such a building.
+The building is a symbol of power.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agent Self Aware</title>
+      <link>http://localhost:1313/posts/agent-self-aware/</link>
+      <pubDate>Wed, 04 Feb 2026 08:56:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/agent-self-aware/</guid>
+      <description>&lt;p&gt;How do AI agents work, is what I am trying to understand these days.
+And can we use agents to reason about agents?&lt;/p&gt;
+&lt;p&gt;AI agents have a lot of potential for my work, but I am also interested in the security implications.
+Because the more powerful they are, the more risky they become.&lt;/p&gt;
+&lt;p&gt;Lately I have been looking at (and contributing to) &lt;a href=&#34;https://github.com/HKUDS/nanobot&#34;&gt;nanobot&lt;/a&gt;.
+This is a deliberately simpler version of Moltbot, OpenClaw,[] or whatever it is called these days.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Securing my AI travel mail bot</title>
       <link>http://localhost:1313/posts/travel-mail-bot/</link>
