@@ -24,16 +24,16 @@ As a visitor, you notice, maybe only subconsciously, that great power was requir
 The building is a symbol of power.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Agent Self Aware</title>
+      <title>How are AI Agents Self Aware?</title>
       <link>http://localhost:1313/posts/agent-self-aware/</link>
       <pubDate>Wed, 04 Feb 2026 08:56:29 +0000</pubDate>
       <guid>http://localhost:1313/posts/agent-self-aware/</guid>
       <description>&lt;p&gt;How do AI agents work, is what I am trying to understand these days.
-And can we use agents to reason about agents?&lt;/p&gt;
+And can we use agents to reason about agents, in particular about &lt;em&gt;themselves&lt;/em&gt;?&lt;/p&gt;
 &lt;p&gt;AI agents have a lot of potential for my work, but I am also interested in the security implications.
 Because the more powerful they are, the more risky they become.&lt;/p&gt;
 &lt;p&gt;Lately I have been looking at (and contributing to) &lt;a href=&#34;https://github.com/HKUDS/nanobot&#34;&gt;nanobot&lt;/a&gt;.
-This is a deliberately simpler version of Moltbot, OpenClaw,[] or whatever it is called these days.&lt;/p&gt;</description>
+This is a deliberately simpler version of &lt;a href=&#34;&#34;&gt;Moltbot, OpenClaw&lt;/a&gt;, or whatever it is called these days.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Securing my AI travel mail bot</title>
