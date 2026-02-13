@@ -72,12 +72,12 @@ The building is a symbol of power.&lt;/p&gt;</description>
       <link>http://localhost:1313/posts/agent-self-aware/</link>
       <pubDate>Wed, 04 Feb 2026 08:56:29 +0000</pubDate>
       <guid>http://localhost:1313/posts/agent-self-aware/</guid>
-      <description>&lt;p&gt;How do AI agents work, is what I am trying to understand these days.
-And can we use agents to reason about agents, in particular about &lt;em&gt;themselves&lt;/em&gt;?&lt;/p&gt;
-&lt;p&gt;AI agents have a lot of potential for my work, but I am also interested in the security implications.
-Because the more powerful they are, the more risky they become.&lt;/p&gt;
-&lt;p&gt;Lately I have been looking at (and contributing to) &lt;a href=&#34;https://github.com/HKUDS/nanobot&#34;&gt;nanobot&lt;/a&gt;.
-This is a deliberately simpler version of &lt;a href=&#34;&#34;&gt;Moltbot, OpenClaw&lt;/a&gt;, or whatever it is called these days.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I have been playing around with &lt;a href=&#34;https://github.com/HKUDS/nanobot&#34;&gt;nanobot&lt;/a&gt;.
+This is a deliberately simpler version of &lt;a href=&#34;https://openclaw.ai&#34;&gt;Moltbot, OpenClaw&lt;/a&gt;, or whatever it is called these days.&lt;/p&gt;
+&lt;p&gt;If you haven&amp;rsquo;t heard about it, OpenClaw is an AI agent running on your behalf 24/7, potentially having all your credentials.
+This is possibly the piece of software with the steepest adoption curve of all time, it got to over 1 million active users in 1 week.
+Potentially it is also one of the biggest security dramas of all time.
+Because the more powerful they are, the more risky they become.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Securing my AI travel mail bot</title>

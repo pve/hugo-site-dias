@@ -28,7 +28,8 @@ The building is a symbol of power.&lt;/p&gt;</description>
       <link>http://localhost:1313/posts/agent-self-aware/</link>
       <pubDate>Wed, 04 Feb 2026 08:56:29 +0000</pubDate>
       <guid>http://localhost:1313/posts/agent-self-aware/</guid>
-      <description>&lt;p&gt;How do AI agents work, is what I am trying to understand these days.
+      <description>&lt;h1 id=&#34;self-aware&#34;&gt;Self aware&lt;/h1&gt;
+&lt;p&gt;How do AI agents work, is what I am trying to understand these days.
 And can we use agents to reason about agents, in particular about &lt;em&gt;themselves&lt;/em&gt;?&lt;/p&gt;
 &lt;p&gt;AI agents have a lot of potential for my work, but I am also interested in the security implications.
 Because the more powerful they are, the more risky they become.&lt;/p&gt;
