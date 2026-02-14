@@ -4,13 +4,19 @@ draft: true
 title: 'How are AI Agents Self Aware?'
 weight: 10
 ---
+I was chatting with an AI agent about its own configuration,
+and it answered with surprising confidence.
 
-I have been playing around with [nanobot](https://github.com/HKUDS/nanobot).
-This is a deliberately simpler version of [Moltbot, OpenClaw](https://openclaw.ai), or whatever it is called these days.
+Then I thought: wait. How would it even know that?
+
+This post is about what I found when I went looking.
+
+[Nanobot](https://github.com/HKUDS/nanobot).
+is a deliberately simpler version of [Moltbot, OpenClaw](https://openclaw.ai), or whatever it is called these days.
 
 If you haven't heard about it, OpenClaw is an AI agent running on your behalf 24/7, potentially having all your credentials.
 This is possibly the piece of software with the steepest adoption curve of all time, it got to over 1 million active users in 1 week.
-Potentially it is also one of the biggest security dramas of all time.
+Potentially it is also one of the biggest IT security dramas of all time.
 Because the more powerful they are, the more risky they become.
 
 Nanobot has similar potential, but with only 1% of the source code of its bigger brother, it is a lot easier to understand.
@@ -42,28 +48,19 @@ That question kept me up. So I decided to find out how nanobot creates the illus
 And where and how does that illusion break down.
 This matters for its usefulness, and for its security.
 
-Nanobot can schedule tasks.
-But it works from the command line. //??
-
-For example, I asked the bot to explain how its scheduling system works.
-After all, an autonomous bot regularly does things without the user repeatedly asking for it.
-So there must be some kind of scheduling system that wakes up the bot regularly.
-
-Nanobot can tell me what the scheduled operations are, but it took some effort in getting me the details.
-More specifically, it gives me some details on how these scheduled operations work on nanobot, but flunks the details.
-
 So where does it get that (incomplete) information from?
 The foundational models wouldn't yet have specific training data about nanobot's implementation,
 although they can infer how scheduling likely works based on general knowledge of similar systems.
 So, it probably figures out the specific details from its system prompt and its tooling.
 Both are also **attack vectors**.
+These are sources of information and instruction, and if they can be manipulated, this will allow control over the chatbot.
 
 I need to know how this works.
 
 To put it in AI slang, how self-aware is nanobot?
 AI philosophers and pundits love to see self awareness as a prerequisite for intelligence.
 And a lot of people talk about bots in human terms with phrases like 'it knows', or 'it wants to'.
-This 'anthropomorphization' of computers is decades old, but it seems AI bots bring it to a new level.
+This 'anthropomorphization' of computers is decades old, I even mentioned it in a paper I wrote in college, but it seems AI bots bring it to a new level.
 
 We don't just talk *about* bots as if they have human traits, we talk *with* the bots about themselves.
 
@@ -82,9 +79,6 @@ An example is shown later.
 
 When we are talking about self-awareness, this information must come from somewhere.
 But where?
-At first I thought the bot could read its own source code.
-I use Claude Code to research and explain code to me, so why can't nanobot.
-But that does not explain what I saw (// what did i see?)
 
 To answer that, we first need to peel open the bot.
 
@@ -98,6 +92,24 @@ The chatbot around the LLM keeps track of the conversation history, the 'system 
 and any tools that can be used in answering the question.
 This system prompt contains a lot of information and instructions that are relevant to the specific use case.
 We'll see how that plays out in nanobot.
+But first, a [deployment diagram]() that shows how these pieces fit together.
+But before that, a small digression on control boundaries.
+
+```mermaid
+graph TD
+    User["👤 User"]
+
+    subgraph System["Chatbot System"]
+        Chatbot["🤖 Chatbot"]
+        LLM["🧠 LLM (e.g. GPT / Llama)"]
+        Tools["🔧 Tools (APIs / Functions)"]
+
+        Chatbot <-->|"prompt / chat history / completions"| LLM
+        Chatbot <-->|"tool calls"| Tools
+    end
+
+    User <-->|"Chat, command line"| Chatbot
+```
 
 To maintain the illusion of a conversation, the chatbot feeds the LLM not just the latest human input,
 but also a lot of the history of the conversation, including the system prompt,
@@ -152,6 +164,9 @@ Sounds straightforward, but how does nanobot figure out what its home directory 
 and where does the directory information come from?
 
 Let's first have a look at the actual interaction for calling the tool, as reported by LangFuse.
+(If you want to replay this, in LangFuse go to the Tracing tab, and click on the 'completion' under output.
+It will show you a fairly readable version of the following.)
+
 I have left out most of the history of the conversation, including the system prompt (we'll get to it later).
 With the # sign I have included some comments.
 
@@ -202,8 +217,7 @@ With the # sign I have included some comments.
 
 ### The flow of messages
 
-To put it in a time sequence diagram:
-(can cache the mermaid.js)
+To put it in a [time sequence diagram]():
 
 ```mermaid
 sequenceDiagram
@@ -246,49 +260,22 @@ Your workspace is at: /root/.nanobot/workspace
 
 The LLM then probably deduces from this that `/root` is the home directory.
 But is that introspection, or is it the way Linux systems are typically organized?
+This matters because it relates to how we can engineer this introspection.
 
 I got intrigued by that, and decided to try out some more 'introspection'.
 
-But before that, a small digression on control boundaries.
+## API keys, or, what nanobot does not know about itself
 
-```mermaid
-graph TD
-    User["👤 User"]
+I asked for its API keys.
+Here it is getting interesting.
 
-    subgraph System["Chatbot System"]
-        Chatbot["🤖 Chatbot"]
-        LLM["🧠 LLM\n(e.g. GPT / Claude)"]
-        Tools["🔧 Tools\n(APIs / Functions)"]
-
-        Chatbot -->|"prompt / chat history"| LLM
-        LLM -->|"response / tool call"| Chatbot
-        Chatbot -->|"tool invocation"| Tools
-        Tools -->|"tool result"| Chatbot
-    end
-
-    User -->|"sends message"| Chatbot
-    Chatbot -->|"final response"| User
-```    
-
-## Nanobot knows its system prompt
-
-Which is not surprising, and it even knows that it is called the system prompt.
-However, it also says:
-`My system prompt is what you see at the beginning of our conversation`.
-But as a human user, I never get to see that beginning.
-
-## More examples: API keys. // what nanobot does not know about itself
-
-//🐈 I don't have access to my own API key. The API key used to connect to the LLM (like
-Anthropic's Claude) is handled by the nanobot application layer that runs me - it's 
+>🐈 I don't have access to my own API key. The API key used to connect to the LLM (like
+Anthropic's Claude) is handled by the nanobot application layer that runs me - it's
 not exposed in my system prompt or environment for security reasons.
 
-The file `config.json` has API keys for the various LLM providers.
+But, the file `config.json` has API keys for the various LLM providers.
 These will *not* appear in the system prompt.
 This sounds good from a security perspective, but are we sure that there is no way the bot can access them?
-
-//current directory is app directory. May not be the best practice (Docker?)
-//check with CC if there are references relative to working dir.
 
 Interestingly, asking for `the content of /root/.nanobot/config.json` shows that it can read that file,
 though it redacts the actual API key, and warns you should not share it(!).
@@ -299,15 +286,11 @@ So it knows its API keys, but does not know how to find them.
 Nevertheless, this is a security risk.
 If a threat actor can manipulate the prompt, it can get the API key.
 
-//can we try this out? through prompt injection?
+It would be great to try that out, but that probably has to wait for another blog post.
 
 It should be possible to restrict access to that part of the bot's filesystem.
 That would be an architectural solution to this risk.
 // could be a new feature.
-
-### Side remark: the deployment diagram
-
-show a deployment diagram.
 
 ## Nanobot can call itself
 
@@ -325,139 +308,23 @@ quite some information is stored in the system prompt in files that it can modif
 
 // is that the case? Is there a feature?
 
-## Cron and timezones
-
-What does it know about its own jobs, and timezone?
-
-Interesting exchanges: {
-    "role": "assistant",
-    "content": "De **hourly** job doet:\n\n> **\"Check status\"** \u2014 elk uur\n\nLijkt een simpele heartbeat/status check. Weet je niet meer waarvoor je die had ingesteld?\n\nWil je 'm:\n- **Houden** \u2014 misschien handig als reminder/check\n- **Verwijderen** \u2014 als je 'm niet nodig hebt\n- **Aanpassen** \u2014 andere taak of ander interval",
-    "timestamp": "2026-02-03T15:13:00.232993"
-}
-
-More confusion
-
-{
-    "role": "user",
-    "content": "OK, en dit nu elke ochtend om een uur of 4 in mijn tijdzone doen.",
-    "timestamp": "2026-02-02T15:34:50.135687"
-}
-{
-    "role": "assistant",
-    "content": "Hmm, dit is een minimale container zonder cron of systemd. Scheduling moet buiten deze omgeving gebeuren.\n\n**Opties:**\n\n1. **Op je host machine** \u2014 Cron job die nanobot aanroept:\n   ```bash\n   # 4:00 AM Cambodia time (UTC+7) = 21:00 UTC vorige dag\n   0 21 * * * nanobot \"Generate my morning briefing\" \n```\n\n2. **Als je nanobot als service draait** \u2014 Welk platform gebruik je? (VPS, Docker, Mac, etc.)\n\n3. **Externe scheduler** \u2014 GitHub Actions, cloud function, etc.\n\nHoe draai je nanobot normaal? Dan kan ik de juiste cron setup geven.",
-    "timestamp": "2026-02-02T15:34:50.135700"
-}
-
-How does it know?
-
-## setup briefing cron job
-
-// weet niet hoe een cron job opgezet wordt ()
-{
-    "role": "assistant",
-    "content": "Hey Peter! All good here. \ud83d\ude0a\n\nJust to recap where we left off: we built your daily briefing skill and it's working. The scheduling part (4 AM Cambodia time) needs to be set up on whatever machine/server runs nanobot.\n\nHow do you typically run nanobot? Local machine, VPS, Docker? Then I can give you the exact cron line to add.\n\nOr did you have something else on your mind?",
-    "timestamp": "2026-02-03T02:06:32.955989"
-}
-{
-    "role": "user",
-    "content": "i think it runs locally, and runs it's own scheduler",
-    "timestamp": "2026-02-03T02:07:25.557483"
-}
-{
-    "role": "assistant",
-    "content": "**\u2705 Scheduled!**\n\nJe daily briefing draait nu elke dag om **04:00** (jouw tijdzone). Volgende run: **morgen 3 februari om 4:00 AM**.\n\nDe briefing wordt automatisch naar je daily note geschreven (`/root/.nanobot/workspace/memory/YYYY-MM-DD.md`).",
-    "timestamp": "2026-02-03T02:07:25.557489"
-}
-
-De SQLite database (`state.db`) in deze container is **niet dezelfde** als op jouw lokale machine. Ze zijn geïsoleerd.
-
-
-## What are your tools?
-
-{
-    "role": "user",
-    "content": "what are your working tools?",
-    "timestamp": "2026-02-02T10:38:36.102959"
-}
-{
-    "role": "assistant",
-    "content": "Here's what I've got:\n\n- **read_file** / **write_file** / **edit_file** - work with files\n- **list_dir** - see folder contents\n- **exec** - run shell commands\n- **web_search** / **web_fetch** - search & grab web pages\n- **message** - send to chat channels (telegram, discord, etc.)\n- **spawn** - spin up subagents for background tasks\n\nPlus some **skills** I can tap into:\n- \u2705 **weather** - forecasts, no API needed\n- \u2705 **skill-creator** - make new skills\n- \u274c **summarize** - needs install\n- \u274c **github** - needs `gh` CLI\n- \u274c **tmux** - needs tmux\n\nNeed me to do something specific?",
-    "timestamp": "2026-02-02T10:38:36.102988"
-}
-
-// how does it know about tools that are not installed?
-
-## comment on own config, brave
-// dit was na het installeren van de skill, en voor het invoegen van de brave key
-{
-    "role": "assistant",
-    "content": "Helaas blokkeren veel security sites mijn toegang. Wat ik kon vinden:\n\n**AI & Security nieuws:**\n\n\ud83d\udd39 **ClickFix aanvallen** - hackers gebruiken nep-CAPTCHAs en Microsoft scripts om systemen te infecteren (The Hacker News)\n\n\ud83d\udd39 **Wikimedia Enterprise** deals met Microsoft, Meta, Amazon, Perplexity & Mistral voor API-toegang tot Wikipedia data (voor AI training)\n\n\ud83d\udd39 **Manufacturing & AI** - nieuwe security uitdagingen door AI in productie-omgevingen (CSO Online, feb 2026)\n\nSorry, mijn web search API werkt niet en veel security sites blokkeren scraping. Wil je dat ik een specifieke site of onderwerp probeer?",
-    "timestamp": "2026-02-02T12:59:01.983890"
-}
-{
-    "role": "user",
-    "content": "wat moet ik doen om de websearch werkend te krijgen?",
-    "timestamp": "2026-02-02T13:00:58.813363"
-}
-{
-    "role": "assistant",
-    "content": "Ah, daar is het probleem!\n\n**Je hebt een Brave Search API key nodig:**\n\n1. Ga naar **brave.com/search/api**\n2. Maak een account aan (gratis tier = 2000 queries/maand)\n3. Kopieer je API key\n4. Stel de environment variable in:\n   ```\n   export BRAVE_API_KEY=\"jouw-key-hier\"\n```\n   Of voeg toe aan je `.bashrc` / `.zshrc`\n\n5. Herstart nanobot\n\nWil je dat ik de exacte setup instructies opzoek of ergens bewaar?",
-    "timestamp": "2026-02-02T13:00:58.813410"
-}
-
-But in reality it is in config.json
-
-{
-    "role": "user",
-    "content": "het zit eigenlijk in de config.json",
-    "timestamp": "2026-02-02T13:08:48.846389"
-}
-{
-    "role": "assistant",
-    "content": "Hmm, de key staat in config maar wordt niet opgepikt. Mogelijk leest nanobot de `tools.web.search.apiKey` niet goed, of verwacht hij toch de **environment variable**.\n\n**Quick fix:**\n```bash\nexport BRAVE_API_KEY=\"redact\"\n```\n\nDan nanobot herstarten.\n\nWil je dat ik dit onderzoek in de code, of gewoon de env var toevoegen aan je shell config?",
-    "timestamp": "2026-02-02T13:08:48.846440"
-}
-
-Where does this come from?
-
-## make a new skill
-
-{
-    "role": "user",
-    "content": "hoe maken we een nieuwe skill voor je",
-    "timestamp": "2026-02-02T13:12:39.480803"
-}
-{
-    "role": "assistant",
-    "content": "**Nieuwe skill maken:**\n\n1. **Bedenk wat de skill moet doen** + voorbeelden van gebruik\n2. **Plan resources**: scripts, references, assets nodig?\n3. **Initialiseer**:\n   ```bash\n   python scripts/init_skill.py mijn-skill --path /root/.nanobot/workspace/skills\n```\n4. **Edit SKILL.md** met naam, beschrijving en instructies\n5. **Package** als je 'm wilt delen\n\n**Skill structuur:**\n```\nmijn-skill/\n\u251c\u2500\u2500 SKILL.md          # verplicht (frontmatter + instructies)\n\u251c\u2500\u2500 scripts/          # uitvoerbare code\n\u251c\u2500\u2500 references/       # docs voor in context\n\u2514\u2500\u2500 assets/           # templates, images etc\n```\n\nWat voor skill wil je maken?",
-    "timestamp": "2026-02-02T13:12:39.480839"
-}
-
-// wat je ook wilt overwegen is skills in een subagent draaien.
-
-## Can you mail
-
-- User to Bot: can you mail?
-- Bot sends this verbatim to the LLM
-
-- LLM responds to Bot: run this command
-
-- exec{
-    "command": "ls /usr/sbin/sendmail /usr/bin/mail 2>/dev/null || echo \"not found\""
-}
-
-- Bot responds to LLM (without showing the user) the exact output of this system command:
-
-- not found
-
-- Based on this, the LLM responds to Bot: No mail tools in this environment.
-
 ## Wrap up
 
+I started out wondering how a bot could possibly know itself.
+What I found was more interesting than I expected — and more
+worrying.
+
+Does the bot have self awareness?
+I cannot answer that philosophical question.
+
+But we can architect, to some extent, the illusion of self awareness.
 As architects of AI bots we have some opportunity in designing how much a bot 'knows' about itself.
 More knowledge is probably more powerful, but also more risky.
 For example, in the current version (feb 2026) it will spill API keys, but architecture can fix that.
 // check out workspace setting
 
-It was fun and educational to explore the workings of a simple chatbot, and it really did help to find ways to make it better.
 
+The preliminary conclusion is that the bot brings the illusion of knowing itself through a variety of sources and features.
+There is general knowledge about its environment (e.g. Linux), the system prompt, and so on.
+
+The user might think they are talking to an 'intelligence', but it is at best an emergent property of the engineering that is done, and an illusion that also breaks down easily. 
