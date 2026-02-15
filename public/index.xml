@@ -76,8 +76,8 @@ The building is a symbol of power.&lt;/p&gt;</description>
 and it answered with surprising confidence.&lt;/p&gt;
 &lt;p&gt;Then I thought: wait. How would it even know that?&lt;/p&gt;
 &lt;p&gt;This post is about what I found when I went looking.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/HKUDS/nanobot&#34;&gt;Nanobot&lt;/a&gt;.
-is a deliberately simpler version of &lt;a href=&#34;https://openclaw.ai&#34;&gt;Moltbot, OpenClaw&lt;/a&gt;, or whatever it is called these days.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/HKUDS/nanobot&#34;&gt;Nanobot&lt;/a&gt;
+is a deliberately simpler version of &lt;a href=&#34;https://openclaw.ai&#34;&gt;OpenClaw&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you haven&amp;rsquo;t heard about it, OpenClaw is an AI agent running on your behalf 24/7, potentially having all your credentials.
 This is possibly the piece of software with the steepest adoption curve of all time, it got to over 1 million active users in 1 week.
 Potentially it is also one of the biggest IT security dramas of all time.

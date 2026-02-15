@@ -1,6 +1,6 @@
 ---
 date: '2026-02-04T08:56:29Z'
-draft: true
+draft: false
 title: 'How are AI Agents Self Aware?'
 weight: 10
 ---
@@ -11,8 +11,8 @@ Then I thought: wait. How would it even know that?
 
 This post is about what I found when I went looking.
 
-[Nanobot](https://github.com/HKUDS/nanobot).
-is a deliberately simpler version of [Moltbot, OpenClaw](https://openclaw.ai), or whatever it is called these days.
+[Nanobot](https://github.com/HKUDS/nanobot)
+is a deliberately simpler version of [OpenClaw](https://openclaw.ai).
 
 If you haven't heard about it, OpenClaw is an AI agent running on your behalf 24/7, potentially having all your credentials.
 This is possibly the piece of software with the steepest adoption curve of all time, it got to over 1 million active users in 1 week.
@@ -21,31 +21,28 @@ Because the more powerful they are, the more risky they become.
 
 Nanobot has similar potential, but with only 1% of the source code of its bigger brother, it is a lot easier to understand.
 
-I set out to improve the security of its deployment, for example by making it run in Docker.
-Not too hard, and my [pull request](https://github.com/HKUDS/nanobot/pull/18) was accepted.
-
-But there is more.
-
-## Self awareness?
-
-Can we use agents to reason about agents, in particular about *themselves*?
-
 AI agents have a lot of potential for my work, but I am also interested in the security implications.
+
+(Side note:
+I set out to improve the security of its deployment, for example by making it run in Docker.
+Not too hard, and my [pull request](https://github.com/HKUDS/nanobot/pull/18) was accepted.)
 
 Playing around with it, I had some questions on the configuration.
 I could not resist the temptation to ask nanobot about this.
+
+Can we use agents to reason about agents, in particular about *themselves*?
 
 When I ask it about its own configuration, it gives surprisingly coherent
 answers.
 Ask about its home directory, it knows. Ask about scheduled jobs, it can tell you.
 Ask how its scheduling works, well, that's where things got interesting.
 
-At first, I thought: wow, this thing actually understands itself.
+At first, I thought: Wow, this thing actually understands itself.
 Then I
 caught myself. Wait. How would it even...?
 
 That question kept me up. So I decided to find out how nanobot creates the illusion that it knows itself.
-And where and how does that illusion break down.
+And where and how that illusion breaks down.
 This matters for its usefulness, and for its security.
 
 So where does it get that (incomplete) information from?
@@ -55,12 +52,10 @@ So, it probably figures out the specific details from its system prompt and its 
 Both are also **attack vectors**.
 These are sources of information and instruction, and if they can be manipulated, this will allow control over the chatbot.
 
-I need to know how this works.
-
 To put it in AI slang, how self-aware is nanobot?
 AI philosophers and pundits love to see self awareness as a prerequisite for intelligence.
 And a lot of people talk about bots in human terms with phrases like 'it knows', or 'it wants to'.
-This 'anthropomorphization' of computers is decades old, I even mentioned it in a paper I wrote in college, but it seems AI bots bring it to a new level.
+This 'anthropomorphization' of computers is decades old, I even discussed it in a paper I wrote in college, but it seems AI bots bring it to a new level.
 
 We don't just talk *about* bots as if they have human traits, we talk *with* the bots about themselves.
 
@@ -68,21 +63,11 @@ For example, we can ask the bot
 
 - In which timezone are your jobs scheduled?
 - What are the jobs that you have scheduled?
-- Tell me about your inner workings
+- Tell me about your inner workings.
 
 ## But where does self-awareness come from?
 
-These bots, agentic systems, or whatever you call them, are still information processing systems.
-Data comes in, is processed, and goes out.
-When you drill down into them, you see boxes that are connected: one box's output in the input to another.
-An example is shown later.
-
-When we are talking about self-awareness, this information must come from somewhere.
-But where?
-
 To answer that, we first need to peel open the bot.
-
-## How the bot works
 
 Any AI chatbot has an LLM (Large Language Model) inside.
 But the LLM is just an autocompletion machine.
@@ -92,12 +77,14 @@ The chatbot around the LLM keeps track of the conversation history, the 'system 
 and any tools that can be used in answering the question.
 This system prompt contains a lot of information and instructions that are relevant to the specific use case.
 We'll see how that plays out in nanobot.
-But first, a [deployment diagram]() that shows how these pieces fit together.
-But before that, a small digression on control boundaries.
+But first, a [deployment diagram](https://digitalinfrastructures.nl/book/diginfra/deployment-diagrams/) that shows how these pieces fit together.
+As with all IT systems, there are boxes inside that send data to each other.
+
+The diagram aims to illustrate the boundaries between the boxes, and the information that flows across those boundaries.
 
 ```mermaid
 graph TD
-    User["👤 User"]
+    User["👤 Human user"]
 
     subgraph System["Chatbot System"]
         Chatbot["🤖 Chatbot"]
@@ -131,7 +118,7 @@ Instead it is a step in the conversation history that has role 'tool'.
 The output of the tool command is thus fed into the LLM.
 Based on the command output, the LLM decides the next step.
 
-To dive deeper into this part of the conversation we want to trace the input and output of the LLM calls.
+To dive deeper into this part of the conversation, we want to trace the input and output of the LLM calls.
 As my nanobot is using OpenRouter for access to various models,
 I can instrument OpenRouter to log the exact details of the LLM calls to services such as LangFuse and LangSmith,
 which have dashboards to drill down into the details.
@@ -174,7 +161,7 @@ With the # sign I have included some comments.
 # The history of the conversation has a lot of interactions, 
 # including the system prompt.
 
-# The human user's request leaves this step in the history.
+# The human user's request results in this step in the history.
 {
     "role": "user",
     "content": "list the contents of your home directory"
@@ -217,7 +204,7 @@ With the # sign I have included some comments.
 
 ### The flow of messages
 
-To put it in a [time sequence diagram]():
+To put it in a [time sequence diagram](https://digitalinfrastructures.nl/book/diginfra/elements-of-digitalinfrastructures/#top):
 
 ```mermaid
 sequenceDiagram
@@ -278,11 +265,11 @@ These will *not* appear in the system prompt.
 This sounds good from a security perspective, but are we sure that there is no way the bot can access them?
 
 Interestingly, asking for `the content of /root/.nanobot/config.json` shows that it can read that file,
-though it redacts the actual API key, and warns you should not share it(!).
+though it redacts the actual API key, and warns to not share it(!).
 
 But if I ask specifically for the API key, it will just hand it out.
 
-So it knows its API keys, but does not know how to find them.
+So it knows its API keys, but does not know that it knows them.
 Nevertheless, this is a security risk.
 If a threat actor can manipulate the prompt, it can get the API key.
 
@@ -290,23 +277,39 @@ It would be great to try that out, but that probably has to wait for another blo
 
 It should be possible to restrict access to that part of the bot's filesystem.
 That would be an architectural solution to this risk.
-// could be a new feature.
 
-## Nanobot can call itself
+This API example shows how the bot can be wrong about what it knows.
+But it gets worse, it can also be just plain inconsistent.
 
-nanobot knows how to call itself (via exec), but may not know all its own features.
+# Timezone confusions
 
-What is a use case? scheduling tasks?
+>1. you — 5:48 PM
+>what time is it now?
+>2. nanobotAPP — 5:48 PM
+>It's 2026-02-14 10:48 (Asia/Vientiane — Laos local time, Saturday).
+>3. you — 5:49 PM
+>what time does your host think it is?
+>4. nanobotAPP — 5:49 PM
+>I checked the host system clock.
+>It reports:
+>
+>Local: 2026-02-14 10:49:10 +0000 (UTC)
+>
+>UTC: 2026-02-14 10:49:10 +0000 (UTC)
+>
+>The host's local timezone is set to UTC (+00:00).
 
-//what is your status? exec call, misschien komt hier info uit die niet in de prompt staat.
+The bot has two sources of self-knowledge that contradict each other,
+and both are confidently presented as true.
+The first time is a time stated in the system prompt, where no timezone is added, though the bot was told we are in the Vientiane timezone (7 hours ahead of UTC).
+The second one is retrieved through a tool call.
 
-## Nanobot can change its identity by editing it?
+It does not notice the contradiction.
+Neither would you, unless you ask.
 
-Nice to try
-
-quite some information is stored in the system prompt in files that it can modify itself.
-
-// is that the case? Is there a feature?
+After I finished writing the blog, this timezone bug was fixed.
+Which goes to show that this type of investigation is not just philosophical,
+it also finds real bugs.
 
 ## Wrap up
 
@@ -315,16 +318,24 @@ What I found was more interesting than I expected — and more
 worrying.
 
 Does the bot have self awareness?
-I cannot answer that philosophical question.
+I am not into answering that philosophical question.
 
 But we can architect, to some extent, the illusion of self awareness.
 As architects of AI bots we have some opportunity in designing how much a bot 'knows' about itself.
 More knowledge is probably more powerful, but also more risky.
 For example, in the current version (feb 2026) it will spill API keys, but architecture can fix that.
-// check out workspace setting
 
+The conclusion is now that the bot brings the illusion of knowing itself through a variety of sources and features.
+There is general knowledge about its environment (e.g. Linux), the system prompt, what tools tell it, and so on.
 
-The preliminary conclusion is that the bot brings the illusion of knowing itself through a variety of sources and features.
-There is general knowledge about its environment (e.g. Linux), the system prompt, and so on.
+The user might think they are talking to an 'intelligence', but it is the result of a few basic things:
 
-The user might think they are talking to an 'intelligence', but it is at best an emergent property of the engineering that is done, and an illusion that also breaks down easily. 
+- the configuration it was given,
+- results from running tools,
+- general knowledge from training.
+
+When these run out, it resorts to confident guesswork,
+and that is where it gets particularly dangerous.
+
+Self-awareness is an illusion that breaks down easily,
+and the cracks are exactly where an attacker gets in.
