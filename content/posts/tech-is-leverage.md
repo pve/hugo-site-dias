@@ -22,7 +22,7 @@ The only solution was to lift the car and put stones under the wheels to allow i
 For that we used the simplest, and probably most ancient piece of technology: the lever.
 Archimedes already said, "Give me a lever long enough and a fulcrum on which to place it, and I shall move the world,"
 
-In the bush we found a 3 meter pole, which we levered on a rock, and used to lift the car where we wanted it.
+In the bush we found a 3 meter pole, we levered it on a rock, and used it to lift the car where we wanted it.
 
 The lift was quite easy, as a little calculation shows.
 We needed to lift about half the weight of the car, let's say 400 kilogram, with a 1:10 lever.
@@ -38,7 +38,7 @@ Ingenuity and the use of materials at hand had gotten us out of a difficult situ
 At the same time, we should be aware of the risks of using any technology.
 In this case, we need to consider if the pole is strong enough for the forces that we apply.
 Apparently it was.
-But the other tool in the story, the car, although sufficient to bring is to Tsavo, was not sufficient to bring us across Tsavo.
+But the other tool in the story, the car, although sufficient to bring is *to* Tsavo, was not sufficient to bring us *across* Tsavo.
 
 It looks like a big leap from that situation to IT and artificial intelligence, but the principles remain the same.
 Artificial intelligence is the newest technology that we apply to a data processing task.
@@ -49,3 +49,9 @@ But to really benefit from this technology we have to, as always, understand the
 The 'materials' here are the various tools, models, frameworks and services.
 How to apply them involves understanding their strengths, weaknesses, and risks.
 
+In my current travels I am using AI to give me a morning brief on the activities of the day.
+It processes a number of unstructured mails, removes the noise, and sends me a summary.
+
+That saves me time, and makes it easier to find the most relevant information.
+
+I used a bunch of AI and other IT services, those are my levers.

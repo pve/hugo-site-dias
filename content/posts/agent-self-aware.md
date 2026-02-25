@@ -339,3 +339,7 @@ and that is where it gets particularly dangerous.
 
 Self-awareness is an illusion that breaks down easily,
 and the cracks are exactly where an attacker gets in.
+
+Therefore, the question that keeps me up: in your organization, who is actually responsible for what an AI agent knows about itself?
+The architect who builds it?
+The security officer who has it audited? Or is it nobody? And then, what happens?
