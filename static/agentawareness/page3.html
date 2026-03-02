@@ -253,6 +253,27 @@
 </div>
 </div>
 </div>
+<!-- Footer -->
+<div class="absolute bottom-0 w-full px-12 py-6 flex justify-between items-center text-slate-500 font-mono text-xs border-t border-slate-800 bg-slate-900 z-20">
+    <div class="flex items-center gap-8">
+        <a href="page2.html" class="text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-2 uppercase tracking-widest">
+            <i class="fa-solid fa-chevron-left"></i> Previous
+        </a>
+        <p>NANOBOT CASE STUDY</p>
+    </div>
+    <div class="flex items-center gap-8">
+        <span class="tracking-widest">03 / 06</span>
+        <a href="page4.html" class="text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-2 uppercase tracking-widest font-bold">
+            Next <i class="fa-solid fa-chevron-right"></i>
+        </a>
+    </div>
 </div>
+</div>
+<script>
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') window.location.href = 'page2.html';
+        if (e.key === 'ArrowRight') window.location.href = 'page4.html';
+    });
+</script>
 </body>
 </html>
