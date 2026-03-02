@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=720, initial-scale=1.0" name="viewport"/>
+<title>Conclusion &amp; Risks</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&amp;family=Inter:wght@400;500;600&amp;family=Roboto+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0f172a; /* Slate 900 */
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #0f172a;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* SVG Grid Pattern */
+        .bg-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0L1 40' stroke='%2334d399' stroke-opacity='0.05' stroke-width='1'/%3E%3Cpath d='M0 1L40 1' stroke='%2334d399' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
+            z-index: 0;
+        }
+
+        /* Insight Cards */
+        .insight-card {
+            background-color: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .insight-icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        /* Mitigation Cards */
+        .mitigation-card {
+            background-color: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mitigation-card.blue { border-top: 4px solid #3b82f6; }
+        .mitigation-card.emerald { border-top: 4px solid #10b981; }
+        .mitigation-card.purple { border-top: 4px solid #a855f7; }
+
+        .check-list-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #cbd5e1;
+            line-height: 1.4;
+        }
+
+        .check-icon {
+            margin-right: 10px;
+            margin-top: 3px;
+            font-size: 12px;
+        }
+
+        .card-bg-icon {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            font-size: 120px;
+            opacity: 0.03;
+            transform: rotate(-15deg);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .badge-blue { background-color: rgba(59, 130, 246, 0.1); color: #60a5fa; }
+        .badge-emerald { background-color: rgba(16, 185, 129, 0.1); color: #34d399; }
+        .badge-purple { background-color: rgba(168, 85, 247, 0.1); color: #c084fc; }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background -->
+<div class="bg-grid"></div>
+<!-- Header -->
+<div class="z-10 px-16 pt-10 pb-4 border-b border-slate-800/50 flex justify-between items-end">
+<div>
+<p class="text-emerald-400 font-mono text-sm tracking-widest uppercase mb-2">Conclusion</p>
+<h1 class="text-4xl font-bold text-white tracking-tight">Engineered Illusion &amp; Security</h1>
+</div>
+<div class="flex items-center gap-2 text-slate-500 font-mono text-xs">
+<i class="fa-solid fa-shield-halved"></i>
+<span>RISK ASSESSMENT</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 px-16 py-8 z-10 flex flex-col gap-8">
+<!-- Top Section: Key Takeaways -->
+<div class="grid grid-cols-2 gap-6">
+<!-- Insight 1 -->
+<div class="insight-card border-l-4 border-l-slate-500">
+<div class="insight-icon-box bg-slate-800 text-slate-300">
+<i class="fa-solid fa-robot"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white mb-1">Not Intrinsic</h3>
+<p class="text-slate-400 text-sm">Self-awareness is an engineered feature, not an emergent property of the model.</p>
+</div>
+</div>
+<!-- Insight 2 -->
+<div class="insight-card border-l-4 border-l-red-500">
+<div class="insight-icon-box bg-red-900/20 text-red-400">
+<i class="fa-solid fa-link-slash"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white mb-1">Cracks = Vulnerabilities</h3>
+<p class="text-slate-400 text-sm">Any inconsistency in the "illusion" allows attackers to manipulate the agent's reality.</p>
+</div>
+</div>
+</div>
+<!-- Divider with Label -->
+<div class="flex items-center gap-4">
+<div class="h-px bg-slate-700 flex-1"></div>
+<span class="text-emerald-400 font-mono text-xs uppercase tracking-widest bg-slate-900/50 px-2 rounded">Defensive Architecture</span>
+<div class="h-px bg-slate-700 flex-1"></div>
+</div>
+<!-- Bottom Section: Mitigations -->
+<div class="grid grid-cols-3 gap-6 flex-1">
+<!-- Mitigation 1: Architecture -->
+<div class="mitigation-card blue">
+<i class="fa-solid fa-box card-bg-icon"></i>
+<span class="badge badge-blue">Infrastructure</span>
+<h3 class="text-lg font-bold text-white mb-4">Isolation &amp; Access</h3>
+<div class="check-list-item">
+<i class="fa-solid fa-check check-icon text-blue-400"></i>
+<span><strong>Sandboxing:</strong> Run agents in isolated containers (e.g., Docker) to limit filesystem reach.</span>
+</div>
+<div class="check-list-item">
+<i class="fa-solid fa-check check-icon text-blue-400"></i>
+<span><strong>Least Privilege:</strong> Restrict file access. The agent shouldn't be able to read its own <span class="font-mono text-xs bg-slate-800 px-1 rounded">config.json</span>.</span>
+</div>
+</div>
+<!-- Mitigation 2: Data Hygiene -->
+<div class="mitigation-card emerald">
+<i class="fa-solid fa-key card-bg-icon"></i>
+<span class="badge badge-emerald">Prompt Engineering</span>
+<h3 class="text-lg font-bold text-white mb-4">Secret Management</h3>
+<div class="check-list-item">
+<i class="fa-solid fa-check check-icon text-emerald-400"></i>
+<span><strong>No Secrets in Prompts:</strong> Never inject raw API keys or passwords into the System Prompt.</span>
+</div>
+<div class="check-list-item">
+<i class="fa-solid fa-check check-icon text-emerald-400"></i>
+<span><strong>Guard Tool Outputs:</strong> Redact sensitive data from tool return values before feeding back to LLM.</span>
+</div>
+</div>
+<!-- Mitigation 3: Monitoring -->
+<div class="mitigation-card purple">
+<i class="fa-solid fa-eye card-bg-icon"></i>
+<span class="badge badge-purple">Observability</span>
+<h3 class="text-lg font-bold text-white mb-4">Verification</h3>
+<div class="check-list-item">
+<i class="fa-solid fa-check check-icon text-purple-400"></i>
+<span><strong>Monitor LLM Calls:</strong> Trace full inputs/outputs (e.g., LangFuse) to detect prompt injection attempts.</span>
+</div>
+<div class="check-list-item">
+<i class="fa-solid fa-check check-icon text-purple-400"></i>
+<span><strong>Consistency Checks:</strong> Add logic layer to validate conflicting data (e.g., timezones) before answering.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-0 w-full px-12 py-6 flex justify-between items-center text-slate-500 font-mono text-xs border-t border-slate-800 bg-slate-900">
+<p>NANOBOT CASE STUDY</p>
+<p>06 / 06</p>
+</div>
+</div>
+</body>
+</html>

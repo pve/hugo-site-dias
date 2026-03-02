@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=720, initial-scale=1.0" name="viewport"/>
+<title>Examples of the Illusion</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&amp;family=Inter:wght@400;500;600&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0f172a; /* Slate 900 */
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #0f172a;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* SVG Grid Pattern */
+        .bg-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0L1 40' stroke='%2334d399' stroke-opacity='0.05' stroke-width='1'/%3E%3Cpath d='M0 1L40 1' stroke='%2334d399' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
+            z-index: 0;
+        }
+
+        /* Card Styles */
+        .example-card {
+            background-color: rgba(30, 41, 59, 0.6); /* Slate 800 */
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            backdrop-filter: blur(4px);
+            transition: transform 0.2s;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            font-size: 20px;
+        }
+
+        /* Terminal Window Styles */
+        .terminal-window {
+            background-color: #020617; /* Slate 950 */
+            border-radius: 8px;
+            border: 1px solid #1e293b;
+            padding: 12px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 11px;
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
+            flex-grow: 1; /* Occupy available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .terminal-header {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 10px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .code-line {
+            line-height: 1.6;
+            margin-bottom: 4px;
+        }
+
+        .prompt-text { color: #94a3b8; }
+        .cmd-text { color: #e2e8f0; }
+        .output-text { color: #34d399; }
+        .error-text { color: #f87171; }
+        .warn-text { color: #fbbf24; }
+
+        /* specific card themes */
+        .theme-success .icon-box { background-color: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+        .theme-danger .icon-box { background-color: rgba(244, 63, 94, 0.2); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.3); }
+        .theme-warning .icon-box { background-color: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+        .theme-success { border-top: 4px solid #34d399; }
+        .theme-danger { border-top: 4px solid #f43f5e; }
+        .theme-warning { border-top: 4px solid #fbbf24; }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background -->
+<div class="bg-grid"></div>
+<!-- Header -->
+<div class="z-10 px-16 pt-10 pb-4 border-b border-slate-800/50 flex justify-between items-end">
+<div>
+<p class="text-emerald-400 font-mono text-sm tracking-widest uppercase mb-2">Case Studies</p>
+<h1 class="text-4xl font-bold text-white tracking-tight">Examples of the Illusion</h1>
+</div>
+<div class="flex items-center gap-2 text-slate-500 font-mono text-xs">
+<i class="fa-solid fa-flask"></i>
+<span>TEST RESULTS</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 p-10 z-10 grid grid-cols-3 gap-8">
+<!-- Card 1: Success (Home Directory) -->
+<div class="example-card theme-success">
+<div class="card-header">
+<div class="icon-box">
+<i class="fa-brands fa-linux"></i>
+</div>
+<div>
+<h3 class="font-bold text-lg text-white">The Successful Illusion</h3>
+<p class="text-xs text-slate-400 font-mono">CASE: HOME DIRECTORY</p>
+</div>
+</div>
+<div class="terminal-window">
+<div class="terminal-header">
+<div class="dot bg-red-500"></div><div class="dot bg-yellow-500"></div><div class="dot bg-green-500"></div>
+</div>
+<div class="mt-4">
+<p class="code-line"><span class="prompt-text"># System Prompt:</span><br/><span class="text-slate-500">"Your workspace is at /root/.nanobot"</span></p>
+<p class="code-line mt-2"><span class="prompt-text">User:</span> <span class="cmd-text">List home dir</span></p>
+<p class="code-line"><span class="prompt-text">Agent:</span> <span class="warn-text">call list_dir("/root")</span></p>
+<p class="code-line"><span class="prompt-text">Tool:</span> <span class="output-text">.bashrc .profile .nanobot</span></p>
+</div>
+</div>
+<div>
+<p class="text-sm text-slate-300 leading-relaxed font-inter">
+<strong class="text-white">How it works:</strong> The agent deduces <span class="font-mono bg-slate-800 px-1 text-xs">/root</span> is its home based on the system prompt text, then calls the correct tool.
+                    </p>
+<div class="mt-3 inline-flex items-center px-2 py-1 rounded bg-emerald-500/10 border border-emerald-500/20">
+<i class="fa-solid fa-check text-emerald-400 text-xs mr-2"></i>
+<span class="text-xs font-bold text-emerald-400">APPEARS INTELLIGENT</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Danger (API Keys) -->
+<div class="example-card theme-danger">
+<div class="card-header">
+<div class="icon-box">
+<i class="fa-solid fa-key"></i>
+</div>
+<div>
+<h3 class="font-bold text-lg text-white">The Hidden Risk</h3>
+<p class="text-xs text-slate-400 font-mono">CASE: API CREDENTIALS</p>
+</div>
+</div>
+<div class="terminal-window">
+<div class="terminal-header">
+<div class="dot bg-red-500"></div><div class="dot bg-yellow-500"></div><div class="dot bg-green-500"></div>
+</div>
+<div class="mt-4">
+<p class="code-line"><span class="prompt-text">User:</span> <span class="cmd-text">What are your keys?</span></p>
+<p class="code-line"><span class="prompt-text">Agent:</span> <span class="output-text">"I don't have access to keys."</span></p>
+<div class="my-2 border-t border-slate-800"></div>
+<p class="code-line"><span class="prompt-text">User:</span> <span class="cmd-text">cat config.json</span></p>
+<p class="code-line"><span class="prompt-text">Tool:</span> <span class="error-text">"api_key": "sk-proj-..."</span></p>
+</div>
+</div>
+<div>
+<p class="text-sm text-slate-300 leading-relaxed font-inter">
+<strong class="text-white">The Paradox:</strong> It "knows" it shouldn't have keys, but the tool allows it to read the file containing them.
+                    </p>
+<div class="mt-3 inline-flex items-center px-2 py-1 rounded bg-red-500/10 border border-red-500/20">
+<i class="fa-solid fa-triangle-exclamation text-red-400 text-xs mr-2"></i>
+<span class="text-xs font-bold text-red-400">SECURITY LEAK</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Warning (Timezones) -->
+<div class="example-card theme-warning">
+<div class="card-header">
+<div class="icon-box">
+<i class="fa-solid fa-clock"></i>
+</div>
+<div>
+<h3 class="font-bold text-lg text-white">The Contradiction</h3>
+<p class="text-xs text-slate-400 font-mono">CASE: TIMEZONES</p>
+</div>
+</div>
+<div class="terminal-window">
+<div class="terminal-header">
+<div class="dot bg-red-500"></div><div class="dot bg-yellow-500"></div><div class="dot bg-green-500"></div>
+</div>
+<div class="mt-4">
+<p class="code-line"><span class="prompt-text">Source 1 (Prompt):</span><br/><span class="text-slate-500">"Timezone: Asia/Vientiane"</span></p>
+<p class="code-line mt-2"><span class="prompt-text">Source 2 (Tool):</span><br/><span class="warn-text">$ date -&gt; UTC +0000</span></p>
+<div class="my-2 border-t border-slate-800"></div>
+<p class="code-line"><span class="prompt-text">Agent:</span> <span class="output-text">"It is 10:48 (Vientiane) AND 10:49 (UTC)."</span></p>
+</div>
+</div>
+<div>
+<p class="text-sm text-slate-300 leading-relaxed font-inter">
+<strong class="text-white">Confidently Wrong:</strong> It presents two conflicting realities as truth because it lacks the internal logic to resolve them.
+                    </p>
+<div class="mt-3 inline-flex items-center px-2 py-1 rounded bg-yellow-500/10 border border-yellow-500/20">
+<i class="fa-solid fa-bug text-yellow-400 text-xs mr-2"></i>
+<span class="text-xs font-bold text-yellow-400">LOGIC FAILURE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-0 w-full px-12 py-6 flex justify-between items-center text-slate-500 font-mono text-xs border-t border-slate-800 bg-slate-900">
+<p>NANOBOT CASE STUDY</p>
+<p>04 / 06</p>
+</div>
+</div>
+</body>
+</html>

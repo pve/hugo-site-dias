@@ -54,4 +54,6 @@ It processes a number of unstructured mails, removes the noise, and sends me a s
 
 That saves me time, and makes it easier to find the most relevant information.
 
-I used a bunch of AI and other IT services, those are my levers.
+I used a bunch of AI and other IT services, those are levers I use.
+
+In this case, I can 

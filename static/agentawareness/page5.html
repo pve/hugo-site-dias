@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=720, initial-scale=1.0" name="viewport"/>
+<title>Where Self-Awareness Comes From</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&amp;family=Inter:wght@400;500;600&amp;family=Roboto+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0f172a; /* Slate 900 */
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #0f172a;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* SVG Grid Pattern */
+        .bg-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0L1 40' stroke='%2334d399' stroke-opacity='0.05' stroke-width='1'/%3E%3Cpath d='M0 1L40 1' stroke='%2334d399' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
+            z-index: 0;
+        }
+
+        /* Section Containers */
+        .section-label {
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            font-family: 'Roboto Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            opacity: 0.6;
+        }
+
+        /* Card Styles */
+        .source-card, .failure-card {
+            background-color: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: transform 0.2s;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .source-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 12px 12px 0 0;
+        }
+        
+        .failure-card:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 0 0 12px 12px;
+        }
+
+        /* Specific Colors */
+        .card-blue:before { background-color: #3b82f6; } /* Prompt */
+        .card-purple:before { background-color: #a855f7; } /* Tools */
+        .card-emerald:before { background-color: #10b981; } /* Knowledge */
+        
+        .card-yellow:before { background-color: #eab308; } /* Guesswork */
+        .card-orange:before { background-color: #f97316; } /* Inconsistency */
+        .card-red:before { background-color: #ef4444; } /* Manipulation */
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 12px;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .arrow-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            position: relative;
+        }
+
+        .line {
+            height: 2px;
+            background-color: #334155;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .badge-pill {
+            z-index: 2;
+            background-color: #0f172a;
+            border: 1px solid #334155;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 11px;
+            color: #94a3b8;
+        }
+
+        .code-tiny {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 10px;
+            color: #cbd5e1;
+            background-color: #1e293b;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background -->
+<div class="bg-grid"></div>
+<!-- Header -->
+<div class="z-10 px-16 pt-10 pb-4 border-b border-slate-800/50 flex justify-between items-end">
+<div>
+<p class="text-emerald-400 font-mono text-sm tracking-widest uppercase mb-2">Analysis</p>
+<h1 class="text-4xl font-bold text-white tracking-tight">Where "Self-Awareness" Comes From</h1>
+</div>
+<div class="flex items-center gap-2 text-slate-500 font-mono text-xs">
+<i class="fa-solid fa-layer-group"></i>
+<span>COMPONENT BREAKDOWN</span>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="flex-1 px-16 py-8 z-10 flex flex-col gap-4">
+<!-- TOP SECTION: SOURCES -->
+<div class="flex-1 relative pl-8">
+<div class="section-label text-emerald-400">Sources of Truth</div>
+<div class="grid grid-cols-3 gap-6 h-full">
+<!-- Source 1: System Prompt -->
+<div class="source-card card-blue">
+<div class="icon-circle text-blue-400 border border-blue-500/20">
+<i class="fa-solid fa-file-code"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">1. System Prompt</h3>
+<p class="text-sm text-slate-400 mb-3 flex-1">Explicit instructions and configuration injected into every conversation turn.</p>
+<div class="bg-blue-900/20 border border-blue-500/20 p-3 rounded-lg mt-auto">
+<p class="text-xs text-blue-200 font-mono">"Your workspace is at /root/.nanobot"</p>
+</div>
+</div>
+<!-- Source 2: Tool Outputs -->
+<div class="source-card card-purple">
+<div class="icon-circle text-purple-400 border border-purple-500/20">
+<i class="fa-solid fa-terminal"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">2. Tool Outputs</h3>
+<p class="text-sm text-slate-400 mb-3 flex-1">Real-time feedback from the OS environment via executed commands.</p>
+<div class="bg-purple-900/20 border border-purple-500/20 p-3 rounded-lg mt-auto">
+<p class="text-xs text-purple-200 font-mono">$ ls -la /root<br/>&gt; .nanobot .bashrc</p>
+</div>
+</div>
+<!-- Source 3: General Knowledge -->
+<div class="source-card card-emerald">
+<div class="icon-circle text-emerald-400 border border-emerald-500/20">
+<i class="fa-solid fa-globe"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">3. General Knowledge</h3>
+<p class="text-sm text-slate-400 mb-3 flex-1">Pre-training on Linux systems allows the LLM to infer standard behaviors.</p>
+<div class="bg-emerald-900/20 border border-emerald-500/20 p-3 rounded-lg mt-auto">
+<p class="text-xs text-emerald-200 font-mono">Inference: "Configs are usually in .json files"</p>
+</div>
+</div>
+</div>
+</div>
+<!-- DIVIDER -->
+<div class="arrow-divider">
+<div class="line"></div>
+<div class="badge-pill">
+<i class="fa-solid fa-arrow-down mr-2"></i> WHEN THESE SOURCES CONTRADICT OR FAIL
+                </div>
+</div>
+<!-- BOTTOM SECTION: FAILURES -->
+<div class="flex-1 relative pl-8">
+<div class="section-label text-red-400">Failure Modes</div>
+<div class="grid grid-cols-3 gap-6 h-full">
+<!-- Failure 1: Guesswork -->
+<div class="failure-card card-yellow">
+<div class="icon-circle text-yellow-400 border border-yellow-500/20">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Confident Guesswork</h3>
+<p class="text-sm text-slate-400 flex-1">When information is missing, the LLM hallucinates plausible but incorrect details to maintain the persona.</p>
+<div class="mt-auto pt-2 border-t border-slate-700/50">
+<p class="text-xs text-yellow-500 font-bold uppercase"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Result: Illusion Breaks</p>
+</div>
+</div>
+<!-- Failure 2: Inconsistencies -->
+<div class="failure-card card-orange">
+<div class="icon-circle text-orange-400 border border-orange-500/20">
+<i class="fa-solid fa-scale-unbalanced"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Unnoticed Inconsistencies</h3>
+<p class="text-sm text-slate-400 flex-1">The agent cannot reconcile contradictory data from different sources (e.g., Prompt Time vs. System Time).</p>
+<div class="mt-auto pt-2 border-t border-slate-700/50">
+<p class="text-xs text-orange-500 font-bold uppercase"><i class="fa-solid fa-bug mr-1"></i> Result: Logic Errors</p>
+</div>
+</div>
+<!-- Failure 3: Manipulation -->
+<div class="failure-card card-red">
+<div class="icon-circle text-red-400 border border-red-500/20">
+<i class="fa-solid fa-user-secret"></i>
+</div>
+<h3 class="text-lg font-bold text-white mb-2">Prompt Manipulation</h3>
+<p class="text-sm text-slate-400 flex-1">Since "self" is just text in the prompt, attackers can inject instructions to redefine the agent's reality.</p>
+<div class="mt-auto pt-2 border-t border-slate-700/50">
+<p class="text-xs text-red-500 font-bold uppercase"><i class="fa-solid fa-shield-virus mr-1"></i> Result: Data Leaks</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-0 w-full px-12 py-6 flex justify-between items-center text-slate-500 font-mono text-xs border-t border-slate-800 bg-slate-900">
+<p>NANOBOT CASE STUDY</p>
+<p>05 / 06</p>
+</div>
+</div>
+</body>
+</html>

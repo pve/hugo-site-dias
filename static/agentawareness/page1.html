@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=720, initial-scale=1.0" name="viewport"/>
+<title>How AI Agents Know Themselves</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&amp;family=Roboto+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0f172a; /* Slate 900 */
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #0f172a;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        /* Grid Pattern Background */
+        .bg-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(52, 211, 153, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(52, 211, 153, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+        }
+
+        /* Decorative Elements */
+        .tech-circle {
+            position: absolute;
+            border: 1px solid rgba(52, 211, 153, 0.2);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 20px rgba(52, 211, 153, 0.3);
+        }
+
+        .code-snippet {
+            font-family: 'Roboto Mono', monospace;
+            color: #334155;
+            position: absolute;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            z-index: 0;
+        }
+
+        /* Glassmorphism Card */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            backdrop-filter: blur(4px);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background Grid -->
+<div class="bg-grid"></div>
+<!-- Decorative Circles -->
+<div class="tech-circle" style="width: 600px; height: 600px; top: -100px; right: -100px;"></div>
+<div class="tech-circle" style="width: 400px; height: 400px; bottom: -50px; left: -50px; border-color: rgba(167, 139, 250, 0.1);"></div>
+<!-- Background Code Snippets (Simulating the 'System Prompt') -->
+<div class="code-snippet" style="top: 40px; left: 40px;">
+<p>class NanobotAgent(BaseAgent):</p>
+<p>  def __init__(self, config):</p>
+<p>    self.memory = load_memory()</p>
+<p>    self.system_prompt = config.prompt</p>
+</div>
+<div class="code-snippet" style="bottom: 40px; right: 40px; text-align: right;">
+<p>"role": "system",</p>
+<p>"content": "You are a helpful assistant..."</p>
+<p>Tool calls: ["list_dir", "get_time"]</p>
+</div>
+<!-- Main Content Area -->
+<div class="z-10 flex flex-col items-center justify-center h-full w-full relative">
+<!-- Central Graphic Icon -->
+<div class="mb-10 relative">
+<div class="absolute inset-0 bg-emerald-500 blur-3xl opacity-20 rounded-full transform scale-150"></div>
+<div class="relative bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-2xl flex items-center justify-center">
+<i class="fa-solid fa-microchip text-7xl text-emerald-400"></i>
+<div class="absolute -top-3 -right-3 bg-slate-900 rounded-full p-2 border border-slate-700">
+<i class="fa-solid fa-question text-xl text-purple-400"></i>
+</div>
+</div>
+<!-- Connecting lines visuals -->
+<div class="absolute top-1/2 left-full w-24 h-px bg-slate-700"></div>
+<div class="absolute top-1/2 right-full w-24 h-px bg-slate-700"></div>
+</div>
+<!-- Title Section -->
+<div class="text-center px-12 max-w-5xl">
+<h1 class="text-7xl font-bold mb-4 tracking-tight leading-tight text-white">
+                How AI Agents <br/>
+<span class="text-transparent bg-clip-text" style="color: #34d399;">"Know"</span> Themselves
+            </h1>
+<div class="w-24 h-1.5 bg-emerald-500 mx-auto my-8 rounded-full"></div>
+<div class="glass-panel py-4 px-8 rounded-full inline-block">
+<p class="text-2xl font-light text-slate-300 font-mono tracking-wide">
+<span class="text-purple-400">&lt;</span>
+                    The Engineered Illusion of Self-Awareness
+                    <span class="text-purple-400">/&gt;</span>
+</p>
+</div>
+</div>
+<!-- Footer Meta Info -->
+<div class="absolute bottom-12 w-full flex justify-between px-16 text-slate-500 font-mono text-sm uppercase tracking-widest">
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-shield-halved text-emerald-500"></i>
+<p>Security Analysis</p>
+</div>
+<div class="flex items-center gap-3">
+<p>Case Study: Nanobot</p>
+<i class="fa-solid fa-robot text-purple-400"></i>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

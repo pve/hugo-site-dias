@@ -6,8 +6,30 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Feb 2026 07:31:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 07:39:41 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dig Autonomy</title>
+      <link>http://localhost:1313/posts/dig-autonomy/</link>
+      <pubDate>Fri, 27 Feb 2026 07:39:41 +0000</pubDate>
+      <guid>http://localhost:1313/posts/dig-autonomy/</guid>
+      <description>&lt;p&gt;Should companies and governments spend a lot of resources on becoming independent from large tech providers that cannot be expected to be bound by a common legal framework?&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s think this through, and start by asking who is at risk here, and more importantly, what can be done about it.&lt;/p&gt;
+&lt;p&gt;For the average company, the power concentration that is inherent in dominant suppliers constitutes a continuity risk.&lt;/p&gt;
+&lt;p&gt;For a government such influence means that foreign entity is controlling their industry.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What Is an Agent</title>
+      <link>http://localhost:1313/posts/what-is-an-agent/</link>
+      <pubDate>Fri, 27 Feb 2026 07:39:13 +0000</pubDate>
+      <guid>http://localhost:1313/posts/what-is-an-agent/</guid>
+      <description>&lt;p&gt;I am confused about what it means to be an AI agent, which is used by half the world in phrases like agentic AI, should AI agents run your business, and so on.
+Let&amp;rsquo;s explore this, so that we can understand and better control this.&lt;/p&gt;
+&lt;p&gt;Apparently, an AI agent is a service that runs somewhere, and acts on somebodies behalf.
+This means it has interactions with other (IT) systems.
+But we have been doing this for a long time: whenever I type something to my browser, the browser will pull pages from the internet, on my behalf.
+We did not call that an agent.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Architectural Integrity, Angkor Wat, and open source</title>
       <link>http://localhost:1313/posts/architecture-integrity/</link>
@@ -28,13 +50,16 @@ The building is a symbol of power.&lt;/p&gt;</description>
       <link>http://localhost:1313/posts/agent-self-aware/</link>
       <pubDate>Wed, 04 Feb 2026 08:56:29 +0000</pubDate>
       <guid>http://localhost:1313/posts/agent-self-aware/</guid>
-      <description>&lt;h1 id=&#34;self-aware&#34;&gt;Self aware&lt;/h1&gt;
-&lt;p&gt;How do AI agents work, is what I am trying to understand these days.
-And can we use agents to reason about agents, in particular about &lt;em&gt;themselves&lt;/em&gt;?&lt;/p&gt;
-&lt;p&gt;AI agents have a lot of potential for my work, but I am also interested in the security implications.
-Because the more powerful they are, the more risky they become.&lt;/p&gt;
-&lt;p&gt;Lately I have been looking at (and contributing to) &lt;a href=&#34;https://github.com/HKUDS/nanobot&#34;&gt;nanobot&lt;/a&gt;.
-This is a deliberately simpler version of &lt;a href=&#34;&#34;&gt;Moltbot, OpenClaw&lt;/a&gt;, or whatever it is called these days.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I was chatting with an AI agent about its own configuration,
+and it answered with surprising confidence.&lt;/p&gt;
+&lt;p&gt;Then I thought: wait. How would it even know that?&lt;/p&gt;
+&lt;p&gt;This post is about what I found when I went looking.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/HKUDS/nanobot&#34;&gt;Nanobot&lt;/a&gt;
+is a deliberately simpler version of &lt;a href=&#34;https://openclaw.ai&#34;&gt;OpenClaw&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you haven&amp;rsquo;t heard about it, OpenClaw is an AI agent running on your behalf 24/7, potentially having all your credentials.
+This is possibly the piece of software with the steepest adoption curve of all time, it got to over 1 million active users in 1 week.
+Potentially it is also one of the biggest IT security dramas of all time.
+Because the more powerful they are, the more risky they become.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Securing my AI travel mail bot</title>

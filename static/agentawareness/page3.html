@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=720, initial-scale=1.0" name="viewport"/>
+<title>Chatbot Architecture</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&amp;family=Roboto+Mono:wght@300;400;500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0f172a; /* Slate 900 */
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            background-color: #0f172a;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Background Grid */
+        .bg-grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0L1 40' stroke='%2334d399' stroke-opacity='0.05' stroke-width='1'/%3E%3Cpath d='M0 1L40 1' stroke='%2334d399' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
+            z-index: 0;
+        }
+
+        /* Diagram Styles */
+        .diagram-box {
+            background-color: #1e293b; /* Slate 800 */
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 16px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .diagram-label {
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            background-color: #0f172a;
+            padding: 0 8px;
+            font-size: 12px;
+            color: #94a3b8;
+            font-family: 'Roboto Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .flow-arrow {
+            position: absolute;
+            z-index: 10;
+        }
+
+        .component-card {
+            background-color: #334155;
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            z-index: 20;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #34d399;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #34d399;
+        }
+
+        /* Note Cards */
+        .note-card {
+            background-color: rgba(30, 41, 59, 0.6);
+            border-left: 4px solid #34d399;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+
+        .note-card.warning {
+            border-left-color: #f472b6; /* Pink/Red for warning/complexity */
+        }
+        
+        .arrow-line {
+            stroke: #64748b;
+            stroke-width: 2;
+            fill: none;
+            marker-end: url(#arrowhead);
+        }
+        
+        .arrow-dashed {
+            stroke-dasharray: 5, 5;
+            stroke: #a78bfa; /* Purple for tools */
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background -->
+<div class="bg-grid"></div>
+<!-- Header -->
+<div class="z-10 px-16 pt-10 pb-4 border-b border-slate-800/50 flex justify-between items-end">
+<div>
+<p class="text-emerald-400 font-mono text-sm tracking-widest uppercase mb-2">Architecture</p>
+<h1 class="text-4xl font-bold text-white tracking-tight">Under the Hood: How Chatbots Work</h1>
+</div>
+<div class="flex items-center gap-2 text-slate-500 font-mono text-xs">
+<i class="fa-solid fa-server"></i>
+<span>SYSTEM DIAGRAM</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex flex-1 p-10 gap-12 z-10">
+<!-- LEFT COLUMN: The Diagram (60%) -->
+<div class="flex-1 relative bg-slate-900/50 rounded-2xl border border-slate-700/50 p-8">
+<!-- SVG Layer for Arrows -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-0" style="overflow: visible;">
+<defs>
+<marker id="arrowhead" markerheight="7" markerwidth="10" orient="auto" refx="9" refy="3.5">
+<polygon fill="#64748b" points="0 0, 10 3.5, 0 7"></polygon>
+</marker>
+<marker id="arrowhead-purple" markerheight="7" markerwidth="10" orient="auto" refx="9" refy="3.5">
+<polygon fill="#a78bfa" points="0 0, 10 3.5, 0 7"></polygon>
+</marker>
+</defs>
+<!-- Arrow: User -> Chatbot -->
+<path class="arrow-line" d="M 80,100 L 80,160"></path>
+<!-- Arrow: Chatbot -> LLM (Assemble Context) -->
+<path class="arrow-line" d="M 180,220 L 260,220"></path>
+<!-- Arrow: LLM -> Tools (Request) -->
+<path class="arrow-line arrow-dashed" d="M 360,260 C 360,320 200,320 200,360" style="marker-end: url(#arrowhead-purple); stroke: #a78bfa;"></path>
+<!-- Arrow: Tools -> Chatbot (Result) -->
+<path class="arrow-line arrow-dashed" d="M 280,400 C 380,400 380,300 380,270" style="marker-end: url(#arrowhead-purple); stroke: #a78bfa;"></path>
+<!-- Arrow: LLM -> User (Response) -->
+<path class="arrow-line" d="M 330,200 C 330,120 150,120 110,90"></path>
+</svg>
+<!-- 1. USER -->
+<div class="absolute top-8 left-8 flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center border-2 border-slate-500 z-10 shadow-lg">
+<i class="fa-solid fa-user text-2xl text-white"></i>
+</div>
+<div>
+<p class="font-bold text-white">User</p>
+<p class="text-xs text-slate-400 font-mono">Input: "Check files"</p>
+</div>
+</div>
+<!-- 2. THE CHATBOT SYSTEM BOUNDARY -->
+<div class="absolute top-40 left-8 right-8 bottom-8 border-2 border-dashed border-slate-600 rounded-xl bg-slate-800/30">
+<div class="diagram-label text-emerald-400">The Chatbot Runtime (Python/Node Wrapper)</div>
+<!-- 2a. ORCHESTRATOR / CONTEXT -->
+<div class="absolute top-16 left-8 w-48 component-card bg-slate-700 border border-slate-600">
+<div class="w-full mb-2 flex justify-between items-center border-b border-slate-600 pb-2">
+<span class="text-xs font-bold text-white">CONTEXT BUILDER</span>
+<i class="fa-solid fa-layer-group text-emerald-400 text-xs"></i>
+</div>
+<div class="w-full space-y-1">
+<div class="bg-slate-800 p-1.5 rounded text-xs font-mono text-emerald-300 truncate">1. System Prompt</div>
+<div class="bg-slate-800 p-1.5 rounded text-xs font-mono text-blue-300 truncate">2. Chat History</div>
+<div class="bg-slate-800 p-1.5 rounded text-xs font-mono text-purple-300 truncate">3. Tool Outputs</div>
+</div>
+</div>
+<!-- 2b. LLM -->
+<div class="absolute top-12 right-12 w-40 h-40 rounded-full border-4 border-emerald-500/30 flex items-center justify-center bg-slate-900 z-20 shadow-2xl">
+<div class="text-center">
+<i class="fa-solid fa-microchip text-4xl text-emerald-400 mb-2"></i>
+<p class="font-bold text-white">LLM</p>
+<p class="text-xs text-slate-500 font-mono">Inference Engine</p>
+</div>
+<!-- Orbiting particles -->
+<div class="absolute w-full h-full rounded-full border border-emerald-500/20 animate-spin-slow"></div>
+</div>
+<!-- 2c. TOOLS -->
+<div class="absolute bottom-12 left-24 w-48 component-card border border-purple-500/50 bg-slate-800/80">
+<div class="w-full mb-2 flex justify-between items-center border-b border-slate-700 pb-2">
+<span class="text-xs font-bold text-purple-300">TOOLS (Safe Zone?)</span>
+<i class="fa-solid fa-terminal text-purple-400 text-xs"></i>
+</div>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-black rounded text-xs font-mono text-green-400">$ ls -la</span>
+<span class="px-2 py-1 bg-black rounded text-xs font-mono text-green-400">$ date</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Explanatory Notes (40%) -->
+<div class="w-5/12 flex flex-col justify-center">
+<div class="mb-6">
+<h3 class="text-2xl font-bold text-white mb-2">The "Memory" Illusion</h3>
+<p class="text-slate-400 text-sm leading-relaxed">
+                        The chatbot has no continuous brain. Every single reply is a fresh reconstruction of reality.
+                    </p>
+</div>
+<!-- Note 1 -->
+<div class="note-card">
+<div class="flex items-start gap-3">
+<div class="mt-1 bg-emerald-900/50 p-2 rounded text-emerald-400">
+<i class="fa-solid fa-rotate"></i>
+</div>
+<div>
+<p class="font-bold text-white text-sm mb-1">Runtime Assembly</p>
+<p class="text-slate-300 text-sm font-light">
+                                For every user message, the system re-reads the <strong>System Prompt</strong>, <strong>Chat History</strong>, and previous <strong>Tool Results</strong> to create the context window.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Note 2 -->
+<div class="note-card warning">
+<div class="flex items-start gap-3">
+<div class="mt-1 bg-purple-900/50 p-2 rounded text-purple-400">
+<i class="fa-solid fa-code"></i>
+</div>
+<div>
+<p class="font-bold text-white text-sm mb-1">Tool Execution</p>
+<p class="text-slate-300 text-sm font-light">
+                                The LLM cannot "run" code. It outputs text (JSON). The wrapper code executes the command on the OS and feeds the text result back into the prompt.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Note 3 -->
+<div class="note-card">
+<div class="flex items-start gap-3">
+<div class="mt-1 bg-slate-700 p-2 rounded text-slate-300">
+<i class="fa-solid fa-eye"></i>
+</div>
+<div>
+<p class="font-bold text-white text-sm mb-1">What the LLM "Sees"</p>
+<p class="text-slate-300 text-sm font-light font-mono text-xs mt-1">
+                                [System Prompt] + [History] + [Tool Output]
+                            </p>
+<p class="text-slate-400 text-xs mt-1">
+                                This combined text is the only "self" the agent has access to.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
