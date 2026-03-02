@@ -117,18 +117,25 @@
 </p>
 </div>
 </div>
-<!-- Footer Meta Info -->
-<div class="absolute bottom-12 w-full flex justify-between px-16 text-slate-500 font-mono text-sm uppercase tracking-widest">
-<div class="flex items-center gap-3">
-<i class="fa-solid fa-shield-halved text-emerald-500"></i>
-<p>Security Analysis</p>
+<!-- Footer -->
+<div class="absolute bottom-0 w-full px-12 py-6 flex justify-between items-center text-slate-500 font-mono text-xs border-t border-slate-800 bg-slate-900 z-20">
+    <div class="flex items-center gap-4">
+        <i class="fa-solid fa-shield-halved text-emerald-500"></i>
+        <p>NANOBOT CASE STUDY: SECURITY ANALYSIS</p>
+    </div>
+    <div class="flex items-center gap-8">
+        <span class="tracking-widest">01 / 06</span>
+        <a href="page2.html" class="text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-2 uppercase tracking-widest font-bold">
+            Next <i class="fa-solid fa-chevron-right"></i>
+        </a>
+    </div>
 </div>
-<div class="flex items-center gap-3">
-<p>Case Study: Nanobot</p>
-<i class="fa-solid fa-robot text-purple-400"></i>
 </div>
 </div>
-</div>
-</div>
+<script>
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') window.location.href = 'page2.html';
+    });
+</script>
 </body>
 </html>
