@@ -343,3 +343,6 @@ and the cracks are exactly where an attacker gets in.
 Therefore, the question that keeps me up: in your organization, who is actually responsible for what an AI agent knows about itself?
 The architect who builds it?
 The security officer who has it audited? Or is it nobody? And then, what happens?
+
+P.s. I had an AI create a [6 page infographic from this blog post](https://digitalinfrastructures.nl/agentawareness/page1).
+While it gets some of the points off a bit, I did like the visual.
