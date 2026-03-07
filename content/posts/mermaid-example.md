@@ -1,7 +1,7 @@
 ---
 date: '2025-02-27T09:09:43Z'
 draft: true
-title: 'A mermaid diagram example'
+title: 'A mermaid diagram example, sequence and architecture'
 ---
 
 A diagram should automagically appear here.
