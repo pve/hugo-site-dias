@@ -5,7 +5,9 @@ title: 'Dig Autonomy'
 weight: 10
 ---
 
-Should companies and governments spend a lot of resources on becoming independent from large tech providers that cannot be expected to be bound by a common legal framework?
+Should companies and governments spend a lot of resources on becoming independent from large tech providers?
+There may be a few good reasons for that.
+For example, we have seen that they cannot be expected to be bound by a common legal framework.
 
 Let's think this through, and start by asking who is at risk here, and more importantly, what can be done about it.
 

@@ -20,6 +20,9 @@
     <loc>http://localhost:1313/book/diginfra/</loc>
     <lastmod>2025-03-09T18:54:11+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/local-ai-pendulum/</loc>
+    <lastmod>2026-03-07T14:24:22+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/dig-autonomy/</loc>
     <lastmod>2026-02-27T07:39:41+00:00</lastmod>
   </url><url>
@@ -315,10 +318,10 @@
     <lastmod>2025-05-12T21:05:36+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-27T07:39:41+00:00</lastmod>
+    <lastmod>2026-03-07T14:24:22+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-27T07:39:41+00:00</lastmod>
+    <lastmod>2026-03-07T14:24:22+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-11-30T00:07:54+00:00</lastmod>
@@ -382,8 +385,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/network-neutrality-who-pays-the-ferryman/</loc>
     <lastmod>2006-08-18T13:54:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/agentawareness/page1/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/ar-dec-18/</loc>
   </url><url>

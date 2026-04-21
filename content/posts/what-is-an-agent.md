@@ -5,7 +5,8 @@ title: 'What Is an Agent'
 weight: 10
 ---
 
-I am confused about what it means to be an AI agent, which is used by half the world in phrases like agentic AI, should AI agents run your business, and so on.
+I am confused about what it means to be an AI agent.
+This is talked about by half the world in phrases like agentic AI, should AI agents run your business, and so on.
 Let's explore this, so that we can understand and better control this.
 
 Apparently, an AI agent is a service that runs somewhere, and acts on somebodies behalf.

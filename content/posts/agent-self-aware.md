@@ -226,7 +226,7 @@ sequenceDiagram
 
 That is a lot of back and forth, and as you can see the LLM interprets some of the tool output to be more explanatory to the human.
 
-The LLM is also deciding that what the proper tool call is.
+The LLM is also deciding what the proper tool call is.
 For example, it decides to:
 
 - use the `list_dir` tool,
@@ -254,7 +254,7 @@ I got intrigued by that, and decided to try out some more 'introspection'.
 ## API keys, or, what nanobot does not know about itself
 
 I asked for its API keys.
-Here it is getting interesting.
+Here it gets interesting.
 
 >🐈 I don't have access to my own API key. The API key used to connect to the LLM (like
 Anthropic's Claude) is handled by the nanobot application layer that runs me - it's
@@ -305,7 +305,7 @@ The first time is a time stated in the system prompt, where no timezone is added
 The second one is retrieved through a tool call.
 
 It does not notice the contradiction.
-Neither would you, unless you ask.
+Neither would you, unless you asked.
 
 After I finished writing the blog, this timezone bug was fixed.
 Which goes to show that this type of investigation is not just philosophical,

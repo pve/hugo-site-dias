@@ -6,24 +6,38 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Feb 2026 07:39:41 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 14:24:22 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local AI inferencing or cloud based?</title>
+      <link>http://localhost:1313/posts/local-ai-pendulum/</link>
+      <pubDate>Sat, 07 Mar 2026 14:24:22 +0000</pubDate>
+      <guid>http://localhost:1313/posts/local-ai-pendulum/</guid>
+      <description>&lt;p&gt;I am trying to figure out where the pendulum for AI LLM inference hosting will swing to.&lt;/p&gt;
+&lt;p&gt;Will we have more cloud service usage of the cloud hyperscalers, or will inferencing be on local devices such as laptops or in corporate datacenter?&lt;/p&gt;
+&lt;p&gt;Here is my thinking.&lt;/p&gt;
+&lt;p&gt;I believe Moore’s law will be relevant for a few more years, implying that an affordable supply of local capacity will grow.&lt;/p&gt;
+&lt;p&gt;I also believe that there is a minimum LLM size to make them functional, in the same way that there is a minimum number of bytes for a decent picture or audible sound. But above a certain size, there is going to be a diminishing return.
+Depending on the scenario, we are talking about billions to trillions of parameters in the LLM.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Dig Autonomy</title>
       <link>http://localhost:1313/posts/dig-autonomy/</link>
       <pubDate>Fri, 27 Feb 2026 07:39:41 +0000</pubDate>
       <guid>http://localhost:1313/posts/dig-autonomy/</guid>
-      <description>&lt;p&gt;Should companies and governments spend a lot of resources on becoming independent from large tech providers that cannot be expected to be bound by a common legal framework?&lt;/p&gt;
+      <description>&lt;p&gt;Should companies and governments spend a lot of resources on becoming independent from large tech providers?
+There may be a few good reasons for that.
+For example, we have seen that they cannot be expected to be bound by a common legal framework.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s think this through, and start by asking who is at risk here, and more importantly, what can be done about it.&lt;/p&gt;
-&lt;p&gt;For the average company, the power concentration that is inherent in dominant suppliers constitutes a continuity risk.&lt;/p&gt;
-&lt;p&gt;For a government such influence means that foreign entity is controlling their industry.&lt;/p&gt;</description>
+&lt;p&gt;For the average company, the power concentration that is inherent in dominant suppliers constitutes a continuity risk.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Is an Agent</title>
       <link>http://localhost:1313/posts/what-is-an-agent/</link>
       <pubDate>Fri, 27 Feb 2026 07:39:13 +0000</pubDate>
       <guid>http://localhost:1313/posts/what-is-an-agent/</guid>
-      <description>&lt;p&gt;I am confused about what it means to be an AI agent, which is used by half the world in phrases like agentic AI, should AI agents run your business, and so on.
+      <description>&lt;p&gt;I am confused about what it means to be an AI agent.
+This is talked about by half the world in phrases like agentic AI, should AI agents run your business, and so on.
 Let&amp;rsquo;s explore this, so that we can understand and better control this.&lt;/p&gt;
 &lt;p&gt;Apparently, an AI agent is a service that runs somewhere, and acts on somebodies behalf.
 This means it has interactions with other (IT) systems.
