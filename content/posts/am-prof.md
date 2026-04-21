@@ -1,6 +1,6 @@
 ---
 date: '2026-04-21T00:00:00Z'
-draft: true
+draft: false
 title: 'Why You Work: Amateur, Professional, or Passionate?'
 weight: 10
 ---
