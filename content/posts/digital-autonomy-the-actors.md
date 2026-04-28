@@ -95,9 +95,7 @@ The US has a strong history of selectively engaging with international agreement
 
 ## Non human actors
 
-Technology, according to Kevin Kelly. As a subset: open source.
-
-AI.
+Technology, according to Kevin Kelly. As a subset: open source. ~AI.
 
 ## Autarky
 
