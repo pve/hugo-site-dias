@@ -1,6 +1,6 @@
 ---
 date: '2026-04-27T00:00:00Z'
-draft: true
+draft: false
 title: 'A badge on the wall'
 weight: 10
 ---
