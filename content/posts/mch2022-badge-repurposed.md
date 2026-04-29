@@ -9,20 +9,21 @@ weight: 10
 
 Being energy conscious, I wanted a display in my living room that indicates the house's current power situation.
 
-On a sunny day, it makes sense to turn on the dishwasher and other energy intensive appliances in the daytime, when our solar panels produce an energy surplus, which earns us almost nothing.
+On a sunny day, it makes sense to turn on the dishwasher and other energy-intensive appliances, because the energy surplus from our solar panels earn us almost nothing.
 
-Of course, this data is available in my Home Assistant (HA) setup, but that takes a few clicks on a phone or laptop.
-I wanted something equivalent to a good old fashioned barometer, quietly hanging on the wall.
-A glance in passing should be enough to be informed.
+This data is available in my Home Assistant (HA) setup, but that takes a few clicks on a phone or laptop.
+I wanted something equivalent to a good old-fashioned barometer, quietly hanging on the wall.
+A glance in passing should be enough to tell me what I need.
 
 But I could not find any straightforward solutions for connecting a display directly to HA.
 If there was one, I would have bought it.
 
 I cycled through several ideas, until I remembered that I had a couple of badges from hacker camps
-lying around [here](https://badge.team/docs/badges/mch2022/) and [here](https://wiki.mch2022.org/Badge).
+lying around.
+The badges survived several rounds of decluttering my house, I suspect because they are cute collectors' items with fond memories attached.
 
-The MCH badge has most of the features (display, buttons, WiFi) I wanted.
-In the future I might want the device to ultra energy efficient (as in: runs on batteries for months), but for a prototype the badge looked very appropriate.
+The [MCH](https://badge.team/docs/badges/mch2022/) [badge](https://wiki.mch2022.org/Badge) has most of the features (display, buttons, WiFi) I wanted.
+In the future I might want the device to be ultra energy efficient (as in: runs on batteries for months), but for a prototype the badge looked very appropriate.
 
 What unlocked the solution in my mind was the realization that we are just sending messages asynchronously to the display device.
 The display device is a subscriber to those messages.
@@ -34,10 +35,10 @@ The project then neatly decomposes into two parts:
 - getting the data published by HA to an MQTT topic, and
 - picking up that data by an MQTT client running in the badge.
 
-The badge has no general purpose operating system, but it does have a [micropython](https://docs.micropython.org/en/latest/index.html) interpreter.
+The badge has no general purpose operating system, but it does have a [MicroPython](https://docs.micropython.org/en/latest/index.html) interpreter.
 Matching that, there is also a `umqtt.simple` module, exactly what we need.
 
-Interestingly enough, Claude (Sonnet 4.6) has knowledge about micropython from its training data.
+Interestingly enough, Claude (Sonnet 4.6) has knowledge about MicroPython from its training data.
 In addition, it reviewed the badge API docs that I gave it, which are a bit more specific on the display and WiFi peculiarities.
 
 With Claude and Claude Code, building the software was a breeze.
@@ -49,17 +50,17 @@ I did not get around to figuring out how to also test the software through Claud
 Once we overcame the hurdle of deploying the software to the badge, the 0.1 version worked out of the gate.
 This was the version that just received MQTT messages.
 
-The next thing I wanted was graceful exit on pressing a key.
+The next thing I wanted was a graceful exit on pressing a key.
 This failed in the first attempt because the badge API docs were a bit ambiguous, related to a recent change.
 
 Other than the messaging logic, I had Claude Code also propose a few GUI mockups, wireframe style.
-I only had to make a few comments, and Claude Code produced the code.
+I only had to make a few comments, and Claude Code produced the [code](https://github.com/pve/mch2022-badge-mqtt).
 
 With the basic logic operational, I turned to the HA side of the project.
 Claude Code had no trouble coming up with alternative approaches for configuring HA.
 
 What it could not do was look in my HA setup.
-An HA MCP server is available, but for looking up the three required entity names (solar, energy consumed, energy produced), installing it felt like overly complicated.
+An HA MCP server is available, but for looking up the three required entity names (solar, energy consumed, energy produced), installing it felt overly complicated.
 
 Instead, Claude Code gave me the full YAML spec for an automation,
 which is triggered by any change in the state of the three entities.
@@ -69,7 +70,7 @@ it would have worked on the first attempt.
 I should have installed the MCP server instead of being a sloppy relay, manually copying names between two development environments.
 
 Functionally the energy monitor objective was fulfilled. It worked, which took just a few hours.
-Buying an appliance to do it would have been more expensive, 
+Buying an appliance to do it would have been more expensive,
 would still require configuration, and would not have been as fun and instructive as this project.
 
 Then I turned to the color and font design.
@@ -86,5 +87,5 @@ The architectural lessons are: standardized messaging protocols turn these devic
 The interface naming mistake is a classic one.
 Also classic is that the lack of an API description has blocked adding the battery status indicator.
 
-The AI assisted coding lessons are: it works amazingly well, at least for these types of projects, and given the right requirements and documentation.
+The AI-assisted coding lessons are: it works amazingly well, at least for these types of projects, and given the right requirements and documentation.
 Improvements can be made in connecting the coding agents more directly to the deployment environment, in this case the badge and HA.
