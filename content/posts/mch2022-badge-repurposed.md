@@ -7,7 +7,8 @@ weight: 10
 
 ## A badge on the wall: repurposing hacker camp hardware as a home energy display
 
-Being energy conscious, I wanted a display in my living room that indicates the house's current power situation.
+I wanted a wall display for my house's energy. Not an app, but something glanceable, always on, no clicks required. 
+Apparently that's harder to buy than it sounds.
 
 On a sunny day, it makes sense to turn on the dishwasher and other energy-intensive appliances, because the energy surplus from our solar panels earn us almost nothing.
 
@@ -20,7 +21,14 @@ If there was one, I would have bought it.
 
 I cycled through several ideas, until I remembered that I had a couple of badges from hacker camps
 lying around.
-The badges survived several rounds of decluttering my house, I suspect because they are cute collectors' items with fond memories attached.
+Hacker camps are like festivals for people who like to tinker and think out of the box.
+
+For MCH2022, I bought my nephew with me, who had recently started out as a chips designer.
+I remember him joking to me: "finally, we are amongst normal people!"
+
+Part of the tradition of these camps is that they come with a custom built badge.
+In the old days this would just be a digital name tag, but they evolved to be esoteric bleeding edge developer IoT boards.
+The badges that I collected over the years survived several rounds of decluttering my house, I suspect because they are cute collectors' items with fond memories attached.
 
 The [MCH](https://badge.team/docs/badges/mch2022/) [badge](https://wiki.mch2022.org/Badge) has most of the features (display, buttons, WiFi) I wanted.
 In the future I might want the device to be ultra energy efficient (as in: runs on batteries for months), but for a prototype the badge looked very appropriate.
@@ -38,7 +46,7 @@ The project then neatly decomposes into two parts:
 The badge has no general purpose operating system, but it does have a [MicroPython](https://docs.micropython.org/en/latest/index.html) interpreter.
 Matching that, there is also a `umqtt.simple` module, exactly what we need.
 
-Interestingly enough, Claude (Sonnet 4.6) has knowledge about MicroPython from its training data.
+Interestingly enough, Claude has knowledge about MicroPython from its training data.
 In addition, it reviewed the badge API docs that I gave it, which are a bit more specific on the display and WiFi peculiarities.
 
 With Claude and Claude Code, building the software was a breeze.
@@ -54,7 +62,7 @@ The next thing I wanted was a graceful exit on pressing a key.
 This failed in the first attempt because the badge API docs were a bit ambiguous, related to a recent change.
 
 Other than the messaging logic, I had Claude Code also propose a few GUI mockups, wireframe style.
-I only had to make a few comments, and Claude Code produced the [code](https://github.com/pve/mch2022-badge-mqtt).
+I only had to make a few comments, and Claude Code (Sonnet 4.6) produced the [code](https://github.com/pve/mch2022-badge-mqtt).
 
 With the basic logic operational, I turned to the HA side of the project.
 Claude Code had no trouble coming up with alternative approaches for configuring HA.
@@ -63,10 +71,11 @@ What it could not do was look in my HA setup.
 An HA MCP server is available, but for looking up the three required entity names (solar, energy consumed, energy produced), installing it felt overly complicated.
 
 Instead, Claude Code gave me the full YAML spec for an automation,
-which is triggered by any change in the state of the three entities.
+which is triggered by any change in the state of any of the three entities.
 
 If I had not messed up matching the entity names across HA and the badge software,
 it would have worked on the first attempt.
+Instead the badge confidently showed three zeroes for all values.
 I should have installed the MCP server instead of being a sloppy relay, manually copying names between two development environments.
 
 Functionally the energy monitor objective was fulfilled. It worked, which took just a few hours.
