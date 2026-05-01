@@ -10,7 +10,7 @@ weight: 10
 I wanted a wall display for my house's energy. Not an app, but something glanceable, always on, no clicks required. 
 Apparently that's harder to buy than it sounds.
 
-On a sunny day, it makes sense to turn on the dishwasher and other energy-intensive appliances, because the energy surplus from our solar panels earn us almost nothing.
+On a sunny day, it makes sense to turn on energy-intensive appliances such as washing machines, because the energy surplus from our solar panels earns us almost nothing.
 
 This data is available in my Home Assistant (HA) setup, but that takes a few clicks on a phone or laptop.
 I wanted something equivalent to a good old-fashioned barometer, quietly hanging on the wall.
@@ -23,7 +23,9 @@ I cycled through several ideas, until I remembered that I had a couple of badges
 lying around.
 Hacker camps are like festivals for people who like to tinker and think out of the box.
 
-For MCH2022, I bought my nephew with me, who had recently started out as a chips designer.
+Anything from hacking Tesla's, water propelled rockets, DIY electron microscopes, electronics, musical robots, to retro games on vintage hardware.
+
+For MCH2022, I brought my nephew with me, who had recently started out as a chips designer.
 I remember him joking to me: "finally, we are amongst normal people!"
 
 Part of the tradition of these camps is that they come with a custom built badge.
@@ -32,6 +34,9 @@ The badges that I collected over the years survived several rounds of declutteri
 
 The [MCH](https://badge.team/docs/badges/mch2022/) [badge](https://wiki.mch2022.org/Badge) has most of the features (display, buttons, WiFi) I wanted.
 In the future I might want the device to be ultra energy efficient (as in: runs on batteries for months), but for a prototype the badge looked very appropriate.
+
+The next step then is thinking about the way to connect the board to HA with the minimum amount of work.
+I did some quick research, for example to use a REST API, but it looked like a lot of programming on both the device side and the HA side.
 
 What unlocked the solution in my mind was the realization that we are just sending messages asynchronously to the display device.
 The display device is a subscriber to those messages.
@@ -43,8 +48,8 @@ The project then neatly decomposes into two parts:
 - getting the data published by HA to an MQTT topic, and
 - picking up that data by an MQTT client running in the badge.
 
-The badge has no general purpose operating system, but it does have a [MicroPython](https://docs.micropython.org/en/latest/index.html) interpreter.
-Matching that, there is also a `umqtt.simple` module, exactly what we need.
+The badge has no general-purpose operating system, but it does have a [MicroPython](https://docs.micropython.org/en/latest/index.html) interpreter.
+There is also a MicroPython `umqtt.simple` module, exactly what we need.
 
 Interestingly enough, Claude has knowledge about MicroPython from its training data.
 In addition, it reviewed the badge API docs that I gave it, which are a bit more specific on the display and WiFi peculiarities.
@@ -78,7 +83,7 @@ it would have worked on the first attempt.
 Instead the badge confidently showed three zeroes for all values.
 I should have installed the MCP server instead of being a sloppy relay, manually copying names between two development environments.
 
-Functionally the energy monitor objective was fulfilled. It worked, which took just a few hours.
+Functionally the energy monitor objective was now fulfilled. It worked, which took just a few hours.
 Buying an appliance to do it would have been more expensive,
 would still require configuration, and would not have been as fun and instructive as this project.
 
@@ -89,12 +94,14 @@ The result is in the picture.
 
 ![MCH2022 badge on the wall](/images/mch-badge.jpeg)
 
-As you can see, it is now hanging on the wall like a barometer, readable as you pass by.
-The current battery life is about 12 hours, so we'll need a power cable for continuous service.
+It hangs on the wall now. A quick look in passing tells us when to run the washing machine.
 
-The architectural lessons are: standardized messaging protocols turn these devices into composable infrastructure.
-The interface naming mistake is a classic one.
-Also classic is that the lack of an API description has blocked adding the battery status indicator.
+I loved working with the AI-assisted coding.
+It works amazingly well, at least for these types of projects, and given the right requirements and documentation.
+Next time I'd work first on
+connecting the coding agents more directly to the deployment environment, in this case the badge and HA.
+Every time I acted as a relay, copying entity names, looking at the badge screen, I introduced errors.
 
-The AI-assisted coding lessons are: it works amazingly well, at least for these types of projects, and given the right requirements and documentation.
-Improvements can be made in connecting the coding agents more directly to the deployment environment, in this case the badge and HA.
+The deeper lesson isn't about the technical detail of the badge or MicroPython.
+MQTT will give you a digital infrastructure that simplifies adding new components.
+The hard part is noticing that.
