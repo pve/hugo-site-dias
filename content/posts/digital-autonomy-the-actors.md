@@ -102,3 +102,7 @@ Most of that is open source now, and that same dynamic is playing out in new fie
 
 As a final example of non-human actors, look at AI: the models, the agents, the providers, the infrastructure, as well as how some of this is open source.
 That is a big area in itself, which we will dive into with more specific analyses later.
+
+Once we have a clear overview of the relevant actors, we can look at their autonomy, interdependence, and the power plays they can get into.
+
+Stay tuned.
