@@ -14,10 +14,12 @@
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/digital-autonomy-the-actors/</guid>
       <description>&lt;p&gt;Achieving some form of digital autonomy or sovereignty is a &lt;a href=&#34;http://localhost:1313/posts/wicked-2026/&#34;&gt;wicked problem&lt;/a&gt;, too large to handle in one go.
-In talking about digital autonomy I have found a confusing array of stakeholders.
 Let&amp;rsquo;s start therefore with the main actors, and what is at stake for them.
 We can then talk about how digital autonomy allows these actors to collaborate and compete, and therefore impacts the risks they see.
-Elsewhere, I write about &lt;a href=&#34;http://localhost:1313/book/power/international-actors/&#34;&gt;international actors&lt;/a&gt;, and this story builds on that.&lt;/p&gt;</description>
+Elsewhere, I write about &lt;a href=&#34;http://localhost:1313/book/power/international-actors/&#34;&gt;international actors&lt;/a&gt;, and this story builds on that.&lt;/p&gt;
+&lt;p&gt;All actors (e.g. governments, companies) perceive IT risk in their own way.
+Generally though, they include the standard IT risks (confidentiality, integrity, and availability).
+Beyond that, there is the risk of failing to capture the value of new technology, and (a little derived) failure to exercise governance and control over relevant other actors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A badge on the wall</title>
@@ -25,11 +27,9 @@ Elsewhere, I write about &lt;a href=&#34;http://localhost:1313/book/power/intern
       <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/mch2022-badge-repurposed/</guid>
       <description>&lt;h2 id=&#34;a-badge-on-the-wall-repurposing-hacker-camp-hardware-as-a-home-energy-display&#34;&gt;A badge on the wall: repurposing hacker camp hardware as a home energy display&lt;/h2&gt;
-&lt;p&gt;Being energy conscious, I wanted a display in my living room that indicates the house&amp;rsquo;s current power situation.&lt;/p&gt;
-&lt;p&gt;On a sunny day, it makes sense to turn on the dishwasher and other energy intensive appliances in the daytime, when our solar panels produce an energy surplus, for which we get very little money back.&lt;/p&gt;
-&lt;p&gt;Of course, this data is available in my Home Assistant (HA) setup, but that takes a few clicks on a phone or laptop.
-I wanted something equivalent to a good old fashioned barometer, quietly hanging on the wall.
-A look in passing by should be enough to be informed.&lt;/p&gt;</description>
+&lt;p&gt;I wanted a wall display for my house&amp;rsquo;s energy. Not an app, but something glanceable, always on, no clicks required.
+Apparently that&amp;rsquo;s harder to buy than it sounds.&lt;/p&gt;
+&lt;p&gt;On a sunny day, it makes sense to turn on energy-intensive appliances such as washing machines, because the energy surplus from our solar panels earns us almost nothing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why You Work: Amateur, Professional, or Passionate?</title>
@@ -67,15 +67,17 @@ It can also be powerful (see this example- ttt)&lt;/p&gt;
 Depending on the scenario, we are talking about billions to trillions of parameters in the LLM.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Dig Autonomy</title>
-      <link>http://localhost:1313/posts/dig-autonomy/</link>
+      <title>Autonomous actors and power plays</title>
+      <link>http://localhost:1313/posts/dig-autonomy-plays/</link>
       <pubDate>Fri, 27 Feb 2026 07:39:41 +0000</pubDate>
-      <guid>http://localhost:1313/posts/dig-autonomy/</guid>
-      <description>&lt;p&gt;Should companies and governments spend a lot of resources on becoming independent from large tech providers?
-There may be a few good reasons for that.
-For example, we have seen that they cannot be expected to be bound by a common legal framework.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s think this through, and start by asking who is at risk here, and more importantly, what can be done about it.&lt;/p&gt;
-&lt;p&gt;For the average company, the power concentration that is inherent in dominant suppliers constitutes a continuity risk.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/dig-autonomy-plays/</guid>
+      <description>&lt;h2 id=&#34;notes-for-the-next-chapter&#34;&gt;Notes for the next chapter.&lt;/h2&gt;
+&lt;h2 id=&#34;actor-interactions-and-power-plays&#34;&gt;Actor interactions and power plays&lt;/h2&gt;
+&lt;p&gt;Government versus big corporations. Many countries have power struggles between the central government and big corporations.
+Russia has its oligarchy, China has a socialist market economy.
+And the second Trump administration has seen major clashes with big tech companies.&lt;/p&gt;
+&lt;p&gt;Most governments are critically dependent on technology service firms for their regular IT,
+and these companies may not fully fall under national authority, especially when they are multinationals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Is an Agent</title>
