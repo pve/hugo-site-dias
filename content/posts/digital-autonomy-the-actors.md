@@ -58,7 +58,7 @@ What is at risk for companies includes:
 
 ## Regulators
 
-We already mentioned government regulators, but industry associations can also regulate, an example being the Payment Card Industry Security Standards Council (PCI SSC) for credit card data.
+We already mentioned government regulators, but industry associations can also regulate, an example being the Payment Card Industry Security Standards Council (PCI SSC) for credit card data security standards.
 
 Regulators issue, maintain, and enforce compliance rules.
 
