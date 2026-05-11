@@ -106,7 +106,7 @@ The story so far focuses on
 But more risks exist within the architecture.
 Any mail that is addressed to the bot account will be processed by the bot.
 An open 'execution environment' like that brings a few problems.
-[This unit](/book/diginfra/execution-environments.md) in the Digital Infrastructures book starts an elaboration on the idea of execution environments.
+[This unit](/book/diginfra/execution-environments) in the Digital Infrastructures book starts an elaboration on the idea of execution environments.
 In short: an execution environment sits inside a control boundary.
 In this case, the control boundary lets all emails go through.
 
