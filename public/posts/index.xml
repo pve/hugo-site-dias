@@ -6,8 +6,37 @@
     <description>Recent content in Peter&#39;s Griddle on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital autonomy: Autarky</title>
+      <link>http://localhost:1313/posts/digital-autonomy-autarky/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/digital-autonomy-autarky/</guid>
+      <description>&lt;h2 id=&#34;autarky&#34;&gt;Autarky&lt;/h2&gt;
+&lt;p&gt;Implicit in many discussions on digital autonomy is the quest for &amp;lsquo;autarky&amp;rsquo;, being completely independent from other actors, for example those actors whose objectives may be in conflict with ours.
+This is driving the call for national cloud providers, local manufacturing, and more open source, to name just a few.&lt;/p&gt;
+&lt;p&gt;Autarky, however, is just one tool for establishing autonomy, and a very difficult one as well.&lt;/p&gt;
+&lt;p&gt;Economic history shows that no well-developed country is in a state of autarky.
+For example, in World War II, England was heavily dependent on transatlantic shipping convoys for its supplies, including food.
+This should be familiar to anybody who has studied the role of Alan Turing and others at Bletchley Park in deciphering the German military code (Enigma) that threatened those convoys.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital autonomy: The risks</title>
+      <link>http://localhost:1313/posts/digital-autonomy-the-risks/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/digital-autonomy-the-risks/</guid>
+      <description>&lt;p&gt;When discussing digital autonomy, the information risks are the usual ones.
+Confidentiality, Integrity, and Availability.&lt;/p&gt;
+&lt;p&gt;Beyond that, there are governance related risks that reduce the capability of an actor (e.g. government) to govern and control.
+This includes all means to influence other international actors, including military capability.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s have a look at the assets at risk, looking through the lens of sovereignty risks.&lt;/p&gt;
+&lt;p&gt;Confidentiality of internal government communication
+Military capability
+Capability to regulate businesses and individuals
+Ability to fulfill responsibilities to citizens (laws, privacy rights)
+Economic policy as a tool for development&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Digital Autonomy: the Actors</title>
       <link>http://localhost:1313/posts/digital-autonomy-the-actors/</link>
@@ -19,7 +48,7 @@ We can then talk about how digital autonomy allows these actors to collaborate a
 Elsewhere, I write about &lt;a href=&#34;http://localhost:1313/book/power/international-actors/&#34;&gt;international actors&lt;/a&gt;, and this story builds on that.&lt;/p&gt;
 &lt;p&gt;All actors (e.g. governments, companies) perceive IT risk in their own way.
 Generally though, they include the standard IT risks (confidentiality, integrity, and availability).
-Beyond that, there is the risk of failing to capture the value of new technology, and (a little derived) failure to exercise governance and control over relevant other actors.&lt;/p&gt;</description>
+Beyond that, there is the risk of failing to capture the value of new technology, and failure to exercise governance and control over relevant other actors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A badge on the wall</title>
@@ -71,8 +100,7 @@ Depending on the scenario, we are talking about billions to trillions of paramet
       <link>http://localhost:1313/posts/dig-autonomy-plays/</link>
       <pubDate>Fri, 27 Feb 2026 07:39:41 +0000</pubDate>
       <guid>http://localhost:1313/posts/dig-autonomy-plays/</guid>
-      <description>&lt;h2 id=&#34;notes-for-the-next-chapter&#34;&gt;Notes for the next chapter.&lt;/h2&gt;
-&lt;h2 id=&#34;actor-interactions-and-power-plays&#34;&gt;Actor interactions and power plays&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;actor-interactions-and-power-plays&#34;&gt;Actor interactions and power plays&lt;/h2&gt;
 &lt;p&gt;Government versus big corporations. Many countries have power struggles between the central government and big corporations.
 Russia has its oligarchy, China has a socialist market economy.
 And the second Trump administration has seen major clashes with big tech companies.&lt;/p&gt;

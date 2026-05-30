@@ -24,21 +24,6 @@ As you can read elsewhere, I find promise theory to be a useful framework for ta
 Open source promises to give users functionality, and liberate them from monopolies.
 But when open source has a supply chain security issue, it can feel like a betrayal on those promises.
 
-## Autarky
-
-Implicit in many discussions on digital autonomy is the quest for 'autarky', being completely independent from other actors.
-This is driving the call for national cloud providers, and local manufacturing.
-
-Autarky, however, is just one tool for establishing autonomy, and a very hard one as well.
-
-Economic history shows that no well developed country is in a state of autarky.
-For example, in World War II, England was completely dependent on transatlantic shipping convoys for its provisioning, including food.
-This should be familiar to anybody who has studied the role of Alan Turing and Bletchley Park in deciphering the Nazi secret code (Enigma) that threatened those convoys.
-
-Even the US is dependent on most of the world for its wealth, for example by financing its ever growing debt, and supporting its worldwide military presence.
-
-It is therefore an illusion to think that any country can achieve total digital autonomy.
-There is, and never will be, total autonomy.
 
 
 ##
