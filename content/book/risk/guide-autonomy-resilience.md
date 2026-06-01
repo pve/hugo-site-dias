@@ -5,8 +5,6 @@ title: 'A guide to digital sovereignty, autonomy, and business resilience'
 weight: 70
 ---
 
-(First public draft)
-
 Imagine that you are part of the government of an average nation, and you have just realized that IT has become a substantial factor in your operation.
 Or you have a similar position in a manufacturing industry, or in the financial sector.
 As IT increased in volume, you have tried to keep its costs down, it was just a facility.

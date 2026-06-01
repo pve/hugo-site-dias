@@ -447,34 +447,6 @@ Reach out to your development teams and beyond to offer your help in using them 
 You can extend Claude or OpenAI desktop with MCP servers, which are basically small programs that run on the desktop and have access to all information and services that the user has.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>AI Voice</title>
-      <link>http://localhost:1313/posts/ai-voice/</link>
-      <pubDate>Tue, 22 Apr 2025 09:32:32 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-voice/</guid>
-      <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
-    group frontend(cloud)[Frontend]
-        service telco(cloud)[Telco] in frontend
-        service sips(internet)[Sips] in frontend
-    
-    group backend(cloud)[Backend]
-        service app_server(server)[Azure voice bot] in backend
-        service twilio(internet)[Twilio] in backend
-        service database(database)[Database] in backend
-        service llm(server)[LLM] in backend
-
-
-    group configuration(cloud)[Configuration]
-        service faq(database)[FAQ mgt]    in configuration
-    
-    telco:R -- L:sips
-    sips:R -- L:twilio
-    twilio:R -- L:app_server
-    app_server:B -- T:database
-    llm:B -- T:app_server
-    faq:R -- L:database
-&lt;/pre&gt;</description>
-    </item>
-    <item>
       <title>Vibe Coding in Reality</title>
       <link>http://localhost:1313/posts/vibe-coding-real/</link>
       <pubDate>Tue, 08 Apr 2025 14:34:54 +0000</pubDate>

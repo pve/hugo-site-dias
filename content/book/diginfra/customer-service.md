@@ -32,8 +32,8 @@ R: Here is your address, let me know when you are done with it
 A: thank you, I am done with this address
 
 Example IP addresses allocation
-![alt text](image.png)
-![alt text](image-1.png)
+![IP address allocation](/images/ip-allocation.png)
+![IP address allocation 2](/images/ip-allocation-2.png)
 
 Example TCP/IP
 picture
