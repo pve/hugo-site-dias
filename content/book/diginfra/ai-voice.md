@@ -34,9 +34,17 @@ architecture-beta
 ```
 
 Who is actually responsible for what?
+This is important for a number of reasons:
+
+- it allows us to set responsibilities for management and security
+- it helps us when we draw up contracts and service level agreements
+- it is a great start for threat modelling, for example in understanding where identity based permissions cross organizational boundaries.
+
+In the [unit on AI roles](/book/diginfra/ai-roles/) we look at the way this maps to the allocation of controls
+over various actors.
+
 At the highest level we have three organizations, each with their own control boundary.
 All technology is managed by an organization, whether or not they own it directly.
-This is important because it allows us to set responsibilities and draw up contracts and service level agreements.
 
 The three major domains here are:
 
