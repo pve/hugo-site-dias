@@ -9,6 +9,8 @@ I am confused about what it means to be an AI agent.
 This is talked about by half the world in phrases like agentic AI, should AI agents run your business, and so on.
 Let's explore this, so that we can understand and better control this.
 
+## Agents run somewhere
+
 Apparently, an AI agent is a service that runs somewhere, and acts on somebodies behalf.
 This means it has interactions with other (IT) systems.
 But we have been doing this for a long time: whenever I type something to my browser, the browser will pull pages from the internet, on my behalf.
@@ -21,10 +23,14 @@ Or, think of my autoresponder email systems.
 
 Even in a system like OpenClaw, the agents run on specific rules, at specific times, according to specific conditions.
 
+## Agents have permissions
+
 Agents have specific, potentially powerful, permissions.
 Again, nothing new or AI specific.
 Any running computer program needs permissions to be able to do something useful.
 We typically don't call these agents.
+
+## Agents are non-deterministic
 
 AI agents are non-deterministic, we can argue.
 Nothing new either, Monte Carlo simulations never repeat the exact same result.
