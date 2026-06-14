@@ -100,7 +100,7 @@ Depending on the scenario, we are talking about billions to trillions of paramet
       <link>http://localhost:1313/posts/dig-autonomy-plays/</link>
       <pubDate>Fri, 27 Feb 2026 07:39:41 +0000</pubDate>
       <guid>http://localhost:1313/posts/dig-autonomy-plays/</guid>
-      <description>&lt;h2 id=&#34;actor-interactions-and-power-plays&#34;&gt;Actor interactions and power plays&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;actor-interactions-collaborations-and-power-plays&#34;&gt;Actor interactions, collaborations, and power plays&lt;/h2&gt;
 &lt;p&gt;Government versus big corporations. Many countries have power struggles between the central government and big corporations.
 Russia has its oligarchy, China has a socialist market economy.
 And the second Trump administration has seen major clashes with big tech companies.&lt;/p&gt;
@@ -115,6 +115,7 @@ and these companies may not fully fall under national authority, especially when
       <description>&lt;p&gt;I am confused about what it means to be an AI agent.
 This is talked about by half the world in phrases like agentic AI, should AI agents run your business, and so on.
 Let&amp;rsquo;s explore this, so that we can understand and better control this.&lt;/p&gt;
+&lt;h2 id=&#34;agents-run-somewhere&#34;&gt;Agents run somewhere&lt;/h2&gt;
 &lt;p&gt;Apparently, an AI agent is a service that runs somewhere, and acts on somebodies behalf.
 This means it has interactions with other (IT) systems.
 But we have been doing this for a long time: whenever I type something to my browser, the browser will pull pages from the internet, on my behalf.
@@ -268,12 +269,16 @@ A process for test-driven design would be even better.&lt;/p&gt;
       <link>http://localhost:1313/posts/why2025/</link>
       <pubDate>Thu, 31 Jul 2025 08:10:04 +0000</pubDate>
       <guid>http://localhost:1313/posts/why2025/</guid>
-      <description>&lt;p&gt;For the book, here is the link: &lt;a href=&#34;https://digitalinfrastructures.nl&#34;&gt;https://digitalinfrastructures.nl&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;h1 id=&#34;digital-power-the-book&#34;&gt;Digital Power: The book&lt;/h1&gt;
+&lt;p&gt;For the book and my blog, here is the link: &lt;a href=&#34;https://digitalinfrastructures.nl&#34;&gt;https://digitalinfrastructures.nl&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;coaching-for-professionals&#34;&gt;Coaching for professionals&lt;/h1&gt;
+&lt;p&gt;I run a group coaching program for senior IT professionals.
+This addresses knowledge and skills in technology, governance, and your own career objectives.&lt;/p&gt;
+&lt;p&gt;Read more on &lt;a href=&#34;https://docs.google.com/document/d/1rdQNA04RmalRzg77hGqMXuYKNQ4_S8x7kggiQB-R3Fc/edit?tab=t.0&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;presentations-at-why-2025&#34;&gt;Presentations at WHY 2025&lt;/h1&gt;
 &lt;p&gt;PDF: &lt;a href=&#34;http://localhost:1313/How-to-bluff-ZT-WHY2025.pdf&#34;&gt;How to bluff your way into Zero Trust&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;PDF: &lt;a href=&#34;Diagrams-that-communicate&#34;&gt;Using deployment diagrams to explain architecture and security to everybody&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The presentations are also online in the WHY2025 YouTube channel and at the &lt;a href=&#34;https://media.ccc.de/b/conferences/camp-NL/why2025&#34;&gt;CCC&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;More on deployment diagrams in the book, in which you can search.&lt;/p&gt;
-&lt;p&gt;Find me on LinkedIN or Mastodon @petersgriddle@fosstodon.org.&lt;/p&gt;</description>
+&lt;p&gt;The presentations are also online in the WHY2025 YouTube channel and at the &lt;a href=&#34;https://media.ccc.de/b/conferences/camp-NL/why2025&#34;&gt;CCC&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Real App With Ai</title>

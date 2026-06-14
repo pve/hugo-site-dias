@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -51,6 +51,19 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;li&gt;Processors&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital autonomy: Autarky</title>
+      <link>http://localhost:1313/posts/digital-autonomy-autarky/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/digital-autonomy-autarky/</guid>
+      <description>&lt;h2 id=&#34;autarky&#34;&gt;Autarky&lt;/h2&gt;
+&lt;p&gt;Implicit in many discussions on digital autonomy is the quest for &amp;lsquo;autarky&amp;rsquo;, being completely independent from other actors, for example those actors whose objectives may be in conflict with ours.
+This is driving the call for national cloud providers, local manufacturing, and more open source, to name just a few.&lt;/p&gt;
+&lt;p&gt;Autarky, however, is just one tool for establishing autonomy, and a very difficult one as well.&lt;/p&gt;
+&lt;p&gt;Economic history shows that no well-developed country is in a state of autarky.
+For example, in World War II, England was heavily dependent on transatlantic shipping convoys for its supplies, including food.
+This should be familiar to anybody who has studied the role of Alan Turing and others at Bletchley Park in deciphering the German military code (Enigma) that threatened those convoys.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital autonomy: The risks</title>
@@ -131,7 +144,7 @@ Depending on the scenario, we are talking about billions to trillions of paramet
       <link>http://localhost:1313/posts/dig-autonomy-plays/</link>
       <pubDate>Fri, 27 Feb 2026 07:39:41 +0000</pubDate>
       <guid>http://localhost:1313/posts/dig-autonomy-plays/</guid>
-      <description>&lt;h2 id=&#34;actor-interactions-and-power-plays&#34;&gt;Actor interactions and power plays&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;actor-interactions-collaborations-and-power-plays&#34;&gt;Actor interactions, collaborations, and power plays&lt;/h2&gt;
 &lt;p&gt;Government versus big corporations. Many countries have power struggles between the central government and big corporations.
 Russia has its oligarchy, China has a socialist market economy.
 And the second Trump administration has seen major clashes with big tech companies.&lt;/p&gt;
@@ -146,6 +159,7 @@ and these companies may not fully fall under national authority, especially when
       <description>&lt;p&gt;I am confused about what it means to be an AI agent.
 This is talked about by half the world in phrases like agentic AI, should AI agents run your business, and so on.
 Let&amp;rsquo;s explore this, so that we can understand and better control this.&lt;/p&gt;
+&lt;h2 id=&#34;agents-run-somewhere&#34;&gt;Agents run somewhere&lt;/h2&gt;
 &lt;p&gt;Apparently, an AI agent is a service that runs somewhere, and acts on somebodies behalf.
 This means it has interactions with other (IT) systems.
 But we have been doing this for a long time: whenever I type something to my browser, the browser will pull pages from the internet, on my behalf.
@@ -363,12 +377,16 @@ A process for test-driven design would be even better.&lt;/p&gt;
       <link>http://localhost:1313/posts/why2025/</link>
       <pubDate>Thu, 31 Jul 2025 08:10:04 +0000</pubDate>
       <guid>http://localhost:1313/posts/why2025/</guid>
-      <description>&lt;p&gt;For the book, here is the link: &lt;a href=&#34;https://digitalinfrastructures.nl&#34;&gt;https://digitalinfrastructures.nl&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;h1 id=&#34;digital-power-the-book&#34;&gt;Digital Power: The book&lt;/h1&gt;
+&lt;p&gt;For the book and my blog, here is the link: &lt;a href=&#34;https://digitalinfrastructures.nl&#34;&gt;https://digitalinfrastructures.nl&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;coaching-for-professionals&#34;&gt;Coaching for professionals&lt;/h1&gt;
+&lt;p&gt;I run a group coaching program for senior IT professionals.
+This addresses knowledge and skills in technology, governance, and your own career objectives.&lt;/p&gt;
+&lt;p&gt;Read more on &lt;a href=&#34;https://docs.google.com/document/d/1rdQNA04RmalRzg77hGqMXuYKNQ4_S8x7kggiQB-R3Fc/edit?tab=t.0&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;presentations-at-why-2025&#34;&gt;Presentations at WHY 2025&lt;/h1&gt;
 &lt;p&gt;PDF: &lt;a href=&#34;http://localhost:1313/How-to-bluff-ZT-WHY2025.pdf&#34;&gt;How to bluff your way into Zero Trust&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;PDF: &lt;a href=&#34;Diagrams-that-communicate&#34;&gt;Using deployment diagrams to explain architecture and security to everybody&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The presentations are also online in the WHY2025 YouTube channel and at the &lt;a href=&#34;https://media.ccc.de/b/conferences/camp-NL/why2025&#34;&gt;CCC&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;More on deployment diagrams in the book, in which you can search.&lt;/p&gt;
-&lt;p&gt;Find me on LinkedIN or Mastodon @petersgriddle@fosstodon.org.&lt;/p&gt;</description>
+&lt;p&gt;The presentations are also online in the WHY2025 YouTube channel and at the &lt;a href=&#34;https://media.ccc.de/b/conferences/camp-NL/why2025&#34;&gt;CCC&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Real App With Ai</title>
@@ -591,34 +609,6 @@ For readability, I edited the description later, but the flow is as I went throu
 Reach out to your development teams and beyond to offer your help in using them wisely, even if you know nothing about them yet.&lt;/p&gt;
 &lt;p&gt;MCP, Model Context Protocol, was introduced in November 2024 as a standardised way to feed AI chatbots with extra information.
 You can extend Claude or OpenAI desktop with MCP servers, which are basically small programs that run on the desktop and have access to all information and services that the user has.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AI Voice</title>
-      <link>http://localhost:1313/posts/ai-voice/</link>
-      <pubDate>Tue, 22 Apr 2025 09:32:32 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ai-voice/</guid>
-      <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
-    group frontend(cloud)[Frontend]
-        service telco(cloud)[Telco] in frontend
-        service sips(internet)[Sips] in frontend
-    
-    group backend(cloud)[Backend]
-        service app_server(server)[Azure voice bot] in backend
-        service twilio(internet)[Twilio] in backend
-        service database(database)[Database] in backend
-        service llm(server)[LLM] in backend
-
-
-    group configuration(cloud)[Configuration]
-        service faq(database)[FAQ mgt]    in configuration
-    
-    telco:R -- L:sips
-    sips:R -- L:twilio
-    twilio:R -- L:app_server
-    app_server:B -- T:database
-    llm:B -- T:app_server
-    faq:R -- L:database
-&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Who Suffers?</title>
@@ -1107,6 +1097,37 @@ I could tell horror stories about how early client server application installati
 LLM training costs hundreds, thousands, or more hours of compute time on specialized hardware.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Example: an AI-Assisted Voicebot</title>
+      <link>http://localhost:1313/book/diginfra/ai-voice/</link>
+      <pubDate>Tue, 22 Apr 2025 09:32:32 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/ai-voice/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s look at a practical example from one of my clients.
+It handles voice calls using an AI-supported chatbot.&lt;/p&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
+    group frontend(cloud)[Telecom operator]
+        service telco(cloud)[Telco switches] in frontend
+        service sips(internet)[SIPS Gateway] in frontend
+    
+    group backend(cloud)[Application Provider]
+        service app_server(server)[Azure voice bot] in backend
+        service twilio(internet)[Twilio] in backend
+        service database(database)[FAQ Database] in backend
+        service llm(server)[LLM] in backend
+
+    group configuration(cloud)[Client]
+        service faq(database)[FAQ mgt]    in configuration
+    
+    telco:R -- L:sips
+    sips:R -- L:twilio
+    twilio:R -- L:app_server
+    app_server:B -- T:database
+    llm:B -- T:app_server
+    faq:R -- L:database
+&lt;/pre&gt;
+&lt;p&gt;Who is actually responsible for what?
+This is important for a number of reasons:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Retrofitting Zero Trust on an existing application: an illustration</title>
       <link>http://localhost:1313/book/risk/retrofitting-zero-trust-existing-application/</link>
       <pubDate>Fri, 28 Feb 2025 14:15:21 +0000</pubDate>
@@ -1139,11 +1160,23 @@ I would simplify that as:  &lt;em&gt;what do I do, and what do you do&lt;/em&gt;
       <link>http://localhost:1313/book/risk/guide-autonomy-resilience/</link>
       <pubDate>Fri, 11 Jul 2025 14:57:31 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/guide-autonomy-resilience/</guid>
-      <description>&lt;p&gt;(First public draft)&lt;/p&gt;
-&lt;p&gt;Imagine that you are part of the government of an average nation, and you have just realized that IT has become a substantial factor in your operation.
+      <description>&lt;p&gt;Imagine that you are part of the government of an average nation, and you have just realized that IT has become a substantial factor in your operation.
 Or you have a similar position in a manufacturing industry, or in the financial sector.
 As IT increased in volume, you have tried to keep its costs down, it was just a facility.
 Outsourcing to more experienced partners was an option, and so was the use of cloud computing, for example for your Office applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital autonomy: Controls</title>
+      <link>http://localhost:1313/book/risk/digital-autonomy-controls/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/digital-autonomy-controls/</guid>
+      <description>&lt;p&gt;(gegenereerd. )
+voorbeeld controls: zelf hosten, eigen software ontwikkelen.
+Voorbeeld China die Huawei chips laat ontwikkelen voor AI.
+Government regions (fake)
+CCM sov controls.&lt;/p&gt;
+&lt;p&gt;The guide to &lt;a href=&#34;http://localhost:1313/book/risk/guide-autonomy-resilience/&#34;&gt;digital sovereignty, autonomy, and business resilience&lt;/a&gt; frames the problem and identifies the questions. This unit begins answering them: what can cloud consumers, regulators, and governments actually do?&lt;/p&gt;
+&lt;p&gt;The honest starting point is that full digital autonomy — autarky — is not achievable, and not worth pursuing. No well-developed country is fully independent from others. The goal is not independence, but resilience: reducing the negative effects of dependence, and preserving options.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data, Risk, or Controls: where to start?</title>
@@ -1253,6 +1286,21 @@ In an earlier unit, we talked about promise theory&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Can I get a new laptop?&lt;/p&gt;
 &lt;p&gt;Joe from accounting needs permissions to access this application. Can you fix that?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Prisoner&#39;s Dilemma</title>
+      <link>http://localhost:1313/book/value/prisoners-dilemma/</link>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/prisoners-dilemma/</guid>
+      <description>&lt;h2 id=&#34;the-game-of-trust&#34;&gt;The game of trust&lt;/h2&gt;
+&lt;p&gt;How do people establish trust under the most adverse circumstances?
+How can sworn enemies get into a position that it makes sense for them to help each other.&lt;/p&gt;
+&lt;p&gt;In game theory, this is the surprising phenomenon that the prisoner&amp;rsquo;s dilemma aims to explain.&lt;/p&gt;
+&lt;p&gt;Imagine two suspects held by the police who don&amp;rsquo;t have enough evidence against them.
+Their choices (game moves) are to confess or stay silent.
+If they help each other by staying silent, they will both get a positive pay-off: they will be free.
+If one confesses, and therefore betrays the other, the second one will go to prison for a longer time than the first one.
+If they both confess, they will both go to prison.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Non-Monetary Values</title>

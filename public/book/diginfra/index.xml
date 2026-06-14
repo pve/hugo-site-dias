@@ -173,6 +173,37 @@ I could tell horror stories about how early client server application installati
 LLM training costs hundreds, thousands, or more hours of compute time on specialized hardware.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Example: an AI-Assisted Voicebot</title>
+      <link>http://localhost:1313/book/diginfra/ai-voice/</link>
+      <pubDate>Tue, 22 Apr 2025 09:32:32 +0000</pubDate>
+      <guid>http://localhost:1313/book/diginfra/ai-voice/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s look at a practical example from one of my clients.
+It handles voice calls using an AI-supported chatbot.&lt;/p&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
+    group frontend(cloud)[Telecom operator]
+        service telco(cloud)[Telco switches] in frontend
+        service sips(internet)[SIPS Gateway] in frontend
+    
+    group backend(cloud)[Application Provider]
+        service app_server(server)[Azure voice bot] in backend
+        service twilio(internet)[Twilio] in backend
+        service database(database)[FAQ Database] in backend
+        service llm(server)[LLM] in backend
+
+    group configuration(cloud)[Client]
+        service faq(database)[FAQ mgt]    in configuration
+    
+    telco:R -- L:sips
+    sips:R -- L:twilio
+    twilio:R -- L:app_server
+    app_server:B -- T:database
+    llm:B -- T:app_server
+    faq:R -- L:database
+&lt;/pre&gt;
+&lt;p&gt;Who is actually responsible for what?
+This is important for a number of reasons:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>AI Roles and Responsibilities</title>
       <link>http://localhost:1313/book/diginfra/ai-roles/</link>
       <pubDate>Tue, 26 Aug 2025 15:56:05 +0000</pubDate>

@@ -6,7 +6,7 @@
     <description>Recent content in Risks of digital infrastructures on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Sep 2025 19:48:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -137,11 +137,23 @@ And hopefully, that investment is less costly than the damage potential.&lt;/p&g
       <link>http://localhost:1313/book/risk/guide-autonomy-resilience/</link>
       <pubDate>Fri, 11 Jul 2025 14:57:31 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/guide-autonomy-resilience/</guid>
-      <description>&lt;p&gt;(First public draft)&lt;/p&gt;
-&lt;p&gt;Imagine that you are part of the government of an average nation, and you have just realized that IT has become a substantial factor in your operation.
+      <description>&lt;p&gt;Imagine that you are part of the government of an average nation, and you have just realized that IT has become a substantial factor in your operation.
 Or you have a similar position in a manufacturing industry, or in the financial sector.
 As IT increased in volume, you have tried to keep its costs down, it was just a facility.
 Outsourcing to more experienced partners was an option, and so was the use of cloud computing, for example for your Office applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital autonomy: Controls</title>
+      <link>http://localhost:1313/book/risk/digital-autonomy-controls/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/digital-autonomy-controls/</guid>
+      <description>&lt;p&gt;(gegenereerd. )
+voorbeeld controls: zelf hosten, eigen software ontwikkelen.
+Voorbeeld China die Huawei chips laat ontwikkelen voor AI.
+Government regions (fake)
+CCM sov controls.&lt;/p&gt;
+&lt;p&gt;The guide to &lt;a href=&#34;http://localhost:1313/book/risk/guide-autonomy-resilience/&#34;&gt;digital sovereignty, autonomy, and business resilience&lt;/a&gt; frames the problem and identifies the questions. This unit begins answering them: what can cloud consumers, regulators, and governments actually do?&lt;/p&gt;
+&lt;p&gt;The honest starting point is that full digital autonomy — autarky — is not achievable, and not worth pursuing. No well-developed country is fully independent from others. The goal is not independence, but resilience: reducing the negative effects of dependence, and preserving options.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data, Risk, or Controls: where to start?</title>

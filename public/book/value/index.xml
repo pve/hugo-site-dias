@@ -6,7 +6,7 @@
     <description>Recent content in Value on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Nov 2025 20:10:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/book/value/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is the value of information?</title>
@@ -133,6 +133,21 @@ This is the core question here.
 How do you respond to an offer from a service provider? But also, how do they respond to you?&lt;/p&gt;
 &lt;p&gt;I have found game theory to be an effective model to think about the outcomes of sequences of interactions.
 This is because it clearly identifies the actors (or players) and their interests.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Prisoner&#39;s Dilemma</title>
+      <link>http://localhost:1313/book/value/prisoners-dilemma/</link>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/value/prisoners-dilemma/</guid>
+      <description>&lt;h2 id=&#34;the-game-of-trust&#34;&gt;The game of trust&lt;/h2&gt;
+&lt;p&gt;How do people establish trust under the most adverse circumstances?
+How can sworn enemies get into a position that it makes sense for them to help each other.&lt;/p&gt;
+&lt;p&gt;In game theory, this is the surprising phenomenon that the prisoner&amp;rsquo;s dilemma aims to explain.&lt;/p&gt;
+&lt;p&gt;Imagine two suspects held by the police who don&amp;rsquo;t have enough evidence against them.
+Their choices (game moves) are to confess or stay silent.
+If they help each other by staying silent, they will both get a positive pay-off: they will be free.
+If one confesses, and therefore betrays the other, the second one will go to prison for a longer time than the first one.
+If they both confess, they will both go to prison.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Non-Monetary Values</title>

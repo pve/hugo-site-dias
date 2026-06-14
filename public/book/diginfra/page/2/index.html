@@ -250,6 +250,20 @@ A trained model is the result of processing a lot of training data by a specific
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Example: an AI-Assisted Voicebot
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Let’s look at a practical example from one of my clients. It handles voice calls using an AI-supported chatbot.
+architecture-beta group frontend(cloud)[Telecom operator] service telco(cloud)[Telco switches] in frontend service sips(internet)[SIPS Gateway] in frontend group backend(cloud)[Application Provider] service app_server(server)[Azure voice bot] in backend service twilio(internet)[Twilio] in backend service database(database)[FAQ Database] in backend service llm(server)[LLM] in backend group configuration(cloud)[Client] service faq(database)[FAQ mgt] in configuration telco:R -- L:sips sips:R -- L:twilio twilio:R -- L:app_server app_server:B -- T:database llm:B -- T:app_server faq:R -- L:database Who is actually responsible for what? This is important for a number of reasons:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-22 09:32:32 +0000 UTC'>April 22, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Example: an AI-Assisted Voicebot" href="http://localhost:1313/book/diginfra/ai-voice/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">AI Roles and Responsibilities
     </h2>
   </header>

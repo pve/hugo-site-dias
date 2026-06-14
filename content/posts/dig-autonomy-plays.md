@@ -5,7 +5,7 @@ title: 'Autonomous actors and power plays'
 weight: 10
 ---
 
-## Actor interactions and power plays
+## Actor interactions, collaborations, and power plays
 
 Government versus big corporations. Many countries have power struggles between the central government and big corporations.
 Russia has its oligarchy, China has a socialist market economy.

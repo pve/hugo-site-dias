@@ -35,3 +35,10 @@ Digital infrastructure broadly (guide-autonomy-resilience.md and how-can-we-achi
 Availability of IT services (email, file storage, operations)
 Control over the supply chain (hardware, software, systems management, personnel)
 Democracy and prosperity (framed as societal assets)
+
+Then there is perception of loss of control.
+
+Regulatory risk.
+
+What risks are implied by -non-residency? It is the legal fiction that residency (in a foreigen location) implies control. It does not, at least not totally.
+Residency does allow the state actor to 'cut the power'.

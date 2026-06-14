@@ -1,6 +1,6 @@
 ---
 date: '2025-07-25T07:45:07Z'
-draft: true
+draft: false
 title: 'Cloud Computing'
 weight: 51
 aireview: 
