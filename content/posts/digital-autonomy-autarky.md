@@ -24,3 +24,5 @@ There isn't, and never will be, total autarky, and therefore there isn't, and ne
 From that conclusion, where do we go, in order to protect what we deem valuable?
 
 One approach finds its roots in the prisoner's dilemma, which is the topic of an upcoming text.
+
+

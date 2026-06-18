@@ -10,7 +10,7 @@ weight: 10
 **Full transparency**: Except for some initial prompting, most of this blog and the research behind it was AI generated. I did check everything manually though.
 While I tried to include all relevant files in [this repo](https://github.com/pve/local-model-coding), reproducibility may be hampered by some of my older Claude contexts leaking into this process (e.g. about how opinionated I can be).
 
-Inspiration came from (https://adrianco.medium.com/how-reliable-fast-and-expensive-is-each-version-of-claude-code-sonnet-through-opus-4-8-fast-272d74ffc869)[Adrian Cockcroft's retort].
+Inspiration came from [Adrian Cockcroft's retort](https://adrianco.medium.com/how-reliable-fast-and-expensive-is-each-version-of-claude-code-sonnet-through-opus-4-8-fast-272d74ffc869).
 Consider this like a 'hello world' version that that.
 
 Definitely reach out to comment.
