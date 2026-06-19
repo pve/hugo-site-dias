@@ -1,6 +1,6 @@
 ---
 date: '2026-06-14T00:00:00Z'
-draft: true
+draft: false
 title: 'Digital autonomy: Controls'
 weight: 75
 ---
