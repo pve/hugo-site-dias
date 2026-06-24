@@ -2,7 +2,7 @@
 date: '2025-03-09T11:06:48Z'
 draft: false
 title: 'Positions of Power in IT'
-weight: 25
+weight: 27
 ---
 One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.
 

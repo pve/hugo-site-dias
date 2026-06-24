@@ -2,6 +2,7 @@
 date: '2025-03-22T17:56:28Z'
 draft: false
 title: 'International Actors'
+weight: 70
 ---
 
 The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are, as we will see.

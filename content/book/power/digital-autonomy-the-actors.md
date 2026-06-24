@@ -2,7 +2,9 @@
 date: '2026-04-28T00:00:00Z'
 draft: false
 title: 'Digital Autonomy: the Actors'
-weight: 10
+weight: 80
+aliases:
+  - /posts/digital-autonomy-the-actors.md
 ---
 
 Achieving some form of digital autonomy or sovereignty is a [wicked problem](/posts/wicked-2026/), too large to handle in one go.
