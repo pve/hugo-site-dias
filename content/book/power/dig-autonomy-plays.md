@@ -2,7 +2,7 @@
 date: '2026-02-27T07:39:41Z'
 draft: true
 title: 'Autonomous actors and power plays'
-weight: 10
+weight: 85
 ---
 
 ## Actor interactions, collaborations, and power plays

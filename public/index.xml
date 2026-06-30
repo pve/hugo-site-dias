@@ -6,7 +6,7 @@
     <description>Recent content in Digital Power on Digital Infrastructures at Scale</description>
     <generator>Hugo -- 0.148.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 10:41:46 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Risk</title>
@@ -53,46 +53,27 @@ One of the tasks of a risk analyst is to figure out what regulations apply exact
 &lt;p&gt;In the cloud security world, it is customary to talk about data at rest, data in motion, and data in use. This introduces data as the key common element. But more on cloud security later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Digital autonomy: Autarky</title>
-      <link>http://localhost:1313/posts/digital-autonomy-autarky/</link>
-      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/digital-autonomy-autarky/</guid>
-      <description>&lt;h2 id=&#34;autarky&#34;&gt;Autarky&lt;/h2&gt;
-&lt;p&gt;Implicit in many discussions on digital autonomy is the quest for &amp;lsquo;autarky&amp;rsquo;, being completely independent from other actors, for example those actors whose objectives may be in conflict with ours.
-This is driving the call for national cloud providers, local manufacturing, and more open source, to name just a few.&lt;/p&gt;
-&lt;p&gt;Autarky, however, is just one tool for establishing autonomy, and a very difficult one as well.&lt;/p&gt;
-&lt;p&gt;Economic history shows that no well-developed country is in a state of autarky.
-For example, in World War II, England was heavily dependent on transatlantic shipping convoys for its supplies, including food.
-This should be familiar to anybody who has studied the role of Alan Turing and others at Bletchley Park in deciphering the German military code (Enigma) that threatened those convoys.&lt;/p&gt;</description>
+      <title>Counting the copies: how an AI wiki helped me read my father&#39;s digital legacy</title>
+      <link>http://localhost:1313/posts/an-infra-dedup-story/</link>
+      <pubDate>Sun, 28 Jun 2026 10:41:46 +0000</pubDate>
+      <guid>http://localhost:1313/posts/an-infra-dedup-story/</guid>
+      <description>&lt;h1 id=&#34;counting-the-copies-how-an-ai-wiki-helped-me-read-my-fathers-digital-legacy&#34;&gt;Counting the copies: how an AI wiki helped me read my father&amp;rsquo;s digital legacy&lt;/h1&gt;
+&lt;h2 id=&#34;the-root-cause&#34;&gt;The root cause&lt;/h2&gt;
+&lt;p&gt;In the 1990s my father&amp;rsquo;s health deteriorated as a result of what was later thought to be some
+immune system related disease.
+He found out that living in warm climates with little pollution and no need to stay indoors for very long helped him maintain his health.
+So he took a bold move, sold his house, and became a traveling academic.
+In the summers he would stay in the south of France were we visited him, in the shoulder seasons he lived on one of the Canary Islands, and in the winter months he traveled to the southern hemisphere (Chili, Africa, Australia).
+Jokingly he called himself a &amp;lsquo;refugié pollutique&amp;rsquo;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Digital autonomy: The risks</title>
-      <link>http://localhost:1313/posts/digital-autonomy-the-risks/</link>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/digital-autonomy-the-risks/</guid>
-      <description>&lt;p&gt;When discussing digital autonomy, the information risks are the usual ones.
-Confidentiality, Integrity, and Availability.&lt;/p&gt;
-&lt;p&gt;Beyond that, there are governance related risks that reduce the capability of an actor (e.g. government) to govern and control.
-This includes all means to influence other international actors, including military capability.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s have a look at the assets at risk, looking through the lens of sovereignty risks.&lt;/p&gt;
-&lt;p&gt;Confidentiality of internal government communication
-Military capability
-Capability to regulate businesses and individuals
-Ability to fulfill responsibilities to citizens (laws, privacy rights)
-Economic policy as a tool for development&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Digital Autonomy: the Actors</title>
-      <link>http://localhost:1313/posts/digital-autonomy-the-actors/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/digital-autonomy-the-actors/</guid>
-      <description>&lt;p&gt;Achieving some form of digital autonomy or sovereignty is a &lt;a href=&#34;http://localhost:1313/posts/wicked-2026/&#34;&gt;wicked problem&lt;/a&gt;, too large to handle in one go.
-Let&amp;rsquo;s start therefore with the main actors, and what is at stake for them.
-We can then talk about how digital autonomy allows these actors to collaborate and compete, and therefore impacts the risks they see.
-Elsewhere, I write about &lt;a href=&#34;http://localhost:1313/book/power/international-actors/&#34;&gt;international actors&lt;/a&gt;, and this story builds on that.&lt;/p&gt;
-&lt;p&gt;All actors (e.g. governments, companies) perceive IT risk in their own way.
-Generally though, they include the standard IT risks (confidentiality, integrity, and availability).
-Beyond that, there is the risk of failing to capture the value of new technology, and failure to exercise governance and control over relevant other actors.&lt;/p&gt;</description>
+      <title>Benchmarking Local Coding Models</title>
+      <link>http://localhost:1313/posts/local-coding-models/</link>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/local-coding-models/</guid>
+      <description>&lt;h1 id=&#34;can-ibms-granite-41-code-i-ran-it-against-other-local-models-to-find-out&#34;&gt;Can IBM&amp;rsquo;s Granite 4.1 code? I ran it against other local models to find out&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Full transparency&lt;/strong&gt;: Except for some initial prompting, most of this blog and the research behind it was AI generated. I did check everything manually though.
+While I tried to include all relevant files in &lt;a href=&#34;https://github.com/pve/local-model-coding&#34;&gt;this repo&lt;/a&gt;, reproducibility may be hampered by some of my older Claude contexts leaking into this process (e.g. about how opinionated I can be).&lt;/p&gt;</description>
     </item>
     <item>
       <title>A badge on the wall</title>
@@ -138,18 +119,6 @@ It can also be powerful (see this example- ttt)&lt;/p&gt;
 &lt;p&gt;I believe Moore’s law will be relevant for a few more years, implying that an affordable supply of local capacity will grow.&lt;/p&gt;
 &lt;p&gt;I also believe that there is a minimum LLM size to make them functional, in the same way that there is a minimum number of bytes for a decent picture or audible sound. But above a certain size, there is going to be a diminishing return.
 Depending on the scenario, we are talking about billions to trillions of parameters in the LLM.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Autonomous actors and power plays</title>
-      <link>http://localhost:1313/posts/dig-autonomy-plays/</link>
-      <pubDate>Fri, 27 Feb 2026 07:39:41 +0000</pubDate>
-      <guid>http://localhost:1313/posts/dig-autonomy-plays/</guid>
-      <description>&lt;h2 id=&#34;actor-interactions-collaborations-and-power-plays&#34;&gt;Actor interactions, collaborations, and power plays&lt;/h2&gt;
-&lt;p&gt;Government versus big corporations. Many countries have power struggles between the central government and big corporations.
-Russia has its oligarchy, China has a socialist market economy.
-And the second Trump administration has seen major clashes with big tech companies.&lt;/p&gt;
-&lt;p&gt;Most governments are critically dependent on technology service firms for their regular IT,
-and these companies may not fully fall under national authority, especially when they are multinationals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Is an Agent</title>
@@ -609,6 +578,34 @@ For readability, I edited the description later, but the flow is as I went throu
 Reach out to your development teams and beyond to offer your help in using them wisely, even if you know nothing about them yet.&lt;/p&gt;
 &lt;p&gt;MCP, Model Context Protocol, was introduced in November 2024 as a standardised way to feed AI chatbots with extra information.
 You can extend Claude or OpenAI desktop with MCP servers, which are basically small programs that run on the desktop and have access to all information and services that the user has.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Voice</title>
+      <link>http://localhost:1313/posts/ai-voice/</link>
+      <pubDate>Tue, 22 Apr 2025 09:32:32 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai-voice/</guid>
+      <description>&lt;pre class=&#34;mermaid&#34;&gt;architecture-beta
+    group frontend(cloud)[Frontend]
+        service telco(cloud)[Telco] in frontend
+        service sips(internet)[Sips] in frontend
+    
+    group backend(cloud)[Backend]
+        service app_server(server)[Azure voice bot] in backend
+        service twilio(internet)[Twilio] in backend
+        service database(database)[Database] in backend
+        service llm(server)[LLM] in backend
+
+
+    group configuration(cloud)[Configuration]
+        service faq(database)[FAQ mgt]    in configuration
+    
+    telco:R -- L:sips
+    sips:R -- L:twilio
+    twilio:R -- L:app_server
+    app_server:B -- T:database
+    llm:B -- T:app_server
+    faq:R -- L:database
+&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Who Suffers?</title>
@@ -1166,17 +1163,71 @@ As IT increased in volume, you have tried to keep its costs down, it was just a 
 Outsourcing to more experienced partners was an option, and so was the use of cloud computing, for example for your Office applications.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>International Actors</title>
+      <link>http://localhost:1313/book/power/international-actors/</link>
+      <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/international-actors/</guid>
+      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are, as we will see.
+But the international arena matters, because
+by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
+&lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
+In US vernacular, the word international appears to mean all nations, except the US.
+Instead, the word global is used to mean all nations, including the US.
+An example implication of this is that a US company would only consider ISO standards to be relevant to them if they also have operations outside the US.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital autonomy: The risks</title>
+      <link>http://localhost:1313/book/risk/digital-autonomy-the-risks/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/digital-autonomy-the-risks/</guid>
+      <description>&lt;p&gt;Many people think we are overly dependent on big tech, and we should be more autonomous and sovereign.
+Fewer can say what exactly is the risk here.
+Digital autonomy and sovereignty form a wicked problem: its parts are intertwined with many
+other issues and conflicting interests, so there is no clean solution.
+Before
+reaching for solutions, it pays to be precise about the risk.&lt;/p&gt;
+&lt;p&gt;At risk is our power to decide which data flows where, a power exercised through
+control over digital infrastructures such as cloud and social media.
+The risk,
+then, is what happens when that power sits with someone else.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital autonomy: Autarky</title>
+      <link>http://localhost:1313/book/risk/digital-autonomy-autarky/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/digital-autonomy-autarky/</guid>
+      <description>&lt;h2 id=&#34;autarky&#34;&gt;Autarky&lt;/h2&gt;
+&lt;p&gt;Implicit in many discussions on digital autonomy is the quest for &amp;lsquo;autarky&amp;rsquo;, being completely independent from other actors, for example those actors whose objectives may be in conflict with ours.
+This is driving the call for national cloud providers, local manufacturing, and more open source, to name just a few.&lt;/p&gt;
+&lt;p&gt;Autarky, however, is just one tool for establishing autonomy, and a very difficult one as well.&lt;/p&gt;
+&lt;p&gt;Economic history shows that no well-developed country is in a state of autarky.
+For example, in World War II, England was heavily dependent on transatlantic shipping convoys for its supplies, including food.
+This should be familiar to anybody who has studied the role of Alan Turing and others at Bletchley Park in deciphering the German military code (Enigma) that threatened those convoys.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Digital autonomy: Controls</title>
       <link>http://localhost:1313/book/risk/digital-autonomy-controls/</link>
       <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/digital-autonomy-controls/</guid>
-      <description>&lt;p&gt;(gegenereerd. )
-voorbeeld controls: zelf hosten, eigen software ontwikkelen.
-Voorbeeld China die Huawei chips laat ontwikkelen voor AI.
-Government regions (fake)
-CCM sov controls.&lt;/p&gt;
-&lt;p&gt;The guide to &lt;a href=&#34;http://localhost:1313/book/risk/guide-autonomy-resilience/&#34;&gt;digital sovereignty, autonomy, and business resilience&lt;/a&gt; frames the problem and identifies the questions. This unit begins answering them: what can cloud consumers, regulators, and governments actually do?&lt;/p&gt;
-&lt;p&gt;The honest starting point is that full digital autonomy — autarky — is not achievable, and not worth pursuing. No well-developed country is fully independent from others. The goal is not independence, but resilience: reducing the negative effects of dependence, and preserving options.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Suppose you are a government, a regulator, or a concerned cloud consumer.
+What can you actually do to mitigate sovereignty risks and achieve adequate autonomy?&lt;/p&gt;
+&lt;p&gt;The honest starting point is that full digital autonomy, autarky, is not achievable, and not worth pursuing.
+Read &lt;a href=&#34;http://localhost:1313/posts/digital-autonomy-autarky/&#34;&gt;here for more on that&lt;/a&gt;.
+No well-developed country is fully independent of others.
+The goal is not independence, but resilience: reducing the negative effects of dependence, and preserving options.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital Autonomy: the Actors</title>
+      <link>http://localhost:1313/book/power/digital-autonomy-the-actors/</link>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/digital-autonomy-the-actors/</guid>
+      <description>&lt;p&gt;Achieving some form of digital autonomy or sovereignty is a &lt;a href=&#34;http://localhost:1313/posts/wicked-2026/&#34;&gt;wicked problem&lt;/a&gt;, too large to handle in one go.
+Let&amp;rsquo;s start therefore with the main actors, and what is at stake for them.
+We can then talk about how digital autonomy allows these actors to collaborate and compete, and therefore impacts the risks they see.
+Elsewhere, I write about &lt;a href=&#34;http://localhost:1313/book/power/international-actors/&#34;&gt;international actors&lt;/a&gt;, and this story builds on that.&lt;/p&gt;
+&lt;p&gt;All actors (e.g. governments, companies) perceive IT risk in their own way.
+Generally though, they include the standard IT risks (confidentiality, integrity, and availability).
+Beyond that, there is the risk of failing to capture the value of new technology, and failure to exercise governance and control over relevant other actors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data, Risk, or Controls: where to start?</title>
@@ -1208,6 +1259,18 @@ Even though they are only providing a service to themselves, they are still resp
 Some of these responsibilities are in the interest of their providers, and those are typically included in an AUP (Acceptable Usage Policy).
 For example, customers should maintain appropriate authorizations of users, and refrain from overloading their providers.
 Customers are also responsible for the business use of the data that is returned by the AI application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Autonomous actors and power plays</title>
+      <link>http://localhost:1313/book/power/dig-autonomy-plays/</link>
+      <pubDate>Fri, 27 Feb 2026 07:39:41 +0000</pubDate>
+      <guid>http://localhost:1313/book/power/dig-autonomy-plays/</guid>
+      <description>&lt;h2 id=&#34;actor-interactions-collaborations-and-power-plays&#34;&gt;Actor interactions, collaborations, and power plays&lt;/h2&gt;
+&lt;p&gt;Government versus big corporations. Many countries have power struggles between the central government and big corporations.
+Russia has its oligarchy, China has a socialist market economy.
+And the second Trump administration has seen major clashes with big tech companies.&lt;/p&gt;
+&lt;p&gt;Most governments are critically dependent on technology service firms for their regular IT,
+and these companies may not fully fall under national authority, especially when they are multinationals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compliance is a Risk</title>
@@ -1398,19 +1461,6 @@ Here is the story of my site being infected with malware, viewed by a profession
       <description>&lt;p&gt;How cool would it be to let an AI do some of the grunt work in analyzing the risk of applications and services. This has the potential to speed up the work of risk assessors.&lt;/p&gt;
 &lt;p&gt;But, does it work in practice? Well, here is an example of AI-assisted risk classification. I downloaded some of the entries in the Dutch &lt;a href=&#34;https://algoritmes.overheid.nl/en&#34;&gt;algorithm register&lt;/a&gt;, which is a public register of systems that use algorithms. For each entry about 30 fields are available, including name, classification, owner, et cetera.
 Some of the systems in the registry are AI-based. Indeed, we have AI to help check on AI&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>International Actors</title>
-      <link>http://localhost:1313/book/power/international-actors/</link>
-      <pubDate>Sat, 22 Mar 2025 17:56:28 +0000</pubDate>
-      <guid>http://localhost:1313/book/power/international-actors/</guid>
-      <description>&lt;p&gt;The international arena has many actors that can influence digital infrastructures. But opinions differ on what the important ones are, or even what the relevant ones are, as we will see.
-But the international arena matters, because
-by the nature of scaling, very few digital infrastructures are influenced by a single national actor only.&lt;/p&gt;
-&lt;p&gt;A word of clarification: I am using the word international here to mean all nations in the world, and their interrelations.
-In US vernacular, the word international appears to mean all nations, except the US.
-Instead, the word global is used to mean all nations, including the US.
-An example implication of this is that a US company would only consider ISO standards to be relevant to them if they also have operations outside the US.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The US Air Force Zero Trust Strategy</title>

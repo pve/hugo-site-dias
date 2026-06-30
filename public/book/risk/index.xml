@@ -143,19 +143,44 @@ As IT increased in volume, you have tried to keep its costs down, it was just a 
 Outsourcing to more experienced partners was an option, and so was the use of cloud computing, for example for your Office applications.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Digital autonomy: The risks</title>
+      <link>http://localhost:1313/book/risk/digital-autonomy-the-risks/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/digital-autonomy-the-risks/</guid>
+      <description>&lt;p&gt;Many people think we are overly dependent on big tech, and we should be more autonomous and sovereign.
+Fewer can say what exactly is the risk here.
+Digital autonomy and sovereignty form a wicked problem: its parts are intertwined with many
+other issues and conflicting interests, so there is no clean solution.
+Before
+reaching for solutions, it pays to be precise about the risk.&lt;/p&gt;
+&lt;p&gt;At risk is our power to decide which data flows where, a power exercised through
+control over digital infrastructures such as cloud and social media.
+The risk,
+then, is what happens when that power sits with someone else.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digital autonomy: Autarky</title>
+      <link>http://localhost:1313/book/risk/digital-autonomy-autarky/</link>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/book/risk/digital-autonomy-autarky/</guid>
+      <description>&lt;h2 id=&#34;autarky&#34;&gt;Autarky&lt;/h2&gt;
+&lt;p&gt;Implicit in many discussions on digital autonomy is the quest for &amp;lsquo;autarky&amp;rsquo;, being completely independent from other actors, for example those actors whose objectives may be in conflict with ours.
+This is driving the call for national cloud providers, local manufacturing, and more open source, to name just a few.&lt;/p&gt;
+&lt;p&gt;Autarky, however, is just one tool for establishing autonomy, and a very difficult one as well.&lt;/p&gt;
+&lt;p&gt;Economic history shows that no well-developed country is in a state of autarky.
+For example, in World War II, England was heavily dependent on transatlantic shipping convoys for its supplies, including food.
+This should be familiar to anybody who has studied the role of Alan Turing and others at Bletchley Park in deciphering the German military code (Enigma) that threatened those convoys.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Digital autonomy: Controls</title>
       <link>http://localhost:1313/book/risk/digital-autonomy-controls/</link>
       <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/book/risk/digital-autonomy-controls/</guid>
-      <description>&lt;p&gt;(gegenereerd. )
-voorbeeld controls: zelf hosten, eigen software ontwikkelen.
-Voorbeeld China die Huawei chips laat ontwikkelen voor AI.
-Government regions (fake)
-CCM sov controls.&lt;/p&gt;
-&lt;p&gt;=-
-What can cloud consumers, regulators, and governments actually do to mitigate sovereignty risks and achieve adequate autonomy?&lt;/p&gt;
-&lt;p&gt;The honest starting point is that full digital autonomy — autarky — is not achievable, and not worth pursuing.
-No well-developed country is fully independent from others.
+      <description>&lt;p&gt;Suppose you are a government, a regulator, or a concerned cloud consumer.
+What can you actually do to mitigate sovereignty risks and achieve adequate autonomy?&lt;/p&gt;
+&lt;p&gt;The honest starting point is that full digital autonomy, autarky, is not achievable, and not worth pursuing.
+Read &lt;a href=&#34;http://localhost:1313/posts/digital-autonomy-autarky/&#34;&gt;here for more on that&lt;/a&gt;.
+No well-developed country is fully independent of others.
 The goal is not independence, but resilience: reducing the negative effects of dependence, and preserving options.&lt;/p&gt;</description>
     </item>
     <item>
