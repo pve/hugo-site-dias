@@ -12,7 +12,7 @@ immune system related disease.
 He found out that living in warm climates with little pollution and no need to stay indoors for very long helped him maintain his health.
 So he took a bold move, sold his house, and became a traveling academic.
 In the summers he would stay in the south of France where we visited him, in the shoulder seasons he lived on one of the Canary Islands, and in the winter months he traveled to the southern hemisphere (Chile, Africa, Australia).
-Jokingly he called himself a 'refugié pollutique'.
+Jokingly he called himself a "refugié pollutique".
 
 As a polyglot and a practitioner of various trades, wanting to stay in contact with like-minded people, he was an early user of the internet.
 He maintained a weblog before the word blogging came into being.
@@ -21,16 +21,16 @@ He wrote about the flowers he saw, his encounters with people on the road, the v
 To him, the internet was an intellectual lifeline.
 But it had challenges.
 Dial-up internet at 28.8 Kbit/sec was the norm in the developed world, and a little less so elsewhere.
-Light laptops still had to be invented, as well as consumer grade digital photography.
+Light laptops still had to be invented, as well as consumer-grade digital photography.
 A floppy disk held 1.4 Mbyte, less than one typical photo image today.
 The top portable storage device was the Iomega Zip-drive at 100 Mbyte.
 
-As I remember he had a HP 200LX to fit in his luggage.
+As I remember he had an HP 200LX to fit in his luggage.
 He used that to email, write, and maintain his blog.
 On the road, this is how he managed his IT.
 Back home, I was his system admin taking care of the web hosting.
-A little later he got a Toshiba Libretto 50CT, an ultra small laptop with close to one GB of storage, a huge improvement.
-Still, always on was not an option, so he needed to carry his entire digital archive with him, email, e-books, music, documents, pictures.
+A little later he got a Toshiba Libretto 50CT, an ultra-small laptop with close to one GB of storage, a huge improvement.
+Still, always on was not an option, so he needed to carry his entire digital archive with him: email, e-books, music, documents, pictures.
 And then there was the need to make a backup for availability.
 Over the years, his demand for digital storage continuously outstripped whatever would fit on a single device.
 
@@ -41,8 +41,8 @@ To make matters worse, the way of best organizing pictures, for example, changed
 He would not always neatly migrate all his old backups to newer systems.
 Bandwidth and storage were scarce, so to email or blog a picture he had to shrink it first — and he kept the shrunken copies, the same shot saved at 400, 800, 1,000 and 1,200 pixels with the size baked into the filename. Each resized version is a distinct file to the computer, so a single photograph quietly became four or five, then multiplied again through every backup.
 
-Nothing was ever really thrown away. Each time he moved to a new machine he copied the old one in wholesale and named the folder after whatever he was retiring that month — AsusAllesvanE240711, NewVolume20apr13, BackupLibraries26okt11 — so every disk became a geological layer of the one before it.
-On just one 500 GB drive, more than half of the 134 GB it held — some 73 gigabytes — turned out to be exact, byte-for-byte copies of material already sitting somewhere else: the same scanned childhood photo, the same holiday, saved again and again.
+Nothing was ever really thrown away. Each time he moved to a new machine he copied the old one wholesale and named the folder after whatever he was retiring that month — AsusAllesvanE240711, NewVolume20apr13, BackupLibraries26okt11 — so every disk became a geological layer of the one before it.
+On just one 500 GB drive, more than half of the 134 GB it held — some 73 GB — turned out to be exact, byte-for-byte copies of material already sitting somewhere else: the same scanned childhood photo, the same holiday, saved again and again.
 
 The pattern showed up everywhere I looked. A single two-hour recording of a conversation with a friend was present eleven times; one photo from his eightieth birthday surfaced in four separate photo libraries, plus a "just in case" export, plus a backup of a backup.
 
@@ -57,7 +57,7 @@ In the end, making sense of his data turned out to be less a matter of reading i
  
 At the time of his death he had two MacBooks,
 but the Apple Photos app instances on them were not quite the same.
-I tried a several cleanup tools, with varying degrees of success.
+I tried several cleanup tools, with varying degrees of success.
 It took quite some time to get to understand how they work, or do not work as the case may be.
 And then those tools only tell you what the duplicates are, not what to do with them.
 
@@ -69,7 +69,7 @@ When I managed to liberate one laptop, and got rid of the storage devices that h
 The management of my home IT isn't perfect either.
 I probably inherited some of the traits of my father.
 At the same time, getting to grips with managing IT at scale has occupied me in various professional roles my entire career.
-The value of information there, to paraphrase the Godfather, is "strictly business, nothing personal".
+The value of information there, to paraphrase the Godfather, is "strictly business, nothing personal."
 At home however, much information *is* personal and has emotions attached to it.
 
 In a business, most of the IT should run production within clear guardrails.
@@ -96,7 +96,7 @@ And this was not my first attempt at systematic knowledge management.
 Every time, it turned out that
 maintenance on these systems was both a burden and a distraction from the real work.
 
-Recently, I ran into Karpathy's LLM wiki approach ([link to gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)), which takes a simplified approach.
+Recently, I ran into Karpathy's LLM wiki concept ([link to gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)), which takes a simplified approach.
 Instead of maintaining a complex graph database of which the structure is opaque, all the relevant knowledge is consolidated in a wiki style set of markdown documents.
 Every relevant concept has its own page, and links to other pages with simple hyperlinks.
 
@@ -108,10 +108,10 @@ This type of wiki evolves in various ways.
 
 Remember that word, *duplicates*. It comes back.
 
-In your filesystem this has three layers.
+In a filesystem this has three layers.
 
 - Raw data that is ingested, and which should never be mutated.
-- The wiki, as it is produced by LLM actions from the raw data
+- The wiki, as it is produced by LLM actions from the raw data.
 - The schema tells the LLM how to work. It has prompts and conventions. It will also point to an index file and a journal file. This is what would be in CLAUDE.md or AGENTS.md.
 
 Karpathy states that this system actually works better than a RAG pipeline.
@@ -123,7 +123,7 @@ With a bit of back and forth it set up the whole system and I could start ingest
 
 Step 2 was to work on two relevant tasks:
 
-- identify what additional research is needed
+- identify what additional research is needed.
 - create some draft deliverables for the project.
 
 For example, I linked quality criteria to risks: readability of answers, for instance, to customers being unhappy.
@@ -142,13 +142,16 @@ What is still not easy:
 - committing to git at an appropriate granularity, especially with multiple concurrent sessions. Again, solutions exist, I have not gotten around to implementing them.
 - classifying source material on credibility and trustworthiness. I have a lot of material from practitioners 'in the trenches', whose first hand experiences are true, but not yet scientifically validated.
 
+I liked the results of this business project, and I am still using it.
+Time to expand.
+
 ## Agentic Infrastructure Management
 
-After having this positive experience, I started to think about how to apply this to
+I started to think about how to apply this to
 infrastructure management, and this also led me to applying it to my father's digital legacy.
 Maybe, this could help me clean it up.
 The way I see it, infrastructure management is like knowledge management, but with a twist.
-Instead of just looking at facts that are supported by scientific papers, and rarely change after that, understanding infrastructure has knowledge on multiple levels.
+Instead of just looking at facts that are supported by scientific papers, and rarely change after that, understanding infrastructure requires knowledge on multiple levels.
 
 Cognitive theory talks about:
 
@@ -157,10 +160,10 @@ Cognitive theory talks about:
 - procedural knowledge, if we have a specific outcome, here is how to get it
 - beliefs, provisional hypotheses, but also objectives, things that may or may not be true
 
-An example of semantic information is what machines are on our network.
-An episodic item would be: rebooted a machine at a certain moment.
-Procedural: step by step instructions on how to create a container image and run it, for example.
-A belief would be that a certain server has a bad power supply which causes a variety of failures.
+An example of semantic information is what machines are on our network or what type of data they carry.
+An episodic item would be: a machine rebooted at a certain moment.
+Procedural: step-by-step instructions on how to create a container image and run it, for example.
+A belief would be that a certain server has a bad power supply which causes a variety of failures or that a certain set of images is more important than another set.
 My father's legacy turned out to need all four: not just which files were there, but also the steps the AI and I took to clean them, how to discover them, how to access the various machines on which they were stored, and what we thought his way of organizing was.
 
 All of these can be recorded in a wiki, but they all have to be maintained and treated in different ways.
@@ -170,10 +173,10 @@ All of these can be recorded in a wiki, but they all have to be maintained and t
 Like many people have found out, Claude knows a lot about how infrastructure works.
 Ask it to write a shell script to compare folders, write a Docker file, diagnose a certain error message, and more often than not, the answer is spot on.
 
-I started by asking Claude Cowork to fix problems in Raspberry Pi installations, such as broken memory cards, file shares, and application installations.
+I started by asking Claude Cowork to fix problems in the Raspberry Pi machines in my home lab, such as broken memory cards, file shares, and application installations.
 Then I asked it to encode these solutions in runbooks.
 After a while, this became a bit messy, and I asked it to reorganize the documents for consistency.
-I also moved this story to Claude Code, same engine as Claude Cowork but it lives in the terminal,
+I also moved this experiment to Claude Code, which uses the same engine as Claude Cowork but it lives in the terminal,
 so it could execute some of the tasks directly itself.
 
 But it was still under my direct instructions.
@@ -185,7 +188,7 @@ More are probably to come.
 
 To wrap it up, I called it LIMA, LLM Infrastructure Management Agent.
 
-I started using it for reviewing the status of my home Wifi, checking on various logs, cleaning up the home lab in general, starting containers with specific software inside, and for deduplicating my father's legacy.
+I started using it for reviewing the status of my home WiFi, checking on various logs, cleaning up the home lab in general, starting containers with specific software inside, and for deduplicating my father's legacy.
 
 Its structure is more complicated than the research wiki, because of the different types of memory (semantic, procedural, et cetera).
 It now stands at about 2500 lines in over 50 files.
@@ -193,19 +196,19 @@ It will probably grow as it discovers more of my IT estate.
 
 ## Deduplication
 
-Generic tools for deduplication give you the duplicates.
+Generic tools for deduplication give you the duplicates, as I noted earlier.
 They also have lots of features for use cases that are not yours, but need weeding out,
 as you are trying to figure out which one best matched yours.
 
-In my case I had my father's laptop nearly filled to the brim, a USB disk with an unknown number of copies on it, and a big folder on my main laptop with condensed USB thumb drives.
-Some of the pictures were stored in folders, others in a number of MacBook Photo libraries.
+After the first cleanup phase years ago, I still had one laptop to go (nearly filled to the brim), a USB disk with an unknown number of copies on it, and a big folder on my main laptop with condensed USB thumb drives.
+Some of the pictures were stored in folders, others in a number of Photos libraries.
 
 LIMA helped create coherent access to all these collections, took inventory of them, and helped me plan a consolidation and migration based on an *intent* for a final goal: one consolidated legacy of my father.
 Most deduplication actions can be done with basic shell scripting instead of dedicated tooling, and this gets even better if it is informed by the intent, such as only looking for a specific type of photo.
 I also liked the capability to do this across devices, which is information stored in the various types of memory.
-And with the objective of freeing disk space it stepped outside deduplication and uncovered a full 31 GB Photos library in the trash, and Time machine snapshots that were silently keeping that disk full.
+And with the objective of freeing space on one of the disks, it stepped outside deduplication and uncovered a full 31 GB Photos library in the trash, and Time Machine snapshots that were silently keeping that disk full.
 
-All while keeping me informed of the nuts and bolts, the how and why, and the residual risks of  these actions.
+All while keeping me informed of the nuts and bolts, the how and why, and the residual risks of these actions.
 
 I had spent days on deduplication before, but the nitty gritty was frustrating, and I found it so hard to track that I abandoned it for a few years.
 I still took many hours to complete the deduplication, but the wiki structure enabled LIMA to help me keep on track, continuously experience progress, while also allowing me the occasional break from it.
