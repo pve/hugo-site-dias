@@ -57,7 +57,7 @@ In the end, making sense of his data turned out to be less a matter of reading i
  
 At the time of his death he had two MacBooks,
 but the Apple Photos app instances on them were not quite the same.
-I tried a variety of tools, with varying degrees of success.
+I tried a several cleanup tools, with varying degrees of success.
 It took quite some time to get to understand how they work, or do not work as the case may be.
 And then those tools only tell you what the duplicates are, not what to do with them.
 
@@ -83,7 +83,9 @@ None of them stuck. They became more of a burden to keep up to date, than a help
 They are either too small and limited to be of actual use, or a big data dump without context that becomes too time consuming to go through.
 Yet, it is wanted, because you can't expect to remember tiny details of how and why you did configurations years ago, why you copied a folder, or stood up a VM or container.
 
-## Infrastructure management in the age of AI
+This was one of the reasons that I got stuck in cleaning up my father's files.
+
+## Knowledge management in the age of AI
 
 I always dreamt of IT helping me with my knowledge management.
 Many years ago I created an ontology around my consulting topics.
@@ -115,6 +117,7 @@ In your filesystem this has three layers.
 Karpathy states that this system actually works better than a RAG pipeline.
 
 It intrigued me, and I set out to create such a wiki for a business project on evaluating LLM systems.
+In the back of my mind was already the idea to also apply this to infrastructure such as my domestic IT and my father's storage drives.
 Step 1 was to initiate a dialog in Claude Code by roughly explaining the intentions and scope, giving it a link to the Karpathy gist.
 With a bit of back and forth it set up the whole system and I could start ingesting a couple of documents.
 
@@ -158,6 +161,7 @@ An example of semantic information is what machines are on our network.
 An episodic item would be: rebooted a machine at a certain moment.
 Procedural: step by step instructions on how to create a container image and run it, for example.
 A belief would be that a certain server has a bad power supply which causes a variety of failures.
+My father's legacy turned out to need all four: not just which files were there, but also the steps the AI and I took to clean them, how to discover them, how to access the various machines on which they were stored, and what we thought his way of organizing was.
 
 All of these can be recorded in a wiki, but they all have to be maintained and treated in different ways.
 
@@ -174,7 +178,7 @@ so it could execute some of the tasks directly itself.
 
 But it was still under my direct instructions.
 I was looking for something a little more autonomous.
-And that is when I investigated applying the wiki approach to infra management as sketched above.
+And that is when I investigated applying the wiki approach to infra management, such as organizing Raspberry Pis and the storage collection of my father.
 I instructed Claude to create the full structure to implement this, and after some back and forth, it was working.
 I also installed some MCPs and command line tools for querying the external log service and the local WiFi manager.
 More are probably to come.
@@ -199,7 +203,7 @@ Some of the pictures were stored in folders, others in a number of MacBook Photo
 LIMA helped create coherent access to all these collections, took inventory of them, and helped me plan a consolidation and migration based on an *intent* for a final goal: one consolidated legacy of my father.
 Most deduplication actions can be done with basic shell scripting instead of dedicated tooling, and this gets even better if it is informed by the intent, such as only looking for a specific type of photo.
 I also liked the capability to do this across devices, which is information stored in the various types of memory.
-And with the objective of freeing disk space it stepped outside deduplication and uncovered a full 31 GB Photos library in the trash, and Time machine snapshots that silently kept that disk from draining.
+And with the objective of freeing disk space it stepped outside deduplication and uncovered a full 31 GB Photos library in the trash, and Time machine snapshots that were silently keeping that disk full.
 
 All while keeping me informed of the nuts and bolts, the how and why, and the residual risks of  these actions.
 
