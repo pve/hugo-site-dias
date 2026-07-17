@@ -1,6 +1,6 @@
 ---
 date: '2026-07-07T00:00:00Z'
-draft: true
+draft: false
 title: "Software Dissemination"
 weight: 110
 ---
@@ -45,6 +45,8 @@ If this step is not properly taken, the application will eventually die, or at l
 In the meantime, if many people use it in an uncontrolled manner, the application becomes an operational risk to the organization.
 For example: if everybody can modify a planning spreadsheet, any individual can turn it into a mess.
 
+At this point, lunch-table discussions resolve some of the conflicts, but that informality does not automatically lead to optimal outcomes.
+
 As the user base of software grows, you will get into more governance discussions: access and modification rights, who pays for the development, who is responsible for fixing problems, and more.
 Elsewhere in this book you can see how promise theory can be applied to address that.
 
@@ -55,7 +57,7 @@ In small groups a lot of governance can still be informal.
 Everybody in the group will have a reasonably clear idea on who is supposed to be doing what.
 Beyond the Dunbar frontier, this structure breaks down.
 And when the user base of the software grows beyond the size of an organization, such as with a SaaS application, controls such as policy documents cease to be effective, as the users no longer belong to the organization that can enforce those policies.
-What might come in its place are contracts and regulation, and this is a whole topic in itself.
+What might come in its place are contracts and regulation, such as SLAs and privacy laws, and this is a whole topic in itself.
 
 An application supporting business processes enforces a certain world view.
 For example: what constitutes a customer, what does an order look like, how do we value certain things.
@@ -69,4 +71,5 @@ What I find interesting is that for public SaaS solutions, the average user does
 At the same time, you can be sure that owners of a successful SaaS service have a very clear idea of the 'world view' they are imposing on their users.
 A disturbing example is social media, in which its addictive effects are very deliberately engineered.
 
-(wrapup to come)
+Across the spectrum that runs from an individual with a spreadsheet to a world-dominating platform, software and digital infrastructures change power structures.
+It is a recurring theme of this book to shine light on that, and provide tools to help navigate that world.
