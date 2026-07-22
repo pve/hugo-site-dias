@@ -6,6 +6,6 @@ layout: "bookcontents"
 
 ---
 
-{{< book-chapters >}}
+{{< book-chapters "book2" >}}
 
 > _This is a living book, updated in conversation with my clients and students_

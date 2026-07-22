@@ -1,4 +1,5 @@
-{{ $book := .Site.GetPage "section" "book" }}
+{{ $section := .Get 0 | default "book" }}
+{{ $book := .Site.GetPage "section" $section }}
 {{ if $book }}
   <ol>
     {{ range $book.Sections }}
