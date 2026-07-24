@@ -5,7 +5,6 @@ title: "Software Dissemination"
 weight: 110
 ---
 
-
 ## How software grows
 
 A lot of software begins its life as the project of an individual, but ends up being used widely in organizations, or even society at large.
