@@ -1,0 +1,93 @@
+# book2 -> book cutover (2026-07-25): the old topic folders (diginfra, value,
+# change, power, risk, cases) were reorganized into act folders. These
+# redirects keep old published/indexed /book/... URLs working.
+
+# Section index pages
+/book/diginfra/  /book/act1-foundations/  301
+/book/value/     /book/act2-value/        301
+/book/change/    /book/act3-delegation/   301
+/book/power/     /book/act4-power/        301
+/book/risk/      /book/act5-risk/         301
+/book/cases/     /book/                   301
+
+# Leaf-bundle index pages (excluded from the per-file list below since their
+# basename "index.md" collides across folders)
+/book/value/business-model-canvas-iaas/  /book/act2-value/business-model-canvas-iaas/  301
+/book/value/business-model-canvas-saas/  /book/act2-value/business-model-canvas-saas/  301
+
+# Per-file redirects (old topic folder -> new act folder)
+/book/value/business-model-canvas-iaas/BusinessCanvasIaaS.png  /book/act2-value/business-model-canvas-iaas/BusinessCanvasIaaS.png  301
+/book/value/business-model-canvas-saas/BusinessCanvasSaaS.png  /book/act2-value/business-model-canvas-saas/BusinessCanvasSaaS.png  301
+/book/value/agile-requires-cloud/  /book/act2-value/agile-requires-cloud/  301
+/book/diginfra/ai-roles/  /book/act3-delegation/ai-roles/  301
+/book/diginfra/ai-voice/  /book/act3-delegation/ai-voice/  301
+/book/diginfra/applications/  /book/act1-foundations/applications/  301
+/book/risk/assets/  /book/act5-risk/assets/  301
+/book/value/automation-business-case/  /book/act3-delegation/automation-business-case/  301
+/book/cases/brief-llm-tool/  /book/act3-delegation/brief-llm-tool/  301
+/book/power/buck-stops/  /book/act4-power/buck-stops/  301
+/book/diginfra/cloudcomputing/  /book/act1-foundations/cloudcomputing/  301
+/book/change/control-feedback/  /book/act3-delegation/control-feedback/  301
+/book/risk/controls/  /book/act5-risk/controls/  301
+/book/diginfra/customer-service/  /book/act1-foundations/customer-service/  301
+/book/risk/darico/  /book/act5-risk/darico/  301
+/book/diginfra/deployment-diagrams/  /book/act1-foundations/deployment-diagrams/  301
+/book/change/dhcp-automation/  /book/act3-delegation/dhcp-automation/  301
+/book/power/dig-autonomy-plays/  /book/act4-power/dig-autonomy-plays/  301
+/book/risk/digital-autonomy-autarky/  /book/act5-risk/digital-autonomy-autarky/  301
+/book/risk/digital-autonomy-controls/  /book/act5-risk/digital-autonomy-controls/  301
+/book/power/digital-autonomy-the-actors/  /book/act4-power/digital-autonomy-the-actors/  301
+/book/risk/digital-autonomy-the-risks/  /book/act5-risk/digital-autonomy-the-risks/  301
+/book/diginfra/digital-inf-ai/  /book/act3-delegation/digital-inf-ai/  301
+/book/diginfra/dotuml.duml  /book/act1-foundations/dotuml.duml  301
+/book/diginfra/elements-of-digitalinfrastructures/  /book/act1-foundations/elements-of-digitalinfrastructures/  301
+/book/diginfra/essence-digital-infrastructures/  /book/act1-foundations/essence-digital-infrastructures/  301
+/book/power/ethics-of-power/  /book/act4-power/ethics-of-power/  301
+/book/diginfra/execution-environments/  /book/act1-foundations/execution-environments/  301
+/book/diginfra/first-network/  /book/act1-foundations/first-network/  301
+/book/value/game-theory/  /book/act2-value/game-theory/  301
+/book/power/governance-example/  /book/act4-power/governance-example/  301
+/book/risk/guide-autonomy-resilience/  /book/act5-risk/guide-autonomy-resilience/  301
+/book/cases/how-my-site-got-hacked/  /book/act5-risk/how-my-site-got-hacked/  301
+/book/diginfra/image-1.png  /book/act1-foundations/image-1.png  301
+/book/diginfra/image-2.png  /book/act1-foundations/image-2.png  301
+/book/diginfra/image.png  /book/act1-foundations/image.png  301
+/book/power/international-actors/  /book/act4-power/international-actors/  301
+/book/power/intro-power/  /book/act4-power/intro-power/  301
+/book/change/intro-to-change-control/  /book/act3-delegation/intro-to-change-control/  301
+/book/risk/intro-to-risk/  /book/act5-risk/intro-to-risk/  301
+/book/value/intro-to-value/  /book/act2-value/intro-to-value/  301
+/book/power/janvandijk.txt  /book/act4-power/janvandijk.txt  301
+/book/change/lawyers-need-understand-tech/  /book/act5-risk/lawyers-need-understand-tech/  301
+/book/risk/lean-risk/  /book/act5-risk/lean-risk/  301
+/book/diginfra/lunch-spain/  /book/act1-foundations/lunch-spain/  301
+/book/risk/mitigation/  /book/act5-risk/mitigation/  301
+/book/change/new-skills-needed/  /book/act5-risk/new-skills-needed/  301
+/book/value/non-monetary/  /book/act2-value/non-monetary/  301
+/book/change/org-size-matters/  /book/act4-power/org-size-matters/  301
+/book/power/positions-of-power-it/  /book/act4-power/positions-of-power-it/  301
+/book/power/power-mediation/  /book/act4-power/power-mediation/  301
+/book/power/powershift-disruption/  /book/act4-power/powershift-disruption/  301
+/book/value/prisoners-dilemma/  /book/act2-value/prisoners-dilemma/  301
+/book/diginfra/promise-contract/  /book/act1-foundations/promise-contract/  301
+/book/power/promise-multiparty/  /book/act4-power/promise-multiparty/  301
+/book/value/promise-theory-services/  /book/act2-value/promise-theory-services/  301
+/book/diginfra/promise-theory/  /book/act1-foundations/promise-theory/  301
+/book/change/promise-to-update/  /book/act3-delegation/promise-to-update/  301
+/book/risk/querying-ai-risk/  /book/act5-risk/querying-ai-risk/  301
+/book/risk/retrofitting-zero-trust-existing-application/  /book/act5-risk/retrofitting-zero-trust-existing-application/  301
+/book/diginfra/shared-service-conflict/  /book/act1-foundations/shared-service-conflict/  301
+/book/change/software-dissemination/  /book/act4-power/software-dissemination/  301
+/book/cases/stopping-senseless-sprawl-of-private-clouds/  /book/act2-value/stopping-senseless-sprawl-of-private-clouds/  301
+/book/change/technical-meta-model/  /book/act3-delegation/technical-meta-model/  301
+/book/power/the-tipping-point-for-podcasting/  /book/act4-power/the-tipping-point-for-podcasting/  301
+/book/diginfra/things-break-at-scale/  /book/act1-foundations/things-break-at-scale/  301
+/book/value/three-ways-to-go-cloud/  /book/act2-value/three-ways-to-go-cloud/  301
+/book/cases/tutorial-cloud-native/  /book/act3-delegation/tutorial-cloud-native/  301
+/book/risk/uneasy-compliance-risk/  /book/act5-risk/uneasy-compliance-risk/  301
+/book/diginfra/unified-theory/  /book/wrap/unified-theory/  301
+/book/value/value-in-process-improvement/  /book/act2-value/value-in-process-improvement/  301
+/book/value/value-of-information/  /book/act2-value/value-of-information/  301
+/book/risk/what-is-trust/  /book/act5-risk/what-is-trust/  301
+/book/risk/who-suffers/  /book/act5-risk/who-suffers/  301
+/book/diginfra/why-you-should-read/  /book/intro/why-you-should-read/  301

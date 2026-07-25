@@ -35,9 +35,8 @@ params:
     Content: "Exploring digital infrastructures, AI, cloud security and business strategies."
   profileMode:
     enabled: true
-    title: "Digital Power"
-    subtitle: "How Digital Infrastructures at Scale Lead to Value, Power, and Risk"
-#    subtitle: "How digital infrastructures at scale lead to value, power, and risk."
+    title: "Digital Promises"
+    subtitle: "value, power, and risk in digital infrastructures at scale"
     imageUrl: "craiyonmushrooms.png"  # Add an image in `static/`
     imageWidth: 500
     imageHeight: 500

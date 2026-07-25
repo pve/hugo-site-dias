@@ -1,4 +1,0 @@
-DeploymentDiagram  {
-  node client as ":Client" [color=pink] {
-  artifact cm as "user"
- }

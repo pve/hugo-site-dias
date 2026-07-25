@@ -1,6 +1,6 @@
 ---
-title: "Digital Power"
-description: "How Digital Infrastructures at Scale Lead to Value, Power, and Risk"
+title: "Digital Promises"
+description: "value, power, and risk in digital infrastructures at scale"
 cover:
   image: "craiyonmushrooms.png" # Add an image in `static/`
   alt: "Craiyon image"
