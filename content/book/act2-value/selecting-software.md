@@ -2,7 +2,9 @@
 date: '2025-09-30T08:46:33Z'
 draft: true
 title: 'Selecting Software'
-weight: 10
+aliases:
+- "/posts/selecting-software/"
+weight: 310
 ---
 
 Whenever we need a new piece of software, big or small, there are a few alternative roads to follow.

@@ -2,6 +2,9 @@
 title: Directories are also infrastructures
 date: '2006-09-21T10:54:00'
 draft: false
+aliases:
+- "/posts/directories-are-also-infrastructures/"
+weight: 110
 ---
 
 One of the big projects I am working on right now (2006) is directory services for identity management. In these directories digital identities such as loginnames, addresses, access rights, etc. are stored. With an adequately structured directory service, the proper management of access rights becomes a lot easier, which translates into cost savings and better security.

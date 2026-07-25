@@ -2,7 +2,9 @@
 date: '2026-06-28T10:41:46Z'
 draft: false
 title: "Counting the copies: how an AI wiki helped me read my father's digital legacy"
-weight: 10
+aliases:
+- "/posts/an-infra-dedup-story/"
+weight: 340
 ---
 
 ## The root cause

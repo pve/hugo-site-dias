@@ -15,7 +15,7 @@ Not written yet. Book-sequence.md has no source material assigned to this opener
 ## Why here in the arc
 
 - Opens Act IV ("Who's in charge now") right before the case opener (unit 48, Technology is power leverage —
-  the Kenya story, currently a `[post]` not yet harvested into `book/`).
+  the Kenya story, `act4-power/tech-is-leverage.md`, moved in from `posts/` 2026-07-25; still `draft: true`).
 - Follows directly from Act III's delegation arc: having handed execution to machines, the reader now has to
   ask who actually controls them.
 
@@ -29,5 +29,3 @@ Not written yet. Book-sequence.md has no source material assigned to this opener
 
 - No candidate source text identified yet (unlike the shared Act II/III source) — needs one before this can
   move past framing notes.
-- Whether unit 48 (Kenya story) needs to be harvested from `posts/` first before this opener can be written
-  against it.

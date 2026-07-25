@@ -2,7 +2,9 @@
 date: '2025-12-23T08:02:20Z'
 draft: true
 title: 'Technoloy Is Power Leverage'
-weight: 10
+aliases:
+- "/posts/tech-is-leverage/"
+weight: 487
 ---
 In the late 80s we were traveling with a group of friends in Tsavo East, a wild-life nature park in the south-east of Kenya, Africa.
 
