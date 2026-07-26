@@ -34,10 +34,6 @@
   {{- partial "toc.html" . }}
   {{- end }}
 
-  {{ if .ReadingTime }}
-  <i>⏳ {{ .ReadingTime }} min read</i>
-  {{ end }}
-
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}

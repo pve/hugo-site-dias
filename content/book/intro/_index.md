@@ -17,8 +17,12 @@ That is what defines the relation between the consumers and the providers, and t
 ### Providers, consumers, automation
 
 Now digital infrastructures at scale - there are a few very essential elements in there.
-The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it's amenable to automation.
-These two together give a really interesting socio-political economic dynamic. And that's what you need to understand if you want your shared service to keep operating - or if you don't want it to operate, but that's a different story.
+The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it's amenable to automation and therefore scaling.
+These two together give a really interesting socio-political economic dynamic.
+At its core, it is about how much *autonomy* each actor is willing to claim
+, or let go of, as the case may be.
+
+And that's what you need to understand if you want your shared service to keep operating - or if you don't want it to operate, but that's a different story.
 
 Better understanding digital infrastructures at scale allows us to better navigate the digital world at large.
 

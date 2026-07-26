@@ -21,7 +21,7 @@
     {{- end }}
     {{- if not (.Param "hideMeta") }}
     <div class="post-meta">
-      {{- partial "post_meta.html" . -}}
+      {{- partial "book_meta.html" . -}}
       {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}
@@ -33,10 +33,6 @@
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
   {{- end }}
-
-  {{ if .ReadingTime }}
-  <i>⏳ {{ .ReadingTime }} min read</i>
-  {{ end }}
 
   {{- if .Content }}
   <div class="post-content">
