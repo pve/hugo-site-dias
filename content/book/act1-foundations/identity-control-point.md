@@ -46,3 +46,28 @@ That makes identity the control point of digital infrastructures — and the one
 
 - How deep into mechanics (tokens, SSO, OIDC)? Probably not at all — keep at the "who does the system believe you are" level; point to side-reading.
 - Does the unit need its own mini-case (a stolen-assertion incident) or does the site-hack case (63) carry that later?
+
+<!-- RAW MATERIAL, collected from Salvage to process/sources — my own words/teaching, not yet worked into prose. Kept verbatim so nothing gets lost before drafting. -->
+
+## Raw material (mine, not yet drafted)
+
+- The guard/secretary/bank-manager analogy, from a live CCSK call (Dec 2015): "like getting past the security guard at the front door, then a secretary, then you still have to show your ID to the bank manager." Each recognizes you differently, each grants something different — authentication vs. authorization in everyday terms.
+  (source: `delivery-ccsk-for-christmas-2015-online.md`, Week 3 call)
+
+- "The only thing that you can really mess up is your identity and access management" — if everything else works as advertised, IAM is the residual risk that never outsources.
+  (source: `delivery-ccak2021-online-cohort-patterns.md`, CCAK3 online Nov 2021)
+
+- On identity-provider concentration, an aside from an alumni call (Dec 2017): "nine out of ten questions is Active Directory" — most real federation is built on top of one legacy system, not a clean green-field IdP.
+  (source: `delivery-alumni-clubcall-2017-2018-series.md`)
+
+- Two real, unresolved practitioner questions from the same alumni series (April 2018), both circling the same friction — how to give a team enough IAM flexibility to work without losing control: "the best way to protect the IAM console from these risks: 0-day vulnerability" and "what's the best way to control admin rights within an AWS environment so that if credentials are stolen [the attacker can't] disable the admin account?"
+  (source: `delivery-alumni-clubcall-2017-2018-series.md`)
+
+- A business-case method I used live with a client (Stephen/Adam, Gallagher, Dec 2015) to justify identity infrastructure investment that "doesn't produce value in itself": either put a dollar value on the risk (probability × cost), or price the manual alternative in staff time — "how many password resets do you have in a year? What's the number of staff involved? What's the lost business value to the person losing his password? Assume you can improve that by 50 percent and you have a number."
+  (source: `delivery-ccsk42-2015-gallagher-virtual.md`, day 2)
+
+- From an old CCC-website post: "cloud services and applications should be separated from the management of identities" — identity as a separable infrastructure element, not baked into each application. Same post flags a dependency risk one layer removed from the application itself: what happens if the identity provider itself goes out of business? You can be locked into your identity provider even after your application vendor is easily swapped.
+  (source: `oudemeuk-identity-management-multiple-clouds.md`)
+
+- From my own notes at John Kindervag's live Zero Trust masterclass (Zurich, April 2024; also Nov 2023): his line, "Identity is asserted. Not a real thing," and my own real-time cross-link written down in Dutch at the time: "protect surface, attack surface... looks a lot like deployment diagrams. Control boundary, perimeter" — the moment I noticed his protect-surface framing is structurally the same move as this book's own boundary language.
+  (source: `cczt-material-kindervag-masterclass-notes.md`)
