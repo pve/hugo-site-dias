@@ -3,6 +3,7 @@ date: '2026-07-29T19:38:29Z'
 draft: true
 title: 'From supplier to partner'
 weight: 10
+checks: claude conversation 'supplier partner'
 ---
 
 Promise theory helps us understand and pin down the relationship between a customer and a vendor.
