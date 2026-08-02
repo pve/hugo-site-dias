@@ -6,16 +6,6 @@ weight: 720
 ---
 ## Controls
 
-Microsoft: Countermeasure (or control). A safeguard that addresses a threat and mitigates risk.
-
-To be continued.
-
-what other assets?
-
-Where did that file go?
-Where did you leave that address?
-Who changed your password?
-
 Once we have assets and risks identified, we think of ways to minimize these risks.
 Those ways are called controls or measures.
 If you have read through an IT risk management book, many of these should be familiar.
@@ -32,3 +22,14 @@ One neat way to organize risks is according to a data lifecycle model.
 - Share: DLP, encryption
 - Archive: asset management
 - Destroy: crypto shredding (encrypting and deleting the key)
+
+
+Microsoft: Countermeasure (or control). A safeguard that addresses a threat and mitigates risk.
+
+To be continued.
+
+what other assets?
+
+Where did that file go?
+Where did you leave that address?
+Who changed your password?

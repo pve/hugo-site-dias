@@ -142,15 +142,29 @@ This unit is Act II's case opener: it should show a deal being made, not a deal 
 - The deal's proof point at the close: the audit firm produced a SOC 2 report demonstrating the controls "work on a continuous basis" — described in the narration as "one of the most stringent compliance frameworks for service organizations." A clean way to end the scene — the deal wasn't just signed, it was verified.
 - A right-to-audit clause sat alongside the already-noted portability clause — worth a single joint mention ("liberation of data" plus right to audit) rather than two separate beats.
 
+- **The mechanism, now named instead of vague** — Hein Brat (Bitbrains, the private-cloud provider) on the actual elasticity: "op het moment dat je weinig doet, staan er twee CPU's. Er gebeurt veel, er staan er duizend CPU's" (when there's little going on, two CPUs stand by; when it's busy, a thousand). This replaces "more flexibility and capacity" with a concrete before/after number — the fix for the persona-check complaint that the mechanism was never explained. Cloud didn't compute faster; it let the insurer rent the quarterly peak instead of owning it year-round.
+- **The tooling named**: the Solvency II scenario calculations ran on actuarial software from Towers Watson and Algorithmics, integrated by the private-cloud provider — grounds "millions of policies, thousands of scenarios" in real, named vendors rather than an abstract batch job.
+- **Why the provider pursued third-party assurance (adjacent friction, not the insurer's own)**: being excluded from RFPs without a recognized assurance framework, and the inefficiency of repeating the same security due-diligence conversation with every bank and insurer client — "dat schaalt niet lekker." Leadership treated closing that gap as non-negotiable once the pattern was clear. Useful adjacent material, but it's the provider's "why not," not the insurer's — keep them distinct if used.
+- **Regulators, named rather than generic**: DNB, the AFM, the European Central Bank, and the Dutch data-protection authority all named as parties the provider has to satisfy — more concrete than "regulatory and compliance concerns."
+- **A framing line worth stealing for the unit's own opening**: a client with a need, in the Solvency II domain, taking that service from a cloud provider — "hoe gaan we vertrouwen regelen?" (how do we arrange trust?). Three sentences that state the whole case-opener thesis in miniature.
+
 ## Sources
 
 - `sources/misc-cae-udemy-2015-bank-roadmap-insurance-case.md` (Salvage) — synthesis note, bullets only. Also carries three secondary items worth a mention elsewhere: the anti-lock-in clause (32a), the Dutch Olympic Committee OS2010 existence-proof case (28, not this unit), and a restaurant/waiter promise-theory walkthrough (26).
 - **Primary source, fuller and verbatim** — the raw transcript behind that synthesis note:
   `transcripts/Content en creatie/Archive 2017/Cloud Adoption Essentials CAE June 2017/Udemy CAE 2015/Section 3 Cloud adoption road map/3 Cloud roadmap banks.txt` (Salvage). Peter's own scripted "Cloud Adoption Essentials" Udemy narration (c. 2015), whisper transcript, walking the same eight-step roadmap in his own words — draft prose from this file, not the bullet synthesis; it has the "career limiting move" line, the SOC 2 close, the two-partner structure, and the right-to-audit clause, none of which made it into the harvested bullets.
 
+- **Traced to its origin: the actual event Peter heard this at.** PvIB (Platform voor InformatieBeveiliging) theme evening, 20 March 2014, "Security" — four sessions, all on PvIB's YouTube channel (`@pvib4168`). YouTube's auto-captions were unusable (garbled, near-nonsense Dutch ASR); re-transcribed locally with whisper.cpp (`ggml-large-v3-turbo`), which produced clean, coherent transcripts. Session breakdown:
+  1. Intro — Andre Beerten — `https://www.youtube.com/watch?v=SO-iGKTGSRI`
+  2. "Vertrouwen bij de verwerking vertrouwelijke gegevens" — Hein Brat, Bitbrains (the private-cloud provider) — `https://www.youtube.com/watch?v=cMwN9c_cI_c` — **this is the session with the client case**; the client is named directly as Aegon in the audio ("in dit geval met Egon, voor het contract...") — Whisper's Dutch model consistently mishears "Aegon" as "Egon," but the pattern is unambiguous across multiple mentions.
+  3. "SOC2" — Stefan Peekel, KPMG (the audit firm) — `https://www.youtube.com/watch?v=9pE0Nv-nj8c`
+  4. "Security in de Cloud, schets van actualiteiten" — Renato Kuiper — `https://www.youtube.com/watch?v=1VtNwzQCzpY` — his opening explicitly frames the evening around Aegon's Solvency II cloud deal.
+  Confirms the underlying story is real, not a composite: Aegon (insurer), Bitbrains (private-cloud/HPC provider, later merged into Solvinity), and KPMG (SOC 2 auditor, announced 6 March 2014). Independently corroborated by an academic source: Shen, van Beek & Iosup, *"Statistical Characterization of Business-Critical Workloads Hosted in Cloud Datacenters,"* TU Delft PDS-2014-001 (2014), which names Aegon as a Bitbrains customer running Monte Carlo-based financial risk assessment.
+  **Anonymization note**: current published prose keeps "a life insurance company" / "the private cloud provider" per this project's sources-intake convention (anonymize at intake). Naming Aegon and Bitbrains directly is an open decision, not yet made — see Open questions.
+
 ## Persona check
 
-- Neil: this is his scene — he has to be able to defend the go/no-go on both the numbers (six weeks to two) and the governance (who signed off, what got negotiated).
+- Neil: this is his scene — he has to be able to defend the go/no-go on both the numbers (six weeks to two) and the governance (who signed off, what got negotiated). The Bitbrains transcript now gives him the mechanism too (two CPUs idle, a thousand at peak) — closes the "why did cloud specifically fix this" gap the persona review flagged.
 - Maria: less central here, but the "which of my systems actually has a regulatory deadline attached" question is hers to ask when she reads this.
 
 ## Open questions
@@ -158,6 +172,9 @@ This unit is Act II's case opener: it should show a deal being made, not a deal 
 - How much of the eight-step roadmap structure to keep visible vs. compress into a single decision scene? Probably compress — the act opener (18) is where the arc framing lives, this unit just needs the case.
 - Does the anti-lock-in clause get its own paragraph here, or a single foreshadowing line with the payoff held for 32a? Leaning toward a single line — don't let this unit do 32a's job.
 - Title still open: "The Solvency II Deadline" vs. something that names the deal more directly (e.g. "Why We Signed the Cloud Deal"). Current working title kept simple and case-specific.
+- **Decided: name Aegon, Bitbrains, and KPMG.** The intake convention's anonymization rule protects people/companies who didn't choose exposure (course attendees, client specifics passed along secondhand). That doesn't apply here — Aegon and Bitbrains put their own names on this story at a public PvIB event, on the record, on camera. Naming them is just citing a public talk, and it lets Neil check the story against a real record instead of taking it on faith.
+  **TODO (not yet done)**: propagate the naming through the full unit — currently every mention still reads "the insurance company" / "the private cloud provider" / "the audit firm," including the opening paragraph, all eight roadmap steps, and the newly added mechanism/CPU material. Needs a dedicated prose pass, not done as part of this source-gathering round.
+- The internal friction found (RFP exclusion, repeated due-diligence) belongs to the provider (Bitbrains), not the insurer (Aegon) — still no direct evidence of Aegon's own internal "why not" argument. That persona-review gap remains open even after the re-transcription.
 
 <!-- RAW MATERIAL, collected from Salvage to process/sources — my own words/teaching, not yet worked into prose. Kept verbatim so nothing gets lost before drafting. -->
 
