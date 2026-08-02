@@ -1,6 +1,6 @@
 ---
 date: '2025-05-05T05:58:14Z'
-draft: true
+draft: false
 title: 'A service agreement is a set of promises'
 weight: 260
 ---
