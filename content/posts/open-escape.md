@@ -47,4 +47,6 @@ Every agent needs privilege reduction and egress controls — the same controls 
 Even if not 100% effective, they are still part of your defense-in-depth.
 
 If you want more explanations and skills you may be the right person
-for my Agentic AI security workshop in Zurich, September 30.
+for my [Agentic AI security workshop in Zurich, September 30, 2026](https://www.cloudsecurityalliance.ch/event/agentic-ai-threat-modelling-a-hands-on-workshop-csa-emea-event).
+
+
