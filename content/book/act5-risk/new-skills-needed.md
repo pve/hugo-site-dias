@@ -1,7 +1,7 @@
 ---
 date: '2025-05-02T08:07:42Z'
 draft: false
-title: 'Technology architecture for non-techies'
+title: 'New skills needed'
 weight: 780
 ---
 

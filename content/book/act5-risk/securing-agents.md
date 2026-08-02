@@ -15,7 +15,7 @@ AI agents don't need a new security theory; they need the existing one applied w
 ## Position in the arc
 
 After querying-AI-risk (74): assets and threats are named; this unit is the controls counterpart for the agentic case.
-Before retrofitting zero trust (76): the ZT mindset ("assumed trust is a risk", unit 67) is the natural closer for both.
+Before retrofitting zero trust (72b): the ZT mindset ("assumed trust is a risk", unit 67) is the natural closer for both.
 
 ## What goes in
 

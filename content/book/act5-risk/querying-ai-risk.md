@@ -6,6 +6,8 @@ weight: 740
 notes: whatever
 ---
 
+<!-- STRUCTURE NOTE (2026-08-02): 74/75 are the act's "Road Back" beat (hero's-journey terms) — the threat regroups and returns in a new shape just as the reader has mastered the old controls (70-73). 74 should open by naming that turn explicitly, not just extend the risk checklist to a new asset class. -->
+
 While Artificial Intelligence, especially the generative type, is a highly disruptive form of IT innovation, its risk management still follows the same basic principles.
 We just need to extend those principles to new forms of data and software.
 

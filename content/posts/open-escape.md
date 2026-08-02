@@ -1,7 +1,7 @@
 ---
 date: '2026-08-01T19:28:46Z'
 draft: false
-title: 'Open Escape'
+title:  "The Real Story Behind the OpenAI 'Escape'"
 weight: 10
 ---
 

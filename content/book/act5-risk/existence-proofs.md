@@ -14,8 +14,8 @@ Yes — there are running, decades-old proofs that shared digital infrastructure
 
 ## Position in the arc
 
-Between autonomy controls (81) and the organising-markets chapter (82): this unit supplies the evidence; 82 extracts the mechanism.
-Keep the split clean: here the stories, there the theory of demand aggregation.
+Between autonomy controls (81) and the migration (82) / organising-markets (83) chapters: this unit supplies the evidence they build on.
+Keep the split clean: here the stories, there the mechanics of leaving (82) and the theory of demand aggregation (83).
 
 ## The proofs (one tight page each, at most)
 
@@ -25,7 +25,7 @@ Keep the split clean: here the stories, there the theory of demand aggregation.
 - **Haven / Common Ground (VNG)**: ~340 Dutch municipalities aggregating demand; already referenced in digital-autonomy-controls — here it gets its story told rather than cited.
 - **India UPI**: the non-European, non-niche proof: open mandated API standard, 550+ banks, hundreds of millions of users; broke bank lock-in at national scale.
 - **UK G-Cloud**: deliberately kept as the double-edged one: SMEs won ~56% of spend (2013), ~£3bn cumulative by 2018 — then AWS/Microsoft opened UK datacentres (2016) and reclaimed the framework.
-  Lesson: open access alone does not hold incumbents back; demand must be continuously shaped (hand-off to 82).
+  Lesson: open access alone does not hold incumbents back; demand must be continuously shaped (hand-off to 83).
 - **SCS / Gaia-X**: honest cautionary contrast — the right idea moving at the wrong speed; name why (governance weight before user value).
 
 ## The pattern to extract (closing section)

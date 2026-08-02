@@ -17,7 +17,7 @@ That makes identity the control point of digital infrastructures — and the one
 
 - Picks up directly from the directories unit (11): directories are the infrastructure *for* identity.
 - Sets up promise theory's unstated assumption before units 16/17 need it: agents must be identifiable before they can exchange promises.
-- Gives what-is-trust (67), controls (72), and retrofitting zero trust (76) a shared concept to build on instead of re-deriving it.
+- Gives what-is-trust (67), controls (72), and retrofitting zero trust (72b) a shared concept to build on instead of re-deriving it.
 
 ## What goes in
 

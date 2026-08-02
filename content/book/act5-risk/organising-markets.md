@@ -2,10 +2,10 @@
 date: '2026-07-23T00:00:00Z'
 draft: true
 title: 'Organising markets for digital services'
-weight: 820
+weight: 830
 ---
 
-<!-- NOTES DRAFT — unit 82 in book-sequence.md; chapter already specified in TODO.md ("organising markets"). Not prose yet. -->
+<!-- NOTES DRAFT — unit 83 in book-sequence.md; chapter already specified in TODO.md ("organising markets"). Not prose yet. Renumbered 2026-08-02 from unit 82 (Act V flow review — swapped with migration, now unit 82). -->
 
 ## Thesis
 
@@ -14,7 +14,7 @@ Argue the position, not just the tension: organising demand is the only structur
 
 ## Position in the arc
 
-Directly after the existence proofs (81a) — this chapter is the mechanism behind those stories.
+After migration (82): migration establishes that an individual actor can actually leave; this chapter is the collective-scale mechanism for making that exit option real and durable market-wide, not just once.
 Promise-theory continuity: a market is a standing set of interchangeable promise-givers; interchangeability is what turns a promise into a choice (link multiparty brokers, unit 53).
 
 ## Driving questions (from the persona review, per TODO.md — keep as the chapter's section structure)

@@ -1,7 +1,7 @@
 ---
 date: '2025-05-13T09:39:02Z'
 draft: true
-title: 'Mitigation'
+title: 'The Board Pitch'
 weight: 730
 ---
 

@@ -2,10 +2,10 @@
 date: '2026-07-23T00:00:00Z'
 draft: true
 title: 'Migration, not greenfield'
-weight: 830
+weight: 820
 ---
 
-<!-- NOTES DRAFT — unit 83 in book-sequence.md; chapter already specified in TODO.md ("chapter on change — migration, not greenfield"). Not prose yet. -->
+<!-- NOTES DRAFT — unit 82 in book-sequence.md; chapter already specified in TODO.md ("chapter on change — migration, not greenfield"). Not prose yet. Renumbered 2026-08-02 from unit 83 (Act V flow review — swapped with organising-markets, now unit 83). -->
 
 ## Thesis
 
@@ -14,7 +14,7 @@ This chapter covers the transition *out of an existing dependency* — which is 
 
 ## Position in the arc
 
-After organising markets (82): the market gives you somewhere to go; this chapter is how you actually move.
+Directly after the existence proofs (81a): the individual actor's exit from dependency, before organising markets (83) — the collective lever — follows.
 Feeds unit 73 (the board pitch): the business-case numbers below are the worked example that unit needs.
 
 ## Anchor case (from TODO.md): the French sovereign-IT / DiNum migration

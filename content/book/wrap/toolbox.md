@@ -44,7 +44,7 @@ Neil carries them into meetings; Maria tapes them next to her diagram.
 
 ## Page 5 — Act V: Stay in control
 
-- The Kipling method questions (unit 76): who, what, when, where, why, how of every allowed communication.
+- The Kipling method questions (unit 72b): who, what, when, where, why, how of every allowed communication.
 - The DaRiCo starter (69) and the who-suffers question (65) as the first two moves of any risk conversation.
 - The lethal-trifecta test for agents (75): private data, untrusted content, exfiltration channel — remove one.
 - The deterrence checklist (81/83): a costed, rehearsed exit option per critical dependency; an exit that isn't credible deters no one.
