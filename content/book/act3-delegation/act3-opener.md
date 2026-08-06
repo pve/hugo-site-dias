@@ -5,6 +5,15 @@ title: 'Act III opener'
 weight: 331
 ---
 
+You have started to script and automate all over the place, from server deployment to infrastructure management.
+
+Your developers are streaming out changes, and the deployment infrastructure is barely keeping up.
+
+Nobody is double-checking by hand anymore.
+The machines are.
+
+How are you sure that they aren't dropping the ball?
+
 <!-- NOTES DRAFT — unit 33 in book-sequence.md. Not prose yet; these are the notes on what the unit should contain. -->
 
 ## Thesis

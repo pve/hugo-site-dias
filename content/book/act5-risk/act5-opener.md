@@ -5,6 +5,15 @@ title: 'Act V opener'
 weight: 625
 ---
 
+Information technology grown by leaps and bounds, far beyond what you and I could have dreamt of in our philosophy when we started out our careers.
+(If your career hasn't started yet, take this a as a history lesson from us).
+
+As technology has grown, so have the promises, the value, the number of actors involved, and the stakes.
+
+In such circumstances, what chance do you stand to avert catastrophe?
+
+That is the topic of the final act of this book, where we'll dive into the many levels of staying in control.
+
 <!-- NOTES DRAFT — unit 62 in book-sequence.md. Not prose yet; these are the notes on what the unit should contain. -->
 
 ## Thesis

@@ -46,6 +46,9 @@ Feedback loops are everywhere.
 - When you download a large file from a server, the server will adjust its sending rate to whatever the network and the receiver can handle.
 - When a cloud provider gets more customers, it will adjust the server capacity it has, and it will also adapt the staffing of its support center.
 - In cybersecurity, we observe the patching level of software components against known vulnerabilities, and update the software as needed.
+- In training and using AI, there is a tremendous amount of feedback loops.
+
+As I am writing this, I find I keep running into examples everywhere.
 
 ## Better feedback loops
 

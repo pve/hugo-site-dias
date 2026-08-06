@@ -5,6 +5,17 @@ title: 'Act IV opener'
 weight: 485
 ---
 
+You will find that control over the results that you are looking for is now scattered over many actors.
+
+These actors are not fully independent, they influence each other in multiple ways.
+You are an actor, and it helps you if you can figure out your power relations with other actors.
+
+Actors can be individuals like you or me, or they can be the organizations that we work for, as the case may be.
+Perhaps surprisingly, it helps to look at open source, and technology itself, as an autonomous actor too.
+
+Who is really in control?
+Let's have a look.
+
 <!-- NOTES DRAFT — unit 47 in book-sequence.md. Not prose yet; these are the notes on what the unit should contain. -->
 
 ## Thesis

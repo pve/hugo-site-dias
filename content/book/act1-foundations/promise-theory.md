@@ -79,7 +79,7 @@ This makes it clear that there ultimately is a possibility for it to not be fulf
 Jeff Sussna compares this to a teenager's promise to clean their room.
 It may happen, but there is a chance it does not.
 
-Autonomous agents can only make promises to each other, they cannot force each other to do things.
+Autonomous agents, also referred to as a *actors*, can only make promises to each other, they cannot force each other to do things.
 However, we can *ask* other agents to make a promise to us.
 In our example, we ask the waiter to bring us a coffee.
 The waiter may chose to respond by making the actual promise.
