@@ -2,6 +2,7 @@
 date: '2025-11-19T20:10:47Z'
 draft: false
 title: 'Non-Monetary Values'
+description: "Money isn't the only currency of value. Belonging, identity, and professional pride shape IT decisions as much as budgets do — and are a source of power in their own right."
 weight: 230
 ---
 

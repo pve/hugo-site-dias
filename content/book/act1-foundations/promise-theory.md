@@ -2,6 +2,7 @@
 date: "2025-04-25T21:21:54Z"
 draft: false
 title: "Promise Theory"
+description: "A café order between a customer and a waiter turns out to be the same pattern behind APIs, contracts, and IT support tickets: request, promise, delivery, acquittal."
 weight: 160
 ---
 Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.

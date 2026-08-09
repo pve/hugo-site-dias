@@ -2,6 +2,7 @@
 date: '2025-08-26T15:56:05Z'
 draft: false
 title: 'AI Roles and Responsibilities'
+description: "Six roles run every AI system, from customer to data provider, each bound by its own promise. Based on the CSA AI Controls Matrix."
 aliases:
 - "/diginfra/ai-roles.md"
 weight: 420

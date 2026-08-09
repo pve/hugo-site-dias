@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Business Model Canvas for IaaS Providers
+description: "Mapping AWS EC2 onto the nine blocks of the Business Model Canvas, from customer segments to cost structure, to see what actually makes an IaaS business work."
 date: '2014-11-15T11:18:17'
 weight: 290
 ---

@@ -1,7 +1,8 @@
 ---
 date: '2025-05-08T20:45:16Z'
 draft: false
-title: "Organization Size Matters - Dunbar's number"
+title: "Why Organization Size Determines Who You Trust"
+description: "Below 150 people you know who to trust by name. Above it, Dunbar's number kicks in — trust gives way to roles, processes, and bureaucracy."
 weight: 560
 ---
 
