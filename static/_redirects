@@ -10,6 +10,21 @@
 /book/risk/      /book/act5-risk/         301
 /book/cases/     /book/                   301
 
+# Old topic-folder pagination (e.g. /book/risk/page/2/) had no exact-match
+# redirect and 404'd; send any page beyond 1 to the new section index.
+/book/diginfra/page/*  /book/act1-foundations/  301
+/book/value/page/*     /book/act2-value/        301
+/book/change/page/*    /book/act3-delegation/   301
+/book/power/page/*     /book/act4-power/        301
+/book/risk/page/*      /book/act5-risk/         301
+/book/cases/page/*     /book/                   301
+
+# act-opener.md -> actN-opener.md rename (2026-08-06, "openers" commit)
+/book/act2-value/act-opener/       /book/act2-value/act2-opener/       301
+/book/act3-delegation/act-opener/  /book/act3-delegation/act3-opener/  301
+/book/act4-power/act-opener/       /book/act4-power/act4-opener/       301
+/book/act5-risk/act-opener/        /book/act5-risk/act5-opener/        301
+
 # Leaf-bundle index pages (excluded from the per-file list below since their
 # basename "index.md" collides across folders)
 /book/value/business-model-canvas-iaas/  /book/act2-value/business-model-canvas-iaas/  301
