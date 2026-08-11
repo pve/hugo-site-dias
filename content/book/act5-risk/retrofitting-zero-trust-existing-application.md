@@ -8,7 +8,7 @@ Zero Trust Architecture is an approach to better cybersecurity. To many, it seem
 
 Consider this hypothetical situation.
 
-You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the 'who', 'what', 'when', etcetera of allowed communication.
+You have an application with hundreds of thousands of sensitive records, let’s say client records. We assume that in this example it seems hard to implement MFA (Multi Factor Authentication) on it. What other controls can you implement to reduce the assumed trust? We can use the Kipling method, which is at the core of Zero Trust architectures, to engineer better controls. In short, the Kipling method is about the "who", "what", "when", etcetera of allowed communication.
 
 ```mermaid
 flowchart TD

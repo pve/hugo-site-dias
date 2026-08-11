@@ -38,8 +38,8 @@ It feels like giving up a core part of identity.
 
 I have worked in many organizations that show clear signs of mergers that happened a long time ago.
 Scars would sometimes be an appropriate metaphor.
-People there would still be identified through the 'tribe' that they originated from.
-In one case people who joined the organization after the merger were called 'volunteers', as opposed to the older ones that were 'drafted'.
+People there would still be identified through the "tribe" that they originated from.
+In one case people who joined the organization after the merger were called "volunteers", as opposed to the older ones that were "drafted".
 
 Another example I encountered in my career as a cloud security instructor is cloud resistance originating from the feeling of loss of control.
 In retrospect, I suspect that a lot of the initial appeal of my cloud security training programs was that people wanted to learn about good reasons to *not* go to cloud.
@@ -60,7 +60,7 @@ Many professionals have their identities and sense of belonging strongly tied to
 They also understand that they need to develop and maintain these skills to remain employable.
 
 Rather than treating professionals as dispensable resources, organizations would do better to acknowledge and encourage professional behavior.
-Too often to my taste, IT professionals are viewed as 'nerds' stuck in their own world, which echoes sentiments about scientists stuck in their ivory towers.
+Too often to my taste, IT professionals are viewed as "nerds" stuck in their own world, which echoes sentiments about scientists stuck in their ivory towers.
 This view reflects in seeing these people's presence as a necessary evil.
 
 Instead, true professional behavior involves engineering the best solution to achieve an organization's goals, not tinkering with technology to show off to fellow nerds.

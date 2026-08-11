@@ -14,12 +14,12 @@ I could tell horror stories about how early client server application installati
 
 A little later, Amazon was one of the pioneers of offering storage and servers over the internet.
 In addition, there were a bunch of other providers offering a variety of platforms on which you could develop and deploy software.
-These offerings were often 'opinionated', which means they made a lot of technology choices for you.
+These offerings were often "opinionated", which means they made a lot of technology choices for you.
 
 These seemingly disparate developments were brought under a single umbrella term: cloud computing.
 The history of that term is not easy to trace.
 It is one of those concepts that seem to have been discovered independently in multiple ways.
-As early as 2001 we talked about putting servers 'in the cloud', meaning we did not care much where they actually were.
+As early as 2001 we talked about putting servers "in the cloud", meaning we did not care much where they actually were.
 
 NIST, the US National Institute of Standards and Technology, solidified the concept in 2011.
 They lumped together all kinds of online services and access to resources in a single definition, by identifying *five essential characteristics* of such services.
@@ -83,7 +83,7 @@ Those services still run internet protocols, typically.
 - The risk associated with this characteristic is lack of isolation between clients and between services.
 When a cloud service is on the internet, your accounts on that service are on the internet too, and therefore potentially accessible by bad actors.
 
-This cloud characteristic compares to what economists call 'unbundling' of services.
+This cloud characteristic compares to what economists call "unbundling" of services.
 
 ## Resource pooling
 

@@ -16,7 +16,7 @@ Who takes decisions in an organization?
 How do people even talk about decisions, especially when they concern digital technology?
 Who do you trust?
 
-I have come to identify four major categories.
+I have come to identify four major categories for the purpose of understanding trust.
 
 ### Individuals
 

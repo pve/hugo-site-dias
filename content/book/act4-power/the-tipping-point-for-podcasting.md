@@ -23,8 +23,8 @@ Both the technology and the content were existing as early as 1997. Yet, the gra
 This is when a development, epidemic, or trend just seems to explode.
 Obviously, technology has improved, in particular once the iPod was launched, which could store 1000 songs. But something more was going on.
 
-I checked these numbers with Adam Curry, who is regarded by many as the father of podcasting, or 'podfather'.
-I found out that he has made a conscious effort to improve the numbers. For example, he developed 'ipodder', which started as a piece of software to make the mechanics of subscribing to podcasts and getting them on your player easier. Ipodder was a directory to help people find content that is interesting for them. Curry also ran “The Daily Source Code”, a regular podcast, as a tool for podcast software developers to test their software.
+I checked these numbers with Adam Curry, who is regarded by many as the father of podcasting, or "podfather".
+I found out that he has made a conscious effort to improve the numbers. For example, he developed "ipodder", which started as a piece of software to make the mechanics of subscribing to podcasts and getting them on your player easier. Ipodder was a directory to help people find content that is interesting for them. Curry also ran “The Daily Source Code”, a regular podcast, as a tool for podcast software developers to test their software.
 
 There is also a tipping point for creators of podcasts, which works in tandem with the tipping point for listeners.
 But I will leave you to figure out the details of that yourself.

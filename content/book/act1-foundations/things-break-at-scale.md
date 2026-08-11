@@ -25,12 +25,12 @@ No matter how good your hardware is, if it becomes big enough, it breaks. In his
 
 As Google say:
 
-> "Our view is it's better to have twice as much hardware that's not as reliable than half as much that's more reliable," Dean said. "You have to provide reliability on a software level. If you're running 10,000 machines, something is going to die every day."
+> Our view is it's better to have twice as much hardware that's not as reliable than half as much that's more reliable, Dean said. You have to provide reliability on a software level. If you're running 10,000 machines, something is going to die every day.
 
 The business case for this is that you will have to invest in software for reliability.
 Once you have done that, the hardware reliability no longer matter, within certain bounds, and you are financially better off with cheaper hardware.
 
-The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a 'middleware' software layer on which resilient applications can be build.
+The next thread of thought then becomes on which software level you can best provide that reliability. At Google a core technology for that was Map/Reduce, which is a "middleware" software layer on which resilient applications can be build.
 We'll cover that in another unit.
 
 Finally, scale does not only break hardware, but also organizations.

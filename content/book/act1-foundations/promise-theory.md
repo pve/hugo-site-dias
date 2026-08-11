@@ -74,7 +74,7 @@ And the general promise, the commitment, of the telecommunications company remai
 
 According to [Jeff Sussna](https://www.oreilly.com/library/view/designing-delivery/9781491903742/), a promise is 
 
->"... a strongly stated intention to provide a service, which may or may not be kept".
+> ... a strongly stated intention to provide a service, which may or may not be kept.
 
 This makes it clear that there ultimately is a possibility for it to not be fulfilled.
 Jeff Sussna compares this to a teenager's promise to clean their room.
@@ -118,7 +118,8 @@ In all our examples, messages were exchanged between agents.
 These messages control a process of interaction, and in that interaction, a shared reality is created.
 This sounds abstract, I know, so let's have an example.
 At a marriage, the magic sentence is:
->“I now pronounce you husband and wife”.
+
+> I now pronounce you husband and wife.
 
 What changed after that sentence is said?
 Legally, these people are now married, which creates a whole new world of possibilities and obligations.

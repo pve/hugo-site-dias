@@ -32,7 +32,7 @@ The left column shows how much time the automation would save, per individual ex
 
 Each cell in the table then shows the amount of effort that you can spend on that automation and still have a net positive outcome over five years.
 The table contains a number of black (empty) cells.
-My understanding is that these are 'impossible' situations.
+My understanding is that these are "impossible" situations.
 For example, you cannot execute a one-hour task fifty times a day, according to this table.
 This is only true, in my opinion, if you assume a single person is doing that task.
 If a whole team can benefit from the automation, there would be useful numbers in those cells as well.

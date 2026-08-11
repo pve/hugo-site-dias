@@ -40,7 +40,7 @@ A few comments on what this does, and does not show:
 
 - input is data, which is _transformed_ into output, also data
 - the diagram does not show if this is a one-off activity, or a stream of events, we need a time-sequence diagram for that
-- there is no explicit mention of any 'state' or 'persistent data' inside the processing.
+- there is no explicit mention of any "state" or "persistent data" inside the processing.
 
 We will see later how this simple model is adequate to describe a vast variety of data processing tasks.
 A very simple example is adding two numbers. The input is formed by the two numbers, and the output it their sum.

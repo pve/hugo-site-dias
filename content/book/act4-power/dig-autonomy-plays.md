@@ -29,7 +29,7 @@ But when open source has a supply chain security issue, it can feel like a betra
 ##
 
 Somewhere in the supply chain there is a risk. How immediate is it?
-E.g. technical backdoor, or 'kill switch'.
+E.g. technical backdoor, or "kill switch".
 
 Reduction of supplier options will always result in a reduction of value. The question is, how much?
 

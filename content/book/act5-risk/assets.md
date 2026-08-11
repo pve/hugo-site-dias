@@ -64,13 +64,13 @@ Here are some cloud specific examples from the ENISA report
 An example of the first one is a weak password like "password123", especially if it is used on many accounts.
 V4 is about cloud access. In a cloud environment, you don't walk up to your computer, you log in to it remotely, possibly over the internet.
 That brings additional vulnerabilities.
-Especially since this 'management interface' is not just an account, it is an account that rules other accounts.
+Especially since this "management interface" is not just an account, it is an account that rules other accounts.
 
 Finally, a more technical cloud specific example is the hypervisor.
 The hypervisor is a technology for dividing up a physical machine into multiple virtual machines.
 Each could serve different customers.
 If you are one of those customers, you typically don't want another customer to have access to your data.
-The hypervisor is an 'isolation provider', and it creates isolated 'execution environments' (see elsewhere).
+The hypervisor is an "isolation provider", and it creates isolated "execution environments" (see elsewhere).
 Failure to isolate is therefore a vulnerability.
 
 ## Risk
@@ -121,7 +121,7 @@ For example, a malicious actor can exfiltrate data, or run a Bitcoin farm.
 
 A final note on probabilities.
 Some events are really random, for example the chance of a server breaking down.
-The server does not 'know' how valuable the data is that you put on it.
+The server does not "know" how valuable the data is that you put on it.
 Different brands of servers will have different failure probabilities, and you can do actual math on that to predict when it will be cheaper to replace them versus waiting for them to fail.
 
 Malicious actor events, however, are a little harder to quantify.

@@ -48,7 +48,7 @@ Artificial intelligence is the newest technology that we apply to a data process
 AI allows us to do certain data processing tasks easier, better, faster.
 But to really benefit from this technology we have to, as always, understand the materials and how to apply them.
 
-The 'materials' here are the various tools, models, frameworks and services.
+The "materials" here are the various tools, models, frameworks and services.
 How to apply them involves understanding their strengths, weaknesses, and risks.
 
 In my current travels I am using AI to give me a morning brief on the activities of the day.

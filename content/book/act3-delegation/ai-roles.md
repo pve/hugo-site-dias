@@ -70,7 +70,7 @@ Model providers are responsible for collecting and curating the data on which th
 They operate at the foundation layer of the AI stack and may provide direct API access to their models,
 at least according to the AICM.
 
-In the case of so-called open models, there is a clear case for distinguishing between the responsibilities of the model provider, who effectively just hands over a large file with the trained model, and the 'inferencing provider', who completes prompts, as described earlier.
+In the case of so-called open models, there is a clear case for distinguishing between the responsibilities of the model provider, who effectively just hands over a large file with the trained model, and the "inferencing provider", who completes prompts, as described earlier.
 
 The Model Provider promises:
 

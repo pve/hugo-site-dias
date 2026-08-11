@@ -34,7 +34,7 @@ Obviously, understanding of technology and business has an important role in thi
 
 The idea of more writing came back.
 
-No longer constrained by my focus on cloud security, I felt liberated to review some of the earlier writing I had done in this light. I also allowed myself to let go of aiming for the 'final answer', and instead see writing as a tool to understanding. "Writing to Learn" by William Zinsser was inspirational for that. And AI chatbots turned out to be a good tool for externalizing my inner critic, so it no longer interfered so much with getting all these ideas out of my head, and into the public light.
+No longer constrained by my focus on cloud security, I felt liberated to review some of the earlier writing I had done in this light. I also allowed myself to let go of aiming for the "final answer", and instead see writing as a tool to understanding. "Writing to Learn" by William Zinsser was inspirational for that. And AI chatbots turned out to be a good tool for externalizing my inner critic, so it no longer interfered so much with getting all these ideas out of my head, and into the public light.
 
 Still, I don't see this book finished soon. At the same time, I am working to make every draft useful to its intended audience.
 

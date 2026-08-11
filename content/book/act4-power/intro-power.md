@@ -45,7 +45,7 @@ The way these mechanisms are organized plays a critical role in shaping both the
 A common thread is that power influences the future, and influences the outcomes of activities.
 The simplified definition of power, inspired by Oxford Languages, that I use here is:
 
-> _Power is the ability of an actor to direct or influence the behavior of others or the course of events._
+> Power is the ability of an actor to direct or influence the behavior of others or the course of events.
 
 As our examples show, these actors are not just people - they can include technical artifacts and teams.
 

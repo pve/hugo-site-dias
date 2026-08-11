@@ -15,7 +15,7 @@ So, that brings value: it can be faster and better than your homegrown alternati
 
 Because the provider has multiple consumers, there are economies of scale that play out. Whole books have been written on this, and we will be looking into that in more detail. Think of sharing of unused capacity. Not everybody is using their internet link to the max all the time.
 
-But 'digital' brings more specific benefits. It is the opportunity to automate service delivery that has immense effects on economies of scale. Think about it: if a piece of software does its work, replicating that piece of software across a lot of servers is a negligible amount of effort in comparison to creating that software, typically. In contrast, baking 1000 pizzas is a lot more work than just baking one or two.
+But "digital" brings more specific benefits. It is the opportunity to automate service delivery that has immense effects on economies of scale. Think about it: if a piece of software does its work, replicating that piece of software across a lot of servers is a negligible amount of effort in comparison to creating that software, typically. In contrast, baking 1000 pizzas is a lot more work than just baking one or two.
 
 Finally, consumers can find value in being connected with other consumers. There is transactional value in that, to arrange or discuss matters, but for most people there is emotional value in being connected to other people.
 The value of a phone or social network to the individual users, not just the network owner, increases with the number of other users connected to it. As a result the value of the network increases quadratically with the number of users. This has implications for the power balance, as we will discuss later.

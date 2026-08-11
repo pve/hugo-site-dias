@@ -32,8 +32,8 @@ Interests are rarely 100% aligned, even while there is a perceived benefit of us
 
 For example, in an Excel based application, this marks the point where you suddenly need to talk about what certain tabs and columns mean, and who is allowed to change what, even if there are only two people using it.
 
-As a creator, if you feel you have an idea that is worth sharing in software, this is where your 'marketing' starts.
-My father researched and taught about the initial stages of product development, called this the 'socialization' of your individual idea.
+As a creator, if you feel you have an idea that is worth sharing in software, this is where your "marketing" starts.
+My father researched and taught about the initial stages of product development, called this the "socialization" of your individual idea.
 It requires you to step into the minds of others.
 As he used to say: "If you want to know what Jane Doe buys, you have to look through Jane Doe's eyes".
 
@@ -67,8 +67,8 @@ This then requires a lot of user training, and beyond the Dunbar frontier, this 
 Even then, these complicated world views are often a source of great frustration to many employees.
 You'll hear comments such as "It is almost impossible to work with this system", and "Fighting with the system". 
 
-What I find interesting is that for public SaaS solutions, the average user does not seem to be aware of this 'world view' that is being imposed by the owners of the application.
-At the same time, you can be sure that owners of a successful SaaS service have a very clear idea of the 'world view' they are imposing on their users.
+What I find interesting is that for public SaaS solutions, the average user does not seem to be aware of this "world view" that is being imposed by the owners of the application.
+At the same time, you can be sure that owners of a successful SaaS service have a very clear idea of the "world view" they are imposing on their users.
 A disturbing example is social media, in which its addictive effects are very deliberately engineered.
 
 Across the spectrum that runs from an individual with a spreadsheet to a world-dominating platform, software and digital infrastructures change power structures.

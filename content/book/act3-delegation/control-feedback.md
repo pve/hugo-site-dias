@@ -63,7 +63,7 @@ That defined state then represents some kind of optimum: minimum errors or maxim
 The first criterion of quality is whether the feedback control loop actually helps to move toward that state.
 This is called *stability* and often you can compute if a system is stable.
 In college I was surprised by the mathematics of this.
-It turns out that the control only needs to 'push' the system in the right direction, it does not matter how fast that is.
+It turns out that the control only needs to "push" the system in the right direction, it does not matter how fast that is.
 Think about a car.
 Once you push the brake pedal, the car will eventually stop, and it does not matter how fast you step on the brakes.
 Of course, you also want the car to stop fast *enough*, but that is a different quality criterion.
@@ -86,7 +86,7 @@ OHDA stands for Observe, Hypothesize, Decide, Act, and it acknowledges that in t
 Another example. The practice of devops combined with continuous integration speeds up the software development process.
 The loop is: define a new feature or bugfix, design and code it, turn in into an executable artefact, test and deploy the artefact, watch the results, see how much closer you are to your target, and start all over again.
 The faster this loop runs, and it can run in hours or less, the more useful software you are going to get out of a given time period.
-In contrast, the classical 'waterfall' software approach would go through this cycle every year or so.
+In contrast, the classical "waterfall" software approach would go through this cycle every year or so.
 
 From this perspective, the buzzword "agility" just means having faster feedback loops.
 

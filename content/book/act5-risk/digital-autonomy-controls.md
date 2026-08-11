@@ -33,12 +33,12 @@ However, the protection that residency offers is largely a legal fiction.
 It neither guarantees sovereignty nor is required for it.
 Noteworthy is the example of GDPR, the European privacy regulation.
 It does not require residency per se, but allows data to be stored under other jurisdictions, **if they provide an equivalent level of protection**.
-The latter is often 'lost in translation' when people implement GDPR.
-The legal discussion then shifts to the interpretation of the word 'equivalent'.
-For example, if the overt law claims to guarantee that protection, but covert regulation about 'national interests' contradicts that, is the protection still adequate?
-A foreign-headquartered company operating local infrastructure can still be subject to foreign government orders, whether you call it an autonomous 'govcloud' or not.
+The latter is often "lost in translation" when people implement GDPR.
+The legal discussion then shifts to the interpretation of the word "equivalent".
+For example, if the overt law claims to guarantee that protection, but covert regulation about "national interests" contradicts that, is the protection still adequate?
+A foreign-headquartered company operating local infrastructure can still be subject to foreign government orders, whether you call it an autonomous "govcloud" or not.
 And this all assumes that governments will abide by the laws they make for themselves, to which there are many documented exceptions.
-- **Interoperability and portability requirements.** Vendor lock-in increases the 'switching cost'. 
+- **Interoperability and portability requirements.** Vendor lock-in increases the "switching cost". 
 Interoperability and portability requirements make it easier to move workloads and data to other vendors or even in-house services.
 An important tool for that is open standards.
 

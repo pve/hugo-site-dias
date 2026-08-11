@@ -35,7 +35,7 @@ This behavior was so pervasive that officers took drastic measures to break it u
 The second account comes from a tournament that Axelrod organized.
 He invited other game theorists to submit a computer program that embodies a specific game strategy.
 In the tournament these were pitted against each other.
-The winner of the tournament was a very simple strategy: 'tit for tat'.
+The winner of the tournament was a very simple strategy: "tit for tat".
 Start by being nice, and then copy the opponents previous move.
 This outperformed much more complicated strategies, and typically leads to the highest total pay-off.
 
@@ -44,7 +44,7 @@ They are that a strategy should be:
 
 - Nice: start out by showing good intentions, not by defecting.
 - Provocable: bad behavior should be retaliated, if not it can be exploited.
-- Forgiving: the strategy should not get into a 'vendetta' of continuous revenge and counter revenge.
+- Forgiving: the strategy should not get into a "vendetta" of continuous revenge and counter revenge.
 - Non-envious: the strategy should not strive to get more out of the game than an opponent.
 - Clear: make it easy for others to cooperate with you.
 
@@ -76,7 +76,7 @@ Tit for tat does not really work between a single individual and a large provide
 If the provider does not serve the individual very well, it is a huge disservice to the consumer.
 But an individual cancelling their subscription is not making much of an impression in relation to the large population that the provider serves.
 
-This asymmetry in power can be very frustrating to the 'weaker' party.
+This asymmetry in power can be very frustrating to the "weaker" party.
 And if the individual is part of an enterprise that holds the contract, they do not even have the option of stepping out.
 
 Conversely, if the experience and power of enough individuals is combined, they can make a significant impact.

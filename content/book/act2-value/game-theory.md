@@ -139,7 +139,7 @@ In tic-tac-toe there are often forcing moves that leave the opponent only one ch
 That also is power of one player over the moves of another player.
 
 In a similar way, tech providers influence the choices of their consumers.
-A game a tech provider likes to play is 'vendor lock-in'.
+A game a tech provider likes to play is "vendor lock-in".
 
 Once a consumer has started using a particular service, there will be a cost associated with switching to different provider.
 This is known as the switching cost.

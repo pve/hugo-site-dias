@@ -142,7 +142,7 @@ What is still not easy:
 
 - ingesting anything other than plain documents (think sections of websites) still requires manual work, though the system can be extended to that.
 - committing to git at an appropriate granularity, especially with multiple concurrent sessions. Again, solutions exist, I have not gotten around to implementing them.
-- classifying source material on credibility and trustworthiness. I have a lot of material from practitioners 'in the trenches', whose first hand experiences are true, but not yet scientifically validated.
+- classifying source material on credibility and trustworthiness. I have a lot of material from practitioners "in the trenches", whose first hand experiences are true, but not yet scientifically validated.
 
 I liked the results of this business project, and I am still using it.
 Time to expand.

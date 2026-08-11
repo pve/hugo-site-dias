@@ -18,7 +18,7 @@ Keeping that data secure involves work.
 The merchant's prime interest is in getting paid, not in spending more money on security than absolutely necessary.
 
 The customers, however, really would like their credit card to be safe, because it is them who bear the fraud risk.
-Actions by the merchant, or lack thereof, are an 'externality', as economists say.
+Actions by the merchant, or lack thereof, are an "externality", as economists say.
 
 Compliance regulations are a way to force risk management on, in this case, the merchant.
 
@@ -37,7 +37,7 @@ Our research showed that there were many dependencies between them, but that the
 This highlights the need for critical infrastructure protection.
 
 While all these initiatives help, compliance does not imply security.
-Even if compliance is treated as more than a 'box-ticking' exercise, there are many documented cases of compliant organizations being breached.
+Even if compliance is treated as more than a "box-ticking" exercise, there are many documented cases of compliant organizations being breached.
 
 Target was PCI DSS compliant in 2013, yet more than 40 million card numbers were stolen.
 

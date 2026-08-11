@@ -44,7 +44,7 @@ In fact, they might even promise that they will *not* have access to it.
 
 Most people are familiar with calling a service desk (or customer support in general) for help.
 
-Historically, this has often been a frustrating experience. That is why it is important to have quality attributes with them, such as 'time to respond' (which typically means, the time it takes for somebody to start working on it), and escalation paths.
+Historically, this has often been a frustrating experience. That is why it is important to have quality attributes with them, such as "time to respond" (which typically means, the time it takes for somebody to start working on it), and escalation paths.
 
 For software updates, you can think of quality attributes such as time to update after a new version has been tested.
 

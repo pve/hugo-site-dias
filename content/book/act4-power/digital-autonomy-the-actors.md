@@ -88,7 +88,7 @@ Democracy is an example, collective market action is another.
 
 While it may sound unusual, it is useful to consider non-human actors.
 In his book "What Technology Wants", Kevin Kelly popularizes the case that technology can be considered as a living organism.
-And scholars such as Bruno Latour helped develop Actor-Network Theory, which acknowledges 'agency' outside of humans.
+And scholars such as Bruno Latour helped develop Actor-Network Theory, which acknowledges "agency" outside of humans.
 
 An example of information technology to apply this to is open source.
 

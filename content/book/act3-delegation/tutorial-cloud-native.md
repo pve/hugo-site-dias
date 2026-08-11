@@ -10,7 +10,7 @@ To illustrate this new approach, I have started to develop a minimal application
 Here are the major features of the example:
 
 * API programming examples (Foobot, io.adafruit.com)
-* 'Server-less' architecture
+* "Server-less" architecture
 * Google Cloud Platform focussed
 * Continuous delivery through Google Cloud Build
 * Version control
