@@ -9,6 +9,7 @@ Change is quite inherent in technology, and in particular in information technol
 At the same time we want technology to provide a reliable service, and that requires a degree of control.
 In this chapter we'll explore some fundamentals of change, in particular how this works with groups of people.
 
+<- naar promise to update? >
 Change and control mindsets complement each other.
 We need both, even if they conflict at times.
 

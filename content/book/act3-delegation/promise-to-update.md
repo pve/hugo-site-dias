@@ -48,8 +48,26 @@ Historically, this has often been a frustrating experience. That is why it is im
 
 For software updates, you can think of quality attributes such as time to update after a new version has been tested.
 
+Change and control mindsets complement each other.
+We need both, even if they conflict at times.
+
+For example, in a typical IT environment, you have developers and system administrators.
+The output of the developers is a stream of changes: new features, improvements, bug fixes, and so on.
+
+Developers promise updates.
+
+Administrators are in the business of keeping everything stable, the same.
+They see no fundamental difference between a new feature and an incident. Both are disrupting the normal flow of business. Consequently, they are seen as a threat, and that is why it often feels that developers and system administrators are from different planets.
+
+Administrators promise stability.
+
+Part of running a smooth IT function is juggling the balance between change and control.
+
 In a complex multi-provider environment, one of the most important things about promises is, who is making them.
 Many security issues have been the result of a responsibility falling in the cracks between two parties, where both think the other is taking care of it.
+
+A classical example from my cloud security courses is that many people think updating a running server's operating system is a provider responsibility.
+It is not.
 
 Digital infrastructure management requires clearly defined responsibilities and quality promises from all parties to ensure timely and secure updates, preventing security gaps due to ambiguous responsibilities.
 

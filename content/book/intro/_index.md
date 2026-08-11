@@ -14,19 +14,19 @@ That boils down to multiple devices per world inhabitant.
 That is impressive technology, but what keeps that together is the _infrastructure_ part of it.
 That is what defines the relation between the consumers and the providers, and that is what we are exploring here, as I will show you later.
 
-### Providers, consumers, automation
+## Providers, consumers, automation
 
 Now digital infrastructures at scale - there are a few very essential elements in there.
 The most important elements are: one, that you have a separation between a provider and multiple consumers; and two, that that service is digital, which means that it's amenable to automation and therefore scaling.
 These two together give a really interesting socio-political economic dynamic.
-At its core, it is about how much *autonomy* each actor is willing to claim
-, or let go of, as the case may be.
+At its core, it is about how much *autonomy* each actor is willing to claim,
+or let go of, as the case may be.
 
 And that's what you need to understand if you want your shared service to keep operating - or if you don't want it to operate, but that's a different story.
 
 Better understanding digital infrastructures at scale allows us to better navigate the digital world at large.
 
-### The same pattern, everywhere
+## The same pattern, everywhere
 
 So, what are some of the characteristics of infrastructures? What is it that I am calling a digital infrastructure?
 
@@ -44,7 +44,7 @@ There will be examples of that throughout the book.
 Because there are so many examples of digital infrastructures, it makes sense to explore the commonalities.
 Looking at it through the lens of infrastructures will make it easier to understand use cases, abuse cases, and how to define, create, control, and manage things like the internet.
 
-### Value, power, and risk: all up for grabs
+## Value, power, and risk: all up for grabs
 
 How do the examples that I have mentioned deliver value to their users and other stakeholders?
 What are the mechanisms and principles in there?
@@ -61,7 +61,7 @@ What are the risks associated with digital infrastructures, and what are the way
 Obviously, there is a vast body of knowledge around that, for example in the space of cloud computing, and to an extent also around artificial intelligence.
 I am not going to treat all of that, instead I want to bring out some core principles that have helped me, my clients, and my students to navigate that.
 
-### What this book is not
+## What this book is not
 
 This is hardly a book on digital technology, but more on the organizational and societal impact of managing this at scale.
 
@@ -71,7 +71,7 @@ And if you want to have fun while learning how to understand software, I’d hig
 I don’t have final answers to all the questions that I can pose, and I cannot afford to wait until I have them.
 So what you're reading is where my thinking stands today.
 
-### Less is more
+## Less is more
 
 As you will find out in this book, I am putting on some very specific lenses to look at the world.
 You may find them restrictive; you may find them arbitrary, you may find them opinionated.
@@ -93,7 +93,7 @@ A railroad map is close to useless if you navigate by car or boat.
 That is why you should consider the models and the perspectives that I give you as maps to guide your journey.
 If they bring you where you want to be, great! If not, get a different map.
 
-### How autonomous can you afford to be?
+## How autonomous can you afford to be?
 
 As you will see, the core elements of the models I find useful revolve around interactions between autonomous agents that process information, whether they are providers or consumers of digital services.
 These agents typically have limited (bounded) capabilities.
@@ -113,7 +113,7 @@ The big question now becomes: how autonomous can you afford to be in today's dig
 
 That is what this book is about.
 
-### The stakes are real, and so is your role
+## The stakes are real, and so is your role
 
 Digital infrastructures, and information technology at large, have moved from a fringe niche technology to becoming an essential part of modern life.
 Most companies would go belly up in weeks, if not days, if their digital infrastructures would fail.
