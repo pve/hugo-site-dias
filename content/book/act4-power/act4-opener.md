@@ -5,16 +5,20 @@ title: 'Act IV opener'
 weight: 485
 ---
 
-You will find that control over the results that you are looking for is now scattered over many actors.
+<mnoved to index, still check content>
+You want one thing changed — a password policy, a line of code, a server moved to another region.
+It turns out five different people need to say yes, and none of them can say yes alone.
 
-These actors are not fully independent, they influence each other in multiple ways.
-You are an actor, and it helps you if you can figure out your power relations with other actors.
+Your cloud provider blames a component they didn't write.
+That component traces back to a single volunteer maintainer, three time zones away, who hasn't logged in in weeks.
 
-Actors can be individuals like you or me, or they can be the organizations that we work for, as the case may be.
-Perhaps surprisingly, it helps to look at open source, and technology itself, as an autonomous actor too.
+Actors are not always people.
+They can be organizations, or a piece of open source code, or the technology itself.
+None of them are fully independent — each one leans on the others.
+You are an actor too, and it helps to know your power relations with the rest of them.
 
+Control over the result you were looking for turns out to be scattered across all of them.
 Who is really in control?
-Let's have a look.
 
 <!-- NOTES DRAFT — unit 47 in book-sequence.md. Not prose yet; these are the notes on what the unit should contain. -->
 

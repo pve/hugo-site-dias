@@ -5,6 +5,8 @@ title: 'Introduction to Change and Control'
 weight: 330
 ---
 
+<- kan weg>
+
 Change is quite inherent in technology, and in particular in information technology.
 At the same time we want technology to provide a reliable service, and that requires a degree of control.
 In this chapter we'll explore some fundamentals of change, in particular how this works with groups of people.

@@ -51,5 +51,6 @@ A couple of examples of that:
 - maintenance over the five year period is not included
 - the use case you are automating could change drastically in five years, making your automation obsolete
 - automation often leads to more consistent quality, especially as you use it more often, a great example of that is in automated testing
+- automation helps to verify changes quickly, which is a way to reduce organizational anxiety about moving faster.
 
 All of this uncertainty favors focusing on automating tasks where the benefit substantially outweighs the cost. Don't get carried away by automation with small returns.

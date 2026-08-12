@@ -5,6 +5,7 @@ title: 'Act V opener'
 weight: 625
 ---
 
+<-> Moved to index. still check completeness
 Information technology grown by leaps and bounds, far beyond what you and I could have dreamt of in our philosophy when we started out our careers.
 (If your career hasn't started yet, take this a as a history lesson from us).
 
