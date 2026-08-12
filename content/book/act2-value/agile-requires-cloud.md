@@ -15,7 +15,7 @@ Back in the old days, business software was primarily written to automate **_exi
 Today we see that software not only automates these business processes, but becomes part of the product, or even becomes the product itself. And on top of that, this software is often an on-line service. Think of the smart room thermostat.
 Or financial services, where software increasingly is the main part of the product: think online banking. And in social media from Facebook to Tindr, software really is the product.
 
-## The development dance
+### The development dance
 
 Every product changes the world that uses it. Think how cars have changed the way people commute, or even choose where they live. Software is no different. But a changing world also changes the products we can use or want to use. There is a kind of dance between supply and demand. Do we have breakfast out of our house more often because there are more opportunities for this or does the supply of breakfast places increase as a result of us going out more? Just as in a dance, it is not always easy to tell who is leading who.
 
@@ -25,7 +25,7 @@ The faster the better.
 
 This explains the need for agile development. Between idea and realization (time to market) there should not be two years, but only two weeks, and preferably less.
 
-## What kind of digital infrastructures does that require?
+### What kind of digital infrastructures does that require?
 
 The prime objective of digital infrastructures is to enable the deployment of application functionality. The quality of digital infrastructures used to be measured in the number of users it could support well. E.g. we used to talk about a system supporting 10.000 concurrent users with less than 4 seconds response time.
 
@@ -33,7 +33,7 @@ But agile development comes with a new goal: 'feature velocity’. That is the s
 
 Your digital infrastructure should not be a bottleneck. This requires features such as automated testing, quick scaling up and down of resources, and as little manual intervention as possible. This is the only way to shorten the lead time for a change.
 
-## Cloud computing
+### Cloud computing
 
 In summary: agile development requires cloud computing. Remember: the essential characteristics of cloud computing include fast, elastic and self-service provisioning of resources. That is what is required for agile development.
 

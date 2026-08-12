@@ -12,7 +12,7 @@ For many organizations, the trigger is a compliance obligation to show that conf
 Maybe their customers are asking for an ISO/IEC 27001 certification, demonstrating that an IT risk management system is in place.
 Maybe they are handling credit cards and therefore need to worry about compliance to PCI DSS.
 
-## Controls
+### Controls
 
 The common theme in these is that they are *control* based.
 The process is that you realize compliance by implementing a set of controls, such as defining a password policy, or implementing a type of firewall.
@@ -22,7 +22,7 @@ There are many positive elements to this approach, especially if it promotes a s
 The downside of this approach is that not all controls are equally relevant in a given situation.
 It also lends itself to a "box-ticking" approach, where controls are implemented only in a superficial way, and their actual effectiveness remains unclear.
 
-## Threats
+### Threats
 
 In the security community, the topic of the day is what the most current *threat* is.
 Money and effort are spent on investigating the latest threats, and discussing how they can be averted.
@@ -33,14 +33,14 @@ After all, many vulnerabilities have actual exploits associated with them.
 Yet, exploitable does not imply that actual damage is imminent.
 A server that is hacked but has no valuable data or relevant connectivity does not result in any significant actual damage to the organization.
 
-## Data
+### Data
 
 A third approach is more strategic, and focuses on the value at risk: the data.
 This is the core of the Zero Trust approach: start with one important data set at a time.
 That set is isolated, and by tracing where that data is allowed to flow, access to that data can be controlled by a variety of techniques.
 While there are a number of described approaches to Zero Trust, including the CCZT (Certificate of Competence in Zero Trust) by the Cloud Security Alliance, there is little guidance on how to implement it within specific technologies.
 
-## How good are these?
+### How good are these?
 
 The control based approach is top-down, starting with policies, working your way down.
 From a management perspective, setting up a system for overseeing IT risk management promises that eventually all risks will be treated.
@@ -72,7 +72,7 @@ And that makes it hard to guide the efforts on the technology side.
 Another pitfall of Zero Trust is to get stuck in not trusting anything, so where do you start with trust?
 Or, in scaling up, get twisted into "implement two factor authentication everywhere", which is neither necessary nor sufficient.
 
-## Synthesis
+### Synthesis
 
 In the end, these three approaches need to be merged, as they all bring relevant perspectives.
 

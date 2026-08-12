@@ -4,7 +4,7 @@ draft: true
 title: 'Act III opener'
 weight: 331
 ---
-
+<we moved this to the _index>
 You have started to script and automate all over the place, from server deployment to infrastructure management.
 
 Your developers are streaming out changes, and the deployment infrastructure is barely keeping up.

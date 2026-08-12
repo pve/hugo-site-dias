@@ -29,7 +29,7 @@ Technical people used to be confused about the vagueness of these characteristic
 
 We'll get to those characteristics in a moment, but first I want to point out that there is a more fundamental characteristic than the five of NIST.
 
-## The service
+### The service
 
 Cloud computing is a service, rather than a product.
 
@@ -43,7 +43,7 @@ The sections on promise theory explain how you can describe and even quantify su
 The NIST essential characteristics fit into that framework.
 Let's go over them.
 
-## On-demand self-service
+### On-demand self-service
 
 > A consumer can unilaterally provision computing capabilities, such as
 server time and network storage, as needed automatically without requiring human
@@ -59,7 +59,7 @@ Self-service also brings risk.
 In order to reap the benefits, organizations must delegate their control over this provisioning to where it is needed, which is often at a much more operational level.
 This can lead to uncontrolled consumption, unless technical and governance measures are put in place to mitigate these risks.
 
-## Broad network access
+### Broad network access
 
 > Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g.,
 mobile phones, tablets, laptops, and workstations).
@@ -85,7 +85,7 @@ When a cloud service is on the internet, your accounts on that service are on th
 
 This cloud characteristic compares to what economists call "unbundling" of services.
 
-## Resource pooling
+### Resource pooling
 
 > The provider’s computing resources are pooled to serve multiple consumers
 using a multi-tenant model, with different physical and virtual resources dynamically
@@ -108,7 +108,7 @@ That is a clear business benefit, but the risk of it is that the resources may n
 And of course, the provider bears the risk of unused spare capacity that cost them money and does not bring immediate revenue.
 As an internal IT department is typically a cost center, accounting rules in an organization won't allow them to take on this risk.
 
-## Rapid elasticity
+### Rapid elasticity
 
 > Capabilities can be elastically provisioned and released, in some cases
 automatically, to scale rapidly outward and inward commensurate with demand. To the
@@ -135,7 +135,7 @@ This is probably one of the reasons that infrastructure providers have reserved 
 The reserved instances do not run the risk of a sudden scale down.
 The spot instances can typically be pre-empted by the provider, so when they are running low on capacity for better paying consumers, they can just terminate the spot instances, and reallocate the capacity.
 
-## Measured service
+### Measured service
 
 > Cloud systems automatically control and optimize resource use by leveraging
 a metering capability at some level of abstraction appropriate to the type of service (e.g.,
@@ -168,7 +168,7 @@ In a business context the payoff is closely tied to the business benefit.
 The NIST definition tries to not talk about money, but instead talks of control.
 Money is a form of control, but inside an organization there are other forms of control, such as quota.
 
-## Wrap up
+### Wrap up
 
 Cloud computing brings power to at least two types of actors.
 The consumers get to ship new features, and deploy new software faster.

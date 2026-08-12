@@ -33,7 +33,7 @@ Here are a few examples to illustrate its breadth:
 
 But the document is still worth a more in depth study.
 
-## Vulnerabilities and Threats
+### Vulnerabilities and Threats
 
 Now what could *possibly* go wrong with a data asset?
 Who might see your secret pictures?
@@ -73,7 +73,7 @@ If you are one of those customers, you typically don't want another customer to 
 The hypervisor is an "isolation provider", and it creates isolated "execution environments" (see elsewhere).
 Failure to isolate is therefore a vulnerability.
 
-## Risk
+### Risk
 
 Vulnerabilities exist all over the place.
 All technology has weaknesses.

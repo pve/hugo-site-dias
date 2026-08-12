@@ -19,7 +19,7 @@ You (and any other actor) probably only influence some of them, and as with all 
 These controls describe where you want to be, not how to get there.
 I write about that in this book's chapters on change.
 
-## Regulation
+### Regulation
 
 Regulation is the most direct lever available to governments and regulators.
 Its relevance is demonstrated by the ferocity with which big tech and certain governments resist it.
@@ -42,7 +42,7 @@ And this all assumes that governments will abide by the laws they make for thems
 Interoperability and portability requirements make it easier to move workloads and data to other vendors or even in-house services.
 An important tool for that is open standards.
 
-## Open standards and open source
+### Open standards and open source
 
 Open standards, formal or de facto, invite competing implementations of the same service, commercial or open source.
 They reduce the chance of a market becoming a monopoly.
@@ -56,7 +56,7 @@ If the software you run is open source (for example WordPress content management
 You can still choose to outsource the hosting to multiple providers, or host it yourself.
 The reality is, as is often the case, a bit more complicated, as there are many actors whose agendas are in conflict with the consumers' control requirements.
 
-## Consortia of smaller providers
+### Consortia of smaller providers
 
 A large governmental buyer risks creating its own dependencies.
 It can create a service provider with scale and power that can be very attractive to international businesses.
@@ -73,7 +73,7 @@ buyers benefit because they have more options, and suppliers benefit because the
 The Common Ground initiative and its Haven hosting standard (by the Association of Netherlands Municipalities, VNG) are examples of this approach. 
 The model is designed so that municipalities share development rather than each build their own, and independent Dutch providers such as Previder and Shock Media have built Haven-compliant offerings that municipalities are starting to run on. Progress has been slower and more contested than promised — VNG itself frames the payoff as sustainable public spending rather than guaranteed savings — but it is evidence that open standards can open the market to smaller players rather than entrench incumbents.
 
-## Self-hosting
+### Self-hosting
 
 While self-hosting of software seems to deliver maximum autonomy, it can be expensive.
 It requires expertise, capital, and a competent service organization, none of which come for free.
@@ -86,7 +86,7 @@ As another example: what do you do if a government suddenly revokes your access 
 Self-hosting an open-weights model is one answer — it reduces that availability risk, provided you have enough capacity.
 But it doesn't protect you against falling behind on up-to-date trained models; mitigating that takes local expertise.
 
-## Building expertise
+### Building expertise
 
 Any alternative to big tech requires people who can build and operate it.
 Expertise cannot be imported on demand; it has to be developed over time through actual operations.
@@ -103,7 +103,7 @@ More on change and building expertise in the chapter on change.
 Open source as a viable control for availability also requires having the capacity and competence in interacting with those communities.
 The best way to do that is to participate and contribute back.
 
-## Industrial policy
+### Industrial policy
 
 On a larger scale, countries want to be able to have certain expertise and capabilities available within their borders, under their control.
 Without that, economic development is at risk, and autonomy in general.
@@ -116,7 +116,7 @@ But the same example shows what autarky costs.
 Huawei's best chips still deliver a fraction of the compute power of Nvidia's current generation, so the price of independence is paid in performance, and the captive home market that makes the strategy viable is also what insulates it from competitive pressure. It is autonomy bought with a state mandate and a quality gap — a reminder that "build it yourself" is not a free control.
 The lesson for a government buyer is not to copy the chip factory, but to copy the move underneath it: organizing demand deliberately to keep a credible domestic alternative alive.
 
-## The repeated prisoner's dilemma
+### The repeated prisoner's dilemma
 
 Game theory offers a useful frame for what all of this adds up to.
 

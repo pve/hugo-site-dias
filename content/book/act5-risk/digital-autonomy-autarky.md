@@ -7,7 +7,7 @@ aliases:
   - /posts/digital-autonomy-autarky.md
 ---
 
-## Autarky
+### Autarky
 
 Implicit in many discussions on digital autonomy is the quest for "autarky", being completely independent from other actors, for example those actors whose objectives may be in conflict with ours.
 This is driving the call for national cloud providers, local manufacturing, and more open source, to name just a few.

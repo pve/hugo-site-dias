@@ -7,7 +7,7 @@ aliases:
 weight: 340
 ---
 
-## The root cause
+### The root cause
 
 In the 1990s my father's health deteriorated as a result of what was later thought to be some
 immune system related disease.
@@ -36,7 +36,7 @@ Still, always on was not an option, so he needed to carry his entire digital arc
 And then there was the need to make a backup for availability.
 Over the years, his demand for digital storage continuously outstripped whatever would fit on a single device.
 
-## Getting to grips with the legacy
+### Getting to grips with the legacy
 
 Long story short: when he died in 2020 we collected multiple mini laptops, hard disks, USB drives, memory cards of various sizes, and probably some leftover storage technologies that I'd rather forget.
 To make matters worse, the way of best organizing pictures, for example, changed over the years.
@@ -66,7 +66,7 @@ And then those tools only tell you what the duplicates are, not what to do with 
 I managed to consolidate away the smaller storage devices, and did a bit of deduplication.
 When I managed to liberate one laptop, and got rid of the storage devices that had no recycle value, I was tired and confused by all the details, and other priorities took over for a while.
 
-## IT supports knowledge management
+### IT supports knowledge management
 
 The management of my home IT isn't perfect either.
 I probably inherited some of the traits of my father.
@@ -87,7 +87,7 @@ Yet, it is wanted, because you can't expect to remember tiny details of how and 
 
 This was one of the reasons that I got stuck in cleaning up my father's files.
 
-## Knowledge management in the age of AI
+### Knowledge management in the age of AI
 
 I always dreamt of IT helping me with my knowledge management.
 Many years ago I created an ontology around my consulting topics.
@@ -147,7 +147,7 @@ What is still not easy:
 I liked the results of this business project, and I am still using it.
 Time to expand.
 
-## Agentic Infrastructure Management
+### Agentic Infrastructure Management
 
 I started to think about how to apply this to
 infrastructure management, and this also led me to applying it to my father's digital legacy.
@@ -170,7 +170,7 @@ My father's legacy turned out to need all four: not just which files were there,
 
 All of these can be recorded in a wiki, but they all have to be maintained and treated in different ways.
 
-## Jumping in
+### Jumping in
 
 Like many people have found out, Claude knows a lot about how infrastructure works.
 Ask it to write a shell script to compare folders, write a Docker file, diagnose a certain error message, and more often than not, the answer is spot on.
@@ -196,7 +196,7 @@ Its structure is more complicated than the research wiki, because of the differe
 It now stands at about 2500 lines in over 50 files.
 It will probably grow as it discovers more of my IT estate.
 
-## Deduplication
+### Deduplication
 
 Generic tools for deduplication give you the duplicates, as I noted earlier.
 They also have lots of features for use cases that are not yours, but need weeding out,
@@ -215,7 +215,7 @@ All while keeping me informed of the nuts and bolts, the how and why, and the re
 I had spent days on deduplication before, but the nitty gritty was frustrating, and I found it so hard to track that I abandoned it for a few years.
 I still took many hours to complete the deduplication, but the wiki structure enabled LIMA to help me keep on track, continuously experience progress, while also allowing me the occasional break from it.
 
-## The result
+### The result
 
 It was still an effort, but the images are now finally organized enough to review, instead of a set of folders with counts on them.
 

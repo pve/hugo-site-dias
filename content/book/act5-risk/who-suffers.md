@@ -27,7 +27,7 @@ it would be a waste of time to address it individually.
 If you are involved in risk analysis, make sure to complete the reasoning up to the point where the stakeholder with the budget feels the pain.
 To do less is a waste of resources.
 
-## External victims
+### External victims
 
 It gets a little more complicated if those who suffer are not part of the organization that controls that risk.
 Example: as a merchant accepting credit card payments of your customers, the customers credit card number helps you get paid.

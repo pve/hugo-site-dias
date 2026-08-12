@@ -15,7 +15,7 @@ Each role also has promises associated with them (read more on [promise theory h
 
 Together these run AI systems, from image recognition systems to Large Language Model based customer support systems.
 
-## AI Customer (AIC)
+### AI Customer (AIC)
 
 End users of AI applications.
 This includes the actual users as well as their organizational units.
@@ -30,7 +30,7 @@ The customer promises:
 
 - Secondary promise: "I promise to verify AI outputs before using them for critical business decisions."
 
-## Application Provider (AP)
+### Application Provider (AP)
 
 These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.  
 
@@ -42,7 +42,7 @@ The application provider promises:
 
 "I promise to deliver secure, functional AI applications that protect user data and provide reliable service."
 
-## Orchestrated Services Provider (OSP)
+### Orchestrated Services Provider (OSP)
 
 This refers to entities that create the technical building blocks and management tools that enable AI implementation.  
 
@@ -58,7 +58,7 @@ The OSP promises:
 
 "I promise to provide reliable AI model orchestration, API access, and workflow management independent of specific applications or models."
 
-## Model Provider (MP)
+### Model Provider (MP)
 
 Model Providers are entities that develop, train, and distribute foundational and fine-tuned AI models for various applications.  
 
@@ -76,7 +76,7 @@ The Model Provider promises:
 
 "I promise to deliver AI models with documented capabilities, limitations, and performance characteristics."
 
-## Cloud Service Provider (CSP)
+### Cloud Service Provider (CSP)
 
 Non-AI specific cloud services for servers, storage, messaging, and more.
 If you can run a non-AI workload on it, it is probably a cloud service in this definition.
@@ -89,7 +89,7 @@ The Cloud Service Provider promises:
 
 "I promise to provide compute, storage, and infrastructure capacity as requested."
 
-## Data providers (DP)
+### Data providers (DP)
 
 AI runs on data, and the more specific the data is, the greater its potential in enhancing AI capabilities.
 A typical use case is to provide access to large collections of company-internal text and images, some of which may be classified and, therefore, should only be accessible to authorized users.

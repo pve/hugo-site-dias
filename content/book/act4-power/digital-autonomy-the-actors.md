@@ -18,7 +18,7 @@ Beyond that, there is the risk of failing to capture the value of new technology
 
 After we have looked at the actors, we can talk in more detail about these risks.
 
-## Nations
+### Nations
 
 The story often starts with nation states, in particular their governments.
 These are the guardians of a country's territorial integrity, and the prosperity and well-being of their population.
@@ -36,7 +36,7 @@ Within governments, we can identify actors acting as regulators.
 Countries are also tied into multinational actors, such as the International Criminal Court (ICC), the EU and NATO.
 These in turn have many agencies, each with their own risk profile.
 
-## Companies
+### Companies
 
 Next to countries, companies can be very powerful actors.
 The biggest companies have turnover and assets that exceed those of most countries in the world.
@@ -58,7 +58,7 @@ What is at risk for companies includes:
 - assets and profits
 - the capability to compete, innovate and develop
 
-## Regulators
+### Regulators
 
 We already mentioned government regulators, but industry associations can also regulate, an example being the Payment Card Industry Security Standards Council (PCI SSC) for credit card data security standards.
 
@@ -66,7 +66,7 @@ Regulators issue, maintain, and enforce compliance rules.
 
 Their main asset at risk is their capability to enforce rules, for which they are often critically dependent on other actors.
 
-## Individuals
+### Individuals
 
 The most diverse group of actors is formed by individuals, because there are so many ways in which they interact with the other actors.
 
@@ -84,7 +84,7 @@ While a single individual has very little power in comparison to a government or
 when they organize they have the potential for significant counteraction.
 Democracy is an example, collective market action is another.
 
-## Non human actors
+### Non human actors
 
 While it may sound unusual, it is useful to consider non-human actors.
 In his book "What Technology Wants", Kevin Kelly popularizes the case that technology can be considered as a living organism.

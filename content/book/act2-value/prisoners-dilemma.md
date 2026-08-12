@@ -5,7 +5,7 @@ title: "The Prisoner's Dilemma"
 weight: 250
 ---
 
-## The game of trust
+### The game of trust
 
 How do people establish trust under the most adverse circumstances?
 How can sworn enemies get into a position that it makes sense for them to help each other.
@@ -20,7 +20,7 @@ If they both confess, they will both go to prison.
 
 The best strategy to reduce potential individual losses is to confess, but unfortunately it leads to a bad outcome for all.
 
-## The catch
+### The catch
 
 The outcomes are very different, though, if the game is played repeatedly with the same players, and they let their decisions (their game moves) depend on the history of moves.
 In that case, cooperation is a very likely outcome, as we will see.
@@ -52,14 +52,14 @@ Of course, there are some assumptions built into the argument, for example on wh
 
 A fascinating side of the book is that it illustrates how cooperation can evolve in three very different ways that still lead to the same conclusion.
 
-## Trust evolves
+### Trust evolves
 
 When we talk about value, power, and risk, we also talk about collaboration and trust.
 Axelrod's analysis shows us how we can analyze trust and trust relations, and what it takes for trust to be beneficial to both parties.
 In contrast to what some of us may have been told at kindergarten, being nice, forgiving and non-envious is not enough.
 You also need credible retaliation.
 
-## Who is playing?
+### Who is playing?
 
 The digital infrastructure world has many actors, as we discuss elsewhere.
 For example, A person using a cloud email system is an actor, and so is the email provider.

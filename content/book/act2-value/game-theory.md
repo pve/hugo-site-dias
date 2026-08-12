@@ -47,7 +47,7 @@ The payoff for the consumers is the performance they get.
 As a provider, you are probably looking for a strategy that maximizes your payoff, by balancing between having too much expensive capacity, or by alienating consumers by not having enough capacity.
 I once consulted an Internet Services Provider on how to play that game.
 
-## Contracts are games
+### Contracts are games
 
 Whenever you enter into a contract, you are also entering a game.
 The contract specifies the rules of the game, the allowable moves, and their payoffs.
@@ -75,7 +75,7 @@ Negotiation experts therefore urge you to consider the payoff beforehand.
 BATNA, or Best Alternative To Negotiated Agreement, represents your moves if a negotiated agreement fails.
 Understanding it gives you power in a negotiation.
 
-## Taking a risk is a game
+### Taking a risk is a game
 
 Whenever you make a bet, or take a chance, you are playing a game.
 In roulette for example, you are playing against chance.
@@ -93,7 +93,7 @@ Then you either don't get hacked (zero payoff) or you are (big negative payoff).
 Statistics won't help you much here.
 If a vulnerability is easy to exploit, it will be exploited eventually.
 
-## Cheating is a game
+### Cheating is a game
 
 Cheating is a game too.
 
@@ -106,7 +106,7 @@ The move is clear, as is the payoff.
 But it gets more interesting when two cheaters play together.
 One example of that is the game called the "prisoner's dilemma", which we will discuss in another unit.
 
-## Change the game
+### Change the game
 
 Automation often allows us to change the game, or at least change its rules and payoffs.
 

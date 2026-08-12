@@ -31,7 +31,7 @@ Emotions abound when it comes to depending on big tech.
 If you jump from emotion to action, without an analysis in between,
 the response will be too late, too expensive, or incomplete.
 
-## Who applies the pressure?
+### Who applies the pressure?
 
 We want to keep big tech from constraining our autonomy — for instance by being
 used as a means of pressure. But who applies that pressure? The answer is not
@@ -44,7 +44,7 @@ solution. A risk is a threat actor acting on an asset; naming the actor is half
 the work. I treat the actors separately in
 [Digital Autonomy: the Actors](/posts/digital-autonomy-the-actors/).
 
-## The classic triad, through a sovereignty lens
+### The classic triad, through a sovereignty lens
 
 The usual starting point in information security is confidentiality,
 availability, and integrity. Each looks different when the concern is
@@ -97,7 +97,7 @@ Would a national platform be safer?
 Possible, but it can still turn into an echo chamber.
 But the kill switch is closer to home.
 
-## What is at risk
+### What is at risk
 
 A ministry fears its cabinet traffic leaking.
 A regulator fears it can no longer enforce its own rules.
@@ -126,7 +126,7 @@ Underneath all of these sits digital infrastructure itself — the subject of
 [the sovereignty and resilience guide](/book/act5-risk/guide-autonomy-resilience/)
 and of [how we might achieve autonomy](/posts/how-can-we-achieve-autonomy/).
 
-## Wicked risks
+### Wicked risks
 
 Finally, some of the risks result from the very remedies that governments have.
 Regulating big tech opens up a wide gray zone between protecting groups and censoring inconvenient speech.

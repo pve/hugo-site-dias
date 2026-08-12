@@ -50,7 +50,7 @@ Feedback loops are everywhere.
 
 As I am writing this, I find I keep running into examples everywhere.
 
-## Better feedback loops
+### Better feedback loops
 
 What makes feedback loops better?
 

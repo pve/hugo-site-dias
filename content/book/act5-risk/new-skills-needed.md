@@ -13,7 +13,7 @@ These bodies of knowledge cover a lot of ground, and most of it is related to di
 My students come from many different backgrounds, each bringing with them a unique set of experiences that color their understanding of the way the cloud is managed and controlled.
 This is the reality in practice, because secure cloud adoption is a team sport where diverse backgrounds count in order to reduce the risk to organizations.
 
-## What is technology architecture?
+### What is technology architecture?
 
 Architecture is often used to mean the overall structure of something, and technology architecture then describes how various technology components fit together.
 
@@ -25,7 +25,7 @@ But server virtualization should also guarantee proper separation between otherw
 Technologies such as APIs and federated identity management allow the cloud to be made up of a lot of collaborating independent companies. This helps create an IT supply chain. Your average company has hundreds of SaaS suppliers who in turn use hundreds of other cloud companies to help them deliver their services.
 APIs also enable the essential cloud characteristic of automatic self-service provisioning. For example, through APIs we can set up auto-scaling services. Again, this is a tool in building the IT supply chain.
 
-## Beyond the company boundary
+### Beyond the company boundary
 
 The new thing that cloud computing brings is sharing between independent companies, interconnecting different, independent providers and automating that. The whole technology architecture now spans the IT supply chain.
 This has big governance and security implications. For example, when that collaboration or isolation fails, we cannot escalate these problems to our own CTO or CIO to resolve them. These problems are not confined to a single company anymore. They have to be resolved *between* companies.
