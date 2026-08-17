@@ -32,7 +32,7 @@ The customer promises:
 
 ### Application Provider (AP)
 
-These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, code generation, and enterprise automation.  
+These providers build and offer end-user applications that leverage generative AI models for specific tasks such as content creation, chatbots, agents, harnesses, code generation, and enterprise automation.  
 
 These applications are often delivered as software-as-a-service (SaaS) solutions.  
 
