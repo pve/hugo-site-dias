@@ -1,5 +1,5 @@
 ---
-title: 'Network Neutrality: who pays the ferryman?'
+title: 'Network Neutrality: who pays the ferryman? draft'
 date: '2006-08-18T13:54:00'
 draft: true
 aliases:

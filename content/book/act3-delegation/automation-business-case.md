@@ -1,5 +1,5 @@
 ---
-date: '2025-07-04T06:51:53Z'
+date: '2026-08-12T19:59:30Z'
 draft: false
 title: 'The Automation Business Case'
 weight: 370

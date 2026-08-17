@@ -1,7 +1,7 @@
 ---
 date: '2026-07-23T00:00:00Z'
 draft: true
-title: 'Identity: the control point'
+title: 'Identity: the control point (draft)'
 weight: 115
 ---
 

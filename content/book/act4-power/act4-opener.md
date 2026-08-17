@@ -1,7 +1,7 @@
 ---
 date: '2026-07-24T00:00:00Z'
 draft: true
-title: 'Act IV opener'
+title: 'Act IV opener moved'
 weight: 485
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: '2025-12-23T08:02:20Z'
 draft: true
-title: 'Technoloy Is Power Leverage'
+title: 'Technoloy Is Power Leverage - draft'
 aliases:
 - "/posts/tech-is-leverage/"
 weight: 487

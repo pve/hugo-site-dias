@@ -1,7 +1,7 @@
 ---
 date: '2026-07-23T00:00:00Z'
 draft: true
-title: 'Lock-in: switching costs and network effects'
+title: 'Lock-in: switching costs and network effects (draft)'
 weight: 325
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: '2026-07-23T00:00:00Z'
 draft: true
-title: 'What kind of agent is this?'
+title: 'What kind of agent is this? draft'
 weight: 440
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: '2025-08-14T11:30:02Z'
-draft: false
-title: 'Promise to Update'
+draft: true
+title: 'Promise to Update - draft'
 weight: 390
 ---
 
@@ -58,3 +58,21 @@ Digital infrastructure management requires clearly defined responsibilities and 
 
 Yes, the real world can be a bit messy.
 But I have found promise theory a great tool to help clean some of it up.
+
+
+=-
+
+Service management is organising the keeping of promises.
+What is the role?
+Which promise does it keep?
+What are its clients and providers?
+
+I.e. Change management (ITIL)
+Promise to keep an asset inventory
+Promise to process change requests on the basis of a change policy
+
+Change management (ITIL)
+Promise to process change requests on the basis of a change policy
+”I promise to allow changes that meet change policy requirements to promote to production”
+Can be manual or automatic or automatic with exceptions
+

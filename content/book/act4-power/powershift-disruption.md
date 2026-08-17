@@ -1,7 +1,7 @@
 ---
 date: '2025-04-13T21:25:10Z'
 draft: true
-title: 'Disruptive Technologies'
+title: 'Disruptive Technologies - draft'
 weight: 570
 ---
 Technologies are often called disruptive.

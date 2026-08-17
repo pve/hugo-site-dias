@@ -1,7 +1,7 @@
 ---
 date: '2025-05-11T14:57:38Z'
 draft: true
-title: 'A brief history of LLM tooling'
+title: 'A brief history of LLM tooling - draft'
 weight: 460
 ---
 

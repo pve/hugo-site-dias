@@ -5,9 +5,9 @@ title: 'Introduction to Power'
 weight: 490
 ---
 Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.
-Before we attempt to define power formally, let's see how the word in used in everyday IT situations.
+Before we attempt to define power formally, let's see how the word is used in everyday IT situations.
 
-Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works, and creates value and risk.
+Understanding power in IT is not just academic. As the examples show it is crucial in understanding how IT works and creates value and risk.
 
 1. The cloud architect held significant power in deciding which platforms the organization would adopt for its digital transformation.
 1. Automated deployment pipelines gave development teams the power to release software faster and with fewer errors.

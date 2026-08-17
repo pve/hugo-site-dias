@@ -1,5 +1,5 @@
 ---
-date: '2026-07-28T00:00:00Z'
+date: '2026-08-03T11:24:29Z'
 draft: false
 title: 'Why we signed the cloud deal'
 weight: 190

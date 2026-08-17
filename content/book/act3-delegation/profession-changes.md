@@ -1,7 +1,7 @@
 ---
 date: '2026-07-23T00:00:00Z'
 draft: true
-title: 'The profession changes'
+title: 'The profession changes dradf'
 weight: 450
 ---
 

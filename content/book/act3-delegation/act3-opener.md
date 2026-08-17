@@ -1,7 +1,7 @@
 ---
 date: '2026-07-24T00:00:00Z'
 draft: true
-title: 'Act III opener'
+title: 'Act III opener delete'
 weight: 331
 ---
 <we moved this to the _index>
