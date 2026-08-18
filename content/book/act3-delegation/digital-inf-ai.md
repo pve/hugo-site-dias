@@ -2,6 +2,7 @@
 date: '2025-03-08T17:57:16Z'
 draft: false
 title: 'What are AI Digital Infrastructures?'
+description: "A trained LLM is just software needing a lot of RAM — tracing AI infrastructure from training data to 'Inference as a Service', the same as any other cloud model."
 weight: 410
 ---
 

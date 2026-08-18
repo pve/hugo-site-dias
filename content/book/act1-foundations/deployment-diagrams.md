@@ -2,6 +2,7 @@
 date: '2025-03-09T21:19:45Z'
 draft: false
 title: 'Deployment Diagrams'
+description: "A diagram of a phone, a speaker, and the cloud encodes real architecture decisions — where data lives, who's responsible, and how cloud-native complicates it."
 weight: 140
 ---
 

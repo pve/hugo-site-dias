@@ -2,6 +2,7 @@
 date: '2025-04-24T20:30:57Z'
 draft: false
 title: 'The moral necessity of talking about power'
+description: "Power has a bad reputation, but no group survives without exercising it — from combat leadership to IETF standards, understanding it precedes resisting abuse."
 weight: 500
 ---
 For many people, the word power has a negative connotation.

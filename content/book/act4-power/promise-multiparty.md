@@ -23,8 +23,6 @@ notes: |
     choice / arbitration / load balancer
     service integration
 
-
-
     Pattern composition: Tell me the current state, 
     subject to authorization intermediary, 
     then subscribe me to changes
@@ -70,7 +68,7 @@ sequenceDiagram
 ### The in-between actor
 
 So far, we have looked at the interaction between two actor types: a provider and a consumer, also known as server and client.
-Of course, there can be many instances of both of these, in the same way that a restaurant waiter serves more than one customer, a website has more than one visitor, and a web browser is used to visit more than one website.
+Of course, there can be many instances of both of these, in the same way that a website has more than one visitor, and a web browser is used to visit more than one website.
 
 More interesting architectures and business processes appear when we look at actors that are *between* other actors.
 These stand between providers and consumers, and identifying them is a great tool to understand and design complex interaction flows.
@@ -80,16 +78,19 @@ It takes data packets from the many devices on your internal network, sends them
 If you dig deeper into the internet your provider is also an intermediary as it bundles many other networks to connect to your network.
 That is why it is called the "internet" in the first place.
 
-A waiter in a restaurant is also an intermediary, they bundle customer requests and bring them to the bar and the kitchen, and whatever else is part of the service.
+A waiter in a restaurant is also an intermediary.
+The promise of the waiter to the customer is that they'll take their entire order, and bring it to the bar and the kitchen, and whatever else is part of the service.
+That is more efficient than every customer talking directly to the kitchen.
 
 The whole point of intermediaries is that they should add value between providers and consumers.
 Often this takes the shape of taking over some of the work that is done by the other actors and making it better and cheaper through economies of scale.
 
 Each actor in a supply chain is effectively an intermediary.
-There are numerous actor types, and they can be distinguished by the promises that they make, implicit or not.
-Those promises result in value to the consumers and providers, ideally.
-
-As a thought exercise, you can think of the promises that all these intermediaries make.
+Think of the supply chain that is behind the waiter in the restaurant.
+There is the chef, there is the vegetable market, there is the farmer.
+All deliver a specific service with certain quality promises.
+Most of them have multiple providers and multiple consumers.
+Each provides value to the next actor in the chain.
 
 An important set of intermediaries are search engines and directories.
 They connect information sources (providers) with information sinks (consumers), through an index of information.

@@ -14,9 +14,6 @@ notes: |
 
     Example. Prisoner's dilemma and patent wars. I think Varian wrote about patent portfolios as currency, I'll let you use my patents if I can use yours.
 
-
-
-
     Should companies and governments spend a lot of resources on becoming independent from large tech providers?
     There may be a few good reasons for that.
     For example, we have seen that they cannot be expected to be bound by a common legal framework.
@@ -25,17 +22,14 @@ notes: |
 
     For the average company, the power concentration that is inherent in dominant suppliers constitutes a continuity risk.
 
-
     For a government such influence means that foreign entity is controlling their industry.
 
     Autarky is not the answer. It will reduce productivity and therefore wealth.
 
     Game theory tells us another approach, via the prisoners dilemma: you need credible retaliation.
-
-
 ---
 
-## Actor interactions, collaborations, and power plays
+## Power plays between governments and big corporations
 
 Many countries have power struggles between the central government and big corporations.
 Russia has its oligarchy, China has a socialist market economy.

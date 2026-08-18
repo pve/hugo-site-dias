@@ -2,6 +2,7 @@
 date: '2025-03-27T20:34:01Z'
 draft: false
 title: 'Elements of the Digital World'
+description: "Every digital system reduces to three entangled elements — storage, networks, and processors — mapped through two simple diagrams for how data moves."
 weight: 60
 ---
 

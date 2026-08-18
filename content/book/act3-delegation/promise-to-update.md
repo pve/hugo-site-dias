@@ -2,6 +2,7 @@
 date: '2025-08-14T11:30:02Z'
 draft: true
 title: 'Promise to Update - draft'
+description: "Who updates what? Applying promise theory to the shared-responsibility question behind every SaaS and IaaS contract, and the gaps nobody's promise covers."
 weight: 390
 ---
 
@@ -76,3 +77,7 @@ Promise to process change requests on the basis of a change policy
 ”I promise to allow changes that meet change policy requirements to promote to production”
 Can be manual or automatic or automatic with exceptions
 
+# supply chains 
+
+wat is de essentie van een acceptatie omgeving vs productie in termen van assets en promises.
+performance, chicken-egg in een partner situatie.

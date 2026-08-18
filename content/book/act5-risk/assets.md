@@ -2,6 +2,7 @@
 date: '2025-05-11T08:37:01Z'
 draft: false
 title: 'Information Security Assets'
+description: "Data, not hardware, is the real asset at risk — ENISA's cloud taxonomy, the threat/vulnerability chain, and why risk = impact x probability needs a real victim."
 weight: 660
 ---
 
