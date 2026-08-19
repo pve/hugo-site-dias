@@ -81,3 +81,6 @@ Can be manual or automatic or automatic with exceptions
 
 wat is de essentie van een acceptatie omgeving vs productie in termen van assets en promises.
 performance, chicken-egg in een partner situatie.
+Wie bepaalt de versie die nu draait?
+
+Hoe bestuur je de backlog van de ketenpartner?

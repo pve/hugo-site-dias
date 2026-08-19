@@ -17,7 +17,8 @@ I'd never seen that. From what I know, a merchant works with a bank which handle
 A closer inspection revealed that each was associated with a different bank.
 So apparently, depending on the bank that a **customer** of the restaurant works with, the restaurant needed to have a payment terminal associated with that.
 
-To me, this does not sound optimal for the merchant. It takes money and on the desk to accommodate all those different payment networks. And if you have only one terminal many customers can't pay by card. That won't make them happy, and the last thing you want as a merchant is to have unhappy customers.
+To me, this does not sound optimal for the merchant. 
+It takes money and space on the desk to accommodate all those different payment networks. And if you have only one terminal many customers can't pay by card. That won't make them happy, and the last thing you want as a merchant is to have unhappy customers.
 
 An online payment system, in this case with cards and terminals, is an infrastructure. and arguably a digital infrastructure. It serves many users: customers, merchants, and in this case the bank. One infrastructure for each bank.
 
