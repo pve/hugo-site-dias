@@ -7,7 +7,7 @@ We often think of digital infrastructures as neutral technical systems. But they
 
 Hi! I'm Peter van Eijk, and I am an instructor, coach and consultant. For most of my career I have been working on IT and how to control it, and its risks. After a variety of jobs in which I did some amazing projects, I started my own business in 2005 to focus on consulting and teaching on Digital Infrastructures.
 
-![portret](Portret9M7A1161smaller.jpg)
+![portret](/Portret9M7A1161smaller.jpg)
 
 On this site I am now collecting, organizing, and updating many of the writings I have done over the past years.
 
