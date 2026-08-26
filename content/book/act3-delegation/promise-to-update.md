@@ -77,7 +77,7 @@ Promise to process change requests on the basis of a change policy
 ”I promise to allow changes that meet change policy requirements to promote to production”
 Can be manual or automatic or automatic with exceptions
 
-# supply chains 
+# Supply Chains 
 
 wat is de essentie van een acceptatie omgeving vs productie in termen van assets en promises.
 performance, chicken-egg in een partner situatie.

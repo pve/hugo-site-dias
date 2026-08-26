@@ -38,7 +38,7 @@ Did they spend a lot of effort on the sandbox isolation? Probably. Was it effect
 
 So what does this mean for the average company? Two things.
 
-One. Expect more automated attacks.
+One: expect more automated attacks.
 OpenAI has models that can do this to you.
 They are not the only one building models with this capability, and the others may not be so public about it.
 

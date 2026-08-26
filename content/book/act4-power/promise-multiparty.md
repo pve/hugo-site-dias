@@ -4,9 +4,6 @@ draft: true
 title: 'Promise Multiparty - draft'
 weight: 530
 notes: |
-    ### Notes - not part of the unit.
-
-
     Gebruikersadministratie, ten behoeve van autorisatie en TTP diensten
     Bronindex, welke bronnen hebben informatie over een bepaald sofinummer (search engine)?
 
@@ -27,23 +24,12 @@ notes: |
     subject to authorization intermediary, 
     then subscribe me to changes
 
-    indexes
-    Een bronindex houdt bij waar welke informatie beschikbaar is
-    Een abonnementindex houdt bij waar afnemers van informatie zijn
-
-    Chain gang: 
-    CEO Aaron to CEO Betty: please promise to me that Alice can talk to Bob when I have a service request
-
-    CEO Betty to Bob: please promise to me that you promise to Alice to pick up the phone when she calls
-
-
-    Composition and supply chain. (restaurant waiter, chef)
     Dynamics of supply chain, jeff sussna.
 
 ---
 
 Promise theory helps us understand commitments that actors make.
-The basic interaction handles one transaction.
+The basic interaction handles one transaction, as we saw earlier.
 But there are many variations.
 
 Instead of just having a single transaction, you can have a sequence, through the "subscribe" pattern.
@@ -93,7 +79,7 @@ Most of them have multiple providers and multiple consumers.
 Each provides value to the next actor in the chain.
 
 An important set of intermediaries are search engines and directories.
-They connect information sources (providers) with information sinks (consumers), through an index of information.
+They connect information sources (providers) with information sinks (consumers), by providing an index of information.
 Providers update information on them in the index, consumers look up information in the index.
 The internet is full of these: Google search, DNS, link farms, the list is endless.
 Outside the internet, an auction is also largely an index.
@@ -105,9 +91,11 @@ The promise of an index is twofold.
 
 An index, strictly speaking, does not relay information or goods itself.
 After the lookup operation, the consumer contacts the provider directly.
+Note that this promise does not state how helpful the index is going to be.
+That may depend on money involved, or other considerations, the index may be transparent or opaque about it, and this is one of the ways in which the index exercises power.
 
 Another broad category of intermediaries is relays.
-They take information from one actor and convert it in some way to make it more suitable for another actor.
+They take information from one actor and processes it in some way to make it more suitable for another actor.
 For example, a mail server stores messages until the next mail server is ready to handle them.
 A firewall is also a relay, it filters out bad traffic.
 
@@ -125,8 +113,7 @@ and audience (i.e. you, your location, demographics, and whatever information th
 The ad broker is an internet service that solicits bids made by potential advertisers.
 The winning bid gets displayed in the website.
 The whole process takes less than a second.
-As another exercise, try to draw the time-sequence diagram of this entire process.
-
+It is instructive to draw the time-sequence diagram of this entire process, and to review the (conditional) promises that are being made here.
 
 ### Intermediaries have power
 
@@ -135,7 +122,7 @@ They can filter, alter or block traffic, and very selectively so.
 They can store and protect valuable information.
 Some intermediaries are so important that digital infrastructures effectively cannot operate without them, DNS is an example, as are number authorities in general.
 The number authority system decides if you get an IP address, and without an IP address you can't connect to the internet.
-Likewise, DNS decides whether you are have a domain address.
+Likewise, DNS decides whether you have a domain address.
 Without one, you can't have a URL on which your website can be found.
 You might rebut and say, I will just host my website on a subdomain of a website hosting service.
 But now you are subject to the power of DNS as well as the power of the hosting service.
@@ -144,4 +131,77 @@ Wherever there is power, there are power conflicts and the need for governance t
 The governance structure around IANA (Internet Assigned Numbers Authority) is interesting to study.
 The European Union has issued the second Directive of Network and Information Security, NIS2, in 2022 specifically to govern these types of intermediaries.
 
+Let's have a look at some more types of intermediaries.
 
+### Supply Chains
+
+A supply chain is a series of intermediaries, each providing services to the next one in line.
+We already saw the restaurant waiter who sits downstream from a number of intermediary actors, and somewhere in that chain there is a farmer.
+Every supply chain actor has their role, adds some value, and tries to exercise some power.
+Most actors in a supply chain carry some form of stock.
+This could be physical stock (inventory) or it could be work in progress.
+
+In reality, there is not one chain, but it is a whole network of actors.
+We'll get back to how that changes over time, but one specific IT example is worth elaborating here.
+
+Your IT workloads are run on servers.
+What is the supply chain for these servers?
+Somewhere upstream, processing and memory chips are being made.
+They get assembled into boards, and then into servers and server racks, after which they are provisioned to you.
+Historically, your IT department ordered those boxes, typically dictated by project needs.
+While somewhat driven by demand, those servers would even be idle a lot of the time.
+This represents an unused inventory of capacity.
+Cloud computing changed that, and that inventory is now wholly managed by the cloud provider.
+And with that, power changes.
+The IT department now has the power to more quickly provision capacity,
+the cloud provider now has more control over the way that the provisioning is done.
+
+### The Chain Gang
+
+Now for a situation with multiple actors where the intermediaries are a little less clear.
+Imagine there are two companies who are trying to collaborate on a digital service that
+they are providing to each other.
+So its not a typical supplier/customer relationship, but these organizations try to collaborate.
+But when it comes to operationally making that collaboration work, it runs into difficulties.
+Suppose that there is an operational problem that requires a service desk from one of the companies
+to get something done from a service desk from the other company,
+let's say, some insight in why a certain connection does not work.
+
+The service desk that receives that call may not know how to handle it.
+In fact, they may not even consider it their job to handle that call.
+Trust me, I have seen this happen in real life.
+This behavior is in good faith, and in fact in line with their job description and experience.
+Service desks that handle calls outside their defined competence will be ineffective or overloaded, or both.
+
+So, how does this work, given that there is no clear supplier/customer relationship?
+
+There should be a contractual agreement between the two companies,
+and that agreement should be translated into operational agreements.
+But companies don't make agreements, people make agreements on behalf of companies.
+That is the legal reality.
+
+This is a case I ran into many years ago, except it was between six companies with three layers of management (that I could see).
+For the sake of argument I have simplified the example to two companies.
+When I started to use promise theory, I could see the patterns, and I could see the way out.
+
+Here is how this details out.
+Let's give names to the people involved.
+
+Aaron and Betty are the CEOs of their respective companies, and they want their companies to work together.
+Alice is the system admin of Aaron's company, and Bob has that position at Betty's company.
+
+As I explained in an earlier unit, neither Aaron nor Betty can force the other to do anything,
+they can only negotiate a contract that consists of complementary promises.
+Similarly, they cannot force their employees to do one thing or another.
+
+What then does this look like in promise theory?
+The answer is that this is a chain of requests to promise things, each of which is a request to promise itself.
+Here is what some of the promises look like:
+
+> CEO Aaron to CEO Betty: please promise to me that Alice can talk to Bob when I have a service request
+
+> CEO Betty to Bob: please promise to me that you promise to Alice to pick up the phone when she calls
+
+When I wrote language like this into the service agreements, the cooperation between the companies started to work.
+
+(wrap up needed, i used to call this the chain gang pattern, but it may need a better phrase)

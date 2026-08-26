@@ -1,8 +1,15 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,500&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
 {{ if .Store.Get "hasMermaid" }}
 <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
 <script>
-  mermaid.initialize({ 
+  mermaid.initialize({
     startOnLoad: true,
+    themeVariables: {
+      fontFamily: '"Titillium Web", "Segoe UI", sans-serif',
+    },
   });
 </script>
 {{ end }}

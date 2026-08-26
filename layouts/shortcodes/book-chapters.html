@@ -1,13 +1,13 @@
 {{ $section := .Get 0 | default "book" }}
 {{ $book := .Site.GetPage "section" $section }}
 {{ if $book }}
-  <ol>
+  <ol class="book-toc">
     {{ range $book.Sections }}
     <li>
-      <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+      <strong><a class="book-toc-act" href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
       <ol>
         {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        <li><a class="book-toc-chapter" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}
       </ol>
     </li>

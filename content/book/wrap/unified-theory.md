@@ -31,3 +31,8 @@ This framework shows how these layers interact. For example, how power structure
 For each real-world digital infrastructure (e.g. telecommunications, cloud computing, social media platforms, payment systems), the framework provides a consistent analytical approach that reveals the underlying dynamics shaping its development, adoption, and governance.
 
 What makes this powerful is that it creates a universal language for understanding everything from a simple client-server relationship to complex multi-stakeholder global systems, while acknowledging both technical and social dimensions of digital infrastructures.
+
+Continue exploring these ideas online.
+
+![QR code linking to digitalinfrastructures.nl](/images/qr-website.png)
+www.digitalinfrastructures.nl

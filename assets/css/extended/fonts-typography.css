@@ -1,0 +1,52 @@
+/* Font loading (<link> tags) lives in layouts/partials/extend_head.html —
+   an @import here ends up after all other rules once Hugo bundles
+   assets/css/extended/* onto the end of the theme stylesheet, which makes
+   it invalid CSS and silently ignored by the browser. */
+
+.post-content {
+    font-family: 'Spectral', Georgia, serif;
+    font-size: 20px;
+    line-height: 1.68;
+}
+
+.post-title,
+.page-header h1,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.book-toc-act,
+.book-nav a,
+.logo a,
+#menu a,
+.breadcrumbs,
+.post-meta,
+.post-tags a,
+.toc,
+.footer {
+    font-family: 'Titillium Web', 'Segoe UI', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+/* Titles and labels carry weight; small utility text stays regular so it
+   doesn't compete with the headings for attention. */
+.post-title,
+.page-header h1,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.book-toc-act,
+.book-nav a,
+.logo a,
+#menu a {
+    font-weight: 600;
+}
+
+.book-nav a {
+    font-size: 0.92em;
+}
