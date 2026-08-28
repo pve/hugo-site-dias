@@ -1,30 +1,10 @@
 ---
-date: '2025-05-13T13:29:23Z'
-draft: true
-title: 'Promise Multiparty - draft'
+date: '2026-08-28T00:00:00Z'
+draft: false
+title: 'Promise Multiparty'
 weight: 530
 notes: |
-    Gebruikersadministratie, ten behoeve van autorisatie en TTP diensten
-    Bronindex, welke bronnen hebben informatie over een bepaald sofinummer (search engine)?
 
-    Functionaliteit
-    formaat conversie, filtering
-    vraag/aanbod matching
-    Performance
-    verdelen en routeren van berichten, multicasting
-    aggregatie
-    caching
-    bundeling van afspraken (bijv. SLA)
-    - distributor/directory
-    authorization
-    choice / arbitration / load balancer
-    service integration
-
-    Pattern composition: Tell me the current state, 
-    subject to authorization intermediary, 
-    then subscribe me to changes
-
-    Dynamics of supply chain, jeff sussna.
 
 ---
 
@@ -78,11 +58,11 @@ All deliver a specific service with certain quality promises.
 Most of them have multiple providers and multiple consumers.
 Each provides value to the next actor in the chain.
 
-An important set of intermediaries are search engines and directories.
+An important set of intermediaries is search engines and directories.
 They connect information sources (providers) with information sinks (consumers), by providing an index of information.
 Providers update information on them in the index, consumers look up information in the index.
 The internet is full of these: Google search, DNS, link farms, the list is endless.
-Outside the internet, an auction is also largely an index.
+Outside the internet, an auction is also essentially an index.
 
 The promise of an index is twofold.
 
@@ -94,21 +74,34 @@ After the lookup operation, the consumer contacts the provider directly.
 Note that this promise does not state how helpful the index is going to be.
 That may depend on money involved, or other considerations, the index may be transparent or opaque about it, and this is one of the ways in which the index exercises power.
 
-Another broad category of intermediaries is relays.
-They take information from one actor and processes it in some way to make it more suitable for another actor.
+Another broad category of intermediaries is relays and routers.
+They take information from one actor and handle it in some way to make it more suitable for other actors.
 For example, a mail server stores messages until the next mail server is ready to handle them.
-A firewall is also a relay, it filters out bad traffic.
+A load balancer distributes requests over a pool of servers, so none of them get overloaded.
+They promise to move messages closer to their destinations.
+
+A related category is filters, which you can think of as conditional relays.
+A firewall filters out bad traffic.
+More generally, Policy Enforcement Points (a concept used in many security architectures) filter traffic, for example by checking each party's rights and entitlements in a directory.
+This is how the access to just about any SaaS service is controlled, for example.
+The core promises are about preventing unwanted messages to propagate.
+
+In the orchestrator pattern, the intermediary delivers a service by combining the services of multiple actors, who each contribute their own part.
+Agentic AI systems often follow this pattern.
+In step one the question is analyzed for intent, and based on that the question is routed to an appropriate sub agent.
+The promise of the orchestrator is that it will do whatever is needed to create a complete response out of components.
+This may involve failure or exception handling, for example.
 
 Now we can combine some of the patterns above.
 A podcast directory is a subscription service on an index.
 Whenever a new episode is published, it will notify the subscribers to that episode, but it does not store the episode itself.
 
-A final type of intermediary discussed here are brokers.
+A final type of intermediary discussed here is brokers.
 Brokers promise to decide on or arrange transactions, instead of just informing on them.
-Common examples are insurance brokers and stock brokers who find the best sellers for a given customer.
+Common examples are insurance brokers and stock brokers who find the best deals for a given customer.
 I ran into a nice example in the internet advertising space a while back.
 A website shows your browser a page with some space that can be sold to fit an advertisement.
-It sends that opportunity to an ad broker together with relevant information on the ad (size, aspect ration)
+It sends that opportunity to an ad broker together with relevant information on the ad (e.g. height and width)
 and audience (i.e. you, your location, demographics, and whatever information the website can lay its hands on about you, maybe through cookies).
 The ad broker is an internet service that solicits bids made by potential advertisers.
 The winning bid gets displayed in the website.
@@ -131,18 +124,18 @@ Wherever there is power, there are power conflicts and the need for governance t
 The governance structure around IANA (Internet Assigned Numbers Authority) is interesting to study.
 The European Union has issued the second Directive of Network and Information Security, NIS2, in 2022 specifically to govern these types of intermediaries.
 
-Let's have a look at some more types of intermediaries.
+Let's have a look at some more intermediaries.
 
 ### Supply Chains
 
-A supply chain is a series of intermediaries, each providing services to the next one in line.
 We already saw the restaurant waiter who sits downstream from a number of intermediary actors, and somewhere in that chain there is a farmer.
 Every supply chain actor has their role, adds some value, and tries to exercise some power.
 Most actors in a supply chain carry some form of stock.
 This could be physical stock (inventory) or it could be work in progress.
 
 In reality, there is not one chain, but it is a whole network of actors.
-We'll get back to how that changes over time, but one specific IT example is worth elaborating here.
+These networks can also change over time.
+Here is a specific example of that.
 
 Your IT workloads are run on servers.
 What is the supply chain for these servers?
@@ -156,20 +149,23 @@ And with that, power changes.
 The IT department now has the power to more quickly provision capacity,
 the cloud provider now has more control over the way that the provisioning is done.
 
-### The Chain Gang
+In his book Designing Delivery, Jeff Sussna argues that a common pattern of innovation in business is to change the boundary, the handover point, between parties in a supply chain, often by a supplier providing additional services to a consumer, as the cloud computing example demonstrates.
+
+### Beyond Intermediaries: Delegation Domino
 
 Now for a situation with multiple actors where the intermediaries are a little less clear.
 Imagine there are two companies who are trying to collaborate on a digital service that
 they are providing to each other.
-So its not a typical supplier/customer relationship, but these organizations try to collaborate.
+So it's not a typical supplier/customer relationship, but these organizations try to collaborate.
 But when it comes to operationally making that collaboration work, it runs into difficulties.
-Suppose that there is an operational problem that requires a service desk from one of the companies
-to get something done from a service desk from the other company,
+Suppose that there is an operational problem that requires a service desk from one of the companies to get something done from a service desk from the other company,
 let's say, some insight in why a certain connection does not work.
 
 The service desk that receives that call may not know how to handle it.
 In fact, they may not even consider it their job to handle that call.
-Trust me, I have seen this happen in real life.
+Trust me, I have seen this happen in real life, and it can happen to you too.
+You try to get the job done, but you are not getting anywhere.
+The other side isn't cooperating, even though you know that what you want is in their organization's best interest.
 This behavior is in good faith, and in fact in line with their job description and experience.
 Service desks that handle calls outside their defined competence will be ineffective or overloaded, or both.
 
@@ -178,9 +174,9 @@ So, how does this work, given that there is no clear supplier/customer relations
 There should be a contractual agreement between the two companies,
 and that agreement should be translated into operational agreements.
 But companies don't make agreements, people make agreements on behalf of companies.
-That is the legal reality.
+That is the reality: companies are legally represented by certain people.
 
-This is a case I ran into many years ago, except it was between six companies with three layers of management (that I could see).
+This is a case I ran into many years ago, except it was between six companies with three layers of management (as far as I could see).
 For the sake of argument I have simplified the example to two companies.
 When I started to use promise theory, I could see the patterns, and I could see the way out.
 
@@ -195,13 +191,34 @@ they can only negotiate a contract that consists of complementary promises.
 Similarly, they cannot force their employees to do one thing or another.
 
 What then does this look like in promise theory?
-The answer is that this is a chain of requests to promise things, each of which is a request to promise itself.
+The answer is that this needs a promise, which in itself takes the form of a request for a promise from another party.
 Here is what some of the promises look like:
 
 > CEO Aaron to CEO Betty: please promise to me that Alice can talk to Bob when I have a service request
 
 > CEO Betty to Bob: please promise to me that you promise to Alice to pick up the phone when she calls
 
+The diagram shows how the establishment of promises works.
+The bidirectional arrows represent the negotiation behind each promise.
+
+```mermaid
+block-beta
+columns 3
+Aaron space Betty
+space space space
+Alice space Bob
+Aaron <--> Betty
+Alice <--> Bob
+Aaron <--> Alice
+Betty <--> Bob
+```
+
 When I wrote language like this into the service agreements, the cooperation between the companies started to work.
 
-(wrap up needed, i used to call this the chain gang pattern, but it may need a better phrase)
+Is this "Delegation Domino" pattern a type of intermediary?
+I find that surprisingly hard to answer.
+From the perspective of Aaron in this example, Betty is an intermediary to get to the results his company is looking for.
+And in a similar way, Aaron is an intermediary for Betty and her company.
+You may find that concocted, and operationally, Alice talks directly to Bob.
+
+Nevertheless, chaining promises like dominoes has worked for me in quite a few situations.
