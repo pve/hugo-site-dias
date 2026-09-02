@@ -30,6 +30,20 @@ params:
     preventFingerprinting: true
     allowSearch: true
   showBreadcrumbs: true
+  fuseOpts:
+    iscasesensitive: false
+    shouldsort: true
+    location: 0
+    distance: 100
+    threshold: 0.2
+    minmatchcharlength: 3
+    ignorelocation: true
+    limit: 20
+    keys:
+      - name: title
+        weight: 2
+      - name: content
+        weight: 1
   homeInfoParams:
     Title: "🚀 Welcome to Digital Infrastructures"
     Content: "Exploring digital infrastructures, AI, cloud security and business strategies."
