@@ -3,6 +3,16 @@ date: '2025-04-20T09:24:41Z'
 draft: false
 title: 'Power Flows'
 weight: 520
+notes: |
+    Own harvest (units-notes/unit-52.md) routed the broker-as-intermediary
+    sketch (marketplace/app-store bundling a third-party service,
+    sources/oudemeuk-cloud-service-model-choice.md) to unit 53 as primary
+    home. Unit 53 is now published (act4-power/promise-multiparty.md) and its
+    own broker paragraph (insurance/stock brokers, internet ad-exchange
+    example) substantially covers the same ground already — check whether the
+    marketplace/app-store framing specifically is still wanted as a distinct
+    variant, or whether the existing broker paragraph already resolves this
+    cross-ref.
 ---
 
 Power does not automatically flow from those that have it to those that are influenced by it.

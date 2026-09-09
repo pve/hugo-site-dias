@@ -4,6 +4,15 @@ draft: false
 title: 'Contracts are complementary promises'
 description: "A contract is just two complementary conditional promises plus a fallback for non-delivery: what do I do, what do you do, what do I do if you don't?"
 weight: 170
+notes: |
+    Cross-ref flagged for unit 53 (multiparty promises), now published
+    (act4-power/promise-multiparty.md) but without this item: the Tunisia/
+    German-supplier audit scene ("if this company stopped delivering, the
+    assembly line in Germany would stop in 48 hours",
+    sources/misc-signature-speech-2016-2017.md). This unit's own harvest was
+    already strong without it — use here only if a vivid contract-as-verified-
+    promise-chain example is still wanted, otherwise leave it for a future
+    unit-53 pass.
 ---
 
 Once we understand promises, contracts between agents now become really simple to express.

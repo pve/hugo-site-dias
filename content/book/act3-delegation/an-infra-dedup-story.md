@@ -5,6 +5,15 @@ title: "Counting the copies: how an AI wiki helped me read my father's digital l
 aliases:
 - "/posts/an-infra-dedup-story/"
 weight: 340
+notes: |
+    Own harvest (units-notes/unit-34.md) flagged the Ford River Rouge/iPhone
+    supply-chain teaching bridge (sources/delivery-nluug-2023-signature-
+    speech.md) as "maybe relevant," better suited to unit 53. Unit 53 is now
+    published (act4-power/promise-multiparty.md) but uses a different supply-
+    chain example (chips to boards to cloud-provisioned servers) — the Ford/
+    iPhone bridge still isn't used anywhere. Low priority: this unit's own
+    harvest was already thin on strong fits, so only worth revisiting if unit
+    53 wants a second supply-chain illustration later.
 ---
 
 ### The root cause

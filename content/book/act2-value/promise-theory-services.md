@@ -3,6 +3,16 @@ date: '2025-05-05T05:58:14Z'
 draft: false
 title: 'A service agreement is a set of promises'
 weight: 260
+notes: |
+    Leftover-material note (units-notes/unit-26.md) draws a weakest-
+    link/chain-composition parallel to "unit 53's Air France material" — but
+    that Air France chain-of-responsibility example
+    (sources/delivery-ccak14-2024-governance-cohort-mj-interview.md) never
+    made it into the published unit 53 (act4-power/promise-multiparty.md),
+    which took a narrower intermediary-taxonomy/Delegation-Domino angle
+    instead. The cross-ref doesn't resolve as-is: either pull the Air France
+    example in directly here, or treat unit 53 as needing a follow-up pass
+    before this parallel can just point there.
 ---
 
 A service agreement is a contract.

@@ -3,6 +3,15 @@ date: '2025-03-09T11:06:48Z'
 draft: false
 title: 'Positions of Power in IT'
 weight: 510
+notes: |
+    Own harvest (units-notes/unit-51.md) routed the CSA EMEA "unlimited
+    security budget" anecdote, the KPN/Getronics value-chain move, the three-
+    tier value-chain typology, and cloud-broker business-model material to
+    unit 53 as primary home ("would just dilute this unit further" if kept
+    here). Unit 53 is now published (act4-power/promise-multiparty.md) but
+    covers none of this — it took an intermediary-taxonomy/Delegation-Domino
+    angle instead. This material is still homeless; needs either a follow-up
+    pass to unit 53 or a different home entirely.
 ---
 One of the key aspirations of Digital Infrastructures at Scale is to equip you with the tools to shape and drive change in your professional environment—especially when your goal is to lead a transformation.
 

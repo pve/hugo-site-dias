@@ -3,6 +3,12 @@ date: '2025-03-29T15:35:53Z'
 draft: false
 title: 'How My Site Got Hacked'
 weight: 630
+notes: |
+    Own harvest (units-notes/unit-63.md) flagged Interviewee B's banking/CCAK
+    material on vendor-responsibility ambiguity plus the Solarwinds hook
+    (sources/misc-root-interviews-exercises-customer-insights.md) as more
+    naturally a unit-53 example. Unit 53 is now published (act4-power/
+    promise-multiparty.md) but doesn't include it — still homeless.
 ---
 
 ### Detection

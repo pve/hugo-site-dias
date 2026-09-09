@@ -3,6 +3,15 @@ date: '2025-04-20T09:03:00Z'
 draft: false
 title: 'Execution Environments'
 weight: 70
+notes: |
+    Unit 53 (multiparty promises: brokers and intermediaries) is now written
+    (act4-power/promise-multiparty.md) but does NOT include this unit's own
+    flagged cross-ref: the supply-chain-depth quote ("your average company has
+    hundreds of SaaS suppliers who in turn use hundreds of other cloud
+    companies", sources/oudemeuk-typical-challenges-tech-architecture.md).
+    Either fold it in here directly (an execution environment as one node in
+    that deep supplier chain), or add a forward-reference to unit 53's own
+    supply-chain section if it's revisited later.
 ---
 
 What do a laptop, a smartphone, and a smart thermostat have in common with a browser, a database, and a data center?

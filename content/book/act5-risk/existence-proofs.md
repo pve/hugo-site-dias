@@ -3,6 +3,18 @@ date: '2026-07-23T00:00:00Z'
 draft: true
 title: 'It has been done: existence proofs  - draft'
 weight: 815
+notes: |
+    Own harvest (units-notes/unit-81a.md) flagged the Dutch government
+    "Standaard Platform"/"Centraal Aansluitpunt" cloud-broker deployment
+    (named participants: Rijkswaterstaat, DUO, Ministerie van Financien,
+    Ministerie van Defensie, P-Direct — sources/delivery-cae5-2017-
+    dci-cloudbroker-announcement.md) as a strong direct existence-proof for
+    this unit, with a secondary cross-link to unit 53 once it existed. Unit 53
+    is now published (act4-power/promise-multiparty.md) but doesn't include
+    this example — the cross-link never became necessary. Recommend using it
+    directly here as originally intended (a real, large, named Dutch-
+    government complement to Haven/Common Ground) rather than waiting on
+    unit 53.
 ---
 
 <!-- NOTES DRAFT — unit 81a in book-sequence.md. Purpose: Act V must end on options, not analysis. Not prose yet. -->

@@ -27,6 +27,15 @@ notes: |
     Autarky is not the answer. It will reduce productivity and therefore wealth.
 
     Game theory tells us another approach, via the prisoners dilemma: you need credible retaliation.
+
+    Cross-ref (units-notes/unit-61.md): Gartner's three-part cloud-broker
+    definition (aggregation, integration, customization,
+    sources/archive-pre2017-business-model-canvas-cloud-providers.md) was
+    flagged as possibly better homed in unit 53. Unit 53 is now published
+    (act4-power/promise-multiparty.md) but doesn't use this taxonomy — still
+    open, could extend unit 53's existing broker paragraph if revisited, or
+    used here as a brief supporting point for "why federation rather than one
+    champion."
 ---
 
 ## Power plays between governments and big corporations

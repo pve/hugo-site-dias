@@ -1,7 +1,7 @@
 ---
 date: '2026-08-28T00:00:00Z'
 draft: false
-title: 'Promise Multiparty'
+title: 'Multiparty Promises'
 weight: 530
 notes: |
 

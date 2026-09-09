@@ -4,6 +4,14 @@ draft: false
 title: "Why Organization Size Determines Who You Trust"
 description: "Below 150 people you know who to trust by name. Above it, Dunbar's number kicks in — trust gives way to roles, processes, and bureaucracy."
 weight: 560
+notes: |
+    Own harvest (units-notes/unit-56.md, sourced from unit-52's material)
+    flagged the cloud-risk-assessment stakeholder-count checklist (business
+    owner, security officer, legal, risk/compliance, GDPR officer,
+    procurement, service manager — sources/misc-teamprogram-scat2018-faster-
+    innovation.md) as also relevant to unit 53. Unit 53 is now published
+    (act4-power/promise-multiparty.md) but doesn't include it — still
+    homeless, available if wanted here or in a future unit-53 pass.
 ---
 
 Over the years, I have worked with many organizations, large and small.

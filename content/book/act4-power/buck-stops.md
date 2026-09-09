@@ -3,6 +3,15 @@ date: '2025-05-15T21:08:13Z'
 draft: false
 title: 'Where the buck stops'
 weight: 540
+notes: |
+    Own harvest (units-notes/unit-54.md) flagged the bank-adjacent SaaS lock-
+    in case (vendor lock-in, subcontracted SaaS implementers complicating the
+    accountability chain, sources/delivery-csw15-2022-premium-workshop-
+    cases.md) as also relevant to unit 53. Unit 53 is now published
+    (act4-power/promise-multiparty.md) but doesn't include it — still
+    homeless. Consider using it here directly (it's presented as an
+    unresolved case, good discussion-prompt material) rather than waiting on
+    a unit-53 revision.
 ---
 The US president Harry S. Truman famously had a sign on his desk that said:
 
