@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+
+# Machine-readable overview of this site's content for LLMs/agents:
+# {{ "llms.txt" | absURL }}

@@ -1,0 +1,26 @@
+# Digital Promises
+
+> A book and blog on value, power, and risk in digital infrastructures at scale — provider/consumer separation, delegation to automation and AI, and how autonomous you can afford to be. Author: Peter van Eijk.
+
+Every page on this site is also available as plain Markdown: append `index.md` to any page URL (e.g. `/book/act1-foundations/lunch-spain/index.md`), or use the `.md` link listed under each section below.
+
+## The book
+
+- [Book home](https://digitalinfrastructures.nl/book/): full table of contents across five acts.
+- [Act I — What you stand on](https://digitalinfrastructures.nl/book/act1-foundations/): infrastructure fundamentals — storage, networks, processors, execution environments, cloud, promise theory.
+- [Act II — Why the deal was good](https://digitalinfrastructures.nl/book/act2-value/): value of digital services, game theory, lock-in, buy/build/rent decisions.
+- [Act III — Then the machines started promising](https://digitalinfrastructures.nl/book/act3-delegation/): automation, delegation, and AI agents.
+- [Act IV — Who's in charge now](https://digitalinfrastructures.nl/book/act4-power/): power, governance, intermediaries, organization size.
+- [Act V — Staying in control](https://digitalinfrastructures.nl/book/act5-risk/): risk management, controls, digital autonomy and sovereignty.
+
+## Blog
+
+- [Posts](https://digitalinfrastructures.nl/posts/): shorter pieces on cloud, AI, and digital infrastructure that haven't (yet) been folded into the book.
+
+## Other
+
+- [About](https://digitalinfrastructures.nl/about/)
+- [Search](https://digitalinfrastructures.nl/search/)
+- [Sitemap](https://digitalinfrastructures.nl/sitemap.xml)
+
+Note: this file is hand-maintained and may lag behind the live table of contents; the book's own index pages are authoritative.

@@ -90,8 +90,20 @@ menu:
       url: /search/
       weight: 50
 
+mediaTypes:
+  text/markdown:
+    suffixes: ["md"]
+
+outputFormats:
+  Markdown:
+    mediaType: "text/markdown"
+    isPlainText: true
+    isHTML: false
+
 outputs:
-  home: ["HTML", "RSS", "JSON"] 
+  home: ["HTML", "RSS", "JSON", "Markdown"]
+  page: ["HTML", "Markdown"]
+  section: ["HTML", "Markdown"]
 
 services:
   googleAnalytics:
