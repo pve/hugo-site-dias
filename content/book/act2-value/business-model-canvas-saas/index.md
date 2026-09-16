@@ -5,10 +5,6 @@ draft: false
 weight: 300
 ---
 
-Here is a high-level overview of the SaaS provider business model and some of the strategic options that are in there.
-
-### Business Model Canvas
-
  In this unit, we'll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.
 
 ![SaaS Cloud Canvas](BusinessCanvasSaaS.png)

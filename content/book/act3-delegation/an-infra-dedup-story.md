@@ -2,6 +2,7 @@
 date: '2026-06-28T10:41:46Z'
 draft: false
 title: "Counting the copies: how an AI wiki helped me read my father's digital legacy"
+short_title: 'Counting the copies'
 aliases:
 - "/posts/an-infra-dedup-story/"
 weight: 340
@@ -16,8 +17,6 @@ notes: |
     53 wants a second supply-chain illustration later.
 ---
 
-### The root cause
-
 In the 1990s my father's health deteriorated as a result of what was later thought to be some
 immune system related disease.
 He found out that living in warm climates with little pollution and no need to stay indoors for very long helped him maintain his health.
@@ -28,6 +27,8 @@ Jokingly he called himself a "refugié pollutique".
 As a polyglot and a practitioner of various trades, wanting to stay in contact with like-minded people, he was an early user of the internet.
 He maintained a weblog before the word blogging came into being.
 He wrote about the flowers he saw, his encounters with people on the road, the visits of his family, and global politics.
+
+### The root cause
 
 To him, the internet was an intellectual lifeline.
 But it had challenges.

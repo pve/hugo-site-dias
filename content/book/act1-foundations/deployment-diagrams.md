@@ -35,17 +35,17 @@ So we see two important concepts illustrated in this diagram: execution environm
 
 Now in a more formal notation such as UML or Archimate, this would look a bit different. Many would be able to argue about the specific symbols to use, but when I am pragmatic I am only concerned with how well the diagram communicates.
 
-![More formal web interaction diagram](/deploy-images/webclient-formal.png)
+![UML web interaction diagram](/deploy-images/webclient-formal.png)
 
 ### How detailed should your model be?
 
 A diagram is meant to communicate. It should communicate the most essential thing that you want to bring across to the people who are looking at your diagram. In this diagram, we are focusing on how the WebServer and the DNS service are probably different services. As a result, this diagram emphasizes the protocols that are being used, and the separate execution environments that are involved.
 
-![webserver DNS](/deploy-images/webserver-dns.png)
+![Webserver with DNS](/deploy-images/webserver-dns.png)
 
 Alternatively, we could introduce the Internet as an actor. In reality, by the way, the Internet is actually a set of actors, but we don’t show that here. What this diagram also shows, in comparison to the previous picture, is that there are multiple levels of detail on which you can draw these diagrams. Again, it all depends on what you want to illustrate.
 
-![webserver internet formal](/deploy-images/webserver-DNS-internet.png)
+![Services over the internet](/deploy-images/webserver-DNS-internet.png)
 
 ### Architectural decisions
 
@@ -57,7 +57,7 @@ But how does the music get to the speaker?
 
 There are two options. The first option is that the music goes from the cloud to the mobile, and then to the speaker. The other option is that the music goes straight from the cloud to the speaker. In fact, both options happen in reality. The first one describes a Bluetooth connection between the mobile and speaker, and the second one can be seen with Spotify connected speakers.
 
-![music distribution](/deploy-images/music-distribution.png)
+![Music distribution flows](/deploy-images/music-distribution.png)
 
 It is an interesting exercise to discuss the benefits and disadvantages of both options. You might also want to dive deeper into the actual protocols being used to make this work. Especially the protocols between the speakers and the rest are not so trivial.
 
@@ -75,7 +75,8 @@ Similarly, a container (such as a Docker container) is an execution environment 
 
 In the diagram below we have chosen not to show how the network is organized.
 
-![VM and containers](/deploy-images/VMs-and-containers.png)
+![Containers in virtual machines](/deploy-images/VMs-and-containers.png)
+
 Note that we have combined containers and VMs in one picture. This architecture actually happens in reality, it has its advantages. We’ve also chosen not to show any details of the underlying operating systems, hypervisors or Docker runtimes in this picture. Again, depending on what you want to communicate with the diagram, you might want to include those networking and other details.
 
 ### Automated deployment
@@ -87,7 +88,8 @@ For example, you need some kind of machine to deploy from, and a machine or envi
 In automated deployment, it is very important to understand what type of infrastructure and software is created by whom or what. For that reason, we introduce a special type of relation, the manifestation relation. We signify this relation by a dashed line. Of course, there is still an underlying communication protocol that is necessary for this to work.
 
 In the next diagram, the target machine is remotely configured from an Ansible playbook. On the target machine, we indicate the components and software that are to be installed there, and those should be described in the Ansible playbook. To make this a completely reproducible architecture, we also need to describe what the software components are that should be on the deployment machine to begin with.
-![vm deploy](/deploy-images/vm-deploy.png)
+
+![Deploying to a virtual machine](/deploy-images/vm-deploy.png)
 
 The old-fashioned flowchart symbol with the folded corner resembling a document is used to indicate where data is being stored. In this case, that is the Ansible playbook.
 
@@ -95,7 +97,7 @@ The old-fashioned flowchart symbol with the folded corner resembling a document 
 
 In the previous diagram, we have simply installed the software onto an existing virtual machine. In a cloud world, however, we can go much beyond that. We can deploy what is called “infrastructure as code”, where complete architectures can be provisioned automatically. In the example below, we are using a deployment machine to run a Terraform script that automatically deploys 2 virtual machines and an internal network on the cloud provider. With the big oval, we indicate that there is some kind of ownership by the cloud provider of that part of the architecture, which also implies some isolation and control separation.
 
-![cloud deployment](/deploy-images/cloud-deployment.png)
+![Cloud Deployment](/deploy-images/cloud-deployment.png)
 
 This diagram also shows how the Terraform script results in (is manifested to) actual deployment at the club provider. That is done through the cloud API.
 
@@ -107,7 +109,8 @@ There are many examples of deployable artifacts. They could be AWS machine image
 
 The diagram shows the three major components, each of which could be under the control of a separate department or even organization. Note also how the diagram poses the question of how the build server (tagged ‘CI CD Pipeline’ in the picture) communicates with the software repository. In practice, there is some kind of trust relationship, where the build server is triggered whenever there is a commit to the repository.
 
-![ci/cd](/deploy-images/cicd.png)
+![CI/CD pipelines](/deploy-images/cicd.png)
+
 From the perspective of control, we see that this diagram identifies two pieces of data. On the right-hand side, we see the deployable artifact, and on the left-hand side, we see the source code repository. Different groups of people may have responsibility for these. We have taken the liberty to draw the deployable artifact as a kind of document, whereas the source code repository is depicted with the old-fashioned flowchart database symbol: the cylinder or disk. (As a completely irrelevant side note, this symbol might actually have been derived from magnetic drum memory, which ceased to be relevant in the 1960s).
 
 At this point, we may feel the opportunity to combine these diagrams into one huge big diagram that allows us to see each and every detail of our full-blown architecture. It can be done of course. But often it is better to illustrate the architecture with a sequence of simple diagrams.

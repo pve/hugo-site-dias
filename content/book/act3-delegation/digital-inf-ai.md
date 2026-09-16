@@ -18,7 +18,7 @@ LLM training costs hundreds, thousands, or more hours of compute time on special
 ```mermaid
 block-beta
 
-space in space llm:2 space out space
+in space llm:2 space out
 in["Lots of\ntraining\ndata"] --> llm["Training\nEngine"]
 llm--> out["Large\nLanguage\nModel"]
 
@@ -32,7 +32,7 @@ A trained language model is effectively a piece of software. You feed it text, a
 ```mermaid
 block-beta
 
-space in space llm:2 space out space
+in space llm:2 space out
 in["Prompt"] --> llm["Large\nLanguage\nModel"]
 llm--> out["Completion"]
 

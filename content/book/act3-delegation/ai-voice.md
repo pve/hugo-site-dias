@@ -25,12 +25,12 @@ architecture-beta
     group configuration(cloud)[Client]
         service faq(database)[FAQ mgt]    in configuration
     
-    telco:R -- L:sips
-    sips:R -- L:twilio
+    telco:B -- T:sips
+    sips:B -- T:twilio
     twilio:R -- L:app_server
+    app_server:R -- L:llm
     app_server:B -- T:database
-    llm:B -- T:app_server
-    faq:R -- L:database
+    database:B -- T:faq
 ```
 
 Who is actually responsible for what?

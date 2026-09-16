@@ -1,7 +1,7 @@
 ---
 date: '2026-02-27T07:39:41Z'
-draft: true
-title: 'Autonomous actors and power plays - draft'
+draft: false
+title: 'Power plays between governments and big corporations'
 weight: 610
 notes: |
     Somewhere in the supply chain there is a risk. How immediate is it?
@@ -38,7 +38,6 @@ notes: |
     champion."
 ---
 
-## Power plays between governments and big corporations
 
 Many countries have power struggles between the central government and big corporations.
 Russia has its oligarchy, China has a socialist market economy.

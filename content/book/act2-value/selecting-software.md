@@ -1,5 +1,5 @@
 ---
-date: '2025-09-30T08:46:33Z'
+date: '2026-09-16T16:07:32Z'
 draft: false
 title: 'Selecting Software Providers'
 note: flow and logic can improve
@@ -43,7 +43,7 @@ The hospital system I mentioned is an example of that, as are many other ERP sys
 
 Across the spectrum you see different technology approaches, pricing strategies, and vendor sales tactics.
 
-## Innovation
+### Innovation
 
 Many innovative projects start out as individual initiatives.
 Some of these are actively encouraged by leadership, others are tacitly allowed if leadership can plausibly deny they did so.
@@ -56,7 +56,7 @@ They lack support, budget, and therefore power.
 But the people in these projects are close to where the real application and benefit is.
 And that is where the value is.
 
-## You choose a promise, not just a product
+### You choose a promise, not just a product
 
 Every way of acquiring software comes with its own promises, and different actors making those promises.
 

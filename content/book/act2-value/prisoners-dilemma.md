@@ -5,10 +5,10 @@ title: "The Prisoner's Dilemma"
 weight: 250
 ---
 
-### The game of trust
-
 How do people establish trust under the most adverse circumstances?
 How can sworn enemies get into a position that it makes sense for them to help each other.
+
+### The game of trust
 
 In game theory, this is the surprising phenomenon that the prisoner's dilemma aims to explain.
 

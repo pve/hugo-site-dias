@@ -2,6 +2,7 @@
 date: '2025-07-11T14:57:31Z'
 draft: false
 title: 'A guide to digital sovereignty, autonomy, and business resilience'
+short_title: 'A guide to autonomy and resilience'
 weight: 840
 ---
 
@@ -58,4 +59,4 @@ But for this conversation I suggest to specifically look at the following.
 I suspect we will also find out that many of the risks and mitigations are not technical, not even legal, but (geo)political.
 To fully analyze those, we will need people with these skills.
 Understanding the essentials of this technology can be challenging for experts in politics or law.
-And, by the way, that is one of the reasons why I have taken up writing [Digital Infrastructures at Scale](https://digitalinfrastructures.nl).
+And, by the way, that is one of the reasons why I have taken up writing this book.

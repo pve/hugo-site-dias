@@ -1,6 +1,6 @@
 ---
 title: 'Network Neutrality: who pays the ferryman?'
-date: '2006-08-18T13:54:00'
+date: '2026-09-16T16:07:32Z'
 draft: false
 note: review for logic
 aliases:

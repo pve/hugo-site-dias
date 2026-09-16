@@ -11,10 +11,10 @@ notes: |
     promise-multiparty.md) but doesn't include it — still homeless.
 ---
 
-### Detection
-
 I should have acted on the first signals more aggressively. But let’s talk about that later in this story.
 Here is the story of my site being infected with malware, viewed by a professional cloud security expert. So I am going to apply all that cloud security theory to it.
+
+### Detection
 
 The hack led to business damage at the end of one of my webinars. In 2016, on a Friday, I did a webinar, at the end of which I had two links to my site as a call to action.
 

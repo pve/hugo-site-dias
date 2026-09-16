@@ -6,14 +6,13 @@ date: '2014-11-15T11:18:17'
 weight: 290
 ---
 
-### Business Model Canvas
-
 The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models.
 For additional information, see <http://en.wikipedia.org/wiki/Business_Model_Canvas>.
 
 The business model canvas has nine basic building blocks. These define the interconnections and relationships within a business model.
 
 The example used in this section is Amazon Web Services (AWS), particularly EC2 (virtual machines on demand). This is an Infrastructure as a Service offering. The power of the business model canvas approach becomes clear when we see how it can distinguish between various cloud service offerings.
+
 ![IaaS Cloud Canvas](BusinessCanvasIaaS.png)
 
 ### Customer Segments (CS)

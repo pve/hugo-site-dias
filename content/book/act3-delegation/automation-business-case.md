@@ -10,10 +10,10 @@ Automation takes time and effort, upfront, and any benefits come later.
 
 Think of the IT projects you were involved in, most of those aimed at providing a measurable benefit somewhere.
 
-This diagram (from xkcd, a series of webcomics) illustrates when automating repetitive tasks, or even just parts of them, brings benefit.
+This diagram (from [xkcd](https://xkcd.com/1205/), a series of webcomics by Randall Munroe) illustrates when automating repetitive tasks, or even just parts of them, brings benefit.
 In other words, is there a *business case* for such an intervention?
 
-![xkcd 1205](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
+![xkcd 1205, "Is It Worth the Time?" by Randall Munroe, CC BY-NC 2.5](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
 
 The objective of this diagram is to show how much time you can invest in automating tasks.
 You can think of tasks such as:

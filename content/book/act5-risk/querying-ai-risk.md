@@ -1,9 +1,9 @@
 ---
 date: '2025-05-01T07:40:07Z'
-draft: true
+draft: false
 title: 'What about AI Risks?'
 weight: 740
-notes: whatever
+note: additional text needed. Damage, etc.
 ---
 
 <!-- STRUCTURE NOTE (2026-08-02): 74/75 are the act's "Road Back" beat (hero's-journey terms) — the threat regroups and returns in a new shape just as the reader has mastered the old controls (70-73). 74 should open by naming that turn explicitly, not just extend the risk checklist to a new asset class. -->
@@ -17,7 +17,7 @@ We just need to extend those principles to new forms of data and software.
 
 So let's see how what the AI specifics are.
 
-## AI Assets
+### AI Assets
 
 Let's focus on the AI assets that are the product of deep learning.
 Deep learning neural networks have represented a shift in AI technology.
@@ -44,6 +44,15 @@ The data used for that may well include proprietary or sensitive data.
 
 Then there are system prompts and additional data sources that are fed into those models, together with user input.
 
-## AI Vulnerabilities
+### AI Vulnerabilities
 
-## Damage
+(this is a draft version)
+
+The most fundamental vulnerability of Large Language Models is that they can't be trusted to make a clear distinction between the data it works on and the instructions it gets to work on that data.
+As a result, all data that is unfiltered before being processed can be used to attack the systems that these LLMs are part of.
+
+And this is one of the biggest reasons a lot of traditional IT risk controls fail to work.
+The principles remain sound, but controls can't rely on old patterns anymore.
+For example, there is no such thing as a completely trustable AI gateway to protect from external risks.
+
+(more text on actual damage will follow)

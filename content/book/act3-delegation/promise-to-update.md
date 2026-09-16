@@ -1,9 +1,31 @@
 ---
 date: '2025-08-14T11:30:02Z'
-draft: true
-title: 'Promise to Update - draft'
+draft: false
+title: 'Promise to Update'
 description: "Who updates what? Applying promise theory to the shared-responsibility question behind every SaaS and IaaS contract, and the gaps nobody's promise covers."
 weight: 390
+note: |
+  Service management is organising the keeping of promises.
+  What is the role?
+  Which promise does it keep?
+  What are its clients and providers?
+
+  I.e. Change management (ITIL)
+  Promise to keep an asset inventory
+  Promise to process change requests on the basis of a change policy
+
+  Change management (ITIL)
+  Promise to process change requests on the basis of a change policy
+  ”I promise to allow changes that meet change policy requirements to promote to production”
+  Can be manual or automatic or automatic with exceptions
+
+  # Supply Chains 
+
+  wat is de essentie van een acceptatie omgeving vs productie in termen van assets en promises.
+  performance, chicken-egg in een partner situatie.
+  Wie bepaalt de versie die nu draait?
+
+  Hoe bestuur je de backlog van de ketenpartner?
 ---
 
 An important part of managing digital infrastructures is updating various software components.
@@ -59,28 +81,3 @@ Digital infrastructure management requires clearly defined responsibilities and 
 
 Yes, the real world can be a bit messy.
 But I have found promise theory a great tool to help clean some of it up.
-
-
-=-
-
-Service management is organising the keeping of promises.
-What is the role?
-Which promise does it keep?
-What are its clients and providers?
-
-I.e. Change management (ITIL)
-Promise to keep an asset inventory
-Promise to process change requests on the basis of a change policy
-
-Change management (ITIL)
-Promise to process change requests on the basis of a change policy
-”I promise to allow changes that meet change policy requirements to promote to production”
-Can be manual or automatic or automatic with exceptions
-
-# Supply Chains 
-
-wat is de essentie van een acceptatie omgeving vs productie in termen van assets en promises.
-performance, chicken-egg in een partner situatie.
-Wie bepaalt de versie die nu draait?
-
-Hoe bestuur je de backlog van de ketenpartner?

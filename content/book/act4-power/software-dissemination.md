@@ -1,12 +1,9 @@
 ---
 date: '2026-07-07T00:00:00Z'
 draft: false
-title: "Software Dissemination"
+title: "How Software Spreads"
 weight: 565
 ---
-
-
-### How software grows
 
 A lot of software begins its life as the project of an individual, but ends up being used widely in organizations, or even society at large.
 
