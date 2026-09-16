@@ -1,6 +1,7 @@
 ---
 date: '2025-05-11T08:47:28Z'
 draft: true
+note: superseded by Intro, and should be deleted
 title: 'Why You Should Read this Book'
 weight: 3
 ---

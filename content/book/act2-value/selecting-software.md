@@ -1,7 +1,8 @@
 ---
 date: '2025-09-30T08:46:33Z'
-draft: true
-title: 'Selecting Software'
+draft: false
+title: 'Selecting Software Providers'
+note: flow and logic can improve
 aliases:
 - "/posts/selecting-software/"
 weight: 310
@@ -51,5 +52,17 @@ I am not here to judge which of these strategies should be followed.
 Let's just accept that this is typically called shadow IT, or shadow cloud.
 
 These grassroots projects, as they are often called, don't have a lot of options when it comes to acquiring software.
-They lack support and budget.
+They lack support, budget, and therefore power.
 But the people in these projects are close to where the real application and benefit is.
+And that is where the value is.
+
+## You choose a promise, not just a product
+
+Every way of acquiring software comes with its own promises, and different actors making those promises.
+
+- If you buy software, the vendor promises updates, if you pay.
+- If you subscribe to SaaS, the provider promises to also host the software, as long as they like and you pay.
+- If you use open source, your hope is that the community promises you updates, and the community hopes that you will chip in with your updates too.
+- If you write the software yourself, you promise to spend your own time fixing problems in the future.
+
+All these promises and actors are for you to chose from.

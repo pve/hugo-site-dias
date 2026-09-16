@@ -3,6 +3,11 @@ date: '2025-05-19T21:39:41Z'
 draft: true
 title: 'Controls - draft'
 weight: 720
+notes: |
+    Pick-up from Delegation Domino (unit 53, act4-power/promise-multiparty.md, published):
+    - don't retell the Aaron/Betty/Alice/Bob story here, link to it instead
+    - borrow the mechanism (request-for-promise per link in a chain) without re-quoting names
+    - optionally add a forward-pointer in unit 53 itself, after its closing line, pointing here for the accountability/enforcement angle
 ---
 ## Controls
 
