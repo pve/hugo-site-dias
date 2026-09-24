@@ -1,0 +1,903 @@
+<!doctype html>
+<!--
+  OLRA-A Navigator — single-page web version of the OLRA-A (Agentic) draft.
+
+  Purpose:     Awareness / tabletop tool. Explore the OLRA-A controls (ASI01-10 -> controls ->
+               six AI supply-chain roles) as Table, Cards or Matrix; Tabletop mode hides owners
+               so groups allocate first and reveal after. Modelled on
+               https://digitalinfrastructures.nl/olra/navigator, styled after the site's
+               Hugo/PaperMod theme (Titillium Web + Spectral, pref-theme light/dark).
+
+  Invocation:  Deploy this file together with olra-a-controls.csv in the same directory, e.g.
+               Hugo  static/olra/agentic/index.html  +  static/olra/agentic/olra-a-controls.csv
+               The CSV is fetched at page load, so editing the CSV in the site's content
+               management updates the page — no rebuild of this HTML needed.
+               Override the data file with ?csv=<url>. Filters/view are kept in the URL hash,
+               so a filtered view can be shared as a link.
+               Local test: `uv run python -m http.server` in this directory, then open
+               http://localhost:8000/olra-a-navigator.html
+
+  Dependencies: none (plain HTML/CSS/JS). Google Fonts for Titillium Web + Spectral.
+
+  Gotchas:     - CSV columns are matched by header name (ASI, Category, Control, Tag, PrimaryOwner,
+                 SecondaryOwner, Phase, SkillSet — case/space-insensitive). Unknown extra columns
+                 (e.g. Evidence, SeenIn) are shown automatically and get a filter when they have
+                 <= 12 short distinct values. Only "Control" is mandatory.
+               - Comma, semicolon (Dutch Excel) and tab delimiters are auto-detected; quoted
+                 fields with commas/newlines are fine.
+               - Owner cells may hold several roles separated by ; | + & or "and". Text that is not
+                 one of the six roles (e.g. "Supply-chain topic") is shown as a note, not a role.
+               - Opened via file:// (or if the CSV 404s) the page falls back to the embedded
+                 snapshot below and shows a warning. Refresh that snapshot by hand when the
+                 CSV changes materially.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OLRA-A Navigator | Digital Infrastructures at Scale</title>
+<meta name="description" content="OLRA-A (Agentic) Navigator: who owns which control for agentic AI? OWASP Top 10 for Agentic Applications threats mapped to controls and six AI supply-chain roles. Draft, for awareness and tabletop discussion.">
+<meta name="theme-color" content="#2e2e33">
+<link rel="icon" href="https://digitalinfrastructures.nl/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,500&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gap:24px; --width:1180px; --header-height:60px; --radius:8px;
+  --theme:rgb(255,255,255); --entry:rgb(255,255,255); --primary:rgb(30,30,30);
+  --secondary:rgb(108,108,108); --tertiary:rgb(214,214,214); --content:rgb(31,31,31);
+  --code-bg:rgb(245,245,245); --border:rgb(238,238,238); --panel:rgb(250,250,250);
+  --hl:rgba(30,30,30,.045);
+  --ok:#23704a; --ok-bg:#e3f2e9; --warn:#855c00; --warn-bg:#fbefd2;
+  --r-aic:#8a4fb3; --r-ap:#2f6db5; --r-dp:#b05f27; --r-osp:#16807b; --r-mp:#b23a5c; --r-csp:#5f6f22;
+  --ui:"Titillium Web","Segoe UI",sans-serif; --prose:Spectral,Georgia,serif;
+}
+.dark{
+  --theme:rgb(29,30,32); --entry:rgb(46,46,51); --primary:rgb(218,218,219);
+  --secondary:rgb(155,156,157); --tertiary:rgb(65,66,68); --content:rgb(196,196,197);
+  --code-bg:rgb(55,56,62); --border:rgb(51,51,51); --panel:rgb(37,38,41);
+  --hl:rgba(255,255,255,.05);
+  --ok:#86d3a3; --ok-bg:rgba(134,211,163,.13); --warn:#e9c068; --warn-bg:rgba(233,192,104,.13);
+  --r-aic:#c6a0e3; --r-ap:#8ab6ec; --r-dp:#e8a97b; --r-osp:#6fd1cb; --r-mp:#ec92ab; --r-csp:#bccb80;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--theme);color:var(--primary);font-family:var(--ui);font-size:16px;line-height:1.5;word-break:break-word;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+code{font-size:.9em;background:var(--code-bg);padding:1px 5px;border-radius:3px}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+
+/* --- PaperMod-style header --- */
+.nav{display:flex;flex-wrap:wrap;justify-content:space-between;max-width:calc(var(--width) + var(--gap) * 2);margin-inline:auto;line-height:var(--header-height)}
+.logo,#menu{display:flex;margin:auto var(--gap)}
+.logo{flex-wrap:inherit;align-items:center}
+.logo a{font-size:24px;font-weight:600;letter-spacing:-.01em}
+#theme-toggle{background:none;border:0;padding:0;margin:auto 4px;display:inline-flex;color:var(--primary)}
+#sun{display:none}.dark #moon{display:none}.dark #sun{display:block}
+#menu{list-style:none;padding:0;overflow-x:auto;white-space:nowrap;word-break:keep-all}
+#menu li+li{margin-inline-start:var(--gap)}
+#menu a{font-size:16px;font-weight:600;letter-spacing:-.01em}
+
+.main{max-width:calc(var(--width) + var(--gap) * 2);margin-inline:auto;padding:var(--gap)}
+.breadcrumbs{color:var(--secondary);font-size:14px;letter-spacing:-.01em}
+.breadcrumbs a:hover{color:var(--primary)}
+.post-header{margin:20px 0 18px}
+.post-title{font-size:40px;line-height:1.2;margin:0 0 2px;font-weight:700;letter-spacing:-.01em}
+.draft{display:inline-block;vertical-align:middle;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  border:1.5px solid var(--warn);color:var(--warn);border-radius:4px;padding:0 8px;line-height:22px;margin-inline-start:12px;transform:translateY(-5px)}
+.post-meta{color:var(--secondary);font-size:14px}
+.intro{font-family:var(--prose);font-size:20px;line-height:1.68;color:var(--content);max-width:780px;margin:0 0 14px}
+.intro a,.post-meta a,.legend a,.status a,.footer a{box-shadow:0 1px}
+
+/* --- legend --- */
+details.legend{border:1px solid var(--border);border-radius:var(--radius);margin:0 0 18px;background:var(--entry)}
+details.legend>summary{padding:10px 16px;font-weight:600;cursor:pointer;list-style-position:inside}
+.legend-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:4px 28px;padding:4px 16px 16px}
+.legend h3{font-size:15px;margin:10px 0 4px;letter-spacing:.01em}
+.legend p,.legend li{font-size:14.5px;color:var(--content);margin:0 0 6px}
+.legend ul{margin:0;padding-inline-start:18px}
+.legend p.prose{font-family:var(--prose);font-size:16.5px;line-height:1.55}
+
+/* --- filter panel --- */
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+.row{display:flex;flex-wrap:wrap;gap:12px 14px;align-items:flex-end}
+.field{display:flex;flex-direction:column;gap:3px;min-width:0}
+.field.grow{flex:1 1 260px}
+.lbl{font-size:13px;font-weight:600;color:var(--secondary);letter-spacing:.02em}
+input[type=search],select{background:var(--theme);border:1px solid var(--tertiary);border-radius:6px;padding:7px 10px;font-size:15px;min-height:40px;max-width:100%}
+select{padding-inline-end:6px}
+.roles{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+.roles .lbl{margin-inline-end:4px}
+.chipbtn{border:1px solid var(--tertiary);background:var(--theme);border-radius:999px;padding:3px 12px 3px 10px;font-size:14px;display:inline-flex;align-items:center;gap:7px}
+.chipbtn i{width:9px;height:9px;border-radius:50%;background:var(--rc);flex:none}
+.chipbtn:hover,.btn:hover{border-color:var(--secondary)}
+.chipbtn[aria-pressed=true]{background:var(--primary);border-color:var(--primary);color:var(--theme)}
+.chipbtn[aria-pressed=true] i{box-shadow:0 0 0 1.5px var(--theme)}
+.seg{display:inline-flex;border:1px solid var(--tertiary);border-radius:6px;overflow:hidden;flex:none}
+.seg button{border:0;background:var(--theme);padding:5px 12px;font-size:14px}
+.seg button+button{border-inline-start:1px solid var(--tertiary)}
+.seg button[aria-pressed=true]{background:var(--primary);color:var(--theme)}
+.btn{border:1px solid var(--tertiary);background:var(--theme);border-radius:6px;padding:6px 12px;font-size:14px;min-height:36px}
+.btn.sm{font-size:13px;padding:2px 9px;min-height:28px}
+
+/* --- stats + toolbar --- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.stat{border:1px solid var(--border);border-radius:var(--radius);padding:8px 14px;background:var(--entry)}
+.stat b{display:block;font-size:28px;line-height:1.15;font-weight:700}
+.stat span{font-size:13px;color:var(--secondary)}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:16px 0 8px}
+.toolbar .spacer{flex:1}
+.switch{display:inline-flex;align-items:center;gap:7px;font-size:14px;cursor:pointer}
+.switch input{width:16px;height:16px;accent-color:var(--primary)}
+.inline{display:inline-flex;align-items:center;gap:6px;font-size:14px}
+.inline select{min-height:34px;padding:4px 8px;font-size:14px}
+.status{font-size:13px;color:var(--secondary);margin:4px 0 10px}
+.status.warn{color:var(--warn);background:var(--warn-bg);padding:8px 12px;border-radius:6px}
+
+/* --- table --- */
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius)}
+table.controls{width:100%;border-collapse:collapse;min-width:960px}
+.controls th,.controls td{text-align:start;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--border)}
+.controls tbody tr:last-child td{border-bottom:0}
+.controls th{font-size:13px;font-weight:600;color:var(--secondary);white-space:nowrap;background:var(--panel)}
+.controls th button{background:none;border:0;padding:0;font-weight:inherit;color:inherit;font-size:inherit}
+.controls th button::after{content:"\2195";margin-inline-start:4px;opacity:.35}
+.controls th[aria-sort=ascending] button::after{content:"\2191";opacity:1}
+.controls th[aria-sort=descending] button::after{content:"\2193";opacity:1}
+.controls tbody tr:hover{background:var(--hl)}
+td.ctl{font-family:var(--prose);font-size:17px;line-height:1.45;color:var(--content);min-width:280px}
+td.xtra{font-size:14px;min-width:160px}
+.asi{font-weight:700;white-space:nowrap}
+.cat{display:block;font-size:13px;color:var(--secondary);line-height:1.3;font-weight:400}
+.owner-list{display:flex;flex-direction:column;gap:3px}
+.role{display:inline-flex;align-items:center;gap:6px;font-size:14px;white-space:nowrap}
+.role i{width:9px;height:9px;border-radius:50%;background:var(--rc);flex:none}
+.rabbr{display:none;font-weight:600}
+.note{font-size:13px;color:var(--secondary);font-style:italic}
+.tag{display:inline-block;font-size:13px;font-weight:600;border-radius:4px;padding:0 7px;line-height:22px;white-space:nowrap}
+.tag-op{color:var(--ok);background:var(--ok-bg)}
+.tag-asp{color:var(--warn);background:var(--warn-bg)}
+.inf{display:inline-block;font-size:12px;color:var(--secondary);border:1px dashed var(--tertiary);border-radius:4px;padding:0 5px;line-height:18px;margin-inline-start:5px;vertical-align:middle}
+.muted{color:var(--secondary)}
+.hidden-owner{color:var(--secondary);letter-spacing:.15em}
+
+/* --- cards --- */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:14px}
+.card{border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;background:var(--entry);display:flex;flex-direction:column;gap:10px;break-inside:avoid}
+.card-top{font-size:13px}
+.card h3{font-family:var(--prose);font-weight:500;font-size:19px;line-height:1.4;margin:0;color:var(--content)}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pill{font-size:13px;border:1px solid var(--border);border-radius:4px;padding:0 7px;line-height:22px;color:var(--secondary);white-space:nowrap}
+.owners{border-top:1px solid var(--border);padding-top:10px;display:grid;grid-template-columns:auto 1fr;gap:5px 12px;font-size:14px;margin:auto 0 0}
+.owners dt{color:var(--secondary);font-size:13px;line-height:22px}
+.owners dd{margin:0}
+.owners.extras{margin-top:0}
+.blank{display:inline-block;width:100%;min-width:100px;height:20px;border-bottom:1px solid var(--tertiary)}
+
+/* --- matrix --- */
+.matrixwrap{overflow-x:auto}
+table.matrix{border-collapse:separate;border-spacing:4px;min-width:820px;width:100%}
+.matrix th{font-size:13px;font-weight:600;color:var(--secondary);vertical-align:bottom;text-align:center;padding:4px}
+.matrix th .role{font-size:14px;color:var(--primary)}
+.matrix th.rowh{text-align:start;color:var(--primary);font-size:14px;vertical-align:middle;min-width:210px;padding-inline-end:10px}
+.matrix td{padding:0}
+.cell{display:flex;align-items:center;justify-content:center;gap:4px;width:100%;min-height:46px;border:1px solid var(--border);border-radius:6px;font-size:15px;padding:4px;
+  background:var(--entry);background:color-mix(in srgb,var(--rc) var(--pct,0%),var(--theme))}
+button.cell:hover{border-color:var(--secondary)}
+.cell b{font-size:18px}
+.cell small{color:var(--secondary);font-size:13px}
+.cell.zero{color:var(--tertiary)}
+.cell.dim{opacity:.4}
+.matrix td.tot{text-align:center;font-weight:700;font-size:15px;padding:6px 0;border-top:1px solid var(--tertiary)}
+.matrix th.tot{border-top:1px solid var(--tertiary)}
+
+.empty{padding:36px 16px;text-align:center;color:var(--secondary);border:1px dashed var(--tertiary);border-radius:var(--radius)}
+.empty strong{color:var(--primary)}
+.footer{max-width:calc(var(--width) + var(--gap) * 2);margin:auto;padding:18px var(--gap) 28px;text-align:center;font-size:14px;color:var(--secondary);line-height:24px}
+
+@media (max-width:760px){
+  :root{--gap:16px}
+  .post-title{font-size:30px}
+  .intro{font-size:18px}
+  .rname{display:none}.rabbr{display:inline}
+  .field{flex:1 1 140px}
+  .field select{width:100%}
+}
+@media print{
+  .header,.panel,.toolbar,.stats,.legend,.footer,.breadcrumbs,.status,.intro,.btn{display:none!important}
+  body{background:#fff;color:#000}
+  .cards{grid-template-columns:1fr 1fr}
+  .card{border-color:#999;background:#fff}
+}
+</style>
+</head>
+<body>
+<script>
+  try {
+    var pt = localStorage.getItem("pref-theme");
+    if (pt === "dark") document.body.classList.add("dark");
+    else if (pt !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches) document.body.classList.add("dark");
+  } catch (e) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) document.body.classList.add("dark");
+  }
+</script>
+
+<header class="header">
+  <nav class="nav">
+    <div class="logo">
+      <a href="https://digitalinfrastructures.nl/" accesskey="h" title="Digital Infrastructures at Scale (Alt + H)">Digital Infrastructures at Scale</a>
+      <div class="logo-switches">
+        <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+      </div>
+    </div>
+    <ul id="menu">
+      <li><a href="https://digitalinfrastructures.nl/book/" title="Book"><span>Book</span></a></li>
+      <li><a href="https://digitalinfrastructures.nl/posts/" title="Blog"><span>Blog</span></a></li>
+      <li><a href="https://www.amazon.com/Digital-Power-Infrastructures-Scale-Value/dp/B0FG1NPWLL" title="Hard copy"><span>Hard copy</span></a></li>
+      <li><a href="https://digitalinfrastructures.nl/about/" title="About"><span>About</span></a></li>
+      <li><a href="https://digitalinfrastructures.nl/search/" accesskey="/" title="Search (Alt + /)"><span>🔎 Search</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+  <div class="breadcrumbs"><a href="https://digitalinfrastructures.nl/">Home</a>&nbsp;»&nbsp;<a href="https://digitalinfrastructures.nl/projects/olra/olra/">OLRA</a>&nbsp;»&nbsp;Agentic</div>
+
+  <header class="post-header">
+    <h1 class="post-title">OLRA-A Navigator<span class="draft">Draft</span></h1>
+    <div class="post-meta">Agentic edition of OLRA (OWASP LLM Risk Allocation) · runs side by side with the <a href="https://digitalinfrastructures.nl/olra/navigator">OLRA (original) navigator</a></div>
+  </header>
+
+  <p class="intro">Who does what when an AI agent goes wrong? OLRA-A takes the ten threat categories of the
+    OWASP Top 10 for Agentic Applications (ASI01–ASI10), keeps the highest-value mitigations for each,
+    and allocates every control to one of six AI supply-chain roles. Use it to explore where ownership
+    concentrates, or switch on <strong>Tabletop mode</strong> to hide the owners and discuss them first.</p>
+
+  <details class="legend">
+    <summary>How to read this</summary>
+    <div class="legend-grid">
+      <div>
+        <h3>What this is</h3>
+        <p class="prose">A draft built for awareness and tabletop discussion, not a compliance checklist. It runs
+          side by side with OLRA (original), which maps the OWASP Top 10 for LLM Applications. Same six roles,
+          reframed agentically.</p>
+        <h3>Owners</h3>
+        <ul>
+          <li><strong>Primary owner</strong>: the role that implements the control.</li>
+          <li><strong>Secondary owner</strong>: the role that shares or supports it.</li>
+          <li>“Supply-chain topic” marks a control that is deliberately discussed as a supply-chain question, not as a new role.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tag: how provable is it?</h3>
+        <ul>
+          <li><span class="tag tag-op">Operational</span> architectural, structural or automatable: isolation, sandboxing, least privilege, kill-switches, continuous logging.</li>
+          <li><span class="tag tag-asp">Aspirational</span> trust-based, or needs human review per action or per agent. Real guidance, but unproven at scale.</li>
+          <li><span class="inf">inferred</span> no published practitioner critique for this category yet; the tag is inferred by resemblance.</li>
+        </ul>
+        <p class="muted" style="font-size:13px">Tag lens after Disesdi Cox’s <em>Angles of Attack</em> critique of the OWASP mitigations.</p>
+      </div>
+      <div>
+        <h3>Phase: when does it apply?</h3>
+        <p><strong>Design</strong> before build · <strong>Deploy</strong> when configured and shipped · <strong>Runtime</strong> while agents run.</p>
+        <h3>Skill set: who must review it?</h3>
+        <ul>
+          <li><strong>Engineering</strong> builds, configures or deploys a technical control.</li>
+          <li><strong>Detection</strong> runs a continuous procedure: logging, scanning, auditing.</li>
+          <li><strong>Architecture</strong> defines a boundary, identity model or protocol before anything is built.</li>
+          <li><strong>Governance</strong> decides a threshold, approval workflow or vendor-acceptance policy.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>In a workshop</h3>
+        <ul>
+          <li><strong>Tabletop mode</strong>: cards show blanks for owner, reliance and verification. Allocate, then reveal.</li>
+          <li><strong>Matrix</strong>: where ownership piles up, and which roles barely appear. Click a cell to list its controls.</li>
+          <li>Filters live in the page address: copy the URL to share a view. Cards print two per page width.</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <section class="panel" aria-label="Filters">
+    <div class="row" id="filters"></div>
+    <div class="roles" id="roles"></div>
+  </section>
+
+  <div class="stats" id="stats" aria-live="polite"></div>
+
+  <div class="toolbar">
+    <div class="seg" role="group" aria-label="View" id="views">
+      <button type="button" data-view="table">Table</button><button type="button" data-view="cards">Cards</button><button type="button" data-view="matrix">Matrix</button>
+    </div>
+    <span id="matrixopts" class="inline" hidden>
+      <label class="inline">Rows <select id="pivot"></select></label>
+    </span>
+    <label class="switch"><input type="checkbox" id="tabletop"> Tabletop mode <span class="muted">(hide owners)</span></label>
+    <button type="button" class="btn" id="revealall" hidden>Reveal all</button>
+    <span class="spacer"></span>
+    <button type="button" class="btn" id="export">Export filtered CSV</button>
+  </div>
+
+  <div class="status" id="status">Loading controls…</div>
+  <div id="view"></div>
+</main>
+
+<footer class="footer">
+  <span>&copy; 2026 <a href="https://digitalinfrastructures.nl/">Digital Infrastructures at Scale</a></span> ·
+  <span>Threat categories: OWASP Top 10 for Agentic Applications 2026 · Draft, feedback welcome</span>
+</footer>
+
+<script type="text/csv" id="olra-a-fallback" data-snapshot="2026-09-15">
+ASI,Category,Control,Tag,PrimaryOwner,SecondaryOwner,Phase,SkillSet
+ASI01,Agent Goal Hijack,Treat all NL input as untrusted; route through injection safeguards,Aspirational,Application Provider,Model Provider,Design,Engineering
+ASI01,Agent Goal Hijack,Least privilege + human approval for high-impact/goal-changing actions,Aspirational,Application Provider,AI Consumer,Deploy,Governance
+ASI01,Agent Goal Hijack,Lock/version-control system prompts and goal definitions,Operational,Application Provider,Orchestration Provider,Design,Engineering
+ASI01,Agent Goal Hijack,Runtime validation of user/agent intent; pause on deviation,Aspirational,Orchestration Provider,Application Provider,Runtime,Architecture
+ASI01,Agent Goal Hijack,Comprehensive logging + behavioral baseline,Operational,Orchestration Provider,Cloud Service Provider,Runtime,Detection
+ASI02,Tool Misuse and Exploitation,Scope tool permissions to least privilege per task,Operational,Application Provider,Orchestration Provider,Deploy,Engineering
+ASI02,Tool Misuse and Exploitation,MCP server provenance verification (ties to ASI04),Aspirational,Orchestration Provider,Supply-chain topic (decision #1),Deploy,Governance
+ASI02,Tool Misuse and Exploitation,Rate-limit / cap costly or destructive tool invocations,Operational,Application Provider,Cloud Service Provider,Deploy,Engineering
+ASI02,Tool Misuse and Exploitation,Log every tool call with arguments and result,Operational,Orchestration Provider,Application Provider,Runtime,Detection
+ASI02,Tool Misuse and Exploitation,Default-deny network egress; allowlist outbound destinations for tools and code execution,Operational,Cloud Service Provider,Application Provider,Deploy,Engineering
+ASI03,Identity and Privilege Abuse,Distinct governed non-human identity per agent (closes the attribution gap),Aspirational,Orchestration Provider,Cloud Service Provider,Design,Architecture
+ASI03,Identity and Privilege Abuse,Short-lived scoped credentials (no standing high-privilege access),Operational,Cloud Service Provider,Orchestration Provider,Deploy,Engineering
+ASI03,Identity and Privilege Abuse,Delegation-chain and role-inheritance auditing,Aspirational,Orchestration Provider,Application Provider,Runtime,Detection
+ASI03,Identity and Privilege Abuse,Architectural review of permission boundaries (Amazon-case pattern),Operational,Application Provider,AI Consumer,Design,Architecture
+ASI04,Agentic Supply Chain Vulnerabilities,Sandbox/isolate agent execution environment,Operational,Cloud Service Provider,Orchestration Provider,Deploy,Engineering
+ASI04,Agentic Supply Chain Vulnerabilities,Model/data provenance attestation before use,Aspirational,Model Provider,Data Provider,Deploy,Governance
+ASI04,Agentic Supply Chain Vulnerabilities,SBOM/AIBOM for tools MCP servers dependencies,Aspirational,Application Provider,Supply-chain topic (decision #1),Deploy,Engineering
+ASI04,Agentic Supply Chain Vulnerabilities,Curated registries / block untrusted sources for skills & MCP servers,Aspirational,Orchestration Provider,Application Provider,Deploy,Governance
+ASI04,Agentic Supply Chain Vulnerabilities,Continuous behavior monitoring for anomalies post-deployment,Operational,Orchestration Provider,Cloud Service Provider,Runtime,Detection
+ASI05,Unexpected Code Execution (RCE),Sandboxed execution never as root network-restricted,Operational (inferred),Cloud Service Provider,Application Provider,Deploy,Engineering
+ASI05,Unexpected Code Execution (RCE),Ban eval/unsafe interpreters in production; taint-tracking,Operational (inferred),Application Provider,Model Provider,Design,Engineering
+ASI05,Unexpected Code Execution (RCE),Separate code generation from execution with validation gates,Operational (inferred),Application Provider,Orchestration Provider,Design,Engineering
+ASI05,Unexpected Code Execution (RCE),Human approval for elevated/production runs,Aspirational (inferred),AI Consumer,Application Provider,Runtime,Governance
+ASI05,Unexpected Code Execution (RCE),Execution limits: time/CPU/memory caps and filesystem restricted to a working directory,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
+ASI06,Memory & Context Poisoning,Scan every memory write for malicious/sensitive content,Operational (inferred),Orchestration Provider,Application Provider,Runtime,Detection
+ASI06,Memory & Context Poisoning,Memory segmentation per user/tenant; wipe between sessions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
+ASI06,Memory & Context Poisoning,Provenance + trust-weighted retrieval; decay unverified entries,Aspirational (inferred),Orchestration Provider,Data Provider,Runtime,Governance
+ASI06,Memory & Context Poisoning,No auto-reingestion of agent's own output as trusted memory,Operational (inferred),Application Provider,Orchestration Provider,Design,Engineering
+ASI07,Insecure Inter-Agent Communication,End-to-end encryption + mutual auth between agents,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
+ASI07,Insecure Inter-Agent Communication,Message signing + integrity/semantic validation,Aspirational (inferred),Orchestration Provider,Application Provider,Runtime,Architecture
+ASI07,Insecure Inter-Agent Communication,Attested agent registries; signed agent cards,Aspirational (inferred),Orchestration Provider,Supply-chain topic (decision #1),Deploy,Governance
+ASI07,Insecure Inter-Agent Communication,Protocol version pinning; reject downgrade attempts,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
+ASI08,Cascading Failures,Zero-trust design assuming any component can fail,Operational (inferred),Application Provider,Orchestration Provider,Design,Architecture
+ASI08,Cascading Failures,Blast-radius guardrails: quotas circuit breakers progress caps,Operational (inferred),Orchestration Provider,Application Provider,Deploy,Engineering
+ASI08,Cascading Failures,JIT one-time-use tool credentials per agent run,Operational (inferred),Cloud Service Provider,Orchestration Provider,Runtime,Engineering
+ASI08,Cascading Failures,Tamper-evident logging + lineage metadata for forensics,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Detection
+ASI09,Human-Agent Trust Exploitation,Explicit multi-step confirmation before high-impact/sensitive actions,Aspirational (inferred),Application Provider,AI Consumer,Runtime,Governance
+ASI09,Human-Agent Trust Exploitation,Immutable audit logs of queries and actions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Detection
+ASI09,Human-Agent Trust Exploitation,Plain-language risk summary + user flag/report path,Operational (inferred),Application Provider,AI Consumer,Design,Engineering
+ASI09,Human-Agent Trust Exploitation,Content provenance metadata on recommendations,Aspirational (inferred),Model Provider,Data Provider,Runtime,Governance
+ASI10,Rogue Agents,Immutable signed audit logs of all agent actions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Detection
+ASI10,Rogue Agents,Trust zones + restricted execution environments (sandboxing),Operational (inferred),Cloud Service Provider,Orchestration Provider,Design,Architecture
+ASI10,Rogue Agents,Kill-switches + credential revocation for rapid containment,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
+ASI10,Rogue Agents,Watchdog agents / behavioral-baseline drift detection,Aspirational (inferred),Orchestration Provider,Application Provider,Runtime,Detection
+ASI10,Rogue Agents,Network telemetry of agent traffic (flows + DNS) collected outside the agent harness,Operational (inferred),Cloud Service Provider,Orchestration Provider,Runtime,Detection
+ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; test the restore,Operational (inferred),AI Consumer,Cloud Service Provider,Design,Architecture
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  var DEFAULT_CSV = "olra-a-controls.csv";
+
+  var ROLES = [
+    { id: "AIC", name: "AI Consumer",            match: /consumer/i },
+    { id: "AP",  name: "Application Provider",   match: /application/i },
+    { id: "DP",  name: "Data Provider",          match: /data\s*provider/i },
+    { id: "OSP", name: "Orchestration Provider", match: /orchestrat/i },
+    { id: "MP",  name: "Model Provider",         match: /model\s*provider/i },
+    { id: "CSP", name: "Cloud Service Provider", match: /cloud/i }
+  ];
+  var R = {};
+  ROLES.forEach(function (r) { R[r.id] = r; });
+
+  var FIELDS = {
+    id:        ["asi", "risk id", "riskid", "id", "threat id"],
+    category:  ["category", "risk name", "riskname", "threat"],
+    control:   ["control"],
+    tag:       ["tag"],
+    primary:   ["primaryowner", "primary owner", "primary", "owner", "role"],
+    secondary: ["secondaryowner", "secondary owner", "secondary"],
+    phase:     ["phase", "lifecycle phase"],
+    skill:     ["skillset", "skill set", "skill-set", "skill set cluster"]
+  };
+  var ORDER = {
+    tag: ["Operational", "Aspirational"],
+    basis: ["Practitioner-critiqued", "Inferred"],
+    phase: ["Design", "Deploy", "Runtime"],
+    skill: ["Engineering", "Detection", "Architecture", "Governance"]
+  };
+
+  var M = null, FILTERS = [], catOf = {};
+  var state = { q: "", roles: [], match: "any", f: {}, view: "table", pivot: "id",
+                tabletop: false, sort: null, revealed: new Set() };
+
+  function $(s) { return document.querySelector(s); }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function norm(s) { return String(s).toLowerCase().replace(/[\s_\-]+/g, " ").trim(); }
+  function rank(order, v) {
+    var i = order.findIndex(function (o) { return o.toLowerCase() === String(v).toLowerCase(); });
+    return i < 0 ? 99 : i;
+  }
+  function cmp(a, b) { return String(a).localeCompare(String(b), undefined, { numeric: true, sensitivity: "base" }); }
+
+  /* ---------- CSV ---------- */
+  function detectDelim(text) {
+    var first = text.replace(/^﻿/, "").split(/\r?\n/)[0] || "";
+    var counts = { ",": 0, ";": 0, "\t": 0 }, q = false;
+    for (var i = 0; i < first.length; i++) {
+      var c = first[i];
+      if (c === '"') q = !q;
+      else if (!q && c in counts) counts[c]++;
+    }
+    return Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; })[0];
+  }
+  function parseCSV(text, d) {
+    text = text.replace(/^﻿/, "");
+    var rows = [], row = [], f = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (q) {
+        if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; }
+        else f += c;
+      } else if (c === '"') q = true;
+      else if (c === d) { row.push(f); f = ""; }
+      else if (c === "\n" || c === "\r") {
+        if (c === "\r" && text[i + 1] === "\n") i++;
+        row.push(f); rows.push(row); row = []; f = "";
+      } else f += c;
+    }
+    if (f !== "" || row.length) { row.push(f); rows.push(row); }
+    return rows.filter(function (r) { return r.some(function (v) { return v.trim() !== ""; }); });
+  }
+  function rolesOf(v) {
+    var out = { ids: [], other: [] };
+    if (!v) return out;
+    v.split(/\s*(?:;|\||\+|&|\band\b)\s*/i).forEach(function (p) {
+      p = p.trim();
+      if (!p) return;
+      var r = ROLES.find(function (x) { return x.match.test(p); });
+      if (r) { if (out.ids.indexOf(r.id) < 0) out.ids.push(r.id); }
+      else out.other.push(p);
+    });
+    return out;
+  }
+  function buildModel(rows) {
+    if (!rows.length) throw new Error("the CSV is empty");
+    var headers = rows[0].map(function (h) { return h.trim(); });
+    var idx = {};
+    Object.keys(FIELDS).forEach(function (k) {
+      var al = FIELDS[k].map(norm);
+      var i = headers.findIndex(function (h, j) {
+        return al.indexOf(norm(h)) >= 0 && Object.keys(idx).every(function (kk) { return idx[kk] !== j; });
+      });
+      if (i >= 0) idx[k] = i;
+    });
+    if (idx.control === undefined) throw new Error('no "Control" column in the header row');
+    var used = Object.keys(idx).map(function (k) { return idx[k]; });
+    var extras = headers.map(function (h, i) { return { h: h, i: i }; })
+      .filter(function (x) { return x.h && used.indexOf(x.i) < 0; });
+    var items = rows.slice(1).map(function (r, n) {
+      function g(k) { return idx[k] === undefined ? "" : (r[idx[k]] || "").trim(); }
+      var tagRaw = g("tag"), extra = {};
+      extras.forEach(function (x) { extra[x.h] = (r[x.i] || "").trim(); });
+      return {
+        n: n, raw: r, id: g("id"), category: g("category"), control: g("control"),
+        tagRaw: tagRaw,
+        tag: /aspiration/i.test(tagRaw) ? "Aspirational" : /operation/i.test(tagRaw) ? "Operational" : tagRaw,
+        inferred: /inferred/i.test(tagRaw),
+        primary: g("primary"), secondary: g("secondary"), phase: g("phase"), skill: g("skill"),
+        p: rolesOf(g("primary")), s: rolesOf(g("secondary")), extra: extra
+      };
+    }).filter(function (it) { return it.control; });
+    return { headers: headers, idx: idx, extras: extras, items: items };
+  }
+  function has(k) { return M.idx[k] !== undefined; }
+
+  /* ---------- filters ---------- */
+  function uniqSorted(vals, order) {
+    var u = Array.from(new Set(vals.filter(Boolean)));
+    return u.sort(function (a, b) { return order ? (rank(order, a) - rank(order, b)) || cmp(a, b) : cmp(a, b); });
+  }
+  function buildFilters() {
+    var it = M.items, F = [];
+    if (has("id")) F.push({ key: "id", label: "Threat", get: function (x) { return x.id; },
+      fmt: function (v) { return catOf[v] ? v + " · " + catOf[v] : v; }, appearance: true });
+    if (has("tag")) {
+      F.push({ key: "tag", label: "Tag", get: function (x) { return x.tag; } });
+      if (it.some(function (x) { return x.inferred; }))
+        F.push({ key: "basis", label: "Tag basis", get: function (x) { return x.tagRaw ? (x.inferred ? "Inferred" : "Practitioner-critiqued") : ""; } });
+    }
+    if (has("phase")) F.push({ key: "phase", label: "Phase", get: function (x) { return x.phase; } });
+    if (has("skill")) F.push({ key: "skill", label: "Skill set", get: function (x) { return x.skill; } });
+    M.extras.forEach(function (e) {
+      var vals = uniqSorted(it.map(function (x) { return x.extra[e.h]; }));
+      if (vals.length && vals.length <= 12 && vals.every(function (v) { return v.length <= 40; }))
+        F.push({ key: "x:" + e.h, label: e.h, get: function (x) { return x.extra[e.h]; } });
+    });
+    F.forEach(function (f) {
+      var vals = it.map(f.get);
+      f.values = f.appearance ? Array.from(new Set(vals.filter(Boolean))) : uniqSorted(vals, ORDER[f.key]);
+    });
+    return F;
+  }
+  function passes(it, skipRoles) {
+    if (state.q) {
+      var parts = [it.id, it.category, it.control, it.tagRaw, it.phase, it.skill];
+      if (!state.tabletop) parts.push(it.primary, it.secondary);
+      Object.keys(it.extra).forEach(function (k) { parts.push(it.extra[k]); });
+      var hay = parts.join(" ").toLowerCase();
+      var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+      if (!terms.every(function (t) { return hay.indexOf(t) >= 0; })) return false;
+    }
+    for (var i = 0; i < FILTERS.length; i++) {
+      var f = FILTERS[i], v = state.f[f.key];
+      if (v && f.get(it) !== v) return false;
+    }
+    if (!skipRoles && state.roles.length) {
+      var ids = state.match === "primary" ? it.p.ids : it.p.ids.concat(it.s.ids);
+      if (!state.roles.some(function (r) { return ids.indexOf(r) >= 0; })) return false;
+    }
+    return true;
+  }
+
+  /* ---------- pieces ---------- */
+  function roleColor(id) { return "--rc:var(--r-" + id.toLowerCase() + ")"; }
+  function roleBadge(id) {
+    var r = R[id];
+    return '<span class="role" style="' + roleColor(id) + '" title="' + esc(r.name) + '"><i></i>' +
+      '<span class="rabbr">' + id + '</span><span class="rname">' + esc(r.name) + "</span></span>";
+  }
+  function ownersHTML(o) {
+    var parts = o.ids.map(roleBadge).concat(o.other.map(function (x) { return '<span class="note">' + esc(x) + "</span>"; }));
+    return parts.length ? '<div class="owner-list">' + parts.join("") + "</div>" : '<span class="muted">—</span>';
+  }
+  function tagHTML(it) {
+    if (!it.tagRaw) return '<span class="muted">—</span>';
+    var cls = it.tag === "Operational" ? "tag-op" : it.tag === "Aspirational" ? "tag-asp" : "";
+    return '<span class="tag ' + cls + '">' + esc(it.tag) + "</span>" +
+      (it.inferred ? '<span class="inf" title="Inferred: no published practitioner critique for this category yet">inferred</span>' : "");
+  }
+  function isHidden(it) { return state.tabletop && !state.revealed.has(it.n); }
+
+  /* ---------- views ---------- */
+  function columns() {
+    var c = [];
+    if (has("id") || has("category")) c.push({ k: "id", label: "Threat" });
+    c.push({ k: "control", label: "Control" });
+    if (has("tag")) c.push({ k: "tag", label: "Tag" });
+    if (has("primary")) c.push({ k: "primary", label: "Primary owner" });
+    if (has("secondary") && state.match !== "primary") c.push({ k: "secondary", label: "Secondary owner" });
+    if (has("phase")) c.push({ k: "phase", label: "Phase" });
+    if (has("skill")) c.push({ k: "skill", label: "Skill set" });
+    M.extras.forEach(function (e) { c.push({ k: "x:" + e.h, label: e.h }); });
+    return c;
+  }
+  function sortVal(it, k) {
+    if (k === "phase") return rank(ORDER.phase, it.phase) + it.phase;
+    if (k === "skill") return rank(ORDER.skill, it.skill) + it.skill;
+    if (k === "id") return it.id + " " + it.category;
+    if (k.indexOf("x:") === 0) return it.extra[k.slice(2)] || "";
+    return it[k] || "";
+  }
+  function sorted(list) {
+    if (!state.sort) return list;
+    var k = state.sort.k, dir = state.sort.dir === "desc" ? -1 : 1;
+    return list.slice().sort(function (a, b) { return dir * cmp(sortVal(a, k), sortVal(b, k)) || a.n - b.n; });
+  }
+  function renderTable(list) {
+    var cols = columns();
+    var head = cols.map(function (c) {
+      var s = state.sort && state.sort.k === c.k ? (state.sort.dir === "desc" ? "descending" : "ascending") : "none";
+      return '<th scope="col" aria-sort="' + s + '"><button type="button" data-sort="' + esc(c.k) + '">' + esc(c.label) + "</button></th>";
+    }).join("");
+    var body = list.map(function (it) {
+      return "<tr>" + cols.map(function (c) {
+        switch (c.k) {
+          case "id": return '<td><span class="asi">' + esc(it.id) + "</span>" + (it.category ? '<span class="cat">' + esc(it.category) + "</span>" : "") + "</td>";
+          case "control": return '<td class="ctl">' + esc(it.control) + "</td>";
+          case "tag": return "<td>" + tagHTML(it) + "</td>";
+          case "primary":
+            return "<td>" + (isHidden(it) ? '<button type="button" class="btn sm" data-reveal="' + it.n + '">Reveal</button>' : ownersHTML(it.p)) + "</td>";
+          case "secondary":
+            return "<td>" + (isHidden(it) ? '<span class="hidden-owner" aria-label="hidden">???</span>' : ownersHTML(it.s)) + "</td>";
+          case "phase": return "<td>" + (esc(it.phase) || '<span class="muted">—</span>') + "</td>";
+          case "skill": return "<td>" + (esc(it.skill) || '<span class="muted">—</span>') + "</td>";
+          default: return '<td class="xtra">' + esc(it.extra[c.k.slice(2)]) + "</td>";
+        }
+      }).join("") + "</tr>";
+    }).join("");
+    return '<div class="tablewrap"><table class="controls"><thead><tr>' + head + "</tr></thead><tbody>" + body + "</tbody></table></div>";
+  }
+  function renderCards(list) {
+    return '<div class="cards">' + list.map(function (it) {
+      var owners = "";
+      if (has("primary")) {
+        owners = isHidden(it)
+          ? '<dl class="owners"><dt>Owner?</dt><dd><span class="blank"></span></dd><dt>Relies on it?</dt><dd><span class="blank"></span></dd>' +
+            '<dt>Verify by?</dt><dd><span class="blank"></span></dd></dl><div><button type="button" class="btn sm" data-reveal="' + it.n + '">Reveal owners</button></div>'
+          : '<dl class="owners"><dt>Primary</dt><dd>' + ownersHTML(it.p) + "</dd>" +
+            (has("secondary") && state.match !== "primary" ? "<dt>Secondary</dt><dd>" + ownersHTML(it.s) + "</dd>" : "") + "</dl>";
+      }
+      var extras = M.extras.filter(function (e) { return it.extra[e.h]; })
+        .map(function (e) { return "<dt>" + esc(e.h) + "</dt><dd>" + esc(it.extra[e.h]) + "</dd>"; }).join("");
+      return '<article class="card"><div class="card-top"><span class="asi">' + esc(it.id) + "</span> " +
+        '<span class="muted">' + esc(it.category) + "</span></div>" +
+        "<h3>" + esc(it.control) + "</h3>" +
+        '<div class="meta">' + (has("tag") ? tagHTML(it) : "") +
+        (it.phase ? '<span class="pill">' + esc(it.phase) + "</span>" : "") +
+        (it.skill ? '<span class="pill">' + esc(it.skill) + "</span>" : "") + "</div>" +
+        owners + (extras ? '<dl class="owners extras">' + extras + "</dl>" : "") + "</article>";
+    }).join("") + "</div>";
+  }
+  function renderMatrix() {
+    if (!has("primary")) return '<div class="empty">This CSV has no owner column, so there is nothing to put in a matrix.</div>';
+    if (state.tabletop)
+      return '<div class="empty"><strong>Matrix hidden in tabletop mode</strong>: it would give the owners away.<br><br>' +
+        '<button type="button" class="btn" data-act="tabletop-off">Show owners</button></div>';
+    var pv = FILTERS.find(function (f) { return f.key === state.pivot; }) || FILTERS[0];
+    if (!pv) return '<div class="empty">No column to group rows by.</div>';
+    var base = M.items.filter(function (it) { return passes(it, true); });
+    var rows = pv.values.filter(function (v) { return base.some(function (it) { return pv.get(it) === v; }); });
+    if (!rows.length) return '<div class="empty"><strong>No controls match.</strong><br><br><button type="button" class="btn" data-act="reset">Reset filters</button></div>';
+    function count(v, r, which) {
+      return base.filter(function (it) { return pv.get(it) === v && it[which].ids.indexOf(r) >= 0; }).length;
+    }
+    var max = 1;
+    rows.forEach(function (v) { ROLES.forEach(function (r) { max = Math.max(max, count(v, r.id, "p")); }); });
+    var head = '<tr><th class="rowh" scope="col">' + esc(pv.label) + "</th>" + ROLES.map(function (r) {
+      return '<th scope="col"><span class="role" style="' + roleColor(r.id) + '"><i></i>' + r.id + '</span><span class="cat">' + esc(r.name) + "</span></th>";
+    }).join("") + "</tr>";
+    var body = rows.map(function (v) {
+      return '<tr><th class="rowh" scope="row">' + esc(pv.fmt ? pv.fmt(v) : v) + "</th>" + ROLES.map(function (r) {
+        var p = count(v, r.id, "p"), s = count(v, r.id, "s");
+        var dim = state.roles.length && state.roles.indexOf(r.id) < 0 ? " dim" : "";
+        var showSec = state.match !== "primary";
+        if (!p && !(showSec && s)) return '<td><div class="cell zero' + dim + '" style="' + roleColor(r.id) + '" aria-label="none">·</div></td>';
+        return '<td><button type="button" class="cell' + dim + '" data-row="' + esc(v) + '" data-role="' + r.id + '" style="' + roleColor(r.id) +
+          ";--pct:" + Math.round(p / max * 48) + '%" title="' + esc(R[r.id].name) + ": " + p + " primary, " + s + ' secondary. Click to list.">' +
+          "<b>" + p + "</b>" + (showSec && s ? "<small>+" + s + "</small>" : "") + "</button></td>";
+      }).join("") + "</tr>";
+    }).join("");
+    var tot = '<tr><th class="rowh tot" scope="row">Primary total</th>' + ROLES.map(function (r) {
+      return '<td class="tot">' + base.filter(function (it) { return it.p.ids.indexOf(r.id) >= 0; }).length + "</td>";
+    }).join("") + "</tr>";
+    return '<p class="status">Each cell counts the controls where that role is <strong>primary owner</strong>' +
+      (state.match !== "primary" ? "; <strong>+n</strong> counts it as secondary owner" : "") +
+      ". Filters apply, the role filter only dims columns. Click a cell to list its controls.</p>" +
+      '<div class="matrixwrap"><table class="matrix"><thead>' + head + "</thead><tbody>" + body + tot + "</tbody></table></div>";
+  }
+
+  /* ---------- render ---------- */
+  function stat(n, label) { return '<div class="stat"><b>' + n + "</b><span>" + esc(label) + "</span></div>"; }
+  function renderStats(list) {
+    var html = stat(list.length, "of " + M.items.length + " controls shown");
+    if (has("tag")) {
+      html += stat(list.filter(function (x) { return x.tag === "Operational"; }).length, "operational");
+      html += stat(list.filter(function (x) { return x.tag === "Aspirational"; }).length, "aspirational");
+      if (M.items.some(function (x) { return x.inferred; }))
+        html += stat(list.filter(function (x) { return x.inferred; }).length, "with inferred tag");
+    }
+    if (has("primary")) {
+      var owned = new Set();
+      list.forEach(function (x) { x.p.ids.forEach(function (id) { owned.add(id); }); });
+      html += stat(state.tabletop ? "?" : owned.size + " / " + ROLES.length, "roles owning a control");
+    }
+    $("#stats").innerHTML = html;
+  }
+  function syncToolbar() {
+    document.querySelectorAll("#views button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.view === state.view)); });
+    $("#matrixopts").hidden = state.view !== "matrix" || state.tabletop;
+    $("#tabletop").checked = state.tabletop;
+    $("#revealall").hidden = !state.tabletop || state.view === "matrix";
+    var allShown = M.items.every(function (it) { return state.revealed.has(it.n); });
+    $("#revealall").textContent = allShown ? "Hide all" : "Reveal all";
+  }
+  function render() {
+    var list = M.items.filter(function (it) { return passes(it, false); });
+    renderStats(list);
+    syncToolbar();
+    var v = $("#view");
+    if (state.view === "matrix") v.innerHTML = renderMatrix();
+    else if (!list.length) v.innerHTML = '<div class="empty"><strong>No controls match.</strong><br>Adjust the search or filters.<br><br><button type="button" class="btn" data-act="reset">Reset filters</button></div>';
+    else v.innerHTML = state.view === "cards" ? renderCards(sorted(list)) : renderTable(sorted(list));
+    writeHash();
+  }
+  function renderControls() {
+    $("#filters").innerHTML =
+      '<label class="field grow"><span class="lbl">Search</span><input type="search" id="q" autocomplete="off" placeholder="Search controls, threats, owners…" value="' + esc(state.q) + '"></label>' +
+      FILTERS.map(function (f) {
+        return '<label class="field"><span class="lbl">' + esc(f.label) + '</span><select data-key="' + esc(f.key) + '"><option value="">All</option>' +
+          f.values.map(function (v) {
+            return '<option value="' + esc(v) + '"' + (state.f[f.key] === v ? " selected" : "") + ">" + esc(f.fmt ? f.fmt(v) : v) + "</option>";
+          }).join("") + "</select></label>";
+      }).join("") +
+      '<button type="button" class="btn" data-act="reset">Reset</button>';
+    $("#roles").innerHTML = has("primary")
+      ? '<span class="lbl">Owner role</span>' + ROLES.map(function (r) {
+          return '<button type="button" class="chipbtn" data-role="' + r.id + '" aria-pressed="' + (state.roles.indexOf(r.id) >= 0) + '" style="' + roleColor(r.id) + '"><i></i>' + esc(r.name) + "</button>";
+        }).join("") +
+        '<span class="seg" role="group" aria-label="Owner scope" title="Primary only: filters the selected roles on primary ownership, hides the Secondary owner column and the +n matrix counts"><button type="button" data-match="any" aria-pressed="' + (state.match === "any") + '">Primary or secondary</button>' +
+        '<button type="button" data-match="primary" aria-pressed="' + (state.match === "primary") + '">Primary only</button></span>'
+      : "";
+    $("#pivot").innerHTML = FILTERS.filter(function (f) { return f.key !== "basis"; }).map(function (f) {
+      return '<option value="' + esc(f.key) + '"' + (state.pivot === f.key ? " selected" : "") + ">" + esc(f.label) + "</option>";
+    }).join("");
+  }
+
+  /* ---------- URL state ---------- */
+  function writeHash() {
+    var p = new URLSearchParams();
+    if (state.q) p.set("q", state.q);
+    if (state.roles.length) p.set("roles", state.roles.join(","));
+    if (state.match !== "any") p.set("match", state.match);
+    Object.keys(state.f).forEach(function (k) { if (state.f[k]) p.set("f." + k, state.f[k]); });
+    if (state.view !== "table") p.set("view", state.view);
+    if (state.pivot !== "id") p.set("rows", state.pivot);
+    if (state.tabletop) p.set("tabletop", "1");
+    if (state.sort) p.set("sort", state.sort.k + ":" + state.sort.dir);
+    var h = p.toString();
+    try { history.replaceState(null, "", h ? "#" + h : location.pathname + location.search); } catch (e) { /* sandboxed */ }
+  }
+  function readHash() {
+    var p = new URLSearchParams(location.hash.slice(1));
+    state.q = p.get("q") || "";
+    state.roles = (p.get("roles") || "").split(",").filter(function (r) { return R[r]; });
+    state.match = p.get("match") === "primary" ? "primary" : "any";
+    state.f = {};
+    p.forEach(function (v, k) { if (k.indexOf("f.") === 0) state.f[k.slice(2)] = v; });
+    if (["table", "cards", "matrix"].indexOf(p.get("view")) >= 0) state.view = p.get("view");
+    if (p.get("rows")) state.pivot = p.get("rows");
+    state.tabletop = p.get("tabletop") === "1";
+    var s = p.get("sort");
+    if (s) { var kd = s.split(":"); state.sort = { k: kd[0], dir: kd[1] === "desc" ? "desc" : "asc" }; }
+  }
+
+  /* ---------- export ---------- */
+  function exportCSV() {
+    var list = sorted(M.items.filter(function (it) { return passes(it, false); }));
+    function q(v) { v = v == null ? "" : String(v); return /[",;\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+    var lines = [M.headers.map(q).join(",")].concat(list.map(function (it) {
+      return M.headers.map(function (h, i) { return q(it.raw[i]); }).join(",");
+    }));
+    var blob = new Blob(["﻿" + lines.join("\r\n") + "\r\n"], { type: "text/csv;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "olra-a-controls-filtered.csv";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1500);
+  }
+
+  /* ---------- events ---------- */
+  function resetAll() {
+    state.q = ""; state.roles = []; state.match = "any"; state.f = {}; state.sort = null;
+    renderControls(); render();
+  }
+  function bind() {
+    $("#theme-toggle").addEventListener("click", function () {
+      var dark = document.body.classList.toggle("dark");
+      try { localStorage.setItem("pref-theme", dark ? "dark" : "light"); } catch (e) { /* storage blocked */ }
+    });
+    $("#filters").addEventListener("input", function (e) {
+      if (e.target.id === "q") { state.q = e.target.value.trim(); render(); }
+    });
+    $("#filters").addEventListener("change", function (e) {
+      var k = e.target.dataset && e.target.dataset.key;
+      if (k) { if (e.target.value) state.f[k] = e.target.value; else delete state.f[k]; render(); }
+    });
+    $("#roles").addEventListener("click", function (e) {
+      var b = e.target.closest("button");
+      if (!b) return;
+      if (b.dataset.role) {
+        var i = state.roles.indexOf(b.dataset.role);
+        if (i >= 0) state.roles.splice(i, 1); else state.roles.push(b.dataset.role);
+      } else if (b.dataset.match) state.match = b.dataset.match;
+      renderControls(); render();
+    });
+    $("#views").addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-view]");
+      if (b) { state.view = b.dataset.view; render(); }
+    });
+    $("#pivot").addEventListener("change", function (e) { state.pivot = e.target.value; render(); });
+    $("#tabletop").addEventListener("change", function (e) {
+      state.tabletop = e.target.checked; state.revealed = new Set(); render();
+    });
+    $("#revealall").addEventListener("click", function () {
+      var all = M.items.every(function (it) { return state.revealed.has(it.n); });
+      state.revealed = all ? new Set() : new Set(M.items.map(function (it) { return it.n; }));
+      render();
+    });
+    $("#export").addEventListener("click", exportCSV);
+    document.addEventListener("click", function (e) {
+      var b = e.target.closest("button");
+      if (!b || !b.closest("#view, #filters")) return;
+      if (b.dataset.act === "reset") resetAll();
+      else if (b.dataset.act === "tabletop-off") { state.tabletop = false; render(); }
+      else if (b.dataset.reveal !== undefined) { state.revealed.add(Number(b.dataset.reveal)); render(); }
+      else if (b.dataset.sort) {
+        var k = b.dataset.sort;
+        if (!state.sort || state.sort.k !== k) state.sort = { k: k, dir: "asc" };
+        else if (state.sort.dir === "asc") state.sort.dir = "desc";
+        else state.sort = null;
+        render();
+      } else if (b.dataset.row !== undefined && b.dataset.role) {
+        var pv = FILTERS.find(function (f) { return f.key === state.pivot; }) || FILTERS[0];
+        state.f[pv.key] = b.dataset.row;
+        state.roles = [b.dataset.role];
+        state.match = "primary";
+        state.view = "table";
+        renderControls(); render();
+        $("#view").scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  }
+
+  /* ---------- load ---------- */
+  function csvUrl() {
+    var param = new URLSearchParams(location.search).get("csv");
+    if (param) return param;
+    var path = location.pathname;
+    var last = path.split("/").pop();
+    if (!/\/$/.test(path) && last && !/\.[a-z0-9]+$/i.test(last)) path += "/";
+    return path.replace(/[^\/]*$/, "") + DEFAULT_CSV;
+  }
+  function load() {
+    var url = csvUrl(), fb = $("#olra-a-fallback");
+    function start(text, liveError) {
+      try { M = buildModel(parseCSV(text, detectDelim(text))); }
+      catch (err) {
+        $("#status").className = "status warn";
+        $("#status").textContent = "Could not read the controls CSV: " + err.message + ".";
+        return;
+      }
+      M.items.forEach(function (it) { if (it.id && !catOf[it.id]) catOf[it.id] = it.category; });
+      FILTERS = buildFilters();
+      Object.keys(state.f).forEach(function (k) { if (!FILTERS.some(function (f) { return f.key === k; })) delete state.f[k]; });
+      if (!FILTERS.some(function (f) { return f.key === state.pivot; }) && FILTERS[0]) state.pivot = FILTERS[0].key;
+      var st = $("#status");
+      if (liveError) {
+        st.className = "status warn";
+        st.innerHTML = "Could not load <code>" + esc(url) + "</code> (" + esc(liveError) + "). Showing the embedded snapshot of " +
+          esc(fb.dataset.snapshot) + " instead, so recent edits to the CSV are not visible.";
+      } else {
+        var extra = M.extras.length ? " · extra columns: " + M.extras.map(function (e) { return esc(e.h); }).join(", ") : "";
+        st.className = "status";
+        st.innerHTML = 'Data: <a href="' + esc(url) + '">' + esc(url.split("/").pop()) + "</a> · " + M.items.length + " controls" + extra;
+      }
+      renderControls();
+      render();
+    }
+    fetch(url, { cache: "no-cache" })
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
+      .then(function (text) {
+        if (!/control/i.test(text.replace(/^﻿/, "").split(/\r?\n/)[0] || "")) throw new Error("no Control header");
+        start(text, null);
+      })
+      .catch(function (err) { start(fb.textContent.trim(), err.message || "fetch failed"); });
+  }
+
+  readHash();
+  bind();
+  load();
+})();
+</script>
+</body>
+</html>
