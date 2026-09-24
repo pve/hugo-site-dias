@@ -154,7 +154,8 @@ table.controls{width:100%;border-collapse:collapse;min-width:1040px}
 .controls th[aria-sort=descending] button::after{content:"\2193";opacity:1}
 .controls tbody tr:hover{background:var(--hl)}
 td.ctl{font-family:var(--prose);font-size:17px;line-height:1.45;color:var(--content);min-width:280px}
-td.xtra{font-size:14px;min-width:160px;white-space:nowrap}
+td.xtra{font-size:14px;min-width:160px;word-break:normal}
+td.kw{white-space:nowrap}
 .asi{font-weight:700;white-space:nowrap}
 .cat{display:block;font-size:13px;color:var(--secondary);line-height:1.3;font-weight:400}
 .owner-list{display:flex;flex-direction:column;gap:3px}
@@ -620,8 +621,8 @@ ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; tes
             return "<td>" + (isHidden(it) ? '<button type="button" class="btn sm" data-reveal="' + it.n + '">Reveal</button>' : ownersHTML(it.p)) + "</td>";
           case "secondary":
             return "<td>" + (isHidden(it) ? '<span class="hidden-owner" aria-label="hidden">???</span>' : ownersHTML(it.s)) + "</td>";
-          case "phase": return "<td>" + (esc(it.phase) || '<span class="muted">—</span>') + "</td>";
-          case "skill": return "<td>" + (esc(it.skill) || '<span class="muted">—</span>') + "</td>";
+          case "phase": return '<td class="kw">' + (esc(it.phase) || '<span class="muted">—</span>') + "</td>";
+          case "skill": return '<td class="kw">' + (esc(it.skill) || '<span class="muted">—</span>') + "</td>";
           default: return '<td class="xtra">' + esc(it.extra[c.k.slice(2)]) + "</td>";
         }
       }).join("") + "</tr>";
