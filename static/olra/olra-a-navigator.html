@@ -8,8 +8,11 @@
                https://digitalinfrastructures.nl/olra/navigator, styled after the site's
                Hugo/PaperMod theme (Titillium Web + Spectral, pref-theme light/dark).
 
-  Invocation:  Deploy this file together with olra-a-controls.csv in the same directory, e.g.
-               Hugo  static/olra/agentic/index.html  +  static/olra/agentic/olra-a-controls.csv
+  Invocation:  Deploy this file together with olra-a-controls.csv in the same directory. Live at
+               https://digitalinfrastructures.nl/olra/olra-a-navigator.html (Hugo site, files in
+               static/olra/olra-a-navigator.html + static/olra/olra-a-controls.csv). Deploy this
+               file unchanged: the CSV lookup copes with .html, pretty (extensionless) and
+               directory URLs, so no site-specific path patch is needed.
                The CSV is fetched at page load, so editing the CSV in the site's content
                management updates the page — no rebuild of this HTML needed.
                Override the data file with ?csv=<url>. Filters/view are kept in the URL hash,
@@ -390,10 +393,7 @@ ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; tes
 (function () {
   "use strict";
 
-  // Absolute site path: this page is also served without the .html extension
-  // (/olra/olra-a-navigator), and a relative path would then resolve one level
-  // too deep and 404, falling back to the embedded snapshot.
-  var DEFAULT_CSV = "/olra/olra-a-controls.csv";
+  var DEFAULT_CSV = "olra-a-controls.csv";
 
   var ROLES = [
     { id: "AIC", name: "AI Consumer",            match: /consumer/i },
@@ -854,17 +854,25 @@ ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; tes
   }
 
   /* ---------- load ---------- */
-  function csvUrl() {
+  // Candidate CSV URLs, tried in order. ?csv=<url> wins outright. Otherwise DEFAULT_CSV is
+  // resolved the way the browser resolves any relative link (works for /x.html, for a pretty
+  // URL /x, for /dir/, and for an absolute DEFAULT_CSV). A last segment without extension or
+  // trailing slash is ambiguous — pretty URL of a page (/olra/olra-a-navigator) or directory
+  // without slash (/olra/agentic) — so the directory reading is added as second candidate.
+  function csvUrls() {
     var param = new URLSearchParams(location.search).get("csv");
-    if (param) return param;
-    var path = location.pathname;
-    var last = path.split("/").pop();
-    if (!/\/$/.test(path) && last && !/\.[a-z0-9]+$/i.test(last)) path += "/";
-    return path.replace(/[^\/]*$/, "") + DEFAULT_CSV;
+    if (param) return [param];
+    var urls = [new URL(DEFAULT_CSV, location.href).href];
+    var path = location.pathname, last = path.split("/").pop();
+    if (last && !/\.[a-z0-9]+$/i.test(last)) {
+      var asDir = new URL(DEFAULT_CSV, location.origin + path + "/").href;
+      if (urls.indexOf(asDir) < 0) urls.push(asDir);
+    }
+    return urls;
   }
   function load() {
-    var url = csvUrl(), fb = $("#olra-a-fallback");
-    function start(text, liveError) {
+    var urls = csvUrls(), fb = $("#olra-a-fallback");
+    function start(text, url, liveError) {
       try { M = buildModel(parseCSV(text, detectDelim(text))); }
       catch (err) {
         $("#status").className = "status warn";
@@ -878,7 +886,7 @@ ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; tes
       var st = $("#status");
       if (liveError) {
         st.className = "status warn";
-        st.innerHTML = "Could not load <code>" + esc(url) + "</code> (" + esc(liveError) + "). Showing the embedded snapshot of " +
+        st.innerHTML = "Could not load the controls CSV (" + esc(liveError) + "). Showing the embedded snapshot of " +
           esc(fb.dataset.snapshot) + " instead, so recent edits to the CSV are not visible.";
       } else {
         var extra = M.extras.length ? " · extra columns: " + M.extras.map(function (e) { return esc(e.h); }).join(", ") : "";
@@ -888,13 +896,21 @@ ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; tes
       renderControls();
       render();
     }
-    fetch(url, { cache: "no-cache" })
-      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
-      .then(function (text) {
-        if (!/control/i.test(text.replace(/^﻿/, "").split(/\r?\n/)[0] || "")) throw new Error("no Control header");
-        start(text, null);
-      })
-      .catch(function (err) { start(fb.textContent.trim(), err.message || "fetch failed"); });
+    var errors = [];
+    function attempt(i) {
+      if (i >= urls.length) { start(fb.textContent.trim(), null, errors.join("; ")); return; }
+      fetch(urls[i], { cache: "no-cache" })
+        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
+        .then(function (text) {
+          if (!/control/i.test(text.replace(/^\uFEFF/, "").split(/\r?\n/)[0] || "")) throw new Error("no Control header");
+          start(text, urls[i], null);
+        })
+        .catch(function (err) {
+          errors.push(urls[i] + ": " + (err.message || "fetch failed"));
+          attempt(i + 1);
+        });
+    }
+    attempt(0);
   }
 
   readHash();
