@@ -141,7 +141,7 @@ select{padding-inline-end:6px}
 
 /* --- table --- */
 .tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius)}
-table.controls{width:100%;border-collapse:collapse;min-width:960px}
+table.controls{width:100%;border-collapse:collapse;min-width:1040px}
 .controls th,.controls td{text-align:start;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--border)}
 .controls tbody tr:last-child td{border-bottom:0}
 .controls th{font-size:13px;font-weight:600;color:var(--secondary);white-space:nowrap;background:var(--panel)}
@@ -151,7 +151,7 @@ table.controls{width:100%;border-collapse:collapse;min-width:960px}
 .controls th[aria-sort=descending] button::after{content:"\2193";opacity:1}
 .controls tbody tr:hover{background:var(--hl)}
 td.ctl{font-family:var(--prose);font-size:17px;line-height:1.45;color:var(--content);min-width:280px}
-td.xtra{font-size:14px;min-width:160px}
+td.xtra{font-size:14px;min-width:160px;white-space:nowrap}
 .asi{font-weight:700;white-space:nowrap}
 .cat{display:block;font-size:13px;color:var(--secondary);line-height:1.3;font-weight:400}
 .owner-list{display:flex;flex-direction:column;gap:3px}
@@ -390,7 +390,10 @@ ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; tes
 (function () {
   "use strict";
 
-  var DEFAULT_CSV = "olra-a-controls.csv";
+  // Absolute site path: this page is also served without the .html extension
+  // (/olra/olra-a-navigator), and a relative path would then resolve one level
+  // too deep and 404, falling back to the embedded snapshot.
+  var DEFAULT_CSV = "/olra/olra-a-controls.csv";
 
   var ROLES = [
     { id: "AIC", name: "AI Consumer",            match: /consumer/i },
