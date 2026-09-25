@@ -267,8 +267,8 @@ button.cell:hover{border-color:var(--secondary)}
     explore where ownership concentrates, or switch on <strong>Tabletop mode</strong> to hide the owners and
     discuss them first.</p>
 
-  <p class="intro">It comes out close to even: <strong>17</strong> of the 46 controls sit primarily with the
-    Orchestration Provider and <strong>16</strong> with the Application Provider. Orchestration runs the
+  <p class="intro" id="split">It comes out close to even: <strong>17</strong> of the 46 controls sit primarily
+    with the Orchestration Provider and <strong>16</strong> with the Application Provider. Orchestration runs the
     machinery &mdash; logging, identity, isolation, containment &mdash; while the application layer decides how
     tight it is set.</p>
 
@@ -707,6 +707,26 @@ ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; tes
 
   /* ---------- render ---------- */
   function stat(n, label) { return '<div class="stat"><b>' + n + "</b><span>" + esc(label) + "</span></div>"; }
+  /* The opening "it comes out close to even" sentence is derived from the data, never typed:
+     a reallocation in the CSV must not leave a stale claim in the prose above the table. */
+  function renderSplit() {
+    var el = $("#split"); if (!el || !M) return;
+    var count = {};
+    M.items.forEach(function (it) { (it.p.ids.length ? it.p.ids : ["?"]).slice(0, 1)
+      .forEach(function (id) { count[id] = (count[id] || 0) + 1; }); });
+    var rank = Object.keys(count).sort(function (a, b) { return count[b] - count[a]; });
+    if (rank.length < 2) { el.hidden = true; return; }
+    var a = rank[0], b = rank[1], n = M.items.length;
+    var even = count[a] - count[b] <= Math.max(2, Math.round(n * 0.05));
+    el.hidden = false;
+    el.innerHTML = (even ? "It comes out close to even: " : "Ownership concentrates: ") +
+      "<strong>" + count[a] + "</strong> of the " + n + " controls sit primarily with the " +
+      esc((R[a] || {}).name || a) + " and <strong>" + count[b] + "</strong> with the " +
+      esc((R[b] || {}).name || b) + "." +
+      (a === "OSP" && b === "AP"
+        ? " Orchestration runs the machinery &mdash; logging, identity, isolation, containment &mdash; while the application layer decides how tight it is set."
+        : "");
+  }
   function renderStats(list) {
     var html = stat(list.length, "of " + M.items.length + " controls shown");
     if (has("tag")) {
@@ -898,6 +918,7 @@ ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; tes
         return;
       }
       M.items.forEach(function (it) { if (it.id && !catOf[it.id]) catOf[it.id] = it.category; });
+      renderSplit();
       FILTERS = buildFilters();
       Object.keys(state.f).forEach(function (k) { if (!FILTERS.some(function (f) { return f.key === k; })) delete state.f[k]; });
       if (!FILTERS.some(function (f) { return f.key === state.pivot; }) && FILTERS[0]) state.pivot = FILTERS[0].key;
