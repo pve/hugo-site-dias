@@ -361,52 +361,52 @@ button.cell:hover{border-color:var(--secondary)}
 
 <script type="text/csv" id="olra-a-fallback" data-snapshot="2026-09-25">
 ASI,Category,Control,Tag,PrimaryOwner,SecondaryOwner,Phase,SkillSet
-ASI01,Agent Goal Hijack,Treat all NL input as untrusted; route through injection safeguards,Aspirational,Application Provider,Orchestration Provider,Design,Engineering
-ASI01,Agent Goal Hijack,Least privilege + human approval for high-impact/goal-changing actions,Aspirational,AI Consumer,Application Provider,Deploy,Governance
-ASI01,Agent Goal Hijack,Lock/version-control system prompts and goal definitions,Operational,Application Provider,Orchestration Provider,Design,Engineering
-ASI01,Agent Goal Hijack,Runtime validation of user/agent intent; pause on deviation,Aspirational,Application Provider,Orchestration Provider,Design,Architecture
-ASI01,Agent Goal Hijack,Comprehensive logging + behavioral baseline,Operational,Orchestration Provider,Cloud Service Provider,Runtime,Detection
-ASI02,Tool Misuse and Exploitation,Scope tool permissions to least privilege per task,Operational,Application Provider,Orchestration Provider,Deploy,Engineering
-ASI02,Tool Misuse and Exploitation,MCP server provenance verification (ties to ASI04),Aspirational,Application Provider,Orchestration Provider,Deploy,Governance
-ASI02,Tool Misuse and Exploitation,Rate-limit / cap costly or destructive tool invocations,Operational,Application Provider,Cloud Service Provider,Deploy,Engineering
-ASI02,Tool Misuse and Exploitation,Log every tool call with arguments and result,Operational,Orchestration Provider,Application Provider,Runtime,Detection
-ASI02,Tool Misuse and Exploitation,Default-deny network egress; allowlist outbound destinations for tools and code execution,Operational,Cloud Service Provider,Application Provider,Deploy,Engineering
-ASI03,Identity and Privilege Abuse,Distinct governed non-human identity per agent (closes the attribution gap),Aspirational,Orchestration Provider,Cloud Service Provider,Design,Architecture
-ASI03,Identity and Privilege Abuse,Short-lived scoped credentials (no standing high-privilege access),Operational,Cloud Service Provider,Orchestration Provider,Deploy,Engineering
-ASI03,Identity and Privilege Abuse,Delegation-chain and role-inheritance auditing,Aspirational,Orchestration Provider,Application Provider,Runtime,Detection
-ASI03,Identity and Privilege Abuse,Architectural review of permission boundaries (Amazon-case pattern),Operational,AI Consumer,Application Provider,Design,Architecture
-ASI04,Agentic Supply Chain Vulnerabilities,Sandbox/isolate agent execution environment,Operational,Cloud Service Provider,Orchestration Provider,Deploy,Engineering
-ASI04,Agentic Supply Chain Vulnerabilities,Model/data provenance attestation before use,Aspirational,Model Provider,Orchestration Provider,Deploy,Governance
-ASI04,Agentic Supply Chain Vulnerabilities,"SBOM/AIBOM for tools, MCP servers, dependencies",Aspirational,Application Provider,Orchestration Provider,Deploy,Engineering
-ASI04,Agentic Supply Chain Vulnerabilities,Curated registries / block untrusted sources for skills & MCP servers,Aspirational,Application Provider,Orchestration Provider,Deploy,Governance
-ASI04,Agentic Supply Chain Vulnerabilities,Continuous behavior monitoring for anomalies post-deployment,Operational,Orchestration Provider,Cloud Service Provider,Runtime,Detection
-ASI05,Unexpected Code Execution (RCE),"Sandboxed execution, never as root",Operational (inferred),Cloud Service Provider,Application Provider,Deploy,Engineering
-ASI05,Unexpected Code Execution (RCE),Ban eval/unsafe interpreters in production; taint-tracking,Operational (inferred),Application Provider,Orchestration Provider,Design,Engineering
-ASI05,Unexpected Code Execution (RCE),Separate code generation from execution with validation gates,Operational (inferred),Application Provider,Orchestration Provider,Design,Architecture
-ASI05,Unexpected Code Execution (RCE),Human approval for elevated/production runs,Aspirational (inferred),AI Consumer,Application Provider,Runtime,Governance
-ASI05,Unexpected Code Execution (RCE),"Execution limits: time/CPU/memory caps, filesystem restricted to a working directory",Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
-ASI06,Memory & Context Poisoning,Scan every memory write for malicious/sensitive content,Operational (inferred),Orchestration Provider,Application Provider,Runtime,Detection
-ASI06,Memory & Context Poisoning,Memory segmentation per user/tenant; wipe between sessions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
-ASI06,Memory & Context Poisoning,Provenance + trust-weighted retrieval; decay unverified entries,Aspirational (inferred),Orchestration Provider,Data Provider,Runtime,Governance
-ASI06,Memory & Context Poisoning,No auto-reingestion of agent's own output as trusted memory,Operational (inferred),Application Provider,Orchestration Provider,Design,Engineering
-ASI07,Insecure Inter-Agent Communication,End-to-end encryption + mutual auth between agents,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
-ASI07,Insecure Inter-Agent Communication,Message signing + integrity/semantic validation,Aspirational (inferred),Application Provider,Orchestration Provider,Runtime,Architecture
-ASI07,Insecure Inter-Agent Communication,Attested agent registries; signed agent cards,Aspirational (inferred),Orchestration Provider,Application Provider,Deploy,Governance
-ASI07,Insecure Inter-Agent Communication,Protocol version pinning; reject downgrade attempts,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
-ASI08,Cascading Failures,Zero-trust design assuming any component can fail,Operational (inferred),Application Provider,Orchestration Provider,Design,Architecture
-ASI08,Cascading Failures,Blast-radius guardrails: quotas circuit breakers progress caps,Operational (inferred),Application Provider,Orchestration Provider,Deploy,Engineering
-ASI08,Cascading Failures,JIT one-time-use tool credentials per agent run,Operational (inferred),Cloud Service Provider,Orchestration Provider,Runtime,Engineering
-ASI08,Cascading Failures,Tamper-evident logging + lineage metadata for forensics,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
-ASI09,Human-Agent Trust Exploitation,Explicit multi-step confirmation before high-impact/sensitive actions,Aspirational (inferred),AI Consumer,Application Provider,Runtime,Governance
-ASI09,Human-Agent Trust Exploitation,Immutable audit logs of queries and actions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
-ASI09,Human-Agent Trust Exploitation,Plain-language risk summary + user flag/report path,Operational (inferred),Application Provider,AI Consumer,Design,Governance
-ASI09,Human-Agent Trust Exploitation,Content provenance metadata on recommendations,Aspirational (inferred),Orchestration Provider,Model Provider,Runtime,Governance
-ASI10,Rogue Agents,Immutable signed audit logs of all agent actions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
-ASI10,Rogue Agents,Trust zones + restricted execution environments (sandboxing),Operational (inferred),Cloud Service Provider,Orchestration Provider,Design,Architecture
-ASI10,Rogue Agents,Kill-switches + credential revocation for rapid containment,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
-ASI10,Rogue Agents,Watchdog agents / behavioral-baseline drift detection,Aspirational (inferred),Application Provider,Orchestration Provider,Runtime,Detection
-ASI10,Rogue Agents,Network telemetry of agent traffic (flows + DNS) collected outside the agent harness,Operational (inferred),Cloud Service Provider,Orchestration Provider,Runtime,Detection
-ASI10,Rogue Agents,Backups and restore outside the agent's credential scope; test the restore,Operational (inferred),AI Consumer,Application Provider,Design,Architecture
+ASI01,Agent Goal Hijack,ASI01.1 — Treat all NL input as untrusted; route through injection safeguards,Aspirational,Application Provider,Orchestration Provider,Design,Engineering
+ASI01,Agent Goal Hijack,ASI01.2 — Least privilege + human approval for high-impact/goal-changing actions,Aspirational,AI Consumer,Application Provider,Deploy,Governance
+ASI01,Agent Goal Hijack,ASI01.3 — Lock/version-control system prompts and goal definitions,Operational,Application Provider,Orchestration Provider,Design,Engineering
+ASI01,Agent Goal Hijack,ASI01.4 — Runtime validation of user/agent intent; pause on deviation,Aspirational,Application Provider,Orchestration Provider,Design,Architecture
+ASI01,Agent Goal Hijack,ASI01.5 — Comprehensive logging + behavioral baseline,Operational,Orchestration Provider,Cloud Service Provider,Runtime,Detection
+ASI02,Tool Misuse and Exploitation,ASI02.1 — Scope tool permissions to least privilege per task,Operational,Application Provider,Orchestration Provider,Deploy,Engineering
+ASI02,Tool Misuse and Exploitation,ASI02.2 — MCP server provenance verification (ties to ASI04),Aspirational,Application Provider,Orchestration Provider,Deploy,Governance
+ASI02,Tool Misuse and Exploitation,ASI02.3 — Rate-limit / cap costly or destructive tool invocations,Operational,Application Provider,Cloud Service Provider,Deploy,Engineering
+ASI02,Tool Misuse and Exploitation,ASI02.4 — Log every tool call with arguments and result,Operational,Orchestration Provider,Application Provider,Runtime,Detection
+ASI02,Tool Misuse and Exploitation,ASI02.5 — Default-deny network egress; allowlist outbound destinations for tools and code execution,Operational,Cloud Service Provider,Application Provider,Deploy,Engineering
+ASI03,Identity and Privilege Abuse,ASI03.1 — Distinct governed non-human identity per agent (closes the attribution gap),Aspirational,Orchestration Provider,Cloud Service Provider,Design,Architecture
+ASI03,Identity and Privilege Abuse,ASI03.2 — Short-lived scoped credentials (no standing high-privilege access),Operational,Cloud Service Provider,Orchestration Provider,Deploy,Engineering
+ASI03,Identity and Privilege Abuse,ASI03.3 — Delegation-chain and role-inheritance auditing,Aspirational,Orchestration Provider,Application Provider,Runtime,Detection
+ASI03,Identity and Privilege Abuse,ASI03.4 — Architectural review of permission boundaries (Amazon-case pattern),Operational,AI Consumer,Application Provider,Design,Architecture
+ASI04,Agentic Supply Chain Vulnerabilities,ASI04.1 — Sandbox/isolate agent execution environment,Operational,Cloud Service Provider,Orchestration Provider,Deploy,Engineering
+ASI04,Agentic Supply Chain Vulnerabilities,ASI04.2 — Model/data provenance attestation before use,Aspirational,Model Provider,Orchestration Provider,Deploy,Governance
+ASI04,Agentic Supply Chain Vulnerabilities,"ASI04.3 — SBOM/AIBOM for tools, MCP servers, dependencies",Aspirational,Application Provider,Orchestration Provider,Deploy,Engineering
+ASI04,Agentic Supply Chain Vulnerabilities,ASI04.4 — Curated registries / block untrusted sources for skills & MCP servers,Aspirational,Application Provider,Orchestration Provider,Deploy,Governance
+ASI04,Agentic Supply Chain Vulnerabilities,ASI04.5 — Continuous behavior monitoring for anomalies post-deployment,Operational,Orchestration Provider,Cloud Service Provider,Runtime,Detection
+ASI05,Unexpected Code Execution (RCE),"ASI05.1 — Sandboxed execution, never as root",Operational (inferred),Cloud Service Provider,Application Provider,Deploy,Engineering
+ASI05,Unexpected Code Execution (RCE),ASI05.2 — Ban eval/unsafe interpreters in production; taint-tracking,Operational (inferred),Application Provider,Orchestration Provider,Design,Engineering
+ASI05,Unexpected Code Execution (RCE),ASI05.3 — Separate code generation from execution with validation gates,Operational (inferred),Application Provider,Orchestration Provider,Design,Architecture
+ASI05,Unexpected Code Execution (RCE),ASI05.4 — Human approval for elevated/production runs,Aspirational (inferred),AI Consumer,Application Provider,Runtime,Governance
+ASI05,Unexpected Code Execution (RCE),"ASI05.5 — Execution limits: time/CPU/memory caps, filesystem restricted to a working directory",Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
+ASI06,Memory & Context Poisoning,ASI06.1 — Scan every memory write for malicious/sensitive content,Operational (inferred),Orchestration Provider,Application Provider,Runtime,Detection
+ASI06,Memory & Context Poisoning,ASI06.2 — Memory segmentation per user/tenant; wipe between sessions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
+ASI06,Memory & Context Poisoning,ASI06.3 — Provenance + trust-weighted retrieval; decay unverified entries,Aspirational (inferred),Orchestration Provider,Data Provider,Runtime,Governance
+ASI06,Memory & Context Poisoning,ASI06.4 — No auto-reingestion of agent's own output as trusted memory,Operational (inferred),Application Provider,Orchestration Provider,Design,Engineering
+ASI07,Insecure Inter-Agent Communication,ASI07.1 — End-to-end encryption + mutual auth between agents,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
+ASI07,Insecure Inter-Agent Communication,ASI07.2 — Message signing + integrity/semantic validation,Aspirational (inferred),Application Provider,Orchestration Provider,Runtime,Architecture
+ASI07,Insecure Inter-Agent Communication,ASI07.3 — Attested agent registries; signed agent cards,Aspirational (inferred),Orchestration Provider,Application Provider,Deploy,Governance
+ASI07,Insecure Inter-Agent Communication,ASI07.4 — Protocol version pinning; reject downgrade attempts,Operational (inferred),Orchestration Provider,Cloud Service Provider,Deploy,Engineering
+ASI08,Cascading Failures,ASI08.1 — Zero-trust design assuming any component can fail,Operational (inferred),Application Provider,Orchestration Provider,Design,Architecture
+ASI08,Cascading Failures,ASI08.2 — Blast-radius guardrails: quotas circuit breakers progress caps,Operational (inferred),Application Provider,Orchestration Provider,Deploy,Engineering
+ASI08,Cascading Failures,ASI08.3 — JIT one-time-use tool credentials per agent run,Operational (inferred),Cloud Service Provider,Orchestration Provider,Runtime,Engineering
+ASI08,Cascading Failures,ASI08.4 — Tamper-evident logging + lineage metadata for forensics,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
+ASI09,Human-Agent Trust Exploitation,ASI09.1 — Explicit multi-step confirmation before high-impact/sensitive actions,Aspirational (inferred),AI Consumer,Application Provider,Runtime,Governance
+ASI09,Human-Agent Trust Exploitation,ASI09.2 — Immutable audit logs of queries and actions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
+ASI09,Human-Agent Trust Exploitation,ASI09.3 — Plain-language risk summary + user flag/report path,Operational (inferred),Application Provider,AI Consumer,Design,Governance
+ASI09,Human-Agent Trust Exploitation,ASI09.4 — Content provenance metadata on recommendations,Aspirational (inferred),Orchestration Provider,Model Provider,Runtime,Governance
+ASI10,Rogue Agents,ASI10.1 — Immutable signed audit logs of all agent actions,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
+ASI10,Rogue Agents,ASI10.2 — Trust zones + restricted execution environments (sandboxing),Operational (inferred),Cloud Service Provider,Orchestration Provider,Design,Architecture
+ASI10,Rogue Agents,ASI10.3 — Kill-switches + credential revocation for rapid containment,Operational (inferred),Orchestration Provider,Cloud Service Provider,Runtime,Engineering
+ASI10,Rogue Agents,ASI10.4 — Watchdog agents / behavioral-baseline drift detection,Aspirational (inferred),Application Provider,Orchestration Provider,Runtime,Detection
+ASI10,Rogue Agents,ASI10.5 — Network telemetry of agent traffic (flows + DNS) collected outside the agent harness,Operational (inferred),Cloud Service Provider,Orchestration Provider,Runtime,Detection
+ASI10,Rogue Agents,ASI10.6 — Backups and restore outside the agent's credential scope; test the restore,Operational (inferred),AI Consumer,Application Provider,Design,Architecture
 </script>
 
 <script>
