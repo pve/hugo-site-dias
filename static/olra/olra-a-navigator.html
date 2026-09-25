@@ -262,8 +262,10 @@ button.cell:hover{border-color:var(--secondary)}
 
   <p class="intro">Who does what when an AI agent goes wrong? OLRA-A takes the ten threat categories of the
     OWASP Top 10 for Agentic Applications (ASI01–ASI10), keeps the highest-value mitigations for each,
-    and allocates every control to one of six AI roles. Use it to explore where ownership
-    concentrates, or switch on <strong>Tabletop mode</strong> to hide the owners and discuss them first.</p>
+    and allocates every control to one of six AI roles. A role owns a control when it can
+    <em>promise</em> it about its own behaviour; nobody can promise on another party&rsquo;s behalf. Use it to
+    explore where ownership concentrates, or switch on <strong>Tabletop mode</strong> to hide the owners and
+    discuss them first.</p>
 
   <details class="legend">
     <summary>How to read this</summary>
@@ -273,11 +275,21 @@ button.cell:hover{border-color:var(--secondary)}
         <p class="prose">A draft built for awareness and tabletop discussion, not a compliance checklist. It runs
           side by side with OLRA (original), which maps the OWASP Top 10 for LLM Applications. Same six roles,
           reframed agentically.</p>
-        <h3>Owners</h3>
+                <h3>Owners</h3>
         <ul>
           <li><strong>Primary owner</strong>: the role that implements the control.</li>
           <li><strong>Secondary owner</strong>: the role that shares or supports it.</li>
         </ul>
+        <h3>How a control gets its owner</h3>
+        <p class="prose">By promise, which is why some allocations may surprise you. Operating an approval
+          gate belongs to the <strong>AI Consumer</strong>: choosing a provider whose gate is granular enough
+          to steer with is the Consumer&rsquo;s job, while the <strong>Application Provider</strong> promises a
+          gate of that granularity rather than promising to approve. The <strong>Model Provider</strong> hands
+          over the trained model; running it is inferencing, which belongs to the <strong>Orchestration
+          Provider</strong> &mdash; one company often fills both roles. And where both could claim a control,
+          the <strong>Application Provider</strong> comes before the <strong>Orchestration Provider</strong>,
+          because that is where user risk levels are derived from business risk, while an orchestration
+          platform serves many applications without insight into any one of them.</p>
       </div>
       <div>
         <h3>Tag: how provable is it?</h3>
