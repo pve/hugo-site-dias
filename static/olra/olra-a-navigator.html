@@ -281,15 +281,14 @@ button.cell:hover{border-color:var(--secondary)}
           <li><strong>Secondary owner</strong>: the role that shares or supports it.</li>
         </ul>
         <h3>How a control gets its owner</h3>
-        <p class="prose">By promise, which is why some allocations may surprise you. Operating an approval
-          gate belongs to the <strong>AI Consumer</strong>: choosing a provider whose gate is granular enough
-          to steer with is the Consumer&rsquo;s job, while the <strong>Application Provider</strong> promises a
-          gate of that granularity rather than promising to approve. The <strong>Model Provider</strong> hands
-          over the trained model; running it is inferencing, which belongs to the <strong>Orchestration
-          Provider</strong> &mdash; one company often fills both roles. And where both could claim a control,
-          the <strong>Application Provider</strong> comes before the <strong>Orchestration Provider</strong>,
-          because that is where user risk levels are derived from business risk, while an orchestration
-          platform serves many applications without insight into any one of them.</p>
+        <ul>
+          <li><strong>Approval gates</strong> belong to the AI Consumer, who chooses a provider whose gate is
+            granular enough to steer with. The Application Provider promises that granularity, not the approval.</li>
+          <li><strong>Models versus inferencing</strong>: the Model Provider hands over the trained model; running
+            it belongs to the Orchestration Provider. One company often fills both roles.</li>
+          <li><strong>Application before Orchestration</strong> where both could claim a control: that is where
+            user risk levels are derived from business risk, while a platform serves many applications.</li>
+        </ul>
       </div>
       <div>
         <h3>Tag: how provable is it?</h3>
