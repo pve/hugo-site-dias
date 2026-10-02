@@ -3,6 +3,9 @@ date: '2025-03-12T13:13:35Z'
 draft: false
 title: 'Introduction to Risk'
 weight: 640
+notes: |
+    Check concept names (asset, threat, availability/confidentiality/integrity, mitigation, etc.) against Shostack's threat-modeling terminology: https://shostack.org/resources/threat-modeling.html
+    Also cross-check against Securosis' Universal Cloud Threat Model: https://securosis.com/research/papers/the-universal-cloud-threat-model-for-cloud-native-security/UCTM_v_1.0.pdf
 ---
 
 Risk is the flip side of value. For everything that is of value, there can be circumstances threatening that value.
