@@ -10,7 +10,6 @@ notes: |
     - optionally add a forward-pointer in unit 53 itself, after its closing line, pointing here for the accountability/enforcement angle
     - Unit 72 draft: Act III-link (feedback-loop, unit 36) en Act IV-link (power-mediation) nog niet verwerkt in tekst — stonden alleen in cross-act framing plan.
 ---
-## Controls
 
 Once we have assets and risks identified, we think of ways to minimize the risks that we can't avoid or accept.
 Those ways are called controls or measures.
@@ -41,7 +40,7 @@ That "somewhere else" is a security governance body that has asked the identity 
 In its turn, that security governance body was asked to promise that it would ask these types of promises by a higher management layer.
 In its turn that may have been a management board decision to enter into a contract in which one of the promises was to abide by a certain compliance framework.
 This chain of promises relates to what we saw earlier in "Delegation Domino".
-In that chain of promises you can also identify the intermediary actors that propagate power from the board down to the technology.
+In that chain of promises you can also identify the intermediary actors that channel power from the board down to the technology.
 
 Technical controls (such as encryption and access control) are therefore not the only important ones.
 Many controls serve to inform and instruct other controls.
