@@ -222,3 +222,4 @@ And in a similar way, Aaron is an intermediary for Betty and her company.
 You may find that concocted, and operationally, Alice talks directly to Bob.
 
 Nevertheless, chaining promises like dominoes has worked for me in quite a few situations.
+It works not just for cooperation, but also for organizing and enforcing controls, as we will see later.

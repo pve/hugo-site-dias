@@ -2,7 +2,11 @@
 date: '2025-09-01T19:48:55Z'
 draft: false
 title: 'Data, Risk, or Controls: where to start?'
-weight: 690
+weight: 731
+notes: |
+    Reordered 2026 (Act V flow review): now sits after Controls (72/72a/72b) and Compliance (71), right before the skills pair (72c/78).
+    Role: teaser into Risk management at scale (70) and the opschalen cluster (68/70/73) that follows later.
+    Some circularity is unavoidable here — part of the audience needs the concrete worked examples (Kaminski/zero-trust, already seen) to feel the need for scaling before DaRiCo's own synthesis lands. Add an explicit backward reference to those cases to make that work rather than fight it.
 ---
 
 Where do you start your IT security journey?

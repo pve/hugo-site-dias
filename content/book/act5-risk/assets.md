@@ -133,6 +133,8 @@ But if your data are the crown jewels of your organization, or give access to na
 
 When you have trouble quantifying probabilities, especially for malicious actor events, I find it useful to review the money and resources that the attacker is willing to spend on you, in addition to your value at risk.
 But beware organized crime, their operations are highly automated and well tuned, and you might be cheaper to compromise than you know.
+And agentic coding is drastically changing the equation too.
+AI agents autonomously have found 'zero-day' security bugs in code and exploited them, though that may still take significant AI capacity.
 
 Finally, consider the special category of risks that Nassim Taleb calls "Black Swan" events, things that are so rare but so disruptive that statistics is hardly useful. Think of stock market crashes, or political revolutions.
 How to prepare for those would be a chapter in itself.

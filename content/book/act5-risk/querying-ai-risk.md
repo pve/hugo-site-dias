@@ -4,6 +4,8 @@ draft: false
 title: 'What about AI Risks?'
 weight: 740
 note: additional text needed. Damage, etc.
+notes: |
+    Act V flow review 2026: weight/position unchanged, but needs an explicit forward-pointer at the close into Autonomy (79) — AI risk is one concrete instance of "control concentrated in a few providers"; autonomy zooms the same problem out to the geopolitical scale. Not yet written.
 ---
 
 <!-- STRUCTURE NOTE (2026-08-02): 74/75 are the act's "Road Back" beat (hero's-journey terms) — the threat regroups and returns in a new shape just as the reader has mastered the old controls (70-73). 74 should open by naming that turn explicitly, not just extend the risk checklist to a new asset class. -->

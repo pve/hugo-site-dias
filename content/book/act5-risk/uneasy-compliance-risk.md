@@ -3,7 +3,11 @@ date: '2025-08-22T09:18:35Z'
 draft: false
 title: 'Compliance is a Risk'
 description: "Target was PCI-DSS compliant and still lost 40 million card numbers — compliance forces risk management onto reluctant actors, but never guarantees security."
-weight: 710
+weight: 729
+notes: |
+    Reordered 2026 (Act V flow review): now sits right after Controls (72, 72a, 72b), not before.
+    Reason: you need controls explained first, before you can show compliance is itself a new/distinct category of risk — not just a driver of controls.
+    Text already lands this (closing line: "being compliant also involves a risk decision") — check the opening still reads naturally now that it follows controls rather than preceding them.
 ---
 
 For people who care about risk in IT, compliance is a mixed blessing.

@@ -2,7 +2,12 @@
 date: '2025-05-02T08:07:42Z'
 draft: false
 title: 'New skills needed'
-weight: 780
+weight: 733
+notes: |
+    Reordered 2026 (Act V flow review): paired with 72c (lawyers-need-understand-tech) as a skills sub-cluster, right after DaRiCo (69), before the opschalen cluster (68/70/73) and before AI (74/75).
+    Scope is mostly cloud-general skills, not AI-specific — consider retitling to make that explicit, since AI (74/75) now reads as a later, deeper-dive application of the same skills gap, not a restatement.
+    Add a forward-pointer to 74/75 (AI) at the close, naming it as the next, sharper instance of this gap.
+    Order vs. 72c still open — candidate: 72c (concrete, lawyer-specific) first, this unit generalizes after it.
 ---
 
 Understanding the technical architecture of digital infrastructures is critically important, in particular for *non-technical* professionals.

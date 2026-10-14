@@ -2,7 +2,10 @@
 date: '2025-05-27T19:58:41Z'
 draft: false
 title: 'Lean Risk and Economics'
-weight: 680
+weight: 735
+notes: |
+    Reordered 2026 (Act V flow review): moved from the risk-vocabulary cluster into the opschalen (scaling) cluster, now second in it — after Risk management at scale (70, GAP), before The Board Pitch (73).
+    Needs an opening bridge from 70 just before it, not from the skills pair directly.
 ---
 From the moment a security vulnerability is discovered, it represents a negative value to its potential victims.
 When it gets exploited, it can lead to loss of data or loss of integrity of the data.

@@ -2,7 +2,7 @@
 date: '2026-07-23T00:00:00Z'
 draft: true
 title: 'Risk management at scale'
-weight: 700
+weight: 734
 ---
 
 <!-- NOTES DRAFT — unit 70 in book-sequence.md. From ideas AR-dec-20 (treatment vs management) + AR-dec-22 (policy–execution gap). Write as a decision scene. Not prose yet. -->
