@@ -1,7 +1,7 @@
 ---
 date: '2025-05-19T21:39:41Z'
 draft: false
-title: 'Controls'
+title: 'Control Promises'
 weight: 720
 notes: |
     Pick-up from Delegation Domino (unit 53, act4-power/promise-multiparty.md, published):
@@ -25,12 +25,12 @@ Information processing is about accessing data, processing data, updating or mod
 Naturally, the next question then is: who is allowed to do each of these?
 This is at the core of controlling availability, integrity and confidentiality risks.
 
-The promise is: we promise to allow the right identities to do these things, and we promise to deny other identities to do these things.
+This translates to: we promise to allow the right identities to do these things, and we promise to deny other identities to do these things.
 
-All these promises refer to some kind of control boundary
+All these promises refer to some kind of control boundary.
 For access control, this would be a login screen or a parameter of an API call, and it sounds like: "we promise to only allow access to those with the proper identity and access rights".
 The complication then is how the control knows what those rights are.
-For that it has to rely on promises made somewhere else, for example "I promise to timely expire identities of people who have left the organization."
+For that, it has to rely on promises made somewhere else, for example "I promise to timely expire identities of people who have left the organization."
 
 A related promise of an identity system is: "I refuse to set or use passwords that do not conform to the password policy."
 But where does that promise come from?
@@ -49,7 +49,7 @@ For information classified as top secret, you probably require encryption and sp
 For systems labelled as production you require different change management than for development systems.
 
 To assess how effective controls are, you can view them as elements of a feedback loop.
-They serve to maintain a certain state: minimal risk.
+They serve to maintain a certain state: minimal risk at acceptable cost.
 
 For any control, you can ask these questions:
 
