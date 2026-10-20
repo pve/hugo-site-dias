@@ -18,7 +18,7 @@ note: |
   promise -> authorization each pulls in a bigger, more external piece of
   shared infrastructure, and the foothold compounds because the dependencies
   compound. Identity and agency are separate directory lookups; trust also
-  accrues with interaction length (prisoner's dilemma).
+  accrues with interaction length (iterated prisoner's dilemma).
   Placed as unit 11b, act1-foundations/identity-escalation.md, weight 117 -
   directly after 11a (identity: the control point). 11a stays at the "who does
   the system believe you are" level; this unit is the mechanism layer 11a

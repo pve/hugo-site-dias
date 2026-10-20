@@ -116,7 +116,7 @@ But the same example shows what autarky costs.
 Huawei's best chips still deliver a fraction of the compute power of Nvidia's current generation, so the price of independence is paid in performance, and the captive home market that makes the strategy viable is also what insulates it from competitive pressure. It is autonomy bought with a state mandate and a quality gap — a reminder that "build it yourself" is not a free control.
 The lesson for a government buyer is not to copy the chip factory, but to copy the move underneath it: organizing demand deliberately to keep a credible domestic alternative alive.
 
-### The repeated prisoner's dilemma
+### The iterated prisoner's dilemma
 
 Game theory offers a useful frame for what all of this adds up to.
 

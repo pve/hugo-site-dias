@@ -26,7 +26,7 @@ notes: |
 
     Autarky is not the answer. It will reduce productivity and therefore wealth.
 
-    Game theory tells us another approach, via the prisoners dilemma: you need credible retaliation.
+    Game theory tells us another approach, via the iterated Prisoner's Dilemma: you need credible retaliation.
 
     Cross-ref (units-notes/unit-61.md): Gartner's three-part cloud-broker
     definition (aggregation, integration, customization,
