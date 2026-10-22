@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentic AI Threat Modelling, In-Company</title>
+<meta name="description" content="One day, your own agentic system, and a responsibility matrix you can hand to an auditor. In-company workshop by Dr. Peter van Eijk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d2330;
+    --muted: #5a6475;
+    --accent: #0b5cad;
+    --accent-fg: #ffffff;
+    --card: #f3f6fa;
+    --line: #d9e0ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11151c;
+      --fg: #e8ecf3;
+      --muted: #a2adbf;
+      --accent: #5aa5ec;
+      --accent-fg: #0b1018;
+      --card: #1a212c;
+      --line: #2b3545;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Spectral', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  h1, h2, h3, .btn, .stat-n, .step-n {
+    font-family: 'Titillium Web', system-ui, sans-serif;
+  }
+  main { max-width: 62rem; margin: 0 auto; padding: 0 1rem 3rem; }
+  section { padding: 2.5rem 0 0; }
+  .hero { padding-top: 3.5rem; }
+  .eyebrow {
+    font-family: 'Titillium Web', system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .85rem;
+    color: var(--accent);
+    margin: 0 0 .75rem;
+  }
+  h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; margin: 0 0 1rem; font-weight: 700; }
+  .lede { font-size: 1.25rem; color: var(--muted); max-width: 44rem; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.6rem; margin: 0 0 1rem; font-weight: 700; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-fg);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+  }
+  .btn:hover, .btn:focus { filter: brightness(1.1); }
+  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: .6rem;
+    padding: 1.1rem 1.25rem;
+  }
+  .card p { margin: 0; }
+  .stat-n { font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1.1; margin: 0 0 .35rem; }
+  .step-n { font-size: .9rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin: 0 0 .3rem; font-weight: 600; }
+  .step h3 { margin: 0 0 .4rem; font-size: 1.25rem; }
+  ul { padding-left: 1.2rem; margin: 0; }
+  li { margin: .35rem 0; }
+  .note { font-size: .95rem; color: var(--muted); margin-top: 1rem; }
+  .cta { text-align: center; padding: 3rem 0 0; }
+  .cta p { margin: 0 0 1.25rem; color: var(--muted); }
+  footer { max-width: 62rem; margin: 0 auto; padding: 1rem 1rem 2rem; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+
+  <section class="hero">
+    <p class="eyebrow">In-company workshop &middot; one day</p>
+    <h1>One day. Your own agentic system. A responsibility matrix you can hand to an auditor.</h1>
+    <p class="lede">You are deploying AI agents, or about to. They plan, act and talk to other systems, with your credentials. The question is not whether something goes wrong. It is who sees it, who fixes it, and who should have prevented it.</p>
+    <a class="btn" href="https://www.linkedin.com/in/pveijk" rel="noopener">Talk to me on LinkedIn</a>
+  </section>
+
+  <section>
+    <h2>This is already measurable</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="stat-n">188</p>
+        <p>agent-inflicted incidents in one year across 7,246 monitored deployments, as counted by Cyera.</p>
+      </div>
+      <div class="card">
+        <p class="stat-n">9 seconds</p>
+        <p>for an agent to wipe a production database in the PocketOS case, after being told not to.</p>
+      </div>
+      <div class="card">
+        <p class="stat-n">CVSS 9.3</p>
+        <p>for EchoLeak, which exfiltrated data from Microsoft Copilot without a single click.</p>
+      </div>
+    </div>
+    <p class="note">OWASP published a Top 10 for Agentic Applications in December 2025 because the LLM Top 10 no longer covered the problem. Figures are vendor or operator reports and age fast.</p>
+  </section>
+
+  <section>
+    <h2>The day, in three blocks</h2>
+    <div class="grid">
+      <div class="card step">
+        <p class="step-n">Morning</p>
+        <h3>See where it breaks</h3>
+        <p>Draw the trust boundary of your own system, then look at real incidents to see where trust broke.</p>
+      </div>
+      <div class="card step">
+        <p class="step-n">Afternoon</p>
+        <h3>Threat-model it</h3>
+        <p>Three questions anyone at the table can ask, then a walk through the OWASP Agentic Top 10 against your system.</p>
+      </div>
+      <div class="card step">
+        <p class="step-n">Close</p>
+        <h3>Give every control an owner</h3>
+        <p>Allocate each control with OLRA, the responsibility-allocation model behind CSA's AI Controls Matrix, and map the result onto ISO/IEC 42001.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What you take away</h2>
+    <ul>
+      <li>A responsibility matrix for your system: per control, the owning role and the evidence you will ask for.</li>
+      <li>One shared answer to "who do we call when this happens", agreed by all roles in one room.</li>
+      <li>A result that maps onto ISO/IEC 42001, so it survives an audit.</li>
+      <li>Two follow-up sessions to test that answer against practice.</li>
+    </ul>
+    <p class="note">No model theory. For security and cloud architects, risk and GRC, product owners, and the engineers who build it. Five to twelve participants.</p>
+  </section>
+
+  <section>
+    <h2>Your instructor</h2>
+    <p>Dr. Peter van Eijk trains CSA's cloud and AI security curricula and is the author of the OLRA model.</p>
+  </section>
+
+  <section class="cta">
+    <p>Interested, or want to see if it fits your system?</p>
+    <a class="btn" href="https://www.linkedin.com/in/pveijk" rel="noopener">Talk to me on LinkedIn</a>
+  </section>
+
+</main>
+<footer>Digital Infrastructures &middot; Dr. Peter van Eijk</footer>
+</body>
+</html>
