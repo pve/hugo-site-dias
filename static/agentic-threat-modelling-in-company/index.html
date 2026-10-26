@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agentic AI Threat Modelling, In-Company</title>
-<meta name="description" content="One day, your own agentic system, and a responsibility matrix you can hand to an auditor. In-company workshop by Dr. Peter van Eijk.">
+<meta name="description" content="One day, your own agentic system, and a responsibility matrix an auditor can follow. In-company workshop by Dr. Peter van Eijk.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
@@ -67,6 +67,10 @@
   }
   .btn:hover, .btn:focus { filter: brightness(1.1); }
   .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 36rem) {
+    .grid-2 { grid-template-columns: 1fr; }
+  }
   .card {
     background: var(--card);
     border: 1px solid var(--line);
@@ -79,7 +83,7 @@
   .step h3 { margin: 0 0 .4rem; font-size: 1.25rem; }
   ul { padding-left: 1.2rem; margin: 0; }
   li { margin: .35rem 0; }
-  .note { font-size: .95rem; color: var(--muted); margin-top: 1rem; }
+  .note { color: var(--muted); margin-top: 1rem; }
   .cta { text-align: center; padding: 3rem 0 0; }
   .cta p { margin: 0 0 1.25rem; color: var(--muted); }
   footer { max-width: 62rem; margin: 0 auto; padding: 1rem 1rem 2rem; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
@@ -91,7 +95,8 @@
 
   <section class="hero">
     <p class="eyebrow">In-company workshop &middot; one day</p>
-    <h1>One day. Your own agentic system. A responsibility matrix you can hand to an auditor.</h1>
+    <h1>One day. Your own agentic system. A responsibility matrix an auditor can follow.</h1>
+    <p class="lede">In the PocketOS case an agent wiped a production database nine seconds after being told not to.</p>
     <p class="lede">You are deploying AI agents, or about to. They plan, act and talk to other systems, with your credentials. The question is not whether something goes wrong. It is who sees it, who fixes it, and who should have prevented it.</p>
     <a class="btn" href="https://www.linkedin.com/in/pveijk" rel="noopener">Talk to me on LinkedIn</a>
   </section>
@@ -104,15 +109,11 @@
         <p>agent-inflicted incidents in one year across 7,246 monitored deployments, as counted by Cyera.</p>
       </div>
       <div class="card">
-        <p class="stat-n">9 seconds</p>
-        <p>for an agent to wipe a production database in the PocketOS case, after being told not to.</p>
-      </div>
-      <div class="card">
         <p class="stat-n">CVSS 9.3</p>
         <p>for EchoLeak, which exfiltrated data from Microsoft Copilot without a single click.</p>
       </div>
     </div>
-    <p class="note">OWASP published a Top 10 for Agentic Applications in December 2025 because the LLM Top 10 no longer covered the problem. Figures are vendor or operator reports and age fast.</p>
+    <p class="note">OWASP published a Top 10 for Agentic Applications in December 2025, because the LLM Top 10 no longer covered it. These are vendor and operator reports, and they age fast.</p>
   </section>
 
   <section>
@@ -121,17 +122,17 @@
       <div class="card step">
         <p class="step-n">Morning</p>
         <h3>See where it breaks</h3>
-        <p>Draw the trust boundary of your own system, then look at real incidents to see where trust broke.</p>
+        <p>Draw the trust boundary of your own system, then look at real incidents to see where it broke.</p>
       </div>
       <div class="card step">
         <p class="step-n">Afternoon</p>
         <h3>Threat-model it</h3>
-        <p>Three questions anyone at the table can ask, then a walk through the OWASP Agentic Top 10 against your system.</p>
+        <p>Three questions anyone at the table can ask. The big one: where is data leaving your control? Then a walk through the OWASP Agentic Top 10 against your system.</p>
       </div>
       <div class="card step">
         <p class="step-n">Close</p>
         <h3>Give every control an owner</h3>
-        <p>Allocate each control with OLRA, the responsibility-allocation model behind CSA's AI Controls Matrix, and map the result onto ISO/IEC 42001.</p>
+        <p>For that I use OLRA, the responsibility-allocation model I derived from CSA's AI Controls Matrix. You map the result onto frameworks such as ISO/IEC 42001, so an auditor can follow it.</p>
       </div>
     </div>
   </section>
@@ -140,16 +141,35 @@
     <h2>What you take away</h2>
     <ul>
       <li>A responsibility matrix for your system: per control, the owning role and the evidence you will ask for.</li>
-      <li>One shared answer to "who do we call when this happens", agreed by all roles in one room.</li>
-      <li>A result that maps onto ISO/IEC 42001, so it survives an audit.</li>
-      <li>Two follow-up sessions to test that answer against practice.</li>
+      <li>One shared answer to "who do we call when this happens", agreed by all roles in one room, in one day.</li>
+      <li>Two follow-up sessions, included, to test that answer against practice.</li>
     </ul>
-    <p class="note">No model theory. For security and cloud architects, risk and GRC, product owners, and the engineers who build it. Five to twelve participants.</p>
+    <p class="note">No model theory.</p>
+  </section>
+
+  <section>
+    <h2>Who it is for</h2>
+    <p>People who hold one of four seats around an agentic system.</p>
+    <div class="grid grid-2">
+      <div class="card">
+        <p>The <strong>product owner</strong> or engineering lead who answers for what the system does.</p>
+      </div>
+      <div class="card">
+        <p>The <strong>builder</strong>: the engineer who connects the agents to tools and credentials.</p>
+      </div>
+      <div class="card">
+        <p>The <strong>security or cloud architect</strong>: the one who draws the trust boundary.</p>
+      </div>
+      <div class="card">
+        <p><strong>Risk, GRC or audit</strong>: the one who asks for the evidence.</p>
+      </div>
+    </div>
+    <p class="note">Come as a team, or on your own. Bring one agentic system, live or planned, and the architecture as far as it exists. Five to twelve participants.</p>
   </section>
 
   <section>
     <h2>Your instructor</h2>
-    <p>Dr. Peter van Eijk trains CSA's cloud and AI security curricula and is the author of the OLRA model.</p>
+    <p>I am Dr. Peter van Eijk. I train CSA's cloud and AI security curricula, and I developed the OLRA model.</p>
   </section>
 
   <section class="cta">
