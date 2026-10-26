@@ -1,7 +1,7 @@
 ---
 date: '2026-09-16T16:07:32Z'
-draft: true
-title: 'Identity Escalation (draft)'
+draft: false
+title: 'Escalation Identity Promises'
 weight: 117
 note: |
   Uncommon thought to preserve while drafting:
