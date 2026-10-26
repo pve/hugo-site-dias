@@ -13,13 +13,6 @@ notes: |
     marketplace/app-store framing specifically is still wanted as a distinct
     variant, or whether the existing broker paragraph already resolves this
     cross-ref.
-
-    Identity callback (2026-10-26): unit 11a (identity-control-point, weight
-    115, draft) names identity as the control point because everything at
-    scale is governed by who the system believes you are. Power flows follow
-    the same wire: who gets recognized as the legitimate requester decides
-    who the power flows to. Worth a line connecting "power flows to whoever
-    is recognized" back to 11a's control-point framing once it lands.
 ---
 
 Power does not automatically flow from those that have it to those that are influenced by it.

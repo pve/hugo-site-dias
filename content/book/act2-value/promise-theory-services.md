@@ -13,14 +13,6 @@ notes: |
     instead. The cross-ref doesn't resolve as-is: either pull the Air France
     example in directly here, or treat unit 53 as needing a follow-up pass
     before this parallel can just point there.
-
-    Identity callback (2026-10-26): unit 11a (identity-control-point, weight
-    115, draft) sets up promise theory's unstated assumption — agents must be
-    identifiable before they can exchange promises — specifically so units
-    16/17 don't have to introduce it cold. This unit is one of those; the
-    handoff isn't cashed in yet. Could note here that a provider and consumer
-    must first recognize each other as the parties named in the agreement
-    before any promise in it means anything.
 ---
 
 A service agreement is a contract.

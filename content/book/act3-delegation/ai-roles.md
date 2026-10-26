@@ -6,13 +6,7 @@ description: "Six roles run every AI system, from customer to data provider, eac
 aliases:
 - "/diginfra/ai-roles.md"
 weight: 420
-notes: |
-    Identity callback (2026-10-26): unit 11b (identity-escalation, weight 117,
-    draft) frames identity as conferred by the receiving process, not
-    possessed by the caller. Roles here are assigned the same way — "which
-    role is this" is itself an identity claim made by whoever is granting the
-    role, not a property the AI system carries on its own. Worth a line
-    tying role-assignment back to that conferral framing once 11a/11b land.
+---
 AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.
 
 We follow the roles outlined in the [CSA AI Controls Matrix (AICM)](https://cloudsecurityalliance.org/artifacts/ai-controls-matrix).
