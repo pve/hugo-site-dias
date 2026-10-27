@@ -10,14 +10,6 @@ notes: |
     volledige herkomst-analyse. Tekst is nog niet verplaatst; dit is alleen de
     structurele plek.
 
-    Bedoelde inhoud (door de auteur te verplaatsen vanuit customer-service.md):
-    - Service elements-taxonomie: consumer actions / provider responses (access,
-      create, modify resource; create user/account; reset password; delete
-      account/data; enz.) — "anything that can be governed by a permission or can lead
-      to a commitment or obligation".
-    - Hiërarchie van services: contract (start–end) → provisioning/deprovisioning
-      binnen een contract → gebruik van resources door een user.
-
     Positie: direct na unit 26 (`promise-theory-services.md`, weight 260, "A service
     agreement is a set of promises") — die unit introduceert service agreements als
     promise-sets maar mist nog de concrete service-elementen-taxonomie; deze unit
@@ -27,3 +19,35 @@ notes: |
     (praktisch toepassen/ontwerpen van services met promise-theory-vocabulaire), maar
     nog niet getoetst tegen de rest van Act 2's naamgeving.
 ---
+
+### Service Elements
+Service elements: consumer actions and provider responses 
+
+Every service has multiple components/elements, i.e.
+Access resource (login, get webpage, …)
+Create resource (server, virtual disk, mailbox, …)
+Modify resource (bigger disk/mailbox, new functional module, add friend, …)
+Create user (provisioning)
+Create account
+Talk to a sales representative
+Negotiate and set up contract
+Reset password
+Delete account
+Delete data (deprovisioning)
+
+Generally: anything that can be governed by a permission or can lead to a commitment or obligation
+
+### Service Hierarchies
+
+Hierarchy of services
+Extra note: can you group these in phases: contract, provision, use..
+Contract (start – end)
+Provisioning users within a contract, deprovision
+Using resources by a user
+
+## Service Levels and Quality
+
+putting a number to it.
+
+
+

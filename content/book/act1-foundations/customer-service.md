@@ -63,11 +63,6 @@ The list is endless.
 Most of these scenarios can be described very nicely with promise theory.
 
 
-
-
-
-
-
 Example TCP/IP
 picture
 
@@ -82,29 +77,4 @@ A: thank you, I will forward it, here is your new window size
 
 Rinse and Repeat
 =-
-
-Service elements: consumer actions and provider responses 
-
-Every service has multiple components/elements, i.e.
-Access resource (login, get webpage, …)
-Create resource (server, virtual disk, mailbox, …)
-Modify resource (bigger disk/mailbox, new functional module, add friend, …)
-Create user (provisioning)
-Create account
-Talk to a sales representative
-Negotiate and set up contract
-Reset password
-Delete account
-Delete data (deprovisioning)
-
-Generally: anything that can be governed by a permission or can lead to a commitment or obligation
-
-Hierarchy of services
-Extra note: can you group these in phases: contract, provision, use..
-Contract (start – end)
-Provisioning users within a contract, deprovision
-Using resources by a user
-
-
-
 
