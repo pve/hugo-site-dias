@@ -2,9 +2,10 @@
 date: '2025-06-05T15:03:13Z'
 draft: true
 title: 'Customer Service (draft)'
-weight: 150
+weight: 175
 notes-closed:
-    - "[ ] Fix regel 11 forward-reference direction (wrong-way → promise-theory.md comes after, not before)"
+    - "[x] Resequenced (2026-10-27): weight moved 150 → 175, now after promise-contract.md (170), not before promise-theory.md — most of this unit's content is slated to move out (see items below), so little may be left to actually sit here"
+    - "[ ] Fix regel 11 forward-reference direction (wrong-way → promise-theory.md comes after, not before) — moot if this unit ends up mostly emptied, but fix if any intro prose survives"
     - "[ ] Move service-elements taxonomy + hierarchy (regel 54-74) to act2-value/engineering-services.md (unit 26a)"
     - "[ ] Cut IP-address/TCP-protocol Q/R/A (regel 29-49) — superseded by act3-delegation/dhcp-automation.md"
     - "[ ] Decide fate of unused permissions/phishing scenarios — fold into promise-theory.md or let this file retire"
@@ -65,15 +66,7 @@ Most of these scenarios can be described very nicely with promise theory.
 
 
 
-Q: Can I get a unique IP address?
-R: Here is your address, let me know when you are done with it
 
-
-A: thank you, I am done with this address
-
-Example IP addresses allocation
-![IP address allocation](/images/ip-allocation.png)
-![IP address allocation 2](/images/ip-allocation-2.png)
 
 Example TCP/IP
 picture
