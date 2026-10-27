@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks
+        name: gitleaks (staged secrets)
+        entry: gitleaks git --staged --redact --verbose --no-banner
+        language: system
+        pass_filenames: false

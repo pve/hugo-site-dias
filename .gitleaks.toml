@@ -1,0 +1,4 @@
+title = "Peters Infra gitleaks"
+
+[extend]
+useDefault = true
