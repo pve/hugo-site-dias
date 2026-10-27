@@ -3,6 +3,17 @@ date: '2026-09-16T16:07:32Z'
 draft: false
 title: 'Escalation Identity Promises'
 weight: 117
+notes-closed:
+    - "[ ] Placement decision: keep both 11a/11b, or merge 11a's unique bits into this unit and retire 11a? (undecided as of last pass)"
+    - "[ ] P4: tighten 'phone has become the person' aside placement"
+    - "[ ] P6: WiFi-networks example needs a one-line callback later to pay it off"
+    - "[ ] P7: make the 'identifiable → accountable → will keep promises' logic leap explicit"
+    - "[ ] P8: fix 'in fact,' intrusion, 'common to you and the other end' overclaim, duplicate directory naming"
+    - "[ ] P9: give the prisoner's-dilemma paragraph a forward hook to P10"
+    - "[ ] P10: fix 'at the same time' contrast (wrong neighbour)"
+    - "[ ] P11: seed the 'escalating' word earlier; fix 'enough dependable promise for you' → 'dependable enough for you'"
+    - "[ ] Hero-story redirect: put Maria and Neil in the office as the actual heroes (2026-09-16 reframe), redirect the closing line to them"
+    - "[ ] Swap 'CYBER' movie reference → 'Cypher' (2002) per fact-check pass"
 note: |
   Uncommon thought to preserve while drafting:
   Identity is not a property the caller possesses; it is conferred by the

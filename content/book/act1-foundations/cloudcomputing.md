@@ -4,6 +4,175 @@ draft: false
 title: 'Cloud Computing'
 weight: 100
 aireview: 
+notes-closed:
+    - "[ ] Ford/River Rouge value-chain-fragmentation analogy as primary historical spine, attached to Broad Network Access"
+    - "[ ] Verbatim six-telling composite as primary source for revising the five NIST characteristic subsections"
+    - "[ ] Sharper opening hook: 'So your company is in the cloud. Now what?'"
+    - "[ ] Phone-offline-music vs. streaming-subscription analogy as low-jargon cloud opener"
+    - "[ ] 'AWS is probably the world's largest hoster of botnets, but...' + half-hour auto-killed credentials example"
+    - "[ ] 'Provider heritage shapes the product' (Google/GCP vs. Amazon/AWS)"
+    - "[ ] 'Cloud is the new mainframe' as deliberate counterpoint near the close"
+    - "[ ] Recurring-misconceptions bundle (pick 2-3, don't stack)"
+    - "[ ] 'Dunning-Kruger' as one-word diagnosis of cloud overconfidence"
+    - "[ ] PSA container-terminal photo (Singapore) as scale-setting image"
+    - "[ ] Resolve redundancy warning: pick Ford/River Rouge as spine, 'new mainframe' as counterpoint, park the other three historical framings"
+notes: |
+    Verplaatst vanuit `units-notes/unit-10.md` (2026-10-27) — harvest-triage, nog niet
+    verwerkt in de proza hieronder. Gewicht klopt nog (100).
+
+    Live file: `act1-foundations/cloudcomputing.md` (weight 100, published,
+    `aireview:` field present but empty). Second-largest Act I harvest (42 items),
+    including one long pre-composited passage.
+
+    ## Current state
+
+    This is the most developed unit in Act I: a short history (ASPs in the 2000s,
+    Amazon's early storage/servers, "opinionated" platforms, the term's murky
+    2001-era origin, NIST solidifying it in 2011), then a section arguing cloud is a
+    *service, not a product* framed through promise theory, then a full walk through
+    NIST's five essential characteristics (on-demand self-service, broad network
+    access, resource pooling, rapid elasticity, measured service) — each with a value
+    paragraph and a risk paragraph — closing on a "wrap up" about power shifting to
+    both consumers and providers, and a warning that whoever loses out from a cloud
+    migration may quietly sabotage it. Already well-structured; the harvest mostly
+    offers concrete anchors, sharper phrasing, and one big narrative device the unit
+    currently lacks: history.
+
+    ## Triage
+
+    **Highly relevant**
+
+    - **Henry Ford / River Rouge value-chain-fragmentation analogy**, recovered in
+      full: Bloomberg terminals, CompuServe, and airline reservation systems used to
+      bundle network + device + service together, which slowed rollout; cloud's
+      "broad network access" is what unbundles it. Payoff: Ford's River Rouge plant
+      (c. 1910, "six square miles," fully vertically integrated — its own steel mill,
+      its own power plant) — eighty years later the site still exists but the steel
+      mill, power plant, and dozens of other pieces are now independent companies.
+      Same pattern hit the iPhone supply chain and the movie industry; "IT is no
+      exception, and cloud computing is finally making that happen in IT"
+      (`sources/delivery-ccsk-2015-2016-live-nist-narration-subtleties.md`, told
+      across 3 of 5 sessions; also present in the big composite below). The richest
+      available narrative device for the unit, attaching directly to the *Broad
+      Network Access* section, which currently has no history at all.
+    - **The verbatim six-telling composite** (`sources/verbatim-composites-for-book-insertion.md`)
+      is close to publication-ready prose already covering: outsourcing-with-five-
+      characteristics framing; on-demand self-service as removing the human first
+      from the provider side, then potentially the consumer side; broad network
+      access as "decoupling" the network/device from the service (ties to the Ford
+      analogy above); concrete elasticity anchors — a day for a new employee, minutes
+      for a dev machine, seconds for a traffic surge, with "automatic provisioning
+      matters more than rapid elasticity itself"; Dunbar's number (~150 people, never
+      named as such) explaining why SMEs can run on trust and enterprises can't;
+      measured-service billed "by account, not by message" for email, "pay as you go
+      is definitely not pay as you grow"; and the blunt IaaS surprise — "you are
+      forced to run and maintain the operating system... you actually also have to
+      patch that." **Recommend using this composite as the primary source when
+      revising each of the five characteristic subsections.**
+    - **"So your company is in the cloud. Now what?"**
+      (`sources/archive-2025-cloudalignment-sigs-conference-notes.md`) — a sharper,
+      more inviting opening hook than the current flat first line.
+    - **Phone-with-offline-music vs. streaming-subscription** analogy, used to
+      introduce "cloud" without ever saying the word
+      (`sources/archive-2021-22-cloud-security-intro-teaching.md`).
+    - **"AWS is probably the world's largest hoster of botnets, but..."** provocative
+      framing paired with Amazon's own internal practice of half-hour, auto-killed
+      credentials for internal server access ("now that is cloud for you")
+      (`sources/casa-nsa-hack-case.md`, 2 items).
+    - **"Provider heritage shapes the product"**: Google's platform reflects Google's
+      own search-scale problems (hence GCP's Big Data/TensorFlow strength); AWS's
+      platform reflects Amazon's own webshop problems (hence early IaaS/VM/API focus)
+      (`sources/oudemeuk-omkatten-target-market-google-cloud-platform.md`).
+    - **"Cloud is the new mainframe"** thesis: power, expense, and centralization
+      returning after a detour through cheap decentralized x86 farms, with
+      Santayana's "condemned to repeat it" (`sources/oudemeuk-cloud-is-new-mainframe.md`).
+      A sharp counter-narrative / dialectic partner to the disruption-wave framing
+      below — cycles, not just linear progress.
+    - **2011 disruptive-innovation-wave essay**: minicomputer → PC → internet → cloud
+      as ~10-year waves, following the standard disruption pattern
+      (`sources/archive-pre2017-career-obsolescence-essays.md`). Also cross-refs unit
+      57 (power shift/disruption).
+    - **IT-consolidation mapped onto the five NIST characteristics** — a purely
+      internal consolidation project checked against broad network access, resource
+      pooling, rapid elasticity, measured service via cross-charging
+      (`sources/oudemeuk-it-consolidation-private-cloud-case.md`).
+    - **Perspective-dependent public/private cloud**: the same 2012 client
+      infrastructure is "public cloud" from the end-customer's view and
+      "private/dedicated" from the provider's view
+      (`sources/oudemeuk-public-private-case-study.md`).
+    - **Kindergarten analogy**: private clouds/intranets are "like kindergarten — you
+      can play, but you can't get out over the fence"
+      (`sources/oudemeuk-blurring-public-private-cloud.md`).
+    - **Recurring-misconceptions bundle** (pick 2-3, don't stack all of them): "onze
+      cloud is geen cloud"; "hybrid cloud" misused as a synonym for "part cloud, part
+      legacy"; "our private cloud isn't on-prem, so it isn't private cloud?"; a
+      government-cloud practitioner not realizing his own system was a textbook
+      Community Cloud (`sources/archive-pre2017-delivery-cohort-feedback-spotcheck.md`,
+      `sources/delivery-ccsk113-2020-online-april-covid-launch.md` ×2,
+      `sources/delivery-ccsk66-2017-online-sept-chat.md`).
+    - **"Dunning-Kruger"** named explicitly as the instructor's one-word diagnosis of
+      cloud overconfidence (`sources/delivery-ccsk157-2025-online-jan.md`).
+    - **PSA container-terminal photo (Singapore)** — cranes, thousands of stacked
+      containers, skyline — as a scene-setting "this is what scale actually looks
+      like" image (`sources/image-catalog-docker-security-graphics-2016.md`). Pairs
+      well with the Ford/River Rouge narrative.
+
+    **Maybe relevant**
+
+    - **"Cars made suburbs possible"** analogy — good, but see redundancy warning
+      below.
+    - **"Who pays the electricity bill?" narrative** and the **historical-eras
+      admin-ratio framing** — both good, but see redundancy warning (also
+      cross-referenced from the unit-06 note).
+    - Feb 2017 alumni recurring-questions survey — only the service-models portion is
+      this unit's; the rest cross-ref units 26/55/72.
+    - "New IT supply chain model" framing line, tying cloud to car/iPhone production
+      — good but largely redundant with the Ford analogy above; also cross-ref unit
+      12.
+    - ENISA "ages like a good wine, not spoiled meat" analogy — cute, echoes unit 5's
+      "teach essence, not features" thesis; consider as a cross-link there instead.
+    - Four-step deployment-speed timeline diagram (Datacenter Snowflakes →
+      Virtualized/Cloud → Docker → Lambda) — good visual, also fits unit 13.
+    - Google's own location-guessing error (misplacing Denmark) — minor aside only.
+    - "Which characteristic increases confidentiality risk most?" audience exercise,
+      landing on broad network access — could extend the existing risk paragraph
+      under Broad Network Access.
+    - Teaching-order structure for "Cloud Adoption Essentials" — useful evidence for
+      how Acts I–II might sequence overall, not specific unit-10 prose.
+    - v3→v4 "descriptive to prescriptive" framing of guidance maturity — low priority,
+      possibly cut.
+
+    **Hardly relevant** — vendor-specific technical diagrams/tables.
+
+    - Azure VNet lab architecture diagram — better fit for unit 40 (Cloud-native
+      tutorial).
+    - AKS regulated-architecture SVG — primary home already unit 14.
+    - Storage-options table (Volume/Object/DB/CDN storage) — vendor taxonomy, too
+      technical.
+    - Provider-bias complaint (AWS-heavy material irritating an Azure user) — not
+      book content, but a reminder to stay vendor-neutral throughout.
+
+    ## Redundancy warning
+
+    Between this unit and units 6/9, there are now **five distinct historical-arc
+    narratives** pointing at unit 10: Ford/River Rouge, the "electricity bill"
+    mainframe→cloud story, the admin-ratio historical-eras framing, the
+    disruptive-innovation-wave essay, and "cloud is the new mainframe." All are good;
+    using all five would overload the unit. **Recommend: Ford/River Rouge as the
+    primary spine** (attaches directly to Broad Network Access, richest), "cloud is
+    the new mainframe" as a deliberate counterpoint near the close (progress isn't
+    purely linear), and treat the other three as backup material or move them fully
+    to units 6/9/57 where they're also tagged.
+
+    ## Cross-unit flags
+
+    - Service-model/broker/incident/key-management Q&A items → units 26, 55, 72.
+    - "New IT supply chain" framing → also unit 12.
+    - ENISA wine-not-meat analogy → consider unit 5 instead.
+    - Deployment-speed timeline diagram → also unit 13.
+    - Disruptive-innovation-wave essay → also unit 57.
+    - Azure VNet diagram → unit 40.
+    - AKS regulated architecture → unit 14 (primary), 76 (secondary).
 ---
 
 Cloud Computing is an important and big set of digital infrastructures.

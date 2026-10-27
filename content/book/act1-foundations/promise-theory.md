@@ -4,6 +4,107 @@ draft: false
 title: "Promise Theory"
 description: "A café order between a customer and a waiter turns out to be the same pattern behind APIs, contracts, and IT support tickets: request, promise, delivery, acquittal."
 weight: 160
+notes-closed:
+    - "[ ] Mat Honan's 2012 account-takeover as a clean chain-of-broken-promises case"
+    - "[ ] 'The essence of cloud security is who does what?' compressed into the unit's own question template"
+    - "[ ] Study heuristic (who does what and why / what promises / why relevant / what sequence) as a reusable reading tool"
+    - "[ ] Multi-party framing quote, directly Neil-relevant"
+    - "[ ] 'No single supervising authority' as opening/closing frame — promises exist because no one can simply command an autonomous agent"
+    - "[ ] Broken-promise root-cause method for data-loss/breach diagnosis, bridging to unit 63"
+notes: |
+    Verplaatst vanuit `units-notes/unit-16.md` (2026-10-27) — harvest-triage, nog niet
+    verwerkt in de proza hieronder. Gewicht klopt nog (160).
+
+    Live file: `act1-foundations/promise-theory.md` (weight 160, published —
+    book-sequence.md calls this "the plot engine, closing the act"). Small harvest
+    (13 items) but well-matched, since this unit is already thoroughly and carefully
+    written.
+
+    ## Current state
+
+    Introduces promise theory (Mark Burgess) via a café/waiter example, walking
+    through request → commitment → acceptance → fulfillment → acquittal step by step,
+    then generalizes to IT support tickets and telephone-system automation, defines a
+    promise via Jeff Sussna's "a strongly stated intention to provide a service,
+    which may or may not be kept," introduces conditional promises with a
+    coffee-payment example and a sequence diagram, then goes deeper into semantics
+    (speech-act theory, the marriage-pronouncement example) and closes on contracting
+    (the café's implicit blackboard of conditions). This is careful, patient,
+    example-rich writing — probably the most pedagogically deliberate unit in Act I
+    so far. The harvest mostly offers ways to extend the theory into real stakes
+    (security, multi-party conflict) rather than better ways to explain the theory
+    itself.
+
+    ## Triage
+
+    **Highly relevant**
+
+    - **Mat Honan's 2012 account-takeover**, told as a clean chain-of-broken-promises:
+      an attacker wanting his 3-character Twitter handle traced a Gmail recovery
+      address, used it to reset his Apple ID via a verification process relying on a
+      billing address and last-4-digits of a card (both obtainable), gained iCloud
+      access, and remote-wiped his iPhone, iPad, and MacBook — destroying unbacked-up
+      data as a side effect of an attack that was never about the data at all
+      (`sources/archive-2019-ernw-outage-case-studies.md`). A genuinely excellent
+      real-world extension of the unit's own promise-chain logic: each "promise"
+      (identity verification step) that got broken cascaded into the next. Well-known,
+      checkable, gives the abstract theory real stakes without adding any new jargon.
+    - **"The essence of cloud security is 'who does what?'"** — illustrated with four
+      real incident types (a virus on IaaS-provider storage, an empty admin password
+      on the customer's own instance, Heartbleed, a provider exit), each answered
+      with "whose problem is it? — it depends on the demarcation you chose,"
+      compressed into a repeatable template: "what do I do, what do you do, what do I
+      do if you don't?"
+    - **Study heuristic**, repeated near-verbatim across three CCAK cohorts: "Who
+      does what, and why? What promises do they make? Why is this document relevant
+      in that story? In which sequence are things done?" — used explicitly to unstick
+      students who are memorizing frameworks instead of understanding them.
+    - **Multi-party framing, in the author's own unprompted words**: "you need to
+      understand the technology to the level that you know who is going to manage
+      that and how you can see that it is any good... particularly relevant when
+      this concerns multiple independent parties that may not have aligning
+      interests." Directly Neil-relevant.
+    - **"No single supervising authority"**: the cloud (and the internet before it)
+      is "run by a collection of autonomous actors" — "back in the early days of the
+      internet people were like, can I talk to the boss of the internet? No, you
+      can't." Close to the unstated premise the current text needs but doesn't quite
+      say outright. The same source has the author extending this to his own
+      teaching philosophy — "I believe in your autonomy... I'm offering you the
+      structure, you have to do the work yourself" — a nice reflexive echo that could
+      work as a light aside if the voice fits.
+    - **"A way to spot misunderstandings in communication"** and a method for finding
+      data-loss/breach root causes by tracing which implicit promise was actually
+      broken. A crisp one-line definition that extends the unit's semantics section
+      and bridges directly to unit 63.
+    - **Speaker's own self-critique**: teaching promise theory by explaining "why
+      patterns" needs more setup or should be dropped in favor of a case that *shows*
+      cooperation design is hard rather than *tells* it. The Mat Honan case above is
+      a plausible answer to exactly this note.
+
+    **Maybe relevant**
+
+    - Module 3 teaching-order evidence: promise theory and the cloud supply chain
+      taught *before* CSA's Treacherous Twelve risk list — useful structural
+      confirmation, not itself unit-16 prose.
+    - Evidence promise theory is taught successfully to non-technical government
+      audiences — validating, not additive.
+    - Three flipchart/whiteboard diagrams of promise chains (producer/consumer
+      sketch; Business Unit↔Application Manager↔Application Delivery↔Infra chain;
+      client/provider/subcontractor lifelines) — all three tagged primary home **unit
+      26 (Promise theory of services)**.
+
+    **Hardly relevant**
+
+    - Axelrod/prisoner's-dilemma note-to-self, paired with an unrelated "future video
+      on promise theory" marker — a production note, not content; the Axelrod half
+      belongs to unit 25 if anything.
+
+    ## Cross-unit flags
+
+    - Three promise-chain diagrams → primary home unit 26.
+    - "A way to spot misunderstandings" / broken-promise root-cause method → also
+      unit 63.
+    - "Who does what?" demarcation question → also unit 52 (power mediation).
 ---
 Digital infrastructures focus on services rather than products, making it elusive to capture the essence of these services, especially in defining the fluid interactions between service providers and consumers.
 

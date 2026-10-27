@@ -3,6 +3,72 @@ date: '2025-03-09T16:51:04Z'
 draft: false
 title: 'Preface'
 weight: 1
+notes: |
+    Verplaatst vanuit `units-notes/unit-01.md` (2026-10-27) — harvest-triage, nog niet
+    verwerkt in de proza hieronder.
+
+    Live file: `1-preface/_index.md` (weight 1, published). Small harvest — 4 items.
+
+    ## Current state
+
+    A personal, first-person preface: thirty-plus years of IT practice, the pivot from
+    "Digital Infrastructures" (2005 branding) to cloud security training, the COVID-era
+    decline of that business, and the turn toward writing as the new focus, with power
+    dynamics named as the missing third leg alongside technology and business. Closes
+    with a warning that readers will find some units trivial and others a stretch
+    depending on their background, and a thank-you to clients/learners/colleagues. Tone
+    is warm, reflective, unhurried — very different register from the rest of the book,
+    which is appropriate for a preface.
+
+    ## Triage
+
+    **Highly relevant**
+
+    - **"There is not a minimum of treatment below which [a topic] is useless... every
+      concept merits from even a single line of explanation"** — a stated design
+      principle for how the book itself should handle marginal topics. This belongs in
+      the preface precisely because it's a promise to the reader about scope and
+      coverage, addressed to both personas: Neil won't find a topic entirely dismissed,
+      Maria won't hit an unexplained jump. Fits naturally next to the existing
+      "warning" paragraph about units feeling trivial or advanced.
+      (`sources/archive-2025-cloudalignment-scat-course-design.md`)
+    - **Peter's own pedagogical thesis**: "through just the right level of conceptual
+      understanding, people and teams can better understand each other, and can find
+      their optimal solutions themselves" — close kin to the existing "conceptual
+      pragmatist... simple and powerful" paragraph and could sharpen it, or serve as a
+      direct quote near it. (`sources/archive-2025-cloudalignment-sigs-conference-notes.md`)
+    - **Instructor's autonomy framing, addressed to students directly**: "I think the
+      internet and cloud are a bunch of autonomous actors. There's no central
+      control... once you understand that, it also gives us significantly more
+      power," extended to "you as a student, I consider an autonomous agent as well. I
+      don't tell you what to do. I suggest what you can do." This is the book's own
+      autonomy thesis (visible already in the Introduction's "how autonomous can you
+      afford to be?") stated as a teaching stance rather than a book thesis — strong
+      candidate to plant here in the preface as an early, personal echo of that theme,
+      since it doubles as a statement about the author-reader relationship itself.
+      (`sources/delivery-ccsk156-2024-online-nov.md`)
+
+    **Maybe relevant**
+
+    - **Peter's reflective aside on career/technology-cycle length**: "I'm not going to
+      be in business for another 20 years, maybe not even for 10 years... the cloud
+      computing ride was a long one. I started doing this 15 years ago. I've never
+      been involved in any piece of technology or job that lasted this long." Decent
+      texture for the "thirty years in the making" opening, but it's a slightly
+      downbeat, business-anxiety note that sits awkwardly next to the preface's more
+      settled, forward-looking tone. Use only if a shorter, lighter paraphrase fits;
+      don't quote the "cash cow" framing verbatim, it reads as address to a
+      training-business audience rather than a book reader.
+      (`sources/delivery-ccak14-2024-governance-cohort-mj-interview.md`)
+
+    **Hardly relevant**
+
+    - None — the harvest for this unit is small and every item is at least
+      preface-appropriate in register (personal, reflective, not technical).
+
+    ## Cross-unit flags
+
+    - None. All four items are preface-native; no better home elsewhere in the spine.
 ---
 
 This book has been more than thirty years in the making.

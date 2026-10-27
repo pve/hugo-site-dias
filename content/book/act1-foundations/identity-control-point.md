@@ -3,7 +3,64 @@ date: '2026-07-23T00:00:00Z'
 draft: false
 title: 'Identity: the control point'
 weight: 115
+notes-closed:
+    - "[x] Stolen-credential/IAM-console Q&A pair (0-day, disabling admin account) — already present verbatim in the Raw material section below, drop tool name (Dome9) if used"
+    - "[x] 'Nine out of ten questions is Active Directory' — already present verbatim in Raw material below"
+    - "[ ] Business-case method for identity investment (dollar-value-of-risk / staff-time) — belongs primarily in unit 37, at most a one-line pointer here"
+    - "[ ] Resolve source-traceability gap: locate/import the three cited intake sources into sources/ before writing final prose (status as of 2026-10-27 not re-checked this pass)"
+    - "[ ] How deep into mechanics (tokens, SSO, OIDC)? — probably not at all, keep at 'who does the system believe you are' level"
+    - "[ ] Does the unit need its own mini-case (stolen-assertion incident), or does unit 63 (site-hack case) carry that later?"
 notes: |
+    Verplaatst vanuit `units-notes/unit-11a.md` (2026-10-27) — harvest-triage. Let op
+    duplicaten: deze harvest overlapt bijna volledig met wat al in de Raw
+    material-sectie hieronder stond (zelfde bronnen, zelfde citaten) — daarom hier
+    alleen samengevat, niet opnieuw letterlijk ingevoegd. Gewicht in units-notes stond
+    nog op 115/`draft: true`; de live front matter hierboven staat inmiddels op
+    `draft: false`, gewicht zelf (115) klopt nog.
+
+    ## Current state (per units-notes, bij harvest-tijd)
+
+    Unusually well-developed for a gap unit: thesis was set ("identity is asserted,
+    not physical... the one thing you can really mess up"), its place in the arc was
+    argued (picks up from unit 11, sets up promise theory's identifiability assumption
+    before 16/17, feeds 67/72/76), and it already listed its own three intended
+    sources plus two open questions. This candidate-edits batch was small (3 items)
+    and mostly either confirmed or directly answered what the author had already
+    flagged as open.
+
+    ## Triage (condensed — see "notes-closed" above for what's new vs. already landed)
+
+    - **Highly relevant, already present**: the stolen-credential/IAM-console Q&A pair
+      and the "nine out of ten questions is Active Directory" quote are both already
+      verbatim in this unit's own Raw material section below (same sources:
+      `delivery-alumni-clubcall-2017-2018-series.md`).
+    - **Maybe relevant, not yet actioned**: a business-case method for identity
+      infrastructure investment — put a dollar value on the risk (probability × cost)
+      or price the manual alternative in staff time, worked through with a
+      federated-identity project (`sources/delivery-ccsk42-2015-gallagher-virtual.md`).
+      Good and Neil-relevant, but it's a business-case-construction method, not an
+      identity-control-point argument. **Better home: unit 37 (The automation business
+      case)**, using identity as one of its worked examples; at most a one-line
+      pointer here. *(Note: this same source/example also already appears in this
+      unit's own Raw material section below, under "A business-case method I used
+      live with a client..." — so even the pointer may be redundant; check before
+      adding.)*
+
+    ## Important note: source-traceability gap (as flagged at harvest time)
+
+    The unit's own notes draft already flagged that its three cited intake sources
+    (`delivery-ccsk-for-christmas-2015-online.md`, `cczt-material-kindervag-masterclass-notes.md`,
+    `delivery-ccak2021-online-cohort-patterns.md`) were "not present in `sources/` in
+    this workspace yet" at harvest time — only `sources/README.md` existed. Not
+    re-verified in this 2026-10-27 pass; check current `sources/` state before relying
+    on these citations for final prose.
+
+    ## Cross-unit flags
+
+    - Business-case method for identity investment → unit 37.
+
+    ---
+
     <!-- NOTES DRAFT — unit 11a in book-sequence.md. Not prose yet; these are the notes on what the unit should contain. -->
 
     ## Thesis
@@ -117,4 +174,4 @@ It should, otherwise it will be hard to allocate access rights to it.
 What happens when we scale this up?
 We need to be able to efficiently talk about identities, boundaries, access rights, and who controls these, at scale.
 
-Let's start with identities, and how they are built up.
+Let's start with identities, in the next unit we'll see how they are built up.

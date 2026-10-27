@@ -4,6 +4,88 @@ draft: false
 title: 'Applications and Infrastructures'
 weight: 80
 checks: none
+notes-closed:
+    - "[x] 'The programmable web' (PaaS/APIs as websites used by software) — landed in live text, no further action needed"
+    - "[ ] 'Cloud workloads are NOT fully managed by the cloud provider' — still not incorporated; probably belongs in unit 7 instead, or as a bridge sentence here"
+notes: |
+    Verplaatst vanuit `units-notes/unit-08.md` (2026-10-27) — harvest-triage, nog niet
+    verwerkt in de proza hieronder. Let op gewicht/status: units-notes zei nog
+    `draft: true` — de live front matter hierboven staat inmiddels op `draft: false`,
+    dus die kant van de units-notes-samenvatting is gedateerd; gewicht (80) klopt nog.
+
+    Live file: `act1-foundations/applications.md` (weight 80).
+
+    ## Current state (per units-notes, 2026-07-30)
+
+    Substantially rewritten in that session — no longer a thin, trailing-into-research-
+    questions draft. Arc: definition (application = data model + functions),
+    word-processor/Gmail examples framed against the book's value/risk/control-boundaries
+    lens; historical arc on the application-to-machine ratio (earliest prototype
+    computers one-program-at-a-time → universal-machine adaptability as the root of
+    business value, car micro-controllers as illustration → early business computers,
+    batch then simultaneous as machines got more powerful → PC era back to one program →
+    internet boom, one piece of software replicated over many machines, with a personal
+    social-media-provider anecdote and the Google-scale comparison → a named, dated
+    anecdote, Durk Kingma/OpenAI at a meetup, about combining several data centers to
+    train one LLM); synthesis that there's no more one-to-one correspondence between an
+    application and a computer, opening two governance questions (isolating multiple
+    applications on one machine; controlling which machines serve one application); "an
+    application is no longer an island" (amalgamation/consolidation/constellation
+    framing, applications serving other applications, the programmable-web callout);
+    explicit outside/inside structural device bridging into a `### Getting the code`
+    section on software's provenance (written, reused from libraries, external
+    services), then trained neural networks as a third mode of software creation; ends
+    naming the deferred CI/CD-pipelines thread and closing the outside/inside loop
+    before handing off to the next unit (networking basics).
+
+    Went through multiple check-flow / check-facts / check-persona / check-language /
+    check-unusual passes that session; a historical-computers timeline contradiction
+    was caught and fixed, a vague cross-reference corrected, the OpenAI anecdote sourced
+    properly (named, dated), and a "loose ends with no resolution pointer" critique
+    addressed by adding the CI/CD-pipelines forward-reference.
+
+    ## Triage
+
+    **Highly relevant — now incorporated**
+
+    - **"The programmable web"**: PaaS/APIs framed as "websites used by other
+      software, rather than humans" (`sources/oudemeuk-apis-core-of-paas.md`). Landed
+      as "Applications not just serve users, they also serve other applications. This
+      was called the programmable web in the early days." Done — no further action
+      needed.
+
+    **Maybe relevant**
+
+    - **"Cloud workloads are NOT fully managed by the cloud provider"** — holds across
+      VMs, containers, PaaS, serverless, AI workloads; the consumer always retains
+      some residual duty (`sources/archive-2024-ccsk-social-copy.md`). Still not
+      incorporated — it's a responsibility/control-boundary claim, closer to unit 7's
+      territory than unit 8's. **Better home: unit 7**, unless the book wants an
+      explicit bridge sentence here pointing back to 7's control-boundary discussion.
+
+    **Hardly relevant** — none; only two items were harvested and both cleared the
+    bar.
+
+    ## Open threads left in the live text (not harvest gaps, authorial)
+
+    - The "belgian bank" / app-store worked example, referenced elsewhere in this
+      unit's drafting history, was deliberately routed to **unit 14** instead — unit 8
+      stays conceptual, unit 14 carries the worked diagram.
+    - The differential-cost-of-elements paragraph (storage/processing/network costs
+      falling at different rates, standards dynamics) that used to sit at the end of
+      this unit was moved to **unit 6** as off-topic for unit 8, 2026-07-28 — already
+      transferred into `elements-of-digitalinfrastructures.md`'s own notes field
+      (2026-10-27).
+    - Two forward-references are now live in the text and should be checked against
+      the actual destination units once written: the CI/CD-pipelines callback (§
+      "Getting the code") and the networking hand-off at the very end.
+
+    ## Cross-unit flags
+
+    - "Cloud workloads are NOT fully managed by the cloud provider" → unit 7.
+    - Belgian-bank / app-store / Salesforce-CRM-email worked examples → unit 14, not
+      unit 8.
+    - Differential elements-cost paragraph → unit 6 (done, see above).
 ---
 Infrastructures are nice, but the applications that they enable are where the value of information technology is.
 We want to understand how this fits into this book's understanding of value, risk, and control boundaries.

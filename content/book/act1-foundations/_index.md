@@ -4,6 +4,8 @@ draft: false
 title: 'Act I — What you stand on'
 author: Peter van Eijk
 weight: 5
+notes-closed:
+    - "[x] No units-notes harvest file exists for this unit (act opener) — nothing to move, checklist empty by design"
 ---
 
 You are standing on infrastructure you never chose.

@@ -3,6 +3,102 @@ date: '2025-03-09T18:53:44Z'
 draft: false
 title: 'Introduction'
 weight: 2
+notes: |
+    Verplaatst vanuit `units-notes/unit-02.md` (2026-10-27) — harvest-triage, nog niet
+    verwerkt in de proza hieronder.
+
+    Live file: `intro/_index.md` (weight 2, published). 6 candidate items. Note:
+    `intro/why-you-should-read.md` was already fully absorbed into `_index.md` in an
+    earlier pass — nothing left to salvage there.
+
+    ## Current state
+
+    Already carries the book's sharpest thesis statement: digital infrastructures at
+    scale rest on a provider/consumer separation plus digitally-enabled automation,
+    producing "a really interesting socio-political economic dynamic" centered on
+    autonomy. Walks through the same-pattern-everywhere argument (internet, social
+    media, marketplaces, shared IT services), previews value/power/risk as the book's
+    three lenses, states what the book is not (a technology book), and closes with
+    "how autonomous can you afford to be?" as the book's central question, plus a "the
+    stakes are real" section naming Maersk/Colonial Pipeline as forthcoming case
+    studies. Strong, already well-organized — the harvest mostly supplies supporting
+    evidence (why this book needs to exist, who reads it, teaching-order validation)
+    rather than new thesis material.
+
+    ## Triage
+
+    **Highly relevant**
+
+    - **"Men weet elkaar niet te vinden... men heeft geen gemeenschappelijke basis"**
+      (people can't find each other, there's no common ground) — Peter's own diagnosis
+      that the gap between teams isn't information but shared vocabulary. This is a
+      strong, concrete reason for the book's own existence and would sit well in the
+      "same pattern, everywhere" or "what this book is not" sections, since it
+      explains *why* a conceptual/vocabulary book (rather than a technical one) is the
+      right response. Lands for both personas: Neil needs the shared vocabulary to
+      argue across the tech/governance boundary, Maria needs it to talk to people
+      outside her own system. (`sources/archive-2025-cloudalignment-scat-course-design.md`)
+    - **Attendee-role distribution data**: roughly three-quarters of the author's own
+      course-takers hold titles like "security consultant," "security manager,"
+      "auditor," or something with "risk" in it, with "assess/validate cloud and IT
+      solutions" the top task. This is real evidence for who the book's practitioner
+      audience actually is — useful, concrete backing for the introduction's implicit
+      claims about its readership, and a natural fit near where the book states what
+      it is (and isn't) for.
+      (`sources/misc-teamprogram-scat2018-faster-innovation.md`)
+    - **Inevitability-of-adoption argument**: "any technology that is sufficiently
+      useful and affordable can hardly be denied... society will often become
+      dependent on it," illustrated with cars and the internet as precedents that
+      became unregulatable-away. This sharpens the introduction's autonomy question by
+      giving it a historical pattern: autonomy erodes not through a single bad
+      decision but through cumulative, individually-reasonable adoption choices.
+      Strong Neil material — it's an argument he can extend into other technology
+      debates (AI adoption, say) rather than a one-off.
+      (`sources/oudemeuk-inevitability-of-cloud.md`)
+
+    **Maybe relevant**
+
+    - **The 5-step course-journey structure** ("incoming cloud!" → "why do we want
+      this?" → "requirements and constraints" → "how does that work these days?" →
+      "what does the future hold?", with weights) — decent teaching-order evidence
+      that the book's own act structure (value → power → risk, roughly) tracks a real
+      pattern the author has taught before. Worth a passing mention as validation, but
+      it's really course-design scaffolding rather than book content; the weights and
+      step names are more useful as background confidence than as something to quote.
+      Cross-ref unit 28 (three ways to go cloud), which shares "why do we want this"
+      territory. (`sources/archive-2025-cloudalignment-scat-course-design.md`)
+    - **Course design philosophy**: obstacles organized into a chronological 5-step
+      journey while acknowledging companies cycle through it repeatedly, likened to
+      the logical-but-cyclical relationship between requirements and code in software
+      development. A nice small analogy, but it's about how to *teach* the material,
+      not something the introduction itself needs to say to the reader. Could be
+      dropped without loss. (`sources/archive-2025-cloudalignment-scat-course-design.md`)
+    - **A visible printed agenda banner** giving a large, initially-chaotic in-person
+      cohort a sense of structure — a classroom-facilitation anecdote, not
+      introduction content. If used anywhere, it belongs in a discussion of how the
+      book itself signposts its structure (e.g. a "how to read this book" note), not
+      in the thesis-setting introduction itself.
+      (`sources/delivery-cae-2017-denhaag-dci-feedback.md`)
+
+    **Hardly relevant**
+
+    - None outright removed — all six items are at least introduction-adjacent — but
+      the two course-design/classroom items above are closer to "evidence the author
+      has taught this well" than "content the introduction should say," so they're a
+      light touch at most.
+
+    ## Cross-unit flags
+
+    - The 5-step course structure and its "why do we want this?" step → also relevant
+      to unit 28 (three ways to go cloud) as teaching-order corroboration.
+    - See also unit 19's candidate-edits note: a re-triaged item — "the compressed
+      digital infrastructure/value/risk/power thesis statement" from
+      `sources/delivery-thenewdigital-2025.md` — was flagged there as a possible fit
+      for unit 2 (or unit 51, Positions of power in IT) but not yet triaged against
+      this unit's own candidate file. Worth a follow-up pass: check whether it
+      sharpens the existing "value, power, and risk: all up for grabs" section here,
+      since the introduction already states that same three-part thesis and this item
+      may be a stronger or more compressed restatement of it.
 ---
 The internet is a _digital infrastructure at scale_. Let’s unpack that for a moment.
 

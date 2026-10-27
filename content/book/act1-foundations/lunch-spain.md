@@ -4,6 +4,8 @@ draft: false
 title: 'What a lunch in Spain taught me about digital infrastructures'
 short_title: 'What a lunch in Spain taught me'
 weight: 40
+notes-closed:
+    - "[x] No units-notes harvest file exists for this unit (case opener, weight 40 — units-notes numbering starts at unit 5) — nothing to move, checklist empty by design"
 ---
 
 In 2005 I visited my father in France. It turned out to be convenient to pick me up from the Gerona airport in Spain.
