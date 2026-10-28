@@ -3,6 +3,45 @@ date: '2025-03-11T09:10:54Z'
 draft: false
 title: 'Provider Value'
 weight: 200
+notes-closed:
+    - "[ ] Drie-motievenindeling (substitution/optimization/innovation, NL 2013-survey) nog niet verwerkt — aanbevolen als organiserend device voor de unit"
+    - "[ ] Scherpe correctie op 'cloud is goedkoper' (echte besparing zit in nieuwe IT, niet bestaande IT) nog niet verwerkt — sterke kandidaat voor de these van de unit"
+    - "[ ] Elastic-infrastructure decision-scene fragment (transactieprijzen vs vaste piekcapaciteit) nog niet verwerkt"
+    - "[ ] Tegenbewijs kleine bedrijven (2012 Forbes/Gene Marks, 30 bedrijven wezen cloud af op kosten) nog niet verwerkt — nuttig voor intellectuele eerlijkheid"
+    - "[ ] 'Provider heritage shapes the product' (Google vs AWS) nog niet verwerkt — mogelijk beter in unit 10"
+notes: |
+    Verplaatst vanuit units-notes/unit-20.md (2026-10-28). Grote harvest (20 items),
+    hier gegroepeerd; redundantie- en cross-unit-flags apart vermeld.
+
+    Highly relevant (zie notes-closed voor checklist):
+    - Drie-motievenindeling (substitution/optimization/innovation) — bron:
+      sources/oudemeuk-why-people-buy-cloud.md en
+      sources/oudemeuk-omkatten-why-do-people-buy-cloud-services.md (twee tellingen
+      van dezelfde indeling, gebruik één).
+    - "Cloud is niet goedkoper voor bestaande IT" — bron:
+      sources/oudemeuk-value-first-then-risk.md.
+    - Elastic-infrastructure fragment — bron: sources/delivery-ccsk-teleseminar-2013-oct.md.
+    - Kleine-bedrijven-tegenbewijs — bron: sources/oudemeuk-cloud-too-expensive.md.
+    - "Provider heritage" (Google vs AWS) — bron:
+      sources/oudemeuk-omkatten-target-market-google-cloud-platform.md.
+
+    Redundantiewaarschuwing: minstens drie bronnen maken onafhankelijk hetzelfde
+    "cloud is niet goedkoper voor bestaande IT, wel voor nieuwe IT"-punt
+    (oudemeuk-value-first-then-risk, oudemeuk-cloud-vendors-price-fixation, en
+    impliciet de Fashiolista-case in units 21/22) — kies de scherpste (aanbevolen:
+    value-first-then-risk), niet stapelen.
+
+    Cross-unit flags:
+    - 8-stappen cloud-adoptieroadmap → al de spine van unit 19, niet hier herhalen.
+    - Elderly-care "adoptie opgelost, use-case is bottleneck" → ook unit 28.
+    - CAPEX/OPEX pitchregel → ook units 29/30.
+    - IoT business-model-onzekerheid → beter primair thuis unit 32a.
+    - "Provider heritage" → ook kandidaat unit 10.
+
+    Structurele mismatch gesignaleerd door de harvest zelf: bijna de hele oogst gaat
+    over "hoe bouw je een cloud business case", terwijl deze unit over
+    informatietheorie/onzekerheidsreductie gaat — overwogen is de restmaterie naar
+    unit 22 te routeren (zie daar), in plaats van deze unit's scope te verbreden.
 ---
 
 Consumers of digital infrastructures benefit from not running them themselves, but having a provider who serves more consumers do it for them.

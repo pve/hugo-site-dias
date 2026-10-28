@@ -3,6 +3,50 @@ date: '2026-08-03T11:24:29Z'
 draft: false
 title: 'Why we signed the cloud deal'
 weight: 190
+notes-closed:
+    - "[x] Oude unit-19-content (Kaminski capacity-planning interview) al verplaatst naar unit 72a (act5-risk/automate-or-die-capacity-planning.md) — niet hier herhaald"
+    - "[ ] Titel front matter ('Why we signed the cloud deal') nooit herzien tegen alternatief 'The Solvency II Deadline' — laag prioriteit, nog open"
+    - "[ ] Geen gedramatiseerde onenigheid binnen Aegon's eigen negen-rollen governance-team — grootste resterende zwakte tegen act-these 'mensen die er echt voor verantwoordelijk zijn'"
+    - "[ ] Geen kostencijfer voor Aegon's kant van de deal (enige cijfer is Bitbrains' eigen SOC2-onderhoudskosten) — bevestigd afwezig in bronmateriaal, geen schrijffout"
+    - "[ ] 'Waarom niet'-wrijving (DNB) is generieke marktkleur, niet aan Aegon zelf bevestigd"
+    - "[x] book-sequence.md zelf: unit 19 staat wel beschreven maar niet in de genummerde unit-tabel — kleine housekeeping-update nodig daar"
+notes: |
+    Verplaatst vanuit units-notes/unit-19.md (2026-10-28). Grote harvest, sterk
+    verwerkt in de live prose (drafting pass "essentially compleet" per de notitie);
+    hieronder condensed op wat nog niet verwerkt is.
+
+    Herkomst getraceerd: PvIB-thema-avond 20 maart 2014 ("Security"), vier sessies op
+    YouTube (@pvib4168), lokaal met whisper.cpp (large-v3-turbo) opnieuw
+    getranscribeerd omdat de auto-captions onbruikbaar waren. Onafhankelijk bevestigd
+    door Shen/van Beek/Iosup, TU Delft PDS-2014-001 (2014), die Aegon noemt als
+    Bitbrains-klant.
+
+    Cutting-room-floor (gevonden, niet gebruikt in dit bestand — bestemming genoemd):
+    - CSA cloud-adoptie-survey-materiaal (top-redenen, "banken met meer digitale
+      klanten hebben minder vaak een no-cloud-strategie") → unit 28.
+    - SOC1/SOC2/SOC3-taxonomie in detail, ~380 controls, KPMG's auditmethode → unit 72.
+    - €40.000/core Oracle-licentiefrictie (expliciet hypothetisch in bron) → unit 32a.
+    - Towers Watson / Algorithmics als genoemde Solvency II-softwareleveranciers →
+      unit 31 (caveat: generiek "de marktpartijen", niet bevestigd als Aegon's
+      specifieke leverancier).
+    - Nationale-Nederlanden (2012, eerdere ISAE 3000-klant van Bitbrains) → los bewijs
+      dat "klanten eisen bewijs van controle" een patroon is, geen eenmalig geval.
+    - Renato Kuiper's "tell me, show me, prove me" — herbruikbare framing voor
+      audit/trust-vertoog, elders inzetbaar (unit 72, of unit 21).
+    - DNB's Theoretical Solvency Criterion (okt 2013) — alleen gebruikt voor de
+      "rond 2013"-tijdsanker, volledige regeldetail elders inzetbaar.
+
+    Cross-unit flags:
+    - Anti-lock-in VM-portability-clausule → unit 32a (lock-in), al als teaser
+      geplant in dit bestand.
+    - Dutch Olympic Committee OS2010-case (uit dezelfde synthese-bron) → unit 28,
+      niet deze unit.
+    - Restaurant/waiter promise-theory-wandeling (dezelfde bron) → unit 26 — check
+      tegen unit 26's eigen "broken-promises hierarchy"-materiaal (restaurant/menu/
+      licensing) voor duplicaat.
+    - Compressed "digital infrastructure/value/risk/power"-these (sources/delivery-
+      thenewdigital-2025.md) → nog onplaatst; kandidaten unit 2 (Introduction) of
+      unit 51 (Positions of power in IT).
 ---
 
 Let's look at a realistic and uncommon story of cloud and outsourcing.

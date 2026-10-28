@@ -3,6 +3,29 @@ draft: false
 title: 'Agile Requires Cloud'
 date: '2016-10-12T15:12:04'
 weight: 270
+notes-closed:
+    - "[ ] Tegenargument 'cloud is geen heilige graal' (agile/Scrum/DTAP werkt ook zonder cloud) nog niet verwerkt — nodig voor intellectuele eerlijkheid"
+    - "[ ] DevOps/Agile-budgetomkering-framing nog niet verwerkt"
+    - "[ ] 'Permanent bèta'-citaat Nederlandse Secretarissen-Generaal (2017) nog niet verwerkt — sterk voor Neil"
+    - "[ ] Security-als-backlog-item-techniek (user story/abuser story) nog niet verwerkt — maakt de slotregel over security operationeel"
+    - "[ ] Onopgeloste real-world wrijving (CAB/waterfall naast snelle cloud-delivery, 'geen lijst met antwoorden') nog niet verwerkt — hoort als open vraag, niet als opgelost"
+notes: |
+    Verplaatst vanuit units-notes/unit-27.md (2026-10-28). Unit is strak en
+    conceptueel maar volledig voorbeeldvrij; harvest levert zowel ondersteuning als
+    — belangrijker — ontbrekende tegenspraak.
+
+    Highly relevant (zie notes-closed):
+    - Tegenargument — bron: sources/delivery-csw11-2020-online-denhaag-postmortem.md.
+    - DevOps/Agile-budgetomkering — bron: sources/delivery-ccsk2021-online-cohort-patterns.md.
+    - "Permanent bèta"-citaat — bron: sources/delivery-cae5-2017-dci-cloudbroker-announcement.md.
+    - Security-als-backlog-item — bron: sources/archive-2019-securestartup-lean-it-risk.md.
+    - Onopgeloste wrijving (CAB/waterfall) — bron: sources/casa-teachable-comments-2025.md.
+
+    Cross-unit flags:
+    - "Onze cloud is geen cloud"-misverstand → primair thuis unit 10.
+    - Gasunie-wrijvingspunten → ook unit 37 (automation business case); al centraler
+      gebruikt in units 21-23.
+    - "Vijf stappen betere cloudprovider"-volwassenheidsloop → ook unit 28.
 ---
 Getting to value quickly has value in itself.
 The faster you get to value, the better it is, generally.

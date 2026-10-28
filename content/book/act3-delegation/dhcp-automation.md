@@ -37,10 +37,11 @@ The official standard for this was RFC2322, published April 1, 1998 (who said ha
 In 1994 I went to a Unix systems administration conference and they had Mike O'Dell over from the USA.
 He had a [presentation about the internet](https://archief-website.nluug.nl/activiteiten/events/vj94/abstracts/Mike.ODell.html) where he talked about many layers of technology to just push IP packets around. I was impressed by the number of layers back then, but I think what he was trying to say was how wasteful it really was, and that many of these things had to be re-engineered to allow the internet to grow.
 
-As a side note, it grew by a factor of 500-1000 in number of users in the following thirty years.
-At the time of the conference there were about a 1000 websites worldwide, and this conference is the first one listed on the NLUUG website.
+As a side note, the internet grew by a factor of 500-1000 in number of users in the following thirty years.
+At the time of the conference there were a few thousand websites worldwide, and this conference is the first one listed on the NLUUG website.
 
-We talked with him in the bar afterwards, where he said: "You know, next year Microsoft's going to come out with a new version of Windows (editor note: Windows 95) and that will have an internet protocol stack built in to the operating system. They're planning to sell 150,000 of those every month". That sounded like a staggering amount to me at the time.
+We talked with Mike in the bar afterwards, where he said: "You know, next year Microsoft's going to come out with a new version of Windows (editor note: Windows 95) and that will have an internet protocol stack built in to the operating system. They're planning to sell 150,000 of those every month".
+That sounded like a staggering amount to me at the time.
 And it got me thinking.
 Can you imagine how many IP addresses that will be right? How are we going to manage these? We need more pencils!
 

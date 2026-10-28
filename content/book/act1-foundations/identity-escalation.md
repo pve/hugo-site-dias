@@ -188,6 +188,7 @@ note: |
 Imagine you are a process, with very little memory or history.
 A network connection is coming in.
 If you like an analogy, imagine you are in a science fiction movie like "Cypher" where you get dropped in an office you don't know with no history, and a telephone that rings.
+
 You pick it up.
 
 What is coming in?

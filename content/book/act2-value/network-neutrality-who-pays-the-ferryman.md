@@ -6,6 +6,26 @@ note: review for logic
 aliases:
 - "/posts/network-neutrality-who-pays-the-ferryman/"
 weight: 320
+notes-closed:
+    - "[ ] 'Fully clogged by 2010'-voorspelling (AT&T, ca. 2005) nog niet verwerkt — goede historische tegenhanger bij het 2006-essay"
+    - "[ ] Commercieel motief achter netneutraliteitsdebat (flat-rate vs volume-pricing) nog niet verwerkt"
+    - "[ ] 'On the net' vs 'in the net'-vocabulaire nog niet verwerkt"
+notes: |
+    Verplaatst vanuit units-notes/unit-32.md (2026-10-28). 2006-essay, nog in
+    originele stem; model houdt stand, mist alleen historische textuur.
+
+    Highly relevant (zie notes-closed):
+    - "Fully clogged by 2010" + "imminent death of the net"-grap (bandbreedte sinds
+      toen ~miljoenvoudig gegroeid) — bron: sources/oudemeuk-imminent-death-of-net.md.
+    - Commercieel motief (flat-rate beperkt groei, volume-pricing "seduces") — zelfde
+      bron.
+    - "On the net" vs "in the net" — bron: sources/oudemeuk-on-net-or-in-net.md.
+
+    Cross-unit flags:
+    - Gartner's cloud-broker-taxonomie (aggregatie/integratie/customization) → beter
+      thuis unit 32a of een marktstructuur-discussie in Act IV.
+    - Akamai-aanbeveling ("telcos moeten een CDN kopen") → optionele voetnoot, geen
+      sterk alternatief thuis gevonden.
 ---
 
 The ancient Greeks put a coin in the mouth of their dead, to pay Charon for the crossing to the underworld.

@@ -18,6 +18,8 @@ notes: |
     Open vraag: titel "Engineering Services" is een werktitel — dekt de lading
     (praktisch toepassen/ontwerpen van services met promise-theory-vocabulaire), maar
     nog niet getoetst tegen de rest van Act 2's naamgeving.
+notes-closed:
+    - "[x] Geen units-notes harvest-file voor deze unit (unit 26a is nieuw toegevoegd, niet in de oorspronkelijke units-notes-nummering) — niets te verplaatsen, checklist leeg per ontwerp"
 ---
 
 ### Service Elements

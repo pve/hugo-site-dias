@@ -3,6 +3,21 @@ title: Business Model Canvas for SaaS Providers
 date: '2014-12-15T11:18:17'
 draft: false
 weight: 300
+notes-closed:
+    - "[x] Enige substantiële harvest-item (twee-hypothetische-providers-contrast) al bijna verbatim in body verwerkt"
+    - "[ ] Buy-vs-rent-framing rond omvangsonzekerheid nog niet verwerkt — optioneel, Netflix-quote dekt al vergelijkbaar punt"
+notes: |
+    Verplaatst vanuit units-notes/unit-30.md (2026-10-28). Minimale harvest (2
+    items), unit is in essentie compleet relatief tot die harvest.
+
+    - Buy-vs-rent-framing ("te veel kopen kan financieel fataal zijn, te weinig
+      geeft slechte service") — bron: sources/oudemeuk-cloud-too-expensive.md.
+      Alleen gebruiken als een tweede, cijferneutrale manier gewenst is naast de
+      bestaande Netflix-quote.
+
+    Cross-unit flags: geen nieuwe — zie unit 29's notes voor CAPEX/OPEX-materiaal
+    dat ook hier zou passen voor een matchend voorbeeld in beide business-model-
+    canvas-units.
 ---
 
  In this unit, we'll explore examples using two hypothetical SaaS providers: one offering bookkeeping software and the other a project collaboration platform.

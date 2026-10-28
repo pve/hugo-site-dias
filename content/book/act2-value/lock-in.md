@@ -3,6 +3,70 @@ date: '2026-07-23T00:00:00Z'
 draft: true
 title: 'Lock-in: switching costs and network effects (draft)'
 weight: 325
+notes-closed:
+    - "[ ] '40% van cloudgebruikers heeft geen exitplan'-statistiek nog niet verwerkt — aanbevolen als openingshaak/pull-quote"
+    - "[ ] 'Exit plan even before you begin'-advies (2014-2016, drie tellingen) nog niet verwerkt — dekt de outline's eigen 'engineering posture'-bullet al volledig"
+    - "[ ] Technisch lock-in-voorbeeld (Gmail-migratie, 11GB/200k berichten, verwacht 20s, werd een week) nog niet verwerkt"
+    - "[ ] Tweede technisch schaalvoorbeeld (petabyte-migratie, weken niet uren) nog niet verwerkt"
+    - "[ ] 'Technology bankruptcy'-term nog niet verwerkt"
+    - "[ ] Microsoft e-book-DRM-shutdown-case (2019) nog niet verwerkt — sterk secundair/alternatief voor de Neato-opener"
+    - "[ ] Verzekeraar's anti-lock-in-contractclausule (VM-images 'outside of your influence') nog niet verwerkt — is de payoff van unit 19's teaser"
+    - "[ ] Drie forced-migration-cases (SAP/leverancier/Microsoft Office) nog niet verwerkt — kies één"
+    - "[ ] Kubernetes-vs-OpenStack-netwerkeffect-voorbeeld nog niet verwerkt"
+    - "[ ] Broadcom/VMware-repatriation-case (2024, actueel) nog niet verwerkt"
+    - "[ ] Lock-in-is-asymmetrisch-tegenargument (ook on-prem heeft lock-in) nog niet verwerkt — nodig voor eerlijkheid van de these"
+    - "[ ] Identity-provider-lock-in nog niet verwerkt — kruisverwijzing unit 11a"
+    - "[ ] Feature-continuity-als-lock-in-mechanisme nog niet verwerkt"
+    - "[ ] 'Robber barons'-historische analogie nog niet verwerkt"
+notes: |
+    Verplaatst vanuit units-notes/unit-32a.md (2026-10-28). Veruit de grootste
+    harvest in Act 2 (51 items) — dit bestand is zelf al een notes-draft (these,
+    positie, case-opener-kandidaat, outline, persona-check, bronnen, open vragen),
+    dus getrieerd als aanvulling op die draft, niet als gat in afgewerkte prose.
+    De harvest overlevert massaal relatief tot de outline — de hoofdtaak is een
+    klein aantal beste voorbeelden per outline-bullet kiezen, niet meer materiaal
+    zoeken.
+
+    Highly relevant: zie notes-closed voor de volledige lijst. Bronnen: 40%-
+    statistiek — sources/oudemeuk-omkatten-why-do-people-buy-cloud-services.md +
+    oudemeuk-why-people-buy-cloud.md (twee tellingen, citeer één). Exit-plan-advies —
+    delivery-ccsk-overview-webinars-2015.md, delivery-ccsk-refresher-call-2014-may.md,
+    delivery-webinar-pragmatic-cloud-2016-oct-audio.md. Gmail-migratie —
+    delivery-ccsk-for-christmas-2015-online.md. "Technology bankruptcy" —
+    delivery-ccsk66-2017-online-sept-chat.md. MS e-book-DRM —
+    delivery-ccsk100-2019-online-july.md. Anti-lock-in-clausule —
+    misc-cae-udemy-2015-bank-roadmap-insurance-case.md. Forced-migration-cases —
+    archive-2024-cff-transcript-carlo-g.md, interview-johann-2024-dutch.md,
+    interview-stefan-2024.md. Kubernetes/OpenStack en Broadcom/VMware —
+    interview-vozza-2024.md. Lock-in-is-asymmetrisch —
+    delivery-ccsk2023-online-cohort-patterns.md. Identity-provider-lock-in —
+    oudemeuk-identity-management-multiple-clouds.md. Feature-continuity —
+    oudemeuk-feature-continuity-risk.md. "Robber barons" —
+    delivery-ccsk158-2025-online-mar.md.
+
+    Redundantiewaarschuwing: de "40% zonder exitplan"-statistiek, het "exit plan
+    even before you begin"-advies en de "data liberation"-framing maken over 5+
+    onafhankelijke bronnen (2014-2016) in essentie hetzelfde punt — behandel als één
+    goed bevestigde argumentlijn. Drie vendor-forced-migration-cases (SAP, een
+    naamloze leverancier, Microsoft Office) vertellen hetzelfde verhaal — kies één.
+    De "vijf antipatterns"-lijst en de lift-and-shift-risicochecklist zijn al bij
+    unit 28 gevlagd — niet hier een derde keer introduceren.
+
+    Cross-unit flags:
+    - Minimum-viable-exitplan-checklist → primair thuis unit 72.
+    - Netflix's vroege, onzorgvuldige AWS-onboarding ("gooiden er 10.000 machines
+      tegenaan") → ook unit 26.
+    - Ford River Rouge/broker-supply-chain-analogie → ook unit 26 of Act IV
+      marktstructuur.
+    - Disruptive-innovation-lens (Christensen: Wikipedia vs Britannica) → ook unit
+      57 (power shift/disruption), indien die unit bestaat.
+    - €40.000/core Oracle-licentievoorbeeld (uit unit 19's onderzoek, expliciet
+      hypothetisch in de bron) → bruikbaar hier als illustratieve kleur, duidelijk
+      gecaveat als generiek.
+    - Insurance-NPV-migratiecase's residual-risk/lock-in-mitigatiedetail → primair
+      thuis unit 19 (plant dit al als teaser) / unit 73 (board pitch).
+    - Bart's governance-framework-ontstaansverhaal → mogelijke latere governance/
+      methodologie-unit.
 ---
 
 <!-- NOTES DRAFT — unit 32a in book-sequence.md. Not prose yet; these are the notes on what the unit should contain. -->

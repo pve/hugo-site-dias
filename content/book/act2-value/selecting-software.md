@@ -6,6 +6,40 @@ note: flow and logic can improve
 aliases:
 - "/posts/selecting-software/"
 weight: 310
+notes-closed:
+    - "[ ] 'If it ain't broke, don't fix it'-heuristiek (drie onafhankelijke tellingen, 2012-2015) nog niet verwerkt — aanbevolen als opening/these van de unit"
+    - "[ ] Strategic-asset-decisionboom (is de software uniek belangrijk voor wat de organisatie ís?) nog niet verwerkt"
+    - "[ ] 'Business-case-ladder' (1-5, met SharePoint-rehosting-voorbeeld) nog niet verwerkt"
+    - "[ ] Volledige worked vendor-vetting-decision-scene (security-compliance-professional) nog niet verwerkt — direct toepasbaar voor Maria"
+    - "[ ] Standaardisatie-niet-inspanning-argument (EDS vs kleine pan-Europese ISP) nog niet verwerkt"
+    - "[ ] Micro build-vs-buy-kostenvergelijking (SaaS €10k/jaar vs self-hosting €2-3k/jaar) nog niet verwerkt"
+    - "[ ] Peter's eigen dogfooding-anekdote (zelfgebouwd LMS kostte veel en leverde niets) nog niet verwerkt"
+notes: |
+    Verplaatst vanuit units-notes/unit-31.md (2026-10-28). Unit is dun relatief tot
+    de harvest — mist nog elk besliskader behalve de vier-wegen-lijst.
+
+    Highly relevant (zie notes-closed voor volledige lijst):
+    - "If it ain't broke" — composiet, bron: sources/verbatim-composites-for-book-insertion.md
+      (consolideert oudemeuk-why-not-move-to-cloud.md,
+      delivery-ccsk-2015-2016-live-nist-narration-subtleties.md,
+      delivery-ccsk42-2015-gallagher-virtual.md).
+    - Strategic-asset-decisionboom — bron: sources/oudemeuk-cloud-service-model-choice.md.
+    - Business-case-ladder — bron: sources/delivery-ccsk42-2015-gallagher-virtual.md.
+    - Vendor-vetting-scene — bron: sources/archive-2025-cloudalignment-migration-strategy-and-vendor-vetting.md.
+    - EDS-vs-ISP-standaardisatie — bron: sources/oudemeuk-three-obstacles-cloud-adoption.md.
+    - Micro-kostenvergelijking — bron: sources/interview-cbc1-philipp-2024-coaching.md.
+    - Dogfooding-anekdote — bron: sources/delivery-ccsk79-2018-oslo-prep-session-audio.md.
+
+    Redundantiewaarschuwing: "if it ain't broke" komt onafhankelijk minstens drie
+    keer voor (2012 blogpost, 2015 CCSK-delivery, 2015 Gallagher-coaching) — al
+    geconsolideerd tot één composietitem, niet apart opnieuw introduceren.
+
+    Cross-unit flags:
+    - Twee-tier-taxonomie (techneuten IaaS/PaaS vs business SaaS) → ook unit 28.
+    - Towers Watson/Algorithmics als genoemde Solvency-II-softwareleveranciers (uit
+      unit 19's onderzoek) → caveat: generiek "de marktpartijen", niet bevestigd als
+      Aegon's specifieke leverancier.
+    - Cloud Controls Matrix-beperkingen, vendor-risk-vetting-scene → ook unit 72.
 ---
 
 Whenever we need a new piece of software, big or small, there are a few alternative roads to follow.

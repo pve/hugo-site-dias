@@ -4,6 +4,29 @@ title: Business Model Canvas for IaaS Providers
 description: "Mapping AWS EC2 onto the nine blocks of the Business Model Canvas, from customer segments to cost structure, to see what actually makes an IaaS business work."
 date: '2014-11-15T11:18:17'
 weight: 290
+notes-closed:
+    - "[x] 'Interne teams waren eerste klant'-punt al verwerkt in body (bijna verbatim)"
+    - "[ ] Prijsonderhandelingsdialoog (private IaaS, '5x zo duur als concurrent') nog niet verwerkt — ready-made scene voor Value Propositions/Customer Relationships"
+    - "[ ] Vervolgreflectie zelfde case (perceptie van voordeel is cruciaal, niet aangenomen) nog niet verwerkt"
+    - "[ ] Cynisch-maar-correcte prijsobservatie ('groei zo snel mogelijk, prijzen zo hoog mogelijk') nog niet verwerkt"
+    - "[ ] Buyer/seller-waarde-articulatie-mismatch (Cloud Connect survey) nog niet verwerkt"
+notes: |
+    Verplaatst vanuit units-notes/unit-29.md (2026-10-28). Unit is al substantieel
+    en actueel; twee harvest-items al zichtbaar in de body verwerkt.
+
+    Highly relevant (zie notes-closed):
+    - Prijsonderhandelingsdialoog — bron: sources/archive-pre2017-cloud-provider-transition-case.md.
+    - Vervolgreflectie — bron: sources/archive-pre2017-delivery-cohort-feedback-spotcheck.md.
+    - Prijsobservatie — bron: sources/oudemeuk-cloud-too-expensive.md.
+    - Buyer/seller-mismatch — bron: sources/oudemeuk-cloud-vendors-price-fixation.md.
+
+    Cross-unit flags:
+    - CAPEX/OPEX-pitchregel → ook units 20 en 30; gebruik één keer, niet in alle drie.
+    - AWS-vs-Google "provider heritage"-contrast → ook unit 20; feiten (2018
+      Quora-antwoord, 2015 screenshot) zijn gedateerd en moeten eerst opnieuw
+      geverifieerd worden.
+    - Prijsonderhandelingsdialoog's bredere les (gepercipieerd voordeel) → ook
+      relevant voor unit 32a (lock-in/switching costs).
 ---
 
 The Business Model Canvas is a strategic management tool that serves as a visual framework for developing and discussing business models.

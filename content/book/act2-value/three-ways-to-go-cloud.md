@@ -3,6 +3,46 @@ date: '2018-06-03T17:06:57Z'
 draft: false
 title: 'Multiple Ways to Go Cloud'
 weight: 280
+notes-closed:
+    - "[ ] Dutch Olympic Committee OS2010-case (Flickr/Twitter-aggregatie i.p.v. half miljoen euro servers) nog niet verwerkt — aanbevolen als cloud-native case-opener"
+    - "[ ] Netflix DVD→streaming-pivot als 'game changer'-voorbeeld nog niet verwerkt — check eerst of elders al gebruikt"
+    - "[ ] 'Private infrastructure is dead, private platform (Kubernetes) is de weg' nog niet verwerkt"
+    - "[ ] Lift-and-shift-gone-wrong-case ontbreekt nog altijd (4x onafhankelijk gesignaleerd gat, 2023-2024) — checklist bestaat al, needs één worked example (CFF-interview-materiaal kan die leveren)"
+    - "[ ] Drie misconceptie-clusters ('het is er al', 'het kost niet veel', 'ik hoef niets te doen') + klantspijtverhalen nog niet verwerkt"
+    - "[ ] Segmented-migration-case (spoorwegbedrijf, PCI-DSS-scope apart van elastische workloads) nog niet verwerkt"
+    - "[ ] 'Resilience debt'-term (mainframe-achtig platform weerstaat migratie) nog niet verwerkt"
+    - "[ ] Genoemde financiële-sector-caserooster (CapitalOne, BankInter, KBC, Davinci) nog niet verwerkt — check overlap met unit 19 (geen, bevestigd)"
+    - "[ ] Drie klantposities (hybrid-by-necessity/on-prem-by-choice/middle lane) nog niet verwerkt"
+    - "[ ] Cloud-repatriation als actuele trend nog niet verwerkt"
+    - "[ ] Mechanisme waarom lift-and-shift business cases meestal falen (setup-kosten herhalen zich) nog niet verwerkt"
+    - "[ ] Twee-lens-framing (cost-of-IT vs organizational-value-of-IT) nog niet verwerkt"
+notes: |
+    Verplaatst vanuit units-notes/unit-28.md (2026-10-28). Veruit de grootste
+    harvest in Act 2 (63 items) — hier zwaar gegroepeerd, niets weggelaten maar veel
+    bijna-duplicaten gebundeld. Unit is conceptueel compleet maar volledig
+    voorbeeldvrij; de harvest is precies waar de unit nu niets heeft.
+
+    Redundantiewaarschuwing: minstens vier onafhankelijke bronnen (2023-2024)
+    signaleren hetzelfde onopgeloste "we moeten een lift-and-shift-gone-wrong-case
+    schrijven" — behandel als één bevestigd gat, niet vier losse items. De "vijf
+    antipatterns"-lijst en de "patroon→gevolg→tegenargument"-mindmap dekken hetzelfde
+    terrein — gebruik er één. De drie-motieven-/drie-wegen-taxonomieën (deze unit's
+    eigen drie wegen, de cost-of-IT/cost-of-business/game-changer-framing, en de
+    substitution/optimization/innovation-framing uit unit 20) overlappen substantieel
+    — één editorial pas nodig om te bepalen welke primair is.
+
+    Cross-unit flags:
+    - OS2010-case → ook genoemd in unit 19's bronnenlijst als secundair item.
+    - Verzekeraar/Solvency-II-voorbeeld in de caserooster → opgelost: geen overlap
+      met unit 19 (die bleef smal en Aegon-specifiek; generiek CSA-materiaal is vrij
+      voor gebruik hier, zie unit 19's notes "cutting-room floor").
+    - "Onze cloud is geen cloud" → primair thuis unit 10.
+    - SaaS/IaaS-tweedeling (techneuten vs business) → ook unit 31.
+    - Elderly-care "adoptie opgelost, use-case is bottleneck" → ook unit 20.
+    - "Vijf stappen betere cloudprovider" → ook unit 27.
+    - Docker-adopter-roll-call (Amsterdam, Turner, ING, PayPal, GE) → overweeg een
+      technischer/latere infrastructuur-unit.
+    - Build-vs-buy RAG/AI-framing → beter thuis in een latere AI-unit (Act III/IV).
 ---
 
 Public cloud migrations come in different shapes and sizes, but I see three major approaches. Each of these brings value in its own way, and they all have very different technical and governance implications.

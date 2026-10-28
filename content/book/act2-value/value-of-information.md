@@ -3,6 +3,28 @@ date: '2025-05-10T11:33:28Z'
 draft: false
 title: 'What is the value of information?'
 weight: 210
+notes-closed:
+    - "[ ] 'Value must be explainable'-teaching device (gemengde claims: sneller/makkelijker/'mijn oma vindt het fijn'/lagere ping) nog niet verwerkt — goede fit, geeft Maria een praktische checklist"
+    - "[ ] Telecom cost-over-time analogie (1970/1990/2010, bellen per uur loon) nog niet verwerkt — past naast bestaande Shannon/resolutie-voorbeelden"
+    - "[x] Rest van de harvest (cloud-business-case-materiaal) gerouteerd naar unit 22 — niet hier dupliceren"
+notes: |
+    Verplaatst vanuit units-notes/unit-21.md (2026-10-28).
+
+    Highly relevant, nog te verwerken:
+    - "Value must be explainable"-device — bron: sources/archive-2021-22-it-professional-value-promise.md.
+    - Telecom cost-over-time analogie — bron: sources/misc-signature-speech-2016-2017.md.
+
+    Structurele mismatch: bijna de hele harvest is cloud-business-case-materiaal
+    (hoe bouw je er een, wat kost het), niet "waarde van informatie" in Shannon-zin.
+    Dat materiaal (cloud-business-case-outline, Fashiolista-cijfers, Gasunie-case,
+    Stephen's "fuel systems"-case, business/tech-objectiepaar, kostenankers,
+    elderly-care-databottleneck, security-business-case-framing) is gerouteerd naar
+    unit 22 (Value in process improvement) — zie die unit's notes voor de volledige
+    lijst en bronnen. Enige grensgeval: de elderly-care-databottleneck (drie
+    zorgaanbieders, geblokkeerde nachtdienst-inzage) is ook als informatie-waarde-
+    voorbeeld te lezen — heroverwegen als deze unit alsnog een concrete case wil.
+
+    Cross-unit flags: zie unit 22's notes voor de volledige overdracht.
 ---
 
 What is information really?

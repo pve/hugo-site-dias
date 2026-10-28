@@ -3,6 +3,15 @@ date: '2026-05-26T00:00:00Z'
 draft: false
 title: "The Prisoner's Dilemma"
 weight: 250
+notes-closed:
+    - "[x] Harvest (1 item) voegt niets nieuws toe — unit dekt retaliatie al via Axelrod's 'provocable'-trek"
+notes: |
+    Verplaatst vanuit units-notes/unit-25.md (2026-10-28). Complete, gepolijste unit;
+    minimale harvest bevestigt alleen dat niets ontbreekt.
+
+    Cross-unit flag: een losse promise-theory-contentkiem uit dezelfde bronfragment
+    (nts-live-teaching-notes-synthesis.md, "49 future video on promise theory") hoort
+    bij units 16/26, niet hier.
 ---
 
 How do people establish trust under the most adverse circumstances?

@@ -3,6 +3,38 @@ date: '2025-03-27T20:33:42Z'
 draft: false
 title: 'Value in Process Improvement'
 weight: 220
+notes-closed:
+    - "[ ] Amateur-vs-professional-framing ('omdat ik er lol in heb' vs 'omdat het waarde toevoegt') nog niet verwerkt — sluit aan op slotparagraaf"
+    - "[ ] Fashiolista-migratiecijfers (5→80 instances, kosten x3, waarde in flexibiliteit) nog niet verwerkt"
+    - "[ ] Gasunie's financieel-vs-kwaliteit-split nog niet verwerkt"
+    - "[ ] '10x computers/software — hoeveel staff kost dat?' nog niet verwerkt"
+    - "[ ] Elderly-care staffing-crunch-case (verdubbeling vraag, krimpend personeel) nog niet verwerkt"
+    - "[ ] Lineaire-kostencurve-observatie (diensten schalen lineair, beheer niet) nog niet verwerkt"
+notes: |
+    Verplaatst vanuit units-notes/unit-22.md (2026-10-28), inclusief materiaal
+    doorgerouteerd vanuit unit 21's te brede harvest.
+
+    Highly relevant:
+    - Amateur-vs-professional-framing — bron: sources/archive-2021-22-it-professional-value-promise.md.
+    - Fashiolista-case (5 servers → 80 instances, kosten x3, waarde = flexibiliteit:
+      snelle CloudFormation-staging, minder single points of failure) — bron:
+      sources/archive-pre2017-fashiolista-migration-case.md.
+    - Gasunie-case (opex/consolidatie/automatisering vs standaardisatie/self-
+      service/HA-DR) — bron: sources/archive-pre2017-private-cloud-case.md.
+    - "10x computers, hoeveel staff kost dat?" — bron: sources/delivery-nluug-2023-signature-speech.md.
+    - Elderly-care staffing-crunch — bron: sources/interview-petervandertoorn-2024-dutch.md.
+    - Lineaire-kostencurve ("diensten/capex schalen lineair met pagina's, beheer
+      niet") — bron: sources/oudemeuk-cost-of-a-web-page.md.
+
+    Redundantiewaarschuwing: Fashiolista- en Gasunie-case staan ook in unit 21's
+    harvest (nu hier geconsolideerd als betere fit voor procesverbetering dan voor
+    informatiewaarde) — niet in beide units gebruiken.
+
+    Cross-unit flags:
+    - Private-IaaS-prijsonderhandelingsdialoog → primair unit 29.
+    - "Betere remmen maken snellere auto's" (risico als concurrentievoordeel) → ook
+      Act V risico-units.
+    - Gekoppelde risico-naar-waarde-propositielijst → ook kandidaat unit 23.
 ---
 
 Most digital infrastructures are meant to communicate or coordinate, or are in support of other digital infrastructures that communicate or coordinate.

@@ -4,6 +4,16 @@ draft: false
 title: 'Games of value and power'
 weight: 240
 aireview: strunk flow
+notes-closed:
+    - "[x] Harvest is dun en bijna alles optioneel decoratie — geen must-fix items"
+notes: |
+    Verplaatst vanuit units-notes/unit-24.md (2026-10-28). Al rijk en goed ontwikkeld;
+    harvest (2 items) voegt alleen optionele sierteksten toe.
+
+    - Telecom cost-over-time analogie → beter thuis unit 21 (ook daar gevlagd).
+    - "Er zijn oude piloten en stoutmoedige piloten, maar geen oude stoutmoedige
+      piloten" — leuke afrondende aforisme-kandidaat voor de risico-als-spel-sectie,
+      optioneel (unit zegt al hetzelfde zonder de quote).
 ---
 
 A great way to look at how value is created in interactions between autonomous actors is game theory.

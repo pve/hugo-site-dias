@@ -4,6 +4,21 @@ draft: false
 title: 'Non-Monetary Values'
 description: "Money isn't the only currency of value. Belonging, identity, and professional pride shape IT decisions as much as budgets do — and are a source of power in their own right."
 weight: 230
+notes-closed:
+    - "[ ] Security-als-USP-reframe (eigen securitypostuur = klant-securitypostuur, verkoopargument) nog niet verwerkt"
+    - "[ ] Csikszentmihalyi's 'flow' gekoppeld aan Scrum nog niet verwerkt"
+notes: |
+    Verplaatst vanuit units-notes/unit-23.md (2026-10-28). Kleine harvest (5 items),
+    unit is al sterk en compleet.
+
+    Highly relevant:
+    - Security-als-USP — bron: sources/oudemeuk-saas-providers-risk-to-customers.md.
+    - "Flow" (Csikszentmihalyi) + Scrum-ritme — bron: sources/archive-2021-22-exec-briefing-scrum-flow.md.
+
+    Cross-unit flags:
+    - Gekoppelde risico-naar-waarde-propositielijst → ook unit 22; kies één thuis.
+    - Genoemde vroege SecaaS-voorbeelden → beter primair thuis unit 10.
+    - Gasunie financieel-vs-kwaliteit-split al gebruikt in unit 22 — niet dupliceren.
 ---
 
 While value is often expressed in monetary terms, there are many other sources of value for individuals as well as for organizations.
