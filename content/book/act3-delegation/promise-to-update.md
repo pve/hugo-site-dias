@@ -1,7 +1,7 @@
 ---
 date: '2025-08-14T11:30:02Z'
 draft: false
-title: 'Promise to Update'
+title: 'Promise to update'
 description: "Who updates what? Applying promise theory to the shared-responsibility question behind every SaaS and IaaS contract, and the gaps nobody's promise covers."
 weight: 390
 note: |

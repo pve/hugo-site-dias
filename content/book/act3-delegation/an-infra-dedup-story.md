@@ -157,7 +157,7 @@ What is still not easy:
 I liked the results of this business project, and I am still using it.
 Time to expand.
 
-### Agentic Infrastructure Management
+### Agentic infrastructure management
 
 I started to think about how to apply this to
 infrastructure management, and this also led me to applying it to my father's digital legacy.

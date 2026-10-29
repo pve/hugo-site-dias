@@ -1,7 +1,7 @@
 ---
 date: '2026-05-18T00:00:00Z'
 draft: false
-title: 'Digital autonomy: Autarky'
+title: 'Digital autonomy: autarky'
 weight: 800
 aliases:
   - /posts/digital-autonomy-autarky.md

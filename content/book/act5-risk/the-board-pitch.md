@@ -1,7 +1,7 @@
 ---
 date: '2025-05-13T09:39:02Z'
 draft: true
-title: 'The Board Pitch'
+title: 'The board pitch'
 weight: 736
 notes: |
     Reordered 2026 (Act V flow review): closes the opschalen cluster (lean-risk 68, risk-mgmt-at-scale 70 GAP, this unit), right before AI (74/75).

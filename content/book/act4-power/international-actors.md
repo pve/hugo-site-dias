@@ -1,7 +1,7 @@
 ---
 date: '2025-03-22T17:56:28Z'
 draft: false
-title: 'International Actors'
+title: 'International actors'
 weight: 590
 ---
 

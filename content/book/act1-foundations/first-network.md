@@ -1,7 +1,7 @@
 ---
 date: '2025-06-08T14:31:28Z'
 draft: false
-title: 'How I Got Started in Computer Networks'
+title: 'How I got started in computer networks'
 weight: 90
 notes-closed:
     - "[ ] Full personal computing timeline (1973 punched cards → PhD/rail network → EDS → Deloitte → independent → cloud) to extend/replace current 'early 80s' opening"

@@ -1,7 +1,7 @@
 ---
 date: '2025-04-16T21:16:12Z'
 draft: false
-title: 'Things Break at Scale'
+title: 'Things break at scale'
 weight: 130
 notes-closed:
     - "[ ] Four named outage post-mortems (2011 AWS EBS, 2012 Azure leap-year, 2017 GitLab, 2017 AWS S3)"

@@ -1,7 +1,7 @@
 ---
 date: '2025-03-09T21:19:45Z'
 draft: false
-title: 'Deployment Diagrams'
+title: 'Deployment diagrams'
 description: "A diagram of a phone, a speaker, and the cloud encodes real architecture decisions — where data lives, who's responsible, and how cloud-native complicates it."
 weight: 140
 notes-closed:
@@ -275,7 +275,7 @@ There are two options. The first option is that the music goes from the cloud to
 
 It is an interesting exercise to discuss the benefits and disadvantages of both options. You might also want to dive deeper into the actual protocols being used to make this work. Especially the protocols between the speakers and the rest are not so trivial.
 
-### Cloud-Native
+### Cloud-native
 
 How is deployment different in a cloud-native age? To begin with, there is virtualization, there is containerization, we have functions as a service (such as AWS Lambda), we have DevOps, we have infrastructure as code, we have external services, APIs, and so on.
 

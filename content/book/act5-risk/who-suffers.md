@@ -1,7 +1,7 @@
 ---
 date: '2025-04-15T21:27:25Z'
 draft: false
-title: 'Who Suffers?'
+title: 'Who suffers?'
 weight: 650
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: '2025-03-12T13:13:35Z'
 draft: false
-title: 'Introduction to Risk'
+title: 'Introduction to risk'
 weight: 640
 notes: |
     Check concept names (asset, threat, availability/confidentiality/integrity, mitigation, etc.) against Shostack's threat-modeling terminology: https://shostack.org/resources/threat-modeling.html

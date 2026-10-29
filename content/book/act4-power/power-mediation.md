@@ -1,7 +1,7 @@
 ---
 date: '2025-04-20T09:24:41Z'
 draft: false
-title: 'Power Flows'
+title: 'Power flows'
 weight: 520
 notes: |
     Own harvest (units-notes/unit-52.md) routed the broker-as-intermediary

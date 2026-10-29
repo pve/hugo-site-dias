@@ -1,7 +1,7 @@
 ---
 date: '2025-04-04T14:20:26Z'
 draft: false
-title: 'Network Management Automation - the DHCP case'
+title: 'Network management automation - the DHCP case'
 weight: 350
 notes: |
     Idee (2026-10-27): quote "The better your four-wheel drive, the further out
@@ -14,7 +14,8 @@ notes: |
 
     en 'next level, new dragons'. 
 ---
-As we mature processes, they come within reach of actual automation. Especially IT management processes. To paraphrase General Carl von Clausewitz, who said "War is the continuation of diplomacy with different means", we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.
+As we mature processes, they come within reach of actual automation. Especially IT management processes. 
+To paraphrase General Carl von Clausewitz, who said "War is the continuation of politics with different means", we can say that automation is the progression of process maturity with different means - replacing human effort with software and systems.
 
 My favorite historical example is IP address allocation. In the past, whenever there was a new computer, you would walk up to the head of the lab or data center and ask for a new IP address for that machine.
 They'd pull out their notebook, sharpen their pencil, and note your address down.

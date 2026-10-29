@@ -1,7 +1,7 @@
 ---
 date: '2025-04-16T21:11:32Z'
 draft: false
-title: 'Applications and Infrastructures'
+title: 'Applications and infrastructures'
 weight: 80
 checks: none
 notes-closed:

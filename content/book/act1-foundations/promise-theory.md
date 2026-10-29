@@ -139,7 +139,7 @@ But before we move on, I'll have to discuss some variations that allow you to se
 - Some of the steps can be combined, or are implicit.
 - The two steps by the provider can be combined if there is little time delay between them.
 - The final acquittal can be implicit.
-- What we have described is the "happy path". Alternative messages are also possible. The waiter can refuse the request: "we ran out of coffee unfortunately". We may not accept the drink: "could you make that an iced latte, please".
+- What we have described is the "happy path". Alternative messages are also possible. The waiter can refuse the request: "We ran out of coffee unfortunately". We may not accept the drink: "Could you make that an iced latte, please".
 
 Another point to make is that these transactions are often part of a bigger picture.
 For example, once we accept the coffee, we are making an implicit promise to pay for it, at some later stage.

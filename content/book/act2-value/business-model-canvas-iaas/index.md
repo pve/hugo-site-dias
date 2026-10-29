@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Business Model Canvas for IaaS Providers
+title: Business Model Canvas for IaaS providers
 description: "Mapping AWS EC2 onto the nine blocks of the Business Model Canvas, from customer segments to cost structure, to see what actually makes an IaaS business work."
 date: '2014-11-15T11:18:17'
 weight: 290
@@ -38,13 +38,13 @@ The example used in this section is Amazon Web Services (AWS), particularly EC2 
 
 ![IaaS Cloud Canvas](BusinessCanvasIaaS.png)
 
-### Customer Segments (CS)
+### Customer segments (CS)
 
 Customer segments are the groups of customers that the company ultimately serves, i.e., the ones that consume and pay for the services.
 
 In the AWS case, although practically anybody with a credit card can spin up a virtual machine, in 2015, Amazon primarily targeted software developers and (startup) SaaS providers as the main customers. Historically, the Amazon development teams were the first customers, and external customers were initially added as an afterthought.
 
-### Value Propositions (VP)
+### Value propositions (VP)
 
 Value propositions reflect customer problems and needs. This central element describes why the customer would ultimately pay for the product or service.
 
@@ -56,7 +56,7 @@ Value propositions are delivered to customers through communication, distributio
 
 It is often assumed that cloud computing relies solely on self-service direct sales, but the reality is much more diverse. SaaS providers, in particular, are developing extensive partner programs. AWS primarily employed a self-service direct model, where delivery is through APIs. The model is enhanced by premium support.
 
-### Customer Relationships (CR)
+### Customer relationships (CR)
 
 Customer relations are established and maintained with each specific customer segment.
 
@@ -65,32 +65,32 @@ In 2024, the conference, no longer solely focused on developers, drew around 60,
 Additionally, there are vibrant online communities.
 AWS has shifted its customer relationships significantly since 2013, targeting new customer segments, and consequently, new relationship channels.
 
-### Revenue Streams (RS)
+### Revenue streams (RS)
 
 Revenue streams result from value propositions that are successfully offered to customers.
 
 The structure of revenue streams is where cloud computing differs from earlier IT service models, as they are usage-based rather than asset-based. AWS charges hourly fees per virtual machine; the bigger the virtual machine, the higher the hourly rate.
 
-### Key Resources (KR)
+### Key resources (KR)
 
 Key resources are the assets required to offer and deliver the previously mentioned elements (e.g., value proposition, customer relationships).
 
 AWS owns massive amounts of hardware, estimated at 1 million servers or more in 2015, housed in dozens of data centers worldwide. But there is more. The service can only be delivered through advanced and unique fulfillment software and processes.
 
-### Key Activities (KA)
+### Key activities (KA)
 
 At AWS the key activity, delivery, is highly automated. But at the AWS scale, oversight and resource
 planning is still a significant effort. Optimizing assets versus utilization is very essential in the IaaS
 business model. Through economies of scale, AWS is able to spend a lot of effort on these activities.
 
-### Key Partnerships (KP)
+### Key partnerships (KP)
 
 Some activities are outsourced, and some resources are acquired outside the enterprise.
 
 AWS buys immense amounts of hardware, and uses a lot of (open source) software. Building out data
 centers is also likely to be outsourced.
 
-### Cost Structure (CS)
+### Cost structure (CS)
 
 All business model elements discussed above impact the cost structure.
 

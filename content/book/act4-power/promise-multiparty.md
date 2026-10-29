@@ -1,7 +1,7 @@
 ---
 date: '2026-08-28T00:00:00Z'
 draft: false
-title: 'Multiparty Promises'
+title: 'Multiparty promises'
 weight: 530
 notes: |
 
@@ -126,7 +126,7 @@ The European Union has issued the second Directive of Network and Information Se
 
 Let's have a look at some more intermediaries.
 
-### Supply Chains
+### Supply chains
 
 We already saw the restaurant waiter who sits downstream from a number of intermediary actors, and somewhere in that chain there is a farmer.
 Every supply chain actor has their role, adds some value, and tries to exercise some power.
@@ -151,7 +151,7 @@ the cloud provider now has more control over the way that the provisioning is do
 
 In his book Designing Delivery, Jeff Sussna argues that a common pattern of innovation in business is to change the boundary, the handover point, between parties in a supply chain, often by a supplier providing additional services to a consumer, as the cloud computing example demonstrates.
 
-### Beyond Intermediaries: Delegation Domino
+### Beyond intermediaries: delegation domino
 
 Now for a situation with multiple actors where the intermediaries are a little less clear.
 Imagine there are two companies who are trying to collaborate on a digital service that

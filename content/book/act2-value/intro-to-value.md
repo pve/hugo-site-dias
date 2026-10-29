@@ -1,7 +1,7 @@
 ---
 date: '2025-03-11T09:10:54Z'
 draft: false
-title: 'Provider Value'
+title: 'Provider value'
 weight: 200
 notes-closed:
     - "[ ] Drie-motievenindeling (substitution/optimization/innovation, NL 2013-survey) nog niet verwerkt — aanbevolen als organiserend device voor de unit"

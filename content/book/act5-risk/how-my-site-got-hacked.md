@@ -1,7 +1,7 @@
 ---
 date: '2025-03-29T15:35:53Z'
 draft: false
-title: 'How My Site Got Hacked'
+title: 'How my site got hacked'
 weight: 630
 notes: |
     Own harvest (units-notes/unit-63.md) flagged Interviewee B's banking/CCAK
@@ -24,7 +24,7 @@ So, instead of continuing the conversation of how I could be of help to these pe
 
 That was the detection phase, one of the phases of the NIST incident response process. As I mentioned, I could have found it earlier. For more information on the NIST incident response process guidance at the time of this incident, you can refer to the [NIST Special Publication 800-61 Revision 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf). A new version is in preparation.
 
-### Analysis and Eradication
+### Analysis and eradication
 
 Now for the analysis and eradication phase. What the heck was going on? I had very little luck in getting the security programs to tell me what was wrong with the site. [Virustotal](<http://www.virustotal.com>), which aggregates reports from security providers, reported 1 hit by Yandex, though the diagnostics on their webmaster pages were vague. McAfee and Kaspersky did not seem to have any service that is helpful with this.
 

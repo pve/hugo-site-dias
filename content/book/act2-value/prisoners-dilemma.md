@@ -1,7 +1,7 @@
 ---
 date: '2026-05-26T00:00:00Z'
 draft: false
-title: "The Prisoner's Dilemma"
+title: "The prisoner's dilemma"
 weight: 250
 notes-closed:
     - "[x] Harvest (1 item) voegt niets nieuws toe — unit dekt retaliatie al via Axelrod's 'provocable'-trek"

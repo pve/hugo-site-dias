@@ -1,7 +1,7 @@
 ---
 date: '2025-09-01T19:48:55Z'
 draft: false
-title: 'Data, Risk, or Controls: where to start?'
+title: 'Data, risk, or controls: where to start?'
 weight: 731
 notes: |
     Reordered 2026 (Act V flow review): now sits after Controls (72/72a/72b) and Compliance (71), right before the skills pair (72c/78).

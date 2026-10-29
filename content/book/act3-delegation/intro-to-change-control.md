@@ -1,7 +1,7 @@
 ---
 date: '2025-04-08T09:17:02Z'
 draft: true
-title: 'Introduction to Change and Control - delete'
+title: 'Introduction to change and control - delete'
 weight: 330
 notes: |
  deze kan weg

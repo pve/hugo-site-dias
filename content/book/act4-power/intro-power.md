@@ -1,7 +1,7 @@
 ---
 date: '2025-04-05T12:31:46Z'
 draft: false
-title: 'Introduction to Power'
+title: 'Introduction to power'
 weight: 490
 ---
 Power is a concept that is widely used and ill defined. Many philosophers have discussed it, but not one definition really stands out.

@@ -1,5 +1,5 @@
 ---
-title: 'Automate or Die: A Capacity Planner''s Rules'
+title: 'Automate or die: a capacity planner''s rules'
 draft: false
 date: '2012-02-01T07:21:00'
 weight: 725

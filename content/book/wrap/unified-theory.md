@@ -1,7 +1,7 @@
 ---
 date: '2025-05-12T21:05:36Z'
 draft: false
-title: 'A Unified Framework'
+title: 'A unified framework'
 weight: 850
 ---
 

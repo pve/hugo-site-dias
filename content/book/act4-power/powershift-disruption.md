@@ -1,7 +1,7 @@
 ---
 date: '2026-09-16T16:07:32Z'
 draft: false
-title: 'Disruptive Technologies'
+title: 'Disruptive technologies'
 note: link Christensen, and my cloud signature talk as a disruptive example. More logic to be fixed.
 weight: 570
 ---

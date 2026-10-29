@@ -1,7 +1,7 @@
 ---
 date: '2025-03-10T21:34:21Z'
 draft: false
-title: 'The Essence of Digital Infrastructures'
+title: 'The essence of digital infrastructures'
 weight: 50
 notes-closed:
     - "[ ] 'Managing the technology matters more than the technology itself' as replacement/companion for the closing thesis sentence"

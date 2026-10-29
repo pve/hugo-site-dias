@@ -1,7 +1,7 @@
 ---
 date: '2025-06-05T15:03:13Z'
 draft: true
-title: 'Customer Service (draft)'
+title: 'Customer service (draft)'
 weight: 175
 notes-closed:
     - "[x] Resequenced (2026-10-27): weight moved 150 → 175, now after promise-contract.md (170), not before promise-theory.md — most of this unit's content is slated to move out (see items below), so little may be left to actually sit here"
@@ -46,35 +46,6 @@ notes: |
       een nieuwe, kleinere functie krijgen.
 ---
 
-Customer service is a great thinking model for a lot of what is going on in digital infrastructures, even if the customer is not a human, as we will see.
-We are often buying products, but we really mostly want a service.
-In an earlier unit, we talked about promise theory
 
-An IT services organization deals with customer requests all the time.
-
->Can I get a new laptop?
->
->Joe from accounting needs permissions to access this application. Can you fix that?
->
->I think I clicked on a phishing link. What now?
-
-The list is endless.
-
-Most of these scenarios can be described very nicely with promise theory.
-
-
-Example TCP/IP
-picture
-
-Connect
-Q: can you reserve buffer space for a connection?
-R: yes we promise, here is your initial window size
-A: thank you, here is your initial window size
-
-Transmission
-Q: please accept this data
-A: thank you, I will forward it, here is your new window size
-
-Rinse and Repeat
 =-
 

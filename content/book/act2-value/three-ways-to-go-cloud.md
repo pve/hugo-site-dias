@@ -1,7 +1,7 @@
 ---
 date: '2018-06-03T17:06:57Z'
 draft: false
-title: 'Multiple Ways to Go Cloud'
+title: 'Multiple ways to go cloud'
 weight: 280
 notes-closed:
     - "[ ] Dutch Olympic Committee OS2010-case (Flickr/Twitter-aggregatie i.p.v. half miljoen euro servers) nog niet verwerkt — aanbevolen als cloud-native case-opener"

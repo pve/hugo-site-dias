@@ -1,7 +1,7 @@
 ---
 date: '2026-09-16T16:07:32Z'
 draft: false
-title: 'Escalation Identity Promises'
+title: 'Escalation identity promises'
 weight: 117
 notes-closed:
     - "[ ] Placement decision: keep both 11a/11b, or merge 11a's unique bits into this unit and retire 11a? (undecided as of last pass)"

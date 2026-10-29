@@ -1,7 +1,7 @@
 ---
 date: '2025-04-22T09:32:32Z'
 draft: false
-title: 'Example: an AI-Assisted Voicebot'
+title: 'Example: an AI-assisted voicebot'
 weight: 430
 aliases:
   - /posts/ai-voice/

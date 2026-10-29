@@ -1,7 +1,7 @@
 ---
 date: '2025-03-09T11:06:48Z'
 draft: false
-title: 'Positions of Power in IT'
+title: 'Positions of power in IT'
 weight: 510
 notes: |
     Own harvest (units-notes/unit-51.md) routed the CSA EMEA "unlimited

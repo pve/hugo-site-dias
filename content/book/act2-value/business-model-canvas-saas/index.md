@@ -1,5 +1,5 @@
 ---
-title: Business Model Canvas for SaaS Providers
+title: Business Model Canvas for SaaS providers
 date: '2014-12-15T11:18:17'
 draft: false
 weight: 300
@@ -30,7 +30,7 @@ In the Business Model Canvas, “Customer Segments” are the groups of customer
 
 It is characteristic of the SaaS model that this could basically be anybody, not just IT people. Let us just remind ourselves that customers here are the ones that use the service to get their business done, or get their personal lives in order. In a business context we often also have to distinguish between the user and the organization that purchases the solution. This is very likely true in the case of our bookkeeping software company.
 
-### Value Propositions (VP)
+### Value propositions (VP)
 
 Value propositions reflect the customer problems and needs. This is the central element that describes why the customer would ultimately pay for the product or service.
 
@@ -49,7 +49,7 @@ Less invasive SaaS offerings are frequently aggregated in broker portals, common
 Another natural extension of the SaaS model is exposing the core functionality through an API. While not often directly accessed by the consumer, this does allow integration with other SaaS providers. Our project collaboration software could integrate with an existing cloud storage provider.
 The main SaaS channels therefore are direct self-service sales, value added re-sellers, system integrators, and enterprise app-stores. The notion of cloud broker fits in here as well, but dissecting its many shapes and forms is a topic beyond the scope of this section.
 
-### Customer Relationships (CR)
+### Customer relationships (CR)
 
 Customer relations are established and maintained with each specific customer segment.
 
@@ -60,7 +60,7 @@ However, this power can bring the provider in conflict with the consumer who mig
 An on-line bookkeeping service for individuals allows them to categorize payments to merchants. Once enough individuals categorized Danny’s steakhouse as a restaurant, this can then also be suggested to other clients of Danny’s. Is it legal to use data from one cloud consumer to deliver value to another? Generally speaking, the answer is no, but it may be acceptable if only aggregate data is used.
 Support is often easier on-line, and on-line communities often add considerable value for the consumer.
 
-### Revenue Streams (RS)
+### Revenue streams (RS)
 
 Revenue streams are the result of value propositions that are successfully offered to customers.
 
@@ -68,7 +68,7 @@ The structure of revenue streams is where cloud computing differs from earlier I
 
 Cloud computing service models by definition are usage based, and have the potential to be much more closely related to the value that is experienced by the customers. Both our examples enhance the productivity of users, and it is natural to charge per user who has access to the functionality on daily basis. Transactional services such as event management or email delivery are more naturally charged by the transaction, potentially on a bulk basis.
 
-### Key Resources (KR)
+### Key resources (KR)
 
 Key resources are the assets required to offer and deliver the previously mentioned elements (e.g. value proposition, customer relationships).
 
@@ -78,21 +78,21 @@ It may seem a small matter to go from knowing your software and the way it runs 
 The most obvious differences between cloud providers and software delivery companies are in multi-tenancy and feature velocity. Every SaaS provider has to think about how multi-tenant his software needs to be to realize the right scalability model for its customers. Feature velocity, the time between inception and go-live is a great competitive differentiator. To achieve this, the provider requires an integrated "DevOps" organization, demanding significant input from people, processes, and technology.
 Then, on the physical asset side, an important question is how much delivery assets the company decided to have. Does it need to own hardware assets or are they sourced from an upstream cloud provider? On the canvas, this represents a trade-off between resource and partnerships.
 
-### Key Activities (KA)
+### Key activities (KA)
 
 The key resources perform key activities.
 
 The obvious key activity at a software company is: develop software. In the long run, these should increase the value of the code base. For a SaaS cloud provider, actually delivering the software as a service is an extension to that. The virtuous circle in a SaaS provider is understanding customer behavior and requirements, translating these into new functionality and delivering this to customers.
 For this to be successful on the SaaS scale, it has to be executed as an integrated pipeline. The most advanced organizations get the operational activities out of the way. Developers and product managers are empowered to push features to production. Tests are all automated and the focus of operational staff is not so much into bringing features in production, but to maintain the assets and operational fabric that allow the developers to do that themselves.
 
-### Key Partnerships (KP)
+### Key partnerships (KP)
 
 Some activities are outsourced, and some resources are acquired outside the enterprise.
 
 A fundamental choice for every software company is ownership of development tools, as the dependence on these is of strategic importance. That is why large software companies used to have their own homegrown development environments. It turns out that the development tools are a source of strategic risk, but not of strategic advantage. As the industry has matured, it turns out that significant portions of these are best moved to an open source model.
 An additional fundamental choice for a SaaS provider is: who runs and owns the delivery infrastructure? Again, that infrastructure represents a risk more than a source of competitive advantage. As Netflix puts it: “we are not in the business of building data centers”. That is why it makes sense to work with IaaS or PaaS providers rather than owning the infrastructure. This will obviously also impact the cost structure as we will see.
 
-### Cost Structure (CS)
+### Cost structure (CS)
 
 All business model elements discussed above impact the cost structure.
 

@@ -1,7 +1,7 @@
 ---
 date: '2026-09-16T16:07:32Z'
 draft: false
-title: 'Selecting Software Providers'
+title: 'Selecting software providers'
 note: flow and logic can improve
 aliases:
 - "/posts/selecting-software/"

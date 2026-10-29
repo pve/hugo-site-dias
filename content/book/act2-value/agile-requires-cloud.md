@@ -1,6 +1,6 @@
 ---
 draft: false
-title: 'Agile Requires Cloud'
+title: 'Agile requires cloud'
 date: '2016-10-12T15:12:04'
 weight: 270
 notes-closed:

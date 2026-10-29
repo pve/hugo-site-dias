@@ -1,7 +1,7 @@
 ---
 date: '2026-05-13T00:00:00Z'
 draft: false
-title: 'Digital autonomy: The risks'
+title: 'Digital autonomy: the risks'
 weight: 790
 ---
 

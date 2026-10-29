@@ -1,5 +1,5 @@
 ---
-title: A Small Example of Cloud Native Development
+title: A small example of cloud native development
 date: '2020-02-10T23:29:51'
 draft: false
 weight: 400

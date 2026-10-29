@@ -1,7 +1,7 @@
 ---
 date: '2025-04-19T20:01:07Z'
 draft: false
-title: 'Control Through Feedback Loops'
+title: 'Control through feedback loops'
 description: "From braking a car to autoscaling a website to a fighter pilot's OODA loop — every control system runs on feedback, and 'agile' just means a faster loop."
 weight: 360
 ---

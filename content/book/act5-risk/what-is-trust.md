@@ -1,7 +1,7 @@
 ---
 date: '2025-05-05T10:18:17Z'
 draft: false
-title: 'What Is Trust'
+title: 'What is trust'
 weight: 670
 ---
 

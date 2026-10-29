@@ -1,7 +1,7 @@
 ---
 date: '2025-05-08T20:45:16Z'
 draft: false
-title: "Why Organization Size Determines Who You Trust"
+title: "Why organization size determines who you trust"
 description: "Below 150 people you know who to trust by name. Above it, Dunbar's number kicks in — trust gives way to roles, processes, and bureaucracy."
 weight: 560
 notes: |
@@ -35,14 +35,14 @@ And if it breaks, they will fix it themselves.
 Or a friend will.
 Or maybe not.
 
-### Small Companies
+### Small companies
 
 Second is the small company, with 10-100 persons.
 They agree on IT decisions around the lunch table.
 And if anything goes wrong, we know who the go to guy is to fix it.
 He/she has lunch too, after all.
 
-### Large Companies
+### Large companies
 
 Then we have the large company, more than about 150 people.
 Now 150 sounds like a random and weird number, but it is actually based on a [scientific result by Robin Dunbar](https://en.wikipedia.org/wiki/Dunbar%27s_number).
@@ -65,7 +65,7 @@ Above a certain size, they all work the same.
 
 Small companies run on trust, large companies run on control.
 
-### Society at Large
+### Society at large
 
 The fourth group is a bit different. This is society at large, or your social circles that are a part of it.
 They too make decisions on the technologies that will be adopted.
@@ -80,7 +80,7 @@ Not to mention other circumstantial influences.
 If you want to understand the differences and their impacts, start by looking out for the ways in which digital identities are managed.
 This differs widely between small and large organizations, as I have shown here.
 
-### In Real Life
+### In real life
 
 In real life, these categories overlap and influence one another. Often, technology decisions begin as individual choices, which then moves to be adopted by a small group, and then the whole organization.
 Large organizations typically consist of a lot of small groups, within which there are different decision cultures.

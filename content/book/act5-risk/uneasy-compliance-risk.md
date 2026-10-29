@@ -1,7 +1,7 @@
 ---
 date: '2025-08-22T09:18:35Z'
 draft: false
-title: 'Compliance is a Risk'
+title: 'Compliance is a risk'
 description: "Target was PCI-DSS compliant and still lost 40 million card numbers — compliance forces risk management onto reluctant actors, but never guarantees security."
 weight: 729
 notes: |

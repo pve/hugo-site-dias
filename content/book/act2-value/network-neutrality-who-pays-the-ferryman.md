@@ -1,5 +1,5 @@
 ---
-title: 'Network Neutrality: who pays the ferryman?'
+title: 'Network neutrality: who pays the ferryman?'
 date: '2026-09-16T16:07:32Z'
 draft: false
 note: review for logic

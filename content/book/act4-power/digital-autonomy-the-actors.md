@@ -1,7 +1,7 @@
 ---
 date: '2026-04-28T00:00:00Z'
 draft: false
-title: 'Digital Autonomy: the Actors'
+title: 'Digital autonomy: the actors'
 weight: 600
 aliases:
   - /posts/digital-autonomy-the-actors.md

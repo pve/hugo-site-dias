@@ -1,7 +1,7 @@
 ---
 date: '2025-04-20T09:03:00Z'
 draft: false
-title: 'Execution Environments'
+title: 'Execution environments'
 weight: 70
 notes-closed:
     - "[ ] Barry White 'identity is your first, your last, your everything' as anchor quote for the 'who' section"

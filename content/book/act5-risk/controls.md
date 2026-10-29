@@ -1,7 +1,7 @@
 ---
 date: '2025-05-19T21:39:41Z'
 draft: false
-title: 'Control Promises'
+title: 'Control promises'
 weight: 720
 notes: |
     Pick-up from Delegation Domino (unit 53, act4-power/promise-multiparty.md, published):

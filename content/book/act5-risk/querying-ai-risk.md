@@ -1,7 +1,7 @@
 ---
 date: '2025-05-01T07:40:07Z'
 draft: false
-title: 'What about AI Risks?'
+title: 'What about AI risks?'
 weight: 740
 note: additional text needed. Damage, etc.
 notes: |
@@ -19,7 +19,7 @@ We just need to extend those principles to new forms of data and software.
 
 So let's see how what the AI specifics are.
 
-### AI Assets
+### AI assets
 
 Let's focus on the AI assets that are the product of deep learning.
 Deep learning neural networks have represented a shift in AI technology.
@@ -46,7 +46,7 @@ The data used for that may well include proprietary or sensitive data.
 
 Then there are system prompts and additional data sources that are fed into those models, together with user input.
 
-### AI Vulnerabilities
+### AI vulnerabilities
 
 (this is a draft version)
 

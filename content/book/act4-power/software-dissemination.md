@@ -1,7 +1,7 @@
 ---
 date: '2026-07-07T00:00:00Z'
 draft: false
-title: "How Software Spreads"
+title: "How software spreads"
 weight: 565
 ---
 

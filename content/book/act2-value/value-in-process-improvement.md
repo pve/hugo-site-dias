@@ -1,7 +1,7 @@
 ---
 date: '2025-03-27T20:33:42Z'
 draft: false
-title: 'Value in Process Improvement'
+title: 'Value in process improvement'
 weight: 220
 notes-closed:
     - "[ ] Amateur-vs-professional-framing ('omdat ik er lol in heb' vs 'omdat het waarde toevoegt') nog niet verwerkt — sluit aan op slotparagraaf"

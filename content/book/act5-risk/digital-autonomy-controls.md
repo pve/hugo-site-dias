@@ -1,7 +1,7 @@
 ---
 date: '2026-06-14T00:00:00Z'
 draft: false
-title: 'Digital autonomy: Controls'
+title: 'Digital autonomy: controls'
 weight: 810
 ---
 

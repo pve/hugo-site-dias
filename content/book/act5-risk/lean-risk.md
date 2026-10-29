@@ -1,7 +1,7 @@
 ---
 date: '2025-05-27T19:58:41Z'
 draft: false
-title: 'Lean Risk and Economics'
+title: 'Lean risk and economics'
 weight: 735
 notes: |
     Reordered 2026 (Act V flow review): moved from the risk-vocabulary cluster into the opschalen (scaling) cluster, now second in it — after Risk management at scale (70, GAP), before The Board Pitch (73).

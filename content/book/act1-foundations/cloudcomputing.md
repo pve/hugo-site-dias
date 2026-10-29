@@ -1,7 +1,7 @@
 ---
 date: '2025-07-25T07:45:07Z'
 draft: false
-title: 'Cloud Computing'
+title: 'Cloud computing'
 weight: 100
 aireview: 
 notes-closed:
