@@ -84,6 +84,9 @@
   ul { padding-left: 1.2rem; margin: 0; }
   li { margin: .35rem 0; }
   .note { color: var(--muted); margin-top: 1rem; }
+  .testimonial { margin: 1.5rem 0 0; padding: 1rem 1.25rem; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; }
+  .testimonial p { margin: 0 0 .75rem; }
+  .testimonial footer { max-width: none; margin: 0; padding: 0; border: 0; color: var(--muted); font-size: .95rem; }
   .cta { text-align: center; padding: 3rem 0 0; }
   .cta p { margin: 0 0 1.25rem; color: var(--muted); }
   footer { max-width: 62rem; margin: 0 auto; padding: 1rem 1rem 2rem; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
@@ -165,6 +168,11 @@
       </div>
     </div>
     <p class="note">Come as a team, or on your own. Bring one agentic system, live or planned, and the architecture as far as it exists. Five to twelve participants.</p>
+    <blockquote class="testimonial">
+      <p><strong>What I learned:</strong> Threat modelling starts with knowing which security controls actually exist, otherwise there is no trust boundary to draw. From the follow-up I took away how MCP clients, tasks and short-lived OAuth tokens fit together, and that an agent should have its own identity rather than borrow the user's.</p>
+      <p><strong>What I can do better:</strong> I now know which questions to ask before an MCP server or coding agent goes live: where the credentials live, what the agent's identity can reach, and where the isolation boundary is.</p>
+      <footer>Maria, Information Security Officer</footer>
+    </blockquote>
   </section>
 
   <section>
