@@ -34,7 +34,7 @@ act3-delegation/automation-business-case.md
 act3-delegation/brief-llm-tool.md
 act3-delegation/control-feedback.md
 act3-delegation/dhcp-automation.md
-act3-delegation/digital-inf-ai.md
+act1-foundations/digital-inf-ai.md
 act3-delegation/intro-to-change-control.md
 act3-delegation/promise-to-update.md
 act3-delegation/technical-meta-model.md
