@@ -178,10 +178,11 @@ notes: |
 Cloud Computing is an important and big set of digital infrastructures.
 
 Between 2000 and 2010, as the internet was growing in reach, it also became a vehicle for the delivery of compute services.
-Back in the day, Application Services Providers, as they were known, offered software remotely, so it was no longer necessary to install it in a company's datacenter.
+Back in the day, Application Services Providers (ASP), as they were known, offered software remotely, so it was no longer necessary to install it in a company's datacenter.
 I could tell horror stories about how early client server application installations went, so not needing that was a key selling point.
 
 A little later, Amazon was one of the pioneers of offering storage and servers over the internet.
+We call that IaaS (Infrastructure as a Service) these days.
 In addition, there were a bunch of other providers offering a variety of platforms on which you could develop and deploy software.
 These offerings were often "opinionated", which means they made a lot of technology choices for you.
 
@@ -191,10 +192,11 @@ It is one of those concepts that seem to have been discovered independently in m
 As early as 2001 we talked about putting servers "in the cloud", meaning we did not care much where they actually were.
 
 NIST, the US National Institute of Standards and Technology, solidified the concept in 2011.
-They lumped together all kinds of online services and access to resources in a single definition, by identifying *five essential characteristics* of such services.
+They lumped together all kinds of online services and access to resources in a single definition, by identifying *five essential characteristics* of such services,
+NIST also categorized  *three service models*: IaaS, PaaS (Platform as a Service) as hinted at above, and SaaS (Software as a Service, the evolution of the ASP).
 
 I have spent many hours explaining these, and answering questions about them.
-Technical people used to be confused about the vagueness of these characteristics, but once we start looking at them as drivers of value and risk, it becomes a bit more applicable.
+Technical people used to be confused about the vagueness of the essential characteristics, but once we start looking at them as drivers of value and risk, it becomes a bit more applicable.
 
 We'll get to those characteristics in a moment, but first I want to point out that there is a more fundamental characteristic than the five of NIST.
 
