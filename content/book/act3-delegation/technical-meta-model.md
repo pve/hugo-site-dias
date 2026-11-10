@@ -46,6 +46,8 @@ We can morph these statements in a variety of useful ways. This is what makes fo
 
 1. We are looking to achieve result Y, and we have theory Z. What does that tell us about possible interventions?
 
+1. If we build it like X, we have Z as a risk.
+
 Once we grasp this, we can move on to more complicated scenarios. We can flesh out what a better outcome is. We can use this to do design in more complicated situations such as with more stakeholders. We can also use this to do more systematic troubleshooting.
 
 More about that later.

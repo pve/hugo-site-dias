@@ -2,7 +2,7 @@
 date: '2025-04-16T21:16:12Z'
 draft: false
 title: 'Things break at scale'
-weight: 130
+weight: 51
 notes-closed:
     - "[ ] Four named outage post-mortems (2011 AWS EBS, 2012 Azure leap-year, 2017 GitLab, 2017 AWS S3)"
     - "[ ] GitLab's own lesson: the failure was discovering the safety net didn't exist only when needed"

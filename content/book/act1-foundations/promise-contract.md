@@ -3,7 +3,7 @@ date: '2025-05-15T21:03:24Z'
 draft: false
 title: 'Contracts are complementary promises'
 description: "A contract is just two complementary conditional promises plus a fallback for non-delivery: what do I do, what do you do, what do I do if you don't?"
-weight: 170
+weight: 57
 notes-closed:
     - "[ ] 'Advertising is a promise, treated as a hypothesis' opening hook"
     - "[ ] 'Contracts are the interfaces in the supply chain' — architectural, not just legal, framing"

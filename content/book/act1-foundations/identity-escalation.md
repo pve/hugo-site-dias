@@ -2,7 +2,7 @@
 date: '2026-09-16T16:07:32Z'
 draft: false
 title: 'Escalation identity promises'
-weight: 117
+weight: 127
 notes-closed:
     - "[ ] Placement decision: keep both 11a/11b, or merge 11a's unique bits into this unit and retire 11a? (undecided as of last pass)"
     - "[ ] P4: tighten 'phone has become the person' aside placement"

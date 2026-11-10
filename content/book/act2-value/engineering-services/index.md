@@ -168,7 +168,9 @@ Otherwise they run the risk that you suddenly demand one thousand laptops, which
 Here is where it sometimes goes wrong in digital services, especially in new services.
 Neither party fully understands their requirements and the capabilities of the technology.
 But both are willing to give it a try, so they get started before they can finalize the service levels.
-But as the services become more successful, the service levels need to be agreed upon, instead of just being assumed.
+As the services become more successful, the service levels need to be agreed upon, instead of just being assumed.
+Do this too early, and you will get stuck in defining things you don't understand well enough.
+Do this too late, and at least one of the parties will be seen as unwilling to make promises.
 
 Performance contracts are nothing new in any business or industry, and entire books have been written on Key Performance Indicators, Service Level Objectives and more.
 Making it measurable for digital infrastructures is a little harder.

@@ -4,3 +4,6 @@
 print/**
 public/**
 **/public/**
+
+# iCloud sync artefacts
+* 2.*

@@ -4,7 +4,7 @@ date: '2006-09-21T10:54:00'
 draft: false
 aliases:
 - "/posts/directories-are-also-infrastructures/"
-weight: 110
+weight: 120
 notes-closed:
     - "[ ] Log4j/Log4Shell worked example as contemporary counterpart to DNS/Active Directory"
     - "[ ] 'Cloud is about distributing responsibility across an IT supply chain' thesis statement, bridging to unit 12"

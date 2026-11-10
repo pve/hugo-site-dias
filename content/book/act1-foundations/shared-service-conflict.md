@@ -2,7 +2,7 @@
 date: '2025-06-06T10:32:19Z'
 draft: false
 title: 'Shared services lead to conflicts'
-weight: 120
+weight: 110
 notes-closed:
     - "[ ] Author's own EC2 'bad neighbors' story as the unit's anchor example, replacing the abstract opening"
     - "[ ] 'What is cloud' as a power question, not a definitional nuisance"

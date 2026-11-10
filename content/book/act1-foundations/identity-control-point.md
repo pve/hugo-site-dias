@@ -2,7 +2,7 @@
 date: '2026-07-23T00:00:00Z'
 draft: false
 title: 'Identity: the control point'
-weight: 115
+weight: 125
 notes-closed:
     - "[x] Stolen-credential/IAM-console Q&A pair (0-day, disabling admin account) — already present verbatim in the Raw material section below, drop tool name (Dome9) if used"
     - "[x] 'Nine out of ten questions is Active Directory' — already present verbatim in Raw material below"

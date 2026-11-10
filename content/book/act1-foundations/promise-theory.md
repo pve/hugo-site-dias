@@ -3,7 +3,7 @@ date: "2025-04-25T21:21:54Z"
 draft: false
 title: "Promise Theory"
 description: "A café order between a customer and a waiter turns out to be the same pattern behind APIs, contracts, and IT support tickets: request, promise, delivery, acquittal."
-weight: 160
+weight: 55
 notes-closed:
     - "[ ] Mat Honan's 2012 account-takeover as a clean chain-of-broken-promises case"
     - "[ ] 'The essence of cloud security is who does what?' compressed into the unit's own question template"
