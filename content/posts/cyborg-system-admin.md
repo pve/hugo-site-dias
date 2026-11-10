@@ -1,6 +1,6 @@
 ---
 date: '2026-11-10T15:00:40Z'
-draft: true
+draft: false
 title: 'The cyborg system admin'
 weight: 10
 ---
