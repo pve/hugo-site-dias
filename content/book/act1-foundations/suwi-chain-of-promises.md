@@ -7,16 +7,16 @@ notes: |
     Stub created 2026-11-09. No body text yet: the author writes it, or inserts text
     from here into another unit. Weight 58, directly after promise-contract (57),
     whose claim it illustrates (contracts are complementary promises, here chained
-    across organisations). The reisplanner unit (53), simpler and chronologically
+    across organizations). The reisplanner unit (53), simpler and chronologically
     earlier, is the lead-in story before promise-theory (55); SUWI needs the theory,
     so it stays after it. Author's decision 2026-11-09: the SUWI story may be split
     over several units in different places (for example identity, escalation, power,
     risk); this stub is the home of the shared material and the installments can be
     placed elsewhere. Find per installment the claim it supports (TODO.md item 2).
 
-    Intended claim (to be confirmed by the author): when many organisations must
+    Intended claim (to be confirmed by the author): when many organizations must
     cooperate, the formal agreement between their executives is the tip of the
-    iceberg; the real work is a chain of promises down through each organisation,
+    iceberg; the real work is a chain of promises down through each organization,
     and each link can be missing. Must pass the criterion in TODO.md item 2.
 
     What was found (facts and pointers only, no prose):
@@ -30,7 +30,7 @@ notes: |
       parties are summarized to two layers. But the reality is there's like four
       layers in 12 of those parties. And how do you write down these service
       agreements on that?"
-    - Lines 164-171: promise theory gives tools; the organisations are represented by
+    - Lines 164-171: promise theory gives tools; the organizations are represented by
       their top executives who say "let's collaborate"; they do not know exactly
       what is wanted, so it must be specified in more detail.
     - Lines 172-174: "the tip of the iceberg. Because there's like a couple of

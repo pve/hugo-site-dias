@@ -5,7 +5,7 @@ title: 'Promise to update'
 description: "Who updates what? Applying promise theory to the shared-responsibility question behind every SaaS and IaaS contract, and the gaps nobody's promise covers."
 weight: 390
 note: |
-  Service management is organising the keeping of promises.
+  Service management is organizing the keeping of promises.
   What is the role?
   Which promise does it keep?
   What are its clients and providers?

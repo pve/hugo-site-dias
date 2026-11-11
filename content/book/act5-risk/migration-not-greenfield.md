@@ -14,7 +14,7 @@ This chapter covers the transition *out of an existing dependency* — which is 
 
 ## Position in the arc
 
-Directly after the existence proofs (81a): the individual actor's exit from dependency, before organising markets (83) — the collective lever — follows.
+Directly after the existence proofs (81a): the individual actor's exit from dependency, before organizing markets (83) — the collective lever — follows.
 Feeds unit 73 (the board pitch): the business-case numbers below are the worked example that unit needs.
 
 ## Anchor case (from TODO.md): the French sovereign-IT / DiNum migration
@@ -25,7 +25,7 @@ Structure the chapter along its lessons:
 - **Political mandate at the top**: cabinet-level decision and sustained support; without it, the first budget cycle kills the migration.
 - **The business case**: licence cost vs migration cost vs annual saving — run the honest numbers, including the years where the migration costs more than it saves; this is the unit-73 material.
 - **The human factor is the biggest obstacle**: resistance to behavioral change outweighs technical difficulty; countermeasures that worked — training, hotlines, in-office workshops, product champions.
-- **Migration mechanics**: legacy and non-cloud-native applications; containerise vs rewrite as the recurring engineering decision (pros and cons, per the book's style rule).
+- **Migration mechanics**: legacy and non-cloud-native applications; containerize vs rewrite as the recurring engineering decision (pros and cons, per the book's style rule).
 - **An internal mandate with a deadline** — "no exceptions" — because every exception becomes a precedent and a permanent parallel system.
 - **Parallel running** to protect critical services during the transition; time-boxed, or it becomes the new steady state.
 - **The exemplary role of government**: lead by example; the credibility of asking others to move rests on having moved yourself.
@@ -40,7 +40,7 @@ Structure the chapter along its lessons:
 ## Persona check
 
 - Neil: gets the seven beats as the skeleton for a migration proposal that survives a board.
-- Maria: gets the mechanics section — containerise vs rewrite decided per application on her own diagram.
+- Maria: gets the mechanics section — containerize vs rewrite decided per application on her own diagram.
 
 ## Sources
 

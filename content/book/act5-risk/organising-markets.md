@@ -1,16 +1,16 @@
 ---
 date: '2026-07-23T00:00:00Z'
 draft: true
-title: 'Organising markets for digital services'
+title: 'Organizing markets for digital services'
 weight: 830
 ---
 
-<!-- NOTES DRAFT — unit 83 in book-sequence.md; chapter already specified in TODO.md ("organising markets"). Not prose yet. Renumbered 2026-08-02 from unit 82 (Act V flow review — swapped with migration, now unit 82). -->
+<!-- NOTES DRAFT — unit 83 in book-sequence.md; chapter already specified in TODO.md ("organizing markets"). Not prose yet. Renumbered 2026-08-02 from unit 82 (Act V flow review — swapped with migration, now unit 82). -->
 
 ## Thesis
 
-If you cannot be autarkic (80) and single-vendor dependence is the risk (79), the remaining strategy is to *organise the market you buy from*: aggregate demand, standardize the interface, and keep multiple providers genuinely interchangeable.
-Argue the position, not just the tension: organising demand is the only structure that does not recreate the dependency a large buyer is trying to escape.
+If you cannot be autarkic (80) and single-vendor dependence is the risk (79), the remaining strategy is to *organize the market you buy from*: aggregate demand, standardize the interface, and keep multiple providers genuinely interchangeable.
+Argue the position, not just the tension: organizing demand is the only structure that does not recreate the dependency a large buyer is trying to escape.
 
 ## Position in the arc
 
@@ -20,8 +20,8 @@ Promise-theory continuity: a market is a standing set of interchangeable promise
 ## Driving questions (from the persona review, per TODO.md — keep as the chapter's section structure)
 
 1. **Who aggregates the demand?**
-   Organising a market is a collective-action problem; it needs a standing demand aggregator to even start — VNG speaking for ~340 municipalities, an industry association, a central buyer.
-   Open sub-question to answer in the chapter: does the model generalise to domains with no VNG-equivalent, or is creating the aggregator step zero?
+   Organizing a market is a collective-action problem; it needs a standing demand aggregator to even start — VNG speaking for ~340 municipalities, an industry association, a central buyer.
+   Open sub-question to answer in the chapter: does the model generalize to domains with no VNG-equivalent, or is creating the aggregator step zero?
 2. **What keeps the market open over time?**
    The G-Cloud lesson: open frameworks get reabsorbed by incumbents once they choose to compete inside them.
    Open access alone is not enough; demand has to be actively and continuously shaped (procurement rules, standards evolution, market monitoring).
@@ -32,7 +32,7 @@ Promise-theory continuity: a market is a standing set of interchangeable promise
 
 - Buyer/supplier incentive dynamics: buyers gain options; suppliers gain a larger addressable market with less custom work — name the tension (suppliers also lose margin and differentiation; expect resistance and design for it).
 - Examples to draw on (details verified in TODO.md and unit 81a): Common Ground/Haven, UK G-Cloud, India UPI, SCS/Gaia-X.
-- The deterrence connection (from digital-autonomy-controls, 81): an organised market is what makes the threat to switch credible; without it the exit option is theater.
+- The deterrence connection (from digital-autonomy-controls, 81): an organized market is what makes the threat to switch credible; without it the exit option is theater.
 - Cost honesty: standing aggregators and standards bodies are overhead; compare against the invisible overhead of being priced at your switching cost (32a callback).
 - Government's double role: biggest buyer and rule-setter; when it uses both at once (UPI mandate) markets move fastest — and the power question that raises belongs in the text, not a footnote (Act IV callback).
 

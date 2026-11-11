@@ -53,7 +53,7 @@ From a business perspective this communication and coordination can lead to valu
 1. better quality of services and products,
 1. reduction of risks.
 
-These are just the major, broad categories of delivering value, and there is considerable overlap between them. For example an organization's website helps communicate to its customers. But you can also look at it as a more efficient way to organise the coordination on the delivery of products and services to the customer.
+These are just the major, broad categories of delivering value, and there is considerable overlap between them. For example an organization's website helps communicate to its customers. But you can also look at it as a more efficient way to organize the coordination on the delivery of products and services to the customer.
 
 As you dive deeper into business processes, you will find that there is a wide range of processes and ways that lead to business value, each of which has its own peculiar ways of communicating and coordinating. In the early days of networking, I was sometimes asked what the value of a network is.
 That is a hard questions.
