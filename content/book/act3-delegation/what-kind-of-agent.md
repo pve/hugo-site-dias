@@ -16,6 +16,8 @@ Use that definition to sort the hype, and to see what is genuinely new about AI 
 ## Position in the arc
 
 After the AI infrastructure units (41–43): the reader knows what the machinery is; now define what kind of actor it is.
+Update 2026-11-10: unit 41 (`digital-inf-ai`) now sits in Act I (weight 105), so the machinery picture is a backward reference to Act I, which is fine; only `ai-roles` (420) and `ai-voice` (430) are still in Act III before this unit.
+This unit is the hinge from AI as machinery (Act I) to AI as actor that makes promises: one sentence pointing back to `digital-inf-ai` is enough here or at the top of `ai-roles`, pick one place so it is not said twice (TODO.md item 17).
 Before "the profession changes" (45) and the LLM tool wave (46), which assume this vocabulary.
 Feeds forward to securing agents (75).
 

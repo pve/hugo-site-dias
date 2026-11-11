@@ -13,6 +13,15 @@ notes: |
     role is this" is itself an identity claim made by whoever is granting the
     role, not a property the AI system carries on its own. Worth a line
     tying role-assignment back to that conferral framing once 11a/11b land.
+
+    Bridge to Act I (2026-11-10): digital-inf-ai (AI as infrastructure: trained
+    model, inference as a service, SaaS/PaaS) moved to Act I, weight 105. This unit
+    now begins without that model picture, and weight 410 is empty. One sentence
+    pointing back to digital-inf-ai is enough (pointing back from Act III to Act I is
+    fine; no forward reference in Act I). The last lines of digital-inf-ai ask for a
+    clear service definition, service level objectives and an allocation of security
+    responsibilities; this unit answers that with six roles and their promises, so say
+    that it picks up there. Text is the author's to write. See TODO.md item 17.
 ---
 
 AI systems, like most cloud systems, are composed of models, servers, software, and more, each of which can be provided by a different role.
