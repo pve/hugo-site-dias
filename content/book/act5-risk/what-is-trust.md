@@ -22,17 +22,33 @@ In the end, I found promise theory to be a very helpful tool.
 ### Trust my promise
 
 From the lens of promise theory, trust is our expectation of the extent to which promises will be kept.
+The reliability you are expecting is tied to the business process for which you need the service.
 And as promises are about events and interactions, we can put numbers on those expectations.
 
-For example, we tend to trust technical things that have demonstrated their reliance over a long time.
+A phone call needs to reach its destination 99.99% of the attempts.
+A web service needs to have an uptime of 99.9%.
+You want your storage to be way more accurate than that, and if your CPU would be accurate only 99.9999% of its instructions, no computer would survive the startup process.
+Modern computers execute billions of instructions per second.
+If one of them goes wrong the process is likely to crash.
+
+So it depends on the business objective.
+In the early days of mobile telephony, fixed lines had better reliability than
+mobile phones.
+But the true KPI, it was pointed out, is not whether the phone rings, but if you
+can talk to the right person.
+Mobile phones have a fundamental advantage over fixed lines in this, which overcomes
+their technical limitations.
+
+### Trust mechanisms
+
+We tend to trust technical things that have demonstrated their reliance over a long time.
 If the web service had an uptime of 99,99% over the past months,
 I feel I can take that as a reasonable backing of a promise of future uptime.
+In other words, I trust that promise to be kept.
 On the other hand, if my internet provider has had an outage every other day in the past week (which is what happened as I am writing this) I no longer trust that uptime guarantee anymore.
 
 Trusting people and organizations works in a similar way: we see past performance as a predictor of future behavior.
 But there are other mechanisms to understand trust in outcomes.
-
-### Trust mechanisms
 
 One is from "the Prisoner's Dilemma," which is a story from game theory.
 Another is "authority," which is basically "I trust somebody, because somebody else helps enforce that trust".

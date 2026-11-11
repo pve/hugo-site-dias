@@ -86,8 +86,6 @@ Earlier we discussed sitting in a restaurant, ordering one thing after another.
 That is actually a *hierarchy* of services.
 The bottom level is just a set of services requests: can I get a drink, can I get a main course?
 
-The previous examples also hint at such a hierarchy when we talk about the account (a resource) that controls other resources (your files, your servers, etcetera).
-
 This next level bundles a set of promises around this, and asks for promises such as: can I get a table for two, and have my food and beverage wishes fulfilled.
 So at one level you will ask for a promise to have a response to more detailed promises.
 
@@ -164,13 +162,16 @@ You can also measure the time between your call and the resolution of your incid
 Service providers often make these promises conditional on volumes.
 If you have a contract to regularly get a few laptops delivered withing 24 hours, the provider would be wise to put an upper limit to the number of laptops.
 Otherwise they run the risk that you suddenly demand one thousand laptops, which is likely to make the provider break their promise.
+The promise they want to make is dependent on the way they run their business.
+The promise you want is important for the way you run your business.
 
 Here is where it sometimes goes wrong in digital services, especially in new services.
 Neither party fully understands their requirements and the capabilities of the technology.
 But both are willing to give it a try, so they get started before they can finalize the service levels.
 As the services become more successful, the service levels need to be agreed upon, instead of just being assumed.
 Do this too early, and you will get stuck in defining things you don't understand well enough.
-Do this too late, and at least one of the parties will be seen as unwilling to make promises.
+Do this too late, and at least one of the parties will be seen as unwilling to make promises,
+and the respective business processes don't match.
 
 Performance contracts are nothing new in any business or industry, and entire books have been written on Key Performance Indicators, Service Level Objectives and more.
 Making it measurable for digital infrastructures is a little harder.
@@ -179,26 +180,12 @@ Making it measurable for digital infrastructures is a little harder.
 
 The real world isn't perfect, which is one of the assumptions of promise theory.
 But some worlds are more perfect than others, and here is where chance and probabilities play a role.
-
-That is why we talk about 99% uptime, or 99.99%.
+That is why we talk about 99.9% uptime, or 99.99%.
 You can read this as the chance that promises are kept.
-The reliability you want is tied to the business process for which you need the service.
+We will have a more detailed look at those numbers when we talk about trust.
 
-A phone call needs to reach its destination 99.99% of the attempts.
-A web service needs to have an uptime of 99.9%.
-You want your storage to be way more accurate than that, and if your CPU would be accurate only 99.9999% of its instructions, no computer would survive the startup process.
-Modern computers execute billions of instructions per second.
-If one of them goes wrong the process is likely to crash.
-
-So it depends on the business objective.
-In the early days of mobile telephony, fixed lines had better reliability than
-mobile phones.
-But the true KPI, it was pointed out, is not whether the phone rings, but if you
-can talk to the right person.
-Mobile phones have a fundamental advantage over fixed lines in this, which overcomes
-their technical limitations.
-
-Whether the probability promises are adequate is dependent on the risk that failure brings.
+For the moment we focus on the engineering side.
+Whether these probability promises are adequate depends on the risk that failure brings.
 There is a business side and a technical side to this.
 On the business side: is this promise adequate for my customers?
 For example, the uptime of my e-commerce site is a lot more important than the website that hosts the company cafeteria menu.
@@ -207,5 +194,3 @@ A website can't easily run 99.9% uptime if its servers are crashing all the time
 Aligning these requirements and promises on all control boundaries is architecture, and needs collaboration from business and technical architects with a healthy dose of risk analysis.
 
 Ultimately, the point of this unit is that, again, promise theory and its associated tools can be applied on the entire spectrum of things that make digital infrastructures work, from the nitty gritty technical details to the broadest business concerns.
-
-
