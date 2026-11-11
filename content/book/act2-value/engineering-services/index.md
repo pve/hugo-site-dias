@@ -1,7 +1,7 @@
 ---
 date: '2026-10-27T00:00:00Z'
-draft: true
-title: 'Engineering services (draft)'
+draft: false
+title: 'Engineering services'
 weight: 265
 notes: |
     GAP: nieuwe unit 26a in book-sequence.md, toegevoegd 2026-10-27 tijdens de Act 1/2
@@ -18,20 +18,12 @@ notes: |
     Open vraag: titel "Engineering Services" is een werktitel — dekt de lading
     (praktisch toepassen/ontwerpen van services met promise-theory-vocabulaire), maar
     nog niet getoetst tegen de rest van Act 2's naamgeving.
-
-    Cross-unit flag (2026-11-06): de "meten vs. vertrouwen"-spanning die in de
-    "Probability and risk"-sectie opduikt (regel ~164+, uptime-% als kans dat een
-    belofte gehouden wordt) overlapt sterk met `act5-risk/what-is-trust.md` (weight
-    670, "Trust my promise") — die unit gebruikt vrijwel hetzelfde voorbeeld
-    (99,99% uptime als vertrouwensbasis). Ook `act1-foundations/promise-contract.md`
-    (regel 153/160, "This requires trust... We will discuss later how we can model
-    trust and trust violations") wijst vooruit, waarschijnlijk naar what-is-trust.md,
-    niet naar deze unit. Advies: hier de spanning alleen aanraken/planten (wie meet,
-    wie moet vertrouwen zonder zelf te kunnen meten), niet uitbouwen — en bij de
-    Probability-sectie een expliciete forward-reference naar what-is-trust.md (670)
-    toevoegen, in plaats van het trust-concept hier zelf te definiëren.
 notes-closed:
     - "[x] Geen units-notes harvest-file voor deze unit (unit 26a is nieuw toegevoegd, niet in de oorspronkelijke units-notes-nummering) — niets te verplaatsen, checklist leeg per ontwerp"
+    - "[x] Cross-unit flag (2026-11-06, opgelost 2026-11-11): meten-vs.-vertrouwen-overlap met `act5-risk/what-is-trust.md` (weight 670) opgelost — Probability and risk-sectie geeft nu een expliciete forward-reference ('We will have a more detailed look at those numbers when we talk about trust.') i.p.v. de trust-definitie hier te herhalen; what-is-trust.md zelf herschikt zodat het trackrecord-voorbeeld niet langer de business-objective-alinea onderbreekt"
+    - "[x] Service hierarchies: account/files-digressie (oude regel 89) verwijderd, restaurant-voorbeeld loopt weer door zonder onderbreking"
+    - "[x] Business-objective-koppeling vroeg geplant bij de laptop-volumegrens ('The promise they want to make is dependent on the way they run their business') en terugbetaald bij de 'too late'-waarschuwing ('the respective business processes don't match') — stond voorheen alleen impliciet in de slotalinea"
+    - "[x] TCP-voorbeeld voorzien van bronafbeelding (tcp-header-diagram.gif, uit de oorspronkelijke PowerPoint-slide) en een aankondigende zin i.p.v. kaal 'Example TCP/IP'"
 ---
 
 Let's dive a little deeper into the mechanics of defining services, in particular services in digital infrastructures.

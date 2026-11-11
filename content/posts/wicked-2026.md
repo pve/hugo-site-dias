@@ -45,4 +45,4 @@ International actors
 https://digitalinfrastructures.nl/book/power/international-actors/
 
 AI infrastructures
-https://digitalinfrastructures.nl/book/diginfra/digital-inf-ai/
+https://digitalinfrastructures.nl/book/act1-foundations/digital-inf-ai/
