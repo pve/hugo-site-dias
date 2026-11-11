@@ -7,3 +7,6 @@ public/**
 
 # iCloud sync artefacts
 * 2.*
+
+# Typo build output (hugo -disableFastRender parsed as -d isableFastRender)
+isableFastRender/
