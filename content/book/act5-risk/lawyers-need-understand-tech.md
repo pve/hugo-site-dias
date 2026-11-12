@@ -7,7 +7,7 @@ notes: |
     Reordered 2026 (Act V flow review): pulled out of the old 72/72a/72b/72c controls-cluster, now paired with 78 (new-skills-needed) as a skills sub-cluster, right after DaRiCo (69) and before the opschalen cluster (68/70/73).
     Reason: this unit's real thesis is lawyer/procurement skills, not "contracts as controls" — it never needed to sit immediately next to Controls (72).
     Open: rewrite the opening so it bridges from DaRiCo/skills rather than implicitly assuming the reader just came from 72's control-as-promise framing.
-    Order vs. 78 still open — candidate: this unit (concrete, lawyer-specific) before 78 (general cloud-skills), which then forward-points to AI (74/75) as a later deeper application.
+    Order vs. 78 — opgelost 2026-11-12: weights bevestigen de kandidaat-volgorde (dit unit 732, new-skills-needed.md 733 — lawyer-specific staat al vóór general cloud-skills).
 ---
 
 Cloud is too important to leave to technical people.

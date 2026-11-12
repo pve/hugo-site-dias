@@ -17,6 +17,16 @@ notes-closed:
     - "[ ] PSA container-terminal photo (Singapore) as scale-setting image"
     - "[ ] Resolve redundancy warning: pick Ford/River Rouge as spine, 'new mainframe' as counterpoint, park the other three historical framings"
 notes: |
+    Nabrander (2026-11-12), uit discussie bij engineering-services.md's
+    volumegrens-passage: lage onderhandelingsbereidheid bij cloud providers.
+    Landt bij Measured service (regel ~336, "The consumer can primarily accept
+    or reject the pricing") — dat punt kan explicieter: grote providers bedienen
+    duizenden klanten met één standaardbelofte, individuele onderhandeling zou
+    hun eigen schaalvoordeel ondermijnen. Onderhandelingsbereidheid is dus zelf
+    een variabele, afhankelijk van marktmacht/schaal, niet van technische
+    mogelijkheid. Cross-ref: act2-value/lock-in.md (switching costs — "a provider
+    prices toward your switching cost, not toward their cost").
+
     Verplaatst vanuit `units-notes/unit-10.md` (2026-10-27) — harvest-triage, nog niet
     verwerkt in de proza hieronder. Gewicht klopt nog (100).
 

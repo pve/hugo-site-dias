@@ -90,6 +90,12 @@ notes: |
     service-agreement claim), promise-contract (170), customer-service (175 draft,
     escalation scene), promise-multiparty (act4, delegation chains), promises
     inventory entry in TODO.md item 8.
+
+    Status check 2026-11-12: body is still just the one-word stub "Promises" below —
+    no prose written yet. (Correction: TODO.md item 12 currently says this file has
+    "~856 words" of prose; that count was taken over the whole file including this
+    long notes: block, not the body — the actual body is 1 word. TODO.md needs
+    fixing.) Nothing in this file's notes to tick off yet.
 ---
 
 Promises

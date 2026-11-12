@@ -67,6 +67,19 @@ notes: |
     sources/misc-independent-units-talk-service-design.md (says: reisplanner explains
     a service's user-facing complexity). Earlier candidate homes named there
     (deployment-diagrams, governance-example) were not taken up.
+
+    Status check 2026-11-12: prose now exists (body below), confirming the intended
+    claim (product = one small promise vs. service = continuing set of promises,
+    lines 104-106) — no longer "to be confirmed by the author", it's written. Of the
+    open questions: author's role is answered (line 87, suggested the re-architecting).
+    Still open/unresolved: "what went wrong in practice" is not answered anywhere in
+    the body; "hierarchy of providers, who answers when the planner is wrong" is not
+    addressed. The two overlap items are also still unresolved: the unreliability
+    passage (lines 108-112) does not refer back to things-break-at-scale (51), it
+    restates the point instead; "my earlier university experience" (line 88) does not
+    explicitly point back to first-network (52). Not closing this out — draft: true
+    remains correct, and the overlap/ripple edits from TODO.md item 12 still need
+    doing before this can be considered done.
 ---
 
 In the late eighties, Dutch Railways and its IT subsidiary CVI created an MS-DOS personal computer application to consult its timetables.

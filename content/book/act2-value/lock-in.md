@@ -113,6 +113,14 @@ Also usable: "the neighbourhood pizzeria vs the platform hairdresser" note from 
 - Neato case: https://vacuumwars.com/neato-ending-cloud-services/
 - Cloud-adoption training logs (once collected): participants' voiced switching fears — see sources/README.md harvest map.
 
+## Cross-unit flag
+
+- 2026-11-12: act1-foundations/cloudcomputing.md's Measured service-sectie krijgt
+  een nabrander over lage onderhandelingsbereidheid bij cloud providers (geen
+  SLA-dialoog, take-it-or-leave-it). Daar primair uitwerken; hier alleen de
+  "provider prices toward your switching cost" link behouden als die unit het
+  mechanisme al concreet maakt.
+
 ## Open questions
 
 - Does egress pricing deserve its own worked example (numbers date quickly) or a timeless treatment?

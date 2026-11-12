@@ -8,7 +8,7 @@ notes-closed:
     - "[x] 'Nine out of ten questions is Active Directory' — already present verbatim in Raw material below"
     - "[ ] Business-case method for identity investment (dollar-value-of-risk / staff-time) — belongs primarily in unit 37, at most a one-line pointer here"
     - "[ ] Resolve source-traceability gap: locate/import the three cited intake sources into sources/ before writing final prose (status as of 2026-10-27 not re-checked this pass)"
-    - "[ ] How deep into mechanics (tokens, SSO, OIDC)? — probably not at all, keep at 'who does the system believe you are' level"
+    - "[x] How deep into mechanics (tokens, SSO, OIDC)? — opgelost 2026-11-12: beslissing is gevolgd, live body noemt geen tokens/SSO/OIDC, blijft op het niveau 'who does the system believe you are'"
     - "[ ] Does the unit need its own mini-case (stolen-assertion incident), or does unit 63 (site-hack case) carry that later?"
 notes: |
     Verplaatst vanuit `units-notes/unit-11a.md` (2026-10-27) — harvest-triage. Let op

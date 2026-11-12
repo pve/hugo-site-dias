@@ -10,6 +10,14 @@ notes-closed:
     - "[ ] Tegenbewijs kleine bedrijven (2012 Forbes/Gene Marks, 30 bedrijven wezen cloud af op kosten) nog niet verwerkt — nuttig voor intellectuele eerlijkheid"
     - "[ ] 'Provider heritage shapes the product' (Google vs AWS) nog niet verwerkt — mogelijk beter in unit 10"
 notes: |
+    Nabrander (2026-11-12): regel 51 ("the service is already defined by the
+    provider... you just pick one of the options offered") is al de kern van de
+    lage onderhandelingsbereidheid bij cloud providers — vast menu i.p.v. maatwerk.
+    Kandidaat om dit expliciet te maken: geen dialoog over de belofte, alleen
+    accept/reject. Cross-ref: act1-foundations/cloudcomputing.md (Measured
+    service, "accept or reject the pricing") en act2-value/lock-in.md (switching
+    costs). Kies één primaire plek, niet op alle drie uitwerken.
+
     Verplaatst vanuit units-notes/unit-20.md (2026-10-28). Grote harvest (20 items),
     hier gegroepeerd; redundantie- en cross-unit-flags apart vermeld.
 

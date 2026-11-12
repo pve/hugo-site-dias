@@ -5,8 +5,8 @@ title: 'Control promises'
 weight: 720
 notes: |
     Pick-up from Delegation Domino (unit 53, act4-power/promise-multiparty.md, published):
-    - don't retell the Aaron/Betty/Alice/Bob story here, link to it instead
-    - borrow the mechanism (request-for-promise per link in a chain) without re-quoting names
+    - (resolved 2026-11-12: body does not retell the story, just names "Delegation Domino")
+    - (resolved 2026-11-12: body borrows the mechanism without re-quoting any names)
     - optionally add a forward-pointer in unit 53 itself, after its closing line, pointing here for the accountability/enforcement angle
     - Unit 72 draft: Act III-link (feedback-loop, unit 36) en Act IV-link (power-mediation) nog niet verwerkt in tekst — stonden alleen in cross-act framing plan.
 ---

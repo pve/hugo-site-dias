@@ -7,7 +7,9 @@ weight: 729
 notes: |
     Reordered 2026 (Act V flow review): now sits right after Controls (72, 72a, 72b), not before.
     Reason: you need controls explained first, before you can show compliance is itself a new/distinct category of risk — not just a driver of controls.
-    Text already lands this (closing line: "being compliant also involves a risk decision") — check the opening still reads naturally now that it follows controls rather than preceding them.
+    Text already lands this (closing line: "being compliant also involves a risk decision").
+notes-closed:
+    - "[x] Opening-check na de reorder — opgelost 2026-11-12: de openingszin ('compliance is a mixed blessing') veronderstelt niets over wat eraan voorafgaat, leest nog prima nu het na Controls (72/72a/72b) komt."
 ---
 
 For people who care about risk in IT, compliance is a mixed blessing.

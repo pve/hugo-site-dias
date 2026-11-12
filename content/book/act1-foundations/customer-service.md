@@ -5,12 +5,18 @@ title: 'Customer service (draft)'
 weight: 175
 notes-closed:
     - "[x] Resequenced (2026-10-27): weight moved 150 → 175, now after promise-contract.md (170), not before promise-theory.md — most of this unit's content is slated to move out (see items below), so little may be left to actually sit here"
-    - "[ ] Fix regel 11 forward-reference direction (wrong-way → promise-theory.md comes after, not before) — moot if this unit ends up mostly emptied, but fix if any intro prose survives"
-    - "[ ] Move service-elements taxonomy + hierarchy (regel 54-74) to act2-value/engineering-services.md (unit 26a)"
-    - "[ ] Cut IP-address/TCP-protocol Q/R/A (regel 29-49) — superseded by act3-delegation/dhcp-automation.md"
-    - "[ ] Decide fate of unused permissions/phishing scenarios — fold into promise-theory.md or let this file retire"
+    - "[x] Regel 11 forward-reference — opgelost 2026-11-12: moot, body is nu leeg (alleen placeholder '=-'), de zin bestaat niet meer"
+    - "[x] Move service-elements taxonomy + hierarchy (regel 54-74) to act2-value/engineering-services.md (unit 26a) — opgelost 2026-11-12: bevestigd aanwezig in engineering-services/index.md ('### Service elements')"
+    - "[x] Cut IP-address/TCP-protocol Q/R/A (regel 29-49) — opgelost 2026-11-12: body leeg, al verwijderd"
+    - "[x] Decide fate of unused permissions/phishing scenarios — opgelost 2026-11-12: niet naar promise-theory.md, maar naar engineering-services/index.md verplaatst ('Joe from accounting needs permissions...' en 'I think I clicked on a phishing link...' staan daar nu als voorbeelden)"
     - "[x] No separate units-notes/unit-15.md harvest file exists — the list above is this session's own resequence analysis, not a moved harvest"
 notes: |
+    Check 2026-11-12: alle vier notes-closed-items hierboven zijn nu afgevinkt — de
+    inhoud is al verplaatst/verwijderd, body bestaat alleen nog uit een placeholder
+    ('=-'). Enige nog openstaande vraag: dit bestand zelf opheffen (`units-notes`-advies
+    uit 2026-10-27, zie onder) of laten staan als lege/draft plek. Dat is een
+    auteursbeslissing, niet hier genomen.
+
     Resequence-aantekeningen (2026-10-27), ter voorbereiding op verplaatsing door de
     auteur — tekst hieronder is NIET verplaatst, alleen geannoteerd.
 
