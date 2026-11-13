@@ -1,24 +1,11 @@
 ---
 date: '2026-10-27T00:00:00Z'
 draft: false
-title: 'Engineering services'
+title: 'The anatomy of services'
 weight: 265
-notes: |
-    GAP: nieuwe unit 26a in book-sequence.md, toegevoegd 2026-10-27 tijdens de Act 1/2
-    resequence-discussie. Landingsplek voor het bruikbare restmateriaal uit
-    `act1-foundations/customer-service.md` (weight 150) — zie de `notes:` daar voor de
-    volledige herkomst-analyse. Tekst is nog niet verplaatst; dit is alleen de
-    structurele plek.
-
-    Positie: direct na unit 26 (`promise-theory-services.md`, weight 260, "A service
-    agreement is a set of promises") — die unit introduceert service agreements als
-    promise-sets maar mist nog de concrete service-elementen-taxonomie; deze unit
-    levert die toepassing. Vóór unit 27 (`agile-requires-cloud.md`, weight 270).
-
-    Open vraag: titel "Engineering Services" is een werktitel — dekt de lading
-    (praktisch toepassen/ontwerpen van services met promise-theory-vocabulaire), maar
-    nog niet getoetst tegen de rest van Act 2's naamgeving.
 notes-closed:
+    - "[x] Titel vastgesteld 2026-11-13: 'The anatomy of services' (was werktitel 'Engineering services (draft)' / 'Engineering services') — dekt service-elementen, hiërarchie en kwaliteitsmetrics, past bij Act 2's stellingspatroon naast 'A service agreement is a set of promises' (260)"
+    - "[x] GAP-aantekening (positie/herkomst unit 26a) opgelost: tekst is verplaatst vanuit customer-service.md, structurele plek bevestigd direct na unit 26, vóór unit 27 — niets meer open"
     - "[x] Geen units-notes harvest-file voor deze unit (unit 26a is nieuw toegevoegd, niet in de oorspronkelijke units-notes-nummering) — niets te verplaatsen, checklist leeg per ontwerp"
     - "[x] Cross-unit flag (2026-11-06, opgelost 2026-11-11): meten-vs.-vertrouwen-overlap met `act5-risk/what-is-trust.md` (weight 670) opgelost — Probability and risk-sectie geeft nu een expliciete forward-reference ('We will have a more detailed look at those numbers when we talk about trust.') i.p.v. de trust-definitie hier te herhalen; what-is-trust.md zelf herschikt zodat het trackrecord-voorbeeld niet langer de business-objective-alinea onderbreekt"
     - "[x] Service hierarchies: account/files-digressie (oude regel 89) verwijderd, restaurant-voorbeeld loopt weer door zonder onderbreking"
