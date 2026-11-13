@@ -5,6 +5,11 @@ title: 'Promise to update'
 description: "Who updates what? Applying promise theory to the shared-responsibility question behind every SaaS and IaaS contract, and the gaps nobody's promise covers."
 weight: 390
 note: |
+  Auteursbesluit 2026-11-13: ITIL mag er expliciet in — niet alleen stilzwijgend
+  herformuleren naar promise-taal. Als het change management-stuk hieronder wordt
+  uitgewerkt, noem ITIL erbij (bv. "wat ITIL change management noemt, is in onze
+  taal een promise om..."), zodat een Neil-lezer die ITIL al kent het herkent.
+
   Service management is organizing the keeping of promises.
   What is the role?
   Which promise does it keep?

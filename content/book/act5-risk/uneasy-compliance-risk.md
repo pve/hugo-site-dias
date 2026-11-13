@@ -8,6 +8,12 @@ notes: |
     Reordered 2026 (Act V flow review): now sits right after Controls (72, 72a, 72b), not before.
     Reason: you need controls explained first, before you can show compliance is itself a new/distinct category of risk — not just a driver of controls.
     Text already lands this (closing line: "being compliant also involves a risk decision").
+
+    Auteursbesluit 2026-11-13: ISO 27001/27000-serie mag er expliciet in, niet alleen
+    als Equifax-ironie (regel 51, "ISO27001 certified... yet exposed"). Kandidaat: een
+    zin die de 27000-serie kort typeert als framework (management-systeem-eis, geen
+    technische controle-garantie) — dat ondersteunt juist de "compliant ≠ secure"-these
+    van deze unit, in plaats van er los naast te staan.
 notes-closed:
     - "[x] Opening-check na de reorder — opgelost 2026-11-12: de openingszin ('compliance is a mixed blessing') veronderstelt niets over wat eraan voorafgaat, leest nog prima nu het na Controls (72/72a/72b) komt."
 ---
