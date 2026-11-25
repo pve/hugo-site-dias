@@ -1,6 +1,6 @@
 ---
 date: '2026-07-23T00:00:00Z'
-draft: true
+draft: false
 title: 'Locked-in: switching costs'
 weight: 325
 notes-closed:
@@ -98,8 +98,8 @@ notes:
 
 In 2023 VMware was acquired by Broadcom.
 The data centers of more than 400,000 organizations depend on VMware's virtualization products.
-Once the deal was closed, Broadcom canceled the majority of reseller contracts and drastically changed the licensing structure.
-For some customers of VMware, this amounted to a tenfold increase in their license cost.
+Once the deal was closed, Broadcom canceled the entire partner program and drastically changed the licensing structure.
+Some customers of VMware reported a tenfold increase in their license cost.
 While those customers wanted an alternative technology,
 many found out that switching was very costly, and slow to pay back.
 Because of that cost, customers were locked-in, and Broadcom had the power to raise the price.
@@ -109,20 +109,28 @@ Lock-in gives the provider power to create value for themselves, sometimes at th
 But the consumer can also gain power and value.
 
 Every time you select an external provider, or even a piece of open source, you are creating a dependency.
-Ideally this dependency creates value, because the provider takes away effort from you, and charging you less than it would cost if you did it yourself.
-In that sense, the provider increaes your power.
+Ideally this dependency creates value, because the provider takes away effort from you, and is charging you less than it would cost if you did it yourself.
+In that sense, the provider increases your power.
 
-Locking yourself into an ecosystem of services helps you benefit
-from that developing ecosystem.
+The [promise](/book/act1-foundations/promise-theory/) of lock-in is: stay with me, and I will make your life easier.
 
-The dependency also creates risk, first of all because your providers may fail or have interests that don't align with yours.
-Neato sold robotic vacuum cleaners with a bundled cloud service that allowed 'smart' operation of the cleaner.
-But the company went out of business in a few years, and the parent company had no interest in continuing the cloud service,
-probably because there was no subscription revenue.
-They stopped the service after a few years, leaving the vacuum cleaners with severely limited functionality.
+In my courses I used to joke and compare lock-in to a marriage.
+Sure, you can have wrinkles in the relationship from time to time, but if you are happy overall, don't get a divorce.
+
+The dependency also creates risk, for example because your providers may fail or have interests that don't align with yours.
+Neato sold robotic vacuum cleaners and promised a bundled cloud service that allowed 'smart' operation of the cleaner.
+But the company was taken over a few years after that, and after a while the parent company had no interest in continuing the cloud service.
+My speculation is that this was
+because there was no subscription revenue.
+The promise of continued cloud service was broken, leaving the vacuum cleaners with severely limited functionality.
 The vacuum cleaner is locked-in to a service that doesn't even exist anymore.
 
-Let's dive into what happens when the dependency stops delivering a net benefit, and how that can be foreseen.
+There are many more examples of SaaS providers going out of business.
+My father had a lot of his pictures stored on fototime.com.
+After a fire in an OVHcloud datacenter, that service went out of business.
+While we had copies of those pictures elsewhere, the metadata he entered was lost.
+
+Let's dive into what happens when the dependency stops delivering a net benefit, and how that can be analyzed.
 
 ### Switching cost
 
@@ -130,34 +138,41 @@ Changing a provider, or a technology, needs work.
 That work incurs 'switching costs', and they come in many forms.
 
 - Contractual. As a client you may face termination fees, and a new contract has to be negotiated.
-- Data. I once moved my mail from one Gmail account to another. At two seconds per message, this took almost a full week. At Petabyte scale, the industry joke is that it is faster to run a truck full of storage devices than to use the internet.
-- Technical. Services from a provider are consumed through certain formats and APIs. This represents a development investment on the consumer side that may need to be redone for a new provider or solution. 
+- Data. I once moved my mail from one Gmail account to another. At two seconds per message, this took almost a full week. At petabyte scale, the industry joke is that it is faster to run a truck full of storage devices than to use the internet.
+- Technical. Services from a provider are consumed through certain formats and APIs. This represents a development investment on the consumer side that may need to be redone for a new provider or solution. Moving away from VMware (or to VMware for that matter) requires changing a lot of virtual machine images, scripts, and monitoring.
 - Procedure and skills. People know how to handle the dependency, and get the most out of it.
-New technology requires effort to retrain to.
-- Inertia. It is easier to not change and endure the consequences in the short run than to
-'rock the boat' for an uncertain long term benefit. Machiavelli, the 16th century political writer said: "It must be considered that there is nothing more difficult to carry out,
+New technology requires effort to retrain to. The VMware example comes to mind again. But if you are audited for something like an ISO/IEC 27001-based certification, many of the controls are specific to the technology, and have to be redesigned.
+- Organizational inertia. It is easier to not change and endure the consequences in the short run than to
+'rock the boat' for an uncertain long-term benefit.
+Machiavelli, the 16th-century political writer said: "It must be considered that there is nothing more difficult to carry out,
 nor more doubtful of success, nor more dangerous to handle, than to initiate a new order of things. For the reformer has enemies in all those who profit by the old order, and only lukewarm defenders in all those who would profit by the new order."
+We see this in on-premises services as well, where technology lock-in also includes a lot of supporting staff.
+
+Network effects can also make switching harder.
+For example, the more systems, or people, or data, you can connect to with a certain technology, the more valuable that technology becomes, and the more you will lose by switching.
+In 1997 the company I worked for had Steve Deering over for a presentation.
+He was the lead designer of IPv6, solving many limitations of IPv4.
+It was functional back then, and promising significant benefits in terms of administration ease.
+Over the years I have participated in a few working groups and other activities to support that migration,
+but it took almost two decades to reach even 5% penetration, and three decades for IPv6 to reach 50% penetration.
+If the whole world, clients and servers, is on IPv4, you gain nothing by moving or even only adopting IPv6.
+In this case, lock-in isn't even a deliberate strategy from a provider.
+
+The same effect plays out in the consumer world.
+The social media example is trying to move from X to Mastodon.
+The value of X is mainly in the people you connect with, and they don't necessarily follow you to Mastodon.
 
 While we understand lock-in as power that a provider has over a consumer,
 this principle extends to open source.
 Switching between open source options, or between open source and providers, also incurs lock-in costs.
-You can change your datacenter from VMware to OpenStack or ProxMox, but it is an effort to do so, and you will likely need to increase or at least train your staff to keep up with the developments.
-
-The promise of lock-in is: stay with me, and I will make your life easier.
-
-In my courses I used to joke and compare lock-in to a marriage.
-Sure, you can have wrinkles in the relationship from time to time, but if you are happy overall, don't get a divorce.
-
-Network effects can also make switching harder.
-For example, the more systems, or people, or data, you can connect to with a certain technology, the more valuable that technology becomes, and the more you will lose by switching.
-The social media example is trying to move from X to Mastodon.
-The value of X is mainly in the people you connect with, and they don't necessarily follow you to Mastodon.
+You can change your datacenter from VMware to OpenStack or Proxmox, but it is an effort to do so, as the previous points illustrate.
 
 ### The game
 
-It is a game.
+We looked at switching as a game in [Games of value and power](/book/act2-value/game-theory/).
+Let's get deeper in it.
 The moves are adoption, the players are the provider and consumer, and the outcomes are the value you get and the price you pay.
-Here is a list of game moves that apply to this situation:
+Here is a list of game moves that apply to this situation, while making a few assumptions:
 
 - The provider has a solution or service that is different from a competitive offering. Think of a SaaS offer or a mobile phone contract.
 - You can stick to the provider's offering, with a price of X.
@@ -165,11 +180,11 @@ Here is a list of game moves that apply to this situation:
 - Switching requires you to do work, and there will be additional expenses. Let's call that switching cost S.
 - Assuming the two providers have the same cost Z, for the service,
 neither of them will price below Z, or they will lose money.
-- Assuming you have switching cost S, your current provider can price you Y+S before your move to switch to the provider with price Y is beneficial to you.
+- Assuming you have switching cost S, your current provider can price you Y+S before your move to switch to the provider with price Y is beneficial to you. In the VMware case that switching cost is high for many enterprise customers, which is why Broadcom can raise the price.
 - Unless the competition is willing to price (Y) below their cost (Z), your current provider can make a profit equal to your switching cost. The higher your switching cost, the higher their profit.
 - Lowering your switching cost gives you a better position to get a more competitive deal.
 
-Once you see the game, you have choice.
+Once you see the game, you can choose your moves.
 
 Choice is power.
 
@@ -177,17 +192,17 @@ Choice is power.
 
 The number one exercise that will help you reduce switching cost is to develop an 'exit strategy'.
 
-Earlier we looked at Aegon's Solvency II case, where they had a large workload running at a Managed Services Provider.
+Earlier we looked at [Aegon's Solvency II case](/book/act2-value/the-solvency-ii-deadline/), where they had a large workload running at a Managed Services Provider.
 An essential component of that architecture was the configured virtual machine image.
 They contractually required the provider to hand over those images.
-That would save them the time to rebuild them should they want to find another provider.
+That would save them the time to rebuild them should they want to exit the current relationship and find another provider.
 
-The general approach to finding switching costs is to take your deployment diagrams and
-look for control boundaries.
+The general approach to finding switching costs you can reduce is to take your [deployment diagrams](/book/act1-foundations/deployment-diagrams/) and
+look for control boundaries, as Aegon did.
 Almost by definition, these are places where you can switch providers and solutions.
 Internal control boundaries represent architectural decisions.
 External control boundaries point to external providers.
-In both cases you can look at the lines that cross the boundaries and look at the contract, the set of promises that are being kept.
+In both cases you can look at the lines that cross the boundaries and look at the contract, the [set of promises](/book/act1-foundations/promise-contract/) that are being kept.
 Ask yourself how easily those promises can be made with an alternate provider, system component, application, or infrastructure.
 
 Don't get too hung up on switching costs.
@@ -203,14 +218,19 @@ and every new research direction was increasingly more complex and
 cumbersome in software development.
 The underlying situation was that the software architecture no longer fit
 our new insights and requirements.
-So we had to start from scratch again.
+So we had to switch the architecture and start from scratch again.
 For three months we did not deliver a single new feature.
 But when the redesign was done, we more than tripled our development speed.
 That three months repaid for itself very quickly.
 
-### Switching costs are inherent
+The switch is costing you time and money upfront in a variety of ways, which you can analyze and estimate by following the points mentioned earlier.
+The benefits come later, and they can be analyzed with the principles in [Why the deal was good](/book/act2-value/), such as [process improvements](/book/act2-value/value-in-process-improvement/) and better control.
+
+Understanding and lowering switching cost gives you power over your suppliers, because it can act as a [deterrent](/book/act5-risk/digital-autonomy-controls/) to their
+ambitions to raise prices.
+
+### Switching costs are inherent in automation
 
 We don't just lock ourselves into specific providers.
 As individuals, companies, and even society as a whole, we are locked into the technology of automation itself.
-
-Only by understanding the waves of technology can we stay on top of them, and reap the benefits that are promised.
+[Then the machines started promising](/book/act3-delegation/) dives a little deeper into the dynamics of our lock-in to automation.
