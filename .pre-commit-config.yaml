@@ -12,3 +12,9 @@ repos:
         language: system
         pass_filenames: false
         always_run: true
+      - id: check-front-matter
+        name: front matter parses (hugo list all)
+        entry: sh scripts/check-front-matter.sh
+        language: system
+        pass_filenames: false
+        always_run: true
