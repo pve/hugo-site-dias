@@ -1,0 +1,29 @@
+{{- /*
+  Link render hook: checks internal book links ([text](/book/...)).
+  A link whose target page does not exist, or is a draft, is reported:
+  as a warning under `hugo server` (local), as a build error otherwise
+  (Netlify), so a broken internal link never goes live.
+  See scripts/check-internal-links.py for the same check at commit time.
+*/ -}}
+{{- $dest := .Destination -}}
+{{- if strings.HasPrefix $dest "/book/" -}}
+  {{- $path := index (split $dest "#") 0 -}}
+  {{- $path = strings.TrimSuffix "/" $path -}}
+  {{- $target := site.GetPage $path -}}
+  {{- $problem := "" -}}
+  {{- if not $target -}}
+    {{- $problem = "page does not exist" -}}
+  {{- else if $target.Draft -}}
+    {{- $problem = "target is a draft" -}}
+  {{- end -}}
+  {{- with $problem -}}
+    {{- $msg := printf "broken internal link %q in %q: %s" $dest $.Page.Path . -}}
+    {{- if hugo.IsServer -}}
+      {{- warnf "%s" $msg -}}
+    {{- else -}}
+      {{- errorf "%s" $msg -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text }}</a>
+{{- /* no trailing newline */ -}}
