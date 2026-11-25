@@ -16,7 +16,7 @@ This means that there is a variety of parties responsible for controlling those 
 
 But, who is supposed to do each control? And which role do they have?
 For example, there are model providers, there is the AI consumer, and so on.
-For a deeper story on these roles look at [AI roles](/book/diginfra/ai-roles/).
+For a deeper story on these roles look at [AI roles](/book/act3-delegation/ai-roles/).
 
 Combining those AI roles with the OWASP Top 10, gives us a list of more than 80 controls, by role.
 

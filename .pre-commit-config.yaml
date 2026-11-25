@@ -6,3 +6,9 @@ repos:
         entry: gitleaks git --staged --redact --verbose --no-banner
         language: system
         pass_filenames: false
+      - id: check-internal-links
+        name: internal book links resolve
+        entry: python3 scripts/check-internal-links.py
+        language: system
+        pass_filenames: false
+        always_run: true
