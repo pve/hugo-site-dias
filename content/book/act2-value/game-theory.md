@@ -163,3 +163,5 @@ Customers can make defensive moves, if they plan ahead.
 
 And often, regulators step in to keep switching costs down, in order to protect customers.
 Phone number portability is an example regulatory move.
+
+We will dive into switching costs in a later unit.

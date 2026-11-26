@@ -7,6 +7,7 @@ notes-closed:
     - "[ ] 'Value must be explainable'-teaching device (gemengde claims: sneller/makkelijker/'mijn oma vindt het fijn'/lagere ping) nog niet verwerkt — goede fit, geeft Maria een praktische checklist"
     - "[ ] Telecom cost-over-time analogie (1970/1990/2010, bellen per uur loon) nog niet verwerkt — past naast bestaande Shannon/resolutie-voorbeelden"
     - "[x] Rest van de harvest (cloud-business-case-materiaal) gerouteerd naar unit 22 — niet hier dupliceren"
+    - "[ ] concepten als signal en telemetry."
 notes: |
     Verplaatst vanuit units-notes/unit-21.md (2026-10-28).
 
