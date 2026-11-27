@@ -140,6 +140,7 @@ That work incurs 'switching costs', and they come in many forms.
 - Contractual. As a client you may face termination fees, and a new contract has to be negotiated.
 - Data. I once moved my mail from one Gmail account to another. At two seconds per message, this took almost a full week. At petabyte scale, the industry joke is that it is faster to run a truck full of storage devices than to use the internet.
 - Technical. Services from a provider are consumed through certain formats and APIs. This represents a development investment on the consumer side that may need to be redone for a new provider or solution. Moving away from VMware (or to VMware for that matter) requires changing a lot of virtual machine images, scripts, and monitoring.
+On the other hand, switching between brands of desktop PCs is a lot easier.
 - Procedure and skills. People know how to handle the dependency, and get the most out of it.
 New technology requires effort to retrain to. The VMware example comes to mind again. But if you are audited for something like an ISO/IEC 27001-based certification, many of the controls are specific to the technology, and have to be redesigned.
 - Organizational inertia. It is easier to not change and endure the consequences in the short run than to
@@ -204,6 +205,9 @@ Internal control boundaries represent architectural decisions.
 External control boundaries point to external providers.
 In both cases you can look at the lines that cross the boundaries and look at the contract, the [set of promises](/book/act1-foundations/promise-contract/) that are being kept.
 Ask yourself how easily those promises can be made with an alternate provider, system component, application, or infrastructure.
+
+As these boundaries are places where information crosses, the choice of standards and formats for that information makes a lot of difference.
+The more it is an open and widely used standard, the less provider lock-in you will experience.
 
 Don't get too hung up on switching costs.
 Organizations switch their systems all the time, sometimes planned, sometimes as the result of disasters.
